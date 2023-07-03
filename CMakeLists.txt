@@ -103,8 +103,11 @@ add_executable(bfs_inc src/bfs_inc.cpp)
 add_executable(bfs_inc_batch src/bfs_inc_batch.cpp)
 add_executable(bfs_inc_clf src/bfs_inc_clf.cpp)
 add_executable(bfs_inc_rt src/bfs_inc_rt.cpp)
+add_executable(batch_bfs src/batch_bfs.cpp)
+
 
 add_executable(sssp src/sssp.cpp)
+add_executable(batch_sssp src/batch_sssp.cpp)
 add_executable(sssp_inc src/sssp_inc.cpp)
 add_executable(sssp_inc_batch src/sssp_inc_batch.cpp)
 add_executable(sssp_inc_clf src/sssp_inc_clf.cpp)
@@ -115,6 +118,15 @@ add_executable(sswp_inc src/sswp_inc.cpp)
 add_executable(sswp_inc_batch src/sswp_inc_batch.cpp)
 add_executable(sswp_inc_clf src/sswp_inc_clf.cpp)
 add_executable(sswp_inc_rt src/sswp_inc_rt.cpp)
+add_executable(similar_sswp src/similar_sswp.cpp)
+add_executable(similar_ssnp src/similar_ssnp.cpp)
+add_executable(similar_bfs src/similar_bfs.cpp)
+add_executable(batch_sswp src/batch_sswp.cpp)
+add_executable(batch_ssnp src/batch_ssnp.cpp)
+add_executable(batch_viterbi src/batch_viterbi.cpp)
+
+
+
 
 if(UCX_FOUND)
 

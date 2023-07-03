@@ -30,6 +30,7 @@
 #include <tbb/tbb.h>
 #include <sparsehash/dense_hash_map>
 #include <cmath>
+#include <random>
 #include "type.hpp"
 #include "bitmap.hpp"
 #include "atomic.hpp"
@@ -50,7 +51,9 @@ public:
     using adjlist_iter_type = typename Storage::adjlist_iter_type;
     using adjlist_range_type = std::pair<adjlist_iter_type, adjlist_iter_type>;
     using lock_type = typename Storage::lock_type;
-
+    // std::set<std::pair<uint64_t, uint64_t>> traverse_edges;
+    // std::set<uint64_t> activate_nodes;
+    std::vector<uint64_t> nodes_track;
     template<typename VertexData>
     struct VertexTree
     {
@@ -88,7 +91,12 @@ public:
 
         fprintf(stderr, "|V|=%lu\n", _vertices);
         empty_parent.nbr = vertices;
-
+        nodes_track.resize(_vertices);
+        for (auto vertex: nodes_track)
+        {
+            vertex = 0;
+        }
+        
         outgoing.resize(vertices);
 
         if(!symmetric) 
@@ -103,7 +111,17 @@ public:
     {
         return thread_id.local();
     }
-
+    uint64_t count_edges(){
+        uint64_t number = 0;
+        for (uint64_t i = 0; i < vertices; i++)
+        {
+            number += outgoing.get_degree(i);
+        }
+        return number;
+    }
+    uint64_t count_out_going(uint64_t vid){
+        return outgoing.get_degree(vid);
+    }
     lock_type& get_lock(uint64_t vid)
     {
         return outgoing.get_lock(vid);
@@ -199,7 +217,62 @@ public:
     {
         return outgoing.get_edge_num(e.src, e);
     }
-
+    bool check_edge(edge_type e){
+        if(e.src >= vertices || e.dst >= vertices) throw std::runtime_error("VertexId error.");
+        // default only directed graph directed edge
+        if (outgoing.get_edge_num(e.src, e) == 0)
+        {
+            return false;
+        }
+        else
+            return true;
+    }
+    // std::vector <std::pair<uint64_t, uint64_t>>  random_sample_del(uint64_t random_seed, uint64_t sample_numbers){
+    //     std::vector<std::pair<uint64_t, uint64_t>> sample_edges;
+    //     srand(random_seed);
+    //     for (int i = 0; i < sample_numbers; i++)
+    //     {
+    //         uint64_t src, dst;
+    //         src = rand() % vertices;
+    //         // uint64_t dest_ptr = rand () % (outgoing.get_degree(src));
+    //         dst = outgoing.get_adjlist(src)[rand () % (outgoing.get_degree(src))].nbr;
+    //         // std::cout<<src<<"\t"<<dst<<std::endl;   
+    //         // sample_edges.insert(std::make_pair(src, dst));
+    //         // del_edge({src, dst}, true);
+    //         // std::pair <uint64_t, uint64_t> tmp = {src, dst};
+    //         // sample_edges.push_back(std::make_pair(src, dst));         
+    //     }
+    //     return sample_edges;
+    // }
+    // std::set <std::pair<uint64_t, uint64_t>> random_sample(uint64_t random_seed, uint64_t gen_numbers){
+    //     std::set<std::pair<uint64_t, uint64_t>> sample_gen_edges;
+    //     srand(random_seed);
+    //     for (int i = 0; i < gen_numbers; i++)
+    //     {
+    //         uint64_t src, dst;
+    //         src = rand() % vertices;
+    //         uint64_t dst_ptr = rand() % outgoing.get_degree(src);
+    //         // dst = outgoing.get_dst(src, dst_ptr);
+    //         std::cout << outgoing.get_dst(src, dst_ptr) << std::endl;
+    //         // std::cout << check_edge({src, dst}) << std::endl; 
+    //         // sample_gen_edges.insert(std::make_pair(src, dst));
+    //     }
+    //     return sample_gen_edges;
+    // }      
+    // std::set <std::pair<uint64_t, uint64_t>> random_generate(uint64_t random_seed, uint64_t gen_numbers){
+    //     std::set<std::pair<uint64_t, uint64_t>> sample_gen_edges;
+    //     srand(random_seed);
+    //     for (int i = 0; i < gen_numbers; i++)
+    //     {
+    //         uint64_t src, dst;
+    //         src = rand() % vertices;
+    //         dst = rand() % vertices;
+    //         while ((src == dst) || check_edge({src, dst})){ dst = rand() % vertices;}
+    //         std::cout << check_edge({src, dst}) << std::endl; 
+    //         sample_gen_edges.insert(std::make_pair(src, dst));
+    //     }
+    //     return sample_gen_edges;
+    // }    
     uint64_t add_edge(edge_type e, bool directed = true)
     {
         if(e.src >= vertices || e.dst >= vertices) throw std::runtime_error("VertexId error.");
@@ -1031,6 +1104,8 @@ public:
                                 auto update_pair = update_label(labels, src, dst, eup, update_func);
                                 if(update_pair.first)
                                 {
+                                    // activate_nodes.insert(dst);
+                                    nodes_track[dst] = 1;
                                     active_out.active(dst);
                                     if(trace_modified) modified.active(dst);
                                     result = active_result_func(result, src, dst, src_data, dst_data, update_pair.second);
@@ -1074,6 +1149,9 @@ public:
                         if(update_pair.first)
                         {
                             active_out.active(dst);
+                            // activate_nodes.insert(dst);
+                            nodes_track[dst] = 1;
+                            // printf("hello?");
                             if(trace_modified) modified.active(dst);
                             result = active_result_func(result, src, dst, src_data, dst_data, update_pair.second);
                         }
@@ -1095,8 +1173,11 @@ public:
                             if(update_pair.first)
                             {
                                 active_out.active(dst);
+                                // activate_nodes.insert(dst);
+                                nodes_track[dst] = 1;
                                 if(trace_modified) modified.active(dst);
                                 result = active_result_func(result, src, dst, src_data, dst_data, update_pair.second);
+                                // printf("hello?");
                             }
                         }
                     }
@@ -1144,9 +1225,11 @@ public:
             auto src_data = labels[edge.src].data;
             auto dst_data = labels[edge.dst].data;
             auto update_pair = update_label(labels, edge.src, edge.dst, eup, update_func);
+            // printf("hello?");
             if(update_pair.first)
             {
                 active_in.active(edge.dst);
+                // printf("bfs goes here\n");
                 if(trace_modified) modified.active(edge.dst);
                 total_result = active_result_func(total_result, edge.src, edge.dst, src_data, dst_data, update_pair.second);
             }
@@ -1188,11 +1271,16 @@ public:
                     auto src_data = labels[edge.src].data;
                     auto dst_data = labels[edge.dst].data;
                     auto update_pair = update_label(labels, edge.src, edge.dst, eup, update_func);
+                    // if(update_pair.first != 1){printf("hello?\n");}
                     if(update_pair.first)
                     {
                         active_in.active(edge.dst);
+                        // activate_nodes.insert(edge.dst);
+                        nodes_track[edge.dst] = 1;
                         if(trace_modified) modified.active(edge.dst);
                         total_result = active_result_func(total_result, edge.src, edge.dst, src_data, dst_data, update_pair.second);
+                        // printf("hello?");
+
                     }
                 }
                 if(directed) continue;
@@ -1206,6 +1294,7 @@ public:
                     if(update_pair.first)
                     {
                         active_in.active(edge.dst);
+                        // printf("hello?");
                         if(trace_modified) modified.active(edge.dst);
                         total_result = active_result_func(total_result, edge.src, edge.dst, src_data, dst_data, update_pair.second);
                     }
@@ -1249,7 +1338,7 @@ public:
         bool need_recompute = false;
         for(uint64_t i=0, active_vertices = active_in.get_sparse_length();i<vertices && active_vertices;i++)
         {
-            if(need_recompute || (i <= 10 && size_tree+active_vertices > 0.05*vertices && size_tree+active_vertices > 2000000))
+            if(need_recompute || (i <= 10 && size_tree+active_vertices > 0.05*vertices && size_tree+active_vertices > 999999999))
             {
                 //auto total_depth = stream_vertices<uint64_t>(
                 //    [&](uint64_t vid)
@@ -1716,7 +1805,22 @@ public:
 
         return do_update_tree_del<R, DataType>(init_label_func, continue_reduce_func, update_func, active_result_func, equal_func, labels);
     }
-
+    void clear_track(){
+        for (uint64_t i = 0; i< vertices; i++)
+        {
+            nodes_track[i] = 0;
+        }
+    }
+    uint64_t count_activate(){
+        uint64_t count = 0;
+        for (uint64_t i = 0; i< vertices; i++)
+        {
+            if(nodes_track[i] != 0){
+                count++;
+            }
+        }
+        return count;        
+    }
 private:
     const uint64_t vertices;
     const bool symmetric, dual;

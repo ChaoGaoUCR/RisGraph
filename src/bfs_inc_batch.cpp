@@ -81,9 +81,19 @@ int main(int argc, char** argv)
             graph.add_edge({e.first, e.second}, true);
         }
         auto end = std::chrono::high_resolution_clock::now();
-        fprintf(stderr, "add: %.6lfs\n", 1e-6*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(end-start).count());
+        fprintf(stderr, "add: %.6lfms\n", 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(end-start).count());
     }
+    //Initial Edge finished
+    {
+        //test sampling and random generation function
+        //bool exist = graph_check_edge(std::pair<uint64_t, uint64_t>)
+        //std::vector <pair<uint64_t, uint64_t>> random_ins_edges = graph.ramdom_generate(uint64_t random_seed)
+        //std::vector <pair<uint64_t, uint64_t>> random_del_edges = graph.ramdom_sample(uint64_t random_seed)
+        // std::pair <uint64_t, uint64_t> test = {0,11342};
+        // std::cout << "check edge " << graph.check_edge({test.first, test.second}) <<std::endl;
+        
 
+    }    
     auto labels = graph.alloc_vertex_tree_array<uint64_t>();
     const uint64_t MAXL = 65536;
     auto continue_reduce_func = [](uint64_t depth, uint64_t total_result, uint64_t local_result) -> std::pair<bool, uint64_t>
@@ -124,14 +134,16 @@ int main(int argc, char** argv)
         );
 
         auto end = std::chrono::high_resolution_clock::now();
-        fprintf(stderr, "exec: %.6lfs\n", 1e-6*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(end-start).count());
+        fprintf(stderr, "exec: %.6lfms\n", 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(end-start).count());
     }
-
+    // Initial Compute Begin
     std::atomic_uint64_t add_edge_len(0), del_edge_len(0);
     std::vector<decltype(graph)::edge_type> add_edge, del_edge;
     auto history_labels = graph.alloc_history_array<uint64_t>();
     auto start = std::chrono::high_resolution_clock::now();
-    uint64_t max_batches = 1000000, num_batches = 0;
+    // uint64_t max_batches = 1000000, num_batches = 0;
+    uint64_t max_batches = batch, num_batches = 0;
+    raw_edges_len = imported_edges + batch;
     std::vector<decltype(graph)::edge_type> added_edges(batch), deled_edges(batch);
     for(uint64_t local_begin=imported_edges;local_begin<raw_edges_len;local_begin+=batch)
     {
@@ -141,6 +153,7 @@ int main(int argc, char** argv)
 
         {
             std::atomic_uint64_t length(0);
+            auto add_mutation_start = std::chrono::high_resolution_clock::now();
             THRESHOLD_OPENMP_LOCAL("omp parallel for", local_end - local_begin, 1024, 
                 for(uint64_t i=local_begin;i<local_end;i++)
                 {
@@ -149,16 +162,23 @@ int main(int argc, char** argv)
                     if(!old_num) added_edges[length.fetch_add(1)] = {e.first, e.second};
                 }
             );
+            auto add_mutation_end = std::chrono::high_resolution_clock::now();
+            fprintf(stderr, "add mutation time: %.6lfms\n", 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(add_mutation_end- add_mutation_start).count());            
+            auto add_start = std::chrono::high_resolution_clock::now();
             graph.update_tree_add<uint64_t, uint64_t>(
                 continue_reduce_func,
                 update_func,
                 active_result_func,
                 labels, added_edges, length.load(), true
             );
+            auto add_end = std::chrono::high_resolution_clock::now();
+            // printf("add time is %lf\n",(add_end-add_start));
+            fprintf(stderr, "add compute time: %.6lfms\n", 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(add_end- add_start).count());            
         }
 
         {
             std::atomic_uint64_t length(0);
+            auto del_mutation_start = std::chrono::high_resolution_clock::now();
             THRESHOLD_OPENMP_LOCAL("omp parallel for", local_end - local_begin, 1024, 
                 for(uint64_t i=local_begin;i<local_end;i++)
                 {   
@@ -167,6 +187,9 @@ int main(int argc, char** argv)
                     if(old_num==1) deled_edges[length.fetch_add(1)] = {e.first, e.second};
                 }
             );
+            auto del_mutation_end = std::chrono::high_resolution_clock::now();
+            fprintf(stderr, "del mutation time: %.6lfms\n", 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(del_mutation_end- del_mutation_start).count());            
+            auto del_start = std::chrono::high_resolution_clock::now();
             graph.update_tree_del<uint64_t, uint64_t>(
                 init_label_func,
                 continue_reduce_func,
@@ -175,89 +198,93 @@ int main(int argc, char** argv)
                 equal_func,
                 labels, deled_edges, length.load(), true
             );
+            auto del_end = std::chrono::high_resolution_clock::now();
+            // printf("add time is %lf\n",(del_end-del_start));
+            fprintf(stderr, "del compute time: %.6lfms\n", 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(del_end- del_start).count());            
         }
-
+        printf("this is %ld batch",num_batches);
         num_batches ++;
-        // if(num_batches >= max_batches) break;
+        if(num_batches >= max_batches) break;
     }
     auto end = std::chrono::high_resolution_clock::now();
     uint64_t wall_nanoseconds = (end-start).count();
-    fprintf(stderr, "wall_times = %lf us\n", (1e-3)*wall_nanoseconds);
-    fprintf(stderr, "wall_mean = %lf us\n", (1e-3)*wall_nanoseconds/num_batches);
+    // printf("add time is %d; del time is %d; all time is %d", (add_start - add_end), ())
+    fprintf(stderr, "wall_times = %lf ms\n", (1e-6)*wall_nanoseconds);
+    // fprintf(stderr, "wall_mean = %lf us\n", (1e-3)*wall_nanoseconds/num_batches);
 
-    {
-        std::vector<std::atomic_uint64_t> layer_counts(MAXL);
-        for(auto &a : layer_counts) a = 0;
-        auto num_visited = graph.stream_vertices<uint64_t>(
-            [&](uint64_t vid)
-            {
-                if(labels[vid].data != MAXL)
-                {
-                    layer_counts[labels[vid].data]++;
-                    return 1;
-                }
-                return 0;
-            },
-            graph.get_dense_active_all()
-        );
-        fprintf(stderr, "%lu visited vertices: %lu\n", root, num_visited);
-        for(uint64_t i=0;i<layer_counts.size();i++)
-        {
-            if(layer_counts[i] > 0)
-            {
-                printf("%lu ", layer_counts[i].load());
-            }
-            else
-            {
-                printf("\n");
-                break;
-            }
-        }
-    }
+    // {
+    //     std::vector<std::atomic_uint64_t> layer_counts(MAXL);
+    //     for(auto &a : layer_counts) a = 0;
+    //     auto num_visited = graph.stream_vertices<uint64_t>(
+    //         [&](uint64_t vid)
+    //         {
+    //             if(labels[vid].data != MAXL)
+    //             {
+    //                 layer_counts[labels[vid].data]++;
+    //                 return 1;
+    //             }
+    //             return 0;
+    //         },
+    //         graph.get_dense_active_all()
+    //     );
+    //     fprintf(stderr, "%lu visited vertices: %lu\n", root, num_visited);
+    //     for(uint64_t i=0;i<layer_counts.size();i++)
+    //     {
+    //         if(layer_counts[i] > 0)
+    //         {
+    //             printf("%lu ", layer_counts[i].load());
+    //         }
+    //         else
+    //         {
+    //             printf("\n");
+    //             break;
+    //         }
+    //     }
+    // }
 
-    {
-        auto start = std::chrono::high_resolution_clock::now();
+    // {
+    //     auto start = std::chrono::high_resolution_clock::now();
 
-        graph.build_tree<uint64_t, uint64_t>(
-            init_label_func,
-            continue_reduce_print_func,
-            update_func,
-            active_result_func,
-            labels
-        );
+    //     graph.build_tree<uint64_t, uint64_t>(
+    //         init_label_func,
+    //         continue_reduce_print_func,
+    //         update_func,
+    //         active_result_func,
+    //         labels
+    //     );
 
-        auto end = std::chrono::high_resolution_clock::now();
-        fprintf(stderr, "exec: %.6lfs\n", 1e-6*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(end-start).count());
-    }
+    //     auto end = std::chrono::high_resolution_clock::now();
+    //     fprintf(stderr, "exec: %.6lfs\n", 1e-6*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(end-start).count());
+    // }
 
-    {
-        std::vector<std::atomic_uint64_t> layer_counts(MAXL);
-        for(auto &a : layer_counts) a = 0;
-        auto num_visited = graph.stream_vertices<uint64_t>(
-            [&](uint64_t vid)
-            {
-                if(labels[vid].data != MAXL)
-                {
-                    layer_counts[labels[vid].data]++;
-                    return 1;
-                }
-                return 0;
-            },
-            graph.get_dense_active_all()
-        );
-        fprintf(stderr, "%lu visited vertices: %lu\n", root, num_visited);
-        for(uint64_t i=0;i<layer_counts.size();i++)
-        {
-            if(layer_counts[i] > 0)
-            {
-                printf("%lu ", layer_counts[i].load());
-            }
-            else
-            {
-                printf("\n");
-                break;
-            }
-        }
-    }
+    // {
+    //     std::vector<std::atomic_uint64_t> layer_counts(MAXL);
+    //     for(auto &a : layer_counts) a = 0;
+    //     auto num_visited = graph.stream_vertices<uint64_t>(
+    //         [&](uint64_t vid)
+    //         {
+    //             if(labels[vid].data != MAXL)
+    //             {
+    //                 layer_counts[labels[vid].data]++;
+    //                 return 1;
+    //             }
+    //             return 0;
+    //         },
+    //         graph.get_dense_active_all()
+    //     );
+    //     fprintf(stderr, "%lu visited vertices: %lu\n", root, num_visited);
+    //     for(uint64_t i=0;i<layer_counts.size();i++)
+    //     {
+    //         if(layer_counts[i] > 0)
+    //         {
+    //             printf("%lu ", layer_counts[i].load());
+    //         }
+    //         else
+    //         {
+    //             printf("\n");
+    //             break;
+    //         }
+    //     }
+    // }
     return 0;
 }

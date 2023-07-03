@@ -15,12 +15,54 @@
 
 #include <cstdio>
 #include <cstdint>
-int main()
+#include <iostream>
+#include <fstream>
+#include <sstream>
+int main(int argc, char *argv[])
 {
-    uint64_t x, y;
-    while(scanf("%lu%lu", &x, &y) != EOF)
-    {
-        fwrite(&x, sizeof(x), 1, stdout);
-        fwrite(&y, sizeof(x), 1, stdout);
+    // uint64_t x, y;
+    // printf("hello");    
+    // while(scanf("%lu%lu", &x, &y) != EOF)
+    // {
+    //     printf("hello");   
+    //     fwrite(&x, sizeof(x), 1, stdout);
+    //     fwrite(&y, sizeof(x), 1, stdout);
+    //     printf("x is %d, y is %d", x, y);
+    // }
+    if (argc != 3) {
+        std::cerr << "Usage: program input_file output_file\n";
+        return 1;
     }
+
+    std::ifstream inputFile(argv[1]);
+    std::ofstream outputFile(argv[2], std::ios::binary);
+
+    if (!inputFile) {
+        std::cerr << "Error opening input file\n";
+        return 1;
+    }
+
+    if (!outputFile) {
+        std::cerr << "Error opening output file\n";
+        return 1;
+    }
+
+    std::string line;
+    while (getline(inputFile, line)) {
+        std::istringstream lineStream(line);
+        uint64_t x, y;
+
+        // Try to read two integers
+        if (lineStream >> x >> y) {
+            // Check if we've reached the end of the line.
+            // If not, the line contains more than two numbers and we ignore it.
+            std::string remainder;
+            if (!(lineStream >> remainder)) {
+                outputFile.write(reinterpret_cast<const char*>(&x), sizeof(x));
+                outputFile.write(reinterpret_cast<const char*>(&y), sizeof(y));
+            }
+        }
+    }
+
+    return 0;     
 }

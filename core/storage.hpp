@@ -341,7 +341,12 @@ public:
         if(!edge_random_accessable) throw std::runtime_error("Storage is not edge_random_accessable.");
         return array_of_adjstruct[vid].adjlist;
     }
-
+    // uint64_t get_dst(uint64_t src, uint64_t dst_ptr){
+    //     // return array_of_adjstruct[src].adjlist[dst_ptr].nbr;
+    //     uint64_t dst;
+    //     dst = array_of_adjstruct[src].adjlist_map
+    //     retunr dst;
+    // }
     uint64_t update_edge(adjedge_type ae, uint64_t vid, int update)
     {
         auto &adj_struct = array_of_adjstruct[vid];
@@ -396,7 +401,35 @@ public:
         degree += (update > 0 || current_size>=(uint64_t)-update)*update;
         return current_size;
     }
+    uint64_t check_dest (uint64_t vid, uint64_t dest_ptr){
+        auto adj_struct = array_of_adjstruct[vid];
+        // std::lock_guard<lock_type> lock(adj_struct.futex);
 
+        // auto &degree = adj_struct.degree;
+        // auto &adjlist = adj_struct.adjlist;
+        // auto &adjlist_map = adj_struct.adjlist_map;
+        // auto has_map = adjlist_map != nullptr;
+        std::cout<<adj_struct.degree<<std::endl;
+        std::cout<<adj_struct.adjlist[dest_ptr].nbr<<std::endl;
+        // return adj_struct.adjlist[dest_ptr].dst;
+        // uint64_t current_size = 0;
+        // if(adjlist.size() >= need_index_threshold && !has_map)
+        // {
+        //     adjlist_map = std::make_shared<adjmap_type>(adjlist.size());
+        //     adjlist_map->set_empty_key(empty_key);
+        //     for(uint64_t i=0;i<adjlist.size();i++)
+        //     {
+        //         adjlist_map->insert(std::make_pair(adjlist[i], i));
+        //     }
+        //     has_map = true;
+        // }
+        // if (has_map)
+        // {
+
+        // }
+        return 0;
+
+    }
     uint64_t get_edge_num(uint64_t vid, adjedge_type ae)
     {
         auto &degree = array_of_adjstruct[vid].degree;

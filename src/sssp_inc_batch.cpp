@@ -63,7 +63,7 @@ int main(int argc, char** argv)
             write_max(&num_vertices, e.second+1);
         }
         auto end = std::chrono::high_resolution_clock::now();
-        fprintf(stderr, "read: %.6lfs\n", 1e-6*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(end-start).count());
+        fprintf(stderr, "read: %.6lfms\n", 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(end-start).count());
         fprintf(stderr, "|E|=%lu\n", raw_edges_len);
     }
     Graph<uint64_t> graph(num_vertices, raw_edges_len, false, true);
@@ -78,12 +78,17 @@ int main(int argc, char** argv)
         for(uint64_t i=0;i<imported_edges;i++)
         {
             const auto &e = raw_edges[i];
-            graph.add_edge({e.first, e.second, (e.first+e.second)%128}, true);
+            graph.add_edge({e.first, e.second, (e.first+e.second)%128+1}, true);
         }
         auto end = std::chrono::high_resolution_clock::now();
-        fprintf(stderr, "add: %.6lfs\n", 1e-6*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(end-start).count());
+        fprintf(stderr, "add: %.6lfms\n", 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(end-start).count());
     }
-
+    {
+        //test sampling and random generation function
+        //bool exist = graph_check_edge(std::pair<uint64_t, uint64_t>)
+        //std::vector <pair<uint64_t, uint64_t>> random_ins_edges = graph.ramdom_generate(uint64_t random_seed)
+        //std::vector <pair<uint64_t, uint64_t>> random_del_edges = graph.ramdom_sample(uint64_t random_seed)
+    }
     auto labels = graph.alloc_vertex_tree_array<uint64_t>();
     const uint64_t MAXL = 134217728;
     auto continue_reduce_func = [](uint64_t depth, uint64_t total_result, uint64_t local_result) -> std::pair<bool, uint64_t>
@@ -124,7 +129,7 @@ int main(int argc, char** argv)
         );
 
         auto end = std::chrono::high_resolution_clock::now();
-        fprintf(stderr, "exec: %.6lfs\n", 1e-6*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(end-start).count());
+        fprintf(stderr, "exec: %.6lfms\n", 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(end-start).count());
     }
 
     std::atomic_uint64_t add_edge_len(0), del_edge_len(0);
@@ -139,33 +144,48 @@ int main(int argc, char** argv)
         add_edge.clear(); del_edge.clear();
         auto local_end = std::min(local_begin+batch, raw_edges_len);
         {
+            auto add_mutation_start = std::chrono::high_resolution_clock::now();            
             std::atomic_uint64_t length(0);
             THRESHOLD_OPENMP_LOCAL("omp parallel for", local_end - local_begin, 1024, 
                 for(uint64_t i=local_begin;i<local_end;i++)
                 {
                     const auto &e = raw_edges[i];
-                    auto old_num = graph.add_edge({e.first, e.second, (e.first+e.second)%128}, true);
-                    if(!old_num) added_edges[length.fetch_add(1)] = {e.first, e.second, (e.first+e.second)%128};
+                    auto old_num = graph.add_edge({e.first, e.second, (e.first+e.second)%128+1}, true);
+                    if(!old_num) added_edges[length.fetch_add(1)] = {e.first, e.second, (e.first+e.second)%128+1};
                 }
             );
+        auto add_mutation_end = std::chrono::high_resolution_clock::now();
+        printf("after addition %ld edges left\n",graph.count_edges());
+        fprintf(stderr, "add mutation time: %.6lfms\n", 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(add_mutation_end- add_mutation_start).count());          
+        auto add_compute_start = std::chrono::high_resolution_clock::now();
+
             graph.update_tree_add<uint64_t, uint64_t>(
                 continue_reduce_func,
                 update_func,
                 active_result_func,
                 labels, added_edges, length.load(), true
             );
+        auto add_compute_end = std::chrono::high_resolution_clock::now();
+        fprintf(stderr, "add compute: %.6lfms\n", 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(add_compute_end-add_compute_start).count());
+                
         }
 
         {
+            auto del_mutation_start = std::chrono::high_resolution_clock::now();            
             std::atomic_uint64_t length(0);
             THRESHOLD_OPENMP_LOCAL("omp parallel for", local_end - local_begin, 1024, 
                 for(uint64_t i=local_begin;i<local_end;i++)
                 {   
                     const auto &e = raw_edges[i-imported_edges];
-                    auto old_num = graph.del_edge({e.first, e.second, (e.first+e.second)%128}, true);
-                    if(old_num==1) deled_edges[length.fetch_add(1)] = {e.first, e.second, (e.first+e.second)%128};
+                    auto old_num = graph.del_edge({e.first, e.second, (e.first+e.second)%128+1}, true);
+                    if(old_num==1) deled_edges[length.fetch_add(1)] = {e.first, e.second, (e.first+e.second)%128+1};
                 }
             );
+        auto del_mutation_end = std::chrono::high_resolution_clock::now();
+        printf("after addition %ld edges left\n",graph.count_edges());
+        fprintf(stderr, "del mutation time: %.6lfms\n", 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(del_mutation_end- del_mutation_start).count());                 
+        auto del_compute_start = std::chrono::high_resolution_clock::now();            
+            
             graph.update_tree_del<uint64_t, uint64_t>(
                 init_label_func,
                 continue_reduce_func,
@@ -174,6 +194,9 @@ int main(int argc, char** argv)
                 equal_func,
                 labels, deled_edges, length.load(), true
             );
+        auto del_compute_end = std::chrono::high_resolution_clock::now();            
+        fprintf(stderr, "del compute time: %.6lfms\n", 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(del_compute_end- del_compute_start).count());                 
+
         }
 
         num_batches ++;
@@ -184,69 +207,70 @@ int main(int argc, char** argv)
     fprintf(stderr, "wall_times = %lf us\n", (1e-3)*wall_nanoseconds);
     fprintf(stderr, "wall_mean = %lf us\n", (1e-3)*wall_nanoseconds/num_batches);
 
-    {
-        std::vector<std::atomic_uint64_t> layer_counts(MAXL);
-        for(auto &a : layer_counts) a = 0;
-        graph.stream_vertices<uint64_t>(
-            [&](uint64_t vid)
-            {
-                if(labels[vid].data != MAXL)
-                {
-                    layer_counts[labels[vid].data]++;
-                    return 1;
-                }
-                return 0;
-            },
-            graph.get_dense_active_all()
-        );
-        for(uint64_t i=0;i<layer_counts.size();i++)
-        {
-            if(layer_counts[i] > 0)
-            {
-                printf("%lu: %lu, ", i, layer_counts[i].load());
-            }
-        }
-        printf("\n");
-    }
+    // {
+    //     std::vector<std::atomic_uint64_t> layer_counts(MAXL);
+    //     for(auto &a : layer_counts) a = 0;
+    //     graph.stream_vertices<uint64_t>(
+    //         [&](uint64_t vid)
+    //         {
+    //             if(labels[vid].data != MAXL)
+    //             {
+    //                 layer_counts[labels[vid].data]++;
+    //                 return 1;
+    //             }
+    //             return 0;
+    //         },
+    //         graph.get_dense_active_all()
+    //     );
+    //     for(uint64_t i=0;i<layer_counts.size();i++)
+    //     {
+    //         if(layer_counts[i] > 0)
+    //         {
+    //             printf("%lu: %lu, ", i, layer_counts[i].load());
+    //         }
+    //     }
+    //     printf("\n");
+    // }
 
-    {
-        auto start = std::chrono::high_resolution_clock::now();
+    // {
+    //     auto start = std::chrono::high_resolution_clock::now();
 
-        graph.build_tree<uint64_t, uint64_t>(
-            init_label_func,
-            continue_reduce_print_func,
-            update_func,
-            active_result_func,
-            labels
-        );
+    //     graph.build_tree<uint64_t, uint64_t>(
+    //         init_label_func,
+    //         continue_reduce_print_func,
+    //         update_func,
+    //         active_result_func,
+    //         labels
+    //     );
 
-        auto end = std::chrono::high_resolution_clock::now();
-        fprintf(stderr, "exec: %.6lfs\n", 1e-6*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(end-start).count());
-    }
+    //     auto end = std::chrono::high_resolution_clock::now();
+    //     fprintf(stderr, "exec: %.6lfms\n", 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(end-start).count());
+    // }
 
-    {
-        std::vector<std::atomic_uint64_t> layer_counts(MAXL);
-        for(auto &a : layer_counts) a = 0;
-        graph.stream_vertices<uint64_t>(
-            [&](uint64_t vid)
-            {
-                if(labels[vid].data != MAXL)
-                {
-                    layer_counts[labels[vid].data]++;
-                    return 1;
-                }
-                return 0;
-            },
-            graph.get_dense_active_all()
-        );
-        for(uint64_t i=0;i<layer_counts.size();i++)
-        {
-            if(layer_counts[i] > 0)
-            {
-                printf("%lu: %lu, ", i, layer_counts[i].load());
-            }
-        }
-        printf("\n");
-    }
+    // {
+    //     std::vector<std::atomic_uint64_t> layer_counts(MAXL);
+    //     for(auto &a : layer_counts) a = 0;
+    //     graph.stream_vertices<uint64_t>(
+    //         [&](uint64_t vid)
+    //         {
+    //             if(labels[vid].data != MAXL)
+    //             {
+    //                 layer_counts[labels[vid].data]++;
+    //                 return 1;
+    //             }
+    //             return 0;
+    //         },
+    //         graph.get_dense_active_all()
+    //     );
+    //     for(uint64_t i=0;i<layer_counts.size();i++)
+    //     {
+    //         if(layer_counts[i] > 0)
+    //         {
+    //             printf("%lu: %lu, ", i, layer_counts[i].load());
+    //         }
+    //     }
+    //     printf("\n");
+    // }
+    
     return 0;
 }

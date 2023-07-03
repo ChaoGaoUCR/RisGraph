@@ -1,0 +1,209 @@
+read: 0.017365s
+|E|=68993773
+|V|=4847571
+add: 2083.058000ms
+Init exec: 399.515000ms
+del mutation time: 18.645000ms
+del compute time: 154.494000ms
+add mutation time: 16.563000ms
+add compute: 45.027000ms
+Init exec: 409.509000ms
+del mutation time: 37.848000ms
+del compute time: 64.589000ms
+add mutation time: 18.571000ms
+add compute: 28.732000ms
+Init exec: 371.000000ms
+del mutation time: 24.713000ms
+del compute time: 76.994000ms
+add mutation time: 31.300000ms
+add compute: 33.235000ms
+Init exec: 386.723000ms
+del mutation time: 51.315000ms
+del compute time: 78.814000ms
+add mutation time: 20.433000ms
+add compute: 31.865000ms
+Init exec: 381.198000ms
+del mutation time: 33.003000ms
+del compute time: 63.006000ms
+add mutation time: 28.331000ms
+add compute: 28.725000ms
+Init exec: 379.836000ms
+del mutation time: 43.314000ms
+del compute time: 219.727000ms
+add mutation time: 38.703000ms
+add compute: 78.385000ms
+Init exec: 367.524000ms
+del mutation time: 60.489000ms
+del compute time: 116.052000ms
+add mutation time: 39.600000ms
+add compute: 49.042000ms
+Init exec: 360.419000ms
+del mutation time: 41.909000ms
+del compute time: 136.599000ms
+add mutation time: 38.756000ms
+add compute: 54.095000ms
+Init exec: 506.065000ms
+del mutation time: 44.152000ms
+del compute time: 129.310000ms
+add mutation time: 42.273000ms
+add compute: 50.026000ms
+Init exec: 353.395000ms
+del mutation time: 41.264000ms
+del compute time: 116.755000ms
+add mutation time: 39.084000ms
+add compute: 46.386000ms
+Init exec: 360.289000ms
+del mutation time: 62.078000ms
+del compute time: 154.920000ms
+add mutation time: 77.575000ms
+add compute: 67.241000ms
+Init exec: 358.258000ms
+del mutation time: 61.511000ms
+del compute time: 181.644000ms
+add mutation time: 60.104000ms
+add compute: 71.793000ms
+Init exec: 353.350000ms
+del mutation time: 60.339000ms
+del compute time: 179.466000ms
+add mutation time: 58.959000ms
+add compute: 70.648000ms
+Init exec: 354.564000ms
+del mutation time: 61.381000ms
+del compute time: 204.246000ms
+add mutation time: 59.770000ms
+add compute: 79.821000ms
+Init exec: 353.280000ms
+del mutation time: 59.811000ms
+del compute time: 372.736000ms
+add mutation time: 68.328000ms
+add compute: 118.057000ms
+Init exec: 470.235000ms
+del mutation time: 90.461000ms
+del compute time: 200.114000ms
+add mutation time: 80.618000ms
+add compute: 87.843000ms
+Init exec: 366.740000ms
+del mutation time: 81.458000ms
+del compute time: 202.186000ms
+add mutation time: 77.871000ms
+add compute: 89.375000ms
+Init exec: 354.001000ms
+del mutation time: 81.933000ms
+del compute time: 211.387000ms
+add mutation time: 80.131000ms
+add compute: 90.329000ms
+Init exec: 362.315000ms
+del mutation time: 90.774000ms
+del compute time: 234.947000ms
+add mutation time: 101.842000ms
+add compute: 94.948000ms
+Init exec: 369.076000ms
+del mutation time: 88.781000ms
+del compute time: 215.815000ms
+add mutation time: 77.112000ms
+add compute: 91.308000ms
+Init exec: 356.792000ms
+del mutation time: 111.584000ms
+del compute time: 266.095000ms
+add mutation time: 111.184000ms
+add compute: 107.994000ms
+Init exec: 355.386000ms
+del mutation time: 101.805000ms
+del compute time: 337.988000ms
+add mutation time: 99.364000ms
+add compute: 139.607000ms
+Init exec: 355.342000ms
+del mutation time: 101.334000ms
+del compute time: 312.860000ms
+add mutation time: 99.210000ms
+add compute: 133.059000ms
+Init exec: 356.218000ms
+del mutation time: 99.118000ms
+del compute time: 265.504000ms
+add mutation time: 104.818000ms
+add compute: 110.999000ms
+Init exec: 357.597000ms
+del mutation time: 101.624000ms
+del compute time: 388.971000ms
+add mutation time: 100.754000ms
+add compute: 153.770000ms
+*********************************************
+This round the batch has 700000 edges
+After addition 68993773 edges left
+*********************************************
+This round the batch has 700000 edges
+After addition 68993773 edges left
+*********************************************
+This round the batch has 700000 edges
+After addition 68993773 edges left
+*********************************************
+This round the batch has 700000 edges
+After addition 68993773 edges left
+*********************************************
+This round the batch has 700000 edges
+After addition 68993773 edges left
+$$$$$$$$$$$$$$$ 1 round is over $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+*********************************************
+This round the batch has 1400000 edges
+After addition 68993773 edges left
+*********************************************
+This round the batch has 1400000 edges
+After addition 68993773 edges left
+*********************************************
+This round the batch has 1400000 edges
+After addition 68993773 edges left
+*********************************************
+This round the batch has 1400000 edges
+After addition 68993773 edges left
+*********************************************
+This round the batch has 1400000 edges
+After addition 68993773 edges left
+$$$$$$$$$$$$$$$ 2 round is over $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+*********************************************
+This round the batch has 2100000 edges
+After addition 68993773 edges left
+*********************************************
+This round the batch has 2100000 edges
+After addition 68993773 edges left
+*********************************************
+This round the batch has 2100000 edges
+After addition 68993773 edges left
+*********************************************
+This round the batch has 2100000 edges
+After addition 68993773 edges left
+*********************************************
+This round the batch has 2100000 edges
+After addition 68993773 edges left
+$$$$$$$$$$$$$$$ 3 round is over $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+*********************************************
+This round the batch has 2800000 edges
+After addition 68993773 edges left
+*********************************************
+This round the batch has 2800000 edges
+After addition 68993773 edges left
+*********************************************
+This round the batch has 2800000 edges
+After addition 68993773 edges left
+*********************************************
+This round the batch has 2800000 edges
+After addition 68993773 edges left
+*********************************************
+This round the batch has 2800000 edges
+After addition 68993773 edges left
+$$$$$$$$$$$$$$$ 4 round is over $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+*********************************************
+This round the batch has 3500000 edges
+After addition 68993773 edges left
+*********************************************
+This round the batch has 3500000 edges
+After addition 68993773 edges left
+*********************************************
+This round the batch has 3500000 edges
+After addition 68993773 edges left
+*********************************************
+This round the batch has 3500000 edges
+After addition 68993773 edges left
+*********************************************
+This round the batch has 3500000 edges
+After addition 68993773 edges left
+$$$$$$$$$$$$$$$ 5 round is over $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$

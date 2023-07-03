@@ -1,0 +1,184 @@
+read: 0.016088s
+|E|=68993773
+|V|=4847571
+add: 2116.486000ms
+*********************************************
+Init exec: 382.862000ms
+This round the batch has 700000 edges
+del mutation time: 19.255000ms
+del compute time: 137.096000ms
+add mutation time: 24.269000ms
+add compute: 38.387000ms
+*********************************************
+Init exec: 399.677000ms
+This round the batch has 700000 edges
+del mutation time: 36.776000ms
+del compute time: 65.383000ms
+add mutation time: 28.478000ms
+add compute: 25.713000ms
+*********************************************
+Init exec: 379.468000ms
+This round the batch has 700000 edges
+del mutation time: 22.850000ms
+del compute time: 65.132000ms
+add mutation time: 26.753000ms
+add compute: 27.591000ms
+*********************************************
+Init exec: 369.549000ms
+This round the batch has 700000 edges
+del mutation time: 21.163000ms
+del compute time: 70.498000ms
+add mutation time: 19.716000ms
+add compute: 26.861000ms
+*********************************************
+Init exec: 377.925000ms
+This round the batch has 700000 edges
+del mutation time: 24.346000ms
+del compute time: 58.547000ms
+add mutation time: 21.955000ms
+add compute: 23.610000ms
+$$$$$$$$$$$$$$$ 1 round is over $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+*********************************************
+Init exec: 374.708000ms
+This round the batch has 1400000 edges
+del mutation time: 43.434000ms
+del compute time: 205.962000ms
+add mutation time: 47.103000ms
+add compute: 64.570000ms
+*********************************************
+Init exec: 419.890000ms
+This round the batch has 1400000 edges
+del mutation time: 46.288000ms
+del compute time: 107.867000ms
+add mutation time: 46.190000ms
+add compute: 43.183000ms
+*********************************************
+Init exec: 364.038000ms
+This round the batch has 1400000 edges
+del mutation time: 40.923000ms
+del compute time: 127.481000ms
+add mutation time: 46.483000ms
+add compute: 48.452000ms
+*********************************************
+Init exec: 372.160000ms
+This round the batch has 1400000 edges
+del mutation time: 47.135000ms
+del compute time: 113.585000ms
+add mutation time: 46.196000ms
+add compute: 44.905000ms
+*********************************************
+Init exec: 369.302000ms
+This round the batch has 1400000 edges
+del mutation time: 44.130000ms
+del compute time: 96.497000ms
+add mutation time: 40.142000ms
+add compute: 40.589000ms
+$$$$$$$$$$$$$$$ 2 round is over $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+*********************************************
+Init exec: 368.445000ms
+This round the batch has 2100000 edges
+del mutation time: 70.243000ms
+del compute time: 136.916000ms
+add mutation time: 61.943000ms
+add compute: 59.113000ms
+*********************************************
+Init exec: 365.750000ms
+This round the batch has 2100000 edges
+del mutation time: 61.697000ms
+del compute time: 163.415000ms
+add mutation time: 63.757000ms
+add compute: 64.553000ms
+*********************************************
+Init exec: 450.475000ms
+This round the batch has 2100000 edges
+del mutation time: 63.102000ms
+del compute time: 157.980000ms
+add mutation time: 60.345000ms
+add compute: 63.431000ms
+*********************************************
+Init exec: 365.800000ms
+This round the batch has 2100000 edges
+del mutation time: 62.140000ms
+del compute time: 185.489000ms
+add mutation time: 59.589000ms
+add compute: 69.771000ms
+*********************************************
+Init exec: 364.061000ms
+This round the batch has 2100000 edges
+del mutation time: 61.049000ms
+del compute time: 284.621000ms
+add mutation time: 59.245000ms
+add compute: 94.337000ms
+$$$$$$$$$$$$$$$ 3 round is over $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+*********************************************
+Init exec: 364.886000ms
+This round the batch has 2800000 edges
+del mutation time: 83.360000ms
+del compute time: 181.430000ms
+add mutation time: 81.218000ms
+add compute: 76.915000ms
+*********************************************
+Init exec: 360.568000ms
+This round the batch has 2800000 edges
+del mutation time: 82.296000ms
+del compute time: 181.301000ms
+add mutation time: 80.074000ms
+add compute: 77.244000ms
+*********************************************
+Init exec: 357.817000ms
+This round the batch has 2800000 edges
+del mutation time: 80.926000ms
+del compute time: 192.254000ms
+add mutation time: 79.107000ms
+add compute: 79.230000ms
+*********************************************
+Init exec: 360.950000ms
+This round the batch has 2800000 edges
+del mutation time: 80.717000ms
+del compute time: 209.334000ms
+add mutation time: 79.362000ms
+add compute: 84.634000ms
+*********************************************
+Init exec: 360.408000ms
+This round the batch has 2800000 edges
+del mutation time: 80.431000ms
+del compute time: 202.237000ms
+add mutation time: 81.734000ms
+add compute: 78.665000ms
+$$$$$$$$$$$$$$$ 4 round is over $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+*********************************************
+Init exec: 361.958000ms
+This round the batch has 3500000 edges
+del mutation time: 101.422000ms
+del compute time: 241.381000ms
+add mutation time: 107.127000ms
+add compute: 95.759000ms
+*********************************************
+Init exec: 357.491000ms
+This round the batch has 3500000 edges
+del mutation time: 102.373000ms
+del compute time: 313.476000ms
+add mutation time: 100.594000ms
+add compute: 119.751000ms
+*********************************************
+Init exec: 363.066000ms
+This round the batch has 3500000 edges
+del mutation time: 98.323000ms
+del compute time: 279.534000ms
+add mutation time: 96.810000ms
+add compute: 108.308000ms
+*********************************************
+Init exec: 358.280000ms
+This round the batch has 3500000 edges
+del mutation time: 99.009000ms
+del compute time: 220.137000ms
+add mutation time: 97.213000ms
+add compute: 95.293000ms
+*********************************************
+Init exec: 357.863000ms
+This round the batch has 3500000 edges
+del mutation time: 100.336000ms
+del compute time: 344.762000ms
+add mutation time: 98.799000ms
+add compute: 129.443000ms
+$$$$$$$$$$$$$$$ 5 round is over $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$

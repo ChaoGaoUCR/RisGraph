@@ -90,7 +90,7 @@ int main(int argc, char** argv)
     {
         return {vid==root?0:MAXL, vid==root};
     };
-
+    // initial compute function
     {
         auto start = std::chrono::system_clock::now();
 
