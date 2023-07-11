@@ -137,10 +137,17 @@ int main(int argc, char** argv)
     for (int round = 1; round < compute_batch+1; round++)
     {
         uint64_t batch_current = batch * round;
+        std::vector<double> add_time_;
+        add_time_.resize(9);
+        for (int i = 0; i < 9; i++)
+        {
+            add_time_[i] = 0;
+        }
+        
         for (int small_round = 1; small_round < 10; small_round++)
         {
         // printf("*********************************************\n");
-        fprintf(stderr,"*********************************************\n");
+        // fprintf(stderr,"*********************************************\n");
         {
             auto start = std::chrono::high_resolution_clock::now();
 
@@ -152,9 +159,9 @@ int main(int argc, char** argv)
                 labels
             );
             auto end = std::chrono::high_resolution_clock::now();
-            fprintf(stderr, "Init exec: %.6lfms\n", 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(end-start).count());
+            // fprintf(stderr, "Init exec: %.6lfms\n", 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(end-start).count());
         }                
-            fprintf(stderr, "This round the batch has %ld edges\n",batch_current);
+            // fprintf(stderr, "This round the batch has %ld edges\n",batch_current);
             // printf("Begining Graph has %ld edges\n",graph.count_edges());
             srand(random_seed * small_round);
             // uint64_t batch_current = batch * round;
@@ -174,7 +181,7 @@ int main(int argc, char** argv)
             );
         auto del_mutation_end = std::chrono::high_resolution_clock::now();
         // printf("after deletion %ld edges left\n",graph.count_edges());
-        fprintf(stderr, "del mutation time: %.6lfms\n", 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(del_mutation_end- del_mutation_start).count());               
+        // fprintf(stderr, "del mutation time: %.6lfms\n", 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(del_mutation_end- del_mutation_start).count());               
                 for(uint64_t i=0;i<batch_current;i++)
                 {
                     const auto &e = raw_edges[i+seed];
@@ -191,7 +198,7 @@ int main(int argc, char** argv)
                 labels, deled_edges, length.load(), true
             );
         auto del_compute_end = std::chrono::high_resolution_clock::now();            
-        fprintf(stderr, "del compute time: %.6lfms\n", 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(del_compute_end- del_compute_start).count());                                 
+        // fprintf(stderr, "del compute time: %.6lfms\n", 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(del_compute_end- del_compute_start).count());                                 
     }
     edge_after_del = graph.count_edges();
         // printf("Before addition, Graph has %ld edges\n",graph.count_edges());
@@ -210,7 +217,7 @@ int main(int argc, char** argv)
                 );
             auto add_mutation_end = std::chrono::high_resolution_clock::now();
             // printf("After addition %ld edges left\n",graph.count_edges());
-            fprintf(stderr, "add mutation time: %.6lfms\n", 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(add_mutation_end- add_mutation_start).count());
+            // fprintf(stderr, "add mutation time: %.6lfms\n", 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(add_mutation_end- add_mutation_start).count());
             // addition batch_current updates
             std::atomic_uint64_t length(0);
             for (uint64_t i = 0; i < batch_current; i++)
@@ -226,7 +233,8 @@ int main(int argc, char** argv)
                     labels, added_edges, length.load(), true
                 );
             auto add_compute_end = std::chrono::high_resolution_clock::now();
-            fprintf(stderr, "add compute: %.6lfms\n", 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(add_compute_end-add_compute_start).count());        
+            // fprintf(stderr, "add compute: %.6lfms\n", 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(add_compute_end-add_compute_start).count());
+            add_time_[small_round-1] =  1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(add_compute_end-add_compute_start).count();        
         }
         edge_after_add = graph.count_edges();
         if (edge_after_add != edge_begin)
@@ -234,7 +242,14 @@ int main(int argc, char** argv)
             fprintf(stderr ,"graph is not recovered! The edge left is %ld\n", (edge_begin - edge_after_add));
         }
         }
-        fprintf(stderr, "$$$$$$$$$$$$$$$ %d round is over $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n", round);
+        // for (int i = 0; i < 9; i++)
+        // {
+        //     fprintf(stderr, "add compute time is: %.6lfms\n", add_time_[i]);
+        // }
+        double average = std::accumulate(add_time_.begin(), add_time_.end(), 0.0)/add_time_.size();
+            // fprintf(stderr, "add compute time is: %.6lfms\n", average);
+            fprintf(stderr, "%.6lf\n", average);
+        // fprintf(stderr, "$$$$$$$$$$$$$$$ %d round is over $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n", round);
     }
     
     // printf("Graph has %ld edges\n",graph.count_edges());

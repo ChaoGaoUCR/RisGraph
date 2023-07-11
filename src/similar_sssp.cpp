@@ -146,8 +146,8 @@ int main(int argc, char** argv)
     for (int round = 1; round < compute_batch+1; round++)
     {
         uint64_t batch_current = batch * round;
-        // std::vector<_Float64> ratio;
-        // ratio.resize(9);
+        std::vector<_Float64> ratio;
+        ratio.resize(9);
         for (int small_round = 1; small_round < 10; small_round++)
         {
         // printf("*********************************************\n");
@@ -229,7 +229,7 @@ int main(int argc, char** argv)
                 const auto &e = raw_edges[i+seed];
                 added_edges[length.fetch_add(1)] = {e.first, e.second, (e.first+e.second)%128+1};
             }
-            // fprintf(stderr, "Before compute %ld nodes are activate %ld nodes are total\n", graph.count_activate(), graph.nodes_track.size());
+            fprintf(stderr, "Before compute %ld nodes are activate %ld nodes are total\n", graph.count_activate(), graph.nodes_track.size());
             uint64_t tracker_count = 0;
             uint64_t edge_similar = 0;
             uint64_t edge_traverse = 0;
@@ -242,35 +242,35 @@ int main(int argc, char** argv)
                 );
             auto add_compute_end = std::chrono::high_resolution_clock::now();
             fprintf(stderr, "add compute: %.6lfms\n", 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(add_compute_end-add_compute_start).count());
-            // fprintf(stderr, "After compute %ld nodes are activate %ld nodes are total\n", graph.count_activate(), graph.nodes_track.size());
-            // if (small_round == 1)
-            // {
-            //     //first round only change track_before, don't compare
-            //     for (uint64_t tracker = 0; tracker < num_vertices; tracker++)
-            //     {
-            //         track_before[tracker] = graph.nodes_track[tracker];
-            //     }
-            // }
-            // else{
-            //     //first compare tracker_before and tracker now
-            //     for (uint64_t tracker = 0; tracker < num_vertices; tracker++)
-            //     {
-            //         if((track_before[tracker] == 1) && (graph.nodes_track[tracker] == 1)){
-            //             tracker_count++;
-            //             edge_similar += graph.count_out_going(tracker);
-            //         }
-            //         if (graph.nodes_track[tracker] == 1)
-            //         {
-            //             edge_traverse += graph.count_out_going(tracker);
-            //         }
+            fprintf(stderr, "After compute %ld nodes are activate %ld nodes are total\n", graph.count_activate(), graph.nodes_track.size());
+            if (small_round == 1)
+            {
+                //first round only change track_before, don't compare
+                for (uint64_t tracker = 0; tracker < num_vertices; tracker++)
+                {
+                    track_before[tracker] = graph.nodes_track[tracker];
+                }
+            }
+            else{
+                //first compare tracker_before and tracker now
+                for (uint64_t tracker = 0; tracker < num_vertices; tracker++)
+                {
+                    if((track_before[tracker] == 1) && (graph.nodes_track[tracker] == 1)){
+                        tracker_count++;
+                        edge_similar += graph.count_out_going(tracker);
+                    }
+                    if (graph.nodes_track[tracker] == 1)
+                    {
+                        edge_traverse += graph.count_out_going(tracker);
+                    }
                     
-            //         track_before[tracker] =  graph.nodes_track[tracker];
-            //     }
-            //     ratio[small_round] = static_cast<_Float64>(edge_similar)/edge_traverse;                
-            // }
-            // graph.clear_track();
-            // fprintf(stderr, "last round and this round has %ld ndoes similar, after reset %ld nodes are still active in graph.tracker\n", tracker_count, graph.count_activate());
-            // fprintf(stderr, "edge similar is %ld, edge traverse is %ld\n", edge_similar, edge_traverse);
+                    track_before[tracker] =  graph.nodes_track[tracker];
+                }
+                ratio[small_round] = static_cast<_Float64>(edge_similar)/edge_traverse;                
+            }
+            graph.clear_track();
+            fprintf(stderr, "last round and this round has %ld ndoes similar, after reset %ld nodes are still active in graph.tracker\n", tracker_count, graph.count_activate());
+            fprintf(stderr, "edge similar is %ld, edge traverse is %ld\n", edge_similar, edge_traverse);
         }
         edge_after_add = graph.count_edges();
         if (edge_after_add != edge_begin)
@@ -278,8 +278,8 @@ int main(int argc, char** argv)
             fprintf(stderr ,"graph is not recovered! The edge left is %ld\n", (edge_begin - edge_after_add));
         }
         }
-        // auto max_s = std::max_element(ratio.begin(), ratio.end());
-        // fprintf(stderr, "The maximim similarity is %f %\n", (*max_s)*100);
+        auto max_s = std::max_element(ratio.begin(), ratio.end());
+        fprintf(stderr, "The maximim similarity is %f %\n", (*max_s)*100);
         // for ( auto i:ratio)
         // {
         //     std::cout << i << std::endl;

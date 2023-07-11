@@ -344,7 +344,7 @@ public:
     // uint64_t get_dst(uint64_t src, uint64_t dst_ptr){
     //     // return array_of_adjstruct[src].adjlist[dst_ptr].nbr;
     //     uint64_t dst;
-    //     dst = array_of_adjstruct[src].adjlist_map
+    //     dst = array_of_adjstruct[src];
     //     retunr dst;
     // }
     uint64_t update_edge(adjedge_type ae, uint64_t vid, int update)

@@ -212,7 +212,17 @@ public:
         if(symmetric) return get_outgoing_adjlist_range(vid);
         return incoming.get_adjlist_iter(vid);
     }
-
+    uint64_t get_dst_number(uint64_t vid, uint64_t dst_ptr){
+        // return outgoing.get_dst(vid, dst_ptr);
+        auto edge_list = outgoing.get_adjlist(vid);
+        uint64_t dst = edge_list[dst_ptr].nbr;
+        return dst;
+    }
+    uint64_t get_src_number(uint64_t vid, uint64_t src_ptr){
+        auto edge_list = incoming.get_adjlist(vid);
+        uint64_t src = edge_list[src_ptr].nbr;
+        return src;
+    }
     uint64_t get_edge_num(edge_type e)
     {
         return outgoing.get_edge_num(e.src, e);
@@ -220,12 +230,21 @@ public:
     bool check_edge(edge_type e){
         if(e.src >= vertices || e.dst >= vertices) throw std::runtime_error("VertexId error.");
         // default only directed graph directed edge
-        if (outgoing.get_edge_num(e.src, e) == 0)
+        // if (outgoing.get_edge_num(e.src, e) == 0)
+        // {
+        //     return false;
+        // }
+        // else
+        //     return true;
+        auto adjlist = get_outgoing_adjlist(e.src);
+        for (uint64_t i = 0; i < get_outgoing_degree(e.src); i++)
         {
-            return false;
+            if (adjlist[i].nbr == e.dst)
+            {
+                return true;
+            }
         }
-        else
-            return true;
+        return false;
     }
     // std::vector <std::pair<uint64_t, uint64_t>>  random_sample_del(uint64_t random_seed, uint64_t sample_numbers){
     //     std::vector<std::pair<uint64_t, uint64_t>> sample_edges;
@@ -1105,7 +1124,7 @@ public:
                                 if(update_pair.first)
                                 {
                                     // activate_nodes.insert(dst);
-                                    nodes_track[dst] = 1;
+                                    // nodes_track[dst] = 1;
                                     active_out.active(dst);
                                     if(trace_modified) modified.active(dst);
                                     result = active_result_func(result, src, dst, src_data, dst_data, update_pair.second);
@@ -1150,7 +1169,7 @@ public:
                         {
                             active_out.active(dst);
                             // activate_nodes.insert(dst);
-                            nodes_track[dst] = 1;
+                            // nodes_track[dst] = 1;
                             // printf("hello?");
                             if(trace_modified) modified.active(dst);
                             result = active_result_func(result, src, dst, src_data, dst_data, update_pair.second);
@@ -1174,7 +1193,7 @@ public:
                             {
                                 active_out.active(dst);
                                 // activate_nodes.insert(dst);
-                                nodes_track[dst] = 1;
+                                // nodes_track[dst] = 1;
                                 if(trace_modified) modified.active(dst);
                                 result = active_result_func(result, src, dst, src_data, dst_data, update_pair.second);
                                 // printf("hello?");
@@ -1276,7 +1295,7 @@ public:
                     {
                         active_in.active(edge.dst);
                         // activate_nodes.insert(edge.dst);
-                        nodes_track[edge.dst] = 1;
+                        // nodes_track[edge.dst] = 1;
                         if(trace_modified) modified.active(edge.dst);
                         total_result = active_result_func(total_result, edge.src, edge.dst, src_data, dst_data, update_pair.second);
                         // printf("hello?");
