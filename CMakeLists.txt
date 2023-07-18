@@ -120,10 +120,19 @@ add_executable(sswp_inc_clf src/sswp_inc_clf.cpp)
 add_executable(sswp_inc_rt src/sswp_inc_rt.cpp)
 add_executable(similar_sswp src/similar_sswp.cpp)
 add_executable(similar_ssnp src/similar_ssnp.cpp)
-add_executable(similar_bfs src/similar_bfs.cpp)
+add_executable(similar_bfs src/similar_bfs_.cpp)
+add_executable(similar_viterbi src/similar_viterbi.cpp)
 add_executable(batch_sswp src/batch_sswp.cpp)
 add_executable(batch_ssnp src/batch_ssnp.cpp)
 add_executable(batch_viterbi src/batch_viterbi.cpp)
+add_executable(micro_sswp src/micro_sswp.cpp)
+add_executable(micro_sssp src/micro_sssp.cpp)
+add_executable(micro_ssnp src/micro_ssnp.cpp)
+add_executable(micro_bfs src/micro_bfs.cpp)
+add_executable(micro_viterbi src/micro_viterbi.cpp)
+add_executable(PPoPP_sssp src/PPoPP_sssp.cpp)
+
+
 
 
 
