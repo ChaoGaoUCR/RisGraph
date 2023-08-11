@@ -663,10 +663,11 @@ public:
             return adjlist[iter].num;
         }
     }
+    std::vector<AdjStruct> array_of_adjstruct;
 
 private:
     uint64_t vertices;
     adjedge_type empty_key;
     uint64_t need_index_threshold;
-    std::vector<AdjStruct> array_of_adjstruct;
+    // std::vector<AdjStruct> array_of_adjstruct;
 };

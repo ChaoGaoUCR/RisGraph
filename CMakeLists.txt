@@ -131,6 +131,18 @@ add_executable(micro_ssnp src/micro_ssnp.cpp)
 add_executable(micro_bfs src/micro_bfs.cpp)
 add_executable(micro_viterbi src/micro_viterbi.cpp)
 add_executable(PPoPP_sssp src/PPoPP_sssp.cpp)
+add_executable(PPoPP_sswp src/PPoPP_sswp.cpp)
+add_executable(PPoPP_ssnp src/PPoPP_ssnp.cpp)
+add_executable(PPoPP_viterbi src/PPoPP_viterbi.cpp)
+add_executable(PPoPP_bfs src/PPoPP_bfs.cpp)
+
+
+add_executable(pp_sssp src/ppopp-sssp.cpp)
+add_executable(pp_sswp src/ppopp-sswp.cpp)
+add_executable(pp_ssnp src/ppopp-ssnp.cpp)
+add_executable(pp_viterbi src/ppopp-viterbi.cpp)
+add_executable(pp_bfs src/ppopp-bfs.cpp)
+
 
 
 

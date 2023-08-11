@@ -78,7 +78,7 @@ int main(int argc, char** argv)
         for(uint64_t i=0;i<imported_edges;i++)
         {
             const auto &e = raw_edges[i];
-            graph.add_edge({e.first, e.second, (e.first+e.second)%128+1}, true);
+            graph.add_edge({e.first, e.second,1}, true);
         }
         auto end = std::chrono::high_resolution_clock::now();
         fprintf(stderr, "add: %.6lfms\n", 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(end-start).count());
@@ -179,7 +179,7 @@ int main(int argc, char** argv)
                     for(uint64_t i=0;i<batch_current;i++)
                     {   
                         const auto &e = raw_edges[i+seed];
-                        auto old_num = graph.del_edge({e.first, e.second, (e.first+e.second)%128+1}, true);
+                        auto old_num = graph.del_edge({e.first, e.second,1}, true);
                     }
                 );
             auto del_mutation_end = std::chrono::high_resolution_clock::now();
@@ -188,7 +188,7 @@ int main(int argc, char** argv)
                     for(uint64_t i=0;i<batch_current;i++)
                     {
                         const auto &e = raw_edges[i+seed];
-                        deled_edges[length.fetch_add(1)] = {e.first, e.second, (e.first+e.second)%128+1};   
+                        deled_edges[length.fetch_add(1)] = {e.first, e.second,1};   
                     }
             // std::cout<< length.load()<<std::endl;                
             auto del_compute_start = std::chrono::high_resolution_clock::now();            
@@ -216,7 +216,7 @@ int main(int argc, char** argv)
                         for(uint64_t i=0;i<batch_current;i++)
                         {
                             const auto &e = raw_edges[i+seed];
-                            auto old_num = graph.add_edge({e.first, e.second, (e.first+e.second)%128+1}, true);
+                            auto old_num = graph.add_edge({e.first, e.second,1}, true);
                         }
                     );
                 auto add_mutation_end = std::chrono::high_resolution_clock::now();
@@ -227,7 +227,7 @@ int main(int argc, char** argv)
                 for (uint64_t i = 0; i < batch_current; i++)
                 {
                     const auto &e = raw_edges[i+seed];
-                    added_edges[length.fetch_add(1)] = {e.first, e.second, (e.first+e.second)%128+1};
+                    added_edges[length.fetch_add(1)] = {e.first, e.second,1};
                 }
                 // fprintf(stderr, "Before compute %ld nodes are activate %ld nodes are total\n", graph.count_activate(), graph.nodes_track.size());
                 uint64_t tracker_count = 0;

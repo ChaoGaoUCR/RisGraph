@@ -230,21 +230,22 @@ public:
     bool check_edge(edge_type e){
         if(e.src >= vertices || e.dst >= vertices) throw std::runtime_error("VertexId error.");
         // default only directed graph directed edge
-        // if (outgoing.get_edge_num(e.src, e) == 0)
-        // {
-        //     return false;
-        // }
-        // else
-        //     return true;
-        auto adjlist = get_outgoing_adjlist(e.src);
-        for (uint64_t i = 0; i < get_outgoing_degree(e.src); i++)
+        if (outgoing.get_edge_num(e.src, e) == 0)
         {
-            if (adjlist[i].nbr == e.dst)
-            {
-                return true;
-            }
+            return false;
         }
-        return false;
+        else
+            return true;
+        // auto adjlist = get_outgoing_adjlist(e.src);
+        // auto &adjmap = outgoing.array_of_adjstruct[e.src].adjlist_map;
+        // for (uint64_t i = 0; i < get_outgoing_degree(e.src); i++)
+        // {
+        //     if (adjlist[i].nbr == e.dst) )
+        //     {
+        //         return true;
+        //     }
+        // }
+        // return false;
     }
     // std::vector <std::pair<uint64_t, uint64_t>>  random_sample_del(uint64_t random_seed, uint64_t sample_numbers){
     //     std::vector<std::pair<uint64_t, uint64_t>> sample_edges;
