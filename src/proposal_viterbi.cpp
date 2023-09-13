@@ -95,7 +95,7 @@ int main(int argc, char** argv)
     
     auto labels = graph.alloc_vertex_tree_array<uint64_t>();
     auto labels_diff = graph.alloc_vertex_tree_array<uint64_t>();
-    const uint64_t MAXL = 134217728;
+    const uint64_t MAXL = 65536;
     auto continue_reduce_func = [](uint64_t depth, uint64_t total_result, uint64_t local_result) -> std::pair<bool, uint64_t>
     {
         return std::make_pair(local_result>0, total_result+local_result);
@@ -107,7 +107,7 @@ int main(int argc, char** argv)
     };
     auto update_func = [](uint64_t src, uint64_t dst, uint64_t src_data, uint64_t dst_data, decltype(graph)::adjedge_type adjedge) -> std::pair<bool, uint64_t>
     {
-        return std::make_pair(src_data+adjedge.data < dst_data, src_data + adjedge.data);
+        return std::make_pair(src_data/adjedge.data > dst_data, src_data / adjedge.data);
     };
     auto active_result_func = [](uint64_t old_result, uint64_t src, uint64_t dst, uint64_t src_data, uint64_t old_dst_data, uint64_t new_dst_data) -> uint64_t
     {
@@ -115,11 +115,11 @@ int main(int argc, char** argv)
     };
     auto equal_func = [](uint64_t src, uint64_t dst, uint64_t src_data, uint64_t dst_data, decltype(graph)::adjedge_type adjedge) -> bool
     {
-        return src_data + adjedge.data == dst_data;
+        return src_data / adjedge.data == dst_data;
     };
     auto init_label_func = [=](uint64_t vid) -> std::pair<uint64_t, bool>
     {
-        return {vid==root?0:MAXL, vid==root};
+        return {vid==root?MAXL:0, vid==root};
     };
     int test_round = 30;
     std::atomic_uint64_t add_edge_len(0), del_edge_len(0);

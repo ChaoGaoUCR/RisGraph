@@ -107,7 +107,7 @@ int main(int argc, char** argv)
     };
     auto update_func = [](uint64_t src, uint64_t dst, uint64_t src_data, uint64_t dst_data, decltype(graph)::adjedge_type adjedge) -> std::pair<bool, uint64_t>
     {
-        return std::make_pair(src_data+adjedge.data < dst_data, src_data + adjedge.data);
+        return std::make_pair(std::max(src_data, adjedge.data) < dst_data, std::max(src_data, adjedge.data));
     };
     auto active_result_func = [](uint64_t old_result, uint64_t src, uint64_t dst, uint64_t src_data, uint64_t old_dst_data, uint64_t new_dst_data) -> uint64_t
     {
@@ -115,7 +115,7 @@ int main(int argc, char** argv)
     };
     auto equal_func = [](uint64_t src, uint64_t dst, uint64_t src_data, uint64_t dst_data, decltype(graph)::adjedge_type adjedge) -> bool
     {
-        return src_data + adjedge.data == dst_data;
+        return std::max(src_data, adjedge.data) == dst_data;
     };
     auto init_label_func = [=](uint64_t vid) -> std::pair<uint64_t, bool>
     {

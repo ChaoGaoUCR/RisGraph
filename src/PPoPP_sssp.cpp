@@ -134,17 +134,17 @@ int main(int argc, char** argv)
         {       
             auto start = std::chrono::high_resolution_clock::now();
             #pragma omp parallel for
-            for(uint64_t i=0;i<seed;i++)
+            for(uint64_t i=0;i<raw_edges_len;i++)
             {
                 const auto &e = raw_edges[i];
                 graph.add_edge({e.first, e.second, (e.first+e.second)%32+1}, true);
             }
-            #pragma omp parallel for
-            for (uint64_t i = seed+compute_batch*batch; i < raw_edges_len; i++)
-            {
-                const auto &e = raw_edges[i];
-                graph.add_edge({e.first, e.second, (e.first+e.second)%32+1}, true);            
-            }
+            // #pragma omp parallel for
+            // for (uint64_t i = seed+compute_batch*batch; i < raw_edges_len; i++)
+            // {
+            //     const auto &e = raw_edges[i];
+            //     graph.add_edge({e.first, e.second, (e.first+e.second)%32+1}, true);            
+            // }
             auto end = std::chrono::high_resolution_clock::now();
             fprintf(stderr, "add: %.6lfms\n", 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(end-start).count());
         }    
@@ -187,14 +187,48 @@ int main(int argc, char** argv)
                 );
             auto end = std::chrono::high_resolution_clock::now();
             fprintf(stderr, "Init exec: %.6lfms\n", 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(end-start).count());            
-            //sample core graph
             graph.build_tree<uint64_t, uint64_t>(
                 init_label_func,
                 continue_reduce_print_func,
                 update_func,
                 active_result_func,
-                label_add
+                label_del
                 );            
+
+
+            //del edges now
+            auto del_mutation_start = std::chrono::high_resolution_clock::now();            
+            THRESHOLD_OPENMP_LOCAL("omp parallel for", batch_current, 1024, 
+                for(uint64_t i=seed;i<seed+batch_current;i++)
+                {
+                    const auto &e = raw_edges[i];
+                    auto old_num = graph.del_edge({e.first, e.second, (e.first+e.second)%32+1}, true);
+                }
+            );
+            auto del_mutation_end = std::chrono::high_resolution_clock::now();
+            fprintf(stderr, "del mutation time: %.6lfms\n", 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(del_mutation_end- del_mutation_start).count());        
+            auto del_compute_start = std::chrono::high_resolution_clock::now();
+                graph.update_tree_del<uint64_t, uint64_t>(
+                    init_label_func,
+                    continue_reduce_func,
+                    update_func,
+                    active_result_func,
+                    equal_func,
+                    label_del, del_edge, length_del.load(), true
+                );
+            auto del_compute_end = std::chrono::high_resolution_clock::now();
+            fprintf(stderr, "del compute: %.6lfms\n", 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(del_compute_end- del_compute_start).count());            
+            // Now is Common Graph
+
+            //sample core graph
+            {graph.build_tree<uint64_t, uint64_t>(
+                init_label_func,
+                continue_reduce_print_func,
+                update_func,
+                active_result_func,
+                label_add
+                );
+            // label_add and label_del is common graph results here            
             uint64_t wrong = 0;
             int tqdm_ = 0;
             for (uint64_t src = 0; src < num_vertices; src++)
@@ -211,16 +245,16 @@ int main(int argc, char** argv)
                 {
                     uint64_t dst = graph.get_dst_number(src, j);
                     uint64_t edge_len = (src+dst)%32+1;
-                    if (label_init[src].data == other_value)
+                    if (label_del[src].data == other_value)
                     {
                         Q_Core.push_back(std::make_pair(src, dst));
                     } 
-                    if (label_init[src].data + edge_len == label_init[dst].data)
+                    if (label_del[src].data + edge_len == label_del[dst].data)
                     {
                         Q_Core.push_back(std::make_pair(src, dst));
                     }
                 }            
-                if (label_init[src].data == other_value)
+                if (label_del[src].data == other_value)
                 {
                     for (uint64_t j = 0; j < degreeW; j++)
                     {
@@ -231,7 +265,38 @@ int main(int argc, char** argv)
 
                     }
                 }
-            }        
+            }
+            for (uint64_t i = 0; i < num_vertices; i++)
+            {
+                if (label_init[i].data != label_add[i].data)
+                {
+                    uint64_t degreeV = graph.get_outgoing_degree(i);
+                    uint64_t degreeW = graph.get_incoming_degree(i);
+                    for (size_t j = 0; j < degreeV; j++)
+                    {
+                        uint64_t dst = graph.get_dst_number(i, j);
+                        uint64_t edge_len = (i+dst)%32+1;
+                        Q_Core.push_back(std::make_pair(i, dst));
+                    }
+                    for (size_t j = 0; j < degreeW; j++)
+                    {
+                        uint64_t dst = graph.get_src_number(i, j);
+                        uint64_t edge_len = (i+dst)%32+1;
+                        Q_Core.push_back(std::make_pair(dst, i));
+                    }                    
+                }
+                
+            }            
+            fprintf(stderr,"before check %ld edges in Q_core\n",Q_Core.size());
+            for (auto e: Q_Core)
+            {
+                if(std::find(modified_edges.begin(), modified_edges.end(), e) != modified_edges.end()){
+                    wrong++;
+                    // fprintf(stderr, "This edge <%ld %ld> is in deletion batch\n",e.first, e.second);
+                    Q_Core.erase(std::find(Q_Core.begin(), Q_Core.end(), e));
+                }
+            }
+            fprintf(stderr,"After check %ld edges in Q_core\n",Q_Core.size());
             fprintf(stderr,"we have %ld edges sampled from deleted edges\n",wrong);
             fprintf(stderr,"out Going edges finished sampling\n");
             fprintf(stderr, "we have %ld edges in query specific core graph, and we have %ld edges in whole graph\n", Q_Core.size(), raw_edges_len);        
@@ -240,8 +305,52 @@ int main(int argc, char** argv)
                 core_graph.add_edge({e.first, e.second, (e.first+e.second)%32+1}, true);
             }             
             
+            // fprintf(stderr,"Before Resample %ld edgs in core graph\n",core_graph.count_edges());
+            // for (uint64_t i = 0; i < num_vertices; i++)
+            // {
+            //     if (label_init[i].data != label_add[i].data)
+            //     {
+            //         uint64_t degreeV = graph.get_outgoing_degree(i);
+            //         uint64_t degreeW = graph.get_incoming_degree(i);
+            //         for (size_t j = 0; j < degreeV; j++)
+            //         {
+            //             uint64_t dst = graph.get_dst_number(i, j);
+            //             uint64_t edge_len = (i+dst)%32+1;
+            //             auto old_num = core_graph.add_edge({i, dst, (i+dst)%32+1}, true);
+            //         }
+                    
+            //     }
+                
+            // }
+            // fprintf(stderr,"After Resample %ld edgs in core graph\n",core_graph.count_edges());            
 
-            // added edges and count time
+            }
+            core_graph.build_tree<uint64_t, uint64_t>(
+                init_label_func,
+                continue_reduce_print_func,
+                update_func,
+                active_result_func,
+                core_query
+            );            
+            uint64_t core_count = 0;
+            for (uint64_t i = 0; i < num_vertices; i++)
+            {
+                if (label_del[i].data != core_query[i].data)
+                {
+                    core_count++;
+                }
+            }
+            fprintf(stderr,"%ld nodes not correct in core graph\n",core_count);
+            core_count = 0;
+            for (uint64_t i = 0; i < num_vertices; i++)
+            {
+                if (label_del[i].data != label_add[i].data)
+                {
+                    core_count++;
+                }
+            }
+            fprintf(stderr,"%ld nodes not correct in Original graph Strem\n",core_count);                          
+            {// added edges and count time
             auto add_mutation_start = std::chrono::high_resolution_clock::now();            
             THRESHOLD_OPENMP_LOCAL("omp parallel for", batch_current, 1024, 
                 for(uint64_t i=seed;i<seed+batch_current;i++)
@@ -260,38 +369,9 @@ int main(int argc, char** argv)
                     label_add, add_edge, length_add.load(), true
                 );
             auto add_compute_end = std::chrono::high_resolution_clock::now();
-            fprintf(stderr, "add compute: %.6lfms\n", 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(add_compute_end-add_compute_start).count());
-            fprintf(stderr,"Before Resample %ld edgs in core graph\n",core_graph.count_edges());
-            for (uint64_t i = 0; i < num_vertices; i++)
-            {
-                if (label_init[i].data != label_add[i].data)
-                {
-                    uint64_t degreeV = graph.get_outgoing_degree(i);
-                    uint64_t degreeW = graph.get_incoming_degree(i);
-                    for (size_t j = 0; j < degreeV; j++)
-                    {
-                        uint64_t dst = graph.get_dst_number(i, j);
-                        uint64_t edge_len = (i+dst)%32+1;
-                        auto old_num = core_graph.add_edge({i, dst, (i+dst)%32+1}, true);
-                    }
-                    // for (size_t j = 0; j < count; i++)
-                    // {
-                    //     /* code */
-                    // }
-                    
-                }
-                
-            }
-            core_graph.build_tree<uint64_t, uint64_t>(
-                init_label_func,
-                continue_reduce_print_func,
-                update_func,
-                active_result_func,
-                core_query
-            );            
-            fprintf(stderr,"After Resample %ld edgs in core graph\n",core_graph.count_edges());            
+            fprintf(stderr, "add compute: %.6lfms\n", 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(add_compute_end-add_compute_start).count());}
 
-            add_compute[round] = std::chrono::duration_cast<std::chrono::microseconds>(add_compute_end-add_compute_start).count();
+            // add_compute[round] = std::chrono::duration_cast<std::chrono::microseconds>(add_compute_end-add_compute_start).count();
             // core graph added edges
             fprintf(stderr,"core graph has %ld edges now\n",core_graph.count_edges());
             auto core_add_mutation_start = std::chrono::high_resolution_clock::now();            
@@ -323,54 +403,14 @@ int main(int argc, char** argv)
                 if (core_query[i].data != label_add[i].data)
                 {
                     count++;
+                    // fprintf(stderr,"%ld nodes is not correct, core: %ld, Graph: %ld\n", i, core_query[i].data, label_add[i].data);
                 }
                 
             }
             fprintf(stderr,"%ld number of vertices not correct\n",count);
 
-            count = 0;
-            for (uint64_t i = 0; i < num_vertices; i++)
-            {
-                if (label_init[i].data != label_add[i].data)
-                {
-                    count++;
-                }
-                
-            }
-            fprintf(stderr,"Before deletion %ld number of vertices not correct after deletion\n",count);
 
-            //del edges now
-            auto del_mutation_start = std::chrono::high_resolution_clock::now();            
-            THRESHOLD_OPENMP_LOCAL("omp parallel for", batch_current, 1024, 
-                for(uint64_t i=seed;i<seed+batch_current;i++)
-                {
-                    const auto &e = raw_edges[i];
-                    auto old_num = graph.del_edge({e.first, e.second, (e.first+e.second)%32+1}, true);
-                }
-            );
-            auto del_mutation_end = std::chrono::high_resolution_clock::now();
-            fprintf(stderr, "del mutation time: %.6lfms\n", 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(del_mutation_end- del_mutation_start).count());        
-            auto del_compute_start = std::chrono::high_resolution_clock::now();
-                graph.update_tree_del<uint64_t, uint64_t>(
-                    init_label_func,
-                    continue_reduce_func,
-                    update_func,
-                    active_result_func,
-                    equal_func,
-                    label_add, del_edge, length_del.load(), true
-                );
-            auto del_compute_end = std::chrono::high_resolution_clock::now();
-            fprintf(stderr, "del compute: %.6lfms\n", 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(del_compute_end- del_compute_start).count());            
-            count = 0;
-            for (uint64_t i = 0; i < num_vertices; i++)
-            {
-                if (label_init[i].data != label_add[i].data)
-                {
-                    count++;
-                }
-                
-            }
-            fprintf(stderr,"%ld number of vertices not correct after deletion\n",count);
+
         }        
     }
     // long long add___ = 0;
