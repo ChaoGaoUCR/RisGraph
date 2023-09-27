@@ -251,7 +251,7 @@ int main(int argc, char** argv)
 
         // common graph write to file
         std::string argv1 = argv[1];
-        std::string core_output = "common_sssp_" + argv1;
+        std::string core_output = "common_bfs_" + argv1;
         fprintf(stderr,"%s sample begin\n", core_output.c_str());
         std::ofstream file(core_output);
         uint64_t sample_count = 0;
@@ -377,7 +377,7 @@ int main(int argc, char** argv)
         // seed - seed+ big_batch-1 --> deletion
         // seed+big_batch seed+2*big_batch --> addition
         std::string argv1 = argv[1];
-        std::string batch_name = argv1 + "_sssp_" + std::to_string(s) + ".txt";
+        std::string batch_name = argv1 + "_bfs_" + std::to_string(s) + ".txt";
         std::ofstream file(batch_name);
         uint64_t del_start = seed + s * batch;
         uint64_t del_end = seed + compute_batch*batch;
