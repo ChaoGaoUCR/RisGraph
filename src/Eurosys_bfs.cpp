@@ -75,9 +75,9 @@ int main(int argc, char** argv)
         for (uint64_t i = seed; i < seed+big_batch; i++)
         {
             auto &e = raw_edges[i];
-            del_edge[length_del.fetch_add(1)] = {e.first, e.second, (e.first+e.second)%32+1};
+            del_edge[length_del.fetch_add(1)] = {e.first, e.second, 1};
             auto &e1 = raw_edges[i+big_batch];
-            add_edge[length_add.fetch_add(1)] = {e1.first, e1.second, (e1.first+e1.second)%32+1};
+            add_edge[length_add.fetch_add(1)] = {e1.first, e1.second, 1};
         }
     }
     // fprintf(stderr,"sampling edges generated finished sample seed is %ld\n", seed);
@@ -87,33 +87,33 @@ int main(int argc, char** argv)
         for (uint64_t i = 0; i < raw_edges_len; i++)
         {
             // const auto &e = raw_edges[i];
-            graph.add_edge({raw_edges[i].first, raw_edges[i].second, (raw_edges[i].first+raw_edges[i].second)%32+1}, true);
+            graph.add_edge({raw_edges[i].first, raw_edges[i].second, 1}, true);
         }
         // common graph read
         #pragma omp parallel for
         for (uint64_t i = 0; i < seed; i++)
         {
             // const auto &e = raw_edges[i];
-            common_graph.add_edge({raw_edges[i].first, raw_edges[i].second, (raw_edges[i].first+raw_edges[i].second)%32+1}, true);
+            common_graph.add_edge({raw_edges[i].first, raw_edges[i].second, 1}, true);
         }
         #pragma omp parallel for
         for (uint64_t i = seed+2*big_batch; i < raw_edges_len; i++)
         {
             // const auto &e = raw_edges[i];
-            common_graph.add_edge({raw_edges[i].first, raw_edges[i].second, (raw_edges[i].first+raw_edges[i].second)%32+1}, true);
+            common_graph.add_edge({raw_edges[i].first, raw_edges[i].second, 1}, true);
         }
         //snapshots add
         #pragma omp parallel for
         for (uint64_t i = 0; i < seed; i++)
         {
             // const auto &e = raw_edges[i];
-            snapshot_graph.add_edge({raw_edges[i].first, raw_edges[i].second, (raw_edges[i].first+raw_edges[i].second)%32+1}, true);
+            snapshot_graph.add_edge({raw_edges[i].first, raw_edges[i].second, 1}, true);
         }
         #pragma omp parallel for
         for (uint64_t i = seed+big_batch; i < raw_edges_len; i++)
         {
             // const auto &e = raw_edges[i];
-            snapshot_graph.add_edge({raw_edges[i].first, raw_edges[i].second, (raw_edges[i].first+raw_edges[i].second)%32+1}, true);
+            snapshot_graph.add_edge({raw_edges[i].first, raw_edges[i].second, 1}, true);
         }
         
         fprintf(stderr,"full graph has %ld edges, common graph has %ld edges, First snapshot has %ld edges\n", graph.count_edges(), common_graph.count_edges(), snapshot_graph.count_edges());
@@ -189,26 +189,6 @@ int main(int argc, char** argv)
         );
     // now we sample core graph from common graph
     // we use a set to record all the edges
-    uint64_t diff = 0;
-    for (uint64_t i = 0; i < num_vertices; i++)
-    {
-        if(label_common[i].data != label_full[i].data){
-            diff++;
-        }
-    }
-    uint64_t snap_diff = 0;
-    for (uint64_t i = 0; i < num_vertices; i++)
-    {
-        if(snapshot_label[i].data != label_full[i].data){
-            snap_diff++;
-        }
-    }    
-    fprintf(stderr,"%ld vertices. %ld diff, %ld match\n", num_vertices, diff, (num_vertices - diff));
-    fprintf(stderr,"%ld vertices. %ld diff, %ld match\n", num_vertices, snap_diff, (num_vertices - snap_diff));
-
-
-
-
     fprintf(stderr,"start sampling\n");
     // std::set<std::pair<uint64_t, uint64_t>> query_specific_core_graph;
     auto sample_begin = std::chrono::high_resolution_clock::now();
@@ -217,7 +197,7 @@ int main(int argc, char** argv)
         {
             uint64_t src = raw_edges[edge_ptr].first;
             uint64_t dst = raw_edges[edge_ptr].second;
-            uint64_t len = (src + dst)%32 +1;
+            uint64_t len = 1;
             if ((label_common[src].data != label_full[src].data) || (label_common[src].data + len == label_common[dst].data))
             {
                 core_graph.add_edge({src, dst, len}, true);
@@ -229,7 +209,7 @@ int main(int argc, char** argv)
         {
             uint64_t src = raw_edges[edge_ptr].first;
             uint64_t dst = raw_edges[edge_ptr].second;
-            uint64_t len = (src + dst)%32 +1;
+            uint64_t len = 1;
             if ((label_common[src].data != label_full[src].data) || (label_common[src].data + len == label_common[dst].data))
             {
                 core_graph.add_edge({src, dst, len}, true);
@@ -251,14 +231,14 @@ int main(int argc, char** argv)
     //         {
     //             uint64_t dst = common_graph.get_dst_number(src, j);
     //             // query_specific_core_graph.insert(std::make_pair(src,dst));
-    //             uint64_t len = (src + dst)%32 +1;
+    //             uint64_t len = 1;
     //             core_graph.add_edge({src, dst, len}, true);
     //         }
     //         #pragma omp parallel for
     //         for (uint64_t j = 0; j < degreeW; j++)
     //         {
     //             uint64_t dst = common_graph.get_src_number(src, j);
-    //             uint64_t len = (src + dst)%32 +1;
+    //             uint64_t len = 1;
     //             // query_specific_core_graph.insert(std::make_pair(dst,src));
     //             core_graph.add_edge({dst, src, len}, true);
     //         }
@@ -277,7 +257,7 @@ int main(int argc, char** argv)
     // }
     // );
     // for (auto e: query_specific_core_graph){
-    //     core_graph.add_edge({e.first, e.second, (e.first+e.second)%32+1}, true);
+    //     core_graph.add_edge({e.first, e.second, 1}, true);
     // }
     fprintf(stderr,"%ld edges in the core graph\n",core_graph.count_edges());
     // core graph correctness check
@@ -378,9 +358,7 @@ int main(int argc, char** argv)
         active_result_func,
         equal_func,
         core_label, add_edge, length_add.load(), true
-    );    
-
-
+    );                            
     fprintf(stderr,"Now Let's start 1-50 batch execution time with full graph!!!!\n");
     int test_round = compute_batch;
     int small_test_round = 1;
@@ -392,7 +370,7 @@ int main(int argc, char** argv)
         add_time[i] = 0;
         del_time[i] = 0;
         re_core_add_time[i] = 0;
-        re_core_del_time[i] = 0;
+        re_core_del_time[i] = 0;        
     }      
     for (int round = 0; round < test_round; round++)
     {
@@ -407,19 +385,17 @@ int main(int argc, char** argv)
         for (uint64_t j = 0; j < batch_current; j++)
         {
             auto &e = raw_edges[j+seed];
-            tmp_add_edge[tmp_length_add.fetch_add(1)] = {e.first, e.second, (e.first+e.second)%32+1};
-            tmp_del_edge[tmp_length_del.fetch_add(1)] = {e.first, e.second, (e.first+e.second)%32+1};
+            tmp_add_edge[tmp_length_add.fetch_add(1)] = {e.first, e.second, 1};
+            tmp_del_edge[tmp_length_del.fetch_add(1)] = {e.first, e.second, 1};
         }
         // deletion first than addition
-        auto del_mutate_start = std::chrono::high_resolution_clock::now(); 
         THRESHOLD_OPENMP_LOCAL("omp parallel for", batch_current, 1024, 
             for(uint64_t i=0;i<batch_current;i++)
             {   
                 const auto &e = raw_edges[i+seed];
-                auto old_num = graph.del_edge({e.first, e.second, (e.first+e.second)%32+1}, true);
+                auto old_num = graph.del_edge({e.first, e.second, 1}, true);
             }
         );
-        auto del_mutate_end = std::chrono::high_resolution_clock::now(); 
         auto del_compute_start = std::chrono::high_resolution_clock::now();  
         graph.update_tree_del<uint64_t, uint64_t>(
             init_label_func,
@@ -432,16 +408,14 @@ int main(int argc, char** argv)
         auto del_compute_end = std::chrono::high_resolution_clock::now();
 
         del_time[round] += 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(del_compute_end- del_compute_start).count();
-        // fprintf(stderr, "del compute time: %.6lfms\n", 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(del_compute_end- del_compute_start).count());
-        auto add_mutate_start = std::chrono::high_resolution_clock::now();       
+        // fprintf(stderr, "del compute time: %.6lfms\n", 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(del_compute_end- del_compute_start).count());                 
         THRESHOLD_OPENMP_LOCAL("omp parallel for", batch_current, 1024, 
             for(uint64_t i=0;i<batch_current;i++)
             {
                 const auto &e = raw_edges[i+seed];
-                auto old_num = graph.add_edge({e.first, e.second, (e.first+e.second)%32+1}, true);
+                auto old_num = graph.add_edge({e.first, e.second, 1}, true);
             }
         );
-        auto add_mutate_end = std::chrono::high_resolution_clock::now();       
         auto add_compute_start = std::chrono::high_resolution_clock::now();
             graph.update_tree_add<uint64_t, uint64_t>(
                 continue_reduce_func,
@@ -452,16 +426,12 @@ int main(int argc, char** argv)
         auto add_compute_end = std::chrono::high_resolution_clock::now();
 
         add_time[round] += 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(add_compute_end-add_compute_start).count();
-        // fprintf(stderr, "add compute: %.6lfms\n", 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(add_compute_end-add_compute_start).count());
-        if (round == test_round - 1)
-        {
-            fprintf(stderr,"Union Graph Construct Time is %.6lf ms\n, Common Graph Construct Time is %.6lf ms\n", 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(add_mutate_end-add_mutate_start).count(), 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(del_mutate_end-del_mutate_start).count());
-        }
+        // fprintf(stderr, "add compute: %.6lfms\n", 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(add_compute_end-add_compute_start).count());                
         THRESHOLD_OPENMP_LOCAL("omp parallel for", batch_current, 1024, 
             for(uint64_t i=0;i<batch_current;i++)
             {
                 const auto &e = raw_edges[i+seed];
-                auto old_num = core_graph.add_edge({e.first, e.second, (e.first+e.second)%32+1}, true);
+                auto old_num = core_graph.add_edge({e.first, e.second, 1}, true);
             }
         );
         auto core__add_compute_start = std::chrono::high_resolution_clock::now();
@@ -477,7 +447,7 @@ int main(int argc, char** argv)
             for(uint64_t i=0;i<batch_current;i++)
             {
                 const auto &e = raw_edges[i+seed];
-                auto old_num = core_graph.del_edge({e.first, e.second, (e.first+e.second)%32+1}, true);
+                auto old_num = core_graph.del_edge({e.first, e.second, 1}, true);
             }
         );
         auto core__del_compute_start = std::chrono::high_resolution_clock::now();  
@@ -490,14 +460,11 @@ int main(int argc, char** argv)
             core_label, tmp_del_edge, tmp_length_del.load(), true
         );
         auto core__del_compute_end = std::chrono::high_resolution_clock::now();
-        re_core_del_time[round] = 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(core__del_compute_end-core__del_compute_start).count();                                      
+        re_core_del_time[round] = 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(core__del_compute_end-core__del_compute_start).count();           
     }
     fprintf(stderr,"add time print!\n");
     std::sort(add_time.begin(), add_time.end());
     std::sort(del_time.begin(), del_time.end());
-    std::sort(re_core_add_time.begin(), re_core_add_time.end());
-    std::sort(re_core_del_time.begin(), re_core_del_time.end());
-
     core_add_time = core_add_time*add_time[test_round-1]/common_add_time;
     fprintf(stderr,"core add time: %.6lfms\n", core_add_time);
     for (auto single_time: add_time)
@@ -513,11 +480,7 @@ int main(int argc, char** argv)
     for (auto single_time: re_core_add_time)
     {
         fprintf(stderr,"%.6lf\n",single_time*add_time[test_round-1]/common_add_time);
-    }
-    // fprintf(stderr,"del time print!\n");
-    // for (auto single_time: re_core_del_time)
-    // {
-    //     fprintf(stderr,"%.6lf\n",single_time);
-    // }
+    }    
+    
     return 0;
 }
