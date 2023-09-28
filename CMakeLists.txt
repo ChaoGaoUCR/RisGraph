@@ -106,6 +106,14 @@ add_executable(bfs_inc_rt src/bfs_inc_rt.cpp)
 add_executable(batch_bfs src/batch_bfs.cpp)
 
 
+add_executable(proposal_sssp src/proposal_sssp.cpp)
+add_executable(proposal_sswp src/proposal_sswp.cpp)
+add_executable(proposal_ssnp src/proposal_ssnp.cpp)
+add_executable(proposal_bfs src/proposal_bfs.cpp)
+add_executable(proposal_viterbi src/proposal_viterbi.cpp)
+
+
+
 add_executable(sssp src/sssp.cpp)
 add_executable(batch_sssp src/batch_sssp.cpp)
 add_executable(sssp_inc src/sssp_inc.cpp)
@@ -142,6 +150,20 @@ add_executable(pp_sswp src/ppopp-sswp.cpp)
 add_executable(pp_ssnp src/ppopp-ssnp.cpp)
 add_executable(pp_viterbi src/ppopp-viterbi.cpp)
 add_executable(pp_bfs src/ppopp-bfs.cpp)
+
+add_executable(eurosys_sssp src/Eurosys_sssp.cpp)
+add_executable(eurosys_sswp src/Eurosys_sswp.cpp)
+add_executable(eurosys_ssnp src/Eurosys_ssnp.cpp)
+add_executable(eurosys_viterbi src/Eurosys_viterbi.cpp)
+add_executable(eurosys_bfs src/Eurosys_bfs.cpp)
+
+add_executable(sample_sssp src/Eurosys_sample_sssp.cpp)
+add_executable(sample_sswp src/Eurosys_sample_sswp.cpp)
+add_executable(sample_ssnp src/Eurosys_sample_ssnp.cpp)
+add_executable(sample_bfs src/Eurosys_sample_bfs.cpp)
+add_executable(sample_viterbi src/Eurosys_sample_viterbi.cpp)
+
+
 
 
 
