@@ -89,7 +89,7 @@ public:
         //task_arena.initialize(ncpus);
         pthread_setaffinity_np(pthread_self(), sizeof(cpu_set_t), &cpuset);
 
-        fprintf(stderr, "|V|=%lu\n", _vertices);
+        // fprintf(stderr, "|V|=%lu\n", _vertices);
         empty_parent.nbr = vertices;
         nodes_track.resize(_vertices);
         for (auto vertex: nodes_track)
