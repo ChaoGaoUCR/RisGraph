@@ -264,7 +264,7 @@ int main(int argc, char** argv)
                     label_common, add_edge, length_add.load(), true
                 );
     auto common_add_compute_end = std::chrono::high_resolution_clock::now();
-    // fprintf(stderr, "common add compute: %.6lfms\n", 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(common_add_compute_end-common_add_compute_start).count());
+    fprintf(stderr, "common_add: %.6lf\n", 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(common_add_compute_end-common_add_compute_start).count());
     double common_add_time = 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(common_add_compute_end-common_add_compute_start).count();
     uint64_t check_common_snapshot = 0;
     for (uint64_t i = 0; i < num_vertices; i++)
@@ -286,7 +286,7 @@ int main(int argc, char** argv)
         core_label, add_edge, length_add.load(), true
     );    
     auto core_add_compute_end = std::chrono::high_resolution_clock::now();
-    // fprintf(stderr, "core add compute time: %.6lfms\n", 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(core_add_compute_end-core_add_compute_start).count());
+    fprintf(stderr, "core_add: %.6lf\n", 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(core_add_compute_end-core_add_compute_start).count());
     double core_add_time = 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(core_add_compute_end-core_add_compute_start).count();
     
     uint64_t check_core_snapshot = 0;
@@ -334,7 +334,22 @@ int main(int argc, char** argv)
             core_label, add_edge, length_add.load(), true
         );
 
-
+    #pragma omp parallel for
+    for (uint64_t i = 0; i < big_batch; i++)
+    {
+        common_graph.del_edge({add_edge[i].src, add_edge[i].dst, add_edge[i].data}, true);
+    }
+    auto core_del_compute_start = std::chrono::high_resolution_clock::now();
+    common_graph.update_tree_del<uint64_t, uint64_t>(
+        init_label_func,
+        continue_reduce_func,
+        update_func,
+        active_result_func,
+        equal_func,
+        label_common, add_edge, length_add.load(), true
+    );
+    auto core_del_compute_end = std::chrono::high_resolution_clock::now();
+    fprintf(stderr, "common_del: %.6lf\n", 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(core_del_compute_end-core_del_compute_start).count());
     fprintf(stderr,"Now Let's start 1-50 batch execution time with full graph!!!!\n");
     int test_round = compute_batch;
     std::vector<double> add_time(test_round), del_time(test_round);

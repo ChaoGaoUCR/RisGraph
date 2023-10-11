@@ -62,14 +62,15 @@ int main(int argc, char** argv)
     Graph<uint64_t> common_graph(num_vertices, raw_edges_len, false, true);
     Graph<uint64_t> graph(num_vertices, raw_edges_len, false, true);
     Graph<uint64_t> core_graph(num_vertices, raw_edges_len, false, true);
+    Graph<uint64_t> core_graph1(num_vertices, raw_edges_len, false, true);
     Graph<uint64_t> snapshot_graph(num_vertices, raw_edges_len, false, true);
     // full graph read all the edges, common graph read 100*batch size reduced graph
     // snapshots read addition 50 batches
 
     uint64_t big_batch = batch * compute_batch;
     uint64_t seed = std::rand()%(raw_edges_len - 2*big_batch);
-    std::vector<decltype(graph)::edge_type> add_edge(50*batch);
-    std::vector<decltype(graph)::edge_type> del_edge(50*batch);
+    std::vector<decltype(graph)::edge_type> add_edge(big_batch);
+    std::vector<decltype(graph)::edge_type> del_edge(big_batch);
     // std::vector<decltype(graph)::edge_type> sample_edge_list;
 
     std::atomic_uint64_t length_del(0);
@@ -99,12 +100,16 @@ int main(int argc, char** argv)
         {
             // const auto &e = raw_edges[i];
             common_graph.add_edge({raw_edges[i].first, raw_edges[i].second, 1}, true);
+            core_graph.add_edge({raw_edges[i].first, raw_edges[i].second, (raw_edges[i].first+raw_edges[i].second)%32+1}, true);
+
         }
         #pragma omp parallel for
         for (uint64_t i = seed+2*big_batch; i < raw_edges_len; i++)
         {
             // const auto &e = raw_edges[i];
             common_graph.add_edge({raw_edges[i].first, raw_edges[i].second, 1}, true);
+            core_graph.add_edge({raw_edges[i].first, raw_edges[i].second, (raw_edges[i].first+raw_edges[i].second)%32+1}, true);
+
         }
 
         
@@ -221,17 +226,20 @@ int main(int argc, char** argv)
 
     fprintf(stderr,"start sampling\n");
     // std::set<std::pair<uint64_t, uint64_t>> query_specific_core_graph;
-    auto sample_begin = std::chrono::high_resolution_clock::now();
     THRESHOLD_OPENMP_LOCAL("omp parallel for", seed, 1024,
         for (uint64_t edge_ptr = 0; edge_ptr < seed; edge_ptr++)
         {
             uint64_t src = raw_edges[edge_ptr].first;
             uint64_t dst = raw_edges[edge_ptr].second;
             uint64_t len = 1;
-            if ((label_common[src].data != label_full[src].data) || (label_common[src].data + len == label_common[dst].data))
+            // if ((label_common[src].data != label_full[src].data) || (label_common[src].data + len == label_common[dst].data))
+            // {
+            //     core_graph.add_edge({src, dst, len}, true);
+            // }
+            if (label_common[dst].data == label_full[dst].data)
             {
-                core_graph.add_edge({src, dst, len}, true);
-            }
+                core_graph.del_edge({src, dst, len}, true);
+            }             
         }
     );
     THRESHOLD_OPENMP_LOCAL("omp parallel for", (raw_edges_len - seed+2*big_batch), 1024,
@@ -240,10 +248,41 @@ int main(int argc, char** argv)
             uint64_t src = raw_edges[edge_ptr].first;
             uint64_t dst = raw_edges[edge_ptr].second;
             uint64_t len = 1;
-            if ((label_common[src].data != label_full[src].data) || (label_common[src].data + len == label_common[dst].data))
+            // if ((label_common[src].data != label_full[src].data) || (label_common[src].data + len == label_common[dst].data))
+            // {
+            //     core_graph.add_edge({src, dst, len}, true);
+            // }
+            if (label_common[dst].data == label_full[dst].data)
             {
-                core_graph.add_edge({src, dst, len}, true);
-            }
+                core_graph.del_edge({src, dst, len}, true);
+            }             
+        }
+    );
+    auto sample_begin = std::chrono::high_resolution_clock::now();
+    THRESHOLD_OPENMP_LOCAL("omp parallel for", seed, 1024,
+        for (uint64_t edge_ptr = 0; edge_ptr < seed; edge_ptr++)
+        {
+            uint64_t src = raw_edges[edge_ptr].first;
+            uint64_t dst = raw_edges[edge_ptr].second;
+            uint64_t len = 1;
+
+            if (label_common[dst].data != label_full[dst].data)
+            {
+                core_graph1.add_edge({src, dst, len}, true);
+            }             
+        }
+    );
+    THRESHOLD_OPENMP_LOCAL("omp parallel for", (raw_edges_len - seed+2*big_batch), 1024,
+        for (uint64_t edge_ptr = seed+2*big_batch; edge_ptr < raw_edges_len; edge_ptr++)
+        {
+            uint64_t src = raw_edges[edge_ptr].first;
+            uint64_t dst = raw_edges[edge_ptr].second;
+            uint64_t len = 1;
+
+            if (label_common[dst].data != label_full[dst].data)
+            {
+                core_graph1.add_edge({src, dst, len}, true);
+            }             
         }
     );
     auto sample_end = std::chrono::high_resolution_clock::now();
@@ -261,7 +300,7 @@ int main(int argc, char** argv)
             for (uint64_t j = 0; j < out_ptr; j++)
             {
                 uint64_t dst = core_graph.get_outgoing_adjlist(i)[j].nbr;
-                int weight = (i+dst) % 32 +1;
+                int weight = 1;
                 sample_count++;
                 file << i << "\t" << dst << "\t" << weight << std::endl;                
             }
@@ -271,13 +310,17 @@ int main(int argc, char** argv)
 
     fprintf(stderr,"%ld edges in the core graph\n",core_graph.count_edges());
     // core graph correctness check
-    core_graph.build_tree<uint64_t, uint64_t>(
-        init_label_func,
-        continue_reduce_print_func,
-        update_func,
-        active_result_func,
-        core_label
-        );
+    // core_graph.build_tree<uint64_t, uint64_t>(
+    //     init_label_func,
+    //     continue_reduce_print_func,
+    //     update_func,
+    //     active_result_func,
+    //     core_label
+    //     );
+    for (uint64_t i = 0; i < num_vertices; i++)
+    {
+        core_label[i] = label_common[i];
+    }    
     uint64_t count_core_check = 0;
     for (uint64_t i = 0; i < num_vertices; i++)
     {
