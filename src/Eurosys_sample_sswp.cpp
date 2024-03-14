@@ -292,6 +292,13 @@ int main(int argc, char** argv)
     //     active_result_func,
     //     core_label
     //     );
+    std::string value_output = "value_sswp_" + argv1;
+    std::ofstream filev(value_output);
+    for (uint64_t i = 0; i < num_vertices; i++)
+    {
+        filev << label_common[i].data << "\t" << label_full[i].data << std::endl; 
+    }
+    filev.close();    
     for (uint64_t i = 0; i < num_vertices; i++)
     {
         core_label[i] = label_common[i];

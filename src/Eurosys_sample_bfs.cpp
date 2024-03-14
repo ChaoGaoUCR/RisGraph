@@ -220,8 +220,14 @@ int main(int argc, char** argv)
     }    
     fprintf(stderr,"%ld vertices. %ld diff, %ld match\n", num_vertices, diff, (num_vertices - diff));
     fprintf(stderr,"%ld vertices. %ld diff, %ld match\n", num_vertices, snap_diff, (num_vertices - snap_diff));
-
-
+    std::string argv1 = argv[1];
+    std::string value_output = "value_bfs_" + argv1;
+    std::ofstream filev(value_output);
+    for (uint64_t i = 0; i < num_vertices; i++)
+    {
+        filev << label_common[i].data << "\t" << label_full[i].data << std::endl; 
+    }
+    filev.close();  
 
 
     fprintf(stderr,"start sampling\n");
@@ -289,7 +295,7 @@ int main(int argc, char** argv)
     fprintf(stderr, "Sample Core Graph time: %.6lfms\n", 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(sample_end-sample_begin).count());
 
         // common graph write to file
-        std::string argv1 = argv[1];
+
         std::string core_output = "common_bfs_" + argv1;
         fprintf(stderr,"%s sample begin\n", core_output.c_str());
         std::ofstream file(core_output);
@@ -317,6 +323,13 @@ int main(int argc, char** argv)
     //     active_result_func,
     //     core_label
     //     );
+    // std::string value_output = "value_bfs_" + argv1;
+    // std::ofstream filev(value_output);
+    // for (uint64_t i = 0; i < num_vertices; i++)
+    // {
+    //     filev << label_common[i].data << "\t" << label_full[i].data << std::endl; 
+    // }
+    // filev.close();    
     for (uint64_t i = 0; i < num_vertices; i++)
     {
         core_label[i] = label_common[i];

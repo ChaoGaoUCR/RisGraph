@@ -269,6 +269,15 @@ int main(int argc, char** argv)
     //     active_result_func,
     //     core_label
     //     );
+    std::string argv1 = argv[1];
+
+    std::string value_output = "value_viterbi_" + argv1;
+    std::ofstream filev(value_output);
+    for (uint64_t i = 0; i < num_vertices; i++)
+    {
+        filev << label_common[i].data << "\t" << label_full[i].data << std::endl; 
+    }
+    filev.close();    
     for (uint64_t i = 0; i < num_vertices; i++)
     {
         core_label[i] = label_common[i];
@@ -294,7 +303,6 @@ int main(int argc, char** argv)
 
     }
         // common graph write to file
-        std::string argv1 = argv[1];
         std::string core_output = "common_viterbi_" + argv1;
         fprintf(stderr,"%s sample begin\n", core_output.c_str());
         std::ofstream file(core_output);

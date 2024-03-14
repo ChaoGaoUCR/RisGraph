@@ -288,7 +288,7 @@ int main(int argc, char** argv)
         }
     );
     auto sample_end = std::chrono::high_resolution_clock::now();
-    fprintf(stderr, "Sample Core Graph time: %.6lfms\n", 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(sample_end-sample_begin).count());
+    fprintf(stderr, "Sample Core Graph time: %.6lfms\n", 1e-3*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(sample_end-sample_begin).count()/2);
 
         // common graph write to file
         std::string argv1 = argv[1];
@@ -319,6 +319,13 @@ int main(int argc, char** argv)
     //     active_result_func,
     //     core_label
     //     );
+    std::string value_output = "value_sssp_" + argv1;
+    std::ofstream filev(value_output);
+    for (uint64_t i = 0; i < num_vertices; i++)
+    {
+        filev << label_common[i].data << "\t" << label_full[i].data << std::endl; 
+    }
+    filev.close();
     for (uint64_t i = 0; i < num_vertices; i++)
     {
         core_label[i] = label_common[i];
