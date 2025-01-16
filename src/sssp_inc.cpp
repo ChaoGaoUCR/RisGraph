@@ -31,7 +31,8 @@ int main(int argc, char** argv)
 {
     if(argc <= 3)
     {
-        fprintf(stderr, "usage: %s graph root imported_rate\n", argv[0]);
+        // fprintf(stderr, "usage: %s graph root imported_rate\n", argv[0]);
+        fprintf(stderr, "Batch File directory is %s\n", argv[0]);
         exit(1);
     }
     std::pair<uint64_t, uint64_t> *raw_edges;
@@ -108,9 +109,8 @@ int main(int argc, char** argv)
         );
 
         auto end = std::chrono::system_clock::now();
-        fprintf(stderr, "exec: %.6lfs\n", 1e-6*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(end-start).count());
+        fprintf(stderr, "Initial exec: %.6lfs\n", 1e-6*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(end-start).count());
     }
-
     {
         auto labels_pre = labels;
         auto start = std::chrono::system_clock::now();

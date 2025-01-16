@@ -56,7 +56,7 @@ int main(int argc, char** argv)
         for(uint64_t i=0;i<raw_edges_len;i++)
         {
             const auto &e = raw_edges[i];
-            graph.add_edge({e.first, e.second, (e.first+e.second)%128}, true);
+            graph.add_edge({e.first, e.second, (e.first+e.second)%32 + 1}, true);
         }
         auto end = std::chrono::system_clock::now();
         fprintf(stderr, "add: %.6lfs\n", 1e-6*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(end-start).count());
@@ -101,9 +101,11 @@ int main(int argc, char** argv)
         );
 
         auto end = std::chrono::system_clock::now();
-        fprintf(stderr, "exec: %.6lfs\n", 1e-6*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(end-start).count());
+        fprintf(stderr, "Init exec: %.6lfs\n", 1e-6*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(end-start).count());
     }
-
+    // This function will read all addition and deletion batches
+    // default, we assume there are 15 batches
+    
     {
         std::vector<std::atomic_uint64_t> layer_counts(MAXL);
         for(auto &a : layer_counts) a = 0;
