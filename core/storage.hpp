@@ -331,6 +331,17 @@ public:
         return array_of_adjstruct[vid].degree;
     }
 
+    uint64_t indexDegreeCalculate()
+    {
+        uint64_t count = 0;
+        #pragma omp parallel for reduction(+:count)
+        for(uint64_t i=0;i<vertices;i++)
+        {
+            count += get_degree(i);
+        }
+        return count;
+    }    
+
     std::pair<adjlist_iter_type, adjlist_iter_type> get_adjlist_iter(uint64_t vid)
     {
         return {array_of_adjstruct[vid].adjlist.begin(), array_of_adjstruct[vid].adjlist.end()};

@@ -45,7 +45,6 @@ public:
     using adjedge_type = AdjEdge<EdgeData>;
     using edge_type = Edge<EdgeData>;
     using Storage = IndexedEdgeStorage<adjedge_type, storage::data::Vector, storage::index::DenseHashMap>;
-    //using Storage = IndexOnlyStorage<adjedge_type, storage::data::Vector, storage::index::DenseHashMap>;
     using adjlist_type = typename Storage::adjlist_type;
     using adjlist_iter_type = typename Storage::adjlist_iter_type;
     using adjlist_range_type = std::pair<adjlist_iter_type, adjlist_iter_type>;
@@ -97,6 +96,68 @@ public:
         }
 
         dense_active_all.fill();
+    }
+
+    void InitStreamBatch(uint64_t batch_num, 
+                        uint64_t batch_size, 
+                        std::vector<std::vector<std::pair<uint64_t, uint64_t>>> addition_batches, 
+                        std::vector<std::vector<std::pair<uint64_t, uint64_t>>> deletion_batches)
+    {
+        auto start = std::chrono::system_clock::now();
+        addBatchOut.resize(batch_num);
+        delBatchOut.resize(batch_num);
+        addBatchIn.resize(batch_num);
+        delBatchIn.resize(batch_num);
+        for (uint64_t i = 0; i < batch_num; i++)
+        {
+            if (addition_batches[i].size() != batch_size || deletion_batches[i].size() != batch_size)
+            {
+                throw std::runtime_error("Init Time Batch size error.");
+            }
+            addBatchOut[i].resize(vertices);
+            delBatchOut[i].resize(vertices);
+            addBatchIn[i].resize(vertices);
+            delBatchIn[i].resize(vertices);
+            #pragma omp parallel for
+            for (uint64_t j = 0; j < batch_size; j++)
+            {
+                const auto &e = addition_batches[i][j];
+                edge_type edge = {e.first, e.second, (e.first+e.second)%16 + 1};
+                addBatchOut[i].update_edge(edge, e.first, 1);
+                addBatchIn[i].update_edge(edge, e.second, 1);
+            }
+            #pragma omp parallel for
+            for (uint64_t j = 0; j < batch_size; j++)
+            {
+                const auto &e = deletion_batches[i][j];
+                edge_type edge = {e.first, e.second, (e.first+e.second)%16 + 1};
+                delBatchOut[i].update_edge(edge, e.first, 1);
+                delBatchIn[i].update_edge(edge, e.second, 1);
+            }
+            // fprintf(stderr, "Batch %lu: add %lu, del %lu\n", i, addBatchOut[i].indexDegreeCalculate(), delBatchOut[i].indexDegreeCalculate());
+            // fprintf(stderr, "Batch %lu: add %lu, del %lu\n", i, addBatchIn[i].indexDegreeCalculate(), delBatchIn[i].indexDegreeCalculate());            
+        }
+        auto end = std::chrono::system_clock::now();
+        fprintf(stderr, "Init Batch Time: %.6lfs\n", 1e-6*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(end-start).count());
+    }
+    void batchCoverageUpdate(std::vector<uint64_t> _addBatchIndex, std::vector<uint64_t> _delBatchIndex)
+    {
+        for (auto addindex: _addBatchIndex)
+        {
+            addBatchIndex.push_back(addindex);
+        }
+        for (auto delindex: _delBatchIndex)
+        {
+            delBatchIndex.push_back(delindex);
+        }
+        fprintf(stderr, "addBatchIndex size %lu\n", addBatchIndex.size());
+        fprintf(stderr, "delBatchIndex size %lu\n", delBatchIndex.size());
+    }
+    
+    void clearBatchIndex()
+    {
+        addBatchIndex.clear();
+        delBatchIndex.clear();
     }
 
     uint64_t get_thread_id()
@@ -165,12 +226,23 @@ public:
     uint64_t get_incoming_degree(uint64_t vid)
     {
         if(symmetric) return get_outgoing_degree(vid);
-        return incoming.get_degree(vid);
+        return getAllInDegree(vid);
     }
 
     uint64_t get_outgoing_degree(uint64_t vid)
     {
-        return outgoing.get_degree(vid);
+        return getAllOutDegree(vid);
+    }
+
+    uint64_t get_degree()
+    {
+        uint64_t count = 0;
+        // #pragma omp parallel for reduction(+:count)
+        for(uint64_t i=0;i<vertices;i++)
+        {
+            count += get_outgoing_degree(i);
+        }
+        return count;
     }
 
     adjlist_type& get_outgoing_adjlist(uint64_t vid)
@@ -262,6 +334,31 @@ public:
     }
 
     template<typename VertexData>
+    std::vector<std::vector<VertexTree<VertexData>>> alloc_vertex_tree_array_vector(uint64_t num)
+    {
+        std::vector<std::vector<VertexTree<VertexData>>> _ta(num);
+        for(uint64_t i=0;i<num;i++)
+        {
+            _ta[i].resize(vertices);
+            #pragma omp parallel for
+            for(uint64_t j=0;j<vertices;j++) _ta[i][j].parent = empty_parent;
+        }
+        return _ta;
+    }
+
+    bool edgeOutCheck(uint64_t src, uint64_t dst)
+    {
+        for(uint64_t outPtr = 0; outPtr < outgoing.get_degree(src); outPtr++)
+        {
+            if(outgoing.get_adjlist(src)[outPtr].nbr == dst)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    template<typename VertexData>
     void fill_vertex_tree_array(std::vector<VertexTree<VertexData>> &ta, VertexData value)
     {
         #pragma omp parallel for
@@ -321,18 +418,19 @@ public:
     }
 
     template<typename R>
-    R stream_edges(std::function<R(uint64_t, const adjlist_range_type &range)> sparse_process, std::function<R(uint64_t, const adjlist_range_type &range)> dense_process, const Bitmap &active)
+    R stream_edges(std::function<R(uint64_t, const adjlist_range_type &range)> sparse_process, 
+                    std::function<R(uint64_t, const adjlist_range_type &range)> dense_process, 
+                    const Bitmap &active)
     {
         R reducer = 0;
         uint64_t active_edges = stream_vertices<uint64_t>(
             [&](uint64_t vid)
             {
-                return outgoing.get_degree(vid);
+                return getAllOutDegree(vid);
             },
             active
         );
         bool sparse = sparse_process && (active_edges < dense_threshold || active_edges < edges/20 || !dual || !dense_process);
-        //fprintf(stderr, "%lu %lu %s\n", active_edges, edges.load(), sparse?"sparse":"dense");
         if(sparse)
         {
             #pragma omp parallel for schedule(dynamic, (active_edges<edges/200)?65536:64) reduction(+:reducer)
@@ -344,7 +442,7 @@ public:
                 {
                     if(word & 1)
                     {
-                        if(outgoing.get_degree(v_i))
+                        if(getAllOutDegree(v_i))
                         {
                             reducer += sparse_process(v_i, outgoing.get_adjlist_iter(v_i));
                         }
@@ -353,29 +451,6 @@ public:
                     word >>= 1;
                 }
             }
-            //reducer = tbb::parallel_reduce(tbb::blocked_range<uint64_t>(0lu, WORD_OFFSET(vertices)+1, (active_edges<edges/200)?65536:64), reducer, 
-            //[&](const tbb::blocked_range<uint64_t> &range, R res) -> R
-            //{
-            //    for(uint64_t word_i=range.begin();word_i!=range.end();word_i++)
-            //    {
-            //        uint64_t v_i = BEGIN_OF_WORD(word_i);
-            //        uint64_t word = active.data[word_i];
-            //        while(word != 0)
-            //        {
-            //            if(word & 1)
-            //            {
-            //                if(outgoing.get_degree(v_i)) res += sparse_process(v_i, outgoing.get_adjlist(v_i));
-            //            }
-            //            v_i++;
-            //            word >>= 1;
-            //        }
-            //    }
-            //    return res;
-            //},
-            //[](R x, R y) -> R
-            //{
-            //    return x+y;
-            //});
         }
         else
         {
@@ -384,11 +459,11 @@ public:
             {
                 if(symmetric)
                 {
-                    if(outgoing.get_degree(v_i)) reducer += dense_process(v_i, outgoing.get_adjlist_iter(v_i));
+                    if(getAllOutDegree(v_i)) reducer += dense_process(v_i, outgoing.get_adjlist_iter(v_i));
                 }
                 else
                 {
-                    if(incoming.get_degree(v_i)) reducer += dense_process(v_i, incoming.get_adjlist_iter(v_i));
+                    if(getAllInDegree(v_i)) reducer += dense_process(v_i, incoming.get_adjlist_iter(v_i));
                 }
             }
         }
@@ -430,8 +505,58 @@ public:
         return reducer;
     }
 
+    uint64_t getAllOutDegree(uint64_t vid){     
+        uint64_t degree = outgoing.get_degree(vid);
+        if(addBatchIndex.size() == 0 && delBatchIndex.size() == 0)
+        {
+            return degree;
+        }
+        if(addBatchIndex.size() != 0)
+        {
+            for(auto index: addBatchIndex)
+            {
+                degree += addBatchOut[index].get_degree(vid);
+            }
+        }
+        if(delBatchIndex.size() != 0)
+        {
+            for(auto index: delBatchIndex)
+            {
+                degree += delBatchOut[index].get_degree(vid);
+            }
+        }
+       return degree;
+    }
+
+    uint64_t getAllInDegree(uint64_t vid){
+        uint64_t degree = incoming.get_degree(vid);
+        if(addBatchIndex.size() == 0 && delBatchIndex.size() == 0)
+        {
+            return degree;
+        }
+        if(addBatchIndex.size() != 0)
+        {
+            for(auto index: addBatchIndex)
+            {
+                degree += addBatchIn[index].get_degree(vid);
+            }
+        }
+        if(delBatchIndex.size() != 0)
+        {
+            for(auto index: delBatchIndex)
+            {
+                degree += delBatchIn[index].get_degree(vid);
+            }
+        }
+        return degree;
+    }
+
     template<typename R>
-    R stream_edges(std::function<R(uint64_t, const adjlist_range_type &range)> sparse_process, std::function<R(uint64_t, const adjlist_range_type &range)> dense_process, const std::vector<uint64_t> &active, const uint64_t &length, uint64_t active_edges = (uint64_t)-1)
+    R stream_edges(std::function<R(uint64_t, const adjlist_range_type &range)> sparse_process, 
+                    std::function<R(uint64_t, const adjlist_range_type &range)> dense_process, 
+                    const std::vector<uint64_t> &active, 
+                    const uint64_t &length, 
+                    uint64_t active_edges = (uint64_t)-1)
     {
         R reducer = 0;
         if(active_edges == (uint64_t)-1)
@@ -439,28 +564,20 @@ public:
             active_edges = stream_vertices<uint64_t>(
                 [&](uint64_t vid)
                 {
-                    return outgoing.get_degree(vid);
+                    return getAllOutDegree(vid);
                 },
                 active, length
             );
         }
         bool sparse = sparse_process && (active_edges < dense_threshold || active_edges < edges/20 || !dual || !dense_process);
-        //fprintf(stderr, "%lu %lu %s\n", active_edges, edges.load(), sparse?"sparse":"dense");
         if(sparse)
         {
-            //THRESHOLD_OPENMP("omp parallel for schedule(dynamic, 64) reduction(+:reducer)", length, 
-            //    for(uint64_t i=0;i<length;i++)
-            //    {
-            //        uint64_t v_i = active[i];
-            //        if(outgoing.get_degree(v_i)) reducer += sparse_process(v_i, outgoing.get_adjlist(v_i));
-            //    }
-            //);
             if(length < OPENMP_THRESHOLD)
             {
                 for(uint64_t i=0;i<length;i++)
                 {
                     uint64_t v_i = active[i];
-                    if(outgoing.get_degree(v_i)) reducer += sparse_process(v_i, outgoing.get_adjlist_iter(v_i));
+                    if(getAllOutDegree(v_i)) reducer += sparse_process(v_i, outgoing.get_adjlist_iter(v_i));
                 }
             }
             else
@@ -471,7 +588,8 @@ public:
                     for(uint64_t i=range.begin();i!=range.end();i++)
                     {
                         uint64_t v_i = active[i];
-                        if(outgoing.get_degree(v_i)) res += sparse_process(v_i, outgoing.get_adjlist_iter(v_i));
+                        if(getAllOutDegree(v_i)) res += sparse_process(v_i, outgoing.get_adjlist_iter(v_i));
+                        // res += sparse_process(v_i, outgoing.get_adjlist_iter(v_i));
                     }
                     return res;
                 },
@@ -489,11 +607,11 @@ public:
             {
                 if(symmetric)
                 {
-                    if(outgoing.get_degree(v_i)) reducer += dense_process(v_i, outgoing.get_adjlist_iter(v_i));
+                    if(getAllOutDegree(v_i)) reducer += dense_process(v_i, outgoing.get_adjlist_iter(v_i));
                 }
                 else
                 {
-                    if(incoming.get_degree(v_i)) reducer += dense_process(v_i, incoming.get_adjlist_iter(v_i));
+                    if(getAllInDegree(v_i)) reducer += dense_process(v_i, incoming.get_adjlist_iter(v_i));
                 }
             }
         }
@@ -511,7 +629,7 @@ public:
             active_edges = stream_vertices<uint64_t>(
                 [&](uint64_t vid)
                 {
-                    return outgoing.get_degree(vid);
+                    return getAllOutDegree(vid);
                 },
                 active, length
             );
@@ -529,7 +647,8 @@ public:
             [&](const tbb::blocked_range<uint64_t> &range, R res) -> R
             {
                 uint64_t next = next_a.local();
-                if(next > length || offsets[next-1] > range.begin()) next = (length < 32) ? 1 : std::upper_bound(offsets.begin(), offsets.begin()+length+1, range.begin())-offsets.begin();
+                if(next > length || offsets[next-1] > range.begin()) 
+                    next = (length < 32) ? 1 : std::upper_bound(offsets.begin(), offsets.begin()+length+1, range.begin())-offsets.begin();
                 for(uint64_t i=range.begin();i!=range.end();i++)
                 {
                     while(offsets[next] <= i) next++;
@@ -550,7 +669,7 @@ public:
             for(uint64_t i=0;i<length;i++)
             {
                 uint64_t v_i = active[i];
-                if(outgoing.get_degree(v_i))
+                if(getAllOutDegree(v_i))
                 {
                     for(auto e:outgoing.get_adjlist(v_i)) reducer += process(v_i, e);
                 }
@@ -574,43 +693,42 @@ public:
 
     //TODO pull
     template<typename R, typename ProcessEdge>
-    R stream_edges_hybrid(std::function<R(uint64_t, const adjlist_range_type &range)> process_push, std::function<R(uint64_t, const adjlist_range_type &range)> process_pull, ProcessEdge process_edge, ActiveSet &active)
+    R stream_edges_hybrid(std::function<R(uint64_t, const adjlist_range_type &range)> process_push, 
+                        std::function<R(uint64_t, const adjlist_range_type &range)> process_pull, 
+                        ProcessEdge process_edge, 
+                        ActiveSet &active)
     {
-        if(active.is_dense()) 
-        {
-            //fprintf(stderr, "stream_edges_dense >= %lu\n", active.get_sparse_length());
-            return stream_edges<R>(process_push, process_pull, active.get_dense());
-        }
-        else
-        {
-            //return stream_edges<R>(process_push, nullptr, active.get_sparse(), active.get_sparse_length());
-            //return stream_edges_sparse<R>(process_edge, active.get_sparse(), active.get_sparse_length());
-            uint64_t active_edges = stream_vertices<uint64_t>(
-                [&](uint64_t vid)
-                {
-                    return outgoing.get_degree(vid);
-                },
-                active.get_sparse(), active.get_sparse_length()
-            );
-            if(active_edges < 16384 || !Storage::edge_random_accessable)
-            {
-                return stream_edges<R>(process_push, nullptr, active.get_sparse(), active.get_sparse_length());
-            }
-            double x = log(active.get_sparse_length()), y = log(active_edges);
-            double predict = -2.20754644*x+0.58438928*y+14.45252841;
-            //uint64_t active_edges = (uint64_t) -1;
-            //const uint64_t vertex_centric_threshold = 2048000;//1024000;
-            //if(active.get_sparse_length() > vertex_centric_threshold || !Storage::edge_random_accessable)
-            if(predict < 0)
-            {
-                //fprintf(stderr, "stream_edges_sparse_vertex %lu\n", active.get_sparse_length());
-                return stream_edges<R>(process_push, nullptr, active.get_sparse(), active.get_sparse_length(), active_edges);
-            }
-            else
-            {
-                return stream_edges_sparse<R>(process_edge, active.get_sparse(), active.get_sparse_length(), active_edges);
-            }
-        }
+        // if(active.is_dense()) 
+        // {
+        //     fprintf(stderr, "dense\n");
+        //     return stream_edges<R>(process_push, process_pull, active.get_dense());
+        // }
+        // else
+        // {
+        //     uint64_t active_edges = stream_vertices<uint64_t>(
+        //         [&](uint64_t vid)
+        //         {
+        //             return getAllOutDegree(vid);
+        //         },
+        //         active.get_sparse(), active.get_sparse_length()
+        //     );
+        //     if(active_edges < 16384 || !Storage::edge_random_accessable)
+        //     {
+        //         return stream_edges<R>(process_push, nullptr, active.get_sparse(), active.get_sparse_length());
+        //     }
+        //     double x = log(active.get_sparse_length()), y = log(active_edges);
+        //     double predict = -2.20754644*x+0.58438928*y+14.45252841;
+        //     if(predict < 0)
+        //     {
+        //         return stream_edges<R>(process_push, nullptr, active.get_sparse(), active.get_sparse_length(), active_edges);
+        //     }
+        //     else
+        //     {
+        //         fprintf(stderr, "sparse\n");
+        //         return stream_edges_sparse<R>(process_edge, active.get_sparse(), active.get_sparse_length(), active_edges);
+        //     }
+        // }
+        return stream_edges<R>(process_push, nullptr, active.get_sparse(), active.get_sparse_length());    
     }
 
     //template <typename R, typename DataType>
@@ -897,14 +1015,6 @@ public:
         R total_result = 0;
         for(uint64_t i=0;true;i++)
         {
-            //stream_vertices<uint64_t>(
-            //    [&](uint64_t vid)
-            //    {
-            //        bak_labels[vid] = labels[vid];
-            //        return 0;
-            //    },
-            //    active_in
-            //);
             active_out.clear();
             R local_result = stream_edges<R>(
                 [&](uint64_t src, const adjlist_range_type &outgoing_range)
@@ -1007,9 +1117,6 @@ public:
             std::vector<VertexTree<DataType>> &labels)
     {
         R total_result = 0;
-
-        //task_arena.execute([&]()
-        //{
         for(uint64_t i=0;true;i++)
         {
             active_out.clear();
@@ -1017,27 +1124,105 @@ public:
                 [&](uint64_t src, const adjlist_range_type &outgoing_range)
                 {
                     R result = 0;
-                    for(auto iter = outgoing_range.first;iter != outgoing_range.second; iter++) 
-                    {
-                        auto edge = *iter;
-                        if(edge.num > 0)
-                        {
-                            uint64_t dst = edge.nbr;
-                            auto src_data = labels[src].data;
-                            auto dst_data = labels[dst].data;
-                            if(update_func(src, dst, src_data, dst_data, edge).first)
-                            {
-                                auto eup = edge; eup.nbr = src;
-                                auto update_pair = update_label(labels, src, dst, eup, update_func);
-                                if(update_pair.first)
-                                {
-                                    active_out.active(dst);
-                                    if(trace_modified) modified.active(dst);
-                                    result = active_result_func(result, src, dst, src_data, dst_data, update_pair.second);
+                    // for(auto iter = outgoing_range.first;iter != outgoing_range.second; iter++) 
+                    // {
+                    //     auto edge = *iter;
+                    //     if(edge.num > 0)
+                    //     {
+                    //         uint64_t dst = edge.nbr;
+                    //         auto src_data = labels[src].data;
+                    //         auto dst_data = labels[dst].data;
+                    //         if(update_func(src, dst, src_data, dst_data, edge).first)
+                    //         {
+                    //             auto eup = edge; eup.nbr = src;
+                    //             auto update_pair = update_label(labels, src, dst, eup, update_func);
+                    //             if(update_pair.first)
+                    //             {
+                    //                 active_out.active(dst);
+                    //                 if(trace_modified) modified.active(dst);
+                    //                 result = active_result_func(result, src, dst, src_data, dst_data, update_pair.second);
+                    //             }
+                    //         }
+                    //     }
+                    // }
+                    // for (auto addIndex: addBatchIndex)
+                    // {
+                    //     auto tmpAdjList = addBatchOut[addIndex].get_adjlist_iter(src);
+                    //     for (auto iter = tmpAdjList.first; iter != tmpAdjList.second; iter++)
+                    //     {
+                    //         auto edge = *iter;
+                    //         if (edge.num > 0)
+                    //         {
+                    //             uint64_t dst = edge.nbr;
+                    //             auto src_data = labels[src].data;
+                    //             auto dst_data = labels[dst].data;
+                    //             if (update_func(src, dst, src_data, dst_data, edge).first)
+                    //             {
+                    //                 auto eup = edge; eup.nbr = src;
+                    //                 auto update_pair = update_label(labels, src, dst, eup, update_func);
+                    //                 if (update_pair.first)
+                    //                 {
+                    //                     active_out.active(dst);
+                    //                     if (trace_modified) modified.active(dst);
+                    //                     result = active_result_func(result, src, dst, src_data, dst_data, update_pair.second);
+                    //                 }
+                    //             }
+                    //         }
+                    //     }
+                    // }
+                    // for (auto delIndex: delBatchIndex)
+                    // {
+                    //     auto tmpAdjList = delBatchOut[delIndex].get_adjlist_iter(src);
+                    //     for (auto iter = tmpAdjList.first; iter != tmpAdjList.second; iter++)
+                    //     {
+                    //         auto edge = *iter;
+                    //         if (edge.num > 0)
+                    //         {
+                    //             uint64_t dst = edge.nbr;
+                    //             auto src_data = labels[src].data;
+                    //             auto dst_data = labels[dst].data;
+                    //             if (update_func(src, dst, src_data, dst_data, edge).first)
+                    //             {
+                    //                 auto eup = edge; eup.nbr = src;
+                    //                 auto update_pair = update_label(labels, src, dst, eup, update_func);
+                    //                 if (update_pair.first)
+                    //                 {
+                    //                     active_out.active(dst);
+                    //                     if (trace_modified) modified.active(dst);
+                    //                     result = active_result_func(result, src, dst, src_data, dst_data, update_pair.second);
+                    //                 }
+                    //             }
+                    //         }
+                    //     }
+                    // }
+                    std::vector<std::pair<decltype(outgoing_range.first), decltype(outgoing_range.second)>> allRanges;
+                    allRanges.emplace_back(outgoing_range.first, outgoing_range.second);
+                    for (auto addIndex : addBatchIndex) {
+                        allRanges.emplace_back(addBatchOut[addIndex].get_adjlist_iter(src));
+                    }
+                    for (auto delIndex : delBatchIndex) {
+                        allRanges.emplace_back(delBatchOut[delIndex].get_adjlist_iter(src));
+                    }
+                    for (const auto& range : allRanges) {
+                        for (auto iter = range.first; iter != range.second; ++iter) {
+                            auto edge = *iter;
+                            if (edge.num > 0) {
+                                uint64_t dst = edge.nbr;
+                                auto src_data = labels[src].data;
+                                auto dst_data = labels[dst].data;
+                                if (update_func(src, dst, src_data, dst_data, edge).first) {
+                                    auto eup = edge;
+                                    eup.nbr = src;
+                                    auto update_pair = update_label(labels, src, dst, eup, update_func);
+                                    if (update_pair.first) {
+                                        active_out.active(dst);
+                                        if (trace_modified) modified.active(dst);
+                                        result = active_result_func(result, src, dst, src_data, dst_data, update_pair.second);
+                                    }
                                 }
                             }
                         }
-                    }
+                    }                    
                     return result;
                 },
                 [&](uint64_t dst, const adjlist_range_type &incoming_range)
@@ -1046,22 +1231,86 @@ public:
                     uint64_t new_src = (uint64_t)-1;
                     adjedge_type new_edge;
                     R result = 0;
-                    for(auto iter = incoming_range.first;iter != incoming_range.second; iter++) 
-                    {
-                        auto edge = *iter;
-                        if(edge.num > 0)
-                        {
-                            uint64_t src = edge.nbr;
-                            auto src_data = labels[src].data;
-                            auto update_pair = update_func(src, dst, src_data, new_label, edge);
-                            if(update_pair.first)
-                            {
-                                new_label = update_pair.second;
-                                new_src = src;
-                                new_edge = edge;
+                    // for(auto iter = incoming_range.first;iter != incoming_range.second; iter++) 
+                    // {
+                    //     auto edge = *iter;
+                    //     if(edge.num > 0)
+                    //     {
+                    //         uint64_t src = edge.nbr;
+                    //         auto src_data = labels[src].data;
+                    //         auto update_pair = update_func(src, dst, src_data, new_label, edge);
+                    //         if(update_pair.first)
+                    //         {
+                    //             new_label = update_pair.second;
+                    //             new_src = src;
+                    //             new_edge = edge;
+                    //         }
+                    //     }
+                    // }
+                    // for (auto addIndex: addBatchIndex)
+                    // {
+                    //     auto tmpAdjList = addBatchIn[addIndex].get_adjlist_iter(dst);
+                    //     for (auto iter = tmpAdjList.first; iter != tmpAdjList.second; iter++)
+                    //     {
+                    //         auto edge = *iter;
+                    //         if (edge.num > 0)
+                    //         {
+                    //             uint64_t src = edge.nbr;
+                    //             auto src_data = labels[src].data;
+                    //             auto update_pair = update_func(src, dst, src_data, new_label, edge);
+                    //             if (update_pair.first)
+                    //             {
+                    //                 new_label = update_pair.second;
+                    //                 new_src = src;
+                    //                 new_edge = edge;
+                    //             }
+                    //         }
+                    //     }
+                    // }
+                    // for (auto delIndex: delBatchIndex)
+                    // {
+                    //     auto tmpAdjList = delBatchIn[delIndex].get_adjlist_iter(dst);
+                    //     for (auto iter = tmpAdjList.first; iter != tmpAdjList.second; iter++)
+                    //     {
+                    //         auto edge = *iter;
+                    //         if (edge.num > 0)
+                    //         {
+                    //             uint64_t src = edge.nbr;
+                    //             auto src_data = labels[src].data;
+                    //             auto update_pair = update_func(src, dst, src_data, new_label, edge);
+                    //             if (update_pair.first)
+                    //             {
+                    //                 new_label = update_pair.second;
+                    //                 new_src = src;
+                    //                 new_edge = edge;
+                    //             }
+                    //         }
+                    //     }
+                    // }
+                    std::vector<std::pair<decltype(incoming_range.first), decltype(incoming_range.second)>> allRanges;
+                    allRanges.emplace_back(incoming_range.first, incoming_range.second);
+                    for (auto addIndex : addBatchIndex) {
+                        allRanges.emplace_back(addBatchIn[addIndex].get_adjlist_iter(dst));
+                    }
+                    for (auto delIndex : delBatchIndex) {
+                        allRanges.emplace_back(delBatchIn[delIndex].get_adjlist_iter(dst));
+                    }
+
+                    for (const auto& range : allRanges) {
+                        for (auto iter = range.first; iter != range.second; ++iter) {
+                            auto edge = *iter;
+                            if (edge.num > 0) {
+                                uint64_t src = edge.nbr;
+                                auto src_data = labels[src].data;
+                                auto update_pair = update_func(src, dst, src_data, new_label, edge);
+                                if (update_pair.first) {
+                                    new_label = update_pair.second;
+                                    new_src = src;
+                                    new_edge = edge;
+                                }
                             }
                         }
-                    }
+                    }                    
                     if(new_src == (uint64_t)-1) return result;
                     auto src_data = labels[new_src].data;
                     auto dst_data = labels[dst].data;
@@ -1100,6 +1349,57 @@ public:
                             }
                         }
                     }
+                    for (auto addIndex: addBatchIndex)
+                    {
+                        auto tmpAdjList = addBatchOut[addIndex].get_adjlist_iter(src);
+                        for (auto iter = tmpAdjList.first; iter != tmpAdjList.second; iter++)
+                        {
+                            auto edge = *iter;
+                            if (edge.num > 0)
+                            {
+                                uint64_t dst = edge.nbr;
+                                auto src_data = labels[src].data;
+                                auto dst_data = labels[dst].data;
+                                if (update_func(src, dst, src_data, dst_data, edge).first)
+                                {
+                                    auto eup = edge; eup.nbr = src;
+                                    auto update_pair = update_label(labels, src, dst, eup, update_func);
+                                    if (update_pair.first)
+                                    {
+                                        active_out.active(dst);
+                                        if (trace_modified) modified.active(dst);
+                                        result = active_result_func(result, src, dst, src_data, dst_data, update_pair.second);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    for (auto delIndex: delBatchIndex)
+                    {
+                        auto tmpAdjList = delBatchOut[delIndex].get_adjlist_iter(src);
+                        for (auto iter = tmpAdjList.first; iter != tmpAdjList.second; iter++)
+                        {
+                            auto edge = *iter;
+                            if (edge.num > 0)
+                            {
+                                uint64_t dst = edge.nbr;
+                                auto src_data = labels[src].data;
+                                auto dst_data = labels[dst].data;
+                                if (update_func(src, dst, src_data, dst_data, edge).first)
+                                {
+                                    auto eup = edge; eup.nbr = src;
+                                    auto update_pair = update_label(labels, src, dst, eup, update_func);
+                                    if (update_pair.first)
+                                    {
+                                        active_out.active(dst);
+                                        if (trace_modified) modified.active(dst);
+                                        result = active_result_func(result, src, dst, src_data, dst_data, update_pair.second);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    
                     return result;
                 },
                 active_in
@@ -1109,8 +1409,6 @@ public:
             std::tie(is_continue, total_result) = continue_reduce_func(i, total_result, local_result);
             if(!is_continue) break;
         }
-        //return 0ul;
-        //});
 
         return total_result;
     }
@@ -1164,7 +1462,8 @@ public:
             ContinueReduceFunc continue_reduce_func, 
             UpdateFunc update_func, 
             ActiveResultFunc active_result_func, 
-            std::vector<VertexTree<DataType>> &labels, const std::vector<edge_type> &edges, const uint64_t &length, bool directed = true)
+            std::vector<VertexTree<DataType>> &labels, const std::vector<edge_type> &edges, 
+            const uint64_t &length, bool directed = true)
     {
         R total_result = 0;
         if(length == 1)
@@ -1251,19 +1550,6 @@ public:
         {
             if(need_recompute || (i <= 10 && size_tree+active_vertices > 0.05*vertices && size_tree+active_vertices > 2000000))
             {
-                //auto total_depth = stream_vertices<uint64_t>(
-                //    [&](uint64_t vid)
-                //    {
-                //        uint64_t depth = 0;
-                //        for(;!(labels[vid].parent == empty_parent);vid = labels[vid].parent.nbr)
-                //        {
-                //            depth++;
-                //        }
-                //        return depth;
-                //    },
-                //    get_dense_active_all()
-                //);
-                //fprintf(stderr, "Depth: %lf\n", (double)total_depth/vertices);
                 fprintf(stderr, "Re Computing: %lu %lu %lu\n", i, size_tree, active_in.get_sparse_length());
                 stream_vertices<uint64_t>(
                     [&](uint64_t vid)
@@ -1716,14 +2002,20 @@ public:
 
         return do_update_tree_del<R, DataType>(init_label_func, continue_reduce_func, update_func, active_result_func, equal_func, labels);
     }
-
+    uint64_t getNodesNum()
+    {
+        return vertices;
+    }
 private:
     const uint64_t vertices;
     const bool symmetric, dual;
     const uint64_t dense_threshold;
 
     Storage outgoing, incoming;
+    std::vector<Storage> addBatchOut, delBatchOut;
+    std::vector<Storage> addBatchIn, delBatchIn;
     std::atomic_uint64_t edges;
+    std::vector<uint64_t> addBatchIndex, delBatchIndex;
     Bitmap dense_active_all;
     ActiveSet active_in, active_out, active_tree, modified;
     std::vector<int64_t> invalidated;

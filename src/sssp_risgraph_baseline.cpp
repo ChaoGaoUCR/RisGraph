@@ -130,18 +130,15 @@ int main(int argc, char** argv)
         std::vector<std::vector<std::pair<uint64_t, uint64_t>>> deletion_batches;
         deletion_batches.resize(15);
         std::string batch_prefix = argv[3];
-        std::vector<std::chrono::system_clock::time_point> add_mutation_time;
-        std::vector<std::chrono::system_clock::time_point> del_mutation_time;
-        std::vector<std::chrono::system_clock::time_point> add_compute_time;
-        std::vector<std::chrono::system_clock::time_point> del_compute_time;
+        std::vector<double> add_mutation_time;
+        std::vector<double> del_mutation_time;
+        std::vector<double> add_compute_time;
+        std::vector<double> del_compute_time;
 
 
         for (uint64_t batch = 0; batch < 15; batch++)
         {
-            std::vector<decltype(graph)::edge_type> added_edges(addition_batches[batch].size()), deled_edges(deletion_batches[batch].size());
             std::atomic_uint64_t add_edge_len(0), del_edge_len(0);
-            added_edges.clear();
-            deled_edges.clear();
             std::string batch_file = batch_prefix + ".add." + std::to_string(batch) + ".txt";
             fprintf(stderr, "Processing batch file is %s\n", batch_file.c_str());
             std::ifstream add_file(batch_file);
@@ -190,27 +187,31 @@ int main(int argc, char** argv)
             }
             del_file.close();
             // add and delete computation once
+
+            std::vector<decltype(graph)::edge_type> added_edges(addition_batches[batch].size()), deled_edges(deletion_batches[batch].size());
             add_edge_len = 0; del_edge_len = 0;
             added_edges.clear(); deled_edges.clear();
+            
+            std::atomic_uint64_t length(0);
 
             auto start = std::chrono::system_clock::now();
-            std::atomic_uint64_t length(0);
             THRESHOLD_OPENMP_LOCAL("omp parallel for", addition_batches[batch].size(), 1024, 
-                for(uint64_t i=0; i<addition_batches[batch].size(); i++)
+                for(uint64_t i = 0; i < addition_batches[batch].size(); i++)
                 {
-                    const auto &e = addition_batches[batch][i];
+                    auto e = addition_batches[batch][i];
                     auto old_num = graph.add_edge({e.first, e.second, (e.first+e.second)%16 + 1}, true);
                     if(!old_num) added_edges[length.fetch_add(1)] = {e.first, e.second, (e.first+e.second)%16 + 1};
                 }
             );
             auto end = std::chrono::system_clock::now();
             add_mutation_time.push_back(1e-6*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(end-start).count());
+            
             start = std::chrono::system_clock::now();
             graph.update_tree_add<uint64_t, uint64_t>(
                 continue_reduce_func,
                 update_func,
                 active_result_func,
-                labels, added_edges, length.load(), true
+                labels, added_edges, length.load(), true 
             );
             end = std::chrono::system_clock::now();
             add_compute_time.push_back(1e-6*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(end-start).count());
@@ -238,6 +239,27 @@ int main(int argc, char** argv)
             del_compute_time.push_back(1e-6*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(end-start).count());
             fprintf(stderr, "Batch %lu: add mutation %.6lfs, add compute %.6lfs, del mutation %.6lfs, del compute %.6lfs\n", batch, add_mutation_time.back(), add_compute_time.back(), del_mutation_time.back(), del_compute_time.back());
         }
+        double add_mutation_time_sum = 0;
+        double add_compute_time_sum = 0;
+        double del_mutation_time_sum = 0;
+        double del_compute_time_sum = 0;
+        for (auto add_time : add_mutation_time)
+        {
+            add_mutation_time_sum += add_time;
+        }
+        for (auto add_time : add_compute_time)
+        {
+            add_compute_time_sum += add_time;
+        }
+        for (auto del_time : del_mutation_time)
+        {
+            del_mutation_time_sum += del_time;
+        }
+        for (auto del_time : del_compute_time)
+        {
+            del_compute_time_sum += del_time;
+        }
+        fprintf(stderr, "Total: add mutation %.6lfs, add compute %.6lfs, del mutation %.6lfs, del compute %.6lfs\n", add_mutation_time_sum, add_compute_time_sum, del_mutation_time_sum, del_compute_time_sum);
     }
 
     return 0;

@@ -14,6 +14,14 @@ if (OPENMP_FOUND)
 endif()
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake")
 
+# Set the default build type to Debug if not specified
+if(NOT CMAKE_BUILD_TYPE)
+    set(CMAKE_BUILD_TYPE Debug CACHE STRING "Build type" FORCE)
+endif()
+set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -g -O0 -DDEBUG")
+set(CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -g -O0 -DDEBUG")
+
+
 find_package(TBB REQUIRED)
 include_directories(${TBB_INCLUDE_DIRS})
 link_directories(${TBB_LIBRARY_DIRS})
@@ -110,6 +118,10 @@ add_executable(sssp_risgraph_baseline src/sssp_risgraph_baseline.cpp)
 add_executable(sssp_inc_batch src/sssp_inc_batch.cpp)
 add_executable(sssp_inc_clf src/sssp_inc_clf.cpp)
 add_executable(sssp_inc_rt src/sssp_inc_rt.cpp)
+add_executable(Risgraph_baseline_SSSP src/Risgraph_baseline_SSSP.cpp)
+add_executable(CommonGraph_baseline_direct_SSSP src/CommonGraph_baseline_direct_SSSP.cpp)
+add_executable(CommonGraph_baseline_WH src/CommonGraph_baseline_WH.cpp)
+add_executable(core-graph-sssp src/core-graph-sssp.cpp)
 
 add_executable(sswp src/sswp.cpp)
 add_executable(sswp_inc src/sswp_inc.cpp)
