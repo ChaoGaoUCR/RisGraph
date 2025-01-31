@@ -363,6 +363,18 @@ public:
         return false;
     }
 
+    bool edgeInCheck(uint64_t src, uint64_t dst)
+    {
+        for(uint64_t inPtr = 0; inPtr < incoming.get_degree(src); inPtr++)
+        {
+            if(incoming.get_adjlist(src)[inPtr].nbr == dst)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
     template<typename VertexData>
     void fill_vertex_tree_array(std::vector<VertexTree<VertexData>> &ta, VertexData value)
     {

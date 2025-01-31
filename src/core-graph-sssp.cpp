@@ -299,6 +299,185 @@ std::vector<std::pair<uint64_t, uint64_t>> core_generate(Graph<uint64_t>& graph)
     std::vector<std::pair<uint64_t, uint64_t>> edge_set_vector(edge_set.begin(), edge_set.end());
     return edge_set_vector;
 }
+
+bool versionCheck(uint64_t version, bool addOrDel, uint64_t snapShot)
+{
+    if (snapShot == 666) // Generate From Common Graph
+    {
+        if (version == 666)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    else
+    {
+        // snapshot from 0 to batch_num
+        if (version == 666)
+        {
+            return true;
+        }
+        if (addOrDel) // Deletion {snapShot, snapShot + 1, ..., batch_num}
+        {
+            if (version < snapShot)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+        else // Addition {0, 1, ..., snapShot - 1}
+        {
+            if (version >= snapShot)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+    }
+}
+bool checkGraphAndEdgeList(Graph<uint64_t>& graph, std::vector<std::pair<uint64_t, bool>> &E_tag, uint64_t version)
+{
+    auto graphSize = graph.get_degree();
+    std::atomic<uint64_t> edgeCount(0);
+    THRESHOLD_OPENMP_LOCAL("omp parallel for", E_tag.size(), 1024,
+        for (uint64_t i = 0; i < E_tag.size(); i++)
+        {
+            auto tag = E_tag[i];
+            if (versionCheck(tag.first, tag.second, version))
+            {
+                edgeCount.fetch_add(1);
+            }
+        }
+    );
+    fprintf(stderr, "Graph Size: %lu, Edge Count For Version %lu is %lu\n", graphSize, version ,edgeCount.load());
+    if (edgeCount.load() == graphSize)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+std::vector<std::pair<uint64_t, uint64_t>> coreGenerateVector(Graph<uint64_t>& graph, 
+                                                                std::pair<uint64_t, uint64_t> *raw_edges, 
+                                                                std::vector<std::pair<uint64_t, bool>> &E_tag, 
+                                                                uint64_t raw_edges_len,
+                                                                uint64_t snapShotNum = 666)
+{
+    // First Check Whether the graph Match the version
+    if(!checkGraphAndEdgeList(graph, E_tag, snapShotNum))
+    {
+        fprintf(stderr, "Graph and Edge List do not match\n");
+        exit(1);
+    }
+    // choose 20 High Degree Nodes for core graph generation
+    auto rankIn = rank_in(graph);
+    auto rankOut = rank_out(graph);
+    auto outRankResult = graph.alloc_vertex_tree_array_vector<uint64_t>(rankOut.size());
+    auto inRankResult = graph.alloc_vertex_tree_array_vector<uint64_t>(rankIn.size());
+
+    std::vector<bool> out_flag(graph.getNodesNum(), false);
+    std::vector<bool> in_flag(graph.getNodesNum(), false);
+    std::set<std::pair<uint64_t, uint64_t>> edge_set;
+    std::vector<bool> edgeOutFlag(raw_edges_len, false);
+    std::vector<bool> edgeInFlag(raw_edges_len, false);
+
+    for (auto i = 0; i < rankOut.size(); i++)
+    {
+        uint64_t root = rankOut[i];
+        outRankResult[i] = rootCompute(graph, root);
+    }
+
+    graph.transpose(); // Transpose Only happens without Delta Batches
+    for (auto i = 0; i < rankIn.size(); i++)
+    {
+        uint64_t root = rankIn[i];
+        inRankResult[i] = rootCompute(graph, root);
+    }    
+    graph.transpose(); // Transpose Only happens without Delta Batches
+
+    //start to find the core graph edges
+    auto start = std::chrono::system_clock::now();
+    THRESHOLD_OPENMP_LOCAL("omp parallel for", raw_edges_len, 1024,
+        for (auto edge = 0; edge < raw_edges_len; edge++)
+        {
+            auto e = raw_edges[edge];
+            auto tag = E_tag[edge];
+            if (versionCheck(tag.first, tag.second, snapShotNum))
+            {
+                uint64_t src = e.first;
+                uint64_t dst = e.second;
+                uint64_t edgeLen = (src + dst) % 16 + 1;
+                for (uint64_t idx = 0; idx < rankOut.size(); idx++) 
+                {
+                    if (outRankResult[idx][src].data + edgeLen == outRankResult[idx][dst].data || inRankResult[idx][dst].data + edgeLen == inRankResult[idx][src].data) 
+                    {
+                        #pragma omp critical
+                        {
+                            out_flag[src] = true;
+                            in_flag[dst] = true;
+                            edgeOutFlag[edge] = true;
+                        }
+                    }
+                }
+            }
+        }
+    );
+    auto end = std::chrono::system_clock::now();
+    fprintf(stderr, "Forward Time: %.6lfs\n", 1e-6*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(end-start).count());
+    std::cout << "Forward progress: 100% completed." << std::endl;
+    
+
+    for (uint64_t i = 0; i < graph.getNodesNum(); i++)
+    {
+        if (!out_flag[i])
+        {
+            if (graph.getAllOutDegree(i) > 0)
+            {
+                edge_set.insert(std::make_pair(i, graph.getOutDstForMainCSR(i, 0)));
+            }
+        }    
+    }
+    
+    graph.transpose();
+    for (uint64_t i = 0; i < graph.getNodesNum(); i++)
+    {
+        if (!in_flag[i])
+        {
+            if (graph.getAllOutDegree(i) > 0)
+            {
+                edge_set.insert(std::make_pair(graph.getOutDstForMainCSR(i, 0), i));
+            }
+        }    
+    }
+    graph.transpose();
+
+    for (uint64_t i = 0; i < raw_edges_len; i++)
+    {
+        if (edgeOutFlag[i] || edgeInFlag[i])
+        {
+            edge_set.insert(raw_edges[i]);
+        }
+    }
+
+    fprintf(stderr, "Finish to find core graph edge with in/out flag\n");
+    fprintf(stderr, "core graph edge size: %lu\n", edge_set.size());
+    fprintf(stderr," Percentage of core graph edge: %.2f\n", 100.0 * edge_set.size() / graph.get_degree());
+    std::vector<std::pair<uint64_t, uint64_t>> edge_set_vector(edge_set.begin(), edge_set.end());
+    return edge_set_vector;
+}
+
+
 std::vector<uint64_t> readNumbersFromFile(const std::string& fileName) {
     std::vector<uint64_t> numbers;
     std::ifstream file(fileName);
@@ -391,6 +570,9 @@ int main(int argc, char** argv)
     }
     );
     // E_tag is used to mark the edge as addition or deletion and their version as well
+    // version 666 means the edge is always in the graph
+    // True means the edge is in the deletion batch
+    // False means the edge is in the addition batch
     for (uint64_t batch = 0; batch < batch_num; batch++)
     {
         for (uint64_t i = 0; i < batch_size; i++)
@@ -416,7 +598,8 @@ int main(int argc, char** argv)
     }
     uint64_t numIntersectionEdges = graph.get_degree();
     fprintf(stderr, "Number of Edges in Intersection Graph is %lu\n", numIntersectionEdges);
-    auto core_edges = core_generate(graph);
+    // auto core_edges = core_generate(graph);
+    auto core_edges = coreGenerateVector(graph, raw_edges, E_tag, raw_edges_len);
 
     Graph<uint64_t> intersectionCoreGraph(num_vertices, core_edges.size(), false, true);
     #pragma omp parallel for
@@ -449,7 +632,6 @@ int main(int argc, char** argv)
                 }
             }
         }
-        // fprintf(stderr, "Correct for %lu is %lu, total nodes is %lu\n", roots[i], correct, num_vertices);
         totalCorrect += correct;
         wrongNumber += wrong;
     }
