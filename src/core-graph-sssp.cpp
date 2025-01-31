@@ -164,11 +164,13 @@ std::vector<std::pair<uint64_t, uint64_t>> core_generate(Graph<uint64_t>& graph)
     graph.transpose(); // Transpose Only happens without Delta Batches
 
     //start to find the core graph edges
+    auto start = std::chrono::system_clock::now();
+    #pragma omp parallel for
     for (auto i = 0; i < graph.getNodesNum(); i++)
     {
-        if (i % (graph.getNodesNum() / 5) == 0) {
-            std::cout << "Progress: " << (i * 100 / graph.getNodesNum()) << "% completed." << std::endl;
-        }
+        // if (i % (graph.getNodesNum() / 10) == 0) {
+        //     std::cout << "Progress: " << (i * 100 / graph.getNodesNum()) << "% completed." << std::endl;
+        // }
         #pragma omp parallel for
         for (uint64_t idx = 0; idx < rankOut.size(); idx++) 
         {
@@ -179,22 +181,29 @@ std::vector<std::pair<uint64_t, uint64_t>> core_generate(Graph<uint64_t>& graph)
                 uint64_t edgeLen = (i + dst) % 16 + 1;
                 if (outRankResult[idx][i].data + edgeLen == outRankResult[idx][dst].data) {
                     if (graph.edgeOutCheck(i, dst)) {
-                        out_flag[i] = true;
-                        in_flag[dst] = true;
-                        edge_flag[i][k] = true;
+                        #pragma omp critical
+                        {
+                            out_flag[i] = true;
+                            in_flag[dst] = true;
+                            edge_flag[i][k] = true;
+                        }
                     }
                 }
             }
         }
     }
     std::cout << "Forward progress: 100% completed." << std::endl;
+    auto end = std::chrono::system_clock::now();
+    fprintf(stderr, "Forward Time: %.6lfs\n", 1e-6*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(end-start).count());
     graph.transpose();
+    start = std::chrono::system_clock::now();
+    #pragma omp parallel for
     for (auto i = 0; i < graph.getNodesNum(); i++)
     {
-        if (i % (graph.getNodesNum() / 5) == 0) 
-        {
-            std::cout << "Progress: " << (i * 100 / graph.getNodesNum()) << "% completed." << std::endl;
-        }
+        // if (i % (graph.getNodesNum() / 10) == 0) 
+        // {
+        //     std::cout << "Progress: " << (i * 100 / graph.getNodesNum()) << "% completed." << std::endl;
+        // }
         #pragma omp parallel for
         for (uint64_t idx = 0; idx < rankIn.size(); idx++) 
         {
@@ -204,16 +213,22 @@ std::vector<std::pair<uint64_t, uint64_t>> core_generate(Graph<uint64_t>& graph)
                 uint64_t dst = inList[k].nbr;
                 uint64_t edgeLen = (i + dst) % 16 + 1;
                 if (inRankResult[idx][i].data + edgeLen == inRankResult[idx][dst].data) {
-                    if (graph.edgeOutCheck(i, dst)) {
-                        in_flag[i] = true;
-                        out_flag[dst] = true;
-                        edge_flag_in[i][k] = true;
+                    if (graph.edgeOutCheck(i, dst)) 
+                    {
+                        #pragma omp critical
+                        {                        
+                            in_flag[i] = true;
+                            out_flag[dst] = true;
+                            edge_flag_in[i][k] = true;
+                        }
                     }
                 }
             }
         }
     }
     std::cout << "Backward Progress: 100% completed." << std::endl;
+    end = std::chrono::system_clock::now();
+    fprintf(stderr, "Backward Time: %.6lfs\n", 1e-6*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(end-start).count());
     graph.transpose();
     fprintf(stderr, "Finish to find core graph edge with query results\n");
     #pragma omp parallel for
@@ -267,6 +282,7 @@ std::vector<std::pair<uint64_t, uint64_t>> core_generate(Graph<uint64_t>& graph)
     graph.transpose();
     fprintf(stderr, "Finish to find core graph edge with in/out flag\n");
     fprintf(stderr, "core graph edge size: %lu\n", edge_set.size());
+    fprintf(stderr," Percentage of core graph edge: %.2f\n", 100.0 * edge_set.size() / graph.get_degree());
     std::vector<std::pair<uint64_t, uint64_t>> edge_set_vector(edge_set.begin(), edge_set.end());
     return edge_set_vector;
 }
