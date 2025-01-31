@@ -165,31 +165,6 @@ std::vector<std::pair<uint64_t, uint64_t>> core_generate(Graph<uint64_t>& graph)
 
     //start to find the core graph edges
     auto start = std::chrono::system_clock::now();
-    // #pragma omp parallel for
-    // for (auto i = 0; i < graph.getNodesNum(); i++)
-    // {
-    //     #pragma omp parallel for
-    //     for (uint64_t idx = 0; idx < rankOut.size(); idx++) 
-    //     {
-    //         auto outList = graph.get_outgoing_adjlist(i);
-    //         #pragma omp parallel for
-    //         for (uint64_t k = 0; k < graph.getAllOutDegree(i); k++) {
-    //             uint64_t dst = outList[k].nbr;
-    //             uint64_t edgeLen = (i + dst) % 16 + 1;
-    //             if (outRankResult[idx][i].data + edgeLen == outRankResult[idx][dst].data) {
-    //                 if (graph.edgeOutCheck(i, dst)) {
-    //                     #pragma omp critical
-    //                     {
-    //                         out_flag[i] = true;
-    //                         in_flag[dst] = true;
-    //                         edge_flag[i][k] = true;
-    //                     }
-    //                 }
-    //             }
-    //         }
-    //     }
-    // }
-
     std::vector<uint64_t> nodeStartIndex(graph.getNodesNum() + 1, 0);
     uint64_t totalEdges = 0;
 
@@ -203,7 +178,6 @@ std::vector<std::pair<uint64_t, uint64_t>> core_generate(Graph<uint64_t>& graph)
     for (uint64_t edgeIndex = 0; edgeIndex < totalEdges; edgeIndex++) {
         // **计算 src（起始节点）**
         uint64_t src = std::upper_bound(nodeStartIndex.begin(), nodeStartIndex.end(), edgeIndex) - nodeStartIndex.begin() - 1;
-
         // **计算 k（当前 src 的出边索引）**
         uint64_t k = edgeIndex - nodeStartIndex[src];
 
@@ -231,31 +205,6 @@ std::vector<std::pair<uint64_t, uint64_t>> core_generate(Graph<uint64_t>& graph)
     fprintf(stderr, "Forward Time: %.6lfs\n", 1e-6*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(end-start).count());
     graph.transpose();
     start = std::chrono::system_clock::now();
-    // #pragma omp parallel for
-    // for (auto i = 0; i < graph.getNodesNum(); i++)
-    // {
-    //     #pragma omp parallel for
-    //     for (uint64_t idx = 0; idx < rankIn.size(); idx++) 
-    //     {
-    //         auto inList = graph.get_outgoing_adjlist(i);
-    //         #pragma omp parallel for
-    //         for (uint64_t k = 0; k < graph.getAllOutDegree(i); k++) {
-    //             uint64_t dst = inList[k].nbr;
-    //             uint64_t edgeLen = (i + dst) % 16 + 1;
-    //             if (inRankResult[idx][i].data + edgeLen == inRankResult[idx][dst].data) {
-    //                 if (graph.edgeOutCheck(i, dst)) 
-    //                 {
-    //                     #pragma omp critical
-    //                     {                        
-    //                         in_flag[i] = true;
-    //                         out_flag[dst] = true;
-    //                         edge_flag_in[i][k] = true;
-    //                     }
-    //                 }
-    //             }
-    //         }
-    //     }
-    // }
     totalEdges = 0;
     for (uint64_t i = 0; i < graph.getNodesNum(); i++) {
         nodeStartIndex[i] = totalEdges;
@@ -479,23 +428,34 @@ int main(int argc, char** argv)
     fprintf(stderr, "Number of Edges in Core Graph is %lu\n", intersectionCoreGraph.get_degree());
     uint64_t srcToCalculate = 100;
     uint64_t totalCorrect = 0;
+    uint64_t wrongNumber = 0;
     for (uint64_t i = 0; i < srcToCalculate; i++)
     {
         auto coreResult = rootCompute(intersectionCoreGraph, roots[i]);
         auto correctResult = rootCompute(graph, roots[i]);
         uint64_t correct = 0;
+        uint64_t wrong = 0;
         for (uint64_t j = 0; j < num_vertices; j++)
         {
             if (coreResult[j].data == correctResult[j].data)
             {
                 correct++;
             }
+            else
+            {
+                if (coreResult[j].data < correctResult[j].data)
+                {
+                    wrong++;
+                }
+            }
         }
         // fprintf(stderr, "Correct for %lu is %lu, total nodes is %lu\n", roots[i], correct, num_vertices);
         totalCorrect += correct;
+        wrongNumber += wrong;
     }
     fprintf(stderr, "Total Correct is %lu\n", totalCorrect);
     float accuracy = (float)totalCorrect / (srcToCalculate * num_vertices);
     fprintf(stderr, "Accuracy is %.2f\n", 100*accuracy);
+    fprintf(stderr,"wrong NUMBER is %lu\n", wrongNumber);
     return 0;
 }
