@@ -165,67 +165,131 @@ std::vector<std::pair<uint64_t, uint64_t>> core_generate(Graph<uint64_t>& graph)
 
     //start to find the core graph edges
     auto start = std::chrono::system_clock::now();
-    #pragma omp parallel for
-    for (auto i = 0; i < graph.getNodesNum(); i++)
-    {
-        // if (i % (graph.getNodesNum() / 10) == 0) {
-        //     std::cout << "Progress: " << (i * 100 / graph.getNodesNum()) << "% completed." << std::endl;
-        // }
-        #pragma omp parallel for
-        for (uint64_t idx = 0; idx < rankOut.size(); idx++) 
-        {
-            auto outList = graph.get_outgoing_adjlist(i);
-            #pragma omp parallel for
-            for (uint64_t k = 0; k < graph.getAllOutDegree(i); k++) {
-                uint64_t dst = outList[k].nbr;
-                uint64_t edgeLen = (i + dst) % 16 + 1;
-                if (outRankResult[idx][i].data + edgeLen == outRankResult[idx][dst].data) {
-                    if (graph.edgeOutCheck(i, dst)) {
-                        #pragma omp critical
-                        {
-                            out_flag[i] = true;
-                            in_flag[dst] = true;
-                            edge_flag[i][k] = true;
-                        }
+    // #pragma omp parallel for
+    // for (auto i = 0; i < graph.getNodesNum(); i++)
+    // {
+    //     #pragma omp parallel for
+    //     for (uint64_t idx = 0; idx < rankOut.size(); idx++) 
+    //     {
+    //         auto outList = graph.get_outgoing_adjlist(i);
+    //         #pragma omp parallel for
+    //         for (uint64_t k = 0; k < graph.getAllOutDegree(i); k++) {
+    //             uint64_t dst = outList[k].nbr;
+    //             uint64_t edgeLen = (i + dst) % 16 + 1;
+    //             if (outRankResult[idx][i].data + edgeLen == outRankResult[idx][dst].data) {
+    //                 if (graph.edgeOutCheck(i, dst)) {
+    //                     #pragma omp critical
+    //                     {
+    //                         out_flag[i] = true;
+    //                         in_flag[dst] = true;
+    //                         edge_flag[i][k] = true;
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+
+    std::vector<uint64_t> nodeStartIndex(graph.getNodesNum() + 1, 0);
+    uint64_t totalEdges = 0;
+
+    for (uint64_t i = 0; i < graph.getNodesNum(); i++) {
+        nodeStartIndex[i] = totalEdges;
+        totalEdges += graph.getAllOutDegree(i);
+    }
+    nodeStartIndex[graph.getNodesNum()] = totalEdges;
+
+    THRESHOLD_OPENMP_LOCAL("omp parallel for", totalEdges, 1024,
+    for (uint64_t edgeIndex = 0; edgeIndex < totalEdges; edgeIndex++) {
+        // **计算 src（起始节点）**
+        uint64_t src = std::upper_bound(nodeStartIndex.begin(), nodeStartIndex.end(), edgeIndex) - nodeStartIndex.begin() - 1;
+
+        // **计算 k（当前 src 的出边索引）**
+        uint64_t k = edgeIndex - nodeStartIndex[src];
+
+        // **获取目标节点 dst**
+        uint64_t dst = graph.getOutDstForMainCSR(src, k);
+        
+        // **执行计算**
+        uint64_t edgeLen = (src + dst) % 16 + 1;
+        for (uint64_t idx = 0; idx < rankOut.size(); idx++) {
+            if (outRankResult[idx][src].data + edgeLen == outRankResult[idx][dst].data) {
+                if (graph.edgeOutCheck(src, dst)) {
+                    #pragma omp critical
+                    {
+                        out_flag[src] = true;
+                        in_flag[dst] = true;
+                        edge_flag[src][k] = true;
                     }
                 }
             }
         }
     }
+    );
     std::cout << "Forward progress: 100% completed." << std::endl;
     auto end = std::chrono::system_clock::now();
     fprintf(stderr, "Forward Time: %.6lfs\n", 1e-6*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(end-start).count());
     graph.transpose();
     start = std::chrono::system_clock::now();
-    #pragma omp parallel for
-    for (auto i = 0; i < graph.getNodesNum(); i++)
-    {
-        // if (i % (graph.getNodesNum() / 10) == 0) 
-        // {
-        //     std::cout << "Progress: " << (i * 100 / graph.getNodesNum()) << "% completed." << std::endl;
-        // }
-        #pragma omp parallel for
-        for (uint64_t idx = 0; idx < rankIn.size(); idx++) 
-        {
-            auto inList = graph.get_outgoing_adjlist(i);
-            #pragma omp parallel for
-            for (uint64_t k = 0; k < graph.getAllOutDegree(i); k++) {
-                uint64_t dst = inList[k].nbr;
-                uint64_t edgeLen = (i + dst) % 16 + 1;
-                if (inRankResult[idx][i].data + edgeLen == inRankResult[idx][dst].data) {
-                    if (graph.edgeOutCheck(i, dst)) 
+    // #pragma omp parallel for
+    // for (auto i = 0; i < graph.getNodesNum(); i++)
+    // {
+    //     #pragma omp parallel for
+    //     for (uint64_t idx = 0; idx < rankIn.size(); idx++) 
+    //     {
+    //         auto inList = graph.get_outgoing_adjlist(i);
+    //         #pragma omp parallel for
+    //         for (uint64_t k = 0; k < graph.getAllOutDegree(i); k++) {
+    //             uint64_t dst = inList[k].nbr;
+    //             uint64_t edgeLen = (i + dst) % 16 + 1;
+    //             if (inRankResult[idx][i].data + edgeLen == inRankResult[idx][dst].data) {
+    //                 if (graph.edgeOutCheck(i, dst)) 
+    //                 {
+    //                     #pragma omp critical
+    //                     {                        
+    //                         in_flag[i] = true;
+    //                         out_flag[dst] = true;
+    //                         edge_flag_in[i][k] = true;
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+    totalEdges = 0;
+    for (uint64_t i = 0; i < graph.getNodesNum(); i++) {
+        nodeStartIndex[i] = totalEdges;
+        totalEdges += graph.getAllOutDegree(i);
+    }
+    nodeStartIndex[graph.getNodesNum()] = totalEdges;
+
+    THRESHOLD_OPENMP_LOCAL("omp parallel for", totalEdges, 1024,
+    for (uint64_t edgeIndex = 0; edgeIndex < totalEdges; edgeIndex++) {
+        // **计算 src（起始节点）**
+        uint64_t src = std::upper_bound(nodeStartIndex.begin(), nodeStartIndex.end(), edgeIndex) - nodeStartIndex.begin() - 1;
+
+        // **计算 k（当前 src 的出边索引）**
+        uint64_t k = edgeIndex - nodeStartIndex[src];
+
+        // **获取目标节点 dst**
+        uint64_t dst = graph.getOutDstForMainCSR(src, k);
+        
+        // **执行计算**
+        uint64_t edgeLen = (src + dst) % 16 + 1;
+        for (uint64_t idx = 0; idx < rankIn.size(); idx++) {
+            if (inRankResult[idx][src].data + edgeLen == inRankResult[idx][dst].data) {
+                if (graph.edgeOutCheck(src, dst)) {
+                    #pragma omp critical
                     {
-                        #pragma omp critical
-                        {                        
-                            in_flag[i] = true;
-                            out_flag[dst] = true;
-                            edge_flag_in[i][k] = true;
-                        }
+                        in_flag[src] = true;
+                        out_flag[dst] = true;
+                        edge_flag_in[src][k] = true;
                     }
                 }
             }
         }
     }
+    );
     std::cout << "Backward Progress: 100% completed." << std::endl;
     end = std::chrono::system_clock::now();
     fprintf(stderr, "Backward Time: %.6lfs\n", 1e-6*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(end-start).count());

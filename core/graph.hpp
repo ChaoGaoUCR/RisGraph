@@ -245,6 +245,11 @@ public:
         return count;
     }
 
+    uint64_t getOutDstForMainCSR(uint64_t src, uint64_t outPtr)
+    {
+        return outgoing.get_adjlist(src)[outPtr].nbr;
+    }
+
     adjlist_type& get_outgoing_adjlist(uint64_t vid)
     {
         return outgoing.get_adjlist(vid);
