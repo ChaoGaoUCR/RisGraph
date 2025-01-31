@@ -237,7 +237,7 @@ public:
     uint64_t get_degree()
     {
         uint64_t count = 0;
-        // #pragma omp parallel for reduction(+:count)
+        #pragma omp parallel for reduction(+:count)
         for(uint64_t i=0;i<vertices;i++)
         {
             count += get_outgoing_degree(i);

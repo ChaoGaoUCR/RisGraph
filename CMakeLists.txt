@@ -122,6 +122,7 @@ add_executable(Risgraph_baseline_SSSP src/Risgraph_baseline_SSSP.cpp)
 add_executable(CommonGraph_baseline_direct_SSSP src/CommonGraph_baseline_direct_SSSP.cpp)
 add_executable(CommonGraph_baseline_WH src/CommonGraph_baseline_WH.cpp)
 add_executable(core-graph-sssp src/core-graph-sssp.cpp)
+add_executable(index-graph-sssp src/index-graph-sssp.cpp)
 
 add_executable(sswp src/sswp.cpp)
 add_executable(sswp_inc src/sswp_inc.cpp)
