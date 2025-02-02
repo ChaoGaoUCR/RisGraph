@@ -681,13 +681,12 @@ int main(int argc, char** argv)
             );          
         }
     }
-
+    uint64_t srcToCalculate = 100;
     for (auto snapshotGraph = 0; snapshotGraph < batch_num + 1; snapshotGraph++)
     {
         fprintf(stderr, "--------------------------------\n");
 
-        // Process Correct Result
-        auto correctResult = rootCompute(graph, roots[0]);
+
         
         // Process Core Graph Result
         Graph<uint64_t> coreForAllGraph(num_vertices, coreForAllEdges.size(), false, true);
@@ -701,7 +700,14 @@ int main(int argc, char** argv)
             }
         }
         );
-        auto coreGraphResult = rootCompute(coreForAllGraph, roots[0]);
+        // Process Correct Result
+        auto correctResult = graph.alloc_vertex_tree_array_vector<uint64_t>(srcToCalculate);
+        auto coreResult = coreForAllGraph.alloc_vertex_tree_array_vector<uint64_t>(srcToCalculate);
+        for (auto i = 0; i < srcToCalculate; i++)
+        {
+            correctResult[i] = rootCompute(graph, i);
+            coreResult[i] = rootCompute(coreForAllGraph, i);
+        }
 
         fprintf(stderr,"Core Graph Size is %.2f %% For Snapshot %d\n", 100.0* coreForAllGraph.get_degree()/graph.get_degree(), snapshotGraph);
         if (graph.get_degree() - batch_num * batch_size != commonGraphEdges)
@@ -711,22 +717,29 @@ int main(int argc, char** argv)
         }
 
         // Compare the Result
-        uint64_t correctCount = 0;
-        uint64_t wrongCount = 0;
-        for (uint64_t i = 0; i < num_vertices; i++)
+        std::atomic<uint64_t> correctCount(0);
+        std::atomic<uint64_t> wrongCount(0);
+        for (uint64_t i = 0; i < srcToCalculate; i++)
         {
-            if (correctResult[i].data == coreGraphResult[i].data)
+            THRESHOLD_OPENMP_LOCAL("omp parallel for", graph.getNodesNum(), 1024,
+            for (uint64_t j = 0; j < graph.getNodesNum(); j++)
             {
-                correctCount++;
+                if (correctResult[i][j].data == coreResult[i][j].data)
+                {
+                    correctCount.fetch_add(1);
+                }
+                else
+                {
+                    if (correctResult[i][j].data > coreResult[i][j].data)
+                    {
+                        wrongCount.fetch_add(1);
+                    }
+                }
             }
-            if (correctResult[i].data > coreGraphResult[i].data)
-            {
-                wrongCount++;
-                // fprintf(stderr, "Node %lu: %lu is Correct, but %lu is Wrong\n", i, correctResult[i].data, coreGraphResult[i].data);
-            }
+            );
         }
-        fprintf(stderr," %d Snapshot has %.2f%% correct result\n", snapshotGraph, 100.0 * correctCount / num_vertices);
-        fprintf(stderr," %d Snapshot has %lu wrong result\n", snapshotGraph, wrongCount);
+        fprintf(stderr," %d Snapshot has %.2f%% correct result\n", snapshotGraph, (100.0 * correctCount.load()) / (num_vertices * srcToCalculate));
+        fprintf(stderr," %d Snapshot has %lu wrong result For Total Source\n", snapshotGraph, wrongCount.load());
         if (snapshotGraph == batch_num)
         {
             break;
