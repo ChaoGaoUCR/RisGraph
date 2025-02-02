@@ -277,6 +277,7 @@ public:
         return outgoing.get_edge_num(e.src, e);
     }
 
+
     uint64_t add_edge(edge_type e, bool directed = true)
     {
         if(e.src >= vertices || e.dst >= vertices) throw std::runtime_error("VertexId error.");
@@ -353,26 +354,21 @@ public:
 
     bool edgeOutCheck(uint64_t src, uint64_t dst)
     {
-        for(uint64_t outPtr = 0; outPtr < outgoing.get_degree(src); outPtr++)
+        // for(uint64_t outPtr = 0; outPtr < outgoing.get_degree(src); outPtr++)
+        // {
+        //     if(outgoing.get_adjlist(src)[outPtr].nbr == dst)
+        //     {
+        //         return true;
+        //     }
+        // }
+        if(get_edge_num({src, dst, (src + dst) % 16 + 1}) > 0)
         {
-            if(outgoing.get_adjlist(src)[outPtr].nbr == dst)
-            {
-                return true;
-            }
+            return true;
         }
-        return false;
-    }
-
-    bool edgeInCheck(uint64_t src, uint64_t dst)
-    {
-        for(uint64_t inPtr = 0; inPtr < incoming.get_degree(src); inPtr++)
+        else
         {
-            if(incoming.get_adjlist(src)[inPtr].nbr == dst)
-            {
-                return true;
-            }
+            return false;
         }
-        return false;
     }
 
     template<typename VertexData>

@@ -47,6 +47,11 @@ else  \
 // Taken n as the number of random numbers to generate
 // Taken N as the range of random numbers
 // Taken seed as the seed for the random number generator
+struct PairHash {
+    size_t operator()(const std::pair<uint64_t, uint64_t>& p) const {
+        return std::hash<uint64_t>{}(p.first) ^ (std::hash<uint64_t>{}(p.second) << 1);
+    }
+};
 bool sortByLargerSecondElement(const std::pair<long, long> &a, const std::pair<long, long> &b) {
   return (a.second > b.second);
 }
@@ -188,7 +193,7 @@ std::vector<std::pair<uint64_t, uint64_t>> core_generate(Graph<uint64_t>& graph)
         uint64_t edgeLen = (src + dst) % 16 + 1;
         for (uint64_t idx = 0; idx < rankOut.size(); idx++) {
             if (outRankResult[idx][src].data + edgeLen == outRankResult[idx][dst].data) {
-                if (graph.edgeOutCheck(src, dst)) {
+                if (graph.get_edge_num({src, dst, edgeLen}) > 0) {
                     #pragma omp critical
                     {
                         out_flag[src] = true;
@@ -227,7 +232,7 @@ std::vector<std::pair<uint64_t, uint64_t>> core_generate(Graph<uint64_t>& graph)
         uint64_t edgeLen = (src + dst) % 16 + 1;
         for (uint64_t idx = 0; idx < rankIn.size(); idx++) {
             if (inRankResult[idx][src].data + edgeLen == inRankResult[idx][dst].data) {
-                if (graph.edgeOutCheck(src, dst)) {
+                if (graph.get_edge_num({src, dst, edgeLen})) {
                     #pragma omp critical
                     {
                         in_flag[src] = true;
@@ -302,6 +307,11 @@ std::vector<std::pair<uint64_t, uint64_t>> core_generate(Graph<uint64_t>& graph)
 
 bool versionCheck(uint64_t version, bool addOrDel, uint64_t snapShot)
 {
+    // snapShot = 999 means the Union Graph
+    if (snapShot == 999)
+    {
+        return true;
+    }
     if (snapShot == 666) // Generate From Common Graph
     {
         if (version == 666)
@@ -494,6 +504,38 @@ std::vector<uint64_t> readNumbersFromFile(const std::string& fileName) {
     file.close();
     return numbers;
 }
+
+void parallel_insert(tbb::concurrent_unordered_set<std::pair<uint64_t, uint64_t>, PairHash>& set, 
+                     const std::vector<std::pair<uint64_t, uint64_t>>& data) {
+    size_t num_threads = std::thread::hardware_concurrency();
+    size_t chunk_size = (data.size() + num_threads - 1) / num_threads;
+    std::vector<std::thread> threads;
+
+    for (size_t i = 0; i < num_threads; ++i) {
+        threads.emplace_back([&, i]() {
+            size_t start = i * chunk_size;
+            size_t end = std::min(start + chunk_size, data.size());
+            for (size_t j = start; j < end; ++j) {
+                set.insert(data[j]);
+            }
+        });
+    }
+    for (auto& t : threads) {
+        t.join();
+    }
+}
+
+std::vector<std::pair<uint64_t, uint64_t>> MergeTwoVectorEdge(std::vector<std::pair<uint64_t, uint64_t>> &a, 
+                                                              std::vector<std::pair<uint64_t, uint64_t>> &b) {
+    tbb::concurrent_unordered_set<std::pair<uint64_t, uint64_t>, PairHash> merged_set;
+
+    parallel_insert(merged_set, a);
+    parallel_insert(merged_set, b);
+    fprintf(stderr, "Merged Set Size: %lu\n", merged_set.size());
+    return std::vector<std::pair<uint64_t, uint64_t>>(merged_set.begin(), merged_set.end());
+}
+
+
 int main(int argc, char** argv)
 {
     if (argc != 5)
@@ -503,7 +545,7 @@ int main(int argc, char** argv)
     }
     std::pair<uint64_t, uint64_t> *raw_edges = nullptr;
     std::vector<uint64_t> roots = readNumbersFromFile(argv[2]);
-    // uint64_t root = std::stoull(argv[2]);
+
     uint64_t raw_edges_len;
     std::vector<std::pair<uint64_t, uint64_t>> temp_edges;
 
@@ -583,7 +625,7 @@ int main(int argc, char** argv)
             E_tag[random_selection[(batch + batch_num) * batch_size + i]] = {batch, true};
         }
     }
-    // Intersection Graph Read
+    // Union Graph Read
     Graph<uint64_t> graph(num_vertices, raw_edges_len, false, true);
     {
         auto start = std::chrono::system_clock::now();
@@ -591,53 +633,119 @@ int main(int argc, char** argv)
         for(uint64_t i=0;i<raw_edges_len;i++)
         {
             const auto &e = raw_edges[i];
-            if(E_tag[i].first == 666) {graph.add_edge({e.first, e.second, (e.first+e.second)%16 + 1}, true);}
+            // if(E_tag[i].first == 666) {graph.add_edge({e.first, e.second, (e.first+e.second)%16 + 1}, true);}
+            graph.add_edge({e.first, e.second, (e.first+e.second)%16 + 1}, true);
         }
         auto end = std::chrono::system_clock::now();
-        fprintf(stderr, "Intersection Graph Marked: %.6lfs\n", 1e-6*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(end-start).count());
+        fprintf(stderr, "Union Graph Marked: %.6lfs\n", 1e-6*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(end-start).count());
     }
-    uint64_t numIntersectionEdges = graph.get_degree();
-    fprintf(stderr, "Number of Edges in Intersection Graph is %lu\n", numIntersectionEdges);
-    // auto core_edges = core_generate(graph);
-    auto core_edges = coreGenerateVector(graph, raw_edges, E_tag, raw_edges_len);
 
-    Graph<uint64_t> intersectionCoreGraph(num_vertices, core_edges.size(), false, true);
-    #pragma omp parallel for
-    for(uint64_t i=0;i<core_edges.size();i++)
+    fprintf(stderr, "Number of Edges in Union Graph is %lu\n", graph.get_degree());
+    auto unionCoreGraphEdges = coreGenerateVector(graph, raw_edges, E_tag, raw_edges_len, 999);
+
     {
-        const auto &e = core_edges[i];
-        intersectionCoreGraph.add_edge({e.first, e.second, (e.first+e.second)%16 + 1}, true);
-    }
-    fprintf(stderr, "Number of Edges in Core Graph is %lu\n", intersectionCoreGraph.get_degree());
-    uint64_t srcToCalculate = 100;
-    uint64_t totalCorrect = 0;
-    uint64_t wrongNumber = 0;
-    for (uint64_t i = 0; i < srcToCalculate; i++)
-    {
-        auto coreResult = rootCompute(intersectionCoreGraph, roots[i]);
-        auto correctResult = rootCompute(graph, roots[i]);
-        uint64_t correct = 0;
-        uint64_t wrong = 0;
-        for (uint64_t j = 0; j < num_vertices; j++)
+        for (auto batch = 0; batch < batch_num; batch++)
         {
-            if (coreResult[j].data == correctResult[j].data)
+            THRESHOLD_OPENMP_LOCAL("omp parallel for", batch_size, 1024,
+            for (uint64_t i = 0; i < batch_size; i++)
             {
-                correct++;
+                const auto &e = addition_batches[batch][i];
+                graph.del_edge({e.first, e.second, (e.first+e.second)%16 + 1}, true);
             }
-            else
+            );
+            THRESHOLD_OPENMP_LOCAL("omp parallel for", batch_size, 1024,
+            for (uint64_t i = 0; i < batch_size; i++)
             {
-                if (coreResult[j].data < correctResult[j].data)
-                {
-                    wrong++;
-                }
+                const auto &e = deletion_batches[batch][i];
+                graph.del_edge({e.first, e.second, (e.first+e.second)%16 + 1}, true);
+            }
+            );
+        }
+    }
+    auto commonGraphEdges = graph.get_degree();
+    fprintf(stderr, "Common Graph Edges: %lu\n", graph.get_degree());
+    
+    auto coreCommonGraphEdges = coreGenerateVector(graph, raw_edges, E_tag, raw_edges_len, 666);
+    auto coreForAllEdges = MergeTwoVectorEdge(unionCoreGraphEdges, coreCommonGraphEdges);
+        
+    {
+        // Init Computation From SnapShot 0 Common Graph Add All deletion Batches
+        for(auto size = 0; size < batch_num; size++)
+        {
+            THRESHOLD_OPENMP_LOCAL("omp parallel for", batch_size, 1024,
+            for (uint64_t i = 0; i < batch_size; i++)
+            {
+                const auto &e = deletion_batches[size][i];
+                graph.add_edge({e.first, e.second, (e.first+e.second)%16 + 1}, true);
+            }
+            );          
+        }
+    }
+
+    for (auto snapshotGraph = 0; snapshotGraph < batch_num + 1; snapshotGraph++)
+    {
+        fprintf(stderr, "--------------------------------\n");
+
+        // Process Correct Result
+        auto correctResult = rootCompute(graph, roots[0]);
+        
+        // Process Core Graph Result
+        Graph<uint64_t> coreForAllGraph(num_vertices, coreForAllEdges.size(), false, true);
+        THRESHOLD_OPENMP_LOCAL("omp parallel for", coreForAllEdges.size(), 1024,
+        for (uint64_t i = 0; i < coreForAllEdges.size(); i++)
+        {
+            const auto &e = coreForAllEdges[i];
+            if (graph.get_edge_num({e.first, e.second, (e.first + e.second) % 16 + 1}))
+            {
+                coreForAllGraph.add_edge({e.first, e.second, (e.first+e.second)%16 + 1}, true);
             }
         }
-        totalCorrect += correct;
-        wrongNumber += wrong;
+        );
+        auto coreGraphResult = rootCompute(coreForAllGraph, roots[0]);
+
+        fprintf(stderr,"Core Graph Size is %.2f %% For Snapshot %d\n", 100.0* coreForAllGraph.get_degree()/graph.get_degree(), snapshotGraph);
+        if (graph.get_degree() - batch_num * batch_size != commonGraphEdges)
+        {
+            fprintf(stderr, "Common Graph Edges is Wrong\n");
+            exit(1);
+        }
+
+        // Compare the Result
+        uint64_t correctCount = 0;
+        uint64_t wrongCount = 0;
+        for (uint64_t i = 0; i < num_vertices; i++)
+        {
+            if (correctResult[i].data == coreGraphResult[i].data)
+            {
+                correctCount++;
+            }
+            if (correctResult[i].data > coreGraphResult[i].data)
+            {
+                wrongCount++;
+                // fprintf(stderr, "Node %lu: %lu is Correct, but %lu is Wrong\n", i, correctResult[i].data, coreGraphResult[i].data);
+            }
+        }
+        fprintf(stderr," %d Snapshot has %.2f%% correct result\n", snapshotGraph, 100.0 * correctCount / num_vertices);
+        fprintf(stderr," %d Snapshot has %lu wrong result\n", snapshotGraph, wrongCount);
+        if (snapshotGraph == batch_num)
+        {
+            break;
+        }
+        THRESHOLD_OPENMP_LOCAL("omp parallel for", batch_size, 1024,
+        for (uint64_t i = 0; i < batch_size; i++)
+        {
+            const auto &e = addition_batches[snapshotGraph][i];
+            graph.add_edge({e.first, e.second, (e.first+e.second)%16 + 1}, true);
+        }
+        );
+        THRESHOLD_OPENMP_LOCAL("omp parallel for", batch_size, 1024,
+        for (uint64_t i = 0; i < batch_size; i++)
+        {
+            const auto &e = deletion_batches[snapshotGraph][i];
+            graph.del_edge({e.first, e.second, (e.first+e.second)%16 + 1}, true);
+        }
+        );
+
     }
-    fprintf(stderr, "Total Correct is %lu\n", totalCorrect);
-    float accuracy = (float)totalCorrect / (srcToCalculate * num_vertices);
-    fprintf(stderr, "Accuracy is %.2f\n", 100*accuracy);
-    fprintf(stderr,"wrong NUMBER is %lu\n", wrongNumber);
     return 0;
 }
