@@ -111,6 +111,7 @@ add_executable(bfs_inc src/bfs_inc.cpp)
 add_executable(bfs_inc_batch src/bfs_inc_batch.cpp)
 add_executable(bfs_inc_clf src/bfs_inc_clf.cpp)
 add_executable(bfs_inc_rt src/bfs_inc_rt.cpp)
+add_executable(bfs-core src/bfs-core.cpp)
 
 add_executable(sssp src/sssp.cpp)
 add_executable(sssp_inc src/sssp_inc.cpp)
@@ -129,6 +130,8 @@ add_executable(sswp_inc src/sswp_inc.cpp)
 add_executable(sswp_inc_batch src/sswp_inc_batch.cpp)
 add_executable(sswp_inc_clf src/sswp_inc_clf.cpp)
 add_executable(sswp_inc_rt src/sswp_inc_rt.cpp)
+add_executable(sswp-core src/sswp-core.cpp)
+add_executable(ssnp-core src/ssnp-core.cpp)
 
 if(UCX_FOUND)
 
