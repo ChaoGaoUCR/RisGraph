@@ -418,6 +418,24 @@ std::vector<std::pair<uint64_t, uint64_t>> coreGenerateVector(Graph<uint64_t>& g
 
     //start to find the core graph edges
     auto start = std::chrono::system_clock::now();
+
+    std::vector<std::vector<bool>> outRankResultAtomic(rankOut.size());
+    std::vector<std::vector<bool>> inRankResultAtomic(rankIn.size());
+
+    for (uint64_t i = 0; i < rankOut.size(); i++)
+    {
+        outRankResultAtomic[i].resize(graph.getNodesNum());
+        for (uint64_t j = 0; j < graph.getNodesNum(); j++)
+        {
+            outRankResultAtomic[i][j] = false;
+        }
+        inRankResultAtomic[i].resize(graph.getNodesNum());
+        for (uint64_t j = 0; j < graph.getNodesNum(); j++)
+        {
+            inRankResultAtomic[i][j] = false;
+        }
+    }
+
     THRESHOLD_OPENMP_LOCAL("omp parallel for", raw_edges_len, 1024,
         for (auto edge = 0; edge < raw_edges_len; edge++)
         {
@@ -430,13 +448,19 @@ std::vector<std::pair<uint64_t, uint64_t>> coreGenerateVector(Graph<uint64_t>& g
                 uint64_t edgeLen = 1;
                 for (uint64_t idx = 0; idx < rankOut.size(); idx++) 
                 {
-                    if ((outRankResult[idx][src].data + edgeLen == outRankResult[idx][dst].data) || (inRankResult[idx][dst].data + edgeLen == inRankResult[idx][src].data)) 
+                    bool outFlag = (outRankResult[idx][src].data + edgeLen == outRankResult[idx][dst].data) && !outRankResultAtomic[idx][dst];
+                    bool inFlag = (inRankResult[idx][dst].data + edgeLen == inRankResult[idx][src].data) && !inRankResultAtomic[idx][src];
+                    // bool outFlag = (outRankResult[idx][src].data + edgeLen == outRankResult[idx][dst].data);
+                    // bool inFlag = (inRankResult[idx][dst].data + edgeLen == inRankResult[idx][src].data);                    
+                    if (outFlag || inFlag) 
                     {
                         #pragma omp critical
                         {
                             out_flag[src] = true;
                             in_flag[dst] = true;
                             edgeOutFlag[edge] = true;
+                            outRankResultAtomic[idx][dst] = true;
+                            inRankResultAtomic[idx][src] = true;
                         }
                     }
                 }
