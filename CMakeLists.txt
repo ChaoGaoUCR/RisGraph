@@ -133,7 +133,8 @@ add_executable(sswp_inc_rt src/sswp_inc_rt.cpp)
 add_executable(sswp-core src/sswp-core.cpp)
 add_executable(ssnp-core src/ssnp-core.cpp)
 add_executable(wcc-core src/wcc-core.cpp)
-
+add_executable(index-wcc src/index-wcc.cpp)
+add_executable(index-sswp src/index-sswp.cpp)
 if(UCX_FOUND)
 
     add_executable(bfs_inc_rpc src/all_inc_rpc.cpp)
