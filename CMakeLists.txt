@@ -136,6 +136,7 @@ add_executable(wcc-core src/wcc-core.cpp)
 add_executable(index-wcc src/index-wcc.cpp)
 add_executable(index-sswp src/index-sswp.cpp)
 add_executable(index-bfs src/index-bfs.cpp)
+add_executable(viterbi-core src/viterbi-core.cpp)
 if(UCX_FOUND)
 
     add_executable(bfs_inc_rpc src/all_inc_rpc.cpp)
