@@ -111,7 +111,6 @@ add_executable(bfs_inc src/bfs_inc.cpp)
 add_executable(bfs_inc_batch src/bfs_inc_batch.cpp)
 add_executable(bfs_inc_clf src/bfs_inc_clf.cpp)
 add_executable(bfs_inc_rt src/bfs_inc_rt.cpp)
-add_executable(bfs-core src/bfs-core.cpp)
 
 add_executable(sssp src/sssp.cpp)
 add_executable(sssp_inc src/sssp_inc.cpp)
@@ -122,21 +121,29 @@ add_executable(sssp_inc_rt src/sssp_inc_rt.cpp)
 add_executable(Risgraph_baseline_SSSP src/Risgraph_baseline_SSSP.cpp)
 add_executable(CommonGraph_baseline_direct_SSSP src/CommonGraph_baseline_direct_SSSP.cpp)
 add_executable(CommonGraph_baseline_WH src/CommonGraph_baseline_WH.cpp)
-add_executable(core-graph-sssp src/core-graph-sssp.cpp)
-add_executable(index-graph-sssp src/index-graph-sssp.cpp)
 
 add_executable(sswp src/sswp.cpp)
 add_executable(sswp_inc src/sswp_inc.cpp)
 add_executable(sswp_inc_batch src/sswp_inc_batch.cpp)
 add_executable(sswp_inc_clf src/sswp_inc_clf.cpp)
 add_executable(sswp_inc_rt src/sswp_inc_rt.cpp)
+
+
+add_executable(bfs-core src/bfs-core.cpp)
+add_executable(sssp-core src/core-graph-sssp.cpp)
 add_executable(sswp-core src/sswp-core.cpp)
 add_executable(ssnp-core src/ssnp-core.cpp)
 add_executable(wcc-core src/wcc-core.cpp)
-add_executable(index-wcc src/index-wcc.cpp)
-add_executable(index-sswp src/index-sswp.cpp)
-add_executable(index-bfs src/index-bfs.cpp)
 add_executable(viterbi-core src/viterbi-core.cpp)
+
+
+
+add_executable(index-wcc src/index-wcc.cpp)
+add_executable(index-sssp src/index-graph-sssp.cpp)
+add_executable(index-sswp src/index-sswp.cpp)
+add_executable(index-viterbi src/index-viterbi.cpp)
+add_executable(index-bfs src/index-bfs.cpp)
+add_executable(index-ssnp src/index-ssnp.cpp)
 if(UCX_FOUND)
 
     add_executable(bfs_inc_rpc src/all_inc_rpc.cpp)
