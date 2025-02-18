@@ -38,6 +38,16 @@
 #include "storage.hpp"
 #include "io.hpp"
 
+#define THRESHOLD_OPENMP_LOCAL(para, length, THRESHOLD, ...) if((length) > THRESHOLD) \
+{ \
+    _Pragma(para) \
+    __VA_ARGS__ \
+} \
+else  \
+{ \
+    __VA_ARGS__ \
+} (void)0
+
 template <typename EdgeData = void>
 class Graph 
 {
@@ -100,8 +110,8 @@ public:
 
     void InitStreamBatch(uint64_t batch_num, 
                         uint64_t batch_size, 
-                        std::vector<std::vector<std::pair<uint64_t, uint64_t>>> addition_batches, 
-                        std::vector<std::vector<std::pair<uint64_t, uint64_t>>> deletion_batches)
+                        std::vector<std::vector<std::pair<uint64_t, uint64_t>>>& addition_batches, 
+                        std::vector<std::vector<std::pair<uint64_t, uint64_t>>>& deletion_batches)
     {
         auto start = std::chrono::system_clock::now();
         addBatchOut.resize(batch_num);
@@ -140,6 +150,94 @@ public:
         auto end = std::chrono::system_clock::now();
         fprintf(stderr, "Init Batch Time: %.6lfs\n", 1e-6*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(end-start).count());
     }
+    
+    void InitStreamBatch(std::vector<std::vector<std::pair<uint64_t, uint64_t>>>& addition_batches, 
+        std::vector<std::vector<std::pair<uint64_t, uint64_t>>>& deletion_batches)
+    {
+        clearBatch();
+        clearBatchIndex();
+        auto start = std::chrono::system_clock::now();
+        auto addBatchNum = addition_batches.size();
+        auto delBatchNum = deletion_batches.size();
+        if(addBatchNum != 0)
+        {
+            auto addBatchSize = addition_batches[0].size();
+            addBatchOut.resize(1);
+            addBatchIn.resize(1);
+            addBatchOut[0].resize(vertices);
+            addBatchIn[0].resize(vertices);
+            for (uint64_t i = 0; i < addBatchNum; i++)
+            {
+                if (addition_batches[i].size() != addBatchSize)
+                {
+                    throw std::runtime_error("Init add Batch size error.");
+                }
+                #pragma omp parallel for
+                for (uint64_t j = 0; j < addBatchSize; j++)
+                {
+                    const auto &e = addition_batches[i][j];
+                    edge_type edge = {e.first, e.second, (e.first+e.second)%16 + 1};
+                    addBatchOut[0].update_edge(edge, e.first, 1);
+                    addBatchIn[0].update_edge(edge, e.second, 1);
+                }
+            }
+        }
+        if(delBatchNum != 0)
+        {
+            auto delBatchSize = deletion_batches[0].size();
+            delBatchOut.resize(1);
+            delBatchIn.resize(1);
+            delBatchOut[0].resize(vertices);
+            delBatchIn[0].resize(vertices);
+            for (uint64_t i = 0; i < delBatchNum; i++)
+            {
+                if (deletion_batches[i].size() != delBatchSize)
+                {
+                    throw std::runtime_error("Init del Batch size error.");
+                }
+                #pragma omp parallel for
+                for (uint64_t j = 0; j < delBatchSize; j++)
+                {
+                    const auto &e = deletion_batches[i][j];
+                    edge_type edge = {e.first, e.second, (e.first+e.second)%16 + 1};
+                    delBatchOut[0].update_edge(edge, e.first, 1);
+                    delBatchIn[0].update_edge(edge, e.second, 1);
+                }
+            }
+        }
+        auto end = std::chrono::system_clock::now();
+        // fprintf(stderr, "Init Batch Time: %.6lfs\n", 1e-6*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(end-start).count());
+    }
+    
+    
+    
+    //This Initialization will only preserve the batch for direct Hop Computation
+    void InitStreamDH (std::vector<std::vector<std::pair<uint64_t, uint64_t>>>& incBatches)
+    {
+        addBatchOut.resize(1);
+        addBatchIn.resize(1);
+        addBatchOut[0].resize(vertices);
+        addBatchIn[0].resize(vertices);
+
+        auto batchNum = incBatches.size();
+        auto batchSize = incBatches[0].size();
+
+        #pragma omp parallel for            
+        for (uint64_t i = 0; i < batchNum; i++)
+        {
+            for (uint64_t j = 0; j < batchSize; j++)
+            {
+                const auto &e = incBatches[i][j];
+                edge_type edge = {e.first, e.second, (e.first+e.second)%16 + 1};
+                addBatchOut[0].update_edge(edge, e.first, 1);
+                addBatchIn[0].update_edge(edge, e.second, 1);
+            }
+        }
+        
+        std::vector<uint64_t> addBatchIndex = {0};
+        batchCoverageUpdate(addBatchIndex, {});
+    }
+
     void batchCoverageUpdate(std::vector<uint64_t> _addBatchIndex, std::vector<uint64_t> _delBatchIndex)
     {
         for (auto addindex: _addBatchIndex)
@@ -150,8 +248,8 @@ public:
         {
             delBatchIndex.push_back(delindex);
         }
-        fprintf(stderr, "addBatchIndex size %lu\n", addBatchIndex.size());
-        fprintf(stderr, "delBatchIndex size %lu\n", delBatchIndex.size());
+        // fprintf(stderr, "addBatchIndex size %lu\n", addBatchIndex.size());
+        // fprintf(stderr, "delBatchIndex size %lu\n", delBatchIndex.size());
     }
     
     void clearBatchIndex()
@@ -159,7 +257,13 @@ public:
         addBatchIndex.clear();
         delBatchIndex.clear();
     }
-
+    void clearBatch()
+    {
+        addBatchOut.clear();
+        delBatchOut.clear();
+        addBatchIn.clear();
+        delBatchIn.clear();
+    }
     uint64_t get_thread_id()
     {
         return thread_id.local();

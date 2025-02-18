@@ -144,38 +144,7 @@ add_executable(index-sswp src/index-sswp.cpp)
 add_executable(index-viterbi src/index-viterbi.cpp)
 add_executable(index-bfs src/index-bfs.cpp)
 add_executable(index-ssnp src/index-ssnp.cpp)
-if(UCX_FOUND)
-
-    add_executable(bfs_inc_rpc src/all_inc_rpc.cpp)
-    add_executable(wcc_inc_rpc src/all_inc_rpc.cpp)
-    add_executable(sssp_inc_rpc src/all_inc_rpc.cpp)
-    add_executable(sswp_inc_rpc src/all_inc_rpc.cpp)
-    target_compile_definitions(bfs_inc_rpc PRIVATE -DBFS)
-    target_compile_definitions(wcc_inc_rpc PRIVATE -DWCC)
-    target_compile_definitions(sssp_inc_rpc PRIVATE -DSSSP)
-    target_compile_definitions(sswp_inc_rpc PRIVATE -DSSWP)
-
-    add_executable(rpc_client src/rpc_client.cpp)
-    add_executable(rpc_kvs src/rpc_kvs.cpp)
-
-    add_executable(bfs_inc_rpc_txn src/all_inc_rpc_txn.cpp)
-    add_executable(wcc_inc_rpc_txn src/all_inc_rpc_txn.cpp)
-    add_executable(sssp_inc_rpc_txn src/all_inc_rpc_txn.cpp)
-    add_executable(sswp_inc_rpc_txn src/all_inc_rpc_txn.cpp)
-    target_compile_definitions(bfs_inc_rpc_txn PRIVATE -DBFS)
-    target_compile_definitions(wcc_inc_rpc_txn PRIVATE -DWCC)
-    target_compile_definitions(sssp_inc_rpc_txn PRIVATE -DSSSP)
-    target_compile_definitions(sswp_inc_rpc_txn PRIVATE -DSSWP)
-
-    add_executable(rpc_txn_client src/rpc_txn_client.cpp)
-
-    add_executable(btree_bench src/btree_bench.cpp)
-    add_executable(ucx_stream_bench src/ucx_stream_bench.cpp)
-
-    add_executable(snbq14_inc_rpc src/snbq14_inc_rpc.cpp)
-    add_executable(rpc_client_snbq14 src/rpc_client_snbq14.cpp)
-
-endif()
+add_executable(correctness-sssp src/sssp_correctness.cpp)
 
 add_executable(bfs_inc_rate src/all_inc.cpp)
 add_executable(wcc_inc_rate src/all_inc.cpp)
