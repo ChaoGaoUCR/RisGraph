@@ -340,7 +340,7 @@ int main(int argc, const char** argv) {
     }
     std::pair<uint64_t, uint64_t> *raw_edges = nullptr;
     std::vector<uint64_t> roots = readNumbersFromFile(argv[2]);
-    auto root = 1;
+    auto root = roots[0];
     uint64_t raw_edges_len;
     std::vector<std::pair<uint64_t, uint64_t>> temp_edges;
 
