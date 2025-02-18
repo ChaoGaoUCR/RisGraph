@@ -145,6 +145,7 @@ add_executable(index-viterbi src/index-viterbi.cpp)
 add_executable(index-bfs src/index-bfs.cpp)
 add_executable(index-ssnp src/index-ssnp.cpp)
 add_executable(correctness-sssp src/sssp_correctness.cpp)
+add_executable(correctness-sswp src/sswp_correctness.cpp)
 
 add_executable(bfs_inc_rate src/all_inc.cpp)
 add_executable(wcc_inc_rate src/all_inc.cpp)
