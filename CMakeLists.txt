@@ -146,6 +146,13 @@ add_executable(index-bfs src/index-bfs.cpp)
 add_executable(index-ssnp src/index-ssnp.cpp)
 add_executable(correctness-sssp src/sssp_correctness.cpp)
 add_executable(correctness-sswp src/sswp_correctness.cpp)
+add_executable(correctness-ssnp src/ssnp_correctness.cpp)
+add_executable(correctness-bfs src/bfs_correctness.cpp)
+add_executable(correctness-viterbi src/viterbi_correctness.cpp)
+add_executable(correctness-wcc src/wcc_correctness.cpp)
+
+
+
 
 add_executable(bfs_inc_rate src/all_inc.cpp)
 add_executable(wcc_inc_rate src/all_inc.cpp)
