@@ -484,9 +484,10 @@ int main(int argc, const char** argv) {
         fprintf(stderr, "usage: %s graph root_file batch_num batch size\n", argv[0]);
         exit(1);
     }
+    auto rootNum = 16;
     std::pair<uint64_t, uint64_t> *raw_edges = nullptr;
     std::vector<uint64_t> roots = readNumbersFromFile(argv[2]);
-    auto root = roots[0];
+    auto root = roots[10];
     uint64_t raw_edges_len;
     std::vector<std::pair<uint64_t, uint64_t>> temp_edges;
 
@@ -593,24 +594,47 @@ int main(int argc, const char** argv) {
             );          
         }
     }
-    auto snapshotResults = graph.alloc_vertex_tree_array_vector<uint64_t>(batch_num + 1);
-    snapshotResults[0] = rootCompute(graph, root);
-    float streamTotal = 0;
-    for (auto i = 0; i < batch_num; i++)
     {
-        THRESHOLD_OPENMP_LOCAL("omp parallel for", graph.getNodesNum(), 1024,
-        for (auto node = 0; node < graph.getNodesNum(); node++)
+        //Stream Computation
+        float timeStream = 0;
+        for (auto rootCount = 0; rootCount < rootNum; rootCount++)
         {
-            snapshotResults[i+1][node].parent = snapshotResults[i][node].parent;
-            snapshotResults[i+1][node].data = snapshotResults[i][node].data;
+            auto root = roots[rootCount];
+            auto snapshotResults = graph.alloc_vertex_tree_array_vector<uint64_t>(batch_num + 1);
+            snapshotResults[0] = rootCompute(graph, root);
+            float streamTotal = 0;
+            for (auto i = 0; i < batch_num; i++)
+            {
+                THRESHOLD_OPENMP_LOCAL("omp parallel for", graph.getNodesNum(), 1024,
+                for (auto node = 0; node < graph.getNodesNum(); node++)
+                {
+                    snapshotResults[i+1][node].parent = snapshotResults[i][node].parent;
+                    snapshotResults[i+1][node].data = snapshotResults[i][node].data;
+                }
+            );
+                auto time = rootIncrementalCompute(graph, root, snapshotResults[i+1], addition_batches[i], deletion_batches[i]);
+                // fprintf(stderr, "batch %d incremental compute %.6lfs\n", i, time);
+                streamTotal += time;
+            }
+            fprintf(stderr, "root %d total time %.6lfs\n", rootCount, streamTotal);
+            timeStream += streamTotal;
+            {
+                for(auto batch = 0; batch < batch_num; batch++)
+                {
+                    THRESHOLD_OPENMP_LOCAL("omp parallel for", batch_size, 1024,
+                    for (uint64_t i = 0; i < batch_size; i++)
+                    {
+                        const auto &e = deletion_batches[batch][i];
+                        graph.add_edge({e.first, e.second, (e.first+e.second)%16 + 1}, true);
+                        const auto &e2 = addition_batches[batch][i];
+                        graph.del_edge({e2.first, e2.second, (e2.first+e2.second)%16 + 1}, true);
+                    }
+                    );
+                }
+            }            
         }
-    );
-        auto time = rootIncrementalCompute(graph, root, snapshotResults[i+1], addition_batches[i], deletion_batches[i]);
-        // fprintf(stderr, "batch %d incremental compute %.6lfs\n", i, time);
-        streamTotal += time;
+        fprintf(stderr, "total Stream time %.6lfs\n", timeStream);
     }
-    fprintf(stderr, "streaming total time %.6lfs\n", streamTotal);
-
     // Start Processing Graph from Intersection Graph
     {
         for (auto batch = 0; batch < batch_num; batch++)
@@ -634,112 +658,104 @@ int main(int argc, const char** argv) {
     {
         fprintf(stderr, "Number of Edges in Snapshot is correct\n");
     }
-    auto commonLabels = rootCompute(graph, root);
+    
     graph.InitStreamBatch(batch_num, batch_size, addition_batches, deletion_batches);
     // Process Graph With DirectHop
     {
-        double totalTime = 0;
-        auto commonSnapshotResults = graph.alloc_vertex_tree_array_vector<uint64_t>(batch_num + 1);
-        for (auto snapshotNum = 0; snapshotNum < batch_num + 1; snapshotNum++)
+        float timeDirectHop = 0;
+        for (auto rootCount = 0; rootCount < rootNum; rootCount++)
         {
-            THRESHOLD_OPENMP_LOCAL("omp parallel for", graph.getNodesNum(), 1024,
-            for (auto node = 0; node < graph.getNodesNum(); node++)
+            root = roots[rootCount];
+            auto commonLabels = rootCompute(graph, root);
+            double totalTime = 0;
+            auto commonSnapshotResults = graph.alloc_vertex_tree_array_vector<uint64_t>(batch_num + 1);
+            for (auto snapshotNum = 0; snapshotNum < batch_num + 1; snapshotNum++)
             {
-                commonSnapshotResults[snapshotNum][node].parent = commonLabels[node].parent;
-                commonSnapshotResults[snapshotNum][node].data = commonLabels[node].data;
+                THRESHOLD_OPENMP_LOCAL("omp parallel for", graph.getNodesNum(), 1024,
+                for (auto node = 0; node < graph.getNodesNum(); node++)
+                {
+                    commonSnapshotResults[snapshotNum][node].parent = commonLabels[node].parent;
+                    commonSnapshotResults[snapshotNum][node].data = commonLabels[node].data;
+                }
+            );
+                // addbatch include add_0, add_1, add_2, ..., add_{i-1}
+                // delbatch include del_{i}, del_{i+1}, ..., del_batch_{num - 1}
+                std::vector<uint64_t> additionBatchIndex = {};
+                std::vector<uint64_t> deletionBatchIndex = {};
+                for (auto i = 0; i < snapshotNum; i++)
+                {
+                    additionBatchIndex.push_back(i);
+                }
+                for (auto i = snapshotNum; i < batch_num; i++)
+                {
+                    deletionBatchIndex.push_back(i);
+                }
+                auto time = rootNoneMutationIncremental(graph, root, commonSnapshotResults[snapshotNum], addition_batches, deletion_batches, additionBatchIndex, deletionBatchIndex);
+                totalTime += time;
             }
-        );
-            // addbatch include add_0, add_1, add_2, ..., add_{i-1}
-            // delbatch include del_{i}, del_{i+1}, ..., del_batch_{num - 1}
-            std::vector<uint64_t> additionBatchIndex = {};
-            std::vector<uint64_t> deletionBatchIndex = {};
-            for (auto i = 0; i < snapshotNum; i++)
-            {
-                additionBatchIndex.push_back(i);
-            }
-            for (auto i = snapshotNum; i < batch_num; i++)
-            {
-                deletionBatchIndex.push_back(i);
-            }
-            auto time = rootNoneMutationIncremental(graph, root, commonSnapshotResults[snapshotNum], addition_batches, deletion_batches, additionBatchIndex, deletionBatchIndex);
-            fprintf(stderr, "batch %d incremental compute %.6lfs\n", snapshotNum, time);
-            totalTime += time;
-            // std::atomic_uint64_t correct(0);
-            // THRESHOLD_OPENMP_LOCAL("omp parallel for", graph.getNodesNum(), 1024,
-            // for (auto node = 0; node < graph.getNodesNum(); node++)
-            // {
-            //     if (snapshotResults[snapshotNum][node].data == commonSnapshotResults[snapshotNum][node].data)
-            //     {
-            //         correct.fetch_add(1);
-            //     }
-            // }
-            // );
-            // fprintf(stderr, "batch %d correct %.2lf %%\n", snapshotNum, (double)100*correct.load()/graph.getNodesNum());
+            fprintf(stderr, "Root %d DH time %.6lfs\n", rootCount, totalTime);
+            timeDirectHop += totalTime;
         }
-        fprintf(stderr, "total time %.6lfs\n", totalTime);
+        fprintf(stderr, "DH total time %.6lfs\n", timeDirectHop);
     }
     
     // Process Graph With WorkSharing
     {
-        double totalTime = 0;
-        auto commonSnapshotResults = graph.alloc_vertex_tree_array_vector<uint64_t>(batch_num + 1);
-        for(auto jmp = 0; jmp < batch_num; jmp++)
+        float timeWS = 0;
+        for (auto rootCount = 0; rootCount < rootNum; rootCount++)
         {
-            // each Left jmp will include del_{jmp}, del_{jmp+1}, ..., del_{batch_num-1} as computation Batch
-            // each Left jmp will include add_0, add_1, ..., add_{jmp-1} and del_{jmp}, del_{jmp+1}, ..., del_{batch_num-1} as traversal Batch
-            // each Right jmp will include add_{jmp} as computation Batch
-            // each Right jmp will include add_{0} ... add_{jmp} as traversal Batch
-            THRESHOLD_OPENMP_LOCAL("omp parallel for", graph.getNodesNum(), 1024,
-            for (auto node = 0; node < graph.getNodesNum(); node++)
+            root = roots[rootCount];
+            auto commonLabels = rootCompute(graph, root);
+            double totalTime = 0;
+            auto commonSnapshotResults = graph.alloc_vertex_tree_array_vector<uint64_t>(batch_num + 1);
+            for(auto jmp = 0; jmp < batch_num; jmp++)
             {
-                commonSnapshotResults[jmp][node].parent = commonLabels[node].parent;
-                commonSnapshotResults[jmp][node].data = commonLabels[node].data;
+                // each Left jmp will include del_{jmp}, del_{jmp+1}, ..., del_{batch_num-1} as computation Batch
+                // each Left jmp will include add_0, add_1, ..., add_{jmp-1} and del_{jmp}, del_{jmp+1}, ..., del_{batch_num-1} as traversal Batch
+                // each Right jmp will include add_{jmp} as computation Batch
+                // each Right jmp will include add_{0} ... add_{jmp} as traversal Batch
+                THRESHOLD_OPENMP_LOCAL("omp parallel for", graph.getNodesNum(), 1024,
+                for (auto node = 0; node < graph.getNodesNum(); node++)
+                {
+                    commonSnapshotResults[jmp][node].parent = commonLabels[node].parent;
+                    commonSnapshotResults[jmp][node].data = commonLabels[node].data;
+                }
+                );
+                std::vector<uint64_t> additionBatchTraverseIndex = {};
+                std::vector<uint64_t> deletionBatchTraverseIndex = {};
+                std::vector<uint64_t> additionBatchComputeIndex = {};
+                std::vector<uint64_t> deletionBatchComputeIndex = {};
+                // start Left jmp
+                for (auto i = jmp; i < batch_num; i++)
+                {
+                    deletionBatchComputeIndex.push_back(i);
+                    deletionBatchTraverseIndex.push_back(i);
+                }
+                for (auto i = 0; i < jmp; i++)
+                {
+                    additionBatchTraverseIndex.push_back(i);
+                }
+                auto timeLeft = rootNoneMutationIncremental(graph, root, commonSnapshotResults[jmp], addition_batches, deletion_batches, additionBatchTraverseIndex, deletionBatchTraverseIndex, additionBatchComputeIndex, deletionBatchComputeIndex);
+                additionBatchTraverseIndex.clear();
+                deletionBatchTraverseIndex.clear();
+                additionBatchComputeIndex.clear();
+                deletionBatchComputeIndex.clear();
+    
+                // start Right jmp
+                additionBatchComputeIndex.push_back(jmp);
+                for (auto i = 0; i <= jmp; i++)
+                {
+                    additionBatchTraverseIndex.push_back(i);
+                }
+                auto timeRight = rootNoneMutationIncremental(graph, root, commonLabels, addition_batches, deletion_batches, additionBatchTraverseIndex, deletionBatchTraverseIndex, additionBatchComputeIndex, deletionBatchComputeIndex);
+                auto timeTmp = timeLeft + timeRight;
+                // fprintf(stderr, "batch %d incremental compute %.6lfs\n", jmp, timeTmp);
+                totalTime += timeTmp;
             }
-            );
-            std::vector<uint64_t> additionBatchTraverseIndex = {};
-            std::vector<uint64_t> deletionBatchTraverseIndex = {};
-            std::vector<uint64_t> additionBatchComputeIndex = {};
-            std::vector<uint64_t> deletionBatchComputeIndex = {};
-            // start Left jmp
-            for (auto i = jmp; i < batch_num; i++)
-            {
-                deletionBatchComputeIndex.push_back(i);
-                deletionBatchTraverseIndex.push_back(i);
-            }
-            for (auto i = 0; i < jmp; i++)
-            {
-                additionBatchTraverseIndex.push_back(i);
-            }
-            auto timeLeft = rootNoneMutationIncremental(graph, root, commonSnapshotResults[jmp], addition_batches, deletion_batches, additionBatchTraverseIndex, deletionBatchTraverseIndex, additionBatchComputeIndex, deletionBatchComputeIndex);
-            additionBatchTraverseIndex.clear();
-            deletionBatchTraverseIndex.clear();
-            additionBatchComputeIndex.clear();
-            deletionBatchComputeIndex.clear();
-
-            // std::atomic_uint64_t correct(0);
-            // THRESHOLD_OPENMP_LOCAL("omp parallel for", graph.getNodesNum(), 1024,
-            // for (auto node = 0; node < graph.getNodesNum(); node++)
-            // {
-            //     if (snapshotResults[jmp][node].data == commonSnapshotResults[jmp][node].data)
-            //     {
-            //         correct.fetch_add(1);
-            //     }
-            // }
-            // );
-            // fprintf(stderr, "batch %d correct %.2lf %%\n", jmp, (double)100*correct.load()/graph.getNodesNum());
-            
-            // start Right jmp
-            additionBatchComputeIndex.push_back(jmp);
-            for (auto i = 0; i <= jmp; i++)
-            {
-                additionBatchTraverseIndex.push_back(i);
-            }
-            auto timeRight = rootNoneMutationIncremental(graph, root, commonLabels, addition_batches, deletion_batches, additionBatchTraverseIndex, deletionBatchTraverseIndex, additionBatchComputeIndex, deletionBatchComputeIndex);
-            auto timeTmp = timeLeft + timeRight;
-            fprintf(stderr, "batch %d incremental compute %.6lfs\n", jmp, timeTmp);
-            totalTime += timeTmp;
+            fprintf(stderr, "Root %d WS time %.6lfs\n", rootCount, totalTime);
+            timeWS += totalTime;
         }
-        fprintf(stderr, "total time %.6lfs\n", totalTime);
+        fprintf(stderr, "WS total time %.6lfs\n", timeWS);
     }    
 
     return 0;
