@@ -150,7 +150,7 @@ add_executable(correctness-ssnp src/ssnp_correctness.cpp)
 add_executable(correctness-bfs src/bfs_correctness.cpp)
 add_executable(correctness-viterbi src/viterbi_correctness.cpp)
 add_executable(correctness-wcc src/wcc_correctness.cpp)
-
+add_executable(test_sssp src/test_sssp.cpp)
 
 
 

@@ -127,26 +127,24 @@ public:
             addBatchOut[i].resize(vertices);
             delBatchOut[i].resize(vertices);
             addBatchIn[i].resize(vertices);
-            delBatchIn[i].resize(vertices);
-            #pragma omp parallel for
-            for (uint64_t j = 0; j < batch_size; j++)
-            {
-                const auto &e = addition_batches[i][j];
-                edge_type edge = {e.first, e.second, (e.first+e.second)%16 + 1};
-                addBatchOut[i].update_edge(edge, e.first, 1);
-                addBatchIn[i].update_edge(edge, e.second, 1);
-            }
-            #pragma omp parallel for
-            for (uint64_t j = 0; j < batch_size; j++)
-            {
-                const auto &e = deletion_batches[i][j];
-                edge_type edge = {e.first, e.second, (e.first+e.second)%16 + 1};
-                delBatchOut[i].update_edge(edge, e.first, 1);
-                delBatchIn[i].update_edge(edge, e.second, 1);
-            }
-            // fprintf(stderr, "Batch %lu: add %lu, del %lu\n", i, addBatchOut[i].indexDegreeCalculate(), delBatchOut[i].indexDegreeCalculate());
-            // fprintf(stderr, "Batch %lu: add %lu, del %lu\n", i, addBatchIn[i].indexDegreeCalculate(), delBatchIn[i].indexDegreeCalculate());            
+            delBatchIn[i].resize(vertices);      
         }
+        THRESHOLD_OPENMP_LOCAL("omp parallel for", batch_num * batch_size, 1024,
+            for (uint64_t idx = 0; idx < batch_num * batch_size; idx++)
+            {
+                uint64_t i = idx / batch_size;
+                uint64_t j = idx % batch_size;
+            
+                const auto &e_add = addition_batches[i][j];
+                edge_type edge_add = {e_add.first, e_add.second, (e_add.first + e_add.second) % 16 + 1};
+                addBatchOut[i].update_edge(edge_add, e_add.first, 1);
+                // addBatchIn[i].update_edge(edge_add, e_add.second, 1);
+            
+                const auto &e_del = deletion_batches[i][j];
+                edge_type edge_del = {e_del.first, e_del.second, (e_del.first + e_del.second) % 16 + 1};
+                delBatchOut[i].update_edge(edge_del, e_del.first, 1);
+                // delBatchIn[i].update_edge(edge_del, e_del.second, 1);
+            });
         auto end = std::chrono::system_clock::now();
         fprintf(stderr, "Init Batch Time: %.6lfs\n", 1e-6*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(end-start).count());
     }
