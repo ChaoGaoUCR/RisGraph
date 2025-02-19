@@ -484,7 +484,7 @@ int main(int argc, const char** argv) {
         fprintf(stderr, "usage: %s graph root_file batch_num batch size\n", argv[0]);
         exit(1);
     }
-    auto rootNum = 16;
+    auto rootNum = 32;
     std::pair<uint64_t, uint64_t> *raw_edges = nullptr;
     std::vector<uint64_t> roots = readNumbersFromFile(argv[2]);
     auto root = roots[10];
@@ -611,38 +611,57 @@ int main(int argc, const char** argv) {
                     snapshotResults[i+1][node].parent = snapshotResults[i][node].parent;
                     snapshotResults[i+1][node].data = snapshotResults[i][node].data;
                 }
-            );
+                );
                 auto time = rootIncrementalCompute(graph, root, snapshotResults[i+1], addition_batches[i], deletion_batches[i]);
                 // fprintf(stderr, "batch %d incremental compute %.6lfs\n", i, time);
                 streamTotal += time;
             }
-            fprintf(stderr, "root %d total time %.6lfs\n", rootCount, streamTotal);
+            // fprintf(stderr, "root %d total time %.6lfs\n", rootCount, streamTotal);
             timeStream += streamTotal;
+            for (auto i = 0; i < batch_num; i++)
             {
-                for(auto batch = 0; batch < batch_num; batch++)
+                THRESHOLD_OPENMP_LOCAL("omp parallel for", batch_size, 1024,
+                for (uint64_t j = 0; j < batch_size; j++)
                 {
-                    THRESHOLD_OPENMP_LOCAL("omp parallel for", batch_size, 1024,
-                    for (uint64_t i = 0; i < batch_size; i++)
-                    {
-                        const auto &e = deletion_batches[batch][i];
-                        graph.add_edge({e.first, e.second, (e.first+e.second)%16 + 1}, true);
-                        const auto &e2 = addition_batches[batch][i];
-                        graph.del_edge({e2.first, e2.second, (e2.first+e2.second)%16 + 1}, true);
-                    }
-                    );
+                    const auto &e = addition_batches[i][j];
+                    graph.del_edge({e.first, e.second, (e.first+e.second)%16 + 1}, true);
                 }
-            }            
+                );
+                THRESHOLD_OPENMP_LOCAL("omp parallel for", batch_size, 1024,
+                for (uint64_t j = 0; j < batch_size; j++)
+                {
+                    const auto &e = deletion_batches[i][j];
+                    graph.add_edge({e.first, e.second, (e.first+e.second)%16 + 1}, true);
+                }
+                );
+            }
+            if(rootCount == 3)
+            {
+                fprintf(stderr, "4 Roots total Stream time %.6lfs\n", timeStream);
+            }
+            if(rootCount == 7)
+            {
+                fprintf(stderr, "8 Roots total Stream time %.6lfs\n", timeStream);
+            }
+            if(rootCount == 15)
+            {
+                fprintf(stderr, "15 Roots total Stream time %.6lfs\n", timeStream);
+            }
+            if(rootCount == 31)
+            {
+                fprintf(stderr, "32 Roots total Stream time %.6lfs\n", timeStream);
+            }        
         }
         fprintf(stderr, "total Stream time %.6lfs\n", timeStream);
     }
-    // Start Processing Graph from Intersection Graph
+    // Start Processing Graph from Intersection Graph with multi-source, the graph will back to first snapshot
     {
         for (auto batch = 0; batch < batch_num; batch++)
         {
             THRESHOLD_OPENMP_LOCAL("omp parallel for", batch_size, 1024,
             for (uint64_t i = 0; i < batch_size; i++)
             {
-                const auto &e = addition_batches[batch][i];
+                const auto &e = deletion_batches[batch][i];
                 graph.del_edge({e.first, e.second, (e.first+e.second)%16 + 1}, true);
             }
             );
@@ -693,8 +712,24 @@ int main(int argc, const char** argv) {
                 auto time = rootNoneMutationIncremental(graph, root, commonSnapshotResults[snapshotNum], addition_batches, deletion_batches, additionBatchIndex, deletionBatchIndex);
                 totalTime += time;
             }
-            fprintf(stderr, "Root %d DH time %.6lfs\n", rootCount, totalTime);
+            // fprintf(stderr, "Root %d DH time %.6lfs\n", rootCount, totalTime);
             timeDirectHop += totalTime;
+            if(rootCount == 3)
+            {
+                fprintf(stderr, "4 Roots total DH time %.6lfs\n", timeDirectHop);
+            }
+            if(rootCount == 7)
+            {
+                fprintf(stderr, "8 Roots total DH time %.6lfs\n", timeDirectHop);
+            }
+            if(rootCount == 15)
+            {
+                fprintf(stderr, "16 Roots total DH time %.6lfs\n", timeDirectHop);
+            }
+            if(rootCount == 31)
+            {
+                fprintf(stderr, "32 Roots total DH time %.6lfs\n", timeDirectHop);
+            }
         }
         fprintf(stderr, "DH total time %.6lfs\n", timeDirectHop);
     }
@@ -752,8 +787,24 @@ int main(int argc, const char** argv) {
                 // fprintf(stderr, "batch %d incremental compute %.6lfs\n", jmp, timeTmp);
                 totalTime += timeTmp;
             }
-            fprintf(stderr, "Root %d WS time %.6lfs\n", rootCount, totalTime);
+            // fprintf(stderr, "Root %d WS time %.6lfs\n", rootCount, totalTime);
             timeWS += totalTime;
+            if(rootCount == 3)
+            {
+                fprintf(stderr, "4 Roots total WS time %.6lfs\n", timeWS);
+            }
+            if(rootCount == 7)
+            {
+                fprintf(stderr, "8 Roots total WS time %.6lfs\n", timeWS);
+            }
+            if(rootCount == 15)
+            {
+                fprintf(stderr, "16 Roots total WS time %.6lfs\n", timeWS);
+            }
+            if(rootCount == 31)
+            {
+                fprintf(stderr, "32 Roots total WS time %.6lfs\n", timeWS);
+            }
         }
         fprintf(stderr, "WS total time %.6lfs\n", timeWS);
     }    
