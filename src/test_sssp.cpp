@@ -520,7 +520,15 @@ int main(int argc, const char** argv) {
     fprintf(stderr, "read: %.6lfs\n", 1e-6*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(read_end-read_start).count());
 
     uint64_t batch_num = std::stoull(argv[3]);
-    uint64_t batch_size = std::stod(argv[4]) * raw_edges_len;
+    uint64_t batch_size = 0;
+    if (std::stod(argv[4]) > 1)
+    {
+        batch_size = std::stod(argv[4]);
+    }
+    else
+    {
+        batch_size = std::stod(argv[4]) * raw_edges_len;
+    }
     fprintf(stderr, "loading graph %s, root file is %s, batch_num is %lu, batch_size is %lu\n", argv[1], argv[2], batch_num, batch_size);
     uint64_t num_vertices = 0;
     {
