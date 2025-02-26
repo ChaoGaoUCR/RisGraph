@@ -153,3 +153,5 @@ add_executable(correctness-wcc src/wcc_correctness.cpp)
 add_executable(test_sssp src/test_sssp.cpp)
 add_executable(Indexing-baseline-sssp src/Indexing-Baseline-SSSP.cpp)
 
+add_executable(fusion_sssp src/fusion_sssp_test.cpp)
+

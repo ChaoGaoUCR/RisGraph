@@ -615,5 +615,17 @@ int main(int argc, const char** argv) {
     }
     );
     fprintf(stderr, "work sharing total time %.6lfs\n", workSharingTotal);
+    // for (auto i = 0; i < batch_num + 1; i++)
+    // {
+    //     uint64_t correct = 0;
+    //     for (auto node = 0; node < graph.getNodesNum(); node++)
+    //     {
+    //         if (snapshotResults[i][node].data == workSharingLabels[i][node].data)
+    //         {
+    //             correct++;
+    //         }
+    //     }
+    //     fprintf(stderr, "snapshot %d correct percentage %.2lf %%\n", i, (double)(100 *correct) / graph.getNodesNum());
+    // }
     return 0;
 }
