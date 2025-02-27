@@ -135,6 +135,7 @@ add_executable(sswp-core src/sswp-core.cpp)
 add_executable(ssnp-core src/ssnp-core.cpp)
 add_executable(wcc-core src/wcc-core.cpp)
 add_executable(viterbi-core src/viterbi-core.cpp)
+add_executable(ssr-core src/ssr-core.cpp)
 
 
 
@@ -154,4 +155,9 @@ add_executable(test_sssp src/test_sssp.cpp)
 add_executable(Indexing-baseline-sssp src/Indexing-Baseline-SSSP.cpp)
 
 add_executable(fusion_sssp src/fusion_sssp_test.cpp)
-
+add_executable(fusion_sswp src/fusion_sswp_test.cpp)
+add_executable(fusion_ssnp src/fusion_ssnp_test.cpp)
+add_executable(fusion_bfs src/fusion_bfs_test.cpp)
+add_executable(fusion_viterbi src/fusion_viterbi_test.cpp)
+add_executable(fusion_wcc src/fusion_wcc_test.cpp)
+add_executable(fusion_ssr src/fusion_ssr_test.cpp)

@@ -137,20 +137,23 @@ auto rootCompute(Graph<uint64_t>& graph, uint64_t root, uint64_t snapshotNum, ui
 
     auto update_func = [snapshotNum, totalBatchNum](uint64_t src, uint64_t dst, uint64_t src_data, uint64_t dst_data, auto adjedge) -> std::pair<bool, uint64_t> {
         return validate(snapshotNum, totalBatchNum, adjedge.data) 
-            ? std::make_pair(src_data + (src + dst) % 16 + 1 < dst_data, src_data + (src + dst) % 16 + 1)
-            : std::make_pair(false, src_data + (src + dst) % 16 + 1);
+            ? std::make_pair((src_data || dst_data) != dst_data, src_data || dst_data)
+            : std::make_pair(false, src_data || dst_data);
     };
 
     auto active_result_func = [](uint64_t old_result, uint64_t src, uint64_t dst, uint64_t src_data, uint64_t old_dst_data, uint64_t new_dst_data) -> uint64_t {
         return old_result + 1;
     };
 
-    auto equal_func = [](uint64_t src, uint64_t dst, uint64_t src_data, uint64_t dst_data, AdjEdgeType adjedge) -> bool {
-        return src_data + ((src + dst) % 16 + 1)  == dst_data;
+    auto equal_func = [](uint64_t src, uint64_t dst, uint64_t src_data, uint64_t dst_data, AdjEdgeType adjedge) -> bool
+    {
+        return src_data == dst_data;
     };
 
-    auto init_label_func = [=](uint64_t vid) -> std::pair<uint64_t, bool> {
-        return {vid == root ? 0 : MAXL, vid == root};
+    auto init_label_func = [=](uint64_t vid) -> std::pair<uint64_t, bool>
+    {
+        bool is_source = (vid == root); // 仅起始点可达
+        return {is_source, true}; // 需要处理的点初始状态
     };
     auto start = std::chrono::system_clock::now();
     graph.build_tree<uint64_t>(init_label_func, continue_reduce_func, update_func, active_result_func, result);
@@ -161,33 +164,48 @@ auto rootCompute(Graph<uint64_t>& graph, uint64_t root, uint64_t snapshotNum, ui
 
 auto rootCompute(Graph<uint64_t>& graph, uint64_t root) {
     auto result = graph.alloc_vertex_tree_array<uint64_t>();
-    auto continue_reduce_func = [](uint64_t depth, uint64_t total_result, uint64_t local_result) -> std::pair<bool, uint64_t> {
-        return std::make_pair(local_result > 0, total_result + local_result);
-    };
+    auto continue_reduce_func = [](uint64_t depth, uint64_t total_result, uint64_t local_result) 
+    -> std::pair<bool, uint64_t>
+   {
+       return std::make_pair(local_result > 0, total_result + local_result);
+   };
+   
+   auto continue_reduce_print_func = [](uint64_t depth, uint64_t total_result, uint64_t local_result) 
+       -> std::pair<bool, uint64_t>
+   {
+       return std::make_pair(local_result > 0, total_result + local_result);
+   };
+   
+   using AdjEdgeType = typename std::remove_reference<decltype(graph)>::type::adjedge_type;
+   
+   auto update_func = [](uint64_t src, uint64_t dst, uint64_t src_data, uint64_t dst_data, AdjEdgeType adjedge) 
+       -> std::pair<bool, uint64_t>
+   {
+       bool new_reachable = src_data || dst_data; // 如果源节点或目标节点可达，则传播可达性
+       return std::make_pair(new_reachable != dst_data, new_reachable); // 若状态改变则更新
+   };
+   
+   // 计算 SSR 传播过程中被标记的点数
+   auto active_result_func = [](uint64_t old_result, uint64_t src, uint64_t dst, uint64_t src_data, 
+                               uint64_t old_dst_data, uint64_t new_dst_data) -> uint64_t
+   {
+       return old_result + (old_dst_data != new_dst_data); // 仅当可达性发生变化时计数
+   };
+   
+   // 判断可达性是否收敛
+   auto equal_func = [](uint64_t src, uint64_t dst, uint64_t src_data, uint64_t dst_data, AdjEdgeType adjedge) 
+       -> bool
+   {
+       return src_data == dst_data;
+   };
+   
+   // 初始化可达性状态
+   auto init_label_func = [=](uint64_t vid) -> std::pair<uint64_t, bool>
+   {
+       bool is_source = (vid == root); // 仅起始点可达
+       return {is_source, true}; // 需要处理的点初始状态
+   };
 
-    auto continue_reduce_print_func = [](uint64_t depth, uint64_t total_result, uint64_t local_result) -> std::pair<bool, uint64_t> {
-        fprintf(stderr, "active(%lu) >= %lu\n", depth, local_result);
-        return std::make_pair(local_result > 0, total_result + local_result);
-    };
-
-    // Fix: Use std::remove_reference to handle the adjedge_type
-    using AdjEdgeType = typename std::remove_reference<decltype(graph)>::type::adjedge_type;
-
-    auto update_func = [](uint64_t src, uint64_t dst, uint64_t src_data, uint64_t dst_data, AdjEdgeType adjedge) -> std::pair<bool, uint64_t> {
-        return std::make_pair(src_data + adjedge.data < dst_data, src_data + adjedge.data);
-    };
-
-    auto active_result_func = [](uint64_t old_result, uint64_t src, uint64_t dst, uint64_t src_data, uint64_t old_dst_data, uint64_t new_dst_data) -> uint64_t {
-        return old_result + 1;
-    };
-
-    auto equal_func = [](uint64_t src, uint64_t dst, uint64_t src_data, uint64_t dst_data, AdjEdgeType adjedge) -> bool {
-        return src_data + adjedge.data == dst_data;
-    };
-
-    auto init_label_func = [=](uint64_t vid) -> std::pair<uint64_t, bool> {
-        return {vid == root ? 0 : MAXL, vid == root};
-    };
     auto start = std::chrono::system_clock::now();
     graph.build_tree<uint64_t>(init_label_func, continue_reduce_func, update_func, active_result_func, result);
     auto end = std::chrono::system_clock::now();
@@ -200,33 +218,48 @@ float rootIncrementalCompute (Graph<uint64_t>& graph, uint64_t root,
                                                 std::vector<std::pair<uint64_t, uint64_t>>& additionBatch, std::vector<std::pair<uint64_t, uint64_t>>& deletionBatch)
 {
 
-    auto continue_reduce_func = [](uint64_t depth, uint64_t total_result, uint64_t local_result) -> std::pair<bool, uint64_t> {
-        return std::make_pair(local_result > 0, total_result + local_result);
-    };
+    auto continue_reduce_func = [](uint64_t depth, uint64_t total_result, uint64_t local_result) 
+    -> std::pair<bool, uint64_t>
+   {
+       return std::make_pair(local_result > 0, total_result + local_result);
+   };
+   
+   auto continue_reduce_print_func = [](uint64_t depth, uint64_t total_result, uint64_t local_result) 
+       -> std::pair<bool, uint64_t>
+   {
+       return std::make_pair(local_result > 0, total_result + local_result);
+   };
+   
+   using AdjEdgeType = typename std::remove_reference<decltype(graph)>::type::adjedge_type;
+   
+   auto update_func = [](uint64_t src, uint64_t dst, uint64_t src_data, uint64_t dst_data, AdjEdgeType adjedge) 
+       -> std::pair<bool, uint64_t>
+   {
+       bool new_reachable = src_data || dst_data; // 如果源节点或目标节点可达，则传播可达性
+       return std::make_pair(new_reachable != dst_data, new_reachable); // 若状态改变则更新
+   };
+   
+   // 计算 SSR 传播过程中被标记的点数
+   auto active_result_func = [](uint64_t old_result, uint64_t src, uint64_t dst, uint64_t src_data, 
+                               uint64_t old_dst_data, uint64_t new_dst_data) -> uint64_t
+   {
+       return old_result + (old_dst_data != new_dst_data); // 仅当可达性发生变化时计数
+   };
+   
+   // 判断可达性是否收敛
+   auto equal_func = [](uint64_t src, uint64_t dst, uint64_t src_data, uint64_t dst_data, AdjEdgeType adjedge) 
+       -> bool
+   {
+       return src_data == dst_data;
+   };
+   
+   // 初始化可达性状态
+   auto init_label_func = [=](uint64_t vid) -> std::pair<uint64_t, bool>
+   {
+       bool is_source = (vid == root); // 仅起始点可达
+       return {is_source, true}; // 需要处理的点初始状态
+   };
 
-    auto continue_reduce_print_func = [](uint64_t depth, uint64_t total_result, uint64_t local_result) -> std::pair<bool, uint64_t> {
-        fprintf(stderr, "active(%lu) >= %lu\n", depth, local_result);
-        return std::make_pair(local_result > 0, total_result + local_result);
-    };
-
-    // Fix: Use std::remove_reference to handle the adjedge_type
-    using AdjEdgeType = typename std::remove_reference<decltype(graph)>::type::adjedge_type;
-
-    auto update_func = [](uint64_t src, uint64_t dst, uint64_t src_data, uint64_t dst_data, AdjEdgeType adjedge) -> std::pair<bool, uint64_t> {
-        return std::make_pair(src_data + adjedge.data < dst_data, src_data + adjedge.data);
-    };
-
-    auto active_result_func = [](uint64_t old_result, uint64_t src, uint64_t dst, uint64_t src_data, uint64_t old_dst_data, uint64_t new_dst_data) -> uint64_t {
-        return old_result + 1;
-    };
-
-    auto equal_func = [](uint64_t src, uint64_t dst, uint64_t src_data, uint64_t dst_data, AdjEdgeType adjedge) -> bool {
-        return src_data + adjedge.data == dst_data;
-    };
-
-    auto init_label_func = [=](uint64_t vid) -> std::pair<uint64_t, bool> {
-        return {vid == root ? 0 : MAXL, vid == root};
-    };
 
     std::atomic_uint64_t add_edge_len(0), del_edge_len(0);            
     std::vector<std::remove_reference_t<decltype(graph)>::edge_type> added_edges(additionBatch.size()), deled_edges(deletionBatch.size());
@@ -289,20 +322,23 @@ float rootNoneMutationIncrementalCompute(Graph<uint64_t>& graph,
 
     auto update_func = [snapshotNum, totalBatchNum](uint64_t src, uint64_t dst, uint64_t src_data, uint64_t dst_data, auto adjedge) -> std::pair<bool, uint64_t> {
         return validate(snapshotNum, totalBatchNum, adjedge.data) 
-            ? std::make_pair(src_data + (src + dst) % 16 + 1 < dst_data, src_data + (src + dst) % 16 + 1)
-            : std::make_pair(false, src_data + (src + dst) % 16 + 1);
+            ? std::make_pair((src_data || dst_data) != dst_data, src_data || dst_data)
+            : std::make_pair(false, src_data || dst_data);
     };
 
     auto active_result_func = [](uint64_t old_result, uint64_t src, uint64_t dst, uint64_t src_data, uint64_t old_dst_data, uint64_t new_dst_data) -> uint64_t {
         return old_result + 1;
     };
 
-    auto equal_func = [](uint64_t src, uint64_t dst, uint64_t src_data, uint64_t dst_data, AdjEdgeType adjedge) -> bool {
-        return src_data + ((src + dst) % 16 + 1)  == dst_data;
+    auto equal_func = [](uint64_t src, uint64_t dst, uint64_t src_data, uint64_t dst_data, AdjEdgeType adjedge) -> bool
+    {
+        return src_data == dst_data;
     };
 
-    auto init_label_func = [=](uint64_t vid) -> std::pair<uint64_t, bool> {
-        return {vid == root ? 0 : MAXL, vid == root};
+    auto init_label_func = [=](uint64_t vid) -> std::pair<uint64_t, bool>
+    {
+        bool is_source = (vid == root); // 仅起始点可达
+        return {is_source, true}; // 需要处理的点初始状态
     };
     auto batchNum = additionBatchIndex.size() + deletionBatchIndex.size();
     auto batch_size = addBatches[0].size();
@@ -360,20 +396,23 @@ float rootNoneMutationIncrementalCompute(Graph<uint64_t>& graph,
 
     auto update_func = [batchNumber](uint64_t src, uint64_t dst, uint64_t src_data, uint64_t dst_data, auto adjedge) -> std::pair<bool, uint64_t> {
         return validate_add(batchNumber, adjedge.data) 
-            ? std::make_pair(src_data + (src + dst) % 16 + 1 < dst_data, src_data + (src + dst) % 16 + 1)
-            : std::make_pair(false, src_data + (src + dst) % 16 + 1);
+            ? std::make_pair((src_data || dst_data) != dst_data, src_data || dst_data)
+            : std::make_pair(false, src_data || dst_data);
     };
 
     auto active_result_func = [](uint64_t old_result, uint64_t src, uint64_t dst, uint64_t src_data, uint64_t old_dst_data, uint64_t new_dst_data) -> uint64_t {
         return old_result + 1;
     };
 
-    auto equal_func = [](uint64_t src, uint64_t dst, uint64_t src_data, uint64_t dst_data, AdjEdgeType adjedge) -> bool {
-        return src_data + ((src + dst) % 16 + 1)  == dst_data;
+    auto equal_func = [](uint64_t src, uint64_t dst, uint64_t src_data, uint64_t dst_data, AdjEdgeType adjedge) -> bool
+    {
+        return src_data == dst_data;
     };
 
-    auto init_label_func = [=](uint64_t vid) -> std::pair<uint64_t, bool> {
-        return {vid == root ? 0 : MAXL, vid == root};
+    auto init_label_func = [=](uint64_t vid) -> std::pair<uint64_t, bool>
+    {
+        bool is_source = (vid == root); // 仅起始点可达
+        return {is_source, true}; // 需要处理的点初始状态
     };
     auto batchsize = addBatches.size();
     std::vector<std::remove_reference_t<decltype(graph)>::edge_type> addedEdgesNoneMutation(batchsize);
@@ -405,7 +444,6 @@ int main(int argc, const char** argv) {
     std::pair<uint64_t, uint64_t> *raw_edges = nullptr;
     std::vector<uint64_t> roots = readNumbersFromFile(argv[2]);
     auto root = roots[0];
-    uint64_t rootNum = 64;
     uint64_t raw_edges_len;
     std::vector<std::pair<uint64_t, uint64_t>> temp_edges;
 
@@ -529,43 +567,24 @@ int main(int argc, const char** argv) {
         }
     }
 
-    // auto snapshotResults = graphBase.alloc_vertex_tree_array_vector<uint64_t>(batch_num + 1);
-    // snapshotResults[0] = rootCompute(graphBase, root);
-    auto allRootStream = graphBase.alloc_vertex_tree_array_vector<uint64_t>(rootNum);
-    for (auto i = 0; i < rootNum; i++)
-    {
-        allRootStream[i] = rootCompute(graphBase, roots[i]);
-    }
-    // float streamTotal = 0;
-    std::vector<float> streamTotal(rootNum, 0);
+    auto snapshotResults = graphBase.alloc_vertex_tree_array_vector<uint64_t>(batch_num + 1);
+    snapshotResults[0] = rootCompute(graphBase, root);
+    float streamTotal = 0;
     for (auto i = 0; i < batch_num; i++)
     {
-        for (auto j = 0; j < rootNum; j++)
+        THRESHOLD_OPENMP_LOCAL("omp parallel for", graphBase.getNodesNum(), 1024,
+        for (auto node = 0; node < graphBase.getNodesNum(); node++)
         {
+            snapshotResults[i+1][node].parent = snapshotResults[i][node].parent;
+            snapshotResults[i+1][node].data = snapshotResults[i][node].data;
+        }
+    );
+        auto time = rootIncrementalCompute(graphBase, root, snapshotResults[i+1], addition_batches[i], deletion_batches[i]);
+        // fprintf(stderr, "batch %d incremental compute %.6lfs\n", i, time);
+        streamTotal += time;
+    }
+    fprintf(stderr, "streaming total time %.6lfs\n", streamTotal);
 
-        }
-    }
-    float streamTotalTime = 0;
-    for (auto i = 0; i < rootNum; i++)
-    {
-        streamTotalTime += streamTotal[i];
-        if (i == 7)
-        {
-            fprintf(stderr, "%d Roots Streaming compute %.6lfs\n", i, streamTotal[i]);
-        }
-        if (i == 15)
-        {
-            fprintf(stderr, "%d Roots Streaming compute %.6lfs\n", i, streamTotal[i]);
-        }
-        if (i == 31)
-        {
-            fprintf(stderr, "%d Roots Streaming compute %.6lfs\n", i, streamTotal[i]);
-        }
-        if (i == 63)
-        {
-            fprintf(stderr, "%d Roots Streaming compute %.6lfs\n", i, streamTotal[i]);
-        }
-    }
     auto snapshotVersionResults = graph.alloc_vertex_tree_array_vector<uint64_t>(batch_num + 1);
     auto commonLabels = rootCompute(graph, root, commonTag, batch_num);
     float directHopTime = 0;
@@ -635,5 +654,17 @@ int main(int argc, const char** argv) {
     }
     );
     fprintf(stderr, "work sharing total time %.6lfs\n", workSharingTotal);
+    for (auto i = 0; i < batch_num + 1; i++)
+    {
+        uint64_t correct = 0;
+        for (auto node = 0; node < graph.getNodesNum(); node++)
+        {
+            if (snapshotResults[i][node].data == workSharingLabels[i][node].data)
+            {
+                correct++;
+            }
+        }
+        fprintf(stderr, "snapshot %d correct percentage %.2lf %%\n", i, (double)(100 *correct) / graph.getNodesNum());
+    }
     return 0;
 }
