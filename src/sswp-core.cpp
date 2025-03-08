@@ -534,7 +534,7 @@ int main(int argc, char** argv)
         }
     }
     uint64_t srcToCalculate = 100;
-    for (auto snapshotGraph = 0; snapshotGraph < batch_num + 1; snapshotGraph++)
+    for (auto snapshotGraph = 0; snapshotGraph < 1; snapshotGraph++)
     {
         fprintf(stderr, "--------------------------------\n");
 
