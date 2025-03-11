@@ -559,7 +559,7 @@ int main(int argc, char** argv)
     }
     std::atomic<uint64_t> correctPrediction(0);
 
-    for (auto snapshotGraph = 0; snapshotGraph < batch_num + 1; snapshotGraph++)
+    for (auto snapshotGraph = 0; snapshotGraph < 5; snapshotGraph++)
     {
         fprintf(stderr, "------------SnapShot %d Begins--------------\n", snapshotGraph);
         
