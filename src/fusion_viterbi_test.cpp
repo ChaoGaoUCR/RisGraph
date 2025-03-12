@@ -413,12 +413,13 @@ float rootNoneMutationIncrementalCompute(Graph<uint64_t>& graph,
 int main(int argc, const char** argv) {
     if (argc < 5)
     {
-        fprintf(stderr, "usage: %s graph root_file batch_num batch size\n", argv[0]);
+        fprintf(stderr, "usage: %s graph root_file batch_num batch size rootLabel(option)\n", argv[0]);
         exit(1);
     }
     std::pair<uint64_t, uint64_t> *raw_edges = nullptr;
     std::vector<uint64_t> roots = readNumbersFromFile(argv[2]);
-    auto root = roots[0];
+    int rootCount = std::stoull(argv[5]);
+    auto root = roots[rootCount];
     uint64_t raw_edges_len;
     std::vector<std::pair<uint64_t, uint64_t>> temp_edges;
 

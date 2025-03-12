@@ -399,12 +399,12 @@ float rootNoneMutationIncrementalCompute(Graph<uint64_t>& graph,
 int main(int argc, const char** argv) {
     if (argc < 5)
     {
-        fprintf(stderr, "usage: %s graph root_file batch_num batch size\n", argv[0]);
+        fprintf(stderr, "usage: %s graph root_file batch_num batch size rootindex(option)\n", argv[0]);
         exit(1);
     }
     std::pair<uint64_t, uint64_t> *raw_edges = nullptr;
     std::vector<uint64_t> roots = readNumbersFromFile(argv[2]);
-    auto root = roots[0];
+    auto root = roots[std::stoull(argv[5])];    
     uint64_t raw_edges_len;
     std::vector<std::pair<uint64_t, uint64_t>> temp_edges;
 
@@ -486,7 +486,6 @@ int main(int argc, const char** argv) {
     }    
     // Stream Begins First
     {
-        uint64_t rootCount = 64;
         Graph<uint64_t> graphBase(num_vertices, raw_edges_len, false, true);
         #pragma omp parallel for
         for(uint64_t i=0;i<raw_edges_len;i++)
@@ -506,52 +505,20 @@ int main(int argc, const char** argv) {
         }
 
         float streamTotal = 0;
-        for(auto rootNum = 0; rootNum < rootCount; rootNum++)
+
+        auto snapshotResults = graphBase.alloc_vertex_tree_array_vector<uint64_t>(batch_num + 1);
+        snapshotResults[0] = rootCompute(graphBase, root);        
+        for (auto i = 0; i < batch_num; i++)
         {
-            root = roots[rootNum];
-            auto snapshotResults = graphBase.alloc_vertex_tree_array_vector<uint64_t>(batch_num + 1);
-            snapshotResults[0] = rootCompute(graphBase, root);        
-            for (auto i = 0; i < batch_num; i++)
+            THRESHOLD_OPENMP_LOCAL("omp parallel for", graphBase.getNodesNum(), 1024,
+            for (auto node = 0; node < graphBase.getNodesNum(); node++)
             {
-                THRESHOLD_OPENMP_LOCAL("omp parallel for", graphBase.getNodesNum(), 1024,
-                for (auto node = 0; node < graphBase.getNodesNum(); node++)
-                {
-                    snapshotResults[i+1][node].parent = snapshotResults[i][node].parent;
-                    snapshotResults[i+1][node].data = snapshotResults[i][node].data;
-                }
-                );
-                auto time = rootIncrementalCompute(graphBase, root, snapshotResults[i+1], addition_batches[i], deletion_batches[i]);
-                streamTotal += time;  
+                snapshotResults[i+1][node].parent = snapshotResults[i][node].parent;
+                snapshotResults[i+1][node].data = snapshotResults[i][node].data;
             }
-            for (auto i = 0; i < batch_num; i++)
-            {
-                THRESHOLD_OPENMP_LOCAL("omp parallel for", batch_size, 1024,
-                for (uint64_t j = 0; j < batch_size; j++)
-                {
-                    const auto &e = deletion_batches[i][j];
-                    graphBase.add_edge({e.first, e.second, (e.first+e.second)%16 + 1}, true);
-                }
-                );
-                THRESHOLD_OPENMP_LOCAL("omp parallel for", batch_size, 1024,
-                for (uint64_t j = 0; j < batch_size; j++)
-                {
-                    const auto &e = addition_batches[i][j];
-                    graphBase.add_edge({e.first, e.second, (e.first+e.second)%16 + 1}, true);
-                }
-                );
-            }            
-            if(rootNum == 7)
-            {
-                fprintf(stderr, "%d root cost %.6lfs Time\n", rootNum, streamTotal);
-            }
-            if(rootNum == 15)
-            {
-                fprintf(stderr, "%d root cost %.6lfs Time\n", rootNum, streamTotal);
-            }
-            if(rootNum == 31)
-            {
-                fprintf(stderr, "%d root cost %.6lfs Time\n", rootNum, streamTotal);
-            }
+            );
+            auto time = rootIncrementalCompute(graphBase, root, snapshotResults[i+1], addition_batches[i], deletion_batches[i]);
+            streamTotal += time;  
         }
         fprintf(stderr, "streaming total time %.6lfs\n", streamTotal);
     }
@@ -596,50 +563,33 @@ int main(int argc, const char** argv) {
         }
     }
 
-    uint64_t rootCount = 64;
     float directHopTime = 0;
-    for(auto rootNum = 0; rootNum < rootCount; rootNum++)
-    {    
-        root = roots[rootNum];
-        auto snapshotVersionResults = graph.alloc_vertex_tree_array_vector<uint64_t>(batch_num + 1);
-        auto commonLabels = rootCompute(graph, root, commonTag, batch_num);
-        for (auto i = 0; i < batch_num + 1; i++)
+    auto snapshotVersionResults = graph.alloc_vertex_tree_array_vector<uint64_t>(batch_num + 1);
+    auto commonLabels = rootCompute(graph, root, commonTag, batch_num);
+    for (auto i = 0; i < batch_num + 1; i++)
+    {
+        // snapshotVersionResults[i] = rootCompute(graph, root, i, batch_num);
+        THRESHOLD_OPENMP_LOCAL("omp parallel for", graph.getNodesNum(), 1024,
+        for (uint64_t j = 0; j < graph.getNodesNum(); j++)
         {
-            // snapshotVersionResults[i] = rootCompute(graph, root, i, batch_num);
-            THRESHOLD_OPENMP_LOCAL("omp parallel for", graph.getNodesNum(), 1024,
-            for (uint64_t j = 0; j < graph.getNodesNum(); j++)
-            {
-                snapshotVersionResults[i][j].parent = commonLabels[j].parent;
-                snapshotVersionResults[i][j].data = commonLabels[j].data;
-            }
-            );
-            // add batch include {0, 1, 2, ... i -1}
-            // del batch include {i, i+1, i+2, ... batch_num - 1}
-            std::vector<uint64_t> additionIdex = {};
-            std::vector<uint64_t> deletionIndex = {};
-            for (auto j = 0; j < i; j++)
-            {
-                additionIdex.push_back(j);
-            }
-            for (auto j = i; j < batch_num; j++)
-            {
-                deletionIndex.push_back(j);
-            }
-            auto time = rootNoneMutationIncrementalCompute(graph, root, i, batch_num, snapshotVersionResults[i], addition_batches, deletion_batches, additionIdex, deletionIndex);
-            directHopTime += time;
+            snapshotVersionResults[i][j].parent = commonLabels[j].parent;
+            snapshotVersionResults[i][j].data = commonLabels[j].data;
         }
-            if(rootNum == 7)
-            {
-                fprintf(stderr, "%d root cost %.6lfs Time\n", rootNum, directHopTime);
-            }
-            if(rootNum == 15)
-            {
-                fprintf(stderr, "%d root cost %.6lfs Time\n", rootNum, directHopTime);
-            }
-            if(rootNum == 31)
-            {
-                fprintf(stderr, "%d root cost %.6lfs Time\n", rootNum, directHopTime);
-            }        
+        );
+        // add batch include {0, 1, 2, ... i -1}
+        // del batch include {i, i+1, i+2, ... batch_num - 1}
+        std::vector<uint64_t> additionIdex = {};
+        std::vector<uint64_t> deletionIndex = {};
+        for (auto j = 0; j < i; j++)
+        {
+            additionIdex.push_back(j);
+        }
+        for (auto j = i; j < batch_num; j++)
+        {
+            deletionIndex.push_back(j);
+        }
+        auto time = rootNoneMutationIncrementalCompute(graph, root, i, batch_num, snapshotVersionResults[i], addition_batches, deletion_batches, additionIdex, deletionIndex);
+        directHopTime += time;
     }
     fprintf(stderr, "direct hop total time %.6lfs\n", directHopTime);
 
@@ -648,60 +598,44 @@ int main(int argc, const char** argv) {
     // Direct Hop will involves all Edges in Target Snapshot
     // single Jmp will involves only addition Edges now and Before
     float workSharingTotal = 0;
-    for(auto rootNum = 0; rootNum < rootCount; rootNum++)
-    {    
-        root = roots[rootNum];
-        auto commonLabels = rootCompute(graph, root, commonTag, batch_num);
-        auto workSharingLabels = graph.alloc_vertex_tree_array_vector<uint64_t>(batch_num + 1);
+    auto workSharingLabels = graph.alloc_vertex_tree_array_vector<uint64_t>(batch_num + 1);
+    {
+        // Direct Hop include deletion batches {jmp, jmp+1, jmp+2, ... batch_num - 1}
+        // Single Jmp include addition batches {jmp}
+        // at jmp, we will consolidate snapshot jmp
+        for (auto jmp = 0; jmp < batch_num; jmp++)
         {
-            // Direct Hop include deletion batches {jmp, jmp+1, jmp+2, ... batch_num - 1}
-            // Single Jmp include addition batches {jmp}
-            // at jmp, we will consolidate snapshot jmp
-            for (auto jmp = 0; jmp < batch_num; jmp++)
+            // consolidation
+            std::vector<uint64_t> deletionIndex = {};
+            std::vector<uint64_t> additionIndex = {};
+            for (auto j = jmp; j < batch_num; j++)
             {
-                // consolidation
-                std::vector<uint64_t> deletionIndex = {};
-                std::vector<uint64_t> additionIndex = {};
-                for (auto j = jmp; j < batch_num; j++)
-                {
-                    deletionIndex.push_back(j);
-                }
-                THRESHOLD_OPENMP_LOCAL("omp parallel for", graph.getNodesNum(), 1024,
-                for (uint64_t j = 0; j < graph.getNodesNum(); j++)
-                {
-                    workSharingLabels[jmp][j].parent = commonLabels[j].parent;
-                    workSharingLabels[jmp][j].data = commonLabels[j].data;
-                }
-                );
-                auto time = rootNoneMutationIncrementalCompute(graph, root, jmp, batch_num, workSharingLabels[jmp], addition_batches, deletion_batches, additionIndex, deletionIndex);
-                workSharingTotal += time;
-                auto time1 = rootNoneMutationIncrementalCompute(graph, root, jmp, batch_num, commonLabels, addition_batches[jmp]);
-                workSharingTotal += time1;
+                deletionIndex.push_back(j);
             }
-        }
             THRESHOLD_OPENMP_LOCAL("omp parallel for", graph.getNodesNum(), 1024,
             for (uint64_t j = 0; j < graph.getNodesNum(); j++)
             {
-                workSharingLabels[batch_num][j].parent = commonLabels[j].parent;
-                workSharingLabels[batch_num][j].data = commonLabels[j].data;
+                workSharingLabels[jmp][j].parent = commonLabels[j].parent;
+                workSharingLabels[jmp][j].data = commonLabels[j].data;
             }
             );
-            if(rootNum == 7)
-            {
-                fprintf(stderr, "%d root cost %.6lfs Time\n", rootNum, workSharingTotal);
-            }
-            if(rootNum == 15)
-            {
-                fprintf(stderr, "%d root cost %.6lfs Time\n", rootNum, workSharingTotal);
-            }
-            if(rootNum == 31)
-            {
-                fprintf(stderr, "%d root cost %.6lfs Time\n", rootNum, workSharingTotal);
-            }                    
+            auto time = rootNoneMutationIncrementalCompute(graph, root, jmp, batch_num, workSharingLabels[jmp], addition_batches, deletion_batches, additionIndex, deletionIndex);
+            workSharingTotal += time;
+            auto time1 = rootNoneMutationIncrementalCompute(graph, root, jmp, batch_num, commonLabels, addition_batches[jmp]);
+            workSharingTotal += time1;
+        }
     }
+        THRESHOLD_OPENMP_LOCAL("omp parallel for", graph.getNodesNum(), 1024,
+        for (uint64_t j = 0; j < graph.getNodesNum(); j++)
+        {
+            workSharingLabels[batch_num][j].parent = commonLabels[j].parent;
+            workSharingLabels[batch_num][j].data = commonLabels[j].data;
+        }
+        );
+                
     fprintf(stderr, "work sharing total time %.6lfs\n", workSharingTotal);
-    auto commonGraphTime = std::min(directHopTime, workSharingTotal);
-    fprintf(stderr, "CommonGraph total time %.6lfs\n", commonGraphTime);
+    // auto commonGraphTime = std::min(directHopTime, workSharingTotal);
+    fprintf(stderr, "CommonGraph total time %.6lfs\n", workSharingTotal);
     }
     return 0;
 }
