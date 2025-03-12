@@ -1,0 +1,85 @@
+nohup: ignoring input
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.02
+read: 15.176176s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 724668
+read: 0.009995s
+|E|=36233445
+|V|=6024259
+7 root cost 18.645235s Time
+15 root cost 26.068670s Time
+31 root cost 42.540035s Time
+streaming total time 73.964195s
+|V|=6024259
+Intersection Graph Marked: 0.391905s
+7 root cost 24.695747s Time
+15 root cost 43.057678s Time
+31 root cost 97.258484s Time
+direct hop total time 187.875259s
+7 root cost 15.069162s Time
+15 root cost 25.664341s Time
+31 root cost 58.852474s Time
+work sharing total time 115.613419s
+CommonGraph total time 115.613419s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.01
+read: 15.164708s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 362334
+read: 0.006447s
+|E|=36233445
+|V|=6024259
+7 root cost 21.673378s Time
+15 root cost 30.817869s Time
+31 root cost 56.034626s Time
+streaming total time 99.609879s
+|V|=6024259
+Intersection Graph Marked: 0.383523s
+7 root cost 43.107143s Time
+15 root cost 75.211441s Time
+31 root cost 171.579620s Time
+direct hop total time 331.192200s
+7 root cost 27.277018s Time
+15 root cost 46.851669s Time
+31 root cost 108.394867s Time
+work sharing total time 210.774139s
+CommonGraph total time 210.774139s
+Running: build/BFSbaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 16 0.02
+read: 5.851460s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 16, batch_size is 292273
+read: 0.002778s
+|E|=14613674
+|V|=1870709
+7 root cost 135.207153s Time
+15 root cost 258.568634s Time
+31 root cost 504.840271s Time
+streaming total time 998.174622s
+|V|=1870709
+Intersection Graph Marked: 13.864531s
+7 root cost 16.403984s Time
+15 root cost 28.052357s Time
+31 root cost 66.969810s Time
+direct hop total time 148.070663s
+7 root cost 13.462355s Time
+15 root cost 23.307539s Time
+31 root cost 53.199848s Time
+work sharing total time 116.536774s
+CommonGraph total time 116.536774s
+Running: build/BFSbaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 32 0.01
+read: 5.864589s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 32, batch_size is 146136
+read: 0.002540s
+|E|=14613674
+|V|=1870709
+7 root cost 134.987122s Time
+15 root cost 258.718750s Time
+31 root cost 504.644562s Time
+streaming total time 998.495728s
+|V|=1870709
+Intersection Graph Marked: 13.391073s
+7 root cost 29.967470s Time
+15 root cost 51.249302s Time
+31 root cost 122.101143s Time
+direct hop total time 269.701996s
+7 root cost 25.110287s Time
+15 root cost 44.247906s Time
+31 root cost 102.183983s Time
+work sharing total time 224.632767s
+CommonGraph total time 224.632767s
