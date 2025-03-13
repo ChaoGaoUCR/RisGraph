@@ -1295,3 +1295,6 @@ Number of Edges in Union Graph is 1468365182
 Graph Size: 1468365182, Edge Count For Version 999 is 1468365182
 Forward Time: 184.938034s
 Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 118454876
+ Percentage of core graph edge: 8.07
