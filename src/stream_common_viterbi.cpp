@@ -137,8 +137,8 @@ auto rootCompute(Graph<uint64_t>& graph, uint64_t root, uint64_t snapshotNum, ui
 
     auto update_func = [snapshotNum, totalBatchNum](uint64_t src, uint64_t dst, uint64_t src_data, uint64_t dst_data, auto adjedge) -> std::pair<bool, uint64_t> {
         return validate(snapshotNum, totalBatchNum, adjedge.data) 
-            ? std::make_pair(src_data + (src + dst) % 16 + 1 < dst_data, src_data + (src + dst) % 16 + 1)
-            : std::make_pair(false, src_data + (src + dst) % 16 + 1);
+            ? std::make_pair(std::max(dst_data, src_data / ((src + dst) % 16 + 1)) > dst_data, std::max(dst_data, src_data / ((src + dst) % 16 + 1)))
+            : std::make_pair(false, std::max(dst_data, src_data / ((src + dst) % 16 + 1)));
     };
 
     auto active_result_func = [](uint64_t old_result, uint64_t src, uint64_t dst, uint64_t src_data, uint64_t old_dst_data, uint64_t new_dst_data) -> uint64_t {
@@ -146,11 +146,11 @@ auto rootCompute(Graph<uint64_t>& graph, uint64_t root, uint64_t snapshotNum, ui
     };
 
     auto equal_func = [](uint64_t src, uint64_t dst, uint64_t src_data, uint64_t dst_data, AdjEdgeType adjedge) -> bool {
-        return src_data + ((src + dst) % 16 + 1)  == dst_data;
+        return std::max(dst_data, src_data / ((src + dst) % 16 + 1)) == dst_data;
     };
 
     auto init_label_func = [=](uint64_t vid) -> std::pair<uint64_t, bool> {
-        return {vid == root ? 0 : MAXL, vid == root};
+        return {vid == root ? MAXL : 0, vid == root};
     };
     auto start = std::chrono::system_clock::now();
     graph.build_tree<uint64_t>(init_label_func, continue_reduce_func, update_func, active_result_func, result);
@@ -173,20 +173,27 @@ auto rootCompute(Graph<uint64_t>& graph, uint64_t root) {
     // Fix: Use std::remove_reference to handle the adjedge_type
     using AdjEdgeType = typename std::remove_reference<decltype(graph)>::type::adjedge_type;
 
+    // Update function following the algorithm:
+    // vite(n) = max { vite(n), vite(s) / w(s, n) };
+    // If vite(n) changed, add n to frontier.
     auto update_func = [](uint64_t src, uint64_t dst, uint64_t src_data, uint64_t dst_data, AdjEdgeType adjedge) -> std::pair<bool, uint64_t> {
-        return std::make_pair(src_data + adjedge.data < dst_data, src_data + adjedge.data);
+        uint64_t new_dst_data = std::max(dst_data, src_data / adjedge.data);
+        return std::make_pair(new_dst_data > dst_data, new_dst_data);
     };
 
+    // Active result function, counting number of updates
     auto active_result_func = [](uint64_t old_result, uint64_t src, uint64_t dst, uint64_t src_data, uint64_t old_dst_data, uint64_t new_dst_data) -> uint64_t {
-        return old_result + 1;
+        return old_result + (new_dst_data > old_dst_data ? 1 : 0);
     };
 
+    // Equality function to check if an update is necessary
     auto equal_func = [](uint64_t src, uint64_t dst, uint64_t src_data, uint64_t dst_data, AdjEdgeType adjedge) -> bool {
-        return src_data + adjedge.data == dst_data;
+        return dst_data == std::max(dst_data, src_data / adjedge.data);
     };
 
+    // Initialization function: root = MAXL, others = 0
     auto init_label_func = [=](uint64_t vid) -> std::pair<uint64_t, bool> {
-        return {vid == root ? 0 : MAXL, vid == root};
+        return {vid == root ? MAXL : 0, vid == root};
     };
     auto start = std::chrono::system_clock::now();
     graph.build_tree<uint64_t>(init_label_func, continue_reduce_func, update_func, active_result_func, result);
@@ -212,20 +219,27 @@ float rootIncrementalCompute (Graph<uint64_t>& graph, uint64_t root,
     // Fix: Use std::remove_reference to handle the adjedge_type
     using AdjEdgeType = typename std::remove_reference<decltype(graph)>::type::adjedge_type;
 
+    // Update function following the algorithm:
+    // vite(n) = max { vite(n), vite(s) / w(s, n) };
+    // If vite(n) changed, add n to frontier.
     auto update_func = [](uint64_t src, uint64_t dst, uint64_t src_data, uint64_t dst_data, AdjEdgeType adjedge) -> std::pair<bool, uint64_t> {
-        return std::make_pair(src_data + adjedge.data < dst_data, src_data + adjedge.data);
+        uint64_t new_dst_data = std::max(dst_data, src_data / adjedge.data);
+        return std::make_pair(new_dst_data > dst_data, new_dst_data);
     };
 
+    // Active result function, counting number of updates
     auto active_result_func = [](uint64_t old_result, uint64_t src, uint64_t dst, uint64_t src_data, uint64_t old_dst_data, uint64_t new_dst_data) -> uint64_t {
-        return old_result + 1;
+        return old_result + (new_dst_data > old_dst_data ? 1 : 0);
     };
 
+    // Equality function to check if an update is necessary
     auto equal_func = [](uint64_t src, uint64_t dst, uint64_t src_data, uint64_t dst_data, AdjEdgeType adjedge) -> bool {
-        return src_data + adjedge.data == dst_data;
+        return dst_data == std::max(dst_data, src_data / adjedge.data);
     };
 
+    // Initialization function: root = MAXL, others = 0
     auto init_label_func = [=](uint64_t vid) -> std::pair<uint64_t, bool> {
-        return {vid == root ? 0 : MAXL, vid == root};
+        return {vid == root ? MAXL : 0, vid == root};
     };
 
     std::atomic_uint64_t add_edge_len(0), del_edge_len(0);            
@@ -289,8 +303,8 @@ float rootNoneMutationIncrementalCompute(Graph<uint64_t>& graph,
 
     auto update_func = [snapshotNum, totalBatchNum](uint64_t src, uint64_t dst, uint64_t src_data, uint64_t dst_data, auto adjedge) -> std::pair<bool, uint64_t> {
         return validate(snapshotNum, totalBatchNum, adjedge.data) 
-            ? std::make_pair(src_data + (src + dst) % 16 + 1 < dst_data, src_data + (src + dst) % 16 + 1)
-            : std::make_pair(false, src_data + (src + dst) % 16 + 1);
+            ? std::make_pair(std::max(dst_data, src_data / ((src + dst) % 16 + 1)) > dst_data, std::max(dst_data, src_data / ((src + dst) % 16 + 1)))
+            : std::make_pair(false, std::max(dst_data, src_data / ((src + dst) % 16 + 1)));
     };
 
     auto active_result_func = [](uint64_t old_result, uint64_t src, uint64_t dst, uint64_t src_data, uint64_t old_dst_data, uint64_t new_dst_data) -> uint64_t {
@@ -298,11 +312,11 @@ float rootNoneMutationIncrementalCompute(Graph<uint64_t>& graph,
     };
 
     auto equal_func = [](uint64_t src, uint64_t dst, uint64_t src_data, uint64_t dst_data, AdjEdgeType adjedge) -> bool {
-        return src_data + ((src + dst) % 16 + 1)  == dst_data;
+        return std::max(dst_data, src_data / ((src + dst) % 16 + 1)) == dst_data;
     };
 
     auto init_label_func = [=](uint64_t vid) -> std::pair<uint64_t, bool> {
-        return {vid == root ? 0 : MAXL, vid == root};
+        return {vid == root ? MAXL : 0, vid == root};
     };
     auto batchNum = additionBatchIndex.size() + deletionBatchIndex.size();
     auto batch_size = addBatches[0].size();
@@ -360,8 +374,8 @@ float rootNoneMutationIncrementalCompute(Graph<uint64_t>& graph,
 
     auto update_func = [batchNumber](uint64_t src, uint64_t dst, uint64_t src_data, uint64_t dst_data, auto adjedge) -> std::pair<bool, uint64_t> {
         return validate_add(batchNumber, adjedge.data) 
-            ? std::make_pair(src_data + (src + dst) % 16 + 1 < dst_data, src_data + (src + dst) % 16 + 1)
-            : std::make_pair(false, src_data + (src + dst) % 16 + 1);
+            ? std::make_pair(std::max(dst_data, src_data / ((src + dst) % 16 + 1)) > dst_data, std::max(dst_data, src_data / ((src + dst) % 16 + 1)))
+            : std::make_pair(false, std::max(dst_data, src_data / ((src + dst) % 16 + 1)));
     };
 
     auto active_result_func = [](uint64_t old_result, uint64_t src, uint64_t dst, uint64_t src_data, uint64_t old_dst_data, uint64_t new_dst_data) -> uint64_t {
@@ -369,11 +383,11 @@ float rootNoneMutationIncrementalCompute(Graph<uint64_t>& graph,
     };
 
     auto equal_func = [](uint64_t src, uint64_t dst, uint64_t src_data, uint64_t dst_data, AdjEdgeType adjedge) -> bool {
-        return src_data + ((src + dst) % 16 + 1)  == dst_data;
+        return std::max(dst_data, src_data / ((src + dst) % 16 + 1)) == dst_data;
     };
 
     auto init_label_func = [=](uint64_t vid) -> std::pair<uint64_t, bool> {
-        return {vid == root ? 0 : MAXL, vid == root};
+        return {vid == root ? MAXL : 0, vid == root};
     };
     auto batchsize = addBatches.size();
     std::vector<std::remove_reference_t<decltype(graph)>::edge_type> addedEdgesNoneMutation(batchsize);
@@ -399,13 +413,12 @@ float rootNoneMutationIncrementalCompute(Graph<uint64_t>& graph,
 int main(int argc, const char** argv) {
     if (argc < 5)
     {
-        fprintf(stderr, "usage: %s graph root_file batch_num batch size rootLabel(option)\n", argv[0]);
+        fprintf(stderr, "usage: %s graph root_file batch_num batch size rootindex(option)\n", argv[0]);
         exit(1);
     }
     std::pair<uint64_t, uint64_t> *raw_edges = nullptr;
     std::vector<uint64_t> roots = readNumbersFromFile(argv[2]);
-    int rootCount = std::stoull(argv[5]);
-    auto root = roots[rootCount];
+    auto root = roots[std::stoull(argv[5])];    
     uint64_t raw_edges_len;
     std::vector<std::pair<uint64_t, uint64_t>> temp_edges;
 
@@ -485,9 +498,48 @@ int main(int argc, const char** argv) {
             E_tag[random_selection[(batch + batch_num) * batch_size + i]] = {batch, true};
         }
     }    
+    // Stream Begins First
+    {
+        Graph<uint64_t> graphBase(num_vertices, raw_edges_len, false, true);
+        #pragma omp parallel for
+        for(uint64_t i=0;i<raw_edges_len;i++)
+        {
+            const auto &e = raw_edges[i];
+            if(E_tag[i].first == commonTag) {graphBase.add_edge({e.first, e.second, (e.first+e.second)%16 + 1}, true);}
+        }
+        for(auto size = 0; size < batch_num; size++)
+        {
+            THRESHOLD_OPENMP_LOCAL("omp parallel for", batch_size, 1024,
+            for (uint64_t i = 0; i < batch_size; i++)
+            {
+                const auto &e = deletion_batches[size][i];
+                graphBase.add_edge({e.first, e.second, (e.first+e.second)%16 + 1}, true);
+            }
+            );          
+        }
+
+        float streamTotal = 0;
+
+        auto snapshotResults = graphBase.alloc_vertex_tree_array_vector<uint64_t>(batch_num + 1);
+        snapshotResults[0] = rootCompute(graphBase, root);        
+        for (auto i = 0; i < batch_num; i++)
+        {
+            THRESHOLD_OPENMP_LOCAL("omp parallel for", graphBase.getNodesNum(), 1024,
+            for (auto node = 0; node < graphBase.getNodesNum(); node++)
+            {
+                snapshotResults[i+1][node].parent = snapshotResults[i][node].parent;
+                snapshotResults[i+1][node].data = snapshotResults[i][node].data;
+            }
+            );
+            auto time = rootIncrementalCompute(graphBase, root, snapshotResults[i+1], addition_batches[i], deletion_batches[i]);
+            streamTotal += time;  
+        }
+        fprintf(stderr, "streaming total time %.6lfs\n", streamTotal);
+    }
+
+{
     // Intersection Graph Read
     Graph<uint64_t> graph(num_vertices, raw_edges_len, false, true);
-    Graph<uint64_t> graphBase(num_vertices, raw_edges_len, false, true);
 
     {
         auto start = std::chrono::system_clock::now();
@@ -495,14 +547,11 @@ int main(int argc, const char** argv) {
         for(uint64_t i=0;i<raw_edges_len;i++)
         {
             const auto &e = raw_edges[i];
-            if(E_tag[i].first == commonTag) {graphBase.add_edge({e.first, e.second, (e.first+e.second)%16 + 1}, true);}
             if(E_tag[i].first == commonTag) {graph.add_edge({e.first, e.second, commonTag}, true);}
         }
         auto end = std::chrono::system_clock::now();
         fprintf(stderr, "Intersection Graph Marked: %.6lfs\n", 1e-6*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(end-start).count());
-    }
-    fprintf(stderr,"%lu number of Edges in the graph\n", graph.get_degree());
-    {
+        
         // Init Computation From SnapShot 0 Common Graph Add All deletion Batches
         for(auto size = 0; size < batch_num; size++)
         {
@@ -512,7 +561,6 @@ int main(int argc, const char** argv) {
                 const auto &e = deletion_batches[size][i];
                 uint64_t versionTag = encodeTag(size, true, true);
                 graph.add_edge({e.first, e.second, versionTag}, true);
-                graphBase.add_edge({e.first, e.second, (e.first+e.second)%16 + 1}, true);
             }
             );          
         }
@@ -529,27 +577,9 @@ int main(int argc, const char** argv) {
         }
     }
 
-    auto snapshotResults = graphBase.alloc_vertex_tree_array_vector<uint64_t>(batch_num + 1);
-    snapshotResults[0] = rootCompute(graphBase, root);
-    float streamTotal = 0;
-    for (auto i = 0; i < batch_num; i++)
-    {
-        THRESHOLD_OPENMP_LOCAL("omp parallel for", graphBase.getNodesNum(), 1024,
-        for (auto node = 0; node < graphBase.getNodesNum(); node++)
-        {
-            snapshotResults[i+1][node].parent = snapshotResults[i][node].parent;
-            snapshotResults[i+1][node].data = snapshotResults[i][node].data;
-        }
-    );
-        auto time = rootIncrementalCompute(graphBase, root, snapshotResults[i+1], addition_batches[i], deletion_batches[i]);
-        // fprintf(stderr, "batch %d incremental compute %.6lfs\n", i, time);
-        streamTotal += time;
-    }
-    fprintf(stderr, "streaming total time %.6lfs\n", streamTotal);
-
+    float directHopTime = 0;
     auto snapshotVersionResults = graph.alloc_vertex_tree_array_vector<uint64_t>(batch_num + 1);
     auto commonLabels = rootCompute(graph, root, commonTag, batch_num);
-    float directHopTime = 0;
     for (auto i = 0; i < batch_num + 1; i++)
     {
         // snapshotVersionResults[i] = rootCompute(graph, root, i, batch_num);
@@ -574,14 +604,15 @@ int main(int argc, const char** argv) {
         }
         auto time = rootNoneMutationIncrementalCompute(graph, root, i, batch_num, snapshotVersionResults[i], addition_batches, deletion_batches, additionIdex, deletionIndex);
         directHopTime += time;
-        // fprintf(stderr, "batch %d incremental compute %.6lfs\n", i, time);
     }
     fprintf(stderr, "direct hop total time %.6lfs\n", directHopTime);
+
+
     // Work Sharing will invole One Direct Jmp and One single Jmp
     // Direct Hop will involves all Edges in Target Snapshot
     // single Jmp will involves only addition Edges now and Before
-    auto workSharingLabels = graph.alloc_vertex_tree_array_vector<uint64_t>(batch_num + 1);
     float workSharingTotal = 0;
+    auto workSharingLabels = graph.alloc_vertex_tree_array_vector<uint64_t>(batch_num + 1);
     {
         // Direct Hop include deletion batches {jmp, jmp+1, jmp+2, ... batch_num - 1}
         // Single Jmp include addition batches {jmp}
@@ -604,29 +635,21 @@ int main(int argc, const char** argv) {
             );
             auto time = rootNoneMutationIncrementalCompute(graph, root, jmp, batch_num, workSharingLabels[jmp], addition_batches, deletion_batches, additionIndex, deletionIndex);
             workSharingTotal += time;
-            // fprintf(stderr, "batch %d incremental compute %.6lfs\n", jmp, time);
             auto time1 = rootNoneMutationIncrementalCompute(graph, root, jmp, batch_num, commonLabels, addition_batches[jmp]);
+            workSharingTotal += time1;
         }
     }
-    THRESHOLD_OPENMP_LOCAL("omp parallel for", graph.getNodesNum(), 1024,
-    for (uint64_t j = 0; j < graph.getNodesNum(); j++)
-    {
-        workSharingLabels[batch_num][j].parent = commonLabels[j].parent;
-        workSharingLabels[batch_num][j].data = commonLabels[j].data;
-    }
-    );
-    fprintf(stderr, "work sharing total time %.6lfs\n", workSharingTotal);
-    for (auto i = 0; i < batch_num + 1; i++)
-    {
-        uint64_t correct = 0;
-        for (auto node = 0; node < graph.getNodesNum(); node++)
+        THRESHOLD_OPENMP_LOCAL("omp parallel for", graph.getNodesNum(), 1024,
+        for (uint64_t j = 0; j < graph.getNodesNum(); j++)
         {
-            if (snapshotResults[i][node].data == workSharingLabels[i][node].data)
-            {
-                correct++;
-            }
+            workSharingLabels[batch_num][j].parent = commonLabels[j].parent;
+            workSharingLabels[batch_num][j].data = commonLabels[j].data;
         }
-        fprintf(stderr, "snapshot %d correct percentage %.2lf %%\n", i, (double)(100 *correct) / graph.getNodesNum());
+        );
+                
+    fprintf(stderr, "work sharing total time %.6lfs\n", workSharingTotal);
+    // auto commonGraphTime = std::min(directHopTime, workSharingTotal);
+    fprintf(stderr, "CommonGraph total time %.6lfs\n", workSharingTotal);
     }
     return 0;
 }

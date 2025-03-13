@@ -1,0 +1,23 @@
+nohup: ignoring input
+Running: build/fusion_bfs /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 0
+read: 15.149035s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.012041s
+|E|=36233445
+|V|=6024259
+|V|=6024259
+Intersection Graph Marked: 8.566189s
+24638757 number of Edges in the graph
+streaming total time 3.233874s
+direct hop total time 0.819647s
+work sharing total time 0.493715s
+snapshot 0 correct percentage 100.00 %
+snapshot 1 correct percentage 100.00 %
+snapshot 2 correct percentage 100.00 %
+snapshot 3 correct percentage 100.00 %
+snapshot 4 correct percentage 100.00 %
+snapshot 5 correct percentage 100.00 %
+snapshot 6 correct percentage 100.00 %
+snapshot 7 correct percentage 100.00 %
+snapshot 8 correct percentage 100.00 %
+Running: build/fusion_bfs /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 1
