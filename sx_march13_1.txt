@@ -1,0 +1,1067 @@
+nohup: ignoring input
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 8 0.02 0
+read: 5.968365s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 8, batch_size is 292273
+read: 0.008008s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 25020
+Re Computing: 1 0 24939
+streaming total time 13.865346s
+|V|=1870709
+Intersection Graph Marked: 27.394119s
+direct hop total time 0.682396s
+work sharing total time 0.587806s
+CommonGraph total time 0.587806s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 8 0.02 1
+read: 5.936686s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 8, batch_size is 292273
+read: 0.007438s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 25035
+Re Computing: 1 0 24929
+Re Computing: 1 0 25206
+Re Computing: 1 0 25106
+streaming total time 15.169559s
+|V|=1870709
+Intersection Graph Marked: 25.267127s
+direct hop total time 0.959707s
+work sharing total time 1.006851s
+CommonGraph total time 1.006851s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 8 0.02 2
+read: 5.910613s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 8, batch_size is 292273
+read: 0.007430s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 25115
+Re Computing: 1 0 25028
+Re Computing: 1 0 25208
+Re Computing: 1 0 25140
+streaming total time 13.660105s
+|V|=1870709
+Intersection Graph Marked: 26.656574s
+direct hop total time 0.987452s
+work sharing total time 1.066868s
+CommonGraph total time 1.066868s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 8 0.02 3
+read: 5.931602s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 8, batch_size is 292273
+read: 0.004943s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 25054
+Re Computing: 1 0 24892
+Re Computing: 1 0 25222
+Re Computing: 1 0 25121
+streaming total time 14.005745s
+|V|=1870709
+Intersection Graph Marked: 25.519104s
+direct hop total time 1.072249s
+work sharing total time 1.035951s
+CommonGraph total time 1.035951s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 8 0.02 4
+read: 5.922536s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 8, batch_size is 292273
+read: 0.006284s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 25065
+Re Computing: 1 0 24957
+Re Computing: 1 0 25242
+Re Computing: 1 0 25144
+streaming total time 14.251795s
+|V|=1870709
+Intersection Graph Marked: 26.698399s
+direct hop total time 0.986387s
+work sharing total time 1.049517s
+CommonGraph total time 1.049517s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 8 0.02 5
+read: 5.911342s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 8, batch_size is 292273
+read: 0.007073s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 25049
+Re Computing: 1 0 25035
+Re Computing: 1 0 25262
+Re Computing: 1 0 25188
+streaming total time 15.021421s
+|V|=1870709
+Intersection Graph Marked: 24.583124s
+direct hop total time 1.509959s
+work sharing total time 1.371430s
+CommonGraph total time 1.371430s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 8 0.02 6
+read: 5.905525s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 8, batch_size is 292273
+read: 0.006812s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 25115
+Re Computing: 1 0 25048
+Re Computing: 1 0 25211
+Re Computing: 1 0 25150
+streaming total time 15.825470s
+|V|=1870709
+Intersection Graph Marked: 26.051875s
+direct hop total time 1.079266s
+work sharing total time 1.132487s
+CommonGraph total time 1.132487s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 8 0.02 7
+read: 5.926816s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 8, batch_size is 292273
+read: 0.007713s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 25100
+Re Computing: 1 0 25025
+Re Computing: 1 0 24816
+streaming total time 14.070842s
+|V|=1870709
+Intersection Graph Marked: 28.570587s
+direct hop total time 1.219540s
+work sharing total time 1.318237s
+CommonGraph total time 1.318237s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 8 0.02 8
+read: 5.971857s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 8, batch_size is 292273
+read: 0.006132s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 24969
+Re Computing: 1 0 24841
+Re Computing: 1 0 25300
+Re Computing: 1 0 25055
+streaming total time 13.953489s
+|V|=1870709
+Intersection Graph Marked: 25.194315s
+direct hop total time 1.190976s
+work sharing total time 1.184981s
+CommonGraph total time 1.184981s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 8 0.02 9
+read: 5.948663s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 8, batch_size is 292273
+read: 0.004451s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 25106
+Re Computing: 1 0 24988
+Re Computing: 1 0 24839
+streaming total time 12.543589s
+|V|=1870709
+Intersection Graph Marked: 24.752228s
+direct hop total time 1.057386s
+work sharing total time 1.076056s
+CommonGraph total time 1.076056s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 8 0.02 10
+read: 5.915514s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 8, batch_size is 292273
+read: 0.007517s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 25110
+Re Computing: 1 0 25048
+Re Computing: 1 0 25218
+Re Computing: 1 0 25127
+streaming total time 13.187152s
+|V|=1870709
+Intersection Graph Marked: 27.981314s
+direct hop total time 1.073009s
+work sharing total time 1.089708s
+CommonGraph total time 1.089708s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 8 0.02 11
+read: 5.933356s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 8, batch_size is 292273
+read: 0.012426s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 25105
+Re Computing: 1 0 24925
+Re Computing: 1 0 24786
+streaming total time 12.626287s
+|V|=1870709
+Intersection Graph Marked: 24.385094s
+direct hop total time 1.341422s
+work sharing total time 1.327058s
+CommonGraph total time 1.327058s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 8 0.02 12
+read: 5.916339s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 8, batch_size is 292273
+read: 0.007739s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 25127
+Re Computing: 1 0 25010
+Re Computing: 1 0 24849
+streaming total time 13.163673s
+|V|=1870709
+Intersection Graph Marked: 28.089047s
+direct hop total time 1.110778s
+work sharing total time 1.130834s
+CommonGraph total time 1.130834s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 8 0.02 13
+read: 5.919213s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 8, batch_size is 292273
+read: 0.007788s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 25105
+Re Computing: 1 0 25028
+Re Computing: 1 0 25404
+Re Computing: 1 0 25214
+streaming total time 15.120115s
+|V|=1870709
+Intersection Graph Marked: 27.391619s
+direct hop total time 1.473562s
+work sharing total time 1.282031s
+CommonGraph total time 1.282031s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 8 0.02 14
+read: 5.928338s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 8, batch_size is 292273
+read: 0.008101s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 24968
+Re Computing: 1 0 25212
+Re Computing: 1 0 25160
+streaming total time 13.243196s
+|V|=1870709
+Intersection Graph Marked: 26.408974s
+direct hop total time 1.490738s
+work sharing total time 1.553740s
+CommonGraph total time 1.553740s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 8 0.02 15
+read: 5.917535s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 8, batch_size is 292273
+read: 0.007881s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 24735
+Re Computing: 1 0 25057
+Re Computing: 1 0 25123
+streaming total time 13.780350s
+|V|=1870709
+Intersection Graph Marked: 25.583048s
+direct hop total time 1.087504s
+work sharing total time 1.145683s
+CommonGraph total time 1.145683s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 16 0.01 0
+read: 5.918082s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 16, batch_size is 146136
+read: 0.007912s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 12572
+Re Computing: 1 0 12422
+streaming total time 11.803868s
+|V|=1870709
+Intersection Graph Marked: 28.395561s
+direct hop total time 1.006547s
+work sharing total time 0.866789s
+CommonGraph total time 0.866789s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 16 0.01 1
+read: 5.920662s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 16, batch_size is 146136
+read: 0.010381s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 12616
+Re Computing: 1 0 12469
+Re Computing: 1 0 12616
+Re Computing: 1 0 12582
+streaming total time 13.625575s
+|V|=1870709
+Intersection Graph Marked: 25.875277s
+direct hop total time 1.875483s
+work sharing total time 2.027889s
+CommonGraph total time 2.027889s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 16 0.01 2
+read: 5.924671s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 16, batch_size is 146136
+read: 0.007658s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 12668
+Re Computing: 1 0 12447
+Re Computing: 1 0 12696
+Re Computing: 1 0 12497
+streaming total time 13.658498s
+|V|=1870709
+Intersection Graph Marked: 27.890295s
+direct hop total time 1.998598s
+work sharing total time 2.071983s
+CommonGraph total time 2.071983s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 16 0.01 3
+read: 5.918545s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 16, batch_size is 146136
+read: 0.007350s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 12530
+Re Computing: 1 0 12592
+Re Computing: 1 0 12486
+Re Computing: 1 0 12625
+Re Computing: 1 0 12454
+Re Computing: 1 0 12563
+streaming total time 14.522135s
+|V|=1870709
+Intersection Graph Marked: 26.875476s
+direct hop total time 1.865889s
+work sharing total time 2.000814s
+CommonGraph total time 2.000814s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 16 0.01 4
+read: 5.921512s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 16, batch_size is 146136
+read: 0.007822s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 12491
+Re Computing: 1 0 12516
+Re Computing: 1 0 12544
+Re Computing: 1 0 12658
+Re Computing: 1 0 12532
+streaming total time 15.040607s
+|V|=1870709
+Intersection Graph Marked: 25.043540s
+direct hop total time 1.875597s
+work sharing total time 1.876746s
+CommonGraph total time 1.876746s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 16 0.01 5
+read: 5.918386s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 16, batch_size is 146136
+read: 0.007765s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 12518
+Re Computing: 1 0 12583
+Re Computing: 1 0 12580
+Re Computing: 1 0 12614
+Re Computing: 1 0 12491
+streaming total time 13.574511s
+|V|=1870709
+Intersection Graph Marked: 28.289269s
+direct hop total time 2.838706s
+work sharing total time 2.755155s
+CommonGraph total time 2.755155s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 16 0.01 6
+read: 5.938928s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 16, batch_size is 146136
+read: 0.007839s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 12658
+Re Computing: 1 0 12430
+Re Computing: 1 0 12696
+Re Computing: 1 0 12479
+streaming total time 13.564188s
+|V|=1870709
+Intersection Graph Marked: 28.806429s
+direct hop total time 2.097254s
+work sharing total time 2.145798s
+CommonGraph total time 2.145798s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 16 0.01 7
+read: 5.928313s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 16, batch_size is 146136
+read: 0.004654s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 12654
+Re Computing: 1 0 12589
+Re Computing: 1 0 12669
+Re Computing: 1 0 12484
+streaming total time 12.939671s
+|V|=1870709
+Intersection Graph Marked: 24.616445s
+direct hop total time 2.338052s
+work sharing total time 2.377445s
+CommonGraph total time 2.377445s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 16 0.01 8
+read: 5.921283s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 16, batch_size is 146136
+read: 0.007844s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 12575
+Re Computing: 1 0 12431
+Re Computing: 1 0 12608
+Re Computing: 1 0 12838
+Re Computing: 1 0 12483
+streaming total time 17.112236s
+|V|=1870709
+Intersection Graph Marked: 25.108157s
+direct hop total time 2.286709s
+work sharing total time 2.292386s
+CommonGraph total time 2.292386s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 16 0.01 9
+read: 5.920197s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 16, batch_size is 146136
+read: 0.007813s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 12654
+Re Computing: 1 0 12441
+Re Computing: 1 0 12687
+Re Computing: 1 0 12473
+streaming total time 13.920794s
+|V|=1870709
+Intersection Graph Marked: 28.357246s
+direct hop total time 1.880028s
+work sharing total time 2.030929s
+CommonGraph total time 2.030929s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 16 0.01 10
+read: 5.929179s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 16, batch_size is 146136
+read: 0.007605s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 12655
+Re Computing: 1 0 12545
+Re Computing: 1 0 12626
+Re Computing: 1 0 12551
+streaming total time 14.652374s
+|V|=1870709
+Intersection Graph Marked: 24.940012s
+direct hop total time 2.033275s
+work sharing total time 2.043610s
+CommonGraph total time 2.043610s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 16 0.01 11
+read: 5.922547s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 16, batch_size is 146136
+read: 0.006079s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 12700
+Re Computing: 1 0 12532
+Re Computing: 1 0 12657
+Re Computing: 1 0 12523
+streaming total time 14.087307s
+|V|=1870709
+Intersection Graph Marked: 24.390391s
+direct hop total time 2.659922s
+work sharing total time 2.694640s
+CommonGraph total time 2.694640s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 16 0.01 12
+read: 5.931715s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 16, batch_size is 146136
+read: 0.007743s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 12660
+Re Computing: 1 0 12508
+Re Computing: 1 0 12595
+Re Computing: 1 0 12487
+streaming total time 14.741899s
+|V|=1870709
+Intersection Graph Marked: 25.542524s
+direct hop total time 1.838896s
+work sharing total time 2.059285s
+CommonGraph total time 2.059285s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 16 0.01 13
+read: 5.923081s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 16, batch_size is 146136
+read: 0.017329s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 12668
+Re Computing: 1 0 12456
+Re Computing: 1 0 12768
+Re Computing: 1 0 12601
+streaming total time 13.420050s
+|V|=1870709
+Intersection Graph Marked: 25.017016s
+direct hop total time 2.815352s
+work sharing total time 2.276943s
+CommonGraph total time 2.276943s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 16 0.01 14
+read: 5.939696s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 16, batch_size is 146136
+read: 0.008573s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 12626
+Re Computing: 1 0 12512
+Re Computing: 1 0 12606
+Re Computing: 1 0 12742
+Re Computing: 1 0 12517
+streaming total time 17.251612s
+|V|=1870709
+Intersection Graph Marked: 27.949701s
+direct hop total time 2.599251s
+work sharing total time 2.713273s
+CommonGraph total time 2.713273s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 16 0.01 15
+read: 5.942077s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 16, batch_size is 146136
+read: 0.007929s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 12652
+Re Computing: 1 0 12438
+Re Computing: 1 0 12685
+Re Computing: 1 0 12475
+streaming total time 15.545947s
+|V|=1870709
+Intersection Graph Marked: 25.211784s
+direct hop total time 1.831890s
+work sharing total time 2.044128s
+CommonGraph total time 2.044128s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 32 0.005 0
+read: 5.918835s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 32, batch_size is 73068
+read: 0.007917s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 6325
+Re Computing: 1 0 6260
+Re Computing: 1 0 6277
+streaming total time 12.883706s
+|V|=1870709
+Intersection Graph Marked: 26.348276s
+direct hop total time 1.563060s
+work sharing total time 1.488236s
+CommonGraph total time 1.488236s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 32 0.005 1
+read: 5.920219s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 32, batch_size is 73068
+read: 0.007794s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 6349
+Re Computing: 1 0 6277
+Re Computing: 1 0 6206
+Re Computing: 1 0 6368
+Re Computing: 1 0 6288
+Re Computing: 1 0 6395
+streaming total time 14.112185s
+|V|=1870709
+Intersection Graph Marked: 28.770446s
+direct hop total time 3.873289s
+work sharing total time 4.159105s
+CommonGraph total time 4.159105s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 32 0.005 2
+read: 5.922646s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 32, batch_size is 73068
+read: 0.007850s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 6381
+Re Computing: 1 0 6311
+Re Computing: 1 0 6269
+Re Computing: 1 0 6401
+Re Computing: 1 0 6256
+Re Computing: 1 0 6287
+streaming total time 14.019423s
+|V|=1870709
+Intersection Graph Marked: 26.923750s
+direct hop total time 3.856650s
+work sharing total time 4.052649s
+CommonGraph total time 4.052649s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 32 0.005 3
+read: 5.921385s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 32, batch_size is 73068
+read: 0.002559s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 6280
+Re Computing: 1 0 6313
+Re Computing: 1 0 6320
+Re Computing: 1 0 6314
+Re Computing: 3 2365 229
+streaming total time 12.641397s
+|V|=1870709
+Intersection Graph Marked: 25.767646s
+direct hop total time 3.898597s
+work sharing total time 3.871355s
+CommonGraph total time 3.871355s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 32 0.005 4
+read: 5.913974s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 32, batch_size is 73068
+read: 0.002544s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 6379
+Re Computing: 1 0 6301
+Re Computing: 1 0 6190
+Re Computing: 1 0 6333
+Re Computing: 1 0 6288
+Re Computing: 1 0 6275
+streaming total time 15.213064s
+|V|=1870709
+Intersection Graph Marked: 24.746572s
+direct hop total time 3.554472s
+work sharing total time 3.936309s
+CommonGraph total time 3.936309s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 32 0.005 5
+read: 5.976461s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 32, batch_size is 73068
+read: 0.002572s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 6370
+Re Computing: 1 0 6297
+Re Computing: 1 0 6285
+Re Computing: 1 0 6335
+Re Computing: 1 0 6248
+streaming total time 13.438680s
+|V|=1870709
+Intersection Graph Marked: 29.017734s
+direct hop total time 5.358412s
+work sharing total time 5.008532s
+CommonGraph total time 5.008532s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 32 0.005 6
+read: 5.936397s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 32, batch_size is 73068
+read: 0.002504s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 6376
+Re Computing: 1 0 6297
+Re Computing: 1 0 6265
+Re Computing: 1 0 6405
+Re Computing: 1 0 6261
+Re Computing: 1 0 6289
+streaming total time 15.403689s
+|V|=1870709
+Intersection Graph Marked: 28.062207s
+direct hop total time 3.779279s
+work sharing total time 3.986733s
+CommonGraph total time 3.986733s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 32 0.005 7
+read: 6.446579s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 32, batch_size is 73068
+read: 0.002447s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 6395
+Re Computing: 1 0 6207
+Re Computing: 1 0 6368
+Re Computing: 1 0 6277
+Re Computing: 1 0 6282
+streaming total time 13.592200s
+|V|=1870709
+Intersection Graph Marked: 25.428116s
+direct hop total time 4.280759s
+work sharing total time 4.420158s
+CommonGraph total time 4.420158s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 32 0.005 8
+read: 5.935444s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 32, batch_size is 73068
+read: 0.002460s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 6336
+Re Computing: 1 0 6249
+Re Computing: 1 0 6224
+Re Computing: 1 0 6292
+Re Computing: 1 0 6377
+Re Computing: 1 0 6279
+streaming total time 14.741926s
+|V|=1870709
+Intersection Graph Marked: 24.949785s
+direct hop total time 4.434200s
+work sharing total time 4.488913s
+CommonGraph total time 4.488913s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 32 0.005 9
+read: 5.916974s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 32, batch_size is 73068
+read: 0.002412s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 6368
+Re Computing: 1 0 6302
+Re Computing: 1 0 6268
+Re Computing: 1 0 6390
+Re Computing: 1 0 6254
+Re Computing: 1 0 6282
+streaming total time 14.959965s
+|V|=1870709
+Intersection Graph Marked: 30.159800s
+direct hop total time 3.730011s
+work sharing total time 4.032758s
+CommonGraph total time 4.032758s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 32 0.005 10
+read: 5.935622s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 32, batch_size is 73068
+read: 0.002477s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 6358
+Re Computing: 1 0 6232
+Re Computing: 1 0 6325
+Re Computing: 1 0 6377
+Re Computing: 1 0 6277
+streaming total time 16.768568s
+|V|=1870709
+Intersection Graph Marked: 28.998584s
+direct hop total time 3.649657s
+work sharing total time 4.077021s
+CommonGraph total time 4.077021s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 32 0.005 11
+read: 5.904294s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 32, batch_size is 73068
+read: 0.002505s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 6344
+Re Computing: 1 0 6280
+Re Computing: 1 0 6339
+Re Computing: 1 0 6368
+Re Computing: 1 0 6298
+Re Computing: 1 0 6260
+streaming total time 15.032068s
+|V|=1870709
+Intersection Graph Marked: 25.509514s
+direct hop total time 4.907951s
+work sharing total time 4.787547s
+CommonGraph total time 4.787547s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 32 0.005 12
+read: 5.951582s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 32, batch_size is 73068
+read: 0.002492s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 6373
+Re Computing: 1 0 6303
+Re Computing: 1 0 6274
+Re Computing: 1 0 6390
+Re Computing: 1 0 6263
+Re Computing: 1 0 6286
+streaming total time 13.590511s
+|V|=1870709
+Intersection Graph Marked: 25.830784s
+direct hop total time 3.549854s
+work sharing total time 3.968541s
+CommonGraph total time 3.968541s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 32 0.005 13
+read: 5.923951s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 32, batch_size is 73068
+read: 0.002469s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 6375
+Re Computing: 1 0 6229
+Re Computing: 1 0 6378
+Re Computing: 1 0 6284
+Re Computing: 1 0 6320
+streaming total time 15.121236s
+|V|=1870709
+Intersection Graph Marked: 26.400690s
+direct hop total time 5.183331s
+work sharing total time 4.362403s
+CommonGraph total time 4.362403s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 32 0.005 14
+read: 5.918851s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 32, batch_size is 73068
+read: 0.002603s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 6232
+Re Computing: 1 0 6248
+Re Computing: 1 0 6286
+Re Computing: 1 0 6389
+Re Computing: 1 0 6247
+Re Computing: 1 0 6291
+streaming total time 14.449415s
+|V|=1870709
+Intersection Graph Marked: 25.197160s
+direct hop total time 5.286163s
+work sharing total time 5.734819s
+CommonGraph total time 5.734819s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 32 0.005 15
+read: 5.935625s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 32, batch_size is 73068
+read: 0.002505s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 6369
+Re Computing: 1 0 6302
+Re Computing: 1 0 6267
+Re Computing: 1 0 6389
+Re Computing: 1 0 6256
+Re Computing: 1 0 6281
+streaming total time 14.487138s
+|V|=1870709
+Intersection Graph Marked: 24.735670s
+direct hop total time 3.803461s
+work sharing total time 3.968295s
+CommonGraph total time 3.968295s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 64 0.0025 0
+read: 5.921852s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 64, batch_size is 36534
+read: 0.002491s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 3159
+Re Computing: 1 0 3166
+streaming total time 11.364279s
+|V|=1870709
+Intersection Graph Marked: 25.393280s
+direct hop total time 3.150904s
+work sharing total time 3.092677s
+CommonGraph total time 3.092677s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 64 0.0025 1
+read: 5.908950s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 64, batch_size is 36534
+read: 0.002481s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 3175
+Re Computing: 1 0 3104
+Re Computing: 1 0 3151
+Re Computing: 1 0 3198
+Re Computing: 1 0 3137
+Re Computing: 1 0 3202
+streaming total time 14.053626s
+|V|=1870709
+Intersection Graph Marked: 25.734432s
+direct hop total time 7.375279s
+work sharing total time 6.406845s
+CommonGraph total time 6.406845s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 64 0.0025 2
+read: 5.931872s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 64, batch_size is 36534
+read: 0.002532s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 3166
+Re Computing: 1 0 3206
+Re Computing: 1 0 3163
+Re Computing: 1 0 3237
+Re Computing: 1 0 3145
+Re Computing: 1 0 3209
+streaming total time 14.467751s
+|V|=1870709
+Intersection Graph Marked: 26.066769s
+direct hop total time 7.391147s
+work sharing total time 6.782329s
+CommonGraph total time 6.782329s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 64 0.0025 3
+read: 5.918680s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 64, batch_size is 36534
+read: 0.002473s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 3100
+Re Computing: 1 0 3063
+Re Computing: 1 0 3214
+Re Computing: 1 0 3215
+Re Computing: 1 0 3156
+streaming total time 13.350881s
+|V|=1870709
+Intersection Graph Marked: 26.458901s
+direct hop total time 7.041565s
+work sharing total time 6.266453s
+CommonGraph total time 6.266453s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 64 0.0025 4
+read: 5.918581s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 64, batch_size is 36534
+read: 0.002447s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 3194
+Re Computing: 1 0 3105
+Re Computing: 1 0 3150
+Re Computing: 1 0 3190
+Re Computing: 1 0 3133
+Re Computing: 1 0 3121
+streaming total time 15.597966s
+|V|=1870709
+Intersection Graph Marked: 28.627506s
+direct hop total time 7.502762s
+work sharing total time 6.723537s
+CommonGraph total time 6.723537s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 64 0.0025 5
+read: 5.910460s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 64, batch_size is 36534
+read: 0.002474s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 3173
+Re Computing: 1 0 3157
+Re Computing: 1 0 3193
+Re Computing: 1 0 3165
+Re Computing: 1 0 3040
+Re Computing: 1 0 3252
+streaming total time 13.733902s
+|V|=1870709
+Intersection Graph Marked: 27.990334s
+direct hop total time 10.173521s
+work sharing total time 8.401464s
+CommonGraph total time 8.401464s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 64 0.0025 6
+read: 5.974415s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 64, batch_size is 36534
+read: 0.002565s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 3167
+Re Computing: 1 0 3165
+Re Computing: 1 0 3152
+Re Computing: 1 0 3240
+Re Computing: 1 0 3145
+Re Computing: 1 0 3218
+streaming total time 13.979190s
+|V|=1870709
+Intersection Graph Marked: 28.522513s
+direct hop total time 7.630358s
+work sharing total time 6.995042s
+CommonGraph total time 6.995042s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 64 0.0025 7
+read: 5.920997s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 64, batch_size is 36534
+read: 0.002633s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 3187
+Re Computing: 1 0 3167
+Re Computing: 1 0 3153
+Re Computing: 1 0 3251
+Re Computing: 1 0 3182
+Re Computing: 1 0 3076
+streaming total time 15.052052s
+|V|=1870709
+Intersection Graph Marked: 24.868560s
+direct hop total time 9.025564s
+work sharing total time 7.773849s
+CommonGraph total time 7.773849s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 64 0.0025 8
+read: 5.936497s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 64, batch_size is 36534
+read: 0.002451s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 3159
+Re Computing: 1 0 3250
+Re Computing: 1 0 3162
+Re Computing: 1 0 3234
+Re Computing: 1 0 3164
+streaming total time 14.595279s
+|V|=1870709
+Intersection Graph Marked: 26.203825s
+direct hop total time 9.286470s
+work sharing total time 7.396622s
+CommonGraph total time 7.396622s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 64 0.0025 9
+read: 5.933703s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 64, batch_size is 36534
+read: 0.002501s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 3162
+Re Computing: 1 0 3178
+Re Computing: 1 0 3161
+Re Computing: 1 0 3241
+Re Computing: 1 0 3137
+streaming total time 14.853597s
+|V|=1870709
+Intersection Graph Marked: 24.491987s
+direct hop total time 7.515287s
+work sharing total time 6.742923s
+CommonGraph total time 6.742923s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 64 0.0025 10
+read: 5.974056s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 64, batch_size is 36534
+read: 0.002578s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 3166
+Re Computing: 1 0 3085
+Re Computing: 1 0 3182
+Re Computing: 1 0 3230
+Re Computing: 1 0 3155
+streaming total time 14.251474s
+|V|=1870709
+Intersection Graph Marked: 26.216287s
+direct hop total time 6.980463s
+work sharing total time 6.290379s
+CommonGraph total time 6.290379s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 64 0.0025 11
+read: 5.939975s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 64, batch_size is 36534
+read: 0.002508s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 3191
+Re Computing: 1 0 3117
+Re Computing: 1 0 3192
+Re Computing: 1 0 3207
+Re Computing: 1 0 3137
+Re Computing: 1 0 3185
+streaming total time 13.672736s
+|V|=1870709
+Intersection Graph Marked: 28.228510s
+direct hop total time 9.728749s
+work sharing total time 8.820887s
+CommonGraph total time 8.820887s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 64 0.0025 12
+read: 5.977977s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 64, batch_size is 36534
+read: 0.002410s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 3166
+Re Computing: 1 0 3178
+Re Computing: 1 0 3162
+Re Computing: 1 0 3242
+Re Computing: 1 0 3142
+streaming total time 13.366572s
+|V|=1870709
+Intersection Graph Marked: 28.608791s
+direct hop total time 6.962153s
+work sharing total time 6.701294s
+CommonGraph total time 6.701294s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 64 0.0025 13
+read: 5.917965s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 64, batch_size is 36534
+read: 0.002498s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 3176
+Re Computing: 1 0 3189
+Re Computing: 1 0 3158
+Re Computing: 1 0 3214
+Re Computing: 1 0 3203
+Re Computing: 1 0 3244
+streaming total time 13.473392s
+|V|=1870709
+Intersection Graph Marked: 25.753172s
+direct hop total time 10.652244s
+work sharing total time 7.543760s
+CommonGraph total time 7.543760s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 64 0.0025 14
+read: 5.926207s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 64, batch_size is 36534
+read: 0.002418s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 3172
+Re Computing: 1 0 3064
+Re Computing: 1 0 3185
+Re Computing: 1 0 3231
+Re Computing: 1 0 3135
+Re Computing: 1 0 3166
+streaming total time 15.264150s
+|V|=1870709
+Intersection Graph Marked: 27.467507s
+direct hop total time 10.141672s
+work sharing total time 9.614761s
+CommonGraph total time 9.614761s
+Running: build/Viterbibaseline /home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt 64 0.0025 15
+read: 5.931713s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 64, batch_size is 36534
+read: 0.002585s
+|E|=14613674
+|V|=1870709
+Re Computing: 1 0 3163
+Re Computing: 1 0 3143
+Re Computing: 1 0 3147
+Re Computing: 1 0 3232
+Re Computing: 1 0 3138
+streaming total time 12.502703s
+|V|=1870709
+Intersection Graph Marked: 25.900818s
+direct hop total time 7.056660s
+work sharing total time 6.516560s
+CommonGraph total time 6.516560s
