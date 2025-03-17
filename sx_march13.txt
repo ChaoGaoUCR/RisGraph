@@ -1,23 +1,4737 @@
 nohup: ignoring input
-Running: build/fusion_bfs /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 0
-read: 15.149035s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 0
+read: 15.156739s
 loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
-read: 0.012041s
+read: 0.011119s
 |E|=36233445
 |V|=6024259
+streaming total time 7.045814s
 |V|=6024259
-Intersection Graph Marked: 8.566189s
-24638757 number of Edges in the graph
-streaming total time 3.233874s
-direct hop total time 0.819647s
-work sharing total time 0.493715s
-snapshot 0 correct percentage 100.00 %
-snapshot 1 correct percentage 100.00 %
-snapshot 2 correct percentage 100.00 %
-snapshot 3 correct percentage 100.00 %
-snapshot 4 correct percentage 100.00 %
-snapshot 5 correct percentage 100.00 %
-snapshot 6 correct percentage 100.00 %
-snapshot 7 correct percentage 100.00 %
-snapshot 8 correct percentage 100.00 %
-Running: build/fusion_bfs /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 1
+Intersection Graph Marked: 0.689231s
+direct hop total time 0.818153s
+work sharing total time 0.709921s
+CommonGraph total time 0.709921s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 1
+read: 15.193068s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.010947s
+|E|=36233445
+|V|=6024259
+streaming total time 5.388432s
+|V|=6024259
+Intersection Graph Marked: 0.808453s
+direct hop total time 0.947290s
+work sharing total time 0.692270s
+CommonGraph total time 0.692270s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 2
+read: 15.253798s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.013351s
+|E|=36233445
+|V|=6024259
+streaming total time 6.783399s
+|V|=6024259
+Intersection Graph Marked: 0.810521s
+direct hop total time 0.826747s
+work sharing total time 0.684059s
+CommonGraph total time 0.684059s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 3
+read: 15.189449s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.011541s
+|E|=36233445
+|V|=6024259
+streaming total time 3.345186s
+|V|=6024259
+Intersection Graph Marked: 0.676763s
+direct hop total time 0.070186s
+work sharing total time 0.039532s
+CommonGraph total time 0.039532s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 4
+read: 15.191649s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.009367s
+|E|=36233445
+|V|=6024259
+streaming total time 5.664760s
+|V|=6024259
+Intersection Graph Marked: 0.666843s
+direct hop total time 0.870385s
+work sharing total time 0.630662s
+CommonGraph total time 0.630662s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 5
+read: 15.205735s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.010368s
+|E|=36233445
+|V|=6024259
+streaming total time 5.086486s
+|V|=6024259
+Intersection Graph Marked: 0.806155s
+direct hop total time 0.803687s
+work sharing total time 0.643504s
+CommonGraph total time 0.643504s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 6
+read: 15.223406s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.011733s
+|E|=36233445
+|V|=6024259
+streaming total time 5.712278s
+|V|=6024259
+Intersection Graph Marked: 0.722187s
+direct hop total time 0.056824s
+work sharing total time 0.039204s
+CommonGraph total time 0.039204s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 7
+read: 15.171995s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.010437s
+|E|=36233445
+|V|=6024259
+streaming total time 7.210450s
+|V|=6024259
+Intersection Graph Marked: 0.884978s
+direct hop total time 0.813829s
+work sharing total time 0.734811s
+CommonGraph total time 0.734811s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 8
+read: 15.200746s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.017911s
+|E|=36233445
+|V|=6024259
+streaming total time 4.276932s
+|V|=6024259
+Intersection Graph Marked: 0.733587s
+direct hop total time 1.159187s
+work sharing total time 0.717023s
+CommonGraph total time 0.717023s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 9
+read: 15.197378s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.010626s
+|E|=36233445
+|V|=6024259
+streaming total time 5.144539s
+|V|=6024259
+Intersection Graph Marked: 0.783037s
+direct hop total time 0.766642s
+work sharing total time 0.693172s
+CommonGraph total time 0.693172s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 10
+read: 15.184867s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.010709s
+|E|=36233445
+|V|=6024259
+streaming total time 6.752833s
+|V|=6024259
+Intersection Graph Marked: 0.778673s
+direct hop total time 0.876047s
+work sharing total time 0.673125s
+CommonGraph total time 0.673125s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 11
+read: 15.216504s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.009162s
+|E|=36233445
+|V|=6024259
+streaming total time 5.186577s
+|V|=6024259
+Intersection Graph Marked: 0.804142s
+direct hop total time 0.067758s
+work sharing total time 0.039678s
+CommonGraph total time 0.039678s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 12
+read: 15.183756s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.010843s
+|E|=36233445
+|V|=6024259
+streaming total time 3.957775s
+|V|=6024259
+Intersection Graph Marked: 0.811183s
+direct hop total time 0.064332s
+work sharing total time 0.042704s
+CommonGraph total time 0.042704s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 13
+read: 15.185506s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.011316s
+|E|=36233445
+|V|=6024259
+streaming total time 3.202809s
+|V|=6024259
+Intersection Graph Marked: 0.678721s
+direct hop total time 0.071855s
+work sharing total time 0.048379s
+CommonGraph total time 0.048379s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 14
+read: 15.173655s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.013957s
+|E|=36233445
+|V|=6024259
+streaming total time 4.145718s
+|V|=6024259
+Intersection Graph Marked: 0.668952s
+direct hop total time 0.069371s
+work sharing total time 0.039619s
+CommonGraph total time 0.039619s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 15
+read: 15.237089s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.016899s
+|E|=36233445
+|V|=6024259
+streaming total time 4.515421s
+|V|=6024259
+Intersection Graph Marked: 0.717563s
+direct hop total time 0.801709s
+work sharing total time 0.699913s
+CommonGraph total time 0.699913s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 0
+read: 15.219975s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.011079s
+|E|=36233445
+|V|=6024259
+streaming total time 6.477439s
+|V|=6024259
+Intersection Graph Marked: 0.809091s
+direct hop total time 1.454397s
+work sharing total time 1.361080s
+CommonGraph total time 1.361080s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 1
+read: 15.187763s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.010851s
+|E|=36233445
+|V|=6024259
+streaming total time 5.647858s
+|V|=6024259
+Intersection Graph Marked: 0.793015s
+direct hop total time 1.563257s
+work sharing total time 1.337376s
+CommonGraph total time 1.337376s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 2
+read: 15.185838s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.010254s
+|E|=36233445
+|V|=6024259
+streaming total time 6.503923s
+|V|=6024259
+Intersection Graph Marked: 0.758654s
+direct hop total time 1.576709s
+work sharing total time 1.312732s
+CommonGraph total time 1.312732s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 3
+read: 15.178525s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.010490s
+|E|=36233445
+|V|=6024259
+streaming total time 3.994749s
+|V|=6024259
+Intersection Graph Marked: 0.740381s
+direct hop total time 0.117746s
+work sharing total time 0.091409s
+CommonGraph total time 0.091409s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 4
+read: 15.186891s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.010567s
+|E|=36233445
+|V|=6024259
+streaming total time 6.087002s
+|V|=6024259
+Intersection Graph Marked: 0.752811s
+direct hop total time 1.589701s
+work sharing total time 1.278672s
+CommonGraph total time 1.278672s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 5
+read: 15.191051s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.010016s
+|E|=36233445
+|V|=6024259
+streaming total time 4.882989s
+|V|=6024259
+Intersection Graph Marked: 0.652483s
+direct hop total time 1.504457s
+work sharing total time 1.195072s
+CommonGraph total time 1.195072s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 6
+read: 15.186578s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.014834s
+|E|=36233445
+|V|=6024259
+streaming total time 5.381616s
+|V|=6024259
+Intersection Graph Marked: 0.798767s
+direct hop total time 0.127862s
+work sharing total time 0.069763s
+CommonGraph total time 0.069763s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 7
+read: 15.202256s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.011289s
+|E|=36233445
+|V|=6024259
+streaming total time 5.366206s
+|V|=6024259
+Intersection Graph Marked: 0.795459s
+direct hop total time 1.643817s
+work sharing total time 1.369118s
+CommonGraph total time 1.369118s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 8
+read: 15.182018s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.011099s
+|E|=36233445
+|V|=6024259
+streaming total time 5.430377s
+|V|=6024259
+Intersection Graph Marked: 0.798325s
+direct hop total time 2.296960s
+work sharing total time 1.196622s
+CommonGraph total time 1.196622s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 9
+read: 15.247250s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.009155s
+|E|=36233445
+|V|=6024259
+streaming total time 4.999341s
+|V|=6024259
+Intersection Graph Marked: 0.816083s
+direct hop total time 1.445288s
+work sharing total time 1.226718s
+CommonGraph total time 1.226718s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 10
+read: 15.187624s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.011058s
+|E|=36233445
+|V|=6024259
+streaming total time 4.777812s
+|V|=6024259
+Intersection Graph Marked: 0.767665s
+direct hop total time 1.629334s
+work sharing total time 1.327382s
+CommonGraph total time 1.327382s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 11
+read: 15.200579s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.010820s
+|E|=36233445
+|V|=6024259
+streaming total time 3.779706s
+|V|=6024259
+Intersection Graph Marked: 0.664229s
+direct hop total time 0.119990s
+work sharing total time 0.099126s
+CommonGraph total time 0.099126s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 12
+read: 15.265551s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.011514s
+|E|=36233445
+|V|=6024259
+streaming total time 2.525184s
+|V|=6024259
+Intersection Graph Marked: 0.677551s
+direct hop total time 0.110196s
+work sharing total time 0.075496s
+CommonGraph total time 0.075496s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 13
+read: 15.209274s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.011032s
+|E|=36233445
+|V|=6024259
+streaming total time 4.631743s
+|V|=6024259
+Intersection Graph Marked: 0.795249s
+direct hop total time 0.124198s
+work sharing total time 0.071244s
+CommonGraph total time 0.071244s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 14
+read: 15.238388s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.011105s
+|E|=36233445
+|V|=6024259
+streaming total time 5.409241s
+|V|=6024259
+Intersection Graph Marked: 0.824985s
+direct hop total time 0.124473s
+work sharing total time 0.077462s
+CommonGraph total time 0.077462s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 15
+read: 15.211371s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.009828s
+|E|=36233445
+|V|=6024259
+streaming total time 6.923976s
+|V|=6024259
+Intersection Graph Marked: 0.694850s
+direct hop total time 1.566437s
+work sharing total time 1.350389s
+CommonGraph total time 1.350389s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 0
+read: 15.180320s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.010621s
+|E|=36233445
+|V|=6024259
+streaming total time 5.336520s
+|V|=6024259
+Intersection Graph Marked: 0.706007s
+direct hop total time 2.990231s
+work sharing total time 2.756421s
+CommonGraph total time 2.756421s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 1
+read: 15.198083s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.008903s
+|E|=36233445
+|V|=6024259
+streaming total time 6.125242s
+|V|=6024259
+Intersection Graph Marked: 0.806038s
+direct hop total time 2.868538s
+work sharing total time 2.521849s
+CommonGraph total time 2.521849s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 2
+read: 15.182018s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.010918s
+|E|=36233445
+|V|=6024259
+streaming total time 5.757077s
+|V|=6024259
+Intersection Graph Marked: 0.727203s
+direct hop total time 3.172852s
+work sharing total time 2.603111s
+CommonGraph total time 2.603111s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 3
+read: 15.200062s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.009289s
+|E|=36233445
+|V|=6024259
+streaming total time 3.790732s
+|V|=6024259
+Intersection Graph Marked: 0.792844s
+direct hop total time 0.223415s
+work sharing total time 0.122174s
+CommonGraph total time 0.122174s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 4
+read: 15.176377s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.011316s
+|E|=36233445
+|V|=6024259
+streaming total time 6.034492s
+|V|=6024259
+Intersection Graph Marked: 0.737648s
+direct hop total time 3.274384s
+work sharing total time 2.748491s
+CommonGraph total time 2.748491s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 5
+read: 15.184305s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.011079s
+|E|=36233445
+|V|=6024259
+streaming total time 5.645125s
+|V|=6024259
+Intersection Graph Marked: 0.754514s
+direct hop total time 2.782350s
+work sharing total time 2.432879s
+CommonGraph total time 2.432879s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 6
+read: 15.191651s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.010449s
+|E|=36233445
+|V|=6024259
+streaming total time 3.364831s
+|V|=6024259
+Intersection Graph Marked: 0.811605s
+direct hop total time 0.215785s
+work sharing total time 0.126093s
+CommonGraph total time 0.126093s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 7
+read: 15.197964s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.010864s
+|E|=36233445
+|V|=6024259
+streaming total time 5.922588s
+|V|=6024259
+Intersection Graph Marked: 0.788936s
+direct hop total time 2.812008s
+work sharing total time 2.439668s
+CommonGraph total time 2.439668s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 8
+read: 15.193551s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.010373s
+|E|=36233445
+|V|=6024259
+streaming total time 4.996565s
+|V|=6024259
+Intersection Graph Marked: 0.753351s
+direct hop total time 4.649715s
+work sharing total time 2.563672s
+CommonGraph total time 2.563672s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 9
+read: 15.187770s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.011057s
+|E|=36233445
+|V|=6024259
+streaming total time 6.404951s
+|V|=6024259
+Intersection Graph Marked: 0.808863s
+direct hop total time 2.864803s
+work sharing total time 2.438685s
+CommonGraph total time 2.438685s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 10
+read: 15.261802s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.010349s
+|E|=36233445
+|V|=6024259
+streaming total time 6.214147s
+|V|=6024259
+Intersection Graph Marked: 0.730715s
+direct hop total time 3.048783s
+work sharing total time 2.489078s
+CommonGraph total time 2.489078s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 11
+read: 15.190043s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.010352s
+|E|=36233445
+|V|=6024259
+streaming total time 3.227041s
+|V|=6024259
+Intersection Graph Marked: 0.766133s
+direct hop total time 0.220149s
+work sharing total time 0.172638s
+CommonGraph total time 0.172638s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 12
+read: 15.173128s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.010465s
+|E|=36233445
+|V|=6024259
+streaming total time 3.961168s
+|V|=6024259
+Intersection Graph Marked: 0.807747s
+direct hop total time 0.220094s
+work sharing total time 0.145194s
+CommonGraph total time 0.145194s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 13
+read: 15.168035s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.010579s
+|E|=36233445
+|V|=6024259
+streaming total time 3.512844s
+|V|=6024259
+Intersection Graph Marked: 0.669325s
+direct hop total time 0.215219s
+work sharing total time 0.127054s
+CommonGraph total time 0.127054s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 14
+read: 15.173806s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.011035s
+|E|=36233445
+|V|=6024259
+streaming total time 3.345265s
+|V|=6024259
+Intersection Graph Marked: 0.798446s
+direct hop total time 0.223782s
+work sharing total time 0.126750s
+CommonGraph total time 0.126750s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 15
+read: 15.208195s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.011086s
+|E|=36233445
+|V|=6024259
+streaming total time 6.178780s
+|V|=6024259
+Intersection Graph Marked: 0.793334s
+direct hop total time 2.730605s
+work sharing total time 2.387258s
+CommonGraph total time 2.387258s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 0
+read: 15.195840s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.010892s
+|E|=36233445
+|V|=6024259
+streaming total time 7.526866s
+|V|=6024259
+Intersection Graph Marked: 0.676724s
+direct hop total time 5.791599s
+work sharing total time 4.629565s
+CommonGraph total time 4.629565s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 1
+read: 15.308509s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.011005s
+|E|=36233445
+|V|=6024259
+streaming total time 6.375329s
+|V|=6024259
+Intersection Graph Marked: 0.678073s
+direct hop total time 5.905111s
+work sharing total time 4.539737s
+CommonGraph total time 4.539737s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 2
+read: 15.182100s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.011231s
+|E|=36233445
+|V|=6024259
+streaming total time 5.467241s
+|V|=6024259
+Intersection Graph Marked: 0.762753s
+direct hop total time 5.843722s
+work sharing total time 4.566886s
+CommonGraph total time 4.566886s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 3
+read: 15.209961s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.011147s
+|E|=36233445
+|V|=6024259
+streaming total time 2.837052s
+|V|=6024259
+Intersection Graph Marked: 0.681047s
+direct hop total time 0.414304s
+work sharing total time 0.291270s
+CommonGraph total time 0.291270s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 4
+read: 15.348799s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.010271s
+|E|=36233445
+|V|=6024259
+streaming total time 7.119821s
+|V|=6024259
+Intersection Graph Marked: 0.661373s
+direct hop total time 6.713563s
+work sharing total time 4.873828s
+CommonGraph total time 4.873828s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 5
+read: 15.237938s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.011537s
+|E|=36233445
+|V|=6024259
+streaming total time 7.027407s
+|V|=6024259
+Intersection Graph Marked: 0.657150s
+direct hop total time 5.473529s
+work sharing total time 4.161063s
+CommonGraph total time 4.161063s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 6
+read: 15.209562s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.010539s
+|E|=36233445
+|V|=6024259
+streaming total time 3.479804s
+|V|=6024259
+Intersection Graph Marked: 0.751546s
+direct hop total time 0.440974s
+work sharing total time 0.273091s
+CommonGraph total time 0.273091s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 7
+read: 15.201927s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.010878s
+|E|=36233445
+|V|=6024259
+streaming total time 7.063113s
+|V|=6024259
+Intersection Graph Marked: 0.775393s
+direct hop total time 5.581489s
+work sharing total time 4.341540s
+CommonGraph total time 4.341540s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 8
+read: 15.230691s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.010996s
+|E|=36233445
+|V|=6024259
+streaming total time 5.506219s
+|V|=6024259
+Intersection Graph Marked: 0.669365s
+direct hop total time 9.261276s
+work sharing total time 4.794120s
+CommonGraph total time 4.794120s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 9
+read: 15.188290s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.010092s
+|E|=36233445
+|V|=6024259
+streaming total time 6.945691s
+|V|=6024259
+Intersection Graph Marked: 0.639648s
+direct hop total time 5.326231s
+work sharing total time 4.111285s
+CommonGraph total time 4.111285s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 10
+read: 15.260805s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.011036s
+|E|=36233445
+|V|=6024259
+streaming total time 7.251822s
+|V|=6024259
+Intersection Graph Marked: 0.728222s
+direct hop total time 6.295009s
+work sharing total time 4.446526s
+CommonGraph total time 4.446526s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 11
+read: 15.214099s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.011060s
+|E|=36233445
+|V|=6024259
+streaming total time 4.589661s
+|V|=6024259
+Intersection Graph Marked: 0.788371s
+direct hop total time 0.412431s
+work sharing total time 0.230752s
+CommonGraph total time 0.230752s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 12
+read: 15.174310s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.011010s
+|E|=36233445
+|V|=6024259
+streaming total time 3.264780s
+|V|=6024259
+Intersection Graph Marked: 0.812366s
+direct hop total time 0.428494s
+work sharing total time 0.311238s
+CommonGraph total time 0.311238s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 13
+read: 15.187803s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.011594s
+|E|=36233445
+|V|=6024259
+streaming total time 3.001386s
+|V|=6024259
+Intersection Graph Marked: 0.852292s
+direct hop total time 0.437276s
+work sharing total time 0.286494s
+CommonGraph total time 0.286494s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 14
+read: 15.195803s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.010712s
+|E|=36233445
+|V|=6024259
+streaming total time 3.177184s
+|V|=6024259
+Intersection Graph Marked: 0.831521s
+direct hop total time 0.433165s
+work sharing total time 0.285741s
+CommonGraph total time 0.285741s
+Running: build/BFSbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 15
+read: 15.184164s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.010871s
+|E|=36233445
+|V|=6024259
+streaming total time 7.213842s
+|V|=6024259
+Intersection Graph Marked: 0.671429s
+direct hop total time 5.544327s
+work sharing total time 4.067225s
+CommonGraph total time 4.067225s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 0
+read: 14.967272s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.009465s
+|E|=36233445
+|V|=6024259
+streaming total time 2.447645s
+|V|=6024259
+Intersection Graph Marked: 0.738597s
+direct hop total time 0.915421s
+work sharing total time 0.703754s
+CommonGraph total time 0.703754s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 1
+read: 14.934588s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.010740s
+|E|=36233445
+|V|=6024259
+streaming total time 2.195821s
+|V|=6024259
+Intersection Graph Marked: 0.767318s
+direct hop total time 0.977128s
+work sharing total time 0.739463s
+CommonGraph total time 0.739463s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 2
+read: 14.964825s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.016463s
+|E|=36233445
+|V|=6024259
+streaming total time 3.458985s
+|V|=6024259
+Intersection Graph Marked: 0.780157s
+direct hop total time 0.918552s
+work sharing total time 0.745641s
+CommonGraph total time 0.745641s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 3
+read: 14.989087s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.010607s
+|E|=36233445
+|V|=6024259
+streaming total time 1.811731s
+|V|=6024259
+Intersection Graph Marked: 0.920494s
+direct hop total time 0.067827s
+work sharing total time 0.061902s
+CommonGraph total time 0.061902s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 4
+read: 14.980651s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.011539s
+|E|=36233445
+|V|=6024259
+streaming total time 2.753268s
+|V|=6024259
+Intersection Graph Marked: 0.672483s
+direct hop total time 0.917342s
+work sharing total time 0.690480s
+CommonGraph total time 0.690480s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 5
+read: 15.064060s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.018107s
+|E|=36233445
+|V|=6024259
+streaming total time 2.796741s
+|V|=6024259
+Intersection Graph Marked: 0.821144s
+direct hop total time 1.102601s
+work sharing total time 0.774882s
+CommonGraph total time 0.774882s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 6
+read: 14.990189s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.010533s
+|E|=36233445
+|V|=6024259
+streaming total time 1.999680s
+|V|=6024259
+Intersection Graph Marked: 0.714851s
+direct hop total time 0.069856s
+work sharing total time 0.040131s
+CommonGraph total time 0.040131s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 7
+read: 14.998952s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.012006s
+|E|=36233445
+|V|=6024259
+streaming total time 2.646823s
+|V|=6024259
+Intersection Graph Marked: 0.792399s
+direct hop total time 0.976721s
+work sharing total time 0.730672s
+CommonGraph total time 0.730672s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 8
+read: 14.961314s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.019728s
+|E|=36233445
+|V|=6024259
+streaming total time 2.297340s
+|V|=6024259
+Intersection Graph Marked: 0.810089s
+direct hop total time 0.889915s
+work sharing total time 0.753986s
+CommonGraph total time 0.753986s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 9
+read: 14.954335s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.010805s
+|E|=36233445
+|V|=6024259
+streaming total time 2.296786s
+|V|=6024259
+Intersection Graph Marked: 0.772146s
+direct hop total time 0.943323s
+work sharing total time 0.778459s
+CommonGraph total time 0.778459s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 10
+read: 14.992045s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.009189s
+|E|=36233445
+|V|=6024259
+streaming total time 2.467628s
+|V|=6024259
+Intersection Graph Marked: 0.672182s
+direct hop total time 1.089736s
+work sharing total time 0.783280s
+CommonGraph total time 0.783280s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 11
+read: 14.947370s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.010562s
+|E|=36233445
+|V|=6024259
+streaming total time 1.819901s
+|V|=6024259
+Intersection Graph Marked: 0.714952s
+direct hop total time 0.058400s
+work sharing total time 0.041646s
+CommonGraph total time 0.041646s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 12
+read: 15.028677s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.009266s
+|E|=36233445
+|V|=6024259
+streaming total time 2.669444s
+|V|=6024259
+Intersection Graph Marked: 0.786975s
+direct hop total time 0.059110s
+work sharing total time 0.040616s
+CommonGraph total time 0.040616s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 13
+read: 14.959543s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.010804s
+|E|=36233445
+|V|=6024259
+streaming total time 2.469186s
+|V|=6024259
+Intersection Graph Marked: 0.758407s
+direct hop total time 0.085596s
+work sharing total time 0.116722s
+CommonGraph total time 0.116722s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 14
+read: 14.953448s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.010545s
+|E|=36233445
+|V|=6024259
+streaming total time 1.703931s
+|V|=6024259
+Intersection Graph Marked: 0.788956s
+direct hop total time 0.089247s
+work sharing total time 0.040977s
+CommonGraph total time 0.040977s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 15
+read: 14.945382s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.010942s
+|E|=36233445
+|V|=6024259
+streaming total time 3.232416s
+|V|=6024259
+Intersection Graph Marked: 0.832419s
+direct hop total time 0.940464s
+work sharing total time 0.697482s
+CommonGraph total time 0.697482s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 0
+read: 15.002033s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.011083s
+|E|=36233445
+|V|=6024259
+streaming total time 2.873209s
+|V|=6024259
+Intersection Graph Marked: 0.754948s
+direct hop total time 1.725232s
+work sharing total time 1.296610s
+CommonGraph total time 1.296610s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 1
+read: 14.965251s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.010627s
+|E|=36233445
+|V|=6024259
+streaming total time 3.098515s
+|V|=6024259
+Intersection Graph Marked: 0.822716s
+direct hop total time 1.971419s
+work sharing total time 1.498349s
+CommonGraph total time 1.498349s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 2
+read: 14.956909s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.010109s
+|E|=36233445
+|V|=6024259
+streaming total time 3.482308s
+|V|=6024259
+Intersection Graph Marked: 0.692130s
+direct hop total time 1.912503s
+work sharing total time 1.428259s
+CommonGraph total time 1.428259s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 3
+read: 14.940134s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.010101s
+|E|=36233445
+|V|=6024259
+streaming total time 1.872025s
+|V|=6024259
+Intersection Graph Marked: 0.706132s
+direct hop total time 0.120710s
+work sharing total time 0.080899s
+CommonGraph total time 0.080899s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 4
+read: 15.100779s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.011194s
+|E|=36233445
+|V|=6024259
+streaming total time 2.750564s
+|V|=6024259
+Intersection Graph Marked: 0.693616s
+direct hop total time 1.788337s
+work sharing total time 1.382045s
+CommonGraph total time 1.382045s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 5
+read: 14.975831s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.010444s
+|E|=36233445
+|V|=6024259
+streaming total time 3.486278s
+|V|=6024259
+Intersection Graph Marked: 0.771102s
+direct hop total time 2.036503s
+work sharing total time 1.432259s
+CommonGraph total time 1.432259s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 6
+read: 15.074002s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.010485s
+|E|=36233445
+|V|=6024259
+streaming total time 2.453843s
+|V|=6024259
+Intersection Graph Marked: 0.755279s
+direct hop total time 0.116461s
+work sharing total time 0.114644s
+CommonGraph total time 0.114644s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 7
+read: 14.944362s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.011448s
+|E|=36233445
+|V|=6024259
+streaming total time 4.037864s
+|V|=6024259
+Intersection Graph Marked: 0.798681s
+direct hop total time 1.939140s
+work sharing total time 1.273009s
+CommonGraph total time 1.273009s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 8
+read: 14.941516s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.011013s
+|E|=36233445
+|V|=6024259
+streaming total time 2.586519s
+|V|=6024259
+Intersection Graph Marked: 0.768797s
+direct hop total time 1.670782s
+work sharing total time 1.273070s
+CommonGraph total time 1.273070s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 9
+read: 14.978982s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.011176s
+|E|=36233445
+|V|=6024259
+streaming total time 3.480920s
+|V|=6024259
+Intersection Graph Marked: 0.736830s
+direct hop total time 1.724464s
+work sharing total time 1.330461s
+CommonGraph total time 1.330461s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 10
+read: 14.981372s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.010977s
+|E|=36233445
+|V|=6024259
+streaming total time 3.512884s
+|V|=6024259
+Intersection Graph Marked: 0.813153s
+direct hop total time 1.766954s
+work sharing total time 1.357247s
+CommonGraph total time 1.357247s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 11
+read: 14.981715s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.010338s
+|E|=36233445
+|V|=6024259
+streaming total time 2.325520s
+|V|=6024259
+Intersection Graph Marked: 0.748752s
+direct hop total time 0.125772s
+work sharing total time 0.081450s
+CommonGraph total time 0.081450s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 12
+read: 14.947774s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.010615s
+|E|=36233445
+|V|=6024259
+streaming total time 1.688550s
+|V|=6024259
+Intersection Graph Marked: 0.737656s
+direct hop total time 0.125839s
+work sharing total time 0.072781s
+CommonGraph total time 0.072781s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 13
+read: 15.005523s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.009455s
+|E|=36233445
+|V|=6024259
+streaming total time 2.555306s
+|V|=6024259
+Intersection Graph Marked: 0.727074s
+direct hop total time 0.114075s
+work sharing total time 0.094924s
+CommonGraph total time 0.094924s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 14
+read: 15.041451s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.010060s
+|E|=36233445
+|V|=6024259
+streaming total time 2.951469s
+|V|=6024259
+Intersection Graph Marked: 0.805860s
+direct hop total time 0.116502s
+work sharing total time 0.089009s
+CommonGraph total time 0.089009s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 15
+read: 14.958529s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.010897s
+|E|=36233445
+|V|=6024259
+streaming total time 3.367745s
+|V|=6024259
+Intersection Graph Marked: 0.758821s
+direct hop total time 1.930213s
+work sharing total time 1.419869s
+CommonGraph total time 1.419869s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 0
+read: 14.977625s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.009121s
+|E|=36233445
+|V|=6024259
+streaming total time 2.903517s
+|V|=6024259
+Intersection Graph Marked: 0.861981s
+direct hop total time 3.846689s
+work sharing total time 2.572101s
+CommonGraph total time 2.572101s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 1
+read: 14.984278s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.010920s
+|E|=36233445
+|V|=6024259
+streaming total time 3.362334s
+|V|=6024259
+Intersection Graph Marked: 0.801964s
+direct hop total time 3.838072s
+work sharing total time 2.563723s
+CommonGraph total time 2.563723s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 2
+read: 14.963037s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.010283s
+|E|=36233445
+|V|=6024259
+streaming total time 3.248357s
+|V|=6024259
+Intersection Graph Marked: 0.737797s
+direct hop total time 3.157168s
+work sharing total time 2.348405s
+CommonGraph total time 2.348405s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 3
+read: 14.945772s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.008411s
+|E|=36233445
+|V|=6024259
+streaming total time 2.153693s
+|V|=6024259
+Intersection Graph Marked: 0.778149s
+direct hop total time 0.223699s
+work sharing total time 0.128014s
+CommonGraph total time 0.128014s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 4
+read: 14.954825s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.010323s
+|E|=36233445
+|V|=6024259
+streaming total time 2.249305s
+|V|=6024259
+Intersection Graph Marked: 0.800297s
+direct hop total time 3.811906s
+work sharing total time 2.565075s
+CommonGraph total time 2.565075s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 5
+read: 14.979234s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.010705s
+|E|=36233445
+|V|=6024259
+streaming total time 2.785743s
+|V|=6024259
+Intersection Graph Marked: 0.702472s
+direct hop total time 3.472196s
+work sharing total time 2.345718s
+CommonGraph total time 2.345718s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 6
+read: 14.985715s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.008493s
+|E|=36233445
+|V|=6024259
+streaming total time 1.549856s
+|V|=6024259
+Intersection Graph Marked: 0.725736s
+direct hop total time 0.234627s
+work sharing total time 0.129481s
+CommonGraph total time 0.129481s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 7
+read: 14.963587s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.011352s
+|E|=36233445
+|V|=6024259
+streaming total time 2.888840s
+|V|=6024259
+Intersection Graph Marked: 0.805871s
+direct hop total time 3.439172s
+work sharing total time 2.504593s
+CommonGraph total time 2.504593s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 8
+read: 14.951283s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.011053s
+|E|=36233445
+|V|=6024259
+streaming total time 3.826966s
+|V|=6024259
+Intersection Graph Marked: 0.875931s
+direct hop total time 3.216201s
+work sharing total time 2.261533s
+CommonGraph total time 2.261533s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 9
+read: 15.146434s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.010860s
+|E|=36233445
+|V|=6024259
+streaming total time 3.022464s
+|V|=6024259
+Intersection Graph Marked: 0.806460s
+direct hop total time 3.691273s
+work sharing total time 2.501941s
+CommonGraph total time 2.501941s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 10
+read: 15.001350s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.011016s
+|E|=36233445
+|V|=6024259
+streaming total time 2.282759s
+|V|=6024259
+Intersection Graph Marked: 0.779955s
+direct hop total time 3.246735s
+work sharing total time 2.236303s
+CommonGraph total time 2.236303s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 11
+read: 14.944905s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.009478s
+|E|=36233445
+|V|=6024259
+streaming total time 2.284041s
+|V|=6024259
+Intersection Graph Marked: 0.788829s
+direct hop total time 0.209590s
+work sharing total time 0.128744s
+CommonGraph total time 0.128744s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 12
+read: 14.982894s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.009321s
+|E|=36233445
+|V|=6024259
+streaming total time 2.215079s
+|V|=6024259
+Intersection Graph Marked: 0.665379s
+direct hop total time 0.224292s
+work sharing total time 0.139178s
+CommonGraph total time 0.139178s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 13
+read: 14.976556s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.009495s
+|E|=36233445
+|V|=6024259
+streaming total time 1.382914s
+|V|=6024259
+Intersection Graph Marked: 0.790256s
+direct hop total time 0.231228s
+work sharing total time 0.145946s
+CommonGraph total time 0.145946s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 14
+read: 14.950429s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.010562s
+|E|=36233445
+|V|=6024259
+streaming total time 2.296321s
+|V|=6024259
+Intersection Graph Marked: 0.758437s
+direct hop total time 0.217085s
+work sharing total time 0.133299s
+CommonGraph total time 0.133299s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 15
+read: 14.938359s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.009649s
+|E|=36233445
+|V|=6024259
+streaming total time 3.032979s
+|V|=6024259
+Intersection Graph Marked: 0.771832s
+direct hop total time 3.677289s
+work sharing total time 2.529998s
+CommonGraph total time 2.529998s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 0
+read: 15.090159s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.011045s
+|E|=36233445
+|V|=6024259
+streaming total time 4.678078s
+|V|=6024259
+Intersection Graph Marked: 0.823752s
+direct hop total time 6.528772s
+work sharing total time 4.259456s
+CommonGraph total time 4.259456s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 1
+read: 14.964404s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.011086s
+|E|=36233445
+|V|=6024259
+streaming total time 3.433575s
+|V|=6024259
+Intersection Graph Marked: 0.796334s
+direct hop total time 6.538954s
+work sharing total time 4.389722s
+CommonGraph total time 4.389722s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 2
+read: 15.261509s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.016436s
+|E|=36233445
+|V|=6024259
+streaming total time 3.500125s
+|V|=6024259
+Intersection Graph Marked: 0.780136s
+direct hop total time 6.565023s
+work sharing total time 4.586330s
+CommonGraph total time 4.586330s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 3
+read: 15.018525s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.010535s
+|E|=36233445
+|V|=6024259
+streaming total time 1.929255s
+|V|=6024259
+Intersection Graph Marked: 0.759746s
+direct hop total time 0.421659s
+work sharing total time 0.257426s
+CommonGraph total time 0.257426s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 4
+read: 14.955808s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.010645s
+|E|=36233445
+|V|=6024259
+streaming total time 3.642644s
+|V|=6024259
+Intersection Graph Marked: 0.826171s
+direct hop total time 6.655211s
+work sharing total time 4.456449s
+CommonGraph total time 4.456449s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 5
+read: 14.963294s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.011353s
+|E|=36233445
+|V|=6024259
+streaming total time 3.218540s
+|V|=6024259
+Intersection Graph Marked: 0.662559s
+direct hop total time 6.183202s
+work sharing total time 4.148400s
+CommonGraph total time 4.148400s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 6
+read: 14.956122s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.009368s
+|E|=36233445
+|V|=6024259
+streaming total time 2.075699s
+|V|=6024259
+Intersection Graph Marked: 0.839533s
+direct hop total time 0.439266s
+work sharing total time 0.285207s
+CommonGraph total time 0.285207s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 7
+read: 14.959179s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.009320s
+|E|=36233445
+|V|=6024259
+streaming total time 3.399560s
+|V|=6024259
+Intersection Graph Marked: 0.766408s
+direct hop total time 7.245326s
+work sharing total time 4.791911s
+CommonGraph total time 4.791911s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 8
+read: 14.980673s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.010365s
+|E|=36233445
+|V|=6024259
+streaming total time 3.198403s
+|V|=6024259
+Intersection Graph Marked: 0.717968s
+direct hop total time 6.988696s
+work sharing total time 4.760580s
+CommonGraph total time 4.760580s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 9
+read: 14.995692s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.010006s
+|E|=36233445
+|V|=6024259
+streaming total time 3.447182s
+|V|=6024259
+Intersection Graph Marked: 0.838718s
+direct hop total time 6.326436s
+work sharing total time 4.466101s
+CommonGraph total time 4.466101s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 10
+read: 14.963971s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.009301s
+|E|=36233445
+|V|=6024259
+streaming total time 3.955973s
+|V|=6024259
+Intersection Graph Marked: 0.753748s
+direct hop total time 6.515333s
+work sharing total time 4.378709s
+CommonGraph total time 4.378709s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 11
+read: 14.970967s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.011085s
+|E|=36233445
+|V|=6024259
+streaming total time 2.227277s
+|V|=6024259
+Intersection Graph Marked: 0.696895s
+direct hop total time 0.415166s
+work sharing total time 0.239397s
+CommonGraph total time 0.239397s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 12
+read: 15.000019s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.011749s
+|E|=36233445
+|V|=6024259
+streaming total time 1.811321s
+|V|=6024259
+Intersection Graph Marked: 0.762194s
+direct hop total time 0.421122s
+work sharing total time 0.242219s
+CommonGraph total time 0.242219s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 13
+read: 14.996988s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.009900s
+|E|=36233445
+|V|=6024259
+streaming total time 2.136466s
+|V|=6024259
+Intersection Graph Marked: 0.844661s
+direct hop total time 0.427982s
+work sharing total time 0.269901s
+CommonGraph total time 0.269901s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 14
+read: 14.949116s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.010362s
+|E|=36233445
+|V|=6024259
+streaming total time 1.939060s
+|V|=6024259
+Intersection Graph Marked: 0.782506s
+direct hop total time 0.439880s
+work sharing total time 0.243920s
+CommonGraph total time 0.243920s
+Running: build/SSNPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 15
+read: 14.974370s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.008087s
+|E|=36233445
+|V|=6024259
+streaming total time 3.285389s
+|V|=6024259
+Intersection Graph Marked: 0.823845s
+direct hop total time 7.411263s
+work sharing total time 5.165125s
+CommonGraph total time 5.165125s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 0
+read: 14.964692s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.010826s
+|E|=36233445
+|V|=6024259
+streaming total time 2.806477s
+|V|=6024259
+Intersection Graph Marked: 0.783149s
+direct hop total time 1.291430s
+work sharing total time 1.036787s
+CommonGraph total time 1.036787s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 1
+read: 14.965044s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.010596s
+|E|=36233445
+|V|=6024259
+streaming total time 3.472427s
+|V|=6024259
+Intersection Graph Marked: 0.798134s
+direct hop total time 1.067947s
+work sharing total time 0.950354s
+CommonGraph total time 0.950354s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 2
+read: 14.964710s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.011060s
+|E|=36233445
+|V|=6024259
+streaming total time 3.377370s
+|V|=6024259
+Intersection Graph Marked: 0.815457s
+direct hop total time 1.039492s
+work sharing total time 0.870442s
+CommonGraph total time 0.870442s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 3
+read: 14.969491s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.010715s
+|E|=36233445
+|V|=6024259
+streaming total time 2.452082s
+|V|=6024259
+Intersection Graph Marked: 0.690974s
+direct hop total time 0.068764s
+work sharing total time 0.064185s
+CommonGraph total time 0.064185s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 4
+read: 15.003153s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.010722s
+|E|=36233445
+|V|=6024259
+streaming total time 4.138433s
+|V|=6024259
+Intersection Graph Marked: 0.682763s
+direct hop total time 1.278405s
+work sharing total time 0.992517s
+CommonGraph total time 0.992517s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 5
+read: 14.963729s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.009861s
+|E|=36233445
+|V|=6024259
+streaming total time 2.311397s
+|V|=6024259
+Intersection Graph Marked: 0.763722s
+direct hop total time 1.309407s
+work sharing total time 1.000372s
+CommonGraph total time 1.000372s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 6
+read: 14.979395s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.010198s
+|E|=36233445
+|V|=6024259
+streaming total time 1.948584s
+|V|=6024259
+Intersection Graph Marked: 0.712394s
+direct hop total time 0.059812s
+work sharing total time 0.073380s
+CommonGraph total time 0.073380s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 7
+read: 15.050499s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.011103s
+|E|=36233445
+|V|=6024259
+streaming total time 3.905521s
+|V|=6024259
+Intersection Graph Marked: 0.872226s
+direct hop total time 1.224322s
+work sharing total time 0.954911s
+CommonGraph total time 0.954911s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 8
+read: 14.970275s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.011555s
+|E|=36233445
+|V|=6024259
+streaming total time 3.395931s
+|V|=6024259
+Intersection Graph Marked: 0.750693s
+direct hop total time 1.375075s
+work sharing total time 0.962423s
+CommonGraph total time 0.962423s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 9
+read: 14.964544s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.009981s
+|E|=36233445
+|V|=6024259
+streaming total time 2.482094s
+|V|=6024259
+Intersection Graph Marked: 0.825084s
+direct hop total time 1.208324s
+work sharing total time 0.947193s
+CommonGraph total time 0.947193s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 10
+read: 14.977369s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.013348s
+|E|=36233445
+|V|=6024259
+streaming total time 4.003507s
+|V|=6024259
+Intersection Graph Marked: 0.840237s
+direct hop total time 1.041283s
+work sharing total time 0.886872s
+CommonGraph total time 0.886872s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 11
+read: 14.980303s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.009500s
+|E|=36233445
+|V|=6024259
+streaming total time 2.338657s
+|V|=6024259
+Intersection Graph Marked: 0.811295s
+direct hop total time 0.067798s
+work sharing total time 0.050822s
+CommonGraph total time 0.050822s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 12
+read: 15.006437s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.010675s
+|E|=36233445
+|V|=6024259
+streaming total time 2.740995s
+|V|=6024259
+Intersection Graph Marked: 0.734588s
+direct hop total time 0.065768s
+work sharing total time 0.039948s
+CommonGraph total time 0.039948s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 13
+read: 15.078354s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.009354s
+|E|=36233445
+|V|=6024259
+streaming total time 3.301987s
+|V|=6024259
+Intersection Graph Marked: 0.747946s
+direct hop total time 0.058867s
+work sharing total time 0.047090s
+CommonGraph total time 0.047090s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 14
+read: 15.993796s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.009422s
+|E|=36233445
+|V|=6024259
+streaming total time 1.885163s
+|V|=6024259
+Intersection Graph Marked: 0.765340s
+direct hop total time 0.066125s
+work sharing total time 0.040804s
+CommonGraph total time 0.040804s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 15
+read: 14.958358s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.011235s
+|E|=36233445
+|V|=6024259
+streaming total time 2.701458s
+|V|=6024259
+Intersection Graph Marked: 0.631272s
+direct hop total time 1.287560s
+work sharing total time 0.963910s
+CommonGraph total time 0.963910s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 0
+read: 15.018297s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.011100s
+|E|=36233445
+|V|=6024259
+streaming total time 3.248275s
+|V|=6024259
+Intersection Graph Marked: 0.841846s
+direct hop total time 2.085324s
+work sharing total time 1.728696s
+CommonGraph total time 1.728696s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 1
+read: 14.976032s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.009951s
+|E|=36233445
+|V|=6024259
+streaming total time 4.508817s
+|V|=6024259
+Intersection Graph Marked: 0.810313s
+direct hop total time 2.143694s
+work sharing total time 1.846082s
+CommonGraph total time 1.846082s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 2
+read: 14.964611s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.010974s
+|E|=36233445
+|V|=6024259
+streaming total time 2.878067s
+|V|=6024259
+Intersection Graph Marked: 0.753990s
+direct hop total time 1.922807s
+work sharing total time 1.610354s
+CommonGraph total time 1.610354s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 3
+read: 15.014813s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.009734s
+|E|=36233445
+|V|=6024259
+streaming total time 2.911227s
+|V|=6024259
+Intersection Graph Marked: 0.790143s
+direct hop total time 0.113281s
+work sharing total time 0.072172s
+CommonGraph total time 0.072172s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 4
+read: 15.001563s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.011006s
+|E|=36233445
+|V|=6024259
+streaming total time 3.854786s
+|V|=6024259
+Intersection Graph Marked: 0.777597s
+direct hop total time 2.369751s
+work sharing total time 1.985060s
+CommonGraph total time 1.985060s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 5
+read: 14.972285s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.009465s
+|E|=36233445
+|V|=6024259
+streaming total time 4.021281s
+|V|=6024259
+Intersection Graph Marked: 0.797154s
+direct hop total time 2.355257s
+work sharing total time 1.747857s
+CommonGraph total time 1.747857s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 6
+read: 14.965040s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.010305s
+|E|=36233445
+|V|=6024259
+streaming total time 2.673054s
+|V|=6024259
+Intersection Graph Marked: 0.785942s
+direct hop total time 0.108499s
+work sharing total time 0.074247s
+CommonGraph total time 0.074247s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 7
+read: 14.953121s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.011255s
+|E|=36233445
+|V|=6024259
+streaming total time 3.666105s
+|V|=6024259
+Intersection Graph Marked: 0.782654s
+direct hop total time 2.486430s
+work sharing total time 1.964676s
+CommonGraph total time 1.964676s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 8
+read: 14.950720s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.011121s
+|E|=36233445
+|V|=6024259
+streaming total time 2.588385s
+|V|=6024259
+Intersection Graph Marked: 0.752786s
+direct hop total time 2.500708s
+work sharing total time 1.704907s
+CommonGraph total time 1.704907s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 9
+read: 14.978946s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.010222s
+|E|=36233445
+|V|=6024259
+streaming total time 3.815459s
+|V|=6024259
+Intersection Graph Marked: 0.771887s
+direct hop total time 2.284066s
+work sharing total time 1.790939s
+CommonGraph total time 1.790939s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 10
+read: 14.976293s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.010808s
+|E|=36233445
+|V|=6024259
+streaming total time 3.833358s
+|V|=6024259
+Intersection Graph Marked: 0.687554s
+direct hop total time 1.986123s
+work sharing total time 1.680828s
+CommonGraph total time 1.680828s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 11
+read: 14.949490s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.010511s
+|E|=36233445
+|V|=6024259
+streaming total time 1.656931s
+|V|=6024259
+Intersection Graph Marked: 0.759992s
+direct hop total time 0.127402s
+work sharing total time 0.089326s
+CommonGraph total time 0.089326s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 12
+read: 15.364089s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.009729s
+|E|=36233445
+|V|=6024259
+streaming total time 2.610530s
+|V|=6024259
+Intersection Graph Marked: 0.644915s
+direct hop total time 0.124662s
+work sharing total time 0.068342s
+CommonGraph total time 0.068342s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 13
+read: 14.964790s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.011251s
+|E|=36233445
+|V|=6024259
+streaming total time 2.678904s
+|V|=6024259
+Intersection Graph Marked: 0.814597s
+direct hop total time 0.126907s
+work sharing total time 0.091166s
+CommonGraph total time 0.091166s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 14
+read: 14.963430s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.011441s
+|E|=36233445
+|V|=6024259
+streaming total time 1.754476s
+|V|=6024259
+Intersection Graph Marked: 0.687835s
+direct hop total time 0.126957s
+work sharing total time 0.071756s
+CommonGraph total time 0.071756s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 15
+read: 14.994860s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.010127s
+|E|=36233445
+|V|=6024259
+streaming total time 2.764091s
+|V|=6024259
+Intersection Graph Marked: 0.849944s
+direct hop total time 2.158135s
+work sharing total time 1.900331s
+CommonGraph total time 1.900331s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 0
+read: 15.000643s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.010266s
+|E|=36233445
+|V|=6024259
+streaming total time 3.976001s
+|V|=6024259
+Intersection Graph Marked: 0.650077s
+direct hop total time 4.241321s
+work sharing total time 3.585542s
+CommonGraph total time 3.585542s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 1
+read: 14.964089s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.011467s
+|E|=36233445
+|V|=6024259
+streaming total time 4.155149s
+|V|=6024259
+Intersection Graph Marked: 0.735299s
+direct hop total time 3.909818s
+work sharing total time 3.095409s
+CommonGraph total time 3.095409s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 2
+read: 14.997792s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.010473s
+|E|=36233445
+|V|=6024259
+streaming total time 2.654195s
+|V|=6024259
+Intersection Graph Marked: 0.710545s
+direct hop total time 4.105694s
+work sharing total time 3.079589s
+CommonGraph total time 3.079589s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 3
+read: 14.982214s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.010785s
+|E|=36233445
+|V|=6024259
+streaming total time 1.501609s
+|V|=6024259
+Intersection Graph Marked: 0.668202s
+direct hop total time 0.232418s
+work sharing total time 0.138217s
+CommonGraph total time 0.138217s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 4
+read: 14.963130s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.009786s
+|E|=36233445
+|V|=6024259
+streaming total time 3.617528s
+|V|=6024259
+Intersection Graph Marked: 0.701429s
+direct hop total time 4.166926s
+work sharing total time 3.163548s
+CommonGraph total time 3.163548s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 5
+read: 14.974062s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.011140s
+|E|=36233445
+|V|=6024259
+streaming total time 2.942602s
+|V|=6024259
+Intersection Graph Marked: 0.806012s
+direct hop total time 4.236561s
+work sharing total time 3.387358s
+CommonGraph total time 3.387358s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 6
+read: 15.005502s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.011233s
+|E|=36233445
+|V|=6024259
+streaming total time 1.503852s
+|V|=6024259
+Intersection Graph Marked: 0.736607s
+direct hop total time 0.210407s
+work sharing total time 0.135945s
+CommonGraph total time 0.135945s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 7
+read: 14.957017s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.010786s
+|E|=36233445
+|V|=6024259
+streaming total time 3.335774s
+|V|=6024259
+Intersection Graph Marked: 0.719566s
+direct hop total time 4.310576s
+work sharing total time 2.918078s
+CommonGraph total time 2.918078s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 8
+read: 14.966538s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.009718s
+|E|=36233445
+|V|=6024259
+streaming total time 4.228292s
+|V|=6024259
+Intersection Graph Marked: 0.779598s
+direct hop total time 4.200622s
+work sharing total time 2.922732s
+CommonGraph total time 2.922732s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 9
+read: 14.997054s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.010355s
+|E|=36233445
+|V|=6024259
+streaming total time 2.762125s
+|V|=6024259
+Intersection Graph Marked: 0.816773s
+direct hop total time 4.037756s
+work sharing total time 3.031790s
+CommonGraph total time 3.031790s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 10
+read: 14.962515s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.012168s
+|E|=36233445
+|V|=6024259
+streaming total time 3.795998s
+|V|=6024259
+Intersection Graph Marked: 0.661685s
+direct hop total time 3.721284s
+work sharing total time 2.787797s
+CommonGraph total time 2.787797s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 11
+read: 15.340352s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.011020s
+|E|=36233445
+|V|=6024259
+streaming total time 2.248539s
+|V|=6024259
+Intersection Graph Marked: 0.805073s
+direct hop total time 0.216296s
+work sharing total time 0.125858s
+CommonGraph total time 0.125858s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 12
+read: 14.966337s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.011190s
+|E|=36233445
+|V|=6024259
+streaming total time 2.148028s
+|V|=6024259
+Intersection Graph Marked: 0.796188s
+direct hop total time 0.224972s
+work sharing total time 0.126113s
+CommonGraph total time 0.126113s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 13
+read: 14.979976s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.010823s
+|E|=36233445
+|V|=6024259
+streaming total time 2.158010s
+|V|=6024259
+Intersection Graph Marked: 0.793926s
+direct hop total time 0.217763s
+work sharing total time 0.126708s
+CommonGraph total time 0.126708s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 14
+read: 15.197150s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.018320s
+|E|=36233445
+|V|=6024259
+streaming total time 2.590419s
+|V|=6024259
+Intersection Graph Marked: 0.788270s
+direct hop total time 0.225638s
+work sharing total time 0.131670s
+CommonGraph total time 0.131670s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 15
+read: 14.975082s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.010913s
+|E|=36233445
+|V|=6024259
+streaming total time 3.971928s
+|V|=6024259
+Intersection Graph Marked: 0.760890s
+direct hop total time 4.058224s
+work sharing total time 3.157629s
+CommonGraph total time 3.157629s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 0
+read: 14.993461s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.010419s
+|E|=36233445
+|V|=6024259
+streaming total time 5.354162s
+|V|=6024259
+Intersection Graph Marked: 0.680986s
+direct hop total time 7.973858s
+work sharing total time 6.522774s
+CommonGraph total time 6.522774s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 1
+read: 14.963037s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.011302s
+|E|=36233445
+|V|=6024259
+streaming total time 5.135666s
+|V|=6024259
+Intersection Graph Marked: 0.678180s
+direct hop total time 7.417480s
+work sharing total time 6.111774s
+CommonGraph total time 6.111774s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 2
+read: 14.993409s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.010846s
+|E|=36233445
+|V|=6024259
+streaming total time 5.509504s
+|V|=6024259
+Intersection Graph Marked: 0.785158s
+direct hop total time 7.785760s
+work sharing total time 5.779973s
+CommonGraph total time 5.779973s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 3
+read: 14.979153s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.010191s
+|E|=36233445
+|V|=6024259
+streaming total time 1.874094s
+|V|=6024259
+Intersection Graph Marked: 0.811545s
+direct hop total time 0.410800s
+work sharing total time 0.233327s
+CommonGraph total time 0.233327s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 4
+read: 14.979523s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.014861s
+|E|=36233445
+|V|=6024259
+streaming total time 5.623458s
+|V|=6024259
+Intersection Graph Marked: 0.676236s
+direct hop total time 9.045485s
+work sharing total time 6.320679s
+CommonGraph total time 6.320679s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 5
+read: 15.002851s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.011215s
+|E|=36233445
+|V|=6024259
+streaming total time 4.870820s
+|V|=6024259
+Intersection Graph Marked: 0.659378s
+direct hop total time 9.826313s
+work sharing total time 7.270619s
+CommonGraph total time 7.270619s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 6
+read: 15.084128s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.010739s
+|E|=36233445
+|V|=6024259
+streaming total time 2.008644s
+|V|=6024259
+Intersection Graph Marked: 0.789476s
+direct hop total time 0.414025s
+work sharing total time 0.242934s
+CommonGraph total time 0.242934s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 7
+read: 14.947882s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.010592s
+|E|=36233445
+|V|=6024259
+streaming total time 4.673765s
+|V|=6024259
+Intersection Graph Marked: 0.725550s
+direct hop total time 9.103693s
+work sharing total time 6.496552s
+CommonGraph total time 6.496552s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 8
+read: 14.996802s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.009289s
+|E|=36233445
+|V|=6024259
+streaming total time 5.328777s
+|V|=6024259
+Intersection Graph Marked: 0.651313s
+direct hop total time 8.762215s
+work sharing total time 5.674019s
+CommonGraph total time 5.674019s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 9
+read: 15.005984s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.011426s
+|E|=36233445
+|V|=6024259
+streaming total time 5.385907s
+|V|=6024259
+Intersection Graph Marked: 0.821236s
+direct hop total time 7.753518s
+work sharing total time 5.533327s
+CommonGraph total time 5.533327s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 10
+read: 14.974006s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.011171s
+|E|=36233445
+|V|=6024259
+streaming total time 5.159872s
+|V|=6024259
+Intersection Graph Marked: 0.763431s
+direct hop total time 7.411413s
+work sharing total time 5.699375s
+CommonGraph total time 5.699375s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 11
+read: 14.966999s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.010402s
+|E|=36233445
+|V|=6024259
+streaming total time 2.467800s
+|V|=6024259
+Intersection Graph Marked: 0.777255s
+direct hop total time 0.405666s
+work sharing total time 0.258358s
+CommonGraph total time 0.258358s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 12
+read: 14.984819s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.011530s
+|E|=36233445
+|V|=6024259
+streaming total time 2.179689s
+|V|=6024259
+Intersection Graph Marked: 0.741128s
+direct hop total time 0.445954s
+work sharing total time 0.307528s
+CommonGraph total time 0.307528s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 13
+read: 14.983891s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.010441s
+|E|=36233445
+|V|=6024259
+streaming total time 2.106327s
+|V|=6024259
+Intersection Graph Marked: 0.784995s
+direct hop total time 0.434029s
+work sharing total time 0.265767s
+CommonGraph total time 0.265767s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 14
+read: 14.976308s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.010210s
+|E|=36233445
+|V|=6024259
+streaming total time 2.410027s
+|V|=6024259
+Intersection Graph Marked: 0.666685s
+direct hop total time 0.435724s
+work sharing total time 0.240028s
+CommonGraph total time 0.240028s
+Running: build/SSSPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 15
+read: 14.965168s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.010477s
+|E|=36233445
+|V|=6024259
+streaming total time 5.714578s
+|V|=6024259
+Intersection Graph Marked: 0.721025s
+direct hop total time 7.776127s
+work sharing total time 5.804565s
+CommonGraph total time 5.804565s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 0
+read: 15.458626s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.009529s
+|E|=36233445
+|V|=6024259
+streaming total time 2.625669s
+|V|=6024259
+Intersection Graph Marked: 0.772720s
+direct hop total time 0.550947s
+work sharing total time 0.409710s
+CommonGraph total time 0.409710s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 1
+read: 15.103216s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.010626s
+|E|=36233445
+|V|=6024259
+streaming total time 3.146808s
+|V|=6024259
+Intersection Graph Marked: 0.733611s
+direct hop total time 0.488553s
+work sharing total time 0.340216s
+CommonGraph total time 0.340216s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 2
+read: 15.113671s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.010640s
+|E|=36233445
+|V|=6024259
+streaming total time 2.964100s
+|V|=6024259
+Intersection Graph Marked: 0.797082s
+direct hop total time 0.480432s
+work sharing total time 0.295298s
+CommonGraph total time 0.295298s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 3
+read: 15.094295s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.007832s
+|E|=36233445
+|V|=6024259
+streaming total time 3.006216s
+|V|=6024259
+Intersection Graph Marked: 0.797500s
+direct hop total time 0.548792s
+work sharing total time 0.438386s
+CommonGraph total time 0.438386s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 4
+read: 15.107673s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.016342s
+|E|=36233445
+|V|=6024259
+streaming total time 2.996062s
+|V|=6024259
+Intersection Graph Marked: 0.825664s
+direct hop total time 0.498686s
+work sharing total time 0.451596s
+CommonGraph total time 0.451596s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 5
+read: 15.169888s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.011349s
+|E|=36233445
+|V|=6024259
+streaming total time 1.959481s
+|V|=6024259
+Intersection Graph Marked: 0.831433s
+direct hop total time 0.497524s
+work sharing total time 0.369293s
+CommonGraph total time 0.369293s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 6
+read: 15.114035s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.009931s
+|E|=36233445
+|V|=6024259
+streaming total time 3.137435s
+|V|=6024259
+Intersection Graph Marked: 0.737116s
+direct hop total time 0.480441s
+work sharing total time 0.369177s
+CommonGraph total time 0.369177s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 7
+read: 15.147955s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.010178s
+|E|=36233445
+|V|=6024259
+streaming total time 2.435377s
+|V|=6024259
+Intersection Graph Marked: 0.811665s
+direct hop total time 0.519227s
+work sharing total time 0.341216s
+CommonGraph total time 0.341216s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 8
+read: 15.111658s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.009809s
+|E|=36233445
+|V|=6024259
+streaming total time 3.701887s
+|V|=6024259
+Intersection Graph Marked: 0.733234s
+direct hop total time 0.486748s
+work sharing total time 0.319484s
+CommonGraph total time 0.319484s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 9
+read: 15.086512s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.011736s
+|E|=36233445
+|V|=6024259
+streaming total time 2.881185s
+|V|=6024259
+Intersection Graph Marked: 0.735290s
+direct hop total time 0.503121s
+work sharing total time 0.423163s
+CommonGraph total time 0.423163s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 10
+read: 15.105040s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.008233s
+|E|=36233445
+|V|=6024259
+streaming total time 3.044530s
+|V|=6024259
+Intersection Graph Marked: 0.850746s
+direct hop total time 0.507420s
+work sharing total time 0.362359s
+CommonGraph total time 0.362359s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 11
+read: 15.115418s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.011270s
+|E|=36233445
+|V|=6024259
+streaming total time 3.321735s
+|V|=6024259
+Intersection Graph Marked: 0.857226s
+direct hop total time 0.468003s
+work sharing total time 0.323836s
+CommonGraph total time 0.323836s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 12
+read: 15.129640s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.011640s
+|E|=36233445
+|V|=6024259
+streaming total time 2.745816s
+|V|=6024259
+Intersection Graph Marked: 0.785976s
+direct hop total time 0.524419s
+work sharing total time 0.408103s
+CommonGraph total time 0.408103s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 13
+read: 15.114969s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.010772s
+|E|=36233445
+|V|=6024259
+streaming total time 3.363210s
+|V|=6024259
+Intersection Graph Marked: 0.866525s
+direct hop total time 0.467349s
+work sharing total time 0.306488s
+CommonGraph total time 0.306488s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 14
+read: 15.085228s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.010398s
+|E|=36233445
+|V|=6024259
+streaming total time 2.816722s
+|V|=6024259
+Intersection Graph Marked: 0.761046s
+direct hop total time 0.533663s
+work sharing total time 0.411830s
+CommonGraph total time 0.411830s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 15
+read: 15.106745s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.014313s
+|E|=36233445
+|V|=6024259
+streaming total time 3.520370s
+|V|=6024259
+Intersection Graph Marked: 0.807736s
+direct hop total time 0.488587s
+work sharing total time 0.374418s
+CommonGraph total time 0.374418s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 0
+read: 15.104668s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.010913s
+|E|=36233445
+|V|=6024259
+streaming total time 2.469850s
+|V|=6024259
+Intersection Graph Marked: 0.770074s
+direct hop total time 0.902655s
+work sharing total time 0.786299s
+CommonGraph total time 0.786299s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 1
+read: 15.175810s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.009199s
+|E|=36233445
+|V|=6024259
+streaming total time 3.102940s
+|V|=6024259
+Intersection Graph Marked: 0.766810s
+direct hop total time 0.851261s
+work sharing total time 0.706954s
+CommonGraph total time 0.706954s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 2
+read: 15.142677s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.008884s
+|E|=36233445
+|V|=6024259
+streaming total time 2.903612s
+|V|=6024259
+Intersection Graph Marked: 0.789991s
+direct hop total time 0.902598s
+work sharing total time 0.681187s
+CommonGraph total time 0.681187s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 3
+read: 15.185523s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.009300s
+|E|=36233445
+|V|=6024259
+streaming total time 2.473943s
+|V|=6024259
+Intersection Graph Marked: 0.797040s
+direct hop total time 0.924941s
+work sharing total time 0.798657s
+CommonGraph total time 0.798657s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 4
+read: 15.111208s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.010147s
+|E|=36233445
+|V|=6024259
+streaming total time 2.514743s
+|V|=6024259
+Intersection Graph Marked: 0.820857s
+direct hop total time 0.867968s
+work sharing total time 0.598755s
+CommonGraph total time 0.598755s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 5
+read: 15.140381s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.009373s
+|E|=36233445
+|V|=6024259
+streaming total time 2.640485s
+|V|=6024259
+Intersection Graph Marked: 0.767485s
+direct hop total time 0.942830s
+work sharing total time 0.830244s
+CommonGraph total time 0.830244s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 6
+read: 15.122623s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.010913s
+|E|=36233445
+|V|=6024259
+streaming total time 3.122942s
+|V|=6024259
+Intersection Graph Marked: 0.848498s
+direct hop total time 0.909469s
+work sharing total time 0.636662s
+CommonGraph total time 0.636662s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 7
+read: 15.104982s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.010414s
+|E|=36233445
+|V|=6024259
+streaming total time 2.516786s
+|V|=6024259
+Intersection Graph Marked: 0.739931s
+direct hop total time 0.941631s
+work sharing total time 0.811102s
+CommonGraph total time 0.811102s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 8
+read: 15.106926s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.010510s
+|E|=36233445
+|V|=6024259
+streaming total time 3.338834s
+|V|=6024259
+Intersection Graph Marked: 0.779982s
+direct hop total time 0.892039s
+work sharing total time 0.582802s
+CommonGraph total time 0.582802s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 9
+read: 15.116864s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.013875s
+|E|=36233445
+|V|=6024259
+streaming total time 2.796946s
+|V|=6024259
+Intersection Graph Marked: 0.728622s
+direct hop total time 0.934210s
+work sharing total time 0.751508s
+CommonGraph total time 0.751508s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 10
+read: 15.161749s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.010101s
+|E|=36233445
+|V|=6024259
+streaming total time 2.642529s
+|V|=6024259
+Intersection Graph Marked: 0.715527s
+direct hop total time 0.995969s
+work sharing total time 0.618693s
+CommonGraph total time 0.618693s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 11
+read: 15.134503s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.010456s
+|E|=36233445
+|V|=6024259
+streaming total time 2.542610s
+|V|=6024259
+Intersection Graph Marked: 0.777902s
+direct hop total time 0.939869s
+work sharing total time 0.830068s
+CommonGraph total time 0.830068s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 12
+read: 15.192191s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.009455s
+|E|=36233445
+|V|=6024259
+streaming total time 2.241119s
+|V|=6024259
+Intersection Graph Marked: 0.811985s
+direct hop total time 0.963877s
+work sharing total time 0.714912s
+CommonGraph total time 0.714912s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 13
+read: 15.103570s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.010333s
+|E|=36233445
+|V|=6024259
+streaming total time 2.228380s
+|V|=6024259
+Intersection Graph Marked: 0.728096s
+direct hop total time 0.945321s
+work sharing total time 0.669821s
+CommonGraph total time 0.669821s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 14
+read: 15.107557s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.011044s
+|E|=36233445
+|V|=6024259
+streaming total time 2.339042s
+|V|=6024259
+Intersection Graph Marked: 0.772993s
+direct hop total time 0.929356s
+work sharing total time 0.694725s
+CommonGraph total time 0.694725s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 15
+read: 15.103192s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.010484s
+|E|=36233445
+|V|=6024259
+streaming total time 2.236659s
+|V|=6024259
+Intersection Graph Marked: 0.645833s
+direct hop total time 0.935969s
+work sharing total time 0.701731s
+CommonGraph total time 0.701731s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 0
+read: 15.114014s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.010753s
+|E|=36233445
+|V|=6024259
+streaming total time 1.931990s
+|V|=6024259
+Intersection Graph Marked: 0.831420s
+direct hop total time 1.904844s
+work sharing total time 1.302776s
+CommonGraph total time 1.302776s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 1
+read: 15.114898s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.010815s
+|E|=36233445
+|V|=6024259
+streaming total time 1.854565s
+|V|=6024259
+Intersection Graph Marked: 0.742880s
+direct hop total time 1.752422s
+work sharing total time 1.103568s
+CommonGraph total time 1.103568s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 2
+read: 15.105751s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.010732s
+|E|=36233445
+|V|=6024259
+streaming total time 2.458970s
+|V|=6024259
+Intersection Graph Marked: 0.654086s
+direct hop total time 1.734211s
+work sharing total time 1.083148s
+CommonGraph total time 1.083148s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 3
+read: 15.110810s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.017892s
+|E|=36233445
+|V|=6024259
+streaming total time 1.999209s
+|V|=6024259
+Intersection Graph Marked: 0.804257s
+direct hop total time 1.820128s
+work sharing total time 1.214244s
+CommonGraph total time 1.214244s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 4
+read: 15.148935s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.009957s
+|E|=36233445
+|V|=6024259
+streaming total time 1.823581s
+|V|=6024259
+Intersection Graph Marked: 0.714360s
+direct hop total time 1.808238s
+work sharing total time 1.254124s
+CommonGraph total time 1.254124s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 5
+read: 15.133134s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.011011s
+|E|=36233445
+|V|=6024259
+streaming total time 2.532282s
+|V|=6024259
+Intersection Graph Marked: 0.658191s
+direct hop total time 1.760790s
+work sharing total time 1.345946s
+CommonGraph total time 1.345946s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 6
+read: 15.099770s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.011429s
+|E|=36233445
+|V|=6024259
+streaming total time 2.572983s
+|V|=6024259
+Intersection Graph Marked: 0.863950s
+direct hop total time 1.705954s
+work sharing total time 1.247850s
+CommonGraph total time 1.247850s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 7
+read: 15.100414s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.016214s
+|E|=36233445
+|V|=6024259
+streaming total time 2.443766s
+|V|=6024259
+Intersection Graph Marked: 0.717792s
+direct hop total time 1.970052s
+work sharing total time 1.279961s
+CommonGraph total time 1.279961s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 8
+read: 15.195704s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.010460s
+|E|=36233445
+|V|=6024259
+streaming total time 3.144268s
+|V|=6024259
+Intersection Graph Marked: 0.754292s
+direct hop total time 1.776289s
+work sharing total time 1.274948s
+CommonGraph total time 1.274948s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 9
+read: 15.134759s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.010686s
+|E|=36233445
+|V|=6024259
+streaming total time 2.531396s
+|V|=6024259
+Intersection Graph Marked: 0.704406s
+direct hop total time 1.774552s
+work sharing total time 1.337017s
+CommonGraph total time 1.337017s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 10
+read: 15.100743s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.010925s
+|E|=36233445
+|V|=6024259
+streaming total time 1.939750s
+|V|=6024259
+Intersection Graph Marked: 0.660487s
+direct hop total time 1.742849s
+work sharing total time 1.245985s
+CommonGraph total time 1.245985s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 11
+read: 15.131551s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.007654s
+|E|=36233445
+|V|=6024259
+streaming total time 2.362257s
+|V|=6024259
+Intersection Graph Marked: 0.803636s
+direct hop total time 1.711287s
+work sharing total time 1.291220s
+CommonGraph total time 1.291220s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 12
+read: 15.114624s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.011169s
+|E|=36233445
+|V|=6024259
+streaming total time 2.366121s
+|V|=6024259
+Intersection Graph Marked: 0.853752s
+direct hop total time 1.770557s
+work sharing total time 1.367926s
+CommonGraph total time 1.367926s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 13
+read: 15.123220s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.010546s
+|E|=36233445
+|V|=6024259
+streaming total time 2.214847s
+|V|=6024259
+Intersection Graph Marked: 0.866225s
+direct hop total time 1.770325s
+work sharing total time 1.168045s
+CommonGraph total time 1.168045s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 14
+read: 15.084420s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.011044s
+|E|=36233445
+|V|=6024259
+streaming total time 2.361441s
+|V|=6024259
+Intersection Graph Marked: 0.740644s
+direct hop total time 1.871100s
+work sharing total time 1.400128s
+CommonGraph total time 1.400128s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 15
+read: 15.095813s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.011113s
+|E|=36233445
+|V|=6024259
+streaming total time 2.466233s
+|V|=6024259
+Intersection Graph Marked: 0.778659s
+direct hop total time 1.659145s
+work sharing total time 1.201838s
+CommonGraph total time 1.201838s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 0
+read: 15.144973s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.011142s
+|E|=36233445
+|V|=6024259
+streaming total time 2.267731s
+|V|=6024259
+Intersection Graph Marked: 0.788434s
+direct hop total time 3.685235s
+work sharing total time 2.411244s
+CommonGraph total time 2.411244s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 1
+read: 15.152185s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.011113s
+|E|=36233445
+|V|=6024259
+streaming total time 2.936644s
+|V|=6024259
+Intersection Graph Marked: 0.688939s
+direct hop total time 3.309872s
+work sharing total time 2.135753s
+CommonGraph total time 2.135753s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 2
+read: 15.155326s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.017760s
+|E|=36233445
+|V|=6024259
+streaming total time 3.081210s
+|V|=6024259
+Intersection Graph Marked: 0.750332s
+direct hop total time 3.411643s
+work sharing total time 2.118635s
+CommonGraph total time 2.118635s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 3
+read: 15.112562s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.011139s
+|E|=36233445
+|V|=6024259
+streaming total time 2.241750s
+|V|=6024259
+Intersection Graph Marked: 0.663133s
+direct hop total time 3.353359s
+work sharing total time 2.239955s
+CommonGraph total time 2.239955s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 4
+read: 15.091312s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.011010s
+|E|=36233445
+|V|=6024259
+streaming total time 2.731140s
+|V|=6024259
+Intersection Graph Marked: 0.780397s
+direct hop total time 3.604369s
+work sharing total time 2.309092s
+CommonGraph total time 2.309092s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 5
+read: 15.105683s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.010634s
+|E|=36233445
+|V|=6024259
+streaming total time 2.237978s
+|V|=6024259
+Intersection Graph Marked: 0.787443s
+direct hop total time 3.845249s
+work sharing total time 1.915162s
+CommonGraph total time 1.915162s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 6
+read: 15.144281s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.010598s
+|E|=36233445
+|V|=6024259
+streaming total time 2.224244s
+|V|=6024259
+Intersection Graph Marked: 0.776068s
+direct hop total time 3.428283s
+work sharing total time 2.396018s
+CommonGraph total time 2.396018s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 7
+read: 15.099637s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.010964s
+|E|=36233445
+|V|=6024259
+streaming total time 2.284991s
+|V|=6024259
+Intersection Graph Marked: 0.814709s
+direct hop total time 3.273368s
+work sharing total time 2.366018s
+CommonGraph total time 2.366018s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 8
+read: 15.097975s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.010467s
+|E|=36233445
+|V|=6024259
+streaming total time 3.000432s
+|V|=6024259
+Intersection Graph Marked: 0.857369s
+direct hop total time 3.867859s
+work sharing total time 2.326709s
+CommonGraph total time 2.326709s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 9
+read: 15.101083s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.010809s
+|E|=36233445
+|V|=6024259
+streaming total time 2.379316s
+|V|=6024259
+Intersection Graph Marked: 0.812362s
+direct hop total time 3.320133s
+work sharing total time 2.038709s
+CommonGraph total time 2.038709s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 10
+read: 15.114024s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.010861s
+|E|=36233445
+|V|=6024259
+streaming total time 2.284793s
+|V|=6024259
+Intersection Graph Marked: 0.668847s
+direct hop total time 3.367949s
+work sharing total time 1.863827s
+CommonGraph total time 1.863827s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 11
+read: 15.109564s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.010352s
+|E|=36233445
+|V|=6024259
+streaming total time 2.354199s
+|V|=6024259
+Intersection Graph Marked: 0.825399s
+direct hop total time 3.374819s
+work sharing total time 2.025191s
+CommonGraph total time 2.025191s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 12
+read: 15.104603s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.010677s
+|E|=36233445
+|V|=6024259
+streaming total time 2.837613s
+|V|=6024259
+Intersection Graph Marked: 0.760471s
+direct hop total time 3.290959s
+work sharing total time 2.119814s
+CommonGraph total time 2.119814s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 13
+read: 15.114986s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.011210s
+|E|=36233445
+|V|=6024259
+streaming total time 2.279332s
+|V|=6024259
+Intersection Graph Marked: 0.760743s
+direct hop total time 3.582616s
+work sharing total time 2.257216s
+CommonGraph total time 2.257216s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 14
+read: 15.117371s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.010971s
+|E|=36233445
+|V|=6024259
+streaming total time 2.285699s
+|V|=6024259
+Intersection Graph Marked: 0.680983s
+direct hop total time 3.694049s
+work sharing total time 2.371160s
+CommonGraph total time 2.371160s
+Running: build/CCbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 15
+read: 15.112964s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.011139s
+|E|=36233445
+|V|=6024259
+streaming total time 2.895530s
+|V|=6024259
+Intersection Graph Marked: 0.778279s
+direct hop total time 3.380877s
+work sharing total time 2.427109s
+CommonGraph total time 2.427109s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 0
+read: 15.008701s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.011980s
+|E|=36233445
+|V|=6024259
+streaming total time 3.481532s
+|V|=6024259
+Intersection Graph Marked: 0.645331s
+direct hop total time 0.486783s
+work sharing total time 0.364290s
+CommonGraph total time 0.364290s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 1
+read: 15.012624s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.009346s
+|E|=36233445
+|V|=6024259
+streaming total time 1.896136s
+|V|=6024259
+Intersection Graph Marked: 0.689464s
+direct hop total time 0.465302s
+work sharing total time 0.446363s
+CommonGraph total time 0.446363s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 2
+read: 15.014587s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.011018s
+|E|=36233445
+|V|=6024259
+streaming total time 2.930333s
+|V|=6024259
+Intersection Graph Marked: 0.789967s
+direct hop total time 0.491491s
+work sharing total time 0.332886s
+CommonGraph total time 0.332886s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 3
+read: 15.163527s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.008563s
+|E|=36233445
+|V|=6024259
+streaming total time 2.948048s
+|V|=6024259
+Intersection Graph Marked: 0.673892s
+direct hop total time 0.076462s
+work sharing total time 0.064652s
+CommonGraph total time 0.064652s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 4
+read: 15.044802s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.012815s
+|E|=36233445
+|V|=6024259
+streaming total time 2.303865s
+|V|=6024259
+Intersection Graph Marked: 0.758240s
+direct hop total time 0.519549s
+work sharing total time 0.396511s
+CommonGraph total time 0.396511s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 5
+read: 15.000254s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.014207s
+|E|=36233445
+|V|=6024259
+streaming total time 2.875728s
+|V|=6024259
+Intersection Graph Marked: 0.809699s
+direct hop total time 0.479061s
+work sharing total time 0.462338s
+CommonGraph total time 0.462338s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 6
+read: 14.973973s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.014049s
+|E|=36233445
+|V|=6024259
+streaming total time 1.940907s
+|V|=6024259
+Intersection Graph Marked: 0.889930s
+direct hop total time 0.075473s
+work sharing total time 0.067491s
+CommonGraph total time 0.067491s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 7
+read: 15.098351s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.018049s
+|E|=36233445
+|V|=6024259
+streaming total time 2.299150s
+|V|=6024259
+Intersection Graph Marked: 0.831261s
+direct hop total time 0.531344s
+work sharing total time 0.403692s
+CommonGraph total time 0.403692s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 8
+read: 15.054504s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.009982s
+|E|=36233445
+|V|=6024259
+streaming total time 4.164178s
+|V|=6024259
+Intersection Graph Marked: 0.860290s
+direct hop total time 0.505846s
+work sharing total time 0.407204s
+CommonGraph total time 0.407204s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 9
+read: 14.952965s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.011091s
+|E|=36233445
+|V|=6024259
+streaming total time 2.501213s
+|V|=6024259
+Intersection Graph Marked: 0.889210s
+direct hop total time 0.532301s
+work sharing total time 0.348206s
+CommonGraph total time 0.348206s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 10
+read: 15.148703s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.010083s
+|E|=36233445
+|V|=6024259
+streaming total time 3.005418s
+|V|=6024259
+Intersection Graph Marked: 0.686211s
+direct hop total time 0.548118s
+work sharing total time 0.455686s
+CommonGraph total time 0.455686s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 11
+read: 14.994622s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.010048s
+|E|=36233445
+|V|=6024259
+streaming total time 3.044133s
+|V|=6024259
+Intersection Graph Marked: 0.792028s
+direct hop total time 0.079173s
+work sharing total time 0.041512s
+CommonGraph total time 0.041512s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 12
+read: 14.982872s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.010855s
+|E|=36233445
+|V|=6024259
+streaming total time 2.522995s
+|V|=6024259
+Intersection Graph Marked: 0.738028s
+direct hop total time 0.072727s
+work sharing total time 0.042651s
+CommonGraph total time 0.042651s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 13
+read: 14.984892s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.010561s
+|E|=36233445
+|V|=6024259
+streaming total time 1.681091s
+|V|=6024259
+Intersection Graph Marked: 0.665579s
+direct hop total time 0.062004s
+work sharing total time 0.068039s
+CommonGraph total time 0.068039s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 14
+read: 14.965718s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.011157s
+|E|=36233445
+|V|=6024259
+streaming total time 1.929440s
+|V|=6024259
+Intersection Graph Marked: 0.718680s
+direct hop total time 0.061050s
+work sharing total time 0.051642s
+CommonGraph total time 0.051642s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 15
+read: 14.975602s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.011928s
+|E|=36233445
+|V|=6024259
+streaming total time 3.196760s
+|V|=6024259
+Intersection Graph Marked: 0.808231s
+direct hop total time 0.535474s
+work sharing total time 0.348136s
+CommonGraph total time 0.348136s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 0
+read: 14.992219s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.011074s
+|E|=36233445
+|V|=6024259
+streaming total time 2.518522s
+|V|=6024259
+Intersection Graph Marked: 0.873351s
+direct hop total time 0.919629s
+work sharing total time 0.577839s
+CommonGraph total time 0.577839s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 1
+read: 15.018962s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.009453s
+|E|=36233445
+|V|=6024259
+streaming total time 3.098538s
+|V|=6024259
+Intersection Graph Marked: 0.710196s
+direct hop total time 0.939548s
+work sharing total time 0.654855s
+CommonGraph total time 0.654855s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 2
+read: 14.972374s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.010875s
+|E|=36233445
+|V|=6024259
+streaming total time 2.434530s
+|V|=6024259
+Intersection Graph Marked: 0.755679s
+direct hop total time 0.934756s
+work sharing total time 0.684257s
+CommonGraph total time 0.684257s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 3
+read: 15.117446s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.009260s
+|E|=36233445
+|V|=6024259
+streaming total time 2.346418s
+|V|=6024259
+Intersection Graph Marked: 0.840492s
+direct hop total time 0.132829s
+work sharing total time 0.110508s
+CommonGraph total time 0.110508s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 4
+read: 14.984024s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.011059s
+|E|=36233445
+|V|=6024259
+streaming total time 2.141207s
+|V|=6024259
+Intersection Graph Marked: 0.639541s
+direct hop total time 0.971217s
+work sharing total time 0.692256s
+CommonGraph total time 0.692256s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 5
+read: 15.011825s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.011189s
+|E|=36233445
+|V|=6024259
+streaming total time 2.301390s
+|V|=6024259
+Intersection Graph Marked: 0.725224s
+direct hop total time 0.891782s
+work sharing total time 0.801573s
+CommonGraph total time 0.801573s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 6
+read: 14.955861s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.011072s
+|E|=36233445
+|V|=6024259
+streaming total time 1.749247s
+|V|=6024259
+Intersection Graph Marked: 0.808768s
+direct hop total time 0.127911s
+work sharing total time 0.085725s
+CommonGraph total time 0.085725s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 7
+read: 15.038876s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.009887s
+|E|=36233445
+|V|=6024259
+streaming total time 3.052919s
+|V|=6024259
+Intersection Graph Marked: 0.748238s
+direct hop total time 1.058806s
+work sharing total time 0.904432s
+CommonGraph total time 0.904432s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 8
+read: 14.985474s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.009274s
+|E|=36233445
+|V|=6024259
+streaming total time 2.569059s
+|V|=6024259
+Intersection Graph Marked: 0.679837s
+direct hop total time 1.048892s
+work sharing total time 0.739296s
+CommonGraph total time 0.739296s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 9
+read: 14.930816s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.011889s
+|E|=36233445
+|V|=6024259
+streaming total time 3.226746s
+|V|=6024259
+Intersection Graph Marked: 0.757401s
+direct hop total time 0.922000s
+work sharing total time 0.674263s
+CommonGraph total time 0.674263s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 10
+read: 15.002892s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.010696s
+|E|=36233445
+|V|=6024259
+streaming total time 1.806876s
+|V|=6024259
+Intersection Graph Marked: 0.818487s
+direct hop total time 1.014771s
+work sharing total time 0.664469s
+CommonGraph total time 0.664469s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 11
+read: 14.986363s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.010648s
+|E|=36233445
+|V|=6024259
+streaming total time 2.539022s
+|V|=6024259
+Intersection Graph Marked: 0.703129s
+direct hop total time 0.146831s
+work sharing total time 0.097293s
+CommonGraph total time 0.097293s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 12
+read: 14.963448s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.012552s
+|E|=36233445
+|V|=6024259
+streaming total time 2.379317s
+|V|=6024259
+Intersection Graph Marked: 0.769616s
+direct hop total time 0.131388s
+work sharing total time 0.071807s
+CommonGraph total time 0.071807s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 13
+read: 15.037006s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.010278s
+|E|=36233445
+|V|=6024259
+streaming total time 2.724874s
+|V|=6024259
+Intersection Graph Marked: 0.787039s
+direct hop total time 0.212635s
+work sharing total time 0.072370s
+CommonGraph total time 0.072370s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 14
+read: 14.999543s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.010950s
+|E|=36233445
+|V|=6024259
+streaming total time 1.557444s
+|V|=6024259
+Intersection Graph Marked: 0.773234s
+direct hop total time 0.125370s
+work sharing total time 0.092163s
+CommonGraph total time 0.092163s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 15
+read: 14.970379s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.010464s
+|E|=36233445
+|V|=6024259
+streaming total time 2.656399s
+|V|=6024259
+Intersection Graph Marked: 0.877965s
+direct hop total time 0.945559s
+work sharing total time 0.916157s
+CommonGraph total time 0.916157s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 0
+read: 15.069932s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.010500s
+|E|=36233445
+|V|=6024259
+streaming total time 2.263959s
+|V|=6024259
+Intersection Graph Marked: 0.699026s
+direct hop total time 1.813922s
+work sharing total time 1.293163s
+CommonGraph total time 1.293163s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 1
+read: 14.964041s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.010080s
+|E|=36233445
+|V|=6024259
+streaming total time 2.870756s
+|V|=6024259
+Intersection Graph Marked: 0.729162s
+direct hop total time 1.742564s
+work sharing total time 1.193953s
+CommonGraph total time 1.193953s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 2
+read: 14.964895s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.009667s
+|E|=36233445
+|V|=6024259
+streaming total time 1.771603s
+|V|=6024259
+Intersection Graph Marked: 0.789124s
+direct hop total time 1.904634s
+work sharing total time 1.364119s
+CommonGraph total time 1.364119s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 3
+read: 15.064069s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.007803s
+|E|=36233445
+|V|=6024259
+streaming total time 2.335165s
+|V|=6024259
+Intersection Graph Marked: 0.690767s
+direct hop total time 0.268095s
+work sharing total time 0.131868s
+CommonGraph total time 0.131868s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 4
+read: 15.026172s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.009841s
+|E|=36233445
+|V|=6024259
+streaming total time 1.914099s
+|V|=6024259
+Intersection Graph Marked: 0.821805s
+direct hop total time 1.847675s
+work sharing total time 1.259250s
+CommonGraph total time 1.259250s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 5
+read: 14.971780s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.011208s
+|E|=36233445
+|V|=6024259
+streaming total time 2.759465s
+|V|=6024259
+Intersection Graph Marked: 0.764388s
+direct hop total time 1.863444s
+work sharing total time 1.233110s
+CommonGraph total time 1.233110s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 6
+read: 14.998728s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.011083s
+|E|=36233445
+|V|=6024259
+streaming total time 1.463407s
+|V|=6024259
+Intersection Graph Marked: 0.863031s
+direct hop total time 0.235205s
+work sharing total time 0.133973s
+CommonGraph total time 0.133973s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 7
+read: 14.977830s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.011041s
+|E|=36233445
+|V|=6024259
+streaming total time 1.974328s
+|V|=6024259
+Intersection Graph Marked: 0.750311s
+direct hop total time 1.732716s
+work sharing total time 1.308290s
+CommonGraph total time 1.308290s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 8
+read: 14.991501s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.011123s
+|E|=36233445
+|V|=6024259
+streaming total time 2.991118s
+|V|=6024259
+Intersection Graph Marked: 0.821674s
+direct hop total time 1.862189s
+work sharing total time 1.306402s
+CommonGraph total time 1.306402s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 9
+read: 15.142086s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.010689s
+|E|=36233445
+|V|=6024259
+streaming total time 2.459574s
+|V|=6024259
+Intersection Graph Marked: 0.856489s
+direct hop total time 1.808143s
+work sharing total time 1.314038s
+CommonGraph total time 1.314038s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 10
+read: 15.176869s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.018241s
+|E|=36233445
+|V|=6024259
+streaming total time 1.962217s
+|V|=6024259
+Intersection Graph Marked: 0.824195s
+direct hop total time 1.826118s
+work sharing total time 1.353677s
+CommonGraph total time 1.353677s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 11
+read: 15.027410s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.010633s
+|E|=36233445
+|V|=6024259
+streaming total time 2.485008s
+|V|=6024259
+Intersection Graph Marked: 0.794736s
+direct hop total time 0.269146s
+work sharing total time 0.146446s
+CommonGraph total time 0.146446s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 12
+read: 14.999845s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.011015s
+|E|=36233445
+|V|=6024259
+streaming total time 2.187140s
+|V|=6024259
+Intersection Graph Marked: 0.653204s
+direct hop total time 0.263956s
+work sharing total time 0.149935s
+CommonGraph total time 0.149935s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 13
+read: 15.204373s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.017978s
+|E|=36233445
+|V|=6024259
+streaming total time 2.068325s
+|V|=6024259
+Intersection Graph Marked: 0.726941s
+direct hop total time 0.291196s
+work sharing total time 0.148769s
+CommonGraph total time 0.148769s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 14
+read: 14.987682s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.010773s
+|E|=36233445
+|V|=6024259
+streaming total time 1.491289s
+|V|=6024259
+Intersection Graph Marked: 0.801590s
+direct hop total time 0.232849s
+work sharing total time 0.152619s
+CommonGraph total time 0.152619s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 15
+read: 15.001747s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.010986s
+|E|=36233445
+|V|=6024259
+streaming total time 1.991742s
+|V|=6024259
+Intersection Graph Marked: 0.808940s
+direct hop total time 1.923746s
+work sharing total time 1.263646s
+CommonGraph total time 1.263646s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 0
+read: 15.123390s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.010951s
+|E|=36233445
+|V|=6024259
+streaming total time 2.197873s
+|V|=6024259
+Intersection Graph Marked: 0.748636s
+direct hop total time 3.486783s
+work sharing total time 2.230289s
+CommonGraph total time 2.230289s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 1
+read: 15.088085s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.010954s
+|E|=36233445
+|V|=6024259
+streaming total time 2.422777s
+|V|=6024259
+Intersection Graph Marked: 0.656636s
+direct hop total time 3.540354s
+work sharing total time 2.300724s
+CommonGraph total time 2.300724s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 2
+read: 14.974749s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.009315s
+|E|=36233445
+|V|=6024259
+streaming total time 2.127045s
+|V|=6024259
+Intersection Graph Marked: 0.839476s
+direct hop total time 3.485146s
+work sharing total time 2.300956s
+CommonGraph total time 2.300956s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 3
+read: 14.970396s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.010981s
+|E|=36233445
+|V|=6024259
+streaming total time 1.782048s
+|V|=6024259
+Intersection Graph Marked: 0.767012s
+direct hop total time 0.465224s
+work sharing total time 0.260359s
+CommonGraph total time 0.260359s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 4
+read: 15.031462s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.010809s
+|E|=36233445
+|V|=6024259
+streaming total time 2.108615s
+|V|=6024259
+Intersection Graph Marked: 0.785389s
+direct hop total time 3.366284s
+work sharing total time 2.315902s
+CommonGraph total time 2.315902s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 5
+read: 14.991740s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.010806s
+|E|=36233445
+|V|=6024259
+streaming total time 1.691549s
+|V|=6024259
+Intersection Graph Marked: 0.662946s
+direct hop total time 3.490741s
+work sharing total time 2.088987s
+CommonGraph total time 2.088987s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 6
+read: 15.050154s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.009548s
+|E|=36233445
+|V|=6024259
+streaming total time 1.899818s
+|V|=6024259
+Intersection Graph Marked: 0.778043s
+direct hop total time 0.455844s
+work sharing total time 0.371444s
+CommonGraph total time 0.371444s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 7
+read: 15.166034s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.017731s
+|E|=36233445
+|V|=6024259
+streaming total time 2.919969s
+|V|=6024259
+Intersection Graph Marked: 0.783260s
+direct hop total time 3.429307s
+work sharing total time 2.123760s
+CommonGraph total time 2.123760s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 8
+read: 15.011445s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.011106s
+|E|=36233445
+|V|=6024259
+streaming total time 2.118140s
+|V|=6024259
+Intersection Graph Marked: 0.829290s
+direct hop total time 3.591523s
+work sharing total time 2.418591s
+CommonGraph total time 2.418591s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 9
+read: 15.048975s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.009976s
+|E|=36233445
+|V|=6024259
+streaming total time 2.168823s
+|V|=6024259
+Intersection Graph Marked: 0.779760s
+direct hop total time 3.544433s
+work sharing total time 2.404913s
+CommonGraph total time 2.404913s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 10
+read: 15.050481s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.010130s
+|E|=36233445
+|V|=6024259
+streaming total time 2.377776s
+|V|=6024259
+Intersection Graph Marked: 0.849103s
+direct hop total time 3.585431s
+work sharing total time 2.409209s
+CommonGraph total time 2.409209s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 11
+read: 15.016778s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.012432s
+|E|=36233445
+|V|=6024259
+streaming total time 2.315329s
+|V|=6024259
+Intersection Graph Marked: 0.811992s
+direct hop total time 0.438155s
+work sharing total time 0.250652s
+CommonGraph total time 0.250652s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 12
+read: 15.045963s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.010696s
+|E|=36233445
+|V|=6024259
+streaming total time 1.978230s
+|V|=6024259
+Intersection Graph Marked: 0.753160s
+direct hop total time 0.465715s
+work sharing total time 0.266482s
+CommonGraph total time 0.266482s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 13
+read: 14.980986s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.010596s
+|E|=36233445
+|V|=6024259
+streaming total time 1.294177s
+|V|=6024259
+Intersection Graph Marked: 0.864591s
+direct hop total time 0.480310s
+work sharing total time 0.278144s
+CommonGraph total time 0.278144s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 14
+read: 15.019712s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.010612s
+|E|=36233445
+|V|=6024259
+streaming total time 1.864568s
+|V|=6024259
+Intersection Graph Marked: 0.667076s
+direct hop total time 0.440991s
+work sharing total time 0.257691s
+CommonGraph total time 0.257691s
+Running: build/SSRbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 15
+read: 14.989958s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.009206s
+|E|=36233445
+|V|=6024259
+streaming total time 2.224845s
+|V|=6024259
+Intersection Graph Marked: 0.820801s
+direct hop total time 3.477340s
+work sharing total time 2.178790s
+CommonGraph total time 2.178790s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 0
+read: 15.078836s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.009311s
+|E|=36233445
+|V|=6024259
+streaming total time 3.290431s
+|V|=6024259
+Intersection Graph Marked: 0.786512s
+direct hop total time 0.976711s
+work sharing total time 0.771480s
+CommonGraph total time 0.771480s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 1
+read: 15.064994s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.011067s
+|E|=36233445
+|V|=6024259
+streaming total time 3.714322s
+|V|=6024259
+Intersection Graph Marked: 0.728614s
+direct hop total time 0.901104s
+work sharing total time 0.708407s
+CommonGraph total time 0.708407s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 2
+read: 15.068837s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.009559s
+|E|=36233445
+|V|=6024259
+streaming total time 3.615161s
+|V|=6024259
+Intersection Graph Marked: 0.777536s
+direct hop total time 0.901960s
+work sharing total time 0.755609s
+CommonGraph total time 0.755609s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 3
+read: 15.064808s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.011229s
+|E|=36233445
+|V|=6024259
+streaming total time 2.937060s
+|V|=6024259
+Intersection Graph Marked: 0.767691s
+direct hop total time 0.058694s
+work sharing total time 0.049368s
+CommonGraph total time 0.049368s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 4
+read: 15.098409s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.011175s
+|E|=36233445
+|V|=6024259
+streaming total time 3.111839s
+|V|=6024259
+Intersection Graph Marked: 0.834924s
+direct hop total time 0.934147s
+work sharing total time 0.778873s
+CommonGraph total time 0.778873s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 5
+read: 15.797368s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.017637s
+|E|=36233445
+|V|=6024259
+streaming total time 2.415798s
+|V|=6024259
+Intersection Graph Marked: 0.825075s
+direct hop total time 0.959724s
+work sharing total time 0.795635s
+CommonGraph total time 0.795635s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 6
+read: 15.086659s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.009536s
+|E|=36233445
+|V|=6024259
+streaming total time 1.700780s
+|V|=6024259
+Intersection Graph Marked: 0.636944s
+direct hop total time 0.082471s
+work sharing total time 0.042724s
+CommonGraph total time 0.042724s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 7
+read: 15.065246s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.010035s
+|E|=36233445
+|V|=6024259
+streaming total time 3.333212s
+|V|=6024259
+Intersection Graph Marked: 0.676602s
+direct hop total time 1.008736s
+work sharing total time 0.715051s
+CommonGraph total time 0.715051s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 8
+read: 15.411514s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.011156s
+|E|=36233445
+|V|=6024259
+streaming total time 2.868264s
+|V|=6024259
+Intersection Graph Marked: 0.798061s
+direct hop total time 2.121327s
+work sharing total time 0.887861s
+CommonGraph total time 0.887861s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 9
+read: 15.093299s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.011028s
+|E|=36233445
+|V|=6024259
+streaming total time 2.850354s
+|V|=6024259
+Intersection Graph Marked: 0.747471s
+direct hop total time 0.938922s
+work sharing total time 0.763490s
+CommonGraph total time 0.763490s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 10
+read: 15.055239s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.007194s
+|E|=36233445
+|V|=6024259
+streaming total time 3.581866s
+|V|=6024259
+Intersection Graph Marked: 0.789832s
+direct hop total time 1.009198s
+work sharing total time 0.771205s
+CommonGraph total time 0.771205s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 11
+read: 15.231861s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.009262s
+|E|=36233445
+|V|=6024259
+streaming total time 3.076154s
+|V|=6024259
+Intersection Graph Marked: 0.781782s
+direct hop total time 0.085838s
+work sharing total time 0.061850s
+CommonGraph total time 0.061850s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 12
+read: 15.061058s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.009184s
+|E|=36233445
+|V|=6024259
+streaming total time 2.021247s
+|V|=6024259
+Intersection Graph Marked: 0.751213s
+direct hop total time 0.085202s
+work sharing total time 0.119088s
+CommonGraph total time 0.119088s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 13
+read: 15.047937s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.010024s
+|E|=36233445
+|V|=6024259
+streaming total time 2.168381s
+|V|=6024259
+Intersection Graph Marked: 0.849718s
+direct hop total time 0.076917s
+work sharing total time 0.039915s
+CommonGraph total time 0.039915s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 14
+read: 15.219801s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.008477s
+|E|=36233445
+|V|=6024259
+streaming total time 3.364218s
+|V|=6024259
+Intersection Graph Marked: 0.774694s
+direct hop total time 0.067334s
+work sharing total time 0.049081s
+CommonGraph total time 0.049081s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 15
+read: 15.163871s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.010997s
+|E|=36233445
+|V|=6024259
+streaming total time 2.279025s
+|V|=6024259
+Intersection Graph Marked: 0.737563s
+direct hop total time 1.053157s
+work sharing total time 0.794568s
+CommonGraph total time 0.794568s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 0
+read: 15.066629s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.010675s
+|E|=36233445
+|V|=6024259
+streaming total time 2.859704s
+|V|=6024259
+Intersection Graph Marked: 0.702369s
+direct hop total time 1.710987s
+work sharing total time 1.231584s
+CommonGraph total time 1.231584s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 1
+read: 15.075716s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.009268s
+|E|=36233445
+|V|=6024259
+streaming total time 3.123534s
+|V|=6024259
+Intersection Graph Marked: 0.749969s
+direct hop total time 1.858048s
+work sharing total time 1.334413s
+CommonGraph total time 1.334413s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 2
+read: 15.063972s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.016359s
+|E|=36233445
+|V|=6024259
+streaming total time 2.215276s
+|V|=6024259
+Intersection Graph Marked: 0.730743s
+direct hop total time 1.932698s
+work sharing total time 1.390223s
+CommonGraph total time 1.390223s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 3
+read: 15.044949s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.011214s
+|E|=36233445
+|V|=6024259
+streaming total time 2.805635s
+|V|=6024259
+Intersection Graph Marked: 0.845900s
+direct hop total time 0.141878s
+work sharing total time 0.080831s
+CommonGraph total time 0.080831s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 4
+read: 15.411095s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.016040s
+|E|=36233445
+|V|=6024259
+streaming total time 2.094293s
+|V|=6024259
+Intersection Graph Marked: 0.664180s
+direct hop total time 1.662095s
+work sharing total time 1.240906s
+CommonGraph total time 1.240906s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 5
+read: 15.071448s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.010898s
+|E|=36233445
+|V|=6024259
+streaming total time 3.929095s
+|V|=6024259
+Intersection Graph Marked: 0.788574s
+direct hop total time 1.890423s
+work sharing total time 1.303933s
+CommonGraph total time 1.303933s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 6
+read: 15.072615s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.010308s
+|E|=36233445
+|V|=6024259
+streaming total time 1.543172s
+|V|=6024259
+Intersection Graph Marked: 0.769551s
+direct hop total time 0.160946s
+work sharing total time 0.069900s
+CommonGraph total time 0.069900s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 7
+read: 15.108974s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.009916s
+|E|=36233445
+|V|=6024259
+streaming total time 3.430908s
+|V|=6024259
+Intersection Graph Marked: 0.725950s
+direct hop total time 1.960768s
+work sharing total time 1.353308s
+CommonGraph total time 1.353308s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 8
+read: 15.224412s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.011390s
+|E|=36233445
+|V|=6024259
+streaming total time 3.273948s
+|V|=6024259
+Intersection Graph Marked: 0.722808s
+direct hop total time 4.241782s
+work sharing total time 1.531653s
+CommonGraph total time 1.531653s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 9
+read: 15.168732s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.009280s
+|E|=36233445
+|V|=6024259
+streaming total time 3.032139s
+|V|=6024259
+Intersection Graph Marked: 0.803722s
+direct hop total time 1.739399s
+work sharing total time 1.354560s
+CommonGraph total time 1.354560s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 10
+read: 15.057719s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.011767s
+|E|=36233445
+|V|=6024259
+streaming total time 3.135445s
+|V|=6024259
+Intersection Graph Marked: 0.680987s
+direct hop total time 1.840336s
+work sharing total time 1.371090s
+CommonGraph total time 1.371090s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 11
+read: 15.122669s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.011225s
+|E|=36233445
+|V|=6024259
+streaming total time 1.793816s
+|V|=6024259
+Intersection Graph Marked: 0.854115s
+direct hop total time 0.150399s
+work sharing total time 0.140890s
+CommonGraph total time 0.140890s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 12
+read: 15.061087s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.011621s
+|E|=36233445
+|V|=6024259
+streaming total time 2.679053s
+|V|=6024259
+Intersection Graph Marked: 0.651533s
+direct hop total time 0.106513s
+work sharing total time 0.070451s
+CommonGraph total time 0.070451s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 13
+read: 15.076966s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.009066s
+|E|=36233445
+|V|=6024259
+streaming total time 2.397422s
+|V|=6024259
+Intersection Graph Marked: 0.702695s
+direct hop total time 0.108488s
+work sharing total time 0.104810s
+CommonGraph total time 0.104810s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 14
+read: 15.078237s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.011088s
+|E|=36233445
+|V|=6024259
+streaming total time 2.698233s
+|V|=6024259
+Intersection Graph Marked: 0.791040s
+direct hop total time 0.118242s
+work sharing total time 0.118045s
+CommonGraph total time 0.118045s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 15
+read: 15.063753s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.010990s
+|E|=36233445
+|V|=6024259
+streaming total time 3.859495s
+|V|=6024259
+Intersection Graph Marked: 0.770770s
+direct hop total time 1.649131s
+work sharing total time 1.257922s
+CommonGraph total time 1.257922s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 0
+read: 15.062289s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.009431s
+|E|=36233445
+|V|=6024259
+streaming total time 4.093461s
+|V|=6024259
+Intersection Graph Marked: 0.799989s
+direct hop total time 3.359127s
+work sharing total time 2.389568s
+CommonGraph total time 2.389568s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 1
+read: 15.116755s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.010249s
+|E|=36233445
+|V|=6024259
+streaming total time 3.620047s
+|V|=6024259
+Intersection Graph Marked: 0.782517s
+direct hop total time 3.789611s
+work sharing total time 2.589150s
+CommonGraph total time 2.589150s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 2
+read: 15.070736s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.010438s
+|E|=36233445
+|V|=6024259
+streaming total time 3.395219s
+|V|=6024259
+Intersection Graph Marked: 0.824996s
+direct hop total time 3.464372s
+work sharing total time 2.344750s
+CommonGraph total time 2.344750s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 3
+read: 15.095734s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.011178s
+|E|=36233445
+|V|=6024259
+streaming total time 2.186445s
+|V|=6024259
+Intersection Graph Marked: 0.697142s
+direct hop total time 0.244117s
+work sharing total time 0.132410s
+CommonGraph total time 0.132410s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 4
+read: 15.033949s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.011514s
+|E|=36233445
+|V|=6024259
+streaming total time 2.740806s
+|V|=6024259
+Intersection Graph Marked: 0.798573s
+direct hop total time 3.595151s
+work sharing total time 2.365031s
+CommonGraph total time 2.365031s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 5
+read: 15.059996s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.010452s
+|E|=36233445
+|V|=6024259
+streaming total time 3.256201s
+|V|=6024259
+Intersection Graph Marked: 0.842497s
+direct hop total time 3.472465s
+work sharing total time 2.203129s
+CommonGraph total time 2.203129s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 6
+read: 15.063476s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.009431s
+|E|=36233445
+|V|=6024259
+streaming total time 2.203815s
+|V|=6024259
+Intersection Graph Marked: 0.783713s
+direct hop total time 0.226540s
+work sharing total time 0.150971s
+CommonGraph total time 0.150971s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 7
+read: 15.070251s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.010367s
+|E|=36233445
+|V|=6024259
+streaming total time 3.217971s
+|V|=6024259
+Intersection Graph Marked: 0.805287s
+direct hop total time 3.119120s
+work sharing total time 2.355897s
+CommonGraph total time 2.355897s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 8
+read: 15.059048s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.010917s
+|E|=36233445
+|V|=6024259
+streaming total time 2.896889s
+|V|=6024259
+Intersection Graph Marked: 0.669117s
+direct hop total time 7.352988s
+work sharing total time 2.297860s
+CommonGraph total time 2.297860s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 9
+read: 17.207501s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.009344s
+|E|=36233445
+|V|=6024259
+streaming total time 2.536504s
+|V|=6024259
+Intersection Graph Marked: 0.810889s
+direct hop total time 3.374934s
+work sharing total time 2.424315s
+CommonGraph total time 2.424315s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 10
+read: 15.184532s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.009261s
+|E|=36233445
+|V|=6024259
+streaming total time 2.816335s
+|V|=6024259
+Intersection Graph Marked: 0.810879s
+direct hop total time 3.372896s
+work sharing total time 2.508451s
+CommonGraph total time 2.508451s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 11
+read: 15.243863s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.011086s
+|E|=36233445
+|V|=6024259
+streaming total time 2.270781s
+|V|=6024259
+Intersection Graph Marked: 0.667056s
+direct hop total time 0.207603s
+work sharing total time 0.182559s
+CommonGraph total time 0.182559s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 12
+read: 15.143644s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.014342s
+|E|=36233445
+|V|=6024259
+streaming total time 2.465858s
+|V|=6024259
+Intersection Graph Marked: 0.743179s
+direct hop total time 0.224123s
+work sharing total time 0.126381s
+CommonGraph total time 0.126381s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 13
+read: 15.080325s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.010758s
+|E|=36233445
+|V|=6024259
+streaming total time 2.555948s
+|V|=6024259
+Intersection Graph Marked: 0.791840s
+direct hop total time 0.245299s
+work sharing total time 0.158235s
+CommonGraph total time 0.158235s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 14
+read: 15.051485s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.010636s
+|E|=36233445
+|V|=6024259
+streaming total time 1.500182s
+|V|=6024259
+Intersection Graph Marked: 0.843196s
+direct hop total time 0.231287s
+work sharing total time 0.154364s
+CommonGraph total time 0.154364s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 15
+read: 15.048470s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.009299s
+|E|=36233445
+|V|=6024259
+streaming total time 3.208182s
+|V|=6024259
+Intersection Graph Marked: 0.778348s
+direct hop total time 3.140009s
+work sharing total time 2.199208s
+CommonGraph total time 2.199208s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 0
+read: 15.059565s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.009196s
+|E|=36233445
+|V|=6024259
+streaming total time 3.407942s
+|V|=6024259
+Intersection Graph Marked: 0.793212s
+direct hop total time 7.342511s
+work sharing total time 4.848356s
+CommonGraph total time 4.848356s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 1
+read: 15.163606s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.009331s
+|E|=36233445
+|V|=6024259
+streaming total time 4.550545s
+|V|=6024259
+Intersection Graph Marked: 0.758217s
+direct hop total time 7.085960s
+work sharing total time 4.904196s
+CommonGraph total time 4.904196s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 2
+read: 15.087034s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.009844s
+|E|=36233445
+|V|=6024259
+streaming total time 3.598401s
+|V|=6024259
+Intersection Graph Marked: 0.710680s
+direct hop total time 7.106466s
+work sharing total time 4.768302s
+CommonGraph total time 4.768302s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 3
+read: 15.045366s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.010644s
+|E|=36233445
+|V|=6024259
+streaming total time 2.063672s
+|V|=6024259
+Intersection Graph Marked: 0.768124s
+direct hop total time 0.425939s
+work sharing total time 0.278048s
+CommonGraph total time 0.278048s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 4
+read: 15.050388s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.011217s
+|E|=36233445
+|V|=6024259
+streaming total time 3.626538s
+|V|=6024259
+Intersection Graph Marked: 0.648919s
+direct hop total time 6.951412s
+work sharing total time 4.746348s
+CommonGraph total time 4.746348s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 5
+read: 15.066736s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.010293s
+|E|=36233445
+|V|=6024259
+streaming total time 3.418801s
+|V|=6024259
+Intersection Graph Marked: 0.774364s
+direct hop total time 6.482014s
+work sharing total time 4.714599s
+CommonGraph total time 4.714599s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 6
+read: 15.497271s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.010964s
+|E|=36233445
+|V|=6024259
+streaming total time 2.047480s
+|V|=6024259
+Intersection Graph Marked: 0.651768s
+direct hop total time 0.423171s
+work sharing total time 0.243686s
+CommonGraph total time 0.243686s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 7
+read: 15.090159s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.011646s
+|E|=36233445
+|V|=6024259
+streaming total time 3.460365s
+|V|=6024259
+Intersection Graph Marked: 0.678827s
+direct hop total time 6.773391s
+work sharing total time 4.741515s
+CommonGraph total time 4.741515s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 8
+read: 15.086065s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.010874s
+|E|=36233445
+|V|=6024259
+streaming total time 3.701289s
+|V|=6024259
+Intersection Graph Marked: 0.668147s
+direct hop total time 14.312855s
+work sharing total time 4.224850s
+CommonGraph total time 4.224850s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 9
+read: 15.064599s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.010150s
+|E|=36233445
+|V|=6024259
+streaming total time 3.384176s
+|V|=6024259
+Intersection Graph Marked: 0.674220s
+direct hop total time 6.728981s
+work sharing total time 4.351850s
+CommonGraph total time 4.351850s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 10
+read: 15.478854s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.011114s
+|E|=36233445
+|V|=6024259
+streaming total time 2.921254s
+|V|=6024259
+Intersection Graph Marked: 0.785733s
+direct hop total time 7.420048s
+work sharing total time 5.031555s
+CommonGraph total time 5.031555s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 11
+read: 15.061294s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.009262s
+|E|=36233445
+|V|=6024259
+streaming total time 2.125708s
+|V|=6024259
+Intersection Graph Marked: 0.685766s
+direct hop total time 0.442797s
+work sharing total time 0.243193s
+CommonGraph total time 0.243193s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 12
+read: 15.062656s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.011155s
+|E|=36233445
+|V|=6024259
+streaming total time 1.984180s
+|V|=6024259
+Intersection Graph Marked: 0.797678s
+direct hop total time 0.475406s
+work sharing total time 0.280729s
+CommonGraph total time 0.280729s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 13
+read: 15.071188s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.009576s
+|E|=36233445
+|V|=6024259
+streaming total time 2.018508s
+|V|=6024259
+Intersection Graph Marked: 0.637670s
+direct hop total time 0.439240s
+work sharing total time 0.283743s
+CommonGraph total time 0.283743s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 14
+read: 15.082022s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.010455s
+|E|=36233445
+|V|=6024259
+streaming total time 2.107848s
+|V|=6024259
+Intersection Graph Marked: 0.821943s
+direct hop total time 0.440629s
+work sharing total time 0.288942s
+CommonGraph total time 0.288942s
+Running: build/SSWPbaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 15
+read: 15.108086s
+loading graph /home/xyin014/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.010776s
+|E|=36233445
+|V|=6024259
+streaming total time 4.400468s
+|V|=6024259
+Intersection Graph Marked: 0.750051s
+direct hop total time 6.415023s
+work sharing total time 4.441092s
+CommonGraph total time 4.441092s
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 0
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 1
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 2
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 3
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 4
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 5
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 6
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 7
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 8
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 9
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 10
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 11
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 12
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 13
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 14
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 8 0.02 15
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 0
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 1
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 2
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 3
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 4
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 5
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 6
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 7
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 8
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 9
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 10
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 11
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 12
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 13
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 14
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 16 0.01 15
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 0
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 1
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 2
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 3
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 4
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 5
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 6
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 7
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 8
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 9
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 10
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 11
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 12
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 13
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 14
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 32 0.005 15
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 0
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 1
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 2
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 3
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 4
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 5
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 6
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 7
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 8
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 9
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 10
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 11
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 12
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 13
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 14
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
+Running: build/Viterbibaseline /home/xyin014/graph/sx/stack_snap source/sx.txt 64 0.0025 15
+march12.sh: line 29: build/Viterbibaseline: No such file or directory
