@@ -7,9 +7,9 @@ apps=(
 graph_sources=(
     # "/home/xyin014/graph/sx/stack_snap source/sx.txt"
     # "/home/xyin014/graph/wiki/snap_wiki source/wiki_src.txt"
-    "/home/xyin014/graph/or/snap_or source/or.txt"
     "/home/xyin014/graph/wen/snap_wen source/wen.txt"
     "/home/xyin014/graph/dl/snap_dl source/dl_src.txt"
+    "/home/xyin014/graph/or/snap_or source/or.txt"
     "/home/xyin014/graph/ttw/ttw_snap source/TW_queries.txt"
 )
 
