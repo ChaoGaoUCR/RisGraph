@@ -1,0 +1,48 @@
+nohup: ignoring input
+Error: Invalid line "% asym unweighted"
+read: 643.586950s
+loading graph /home/xyin014/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 32, batch_size is 14683651
+read: 0.294163s
+|E|=1468365182
+|V|=41652231
+|V|=41652231
+Intersection Graph Marked: 222.558053s
+528611518 number of Edges in the graph
+Total Time: 653.029602s
+Compute Time: 133.695480s
+Mutation Time: 519.334106s
+Error: Invalid line "% asym unweighted"
+read: 630.499243s
+loading graph /home/xyin014/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 32, batch_size is 14683651
+read: 0.294388s
+|E|=1468365182
+|V|=41652231
+|V|=41652231
+Intersection Graph Marked: 196.468679s
+528611518 number of Edges in the graph
+Total Time: 612.293945s
+Compute Time: 182.001465s
+Mutation Time: 430.292480s
+Error: Invalid line "% asym unweighted"
+read: 654.902649s
+loading graph /home/xyin014/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 32, batch_size is 14683651
+read: 0.297846s
+|E|=1468365182
+|V|=41652231
+|V|=41652231
+Intersection Graph Marked: 210.645256s
+528611518 number of Edges in the graph
+Total Time: 754.850342s
+Compute Time: 328.733765s
+Mutation Time: 426.116577s
+Error: Invalid line "% asym unweighted"
+read: 633.651146s
+loading graph /home/xyin014/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 32, batch_size is 14683651
+read: 0.277461s
+|E|=1468365182
+|V|=41652231
+|V|=41652231
+Intersection Graph Marked: 211.507091s
+528611518 number of Edges in the graph
+Re Computing: 4 543827 1764967
+motivation.sh: line 4: 50560 Killed                  ./build/motivation ~/graph/ttw/ttw_snap source/TW_queries.txt 32 0.01 32
