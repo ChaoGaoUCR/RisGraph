@@ -1971,3 +1971,1071 @@ loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_
 read: 0.064049s
 |E|=327037487
 |V|=8730858
+Re Computing: 8 1279737 839964
+streaming total time 63.682213s
+|V|=8730858
+Intersection Graph Marked: 14.523217s
+Version Time: 1.019267
+direct hop total time 5.751077s
+work sharing total time 3.533204s
+CommonGraph total time 3.533204s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 8 0.02 8
+Error: Invalid line "% bip unweighted"
+read: 133.895925s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 8, batch_size is 6540749
+read: 0.061407s
+|E|=327037487
+|V|=8730858
+streaming total time 68.966858s
+|V|=8730858
+Intersection Graph Marked: 15.888977s
+Version Time: 1.077680
+direct hop total time 4.859401s
+work sharing total time 3.010961s
+CommonGraph total time 3.010961s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 8 0.02 9
+Error: Invalid line "% bip unweighted"
+read: 137.664717s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 8, batch_size is 6540749
+read: 0.063432s
+|E|=327037487
+|V|=8730858
+streaming total time 72.485764s
+|V|=8730858
+Intersection Graph Marked: 15.980621s
+Version Time: 0.010012
+direct hop total time 0.542522s
+work sharing total time 0.487869s
+CommonGraph total time 0.487869s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 8 0.02 10
+Error: Invalid line "% bip unweighted"
+read: 133.899449s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 8, batch_size is 6540749
+read: 0.061723s
+|E|=327037487
+|V|=8730858
+streaming total time 58.569286s
+|V|=8730858
+Intersection Graph Marked: 13.560808s
+Version Time: 0.005720
+direct hop total time 0.437278s
+work sharing total time 0.338118s
+CommonGraph total time 0.338118s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 8 0.02 11
+Error: Invalid line "% bip unweighted"
+read: 134.006663s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 8, batch_size is 6540749
+read: 0.062991s
+|E|=327037487
+|V|=8730858
+streaming total time 70.713242s
+|V|=8730858
+Intersection Graph Marked: 13.983665s
+Version Time: 0.739485
+direct hop total time 5.458925s
+work sharing total time 3.117788s
+CommonGraph total time 3.117788s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 8 0.02 12
+Error: Invalid line "% bip unweighted"
+read: 133.894062s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 8, batch_size is 6540749
+read: 0.062957s
+|E|=327037487
+|V|=8730858
+streaming total time 57.074032s
+|V|=8730858
+Intersection Graph Marked: 14.437045s
+Version Time: 0.009501
+direct hop total time 0.596320s
+work sharing total time 0.421146s
+CommonGraph total time 0.421146s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 8 0.02 13
+Error: Invalid line "% bip unweighted"
+read: 133.943589s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 8, batch_size is 6540749
+read: 0.061631s
+|E|=327037487
+|V|=8730858
+Re Computing: 9 1130615 1212518
+streaming total time 65.873672s
+|V|=8730858
+Intersection Graph Marked: 13.105938s
+Version Time: 0.693723
+direct hop total time 5.254318s
+work sharing total time 3.331051s
+CommonGraph total time 3.331051s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 8 0.02 14
+Error: Invalid line "% bip unweighted"
+read: 133.657407s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 8, batch_size is 6540749
+read: 0.062156s
+|E|=327037487
+|V|=8730858
+streaming total time 66.738297s
+|V|=8730858
+Intersection Graph Marked: 19.243320s
+Version Time: 0.055960
+direct hop total time 0.437178s
+work sharing total time 0.297056s
+CommonGraph total time 0.297056s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 8 0.02 15
+Error: Invalid line "% bip unweighted"
+read: 134.829001s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 8, batch_size is 6540749
+read: 0.061358s
+|E|=327037487
+|V|=8730858
+streaming total time 66.067543s
+|V|=8730858
+Intersection Graph Marked: 15.184608s
+Version Time: 0.005827
+direct hop total time 0.604103s
+work sharing total time 0.346127s
+CommonGraph total time 0.346127s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 16 0.01 0
+Error: Invalid line "% bip unweighted"
+read: 133.938161s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 16, batch_size is 3270374
+read: 0.062908s
+|E|=327037487
+|V|=8730858
+streaming total time 69.250938s
+|V|=8730858
+Intersection Graph Marked: 12.601032s
+Version Time: 1.090002
+direct hop total time 8.748321s
+work sharing total time 5.199588s
+CommonGraph total time 5.199588s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 16 0.01 1
+Error: Invalid line "% bip unweighted"
+read: 133.595013s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 16, batch_size is 3270374
+read: 0.061911s
+|E|=327037487
+|V|=8730858
+streaming total time 71.165573s
+|V|=8730858
+Intersection Graph Marked: 12.763334s
+Version Time: 0.868097
+direct hop total time 8.605238s
+work sharing total time 5.218317s
+CommonGraph total time 5.218317s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 16 0.01 2
+Error: Invalid line "% bip unweighted"
+read: 133.672282s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 16, batch_size is 3270374
+read: 0.063566s
+|E|=327037487
+|V|=8730858
+streaming total time 63.139210s
+|V|=8730858
+Intersection Graph Marked: 17.886236s
+Version Time: 0.006019
+direct hop total time 0.943584s
+work sharing total time 0.553584s
+CommonGraph total time 0.553584s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 16 0.01 3
+Error: Invalid line "% bip unweighted"
+read: 135.018621s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 16, batch_size is 3270374
+read: 0.062730s
+|E|=327037487
+|V|=8730858
+streaming total time 50.559395s
+|V|=8730858
+Intersection Graph Marked: 13.398131s
+Version Time: 0.568432
+direct hop total time 9.421604s
+work sharing total time 5.617207s
+CommonGraph total time 5.617207s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 16 0.01 4
+Error: Invalid line "% bip unweighted"
+read: 134.030079s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 16, batch_size is 3270374
+read: 0.062048s
+|E|=327037487
+|V|=8730858
+streaming total time 72.700676s
+|V|=8730858
+Intersection Graph Marked: 17.357645s
+Version Time: 0.005829
+direct hop total time 0.837641s
+work sharing total time 0.572578s
+CommonGraph total time 0.572578s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 16 0.01 5
+Error: Invalid line "% bip unweighted"
+read: 140.481014s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 16, batch_size is 3270374
+read: 0.062501s
+|E|=327037487
+|V|=8730858
+streaming total time 58.685238s
+|V|=8730858
+Intersection Graph Marked: 13.571968s
+Version Time: 0.005781
+direct hop total time 0.797610s
+work sharing total time 0.576036s
+CommonGraph total time 0.576036s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 16 0.01 6
+Error: Invalid line "% bip unweighted"
+read: 134.001284s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 16, batch_size is 3270374
+read: 0.062680s
+|E|=327037487
+|V|=8730858
+streaming total time 70.617668s
+|V|=8730858
+Intersection Graph Marked: 12.578075s
+Version Time: 0.571557
+direct hop total time 9.460446s
+work sharing total time 6.022111s
+CommonGraph total time 6.022111s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 16 0.01 7
+Error: Invalid line "% bip unweighted"
+read: 133.658083s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 16, batch_size is 3270374
+read: 0.063318s
+|E|=327037487
+|V|=8730858
+Re Computing: 9 1530021 1145556
+streaming total time 76.362274s
+|V|=8730858
+Intersection Graph Marked: 13.012246s
+Version Time: 1.039437
+direct hop total time 10.197724s
+work sharing total time 6.015963s
+CommonGraph total time 6.015963s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 16 0.01 8
+Error: Invalid line "% bip unweighted"
+read: 133.853550s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 16, batch_size is 3270374
+read: 0.062386s
+|E|=327037487
+|V|=8730858
+streaming total time 72.766006s
+|V|=8730858
+Intersection Graph Marked: 12.767406s
+Version Time: 0.890203
+direct hop total time 9.007868s
+work sharing total time 4.992928s
+CommonGraph total time 4.992928s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 16 0.01 9
+Error: Invalid line "% bip unweighted"
+read: 133.759831s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 16, batch_size is 3270374
+read: 0.061926s
+|E|=327037487
+|V|=8730858
+streaming total time 64.608078s
+|V|=8730858
+Intersection Graph Marked: 15.479471s
+Version Time: 0.005959
+direct hop total time 1.063768s
+work sharing total time 0.574483s
+CommonGraph total time 0.574483s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 16 0.01 10
+Error: Invalid line "% bip unweighted"
+read: 133.827221s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 16, batch_size is 3270374
+read: 0.061876s
+|E|=327037487
+|V|=8730858
+streaming total time 49.056866s
+|V|=8730858
+Intersection Graph Marked: 13.999216s
+Version Time: 0.005807
+direct hop total time 0.817144s
+work sharing total time 0.568136s
+CommonGraph total time 0.568136s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 16 0.01 11
+Error: Invalid line "% bip unweighted"
+read: 133.914550s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 16, batch_size is 3270374
+read: 0.062485s
+|E|=327037487
+|V|=8730858
+streaming total time 72.049316s
+|V|=8730858
+Intersection Graph Marked: 15.296199s
+Version Time: 0.593073
+direct hop total time 11.576708s
+work sharing total time 5.647185s
+CommonGraph total time 5.647185s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 16 0.01 12
+Error: Invalid line "% bip unweighted"
+read: 136.988234s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 16, batch_size is 3270374
+read: 0.063501s
+|E|=327037487
+|V|=8730858
+streaming total time 58.507774s
+|V|=8730858
+Intersection Graph Marked: 12.932794s
+Version Time: 0.005829
+direct hop total time 0.830253s
+work sharing total time 0.497919s
+CommonGraph total time 0.497919s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 16 0.01 13
+Error: Invalid line "% bip unweighted"
+read: 133.995479s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 16, batch_size is 3270374
+read: 0.063823s
+|E|=327037487
+|V|=8730858
+Re Computing: 9 1005461 1167126
+streaming total time 67.798393s
+|V|=8730858
+Intersection Graph Marked: 12.785807s
+Version Time: 0.677695
+direct hop total time 9.076336s
+work sharing total time 5.713866s
+CommonGraph total time 5.713866s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 16 0.01 14
+Error: Invalid line "% bip unweighted"
+read: 133.665141s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 16, batch_size is 3270374
+read: 0.062281s
+|E|=327037487
+|V|=8730858
+streaming total time 50.655190s
+|V|=8730858
+Intersection Graph Marked: 12.997838s
+Version Time: 0.005824
+direct hop total time 0.828315s
+work sharing total time 0.570113s
+CommonGraph total time 0.570113s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 16 0.01 15
+Error: Invalid line "% bip unweighted"
+read: 133.948243s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 16, batch_size is 3270374
+read: 0.062860s
+|E|=327037487
+|V|=8730858
+streaming total time 64.864532s
+|V|=8730858
+Intersection Graph Marked: 16.858982s
+Version Time: 0.005780
+direct hop total time 0.814593s
+work sharing total time 0.508962s
+CommonGraph total time 0.508962s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 32 0.005 0
+Error: Invalid line "% bip unweighted"
+read: 133.606264s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 32, batch_size is 1635187
+read: 0.062296s
+|E|=327037487
+|V|=8730858
+streaming total time 52.856628s
+|V|=8730858
+Intersection Graph Marked: 16.056552s
+Version Time: 0.893275
+direct hop total time 18.003202s
+work sharing total time 10.131719s
+CommonGraph total time 10.131719s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 32 0.005 1
+Error: Invalid line "% bip unweighted"
+read: 133.983317s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 32, batch_size is 1635187
+read: 0.062444s
+|E|=327037487
+|V|=8730858
+streaming total time 67.620369s
+|V|=8730858
+Intersection Graph Marked: 12.975155s
+Version Time: 0.881567
+direct hop total time 15.851502s
+work sharing total time 9.414073s
+CommonGraph total time 9.414073s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 32 0.005 2
+Error: Invalid line "% bip unweighted"
+read: 133.665998s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 32, batch_size is 1635187
+read: 0.063454s
+|E|=327037487
+|V|=8730858
+streaming total time 62.198227s
+|V|=8730858
+Intersection Graph Marked: 16.264233s
+Version Time: 0.005845
+direct hop total time 1.566260s
+work sharing total time 0.921336s
+CommonGraph total time 0.921336s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 32 0.005 3
+Error: Invalid line "% bip unweighted"
+read: 133.823703s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 32, batch_size is 1635187
+read: 0.062344s
+|E|=327037487
+|V|=8730858
+streaming total time 49.472889s
+|V|=8730858
+Intersection Graph Marked: 12.582556s
+Version Time: 0.573692
+direct hop total time 16.487795s
+work sharing total time 9.437525s
+CommonGraph total time 9.437525s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 32 0.005 4
+Error: Invalid line "% bip unweighted"
+read: 134.168493s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 32, batch_size is 1635187
+read: 0.061902s
+|E|=327037487
+|V|=8730858
+streaming total time 65.551872s
+|V|=8730858
+Intersection Graph Marked: 18.177012s
+Version Time: 0.005692
+direct hop total time 1.579714s
+work sharing total time 1.293855s
+CommonGraph total time 1.293855s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 32 0.005 5
+Error: Invalid line "% bip unweighted"
+read: 133.873768s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 32, batch_size is 1635187
+read: 0.062129s
+|E|=327037487
+|V|=8730858
+streaming total time 56.848732s
+|V|=8730858
+Intersection Graph Marked: 14.056123s
+Version Time: 0.011440
+direct hop total time 1.988022s
+work sharing total time 1.167025s
+CommonGraph total time 1.167025s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 32 0.005 6
+Error: Invalid line "% bip unweighted"
+read: 134.437049s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 32, batch_size is 1635187
+read: 0.062657s
+|E|=327037487
+|V|=8730858
+streaming total time 63.387108s
+|V|=8730858
+Intersection Graph Marked: 13.591353s
+Version Time: 0.582723
+direct hop total time 17.773989s
+work sharing total time 11.072939s
+CommonGraph total time 11.072939s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 32 0.005 7
+Error: Invalid line "% bip unweighted"
+read: 133.727132s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 32, batch_size is 1635187
+read: 0.062861s
+|E|=327037487
+|V|=8730858
+Re Computing: 9 1539580 1208120
+streaming total time 72.538673s
+|V|=8730858
+Intersection Graph Marked: 13.175545s
+Version Time: 0.840774
+direct hop total time 20.285315s
+work sharing total time 11.682450s
+CommonGraph total time 11.682450s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 32 0.005 8
+Error: Invalid line "% bip unweighted"
+read: 133.600614s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 32, batch_size is 1635187
+read: 0.061191s
+|E|=327037487
+|V|=8730858
+streaming total time 51.556633s
+|V|=8730858
+Intersection Graph Marked: 13.806754s
+Version Time: 0.974952
+direct hop total time 18.447590s
+work sharing total time 9.822227s
+CommonGraph total time 9.822227s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 32 0.005 9
+Error: Invalid line "% bip unweighted"
+read: 134.656767s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 32, batch_size is 1635187
+read: 0.063183s
+|E|=327037487
+|V|=8730858
+streaming total time 49.752903s
+|V|=8730858
+Intersection Graph Marked: 15.224338s
+Version Time: 0.010185
+direct hop total time 1.553721s
+work sharing total time 0.920000s
+CommonGraph total time 0.920000s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 32 0.005 10
+Error: Invalid line "% bip unweighted"
+read: 133.668668s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 32, batch_size is 1635187
+read: 0.062041s
+|E|=327037487
+|V|=8730858
+streaming total time 49.150536s
+|V|=8730858
+Intersection Graph Marked: 15.017311s
+Version Time: 0.006119
+direct hop total time 1.532862s
+work sharing total time 0.886921s
+CommonGraph total time 0.886921s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 32 0.005 11
+Error: Invalid line "% bip unweighted"
+read: 133.817929s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 32, batch_size is 1635187
+read: 0.061827s
+|E|=327037487
+|V|=8730858
+streaming total time 50.001839s
+|V|=8730858
+Intersection Graph Marked: 13.344658s
+Version Time: 0.577674
+direct hop total time 21.743517s
+work sharing total time 10.003711s
+CommonGraph total time 10.003711s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 32 0.005 12
+Error: Invalid line "% bip unweighted"
+read: 134.161196s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 32, batch_size is 1635187
+read: 0.063021s
+|E|=327037487
+|V|=8730858
+streaming total time 59.764099s
+|V|=8730858
+Intersection Graph Marked: 14.117034s
+Version Time: 0.056034
+direct hop total time 1.578484s
+work sharing total time 0.912905s
+CommonGraph total time 0.912905s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 32 0.005 13
+Error: Invalid line "% bip unweighted"
+read: 133.874654s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 32, batch_size is 1635187
+read: 0.062072s
+|E|=327037487
+|V|=8730858
+Re Computing: 10 1567751 1191272
+streaming total time 68.697533s
+|V|=8730858
+Intersection Graph Marked: 13.751308s
+Version Time: 0.768195
+direct hop total time 18.036396s
+work sharing total time 10.791481s
+CommonGraph total time 10.791481s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 32 0.005 14
+Error: Invalid line "% bip unweighted"
+read: 134.022804s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 32, batch_size is 1635187
+read: 0.067856s
+|E|=327037487
+|V|=8730858
+streaming total time 53.830776s
+|V|=8730858
+Intersection Graph Marked: 14.614585s
+Version Time: 0.005689
+direct hop total time 1.532091s
+work sharing total time 0.891669s
+CommonGraph total time 0.891669s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 32 0.005 15
+Error: Invalid line "% bip unweighted"
+read: 134.280650s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 32, batch_size is 1635187
+read: 0.062228s
+|E|=327037487
+|V|=8730858
+streaming total time 44.121727s
+|V|=8730858
+Intersection Graph Marked: 13.914535s
+Version Time: 0.005784
+direct hop total time 1.586410s
+work sharing total time 0.891332s
+CommonGraph total time 0.891332s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 64 0.0025 0
+Error: Invalid line "% bip unweighted"
+read: 133.936015s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 64, batch_size is 817593
+read: 0.062357s
+|E|=327037487
+|V|=8730858
+streaming total time 50.908276s
+|V|=8730858
+Intersection Graph Marked: 13.612579s
+Version Time: 0.890910
+direct hop total time 30.465841s
+work sharing total time 17.877668s
+CommonGraph total time 17.877668s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 64 0.0025 1
+Error: Invalid line "% bip unweighted"
+read: 134.250160s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 64, batch_size is 817593
+read: 0.062645s
+|E|=327037487
+|V|=8730858
+streaming total time 49.306908s
+|V|=8730858
+Intersection Graph Marked: 12.694576s
+Version Time: 0.863061
+direct hop total time 30.920937s
+work sharing total time 18.516123s
+CommonGraph total time 18.516123s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 64 0.0025 2
+Error: Invalid line "% bip unweighted"
+read: 134.201747s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 64, batch_size is 817593
+read: 0.062817s
+|E|=327037487
+|V|=8730858
+streaming total time 37.973984s
+|V|=8730858
+Intersection Graph Marked: 13.172396s
+Version Time: 0.008502
+direct hop total time 3.097223s
+work sharing total time 1.725744s
+CommonGraph total time 1.725744s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 64 0.0025 3
+Error: Invalid line "% bip unweighted"
+read: 134.032439s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 64, batch_size is 817593
+read: 0.061946s
+|E|=327037487
+|V|=8730858
+streaming total time 45.942230s
+|V|=8730858
+Intersection Graph Marked: 13.277367s
+Version Time: 0.731508
+direct hop total time 33.544296s
+work sharing total time 19.333307s
+CommonGraph total time 19.333307s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 64 0.0025 4
+Error: Invalid line "% bip unweighted"
+read: 134.033924s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 64, batch_size is 817593
+read: 0.061728s
+|E|=327037487
+|V|=8730858
+streaming total time 37.333569s
+|V|=8730858
+Intersection Graph Marked: 12.906712s
+Version Time: 0.005844
+direct hop total time 3.032256s
+work sharing total time 1.737832s
+CommonGraph total time 1.737832s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 64 0.0025 5
+Error: Invalid line "% bip unweighted"
+read: 133.805343s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 64, batch_size is 817593
+read: 0.063004s
+|E|=327037487
+|V|=8730858
+streaming total time 34.262260s
+|V|=8730858
+Intersection Graph Marked: 13.066400s
+Version Time: 0.005820
+direct hop total time 3.033508s
+work sharing total time 1.699287s
+CommonGraph total time 1.699287s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 64 0.0025 6
+Error: Invalid line "% bip unweighted"
+read: 133.834506s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 64, batch_size is 817593
+read: 0.062124s
+|E|=327037487
+|V|=8730858
+streaming total time 49.140308s
+|V|=8730858
+Intersection Graph Marked: 13.142075s
+Version Time: 0.572092
+direct hop total time 36.213425s
+work sharing total time 22.386972s
+CommonGraph total time 22.386972s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 64 0.0025 7
+Error: Invalid line "% bip unweighted"
+read: 134.026682s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 64, batch_size is 817593
+read: 0.061498s
+|E|=327037487
+|V|=8730858
+Re Computing: 9 1489552 1193179
+streaming total time 52.123905s
+|V|=8730858
+Intersection Graph Marked: 14.017956s
+Version Time: 0.805877
+direct hop total time 38.447948s
+work sharing total time 22.861862s
+CommonGraph total time 22.861862s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 64 0.0025 8
+Error: Invalid line "% bip unweighted"
+read: 133.954359s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 64, batch_size is 817593
+read: 0.063394s
+|E|=327037487
+|V|=8730858
+streaming total time 54.813519s
+|V|=8730858
+Intersection Graph Marked: 14.887901s
+Version Time: 0.898344
+direct hop total time 36.257000s
+work sharing total time 19.548155s
+CommonGraph total time 19.548155s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 64 0.0025 9
+Error: Invalid line "% bip unweighted"
+read: 135.023427s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 64, batch_size is 817593
+read: 0.062298s
+|E|=327037487
+|V|=8730858
+streaming total time 36.949585s
+|V|=8730858
+Intersection Graph Marked: 13.926382s
+Version Time: 0.005790
+direct hop total time 3.032070s
+work sharing total time 1.666210s
+CommonGraph total time 1.666210s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 64 0.0025 10
+Error: Invalid line "% bip unweighted"
+read: 134.002352s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 64, batch_size is 817593
+read: 0.061385s
+|E|=327037487
+|V|=8730858
+streaming total time 35.107056s
+|V|=8730858
+Intersection Graph Marked: 13.145625s
+Version Time: 0.005756
+direct hop total time 4.103756s
+work sharing total time 2.666177s
+CommonGraph total time 2.666177s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 64 0.0025 11
+Error: Invalid line "% bip unweighted"
+read: 137.049326s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 64, batch_size is 817593
+read: 0.063570s
+|E|=327037487
+|V|=8730858
+streaming total time 47.205811s
+|V|=8730858
+Intersection Graph Marked: 12.807258s
+Version Time: 0.732479
+direct hop total time 43.400845s
+work sharing total time 20.284679s
+CommonGraph total time 20.284679s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 64 0.0025 12
+Error: Invalid line "% bip unweighted"
+read: 134.811055s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 64, batch_size is 817593
+read: 0.069993s
+|E|=327037487
+|V|=8730858
+streaming total time 44.915936s
+|V|=8730858
+Intersection Graph Marked: 17.335671s
+Version Time: 0.005829
+direct hop total time 3.896389s
+work sharing total time 2.165195s
+CommonGraph total time 2.165195s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 64 0.0025 13
+Error: Invalid line "% bip unweighted"
+read: 135.837392s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 64, batch_size is 817593
+read: 0.064293s
+|E|=327037487
+|V|=8730858
+Re Computing: 10 1548541 1205852
+streaming total time 70.979134s
+|V|=8730858
+Intersection Graph Marked: 13.530148s
+Version Time: 0.695358
+direct hop total time 36.028625s
+work sharing total time 22.046959s
+CommonGraph total time 22.046959s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 64 0.0025 14
+Error: Invalid line "% bip unweighted"
+read: 133.898621s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 64, batch_size is 817593
+read: 0.062468s
+|E|=327037487
+|V|=8730858
+streaming total time 41.359138s
+|V|=8730858
+Intersection Graph Marked: 13.530892s
+Version Time: 0.005616
+direct hop total time 3.041096s
+work sharing total time 1.667272s
+CommonGraph total time 1.667272s
+Running: build/BFSbaseline /home/xyin014/graph/or/snap_or source/or.txt 64 0.0025 15
+Error: Invalid line "% bip unweighted"
+read: 134.004141s
+loading graph /home/xyin014/graph/or/snap_or, root file is source/or.txt, batch_num is 64, batch_size is 817593
+read: 0.062467s
+|E|=327037487
+|V|=8730858
+streaming total time 37.993927s
+|V|=8730858
+Intersection Graph Marked: 13.073418s
+Version Time: 0.005862
+direct hop total time 3.024430s
+work sharing total time 1.682662s
+CommonGraph total time 1.682662s
+Running: build/BFSbaseline /home/xyin014/graph/ttw/ttw_snap source/TW_queries.txt 8 0.02 0
+Error: Invalid line "% asym unweighted"
+read: 629.278994s
+loading graph /home/xyin014/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 8, batch_size is 29367303
+read: 0.293225s
+|E|=1468365182
+|V|=41652231
+streaming total time 362.555054s
+|V|=41652231
+Intersection Graph Marked: 33.802945s
+Version Time: 5.246614
+direct hop total time 16.891956s
+work sharing total time 10.704804s
+CommonGraph total time 10.704804s
+Running: build/BFSbaseline /home/xyin014/graph/ttw/ttw_snap source/TW_queries.txt 8 0.02 1
+Error: Invalid line "% asym unweighted"
+read: 628.522135s
+loading graph /home/xyin014/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 8, batch_size is 29367303
+read: 0.295829s
+|E|=1468365182
+|V|=41652231
+streaming total time 334.304657s
+|V|=41652231
+Intersection Graph Marked: 33.475178s
+Version Time: 5.162859
+direct hop total time 17.174259s
+work sharing total time 10.461102s
+CommonGraph total time 10.461102s
+Running: build/BFSbaseline /home/xyin014/graph/ttw/ttw_snap source/TW_queries.txt 8 0.02 2
+Error: Invalid line "% asym unweighted"
+read: 627.338454s
+loading graph /home/xyin014/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 8, batch_size is 29367303
+read: 0.287663s
+|E|=1468365182
+|V|=41652231
+streaming total time 320.564606s
+|V|=41652231
+Intersection Graph Marked: 33.621181s
+Version Time: 5.204433
+direct hop total time 18.446932s
+work sharing total time 11.574929s
+CommonGraph total time 11.574929s
+Running: build/BFSbaseline /home/xyin014/graph/ttw/ttw_snap source/TW_queries.txt 8 0.02 3
+Error: Invalid line "% asym unweighted"
+read: 624.103189s
+loading graph /home/xyin014/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 8, batch_size is 29367303
+read: 0.297271s
+|E|=1468365182
+|V|=41652231
+streaming total time 334.151093s
+|V|=41652231
+Intersection Graph Marked: 34.300925s
+Version Time: 5.583971
+direct hop total time 18.472813s
+work sharing total time 11.770424s
+CommonGraph total time 11.770424s
+Running: build/BFSbaseline /home/xyin014/graph/ttw/ttw_snap source/TW_queries.txt 8 0.02 4
+Error: Invalid line "% asym unweighted"
+read: 625.655722s
+loading graph /home/xyin014/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 8, batch_size is 29367303
+read: 0.290344s
+|E|=1468365182
+|V|=41652231
+streaming total time 339.029846s
+|V|=41652231
+Intersection Graph Marked: 33.332542s
+Version Time: 3.822898
+direct hop total time 15.916508s
+work sharing total time 9.946202s
+CommonGraph total time 9.946202s
+Running: build/BFSbaseline /home/xyin014/graph/ttw/ttw_snap source/TW_queries.txt 8 0.02 5
+Error: Invalid line "% asym unweighted"
+read: 622.686322s
+loading graph /home/xyin014/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 8, batch_size is 29367303
+read: 0.290670s
+|E|=1468365182
+|V|=41652231
+streaming total time 343.395172s
+|V|=41652231
+Intersection Graph Marked: 33.356267s
+Version Time: 5.124274
+direct hop total time 16.211149s
+work sharing total time 10.131116s
+CommonGraph total time 10.131116s
+Running: build/BFSbaseline /home/xyin014/graph/ttw/ttw_snap source/TW_queries.txt 8 0.02 6
+Error: Invalid line "% asym unweighted"
+read: 622.691802s
+loading graph /home/xyin014/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 8, batch_size is 29367303
+read: 0.297080s
+|E|=1468365182
+|V|=41652231
+streaming total time 314.341248s
+|V|=41652231
+Intersection Graph Marked: 33.303987s
+Version Time: 0.025610
+direct hop total time 3.525570s
+work sharing total time 2.078043s
+CommonGraph total time 2.078043s
+Running: build/BFSbaseline /home/xyin014/graph/ttw/ttw_snap source/TW_queries.txt 8 0.02 7
+Error: Invalid line "% asym unweighted"
+read: 625.238773s
+loading graph /home/xyin014/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 8, batch_size is 29367303
+read: 0.293914s
+|E|=1468365182
+|V|=41652231
+streaming total time 318.417206s
+|V|=41652231
+Intersection Graph Marked: 33.856236s
+Version Time: 5.184625
+direct hop total time 16.594378s
+work sharing total time 9.877584s
+CommonGraph total time 9.877584s
+Running: build/BFSbaseline /home/xyin014/graph/ttw/ttw_snap source/TW_queries.txt 8 0.02 8
+Error: Invalid line "% asym unweighted"
+read: 627.163208s
+loading graph /home/xyin014/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 8, batch_size is 29367303
+read: 0.304833s
+|E|=1468365182
+|V|=41652231
+streaming total time 325.584015s
+|V|=41652231
+Intersection Graph Marked: 33.108740s
+Version Time: 5.246867
+direct hop total time 16.394238s
+work sharing total time 10.112266s
+CommonGraph total time 10.112266s
+Running: build/BFSbaseline /home/xyin014/graph/ttw/ttw_snap source/TW_queries.txt 8 0.02 9
+Error: Invalid line "% asym unweighted"
+read: 622.744454s
+loading graph /home/xyin014/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 8, batch_size is 29367303
+read: 0.303356s
+|E|=1468365182
+|V|=41652231
+streaming total time 324.694519s
+|V|=41652231
+Intersection Graph Marked: 33.764221s
+Version Time: 5.967340
+direct hop total time 22.854340s
+work sharing total time 12.411723s
+CommonGraph total time 12.411723s
+Running: build/BFSbaseline /home/xyin014/graph/ttw/ttw_snap source/TW_queries.txt 8 0.02 10
+Error: Invalid line "% asym unweighted"
+read: 624.564252s
+loading graph /home/xyin014/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 8, batch_size is 29367303
+read: 0.289323s
+|E|=1468365182
+|V|=41652231
+streaming total time 315.354645s
+|V|=41652231
+Intersection Graph Marked: 33.846995s
+Version Time: 3.912402
+direct hop total time 17.791878s
+work sharing total time 10.670231s
+CommonGraph total time 10.670231s
+Running: build/BFSbaseline /home/xyin014/graph/ttw/ttw_snap source/TW_queries.txt 8 0.02 11
+Error: Invalid line "% asym unweighted"
+read: 626.714586s
+loading graph /home/xyin014/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 8, batch_size is 29367303
+read: 0.309030s
+|E|=1468365182
+|V|=41652231
+Re Computing: 3 1206302 5575062
+streaming total time 307.027893s
+|V|=41652231
+Intersection Graph Marked: 33.705218s
+Version Time: 5.289711
+direct hop total time 17.154949s
+work sharing total time 10.615580s
+CommonGraph total time 10.615580s
+Running: build/BFSbaseline /home/xyin014/graph/ttw/ttw_snap source/TW_queries.txt 8 0.02 12
+Error: Invalid line "% asym unweighted"
+read: 625.777957s
+loading graph /home/xyin014/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 8, batch_size is 29367303
+read: 0.291076s
+|E|=1468365182
+|V|=41652231
+streaming total time 312.718353s
+|V|=41652231
+Intersection Graph Marked: 33.894288s
+Version Time: 0.025975
+direct hop total time 84.963409s
+work sharing total time 56.890369s
+CommonGraph total time 56.890369s
+Running: build/BFSbaseline /home/xyin014/graph/ttw/ttw_snap source/TW_queries.txt 8 0.02 13
+Error: Invalid line "% asym unweighted"
+read: 636.979332s
+loading graph /home/xyin014/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 8, batch_size is 29367303
+read: 0.293371s
+|E|=1468365182
+|V|=41652231
+streaming total time 324.561432s
+|V|=41652231
+Intersection Graph Marked: 33.716799s
+Version Time: 3.712262
+direct hop total time 16.939583s
+work sharing total time 10.293361s
+CommonGraph total time 10.293361s
+Running: build/BFSbaseline /home/xyin014/graph/ttw/ttw_snap source/TW_queries.txt 8 0.02 14
+Error: Invalid line "% asym unweighted"
+read: 630.383910s
+loading graph /home/xyin014/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 8, batch_size is 29367303
+read: 0.301072s
+|E|=1468365182
+|V|=41652231
+streaming total time 314.436096s
+|V|=41652231
+Intersection Graph Marked: 33.470845s
+Version Time: 5.296751
+direct hop total time 16.963253s
+work sharing total time 9.981114s
+CommonGraph total time 9.981114s
+Running: build/BFSbaseline /home/xyin014/graph/ttw/ttw_snap source/TW_queries.txt 8 0.02 15
+Error: Invalid line "% asym unweighted"
+read: 623.538550s
+loading graph /home/xyin014/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 8, batch_size is 29367303
+read: 0.336603s
+|E|=1468365182
+|V|=41652231
+streaming total time 311.038239s
+|V|=41652231
+Intersection Graph Marked: 33.812451s
+Version Time: 5.717908
+direct hop total time 16.419918s
+work sharing total time 9.800691s
+CommonGraph total time 9.800691s
+Running: build/BFSbaseline /home/xyin014/graph/ttw/ttw_snap source/TW_queries.txt 16 0.01 0
+Error: Invalid line "% asym unweighted"
+read: 624.488638s
+loading graph /home/xyin014/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 16, batch_size is 14683651
+read: 0.290806s
+|E|=1468365182
+|V|=41652231
+streaming total time 328.399750s
+|V|=41652231
+Intersection Graph Marked: 33.597395s
+Version Time: 5.281801
+direct hop total time 31.356768s
+work sharing total time 18.180000s
+CommonGraph total time 18.180000s
+Running: build/BFSbaseline /home/xyin014/graph/ttw/ttw_snap source/TW_queries.txt 16 0.01 1
+Error: Invalid line "% asym unweighted"
+read: 623.931851s
+loading graph /home/xyin014/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 16, batch_size is 14683651
+read: 0.295284s
+|E|=1468365182
+|V|=41652231
+streaming total time 322.106171s
+|V|=41652231
+Intersection Graph Marked: 33.421611s
+Version Time: 5.202752
+direct hop total time 32.655682s
+work sharing total time 18.054314s
+CommonGraph total time 18.054314s
+Running: build/BFSbaseline /home/xyin014/graph/ttw/ttw_snap source/TW_queries.txt 16 0.01 2
+Error: Invalid line "% asym unweighted"
+read: 623.706148s
+loading graph /home/xyin014/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 16, batch_size is 14683651
+read: 0.293429s
+|E|=1468365182
+|V|=41652231
+streaming total time 317.781433s
+|V|=41652231
+Intersection Graph Marked: 33.694467s
+Version Time: 5.219009
+direct hop total time 34.776226s
+work sharing total time 20.244228s
+CommonGraph total time 20.244228s
+Running: build/BFSbaseline /home/xyin014/graph/ttw/ttw_snap source/TW_queries.txt 16 0.01 3
+Error: Invalid line "% asym unweighted"
