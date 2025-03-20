@@ -1,0 +1,2094 @@
+nohup: ignoring input
+Running: build/index-bfs /home/cgao037/graph/sx/stack_snap source/sx.txt 8 0.01
+read: 15.429180s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 362334
+read: 0.011590s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 5.374603s
+Number of Edges in Union Graph is 36233445
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 6.482159s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 7881395
+ Percentage of core graph edge: 21.75
+Common Graph Edges: 30436101
+Graph Size: 30436101, Edge Count For Version 666 is 30436101
+Forward Time: 5.985779s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 7299339
+ Percentage of core graph edge: 23.98
+Merged Set Size: 9176503
+------------SnapShot 0 Begins--------------
+|V|=6024259
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 99.43%
+------------SnapShot 2 Begins--------------
+|V|=6024259
+Correct Prediction: 99.28%
+------------SnapShot 3 Begins--------------
+|V|=6024259
+Correct Prediction: 99.49%
+------------SnapShot 4 Begins--------------
+|V|=6024259
+Correct Prediction: 99.51%
+------------SnapShot 5 Begins--------------
+|V|=6024259
+Correct Prediction: 99.45%
+------------SnapShot 6 Begins--------------
+|V|=6024259
+Correct Prediction: 99.35%
+------------SnapShot 7 Begins--------------
+|V|=6024259
+Correct Prediction: 99.34%
+------------SnapShot 8 Begins--------------
+|V|=6024259
+Correct Prediction: 97.75%
+Running: build/index-bfs /home/cgao037/graph/sx/stack_snap source/sx.txt 16 0.005
+read: 15.343801s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 181167
+read: 0.010568s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 5.555491s
+Number of Edges in Union Graph is 36233445
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 6.333135s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 7881182
+ Percentage of core graph edge: 21.75
+Common Graph Edges: 30436101
+Graph Size: 30436101, Edge Count For Version 666 is 30436101
+Forward Time: 5.969731s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 7299205
+ Percentage of core graph edge: 23.98
+Merged Set Size: 9164443
+------------SnapShot 0 Begins--------------
+|V|=6024259
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 99.66%
+------------SnapShot 2 Begins--------------
+|V|=6024259
+Correct Prediction: 99.73%
+------------SnapShot 3 Begins--------------
+|V|=6024259
+Correct Prediction: 99.67%
+------------SnapShot 4 Begins--------------
+|V|=6024259
+Correct Prediction: 99.65%
+------------SnapShot 5 Begins--------------
+|V|=6024259
+Correct Prediction: 99.75%
+------------SnapShot 6 Begins--------------
+|V|=6024259
+Correct Prediction: 99.73%
+------------SnapShot 7 Begins--------------
+|V|=6024259
+Correct Prediction: 99.76%
+------------SnapShot 8 Begins--------------
+|V|=6024259
+Correct Prediction: 99.75%
+------------SnapShot 9 Begins--------------
+|V|=6024259
+Correct Prediction: 99.73%
+------------SnapShot 10 Begins--------------
+|V|=6024259
+Correct Prediction: 99.70%
+------------SnapShot 11 Begins--------------
+|V|=6024259
+Correct Prediction: 99.58%
+------------SnapShot 12 Begins--------------
+|V|=6024259
+Correct Prediction: 99.73%
+------------SnapShot 13 Begins--------------
+|V|=6024259
+Correct Prediction: 99.54%
+------------SnapShot 14 Begins--------------
+|V|=6024259
+Correct Prediction: 99.57%
+------------SnapShot 15 Begins--------------
+|V|=6024259
+Correct Prediction: 98.05%
+------------SnapShot 16 Begins--------------
+|V|=6024259
+Correct Prediction: 99.65%
+Running: build/index-bfs /home/cgao037/graph/sx/stack_snap source/sx.txt 32 0.0025
+read: 15.297802s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 90583
+read: 0.011681s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 5.410680s
+Number of Edges in Union Graph is 36233445
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 6.422355s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 7879487
+ Percentage of core graph edge: 21.75
+Common Graph Edges: 30436133
+Graph Size: 30436133, Edge Count For Version 666 is 30436133
+Forward Time: 6.160083s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 7304845
+ Percentage of core graph edge: 24.00
+Merged Set Size: 9156671
+------------SnapShot 0 Begins--------------
+|V|=6024259
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 99.84%
+------------SnapShot 2 Begins--------------
+|V|=6024259
+Correct Prediction: 99.81%
+------------SnapShot 3 Begins--------------
+|V|=6024259
+Correct Prediction: 99.86%
+------------SnapShot 4 Begins--------------
+|V|=6024259
+Correct Prediction: 99.88%
+------------SnapShot 5 Begins--------------
+|V|=6024259
+Correct Prediction: 99.86%
+------------SnapShot 6 Begins--------------
+|V|=6024259
+Correct Prediction: 99.81%
+------------SnapShot 7 Begins--------------
+|V|=6024259
+Correct Prediction: 99.81%
+------------SnapShot 8 Begins--------------
+|V|=6024259
+Correct Prediction: 99.82%
+------------SnapShot 9 Begins--------------
+|V|=6024259
+Correct Prediction: 99.88%
+------------SnapShot 10 Begins--------------
+|V|=6024259
+Correct Prediction: 99.87%
+------------SnapShot 11 Begins--------------
+|V|=6024259
+Correct Prediction: 99.86%
+------------SnapShot 12 Begins--------------
+|V|=6024259
+Correct Prediction: 99.87%
+------------SnapShot 13 Begins--------------
+|V|=6024259
+Correct Prediction: 99.88%
+------------SnapShot 14 Begins--------------
+|V|=6024259
+Correct Prediction: 99.88%
+------------SnapShot 15 Begins--------------
+|V|=6024259
+Correct Prediction: 99.87%
+------------SnapShot 16 Begins--------------
+|V|=6024259
+Correct Prediction: 99.87%
+------------SnapShot 17 Begins--------------
+|V|=6024259
+Correct Prediction: 99.88%
+------------SnapShot 18 Begins--------------
+|V|=6024259
+Correct Prediction: 99.85%
+------------SnapShot 19 Begins--------------
+|V|=6024259
+Correct Prediction: 99.83%
+------------SnapShot 20 Begins--------------
+|V|=6024259
+Correct Prediction: 99.85%
+------------SnapShot 21 Begins--------------
+|V|=6024259
+Correct Prediction: 99.72%
+------------SnapShot 22 Begins--------------
+|V|=6024259
+Correct Prediction: 99.87%
+------------SnapShot 23 Begins--------------
+|V|=6024259
+Correct Prediction: 99.84%
+------------SnapShot 24 Begins--------------
+|V|=6024259
+Correct Prediction: 99.89%
+------------SnapShot 25 Begins--------------
+|V|=6024259
+Correct Prediction: 99.71%
+------------SnapShot 26 Begins--------------
+|V|=6024259
+Correct Prediction: 99.84%
+------------SnapShot 27 Begins--------------
+|V|=6024259
+Correct Prediction: 99.88%
+------------SnapShot 28 Begins--------------
+|V|=6024259
+Correct Prediction: 99.86%
+------------SnapShot 29 Begins--------------
+|V|=6024259
+Correct Prediction: 99.88%
+------------SnapShot 30 Begins--------------
+|V|=6024259
+Correct Prediction: 98.18%
+------------SnapShot 31 Begins--------------
+|V|=6024259
+Correct Prediction: 99.79%
+------------SnapShot 32 Begins--------------
+|V|=6024259
+Correct Prediction: 99.84%
+Running: build/index-bfs /home/cgao037/graph/sx/stack_snap source/sx.txt 64 0.00125
+read: 15.316464s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 45291
+read: 0.011207s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 5.604185s
+Number of Edges in Union Graph is 36233445
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 6.398615s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 7878874
+ Percentage of core graph edge: 21.74
+Common Graph Edges: 30436197
+Graph Size: 30436197, Edge Count For Version 666 is 30436197
+Forward Time: 6.056216s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 7301742
+ Percentage of core graph edge: 23.99
+Merged Set Size: 9147273
+------------SnapShot 0 Begins--------------
+|V|=6024259
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 99.93%
+------------SnapShot 2 Begins--------------
+|V|=6024259
+Correct Prediction: 99.91%
+------------SnapShot 3 Begins--------------
+|V|=6024259
+Correct Prediction: 99.87%
+------------SnapShot 4 Begins--------------
+|V|=6024259
+Correct Prediction: 99.94%
+------------SnapShot 5 Begins--------------
+|V|=6024259
+Correct Prediction: 99.94%
+------------SnapShot 6 Begins--------------
+|V|=6024259
+Correct Prediction: 99.92%
+------------SnapShot 7 Begins--------------
+|V|=6024259
+Correct Prediction: 99.93%
+------------SnapShot 8 Begins--------------
+|V|=6024259
+Correct Prediction: 99.94%
+------------SnapShot 9 Begins--------------
+|V|=6024259
+Correct Prediction: 99.94%
+------------SnapShot 10 Begins--------------
+|V|=6024259
+Correct Prediction: 99.91%
+------------SnapShot 11 Begins--------------
+|V|=6024259
+Correct Prediction: 99.90%
+------------SnapShot 12 Begins--------------
+|V|=6024259
+Correct Prediction: 99.91%
+------------SnapShot 13 Begins--------------
+|V|=6024259
+Correct Prediction: 99.92%
+------------SnapShot 14 Begins--------------
+|V|=6024259
+Correct Prediction: 99.95%
+------------SnapShot 15 Begins--------------
+|V|=6024259
+Correct Prediction: 99.88%
+------------SnapShot 16 Begins--------------
+|V|=6024259
+Correct Prediction: 99.94%
+------------SnapShot 17 Begins--------------
+|V|=6024259
+Correct Prediction: 99.94%
+------------SnapShot 18 Begins--------------
+|V|=6024259
+Correct Prediction: 99.94%
+------------SnapShot 19 Begins--------------
+|V|=6024259
+Correct Prediction: 99.94%
+------------SnapShot 20 Begins--------------
+|V|=6024259
+Correct Prediction: 99.93%
+------------SnapShot 21 Begins--------------
+|V|=6024259
+Correct Prediction: 99.91%
+------------SnapShot 22 Begins--------------
+|V|=6024259
+Correct Prediction: 99.95%
+------------SnapShot 23 Begins--------------
+|V|=6024259
+Correct Prediction: 99.94%
+------------SnapShot 24 Begins--------------
+|V|=6024259
+Correct Prediction: 99.93%
+------------SnapShot 25 Begins--------------
+|V|=6024259
+Correct Prediction: 99.94%
+------------SnapShot 26 Begins--------------
+|V|=6024259
+Correct Prediction: 99.94%
+------------SnapShot 27 Begins--------------
+|V|=6024259
+Correct Prediction: 99.94%
+------------SnapShot 28 Begins--------------
+|V|=6024259
+Correct Prediction: 99.94%
+------------SnapShot 29 Begins--------------
+|V|=6024259
+Correct Prediction: 99.93%
+------------SnapShot 30 Begins--------------
+|V|=6024259
+Correct Prediction: 99.94%
+------------SnapShot 31 Begins--------------
+|V|=6024259
+Correct Prediction: 99.94%
+------------SnapShot 32 Begins--------------
+|V|=6024259
+Correct Prediction: 99.93%
+------------SnapShot 33 Begins--------------
+|V|=6024259
+Correct Prediction: 99.95%
+------------SnapShot 34 Begins--------------
+|V|=6024259
+Correct Prediction: 99.94%
+------------SnapShot 35 Begins--------------
+|V|=6024259
+Correct Prediction: 99.94%
+------------SnapShot 36 Begins--------------
+|V|=6024259
+Correct Prediction: 99.91%
+------------SnapShot 37 Begins--------------
+|V|=6024259
+Correct Prediction: 99.94%
+------------SnapShot 38 Begins--------------
+|V|=6024259
+Correct Prediction: 99.91%
+------------SnapShot 39 Begins--------------
+|V|=6024259
+Correct Prediction: 99.91%
+------------SnapShot 40 Begins--------------
+|V|=6024259
+Correct Prediction: 99.93%
+------------SnapShot 41 Begins--------------
+|V|=6024259
+Correct Prediction: 99.94%
+------------SnapShot 42 Begins--------------
+|V|=6024259
+Correct Prediction: 99.78%
+------------SnapShot 43 Begins--------------
+|V|=6024259
+Correct Prediction: 99.93%
+------------SnapShot 44 Begins--------------
+|V|=6024259
+Correct Prediction: 99.95%
+------------SnapShot 45 Begins--------------
+|V|=6024259
+Correct Prediction: 99.91%
+------------SnapShot 46 Begins--------------
+|V|=6024259
+Correct Prediction: 99.94%
+------------SnapShot 47 Begins--------------
+|V|=6024259
+Correct Prediction: 99.95%
+------------SnapShot 48 Begins--------------
+|V|=6024259
+Correct Prediction: 99.94%
+------------SnapShot 49 Begins--------------
+|V|=6024259
+Correct Prediction: 99.81%
+------------SnapShot 50 Begins--------------
+|V|=6024259
+Correct Prediction: 99.90%
+------------SnapShot 51 Begins--------------
+|V|=6024259
+Correct Prediction: 99.93%
+------------SnapShot 52 Begins--------------
+|V|=6024259
+Correct Prediction: 99.91%
+------------SnapShot 53 Begins--------------
+|V|=6024259
+Correct Prediction: 99.94%
+------------SnapShot 54 Begins--------------
+|V|=6024259
+Correct Prediction: 99.93%
+------------SnapShot 55 Begins--------------
+|V|=6024259
+Correct Prediction: 99.91%
+------------SnapShot 56 Begins--------------
+|V|=6024259
+Correct Prediction: 99.94%
+------------SnapShot 57 Begins--------------
+|V|=6024259
+Correct Prediction: 99.95%
+------------SnapShot 58 Begins--------------
+|V|=6024259
+Correct Prediction: 99.94%
+------------SnapShot 59 Begins--------------
+|V|=6024259
+Correct Prediction: 99.92%
+------------SnapShot 60 Begins--------------
+|V|=6024259
+Correct Prediction: 98.24%
+------------SnapShot 61 Begins--------------
+|V|=6024259
+Correct Prediction: 99.94%
+------------SnapShot 62 Begins--------------
+|V|=6024259
+Correct Prediction: 99.87%
+------------SnapShot 63 Begins--------------
+|V|=6024259
+Correct Prediction: 99.92%
+------------SnapShot 64 Begins--------------
+|V|=6024259
+Correct Prediction: 99.92%
+Running: build/index-bfs /home/cgao037/graph/sx/stack_snap source/sx.txt 8 0.02
+read: 15.303171s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.010027s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 5.583001s
+Number of Edges in Union Graph is 36233445
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 6.377140s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 7879788
+ Percentage of core graph edge: 21.75
+Common Graph Edges: 24638757
+Graph Size: 24638757, Edge Count For Version 666 is 24638757
+Forward Time: 5.746759s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 6586076
+ Percentage of core graph edge: 26.73
+Merged Set Size: 9764047
+------------SnapShot 0 Begins--------------
+|V|=6024259
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 97.46%
+------------SnapShot 2 Begins--------------
+|V|=6024259
+Correct Prediction: 99.15%
+------------SnapShot 3 Begins--------------
+|V|=6024259
+Correct Prediction: 96.15%
+------------SnapShot 4 Begins--------------
+|V|=6024259
+Correct Prediction: 96.74%
+------------SnapShot 5 Begins--------------
+|V|=6024259
+Correct Prediction: 98.80%
+------------SnapShot 6 Begins--------------
+|V|=6024259
+Correct Prediction: 97.90%
+------------SnapShot 7 Begins--------------
+|V|=6024259
+Correct Prediction: 98.83%
+------------SnapShot 8 Begins--------------
+|V|=6024259
+Correct Prediction: 98.91%
+Running: build/index-bfs /home/cgao037/graph/sx/stack_snap source/sx.txt 16 0.01
+read: 15.298880s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.009954s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 5.507321s
+Number of Edges in Union Graph is 36233445
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 6.419630s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 7880479
+ Percentage of core graph edge: 21.75
+Common Graph Edges: 24638757
+Graph Size: 24638757, Edge Count For Version 666 is 24638757
+Forward Time: 5.728270s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 6585683
+ Percentage of core graph edge: 26.73
+Merged Set Size: 9800725
+------------SnapShot 0 Begins--------------
+|V|=6024259
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 99.49%
+------------SnapShot 2 Begins--------------
+|V|=6024259
+Correct Prediction: 97.87%
+------------SnapShot 3 Begins--------------
+|V|=6024259
+Correct Prediction: 99.55%
+------------SnapShot 4 Begins--------------
+|V|=6024259
+Correct Prediction: 99.60%
+------------SnapShot 5 Begins--------------
+|V|=6024259
+Correct Prediction: 96.43%
+------------SnapShot 6 Begins--------------
+|V|=6024259
+Correct Prediction: 99.62%
+------------SnapShot 7 Begins--------------
+|V|=6024259
+Correct Prediction: 98.46%
+------------SnapShot 8 Begins--------------
+|V|=6024259
+Correct Prediction: 97.96%
+------------SnapShot 9 Begins--------------
+|V|=6024259
+Correct Prediction: 99.26%
+------------SnapShot 10 Begins--------------
+|V|=6024259
+Correct Prediction: 99.34%
+------------SnapShot 11 Begins--------------
+|V|=6024259
+Correct Prediction: 98.75%
+------------SnapShot 12 Begins--------------
+|V|=6024259
+Correct Prediction: 99.46%
+------------SnapShot 13 Begins--------------
+|V|=6024259
+Correct Prediction: 99.49%
+------------SnapShot 14 Begins--------------
+|V|=6024259
+Correct Prediction: 99.31%
+------------SnapShot 15 Begins--------------
+|V|=6024259
+Correct Prediction: 99.45%
+------------SnapShot 16 Begins--------------
+|V|=6024259
+Correct Prediction: 99.38%
+Running: build/index-bfs /home/cgao037/graph/sx/stack_snap source/sx.txt 32 0.005
+read: 15.329522s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.009539s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 5.455195s
+Number of Edges in Union Graph is 36233445
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 6.354252s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 7878458
+ Percentage of core graph edge: 21.74
+Common Graph Edges: 24638757
+Graph Size: 24638757, Edge Count For Version 666 is 24638757
+Forward Time: 5.774270s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 6584799
+ Percentage of core graph edge: 26.73
+Merged Set Size: 9761668
+------------SnapShot 0 Begins--------------
+|V|=6024259
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 99.74%
+------------SnapShot 2 Begins--------------
+|V|=6024259
+Correct Prediction: 99.74%
+------------SnapShot 3 Begins--------------
+|V|=6024259
+Correct Prediction: 99.59%
+------------SnapShot 4 Begins--------------
+|V|=6024259
+Correct Prediction: 98.11%
+------------SnapShot 5 Begins--------------
+|V|=6024259
+Correct Prediction: 99.79%
+------------SnapShot 6 Begins--------------
+|V|=6024259
+Correct Prediction: 99.75%
+------------SnapShot 7 Begins--------------
+|V|=6024259
+Correct Prediction: 99.79%
+------------SnapShot 8 Begins--------------
+|V|=6024259
+Correct Prediction: 99.79%
+------------SnapShot 9 Begins--------------
+|V|=6024259
+Correct Prediction: 99.77%
+------------SnapShot 10 Begins--------------
+|V|=6024259
+Correct Prediction: 96.61%
+------------SnapShot 11 Begins--------------
+|V|=6024259
+Correct Prediction: 99.82%
+------------SnapShot 12 Begins--------------
+|V|=6024259
+Correct Prediction: 99.78%
+------------SnapShot 13 Begins--------------
+|V|=6024259
+Correct Prediction: 99.05%
+------------SnapShot 14 Begins--------------
+|V|=6024259
+Correct Prediction: 99.39%
+------------SnapShot 15 Begins--------------
+|V|=6024259
+Correct Prediction: 98.19%
+------------SnapShot 16 Begins--------------
+|V|=6024259
+Correct Prediction: 99.71%
+------------SnapShot 17 Begins--------------
+|V|=6024259
+Correct Prediction: 99.45%
+------------SnapShot 18 Begins--------------
+|V|=6024259
+Correct Prediction: 99.75%
+------------SnapShot 19 Begins--------------
+|V|=6024259
+Correct Prediction: 99.71%
+------------SnapShot 20 Begins--------------
+|V|=6024259
+Correct Prediction: 99.70%
+------------SnapShot 21 Begins--------------
+|V|=6024259
+Correct Prediction: 99.07%
+------------SnapShot 22 Begins--------------
+|V|=6024259
+Correct Prediction: 99.60%
+------------SnapShot 23 Begins--------------
+|V|=6024259
+Correct Prediction: 99.64%
+------------SnapShot 24 Begins--------------
+|V|=6024259
+Correct Prediction: 99.78%
+------------SnapShot 25 Begins--------------
+|V|=6024259
+Correct Prediction: 99.78%
+------------SnapShot 26 Begins--------------
+|V|=6024259
+Correct Prediction: 99.72%
+------------SnapShot 27 Begins--------------
+|V|=6024259
+Correct Prediction: 99.55%
+------------SnapShot 28 Begins--------------
+|V|=6024259
+Correct Prediction: 99.74%
+------------SnapShot 29 Begins--------------
+|V|=6024259
+Correct Prediction: 99.74%
+------------SnapShot 30 Begins--------------
+|V|=6024259
+Correct Prediction: 99.74%
+------------SnapShot 31 Begins--------------
+|V|=6024259
+Correct Prediction: 99.58%
+------------SnapShot 32 Begins--------------
+|V|=6024259
+Correct Prediction: 99.78%
+Running: build/index-bfs /home/cgao037/graph/sx/stack_snap source/sx.txt 64 0.0025
+read: 15.329552s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.006075s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 5.543688s
+Number of Edges in Union Graph is 36233445
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 6.410252s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 7879837
+ Percentage of core graph edge: 21.75
+Common Graph Edges: 24638821
+Graph Size: 24638821, Edge Count For Version 666 is 24638821
+Forward Time: 5.764127s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 6585187
+ Percentage of core graph edge: 26.73
+Merged Set Size: 9770907
+------------SnapShot 0 Begins--------------
+|V|=6024259
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 99.88%
+------------SnapShot 2 Begins--------------
+|V|=6024259
+Correct Prediction: 99.87%
+------------SnapShot 3 Begins--------------
+|V|=6024259
+Correct Prediction: 99.86%
+------------SnapShot 4 Begins--------------
+|V|=6024259
+Correct Prediction: 99.86%
+------------SnapShot 5 Begins--------------
+|V|=6024259
+Correct Prediction: 99.75%
+------------SnapShot 6 Begins--------------
+|V|=6024259
+Correct Prediction: 99.85%
+------------SnapShot 7 Begins--------------
+|V|=6024259
+Correct Prediction: 99.84%
+------------SnapShot 8 Begins--------------
+|V|=6024259
+Correct Prediction: 98.24%
+------------SnapShot 9 Begins--------------
+|V|=6024259
+Correct Prediction: 99.89%
+------------SnapShot 10 Begins--------------
+|V|=6024259
+Correct Prediction: 99.90%
+------------SnapShot 11 Begins--------------
+|V|=6024259
+Correct Prediction: 99.87%
+------------SnapShot 12 Begins--------------
+|V|=6024259
+Correct Prediction: 99.88%
+------------SnapShot 13 Begins--------------
+|V|=6024259
+Correct Prediction: 99.90%
+------------SnapShot 14 Begins--------------
+|V|=6024259
+Correct Prediction: 99.90%
+------------SnapShot 15 Begins--------------
+|V|=6024259
+Correct Prediction: 99.90%
+------------SnapShot 16 Begins--------------
+|V|=6024259
+Correct Prediction: 99.88%
+------------SnapShot 17 Begins--------------
+|V|=6024259
+Correct Prediction: 99.91%
+------------SnapShot 18 Begins--------------
+|V|=6024259
+Correct Prediction: 99.85%
+------------SnapShot 19 Begins--------------
+|V|=6024259
+Correct Prediction: 98.29%
+------------SnapShot 20 Begins--------------
+|V|=6024259
+Correct Prediction: 98.31%
+------------SnapShot 21 Begins--------------
+|V|=6024259
+Correct Prediction: 99.91%
+------------SnapShot 22 Begins--------------
+|V|=6024259
+Correct Prediction: 99.92%
+------------SnapShot 23 Begins--------------
+|V|=6024259
+Correct Prediction: 99.90%
+------------SnapShot 24 Begins--------------
+|V|=6024259
+Correct Prediction: 99.90%
+------------SnapShot 25 Begins--------------
+|V|=6024259
+Correct Prediction: 98.98%
+------------SnapShot 26 Begins--------------
+|V|=6024259
+Correct Prediction: 99.87%
+------------SnapShot 27 Begins--------------
+|V|=6024259
+Correct Prediction: 99.87%
+------------SnapShot 28 Begins--------------
+|V|=6024259
+Correct Prediction: 99.90%
+------------SnapShot 29 Begins--------------
+|V|=6024259
+Correct Prediction: 99.91%
+------------SnapShot 30 Begins--------------
+|V|=6024259
+Correct Prediction: 98.28%
+------------SnapShot 31 Begins--------------
+|V|=6024259
+Correct Prediction: 99.83%
+------------SnapShot 32 Begins--------------
+|V|=6024259
+Correct Prediction: 99.89%
+------------SnapShot 33 Begins--------------
+|V|=6024259
+Correct Prediction: 99.83%
+------------SnapShot 34 Begins--------------
+|V|=6024259
+Correct Prediction: 99.68%
+------------SnapShot 35 Begins--------------
+|V|=6024259
+Correct Prediction: 99.88%
+------------SnapShot 36 Begins--------------
+|V|=6024259
+Correct Prediction: 99.86%
+------------SnapShot 37 Begins--------------
+|V|=6024259
+Correct Prediction: 99.83%
+------------SnapShot 38 Begins--------------
+|V|=6024259
+Correct Prediction: 99.85%
+------------SnapShot 39 Begins--------------
+|V|=6024259
+Correct Prediction: 99.76%
+------------SnapShot 40 Begins--------------
+|V|=6024259
+Correct Prediction: 99.83%
+------------SnapShot 41 Begins--------------
+|V|=6024259
+Correct Prediction: 99.88%
+------------SnapShot 42 Begins--------------
+|V|=6024259
+Correct Prediction: 98.65%
+------------SnapShot 43 Begins--------------
+|V|=6024259
+Correct Prediction: 99.90%
+------------SnapShot 44 Begins--------------
+|V|=6024259
+Correct Prediction: 99.88%
+------------SnapShot 45 Begins--------------
+|V|=6024259
+Correct Prediction: 99.86%
+------------SnapShot 46 Begins--------------
+|V|=6024259
+Correct Prediction: 99.82%
+------------SnapShot 47 Begins--------------
+|V|=6024259
+Correct Prediction: 99.89%
+------------SnapShot 48 Begins--------------
+|V|=6024259
+Correct Prediction: 99.88%
+------------SnapShot 49 Begins--------------
+|V|=6024259
+Correct Prediction: 99.89%
+------------SnapShot 50 Begins--------------
+|V|=6024259
+Correct Prediction: 99.88%
+------------SnapShot 51 Begins--------------
+|V|=6024259
+Correct Prediction: 99.78%
+------------SnapShot 52 Begins--------------
+|V|=6024259
+Correct Prediction: 99.86%
+------------SnapShot 53 Begins--------------
+|V|=6024259
+Correct Prediction: 99.71%
+------------SnapShot 54 Begins--------------
+|V|=6024259
+Correct Prediction: 99.84%
+------------SnapShot 55 Begins--------------
+|V|=6024259
+Correct Prediction: 99.86%
+------------SnapShot 56 Begins--------------
+|V|=6024259
+Correct Prediction: 99.88%
+------------SnapShot 57 Begins--------------
+|V|=6024259
+Correct Prediction: 99.87%
+------------SnapShot 58 Begins--------------
+|V|=6024259
+Correct Prediction: 99.87%
+------------SnapShot 59 Begins--------------
+|V|=6024259
+Correct Prediction: 99.90%
+------------SnapShot 60 Begins--------------
+|V|=6024259
+Correct Prediction: 99.84%
+------------SnapShot 61 Begins--------------
+|V|=6024259
+Correct Prediction: 99.89%
+------------SnapShot 62 Begins--------------
+|V|=6024259
+Correct Prediction: 99.69%
+------------SnapShot 63 Begins--------------
+|V|=6024259
+Correct Prediction: 99.89%
+------------SnapShot 64 Begins--------------
+|V|=6024259
+Correct Prediction: 99.88%
+Running: build/index-bfs /home/cgao037/graph/sx/stack_snap source/sx.txt 8 0.04
+read: 15.416319s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 1449337
+read: 0.006332s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 5.324100s
+Number of Edges in Union Graph is 36233445
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 6.386255s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 7880795
+ Percentage of core graph edge: 21.75
+Common Graph Edges: 13044053
+Graph Size: 13044053, Edge Count For Version 666 is 13044053
+Forward Time: 5.113395s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 4713646
+ Percentage of core graph edge: 36.14
+Merged Set Size: 9971849
+------------SnapShot 0 Begins--------------
+|V|=6024259
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 98.31%
+------------SnapShot 2 Begins--------------
+|V|=6024259
+Correct Prediction: 95.08%
+------------SnapShot 3 Begins--------------
+|V|=6024259
+Correct Prediction: 98.45%
+------------SnapShot 4 Begins--------------
+|V|=6024259
+Correct Prediction: 98.36%
+------------SnapShot 5 Begins--------------
+|V|=6024259
+Correct Prediction: 97.08%
+------------SnapShot 6 Begins--------------
+|V|=6024259
+Correct Prediction: 95.56%
+------------SnapShot 7 Begins--------------
+|V|=6024259
+Correct Prediction: 96.79%
+------------SnapShot 8 Begins--------------
+|V|=6024259
+Correct Prediction: 96.56%
+Running: build/index-bfs /home/cgao037/graph/sx/stack_snap source/sx.txt 16 0.02
+read: 15.395790s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 724668
+read: 0.006066s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 5.964057s
+Number of Edges in Union Graph is 36233445
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 6.404988s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 7883078
+ Percentage of core graph edge: 21.76
+Common Graph Edges: 13044069
+Graph Size: 13044069, Edge Count For Version 666 is 13044069
+Forward Time: 5.097534s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 4716204
+ Percentage of core graph edge: 36.16
+Merged Set Size: 9971929
+------------SnapShot 0 Begins--------------
+|V|=6024259
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 99.16%
+------------SnapShot 2 Begins--------------
+|V|=6024259
+Correct Prediction: 99.03%
+------------SnapShot 3 Begins--------------
+|V|=6024259
+Correct Prediction: 97.02%
+------------SnapShot 4 Begins--------------
+|V|=6024259
+Correct Prediction: 97.84%
+------------SnapShot 5 Begins--------------
+|V|=6024259
+Correct Prediction: 99.13%
+------------SnapShot 6 Begins--------------
+|V|=6024259
+Correct Prediction: 99.19%
+------------SnapShot 7 Begins--------------
+|V|=6024259
+Correct Prediction: 99.11%
+------------SnapShot 8 Begins--------------
+|V|=6024259
+Correct Prediction: 99.13%
+------------SnapShot 9 Begins--------------
+|V|=6024259
+Correct Prediction: 98.22%
+------------SnapShot 10 Begins--------------
+|V|=6024259
+Correct Prediction: 98.46%
+------------SnapShot 11 Begins--------------
+|V|=6024259
+Correct Prediction: 96.38%
+------------SnapShot 12 Begins--------------
+|V|=6024259
+Correct Prediction: 97.49%
+------------SnapShot 13 Begins--------------
+|V|=6024259
+Correct Prediction: 97.57%
+------------SnapShot 14 Begins--------------
+|V|=6024259
+Correct Prediction: 99.00%
+------------SnapShot 15 Begins--------------
+|V|=6024259
+Correct Prediction: 98.18%
+------------SnapShot 16 Begins--------------
+|V|=6024259
+Correct Prediction: 97.61%
+Running: build/index-bfs /home/cgao037/graph/sx/stack_snap source/sx.txt 32 0.01
+read: 15.338422s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 362334
+read: 0.006075s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 5.789280s
+Number of Edges in Union Graph is 36233445
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 6.386031s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 7883647
+ Percentage of core graph edge: 21.76
+Common Graph Edges: 13044069
+Graph Size: 13044069, Edge Count For Version 666 is 13044069
+Forward Time: 5.264216s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 4719693
+ Percentage of core graph edge: 36.18
+Merged Set Size: 9976174
+------------SnapShot 0 Begins--------------
+|V|=6024259
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 99.59%
+------------SnapShot 2 Begins--------------
+|V|=6024259
+Correct Prediction: 99.54%
+------------SnapShot 3 Begins--------------
+|V|=6024259
+Correct Prediction: 99.61%
+------------SnapShot 4 Begins--------------
+|V|=6024259
+Correct Prediction: 99.38%
+------------SnapShot 5 Begins--------------
+|V|=6024259
+Correct Prediction: 98.66%
+------------SnapShot 6 Begins--------------
+|V|=6024259
+Correct Prediction: 98.23%
+------------SnapShot 7 Begins--------------
+|V|=6024259
+Correct Prediction: 99.66%
+------------SnapShot 8 Begins--------------
+|V|=6024259
+Correct Prediction: 98.15%
+------------SnapShot 9 Begins--------------
+|V|=6024259
+Correct Prediction: 99.55%
+------------SnapShot 10 Begins--------------
+|V|=6024259
+Correct Prediction: 99.58%
+------------SnapShot 11 Begins--------------
+|V|=6024259
+Correct Prediction: 99.57%
+------------SnapShot 12 Begins--------------
+|V|=6024259
+Correct Prediction: 99.61%
+------------SnapShot 13 Begins--------------
+|V|=6024259
+Correct Prediction: 99.54%
+------------SnapShot 14 Begins--------------
+|V|=6024259
+Correct Prediction: 99.49%
+------------SnapShot 15 Begins--------------
+|V|=6024259
+Correct Prediction: 99.49%
+------------SnapShot 16 Begins--------------
+|V|=6024259
+Correct Prediction: 99.54%
+------------SnapShot 17 Begins--------------
+|V|=6024259
+Correct Prediction: 98.55%
+------------SnapShot 18 Begins--------------
+|V|=6024259
+Correct Prediction: 99.58%
+------------SnapShot 19 Begins--------------
+|V|=6024259
+Correct Prediction: 98.92%
+------------SnapShot 20 Begins--------------
+|V|=6024259
+Correct Prediction: 99.49%
+------------SnapShot 21 Begins--------------
+|V|=6024259
+Correct Prediction: 96.70%
+------------SnapShot 22 Begins--------------
+|V|=6024259
+Correct Prediction: 99.50%
+------------SnapShot 23 Begins--------------
+|V|=6024259
+Correct Prediction: 99.50%
+------------SnapShot 24 Begins--------------
+|V|=6024259
+Correct Prediction: 97.87%
+------------SnapShot 25 Begins--------------
+|V|=6024259
+Correct Prediction: 99.43%
+------------SnapShot 26 Begins--------------
+|V|=6024259
+Correct Prediction: 97.99%
+------------SnapShot 27 Begins--------------
+|V|=6024259
+Correct Prediction: 99.44%
+------------SnapShot 28 Begins--------------
+|V|=6024259
+Correct Prediction: 99.50%
+------------SnapShot 29 Begins--------------
+|V|=6024259
+Correct Prediction: 99.37%
+------------SnapShot 30 Begins--------------
+|V|=6024259
+Correct Prediction: 98.66%
+------------SnapShot 31 Begins--------------
+|V|=6024259
+Correct Prediction: 99.41%
+------------SnapShot 32 Begins--------------
+|V|=6024259
+Correct Prediction: 98.12%
+Running: build/index-bfs /home/cgao037/graph/sx/stack_snap source/sx.txt 64 0.005
+read: 15.337238s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 181167
+read: 0.006064s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 5.304539s
+Number of Edges in Union Graph is 36233445
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 6.411955s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 7882431
+ Percentage of core graph edge: 21.75
+Common Graph Edges: 13044069
+Graph Size: 13044069, Edge Count For Version 666 is 13044069
+Forward Time: 5.077824s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 4711710
+ Percentage of core graph edge: 36.12
+Merged Set Size: 9972801
+------------SnapShot 0 Begins--------------
+|V|=6024259
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 99.77%
+------------SnapShot 2 Begins--------------
+|V|=6024259
+Correct Prediction: 99.81%
+------------SnapShot 3 Begins--------------
+|V|=6024259
+Correct Prediction: 99.80%
+------------SnapShot 4 Begins--------------
+|V|=6024259
+Correct Prediction: 99.72%
+------------SnapShot 5 Begins--------------
+|V|=6024259
+Correct Prediction: 99.81%
+------------SnapShot 6 Begins--------------
+|V|=6024259
+Correct Prediction: 99.80%
+------------SnapShot 7 Begins--------------
+|V|=6024259
+Correct Prediction: 99.79%
+------------SnapShot 8 Begins--------------
+|V|=6024259
+Correct Prediction: 99.56%
+------------SnapShot 9 Begins--------------
+|V|=6024259
+Correct Prediction: 99.79%
+------------SnapShot 10 Begins--------------
+|V|=6024259
+Correct Prediction: 98.81%
+------------SnapShot 11 Begins--------------
+|V|=6024259
+Correct Prediction: 99.79%
+------------SnapShot 12 Begins--------------
+|V|=6024259
+Correct Prediction: 98.38%
+------------SnapShot 13 Begins--------------
+|V|=6024259
+Correct Prediction: 99.82%
+------------SnapShot 14 Begins--------------
+|V|=6024259
+Correct Prediction: 99.82%
+------------SnapShot 15 Begins--------------
+|V|=6024259
+Correct Prediction: 98.38%
+------------SnapShot 16 Begins--------------
+|V|=6024259
+Correct Prediction: 99.74%
+------------SnapShot 17 Begins--------------
+|V|=6024259
+Correct Prediction: 99.75%
+------------SnapShot 18 Begins--------------
+|V|=6024259
+Correct Prediction: 99.75%
+------------SnapShot 19 Begins--------------
+|V|=6024259
+Correct Prediction: 99.79%
+------------SnapShot 20 Begins--------------
+|V|=6024259
+Correct Prediction: 99.80%
+------------SnapShot 21 Begins--------------
+|V|=6024259
+Correct Prediction: 99.77%
+------------SnapShot 22 Begins--------------
+|V|=6024259
+Correct Prediction: 99.77%
+------------SnapShot 23 Begins--------------
+|V|=6024259
+Correct Prediction: 99.80%
+------------SnapShot 24 Begins--------------
+|V|=6024259
+Correct Prediction: 99.80%
+------------SnapShot 25 Begins--------------
+|V|=6024259
+Correct Prediction: 99.71%
+------------SnapShot 26 Begins--------------
+|V|=6024259
+Correct Prediction: 99.80%
+------------SnapShot 27 Begins--------------
+|V|=6024259
+Correct Prediction: 99.65%
+------------SnapShot 28 Begins--------------
+|V|=6024259
+Correct Prediction: 99.78%
+------------SnapShot 29 Begins--------------
+|V|=6024259
+Correct Prediction: 99.78%
+------------SnapShot 30 Begins--------------
+|V|=6024259
+Correct Prediction: 99.77%
+------------SnapShot 31 Begins--------------
+|V|=6024259
+Correct Prediction: 99.80%
+------------SnapShot 32 Begins--------------
+|V|=6024259
+Correct Prediction: 99.74%
+------------SnapShot 33 Begins--------------
+|V|=6024259
+Correct Prediction: 99.78%
+------------SnapShot 34 Begins--------------
+|V|=6024259
+Correct Prediction: 98.73%
+------------SnapShot 35 Begins--------------
+|V|=6024259
+Correct Prediction: 99.78%
+------------SnapShot 36 Begins--------------
+|V|=6024259
+Correct Prediction: 99.79%
+------------SnapShot 37 Begins--------------
+|V|=6024259
+Correct Prediction: 99.13%
+------------SnapShot 38 Begins--------------
+|V|=6024259
+Correct Prediction: 99.79%
+------------SnapShot 39 Begins--------------
+|V|=6024259
+Correct Prediction: 99.77%
+------------SnapShot 40 Begins--------------
+|V|=6024259
+Correct Prediction: 99.71%
+------------SnapShot 41 Begins--------------
+|V|=6024259
+Correct Prediction: 99.76%
+------------SnapShot 42 Begins--------------
+|V|=6024259
+Correct Prediction: 96.91%
+------------SnapShot 43 Begins--------------
+|V|=6024259
+Correct Prediction: 99.73%
+------------SnapShot 44 Begins--------------
+|V|=6024259
+Correct Prediction: 99.76%
+------------SnapShot 45 Begins--------------
+|V|=6024259
+Correct Prediction: 99.72%
+------------SnapShot 46 Begins--------------
+|V|=6024259
+Correct Prediction: 99.76%
+------------SnapShot 47 Begins--------------
+|V|=6024259
+Correct Prediction: 99.69%
+------------SnapShot 48 Begins--------------
+|V|=6024259
+Correct Prediction: 98.09%
+------------SnapShot 49 Begins--------------
+|V|=6024259
+Correct Prediction: 99.68%
+------------SnapShot 50 Begins--------------
+|V|=6024259
+Correct Prediction: 99.74%
+------------SnapShot 51 Begins--------------
+|V|=6024259
+Correct Prediction: 98.23%
+------------SnapShot 52 Begins--------------
+|V|=6024259
+Correct Prediction: 99.71%
+------------SnapShot 53 Begins--------------
+|V|=6024259
+Correct Prediction: 99.75%
+------------SnapShot 54 Begins--------------
+|V|=6024259
+Correct Prediction: 99.70%
+------------SnapShot 55 Begins--------------
+|V|=6024259
+Correct Prediction: 99.75%
+------------SnapShot 56 Begins--------------
+|V|=6024259
+Correct Prediction: 99.71%
+------------SnapShot 57 Begins--------------
+|V|=6024259
+Correct Prediction: 99.59%
+------------SnapShot 58 Begins--------------
+|V|=6024259
+Correct Prediction: 99.72%
+------------SnapShot 59 Begins--------------
+|V|=6024259
+Correct Prediction: 99.40%
+------------SnapShot 60 Begins--------------
+|V|=6024259
+Correct Prediction: 99.44%
+------------SnapShot 61 Begins--------------
+|V|=6024259
+Correct Prediction: 99.67%
+------------SnapShot 62 Begins--------------
+|V|=6024259
+Correct Prediction: 99.71%
+------------SnapShot 63 Begins--------------
+|V|=6024259
+Correct Prediction: 98.28%
+------------SnapShot 64 Begins--------------
+|V|=6024259
+Correct Prediction: 99.81%
+Running: build/index-bfs /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 8 0.01
+read: 5.941873s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 8, batch_size is 146136
+read: 0.002551s
+|E|=14613674
+|V|=1870709
+Union Graph Marked: 32.267736s
+Number of Edges in Union Graph is 14613674
+Graph Size: 14613674, Edge Count For Version 999 is 14613674
+Forward Time: 1.999038s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 6638183
+ Percentage of core graph edge: 45.42
+Common Graph Edges: 12275498
+Graph Size: 12275498, Edge Count For Version 666 is 12275498
+Forward Time: 1.885624s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 5783202
+ Percentage of core graph edge: 47.11
+Merged Set Size: 7865315
+------------SnapShot 0 Begins--------------
+|V|=1870709
+------------SnapShot 1 Begins--------------
+|V|=1870709
+Correct Prediction: 92.13%
+------------SnapShot 2 Begins--------------
+|V|=1870709
+Correct Prediction: 93.50%
+------------SnapShot 3 Begins--------------
+|V|=1870709
+Correct Prediction: 93.68%
+------------SnapShot 4 Begins--------------
+|V|=1870709
+Correct Prediction: 91.68%
+------------SnapShot 5 Begins--------------
+|V|=1870709
+Correct Prediction: 94.54%
+------------SnapShot 6 Begins--------------
+|V|=1870709
+Correct Prediction: 94.24%
+------------SnapShot 7 Begins--------------
+|V|=1870709
+Correct Prediction: 91.88%
+------------SnapShot 8 Begins--------------
+|V|=1870709
+Correct Prediction: 92.89%
+Running: build/index-bfs /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 16 0.005
+read: 5.951391s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 16, batch_size is 73068
+read: 0.002490s
+|E|=14613674
+|V|=1870709
+Union Graph Marked: 31.714204s
+Number of Edges in Union Graph is 14613674
+Graph Size: 14613674, Edge Count For Version 999 is 14613674
+Forward Time: 2.003935s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 6638689
+ Percentage of core graph edge: 45.43
+Common Graph Edges: 12275498
+Graph Size: 12275498, Edge Count For Version 666 is 12275498
+Forward Time: 1.868729s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 5781585
+ Percentage of core graph edge: 47.10
+Merged Set Size: 7868449
+------------SnapShot 0 Begins--------------
+|V|=1870709
+------------SnapShot 1 Begins--------------
+|V|=1870709
+Correct Prediction: 96.31%
+------------SnapShot 2 Begins--------------
+|V|=1870709
+Correct Prediction: 94.97%
+------------SnapShot 3 Begins--------------
+|V|=1870709
+Correct Prediction: 97.26%
+------------SnapShot 4 Begins--------------
+|V|=1870709
+Correct Prediction: 95.96%
+------------SnapShot 5 Begins--------------
+|V|=1870709
+Correct Prediction: 97.14%
+------------SnapShot 6 Begins--------------
+|V|=1870709
+Correct Prediction: 96.37%
+------------SnapShot 7 Begins--------------
+|V|=1870709
+Correct Prediction: 96.88%
+------------SnapShot 8 Begins--------------
+|V|=1870709
+Correct Prediction: 94.36%
+------------SnapShot 9 Begins--------------
+|V|=1870709
+Correct Prediction: 97.23%
+------------SnapShot 10 Begins--------------
+|V|=1870709
+Correct Prediction: 97.16%
+------------SnapShot 11 Begins--------------
+|V|=1870709
+Correct Prediction: 96.99%
+------------SnapShot 12 Begins--------------
+|V|=1870709
+Correct Prediction: 96.95%
+------------SnapShot 13 Begins--------------
+|V|=1870709
+Correct Prediction: 94.25%
+------------SnapShot 14 Begins--------------
+|V|=1870709
+Correct Prediction: 97.29%
+------------SnapShot 15 Begins--------------
+|V|=1870709
+Correct Prediction: 95.20%
+------------SnapShot 16 Begins--------------
+|V|=1870709
+Correct Prediction: 97.36%
+Running: build/index-bfs /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 32 0.0025
+read: 5.907366s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 32, batch_size is 36534
+read: 0.002446s
+|E|=14613674
+|V|=1870709
+Union Graph Marked: 31.862946s
+Number of Edges in Union Graph is 14613674
+Graph Size: 14613674, Edge Count For Version 999 is 14613674
+Forward Time: 1.964550s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 6639818
+ Percentage of core graph edge: 45.44
+Common Graph Edges: 12275498
+Graph Size: 12275498, Edge Count For Version 666 is 12275498
+Forward Time: 1.858015s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 5783346
+ Percentage of core graph edge: 47.11
+Merged Set Size: 7867845
+------------SnapShot 0 Begins--------------
+|V|=1870709
+------------SnapShot 1 Begins--------------
+|V|=1870709
+Correct Prediction: 97.99%
+------------SnapShot 2 Begins--------------
+|V|=1870709
+Correct Prediction: 98.17%
+------------SnapShot 3 Begins--------------
+|V|=1870709
+Correct Prediction: 98.74%
+------------SnapShot 4 Begins--------------
+|V|=1870709
+Correct Prediction: 96.12%
+------------SnapShot 5 Begins--------------
+|V|=1870709
+Correct Prediction: 98.65%
+------------SnapShot 6 Begins--------------
+|V|=1870709
+Correct Prediction: 98.59%
+------------SnapShot 7 Begins--------------
+|V|=1870709
+Correct Prediction: 98.07%
+------------SnapShot 8 Begins--------------
+|V|=1870709
+Correct Prediction: 97.77%
+------------SnapShot 9 Begins--------------
+|V|=1870709
+Correct Prediction: 98.54%
+------------SnapShot 10 Begins--------------
+|V|=1870709
+Correct Prediction: 98.57%
+------------SnapShot 11 Begins--------------
+|V|=1870709
+Correct Prediction: 97.50%
+------------SnapShot 12 Begins--------------
+|V|=1870709
+Correct Prediction: 98.77%
+------------SnapShot 13 Begins--------------
+|V|=1870709
+Correct Prediction: 97.92%
+------------SnapShot 14 Begins--------------
+|V|=1870709
+Correct Prediction: 98.78%
+------------SnapShot 15 Begins--------------
+|V|=1870709
+Correct Prediction: 95.84%
+------------SnapShot 16 Begins--------------
+|V|=1870709
+Correct Prediction: 98.42%
+------------SnapShot 17 Begins--------------
+|V|=1870709
+Correct Prediction: 98.62%
+------------SnapShot 18 Begins--------------
+|V|=1870709
+Correct Prediction: 98.53%
+------------SnapShot 19 Begins--------------
+|V|=1870709
+Correct Prediction: 98.38%
+------------SnapShot 20 Begins--------------
+|V|=1870709
+Correct Prediction: 98.65%
+------------SnapShot 21 Begins--------------
+|V|=1870709
+Correct Prediction: 98.41%
+------------SnapShot 22 Begins--------------
+|V|=1870709
+Correct Prediction: 98.56%
+------------SnapShot 23 Begins--------------
+|V|=1870709
+Correct Prediction: 98.72%
+------------SnapShot 24 Begins--------------
+|V|=1870709
+Correct Prediction: 98.14%
+------------SnapShot 25 Begins--------------
+|V|=1870709
+Correct Prediction: 98.44%
+------------SnapShot 26 Begins--------------
+|V|=1870709
+Correct Prediction: 95.68%
+------------SnapShot 27 Begins--------------
+|V|=1870709
+Correct Prediction: 98.49%
+------------SnapShot 28 Begins--------------
+|V|=1870709
+Correct Prediction: 98.74%
+------------SnapShot 29 Begins--------------
+|V|=1870709
+Correct Prediction: 97.55%
+------------SnapShot 30 Begins--------------
+|V|=1870709
+Correct Prediction: 97.52%
+------------SnapShot 31 Begins--------------
+|V|=1870709
+Correct Prediction: 98.85%
+------------SnapShot 32 Begins--------------
+|V|=1870709
+Correct Prediction: 98.51%
+Running: build/index-bfs /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 64 0.00125
+read: 5.911140s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 64, batch_size is 18267
+read: 0.002344s
+|E|=14613674
+|V|=1870709
+Union Graph Marked: 36.121881s
+Number of Edges in Union Graph is 14613674
+Graph Size: 14613674, Edge Count For Version 999 is 14613674
+Forward Time: 1.971412s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 6637824
+ Percentage of core graph edge: 45.42
+Common Graph Edges: 12275498
+Graph Size: 12275498, Edge Count For Version 666 is 12275498
+Forward Time: 1.878000s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 5782850
+ Percentage of core graph edge: 47.11
+Merged Set Size: 7864568
+------------SnapShot 0 Begins--------------
+|V|=1870709
+------------SnapShot 1 Begins--------------
+|V|=1870709
+Correct Prediction: 99.16%
+------------SnapShot 2 Begins--------------
+|V|=1870709
+Correct Prediction: 98.77%
+------------SnapShot 3 Begins--------------
+|V|=1870709
+Correct Prediction: 99.22%
+------------SnapShot 4 Begins--------------
+|V|=1870709
+Correct Prediction: 98.98%
+------------SnapShot 5 Begins--------------
+|V|=1870709
+Correct Prediction: 99.55%
+------------SnapShot 6 Begins--------------
+|V|=1870709
+Correct Prediction: 99.19%
+------------SnapShot 7 Begins--------------
+|V|=1870709
+Correct Prediction: 99.17%
+------------SnapShot 8 Begins--------------
+|V|=1870709
+Correct Prediction: 96.90%
+------------SnapShot 9 Begins--------------
+|V|=1870709
+Correct Prediction: 99.27%
+------------SnapShot 10 Begins--------------
+|V|=1870709
+Correct Prediction: 99.37%
+------------SnapShot 11 Begins--------------
+|V|=1870709
+Correct Prediction: 99.34%
+------------SnapShot 12 Begins--------------
+|V|=1870709
+Correct Prediction: 99.22%
+------------SnapShot 13 Begins--------------
+|V|=1870709
+Correct Prediction: 99.34%
+------------SnapShot 14 Begins--------------
+|V|=1870709
+Correct Prediction: 98.72%
+------------SnapShot 15 Begins--------------
+|V|=1870709
+Correct Prediction: 99.32%
+------------SnapShot 16 Begins--------------
+|V|=1870709
+Correct Prediction: 98.39%
+------------SnapShot 17 Begins--------------
+|V|=1870709
+Correct Prediction: 99.09%
+------------SnapShot 18 Begins--------------
+|V|=1870709
+Correct Prediction: 99.47%
+------------SnapShot 19 Begins--------------
+|V|=1870709
+Correct Prediction: 99.31%
+------------SnapShot 20 Begins--------------
+|V|=1870709
+Correct Prediction: 99.24%
+------------SnapShot 21 Begins--------------
+|V|=1870709
+Correct Prediction: 99.30%
+------------SnapShot 22 Begins--------------
+|V|=1870709
+Correct Prediction: 98.14%
+------------SnapShot 23 Begins--------------
+|V|=1870709
+Correct Prediction: 99.41%
+------------SnapShot 24 Begins--------------
+|V|=1870709
+Correct Prediction: 99.35%
+------------SnapShot 25 Begins--------------
+|V|=1870709
+Correct Prediction: 99.05%
+------------SnapShot 26 Begins--------------
+|V|=1870709
+Correct Prediction: 98.86%
+------------SnapShot 27 Begins--------------
+|V|=1870709
+Correct Prediction: 99.52%
+------------SnapShot 28 Begins--------------
+|V|=1870709
+Correct Prediction: 99.32%
+------------SnapShot 29 Begins--------------
+|V|=1870709
+Correct Prediction: 96.54%
+------------SnapShot 30 Begins--------------
+|V|=1870709
+Correct Prediction: 99.25%
+------------SnapShot 31 Begins--------------
+|V|=1870709
+Correct Prediction: 99.02%
+------------SnapShot 32 Begins--------------
+|V|=1870709
+Correct Prediction: 99.32%
+------------SnapShot 33 Begins--------------
+|V|=1870709
+Correct Prediction: 99.21%
+------------SnapShot 34 Begins--------------
+|V|=1870709
+Correct Prediction: 99.40%
+------------SnapShot 35 Begins--------------
+|V|=1870709
+Correct Prediction: 99.34%
+------------SnapShot 36 Begins--------------
+|V|=1870709
+Correct Prediction: 99.13%
+------------SnapShot 37 Begins--------------
+|V|=1870709
+Correct Prediction: 98.84%
+------------SnapShot 38 Begins--------------
+|V|=1870709
+Correct Prediction: 99.49%
+------------SnapShot 39 Begins--------------
+|V|=1870709
+Correct Prediction: 99.24%
+------------SnapShot 40 Begins--------------
+|V|=1870709
+Correct Prediction: 99.40%
+------------SnapShot 41 Begins--------------
+|V|=1870709
+Correct Prediction: 99.44%
+------------SnapShot 42 Begins--------------
+|V|=1870709
+Correct Prediction: 98.92%
+------------SnapShot 43 Begins--------------
+|V|=1870709
+Correct Prediction: 99.31%
+------------SnapShot 44 Begins--------------
+|V|=1870709
+Correct Prediction: 99.23%
+------------SnapShot 45 Begins--------------
+|V|=1870709
+Correct Prediction: 99.28%
+------------SnapShot 46 Begins--------------
+|V|=1870709
+Correct Prediction: 99.44%
+------------SnapShot 47 Begins--------------
+|V|=1870709
+Correct Prediction: 98.92%
+------------SnapShot 48 Begins--------------
+|V|=1870709
+Correct Prediction: 99.24%
+------------SnapShot 49 Begins--------------
+|V|=1870709
+Correct Prediction: 99.14%
+------------SnapShot 50 Begins--------------
+|V|=1870709
+Correct Prediction: 99.29%
+------------SnapShot 51 Begins--------------
+|V|=1870709
+Correct Prediction: 99.05%
+------------SnapShot 52 Begins--------------
+|V|=1870709
+Correct Prediction: 96.67%
+------------SnapShot 53 Begins--------------
+|V|=1870709
+Correct Prediction: 99.20%
+------------SnapShot 54 Begins--------------
+|V|=1870709
+Correct Prediction: 99.32%
+------------SnapShot 55 Begins--------------
+|V|=1870709
+Correct Prediction: 99.38%
+------------SnapShot 56 Begins--------------
+|V|=1870709
+Correct Prediction: 99.37%
+------------SnapShot 57 Begins--------------
+|V|=1870709
+Correct Prediction: 98.24%
+------------SnapShot 58 Begins--------------
+|V|=1870709
+Correct Prediction: 99.26%
+------------SnapShot 59 Begins--------------
+|V|=1870709
+Correct Prediction: 99.24%
+------------SnapShot 60 Begins--------------
+|V|=1870709
+Correct Prediction: 98.23%
+------------SnapShot 61 Begins--------------
+|V|=1870709
+Correct Prediction: 99.36%
+------------SnapShot 62 Begins--------------
+|V|=1870709
+Correct Prediction: 99.43%
+------------SnapShot 63 Begins--------------
+|V|=1870709
+Correct Prediction: 99.23%
+------------SnapShot 64 Begins--------------
+|V|=1870709
+Correct Prediction: 99.32%
+Running: build/index-bfs /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 8 0.02
+read: 5.916017s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 8, batch_size is 292273
+read: 0.002410s
+|E|=14613674
+|V|=1870709
+Union Graph Marked: 33.213095s
+Number of Edges in Union Graph is 14613674
+Graph Size: 14613674, Edge Count For Version 999 is 14613674
+Forward Time: 1.969697s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 6640178
+ Percentage of core graph edge: 45.44
+Common Graph Edges: 9937306
+Graph Size: 9937306, Edge Count For Version 666 is 9937306
+Forward Time: 1.852485s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 5040705
+ Percentage of core graph edge: 50.73
+Merged Set Size: 8177648
+------------SnapShot 0 Begins--------------
+|V|=1870709
+------------SnapShot 1 Begins--------------
+|V|=1870709
+Correct Prediction: 86.11%
+------------SnapShot 2 Begins--------------
+|V|=1870709
+Correct Prediction: 89.36%
+------------SnapShot 3 Begins--------------
+|V|=1870709
+Correct Prediction: 87.00%
+------------SnapShot 4 Begins--------------
+|V|=1870709
+Correct Prediction: 85.40%
+------------SnapShot 5 Begins--------------
+|V|=1870709
+Correct Prediction: 85.81%
+------------SnapShot 6 Begins--------------
+|V|=1870709
+Correct Prediction: 87.61%
+------------SnapShot 7 Begins--------------
+|V|=1870709
+Correct Prediction: 89.12%
+------------SnapShot 8 Begins--------------
+|V|=1870709
+Correct Prediction: 90.44%
+Running: build/index-bfs /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 16 0.01
+read: 5.903679s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 16, batch_size is 146136
+read: 0.002518s
+|E|=14613674
+|V|=1870709
+Union Graph Marked: 31.178837s
+Number of Edges in Union Graph is 14613674
+Graph Size: 14613674, Edge Count For Version 999 is 14613674
+Forward Time: 1.992841s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 6637312
+ Percentage of core graph edge: 45.42
+Common Graph Edges: 9937322
+Graph Size: 9937322, Edge Count For Version 666 is 9937322
+Forward Time: 1.770318s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 5038011
+ Percentage of core graph edge: 50.70
+Merged Set Size: 8176418
+------------SnapShot 0 Begins--------------
+|V|=1870709
+------------SnapShot 1 Begins--------------
+|V|=1870709
+Correct Prediction: 90.82%
+------------SnapShot 2 Begins--------------
+|V|=1870709
+Correct Prediction: 93.95%
+------------SnapShot 3 Begins--------------
+|V|=1870709
+Correct Prediction: 94.60%
+------------SnapShot 4 Begins--------------
+|V|=1870709
+Correct Prediction: 94.05%
+------------SnapShot 5 Begins--------------
+|V|=1870709
+Correct Prediction: 90.97%
+------------SnapShot 6 Begins--------------
+|V|=1870709
+Correct Prediction: 95.12%
+------------SnapShot 7 Begins--------------
+|V|=1870709
+Correct Prediction: 92.20%
+------------SnapShot 8 Begins--------------
+|V|=1870709
+Correct Prediction: 91.48%
+------------SnapShot 9 Begins--------------
+|V|=1870709
+Correct Prediction: 94.32%
+------------SnapShot 10 Begins--------------
+|V|=1870709
+Correct Prediction: 91.43%
+------------SnapShot 11 Begins--------------
+|V|=1870709
+Correct Prediction: 92.49%
+------------SnapShot 12 Begins--------------
+|V|=1870709
+Correct Prediction: 91.89%
+------------SnapShot 13 Begins--------------
+|V|=1870709
+Correct Prediction: 93.96%
+------------SnapShot 14 Begins--------------
+|V|=1870709
+Correct Prediction: 94.21%
+------------SnapShot 15 Begins--------------
+|V|=1870709
+Correct Prediction: 94.55%
+------------SnapShot 16 Begins--------------
+|V|=1870709
+Correct Prediction: 95.11%
+Running: build/index-bfs /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 32 0.005
+read: 5.932620s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 32, batch_size is 73068
+read: 0.002465s
+|E|=14613674
+|V|=1870709
+Union Graph Marked: 31.982433s
+Number of Edges in Union Graph is 14613674
+Graph Size: 14613674, Edge Count For Version 999 is 14613674
+Forward Time: 1.954590s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 6636688
+ Percentage of core graph edge: 45.41
+Common Graph Edges: 9937322
+Graph Size: 9937322, Edge Count For Version 666 is 9937322
+Forward Time: 1.780762s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 5038956
+ Percentage of core graph edge: 50.71
+Merged Set Size: 8175093
+------------SnapShot 0 Begins--------------
+|V|=1870709
+------------SnapShot 1 Begins--------------
+|V|=1870709
+Correct Prediction: 97.00%
+------------SnapShot 2 Begins--------------
+|V|=1870709
+Correct Prediction: 93.38%
+------------SnapShot 3 Begins--------------
+|V|=1870709
+Correct Prediction: 96.93%
+------------SnapShot 4 Begins--------------
+|V|=1870709
+Correct Prediction: 96.57%
+------------SnapShot 5 Begins--------------
+|V|=1870709
+Correct Prediction: 97.43%
+------------SnapShot 6 Begins--------------
+|V|=1870709
+Correct Prediction: 96.93%
+------------SnapShot 7 Begins--------------
+|V|=1870709
+Correct Prediction: 97.22%
+------------SnapShot 8 Begins--------------
+|V|=1870709
+Correct Prediction: 96.50%
+------------SnapShot 9 Begins--------------
+|V|=1870709
+Correct Prediction: 93.48%
+------------SnapShot 10 Begins--------------
+|V|=1870709
+Correct Prediction: 97.13%
+------------SnapShot 11 Begins--------------
+|V|=1870709
+Correct Prediction: 97.84%
+------------SnapShot 12 Begins--------------
+|V|=1870709
+Correct Prediction: 97.26%
+------------SnapShot 13 Begins--------------
+|V|=1870709
+Correct Prediction: 94.82%
+------------SnapShot 14 Begins--------------
+|V|=1870709
+Correct Prediction: 97.09%
+------------SnapShot 15 Begins--------------
+|V|=1870709
+Correct Prediction: 93.80%
+------------SnapShot 16 Begins--------------
+|V|=1870709
+Correct Prediction: 97.40%
+------------SnapShot 17 Begins--------------
+|V|=1870709
+Correct Prediction: 96.84%
+------------SnapShot 18 Begins--------------
+|V|=1870709
+Correct Prediction: 97.21%
+------------SnapShot 19 Begins--------------
+|V|=1870709
+Correct Prediction: 95.16%
+------------SnapShot 20 Begins--------------
+|V|=1870709
+Correct Prediction: 95.75%
+------------SnapShot 21 Begins--------------
+|V|=1870709
+Correct Prediction: 95.60%
+------------SnapShot 22 Begins--------------
+|V|=1870709
+Correct Prediction: 96.61%
+------------SnapShot 23 Begins--------------
+|V|=1870709
+Correct Prediction: 97.01%
+------------SnapShot 24 Begins--------------
+|V|=1870709
+Correct Prediction: 94.47%
+------------SnapShot 25 Begins--------------
+|V|=1870709
+Correct Prediction: 96.55%
+------------SnapShot 26 Begins--------------
+|V|=1870709
+Correct Prediction: 97.02%
+------------SnapShot 27 Begins--------------
+|V|=1870709
+Correct Prediction: 97.29%
+------------SnapShot 28 Begins--------------
+|V|=1870709
+Correct Prediction: 96.61%
+------------SnapShot 29 Begins--------------
+|V|=1870709
+Correct Prediction: 96.90%
+------------SnapShot 30 Begins--------------
+|V|=1870709
+Correct Prediction: 97.43%
+------------SnapShot 31 Begins--------------
+|V|=1870709
+Correct Prediction: 97.45%
+------------SnapShot 32 Begins--------------
+|V|=1870709
+Correct Prediction: 97.43%
+Running: build/index-bfs /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 64 0.0025
+read: 5.946121s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 64, batch_size is 36534
+read: 0.002449s
+|E|=14613674
+|V|=1870709
+Union Graph Marked: 32.102032s
+Number of Edges in Union Graph is 14613674
+Graph Size: 14613674, Edge Count For Version 999 is 14613674
+Forward Time: 1.981165s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 6638504
+ Percentage of core graph edge: 45.43
+Common Graph Edges: 9937322
+Graph Size: 9937322, Edge Count For Version 666 is 9937322
+Forward Time: 1.771228s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 5038812
+ Percentage of core graph edge: 50.71
+Merged Set Size: 8176087
+------------SnapShot 0 Begins--------------
+|V|=1870709
+------------SnapShot 1 Begins--------------
+|V|=1870709
+Correct Prediction: 98.81%
+------------SnapShot 2 Begins--------------
+|V|=1870709

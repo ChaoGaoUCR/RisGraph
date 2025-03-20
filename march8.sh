@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # 定义应用程序列表
-apps=("build/bfs-core" "build/ssr-core" "build/sswp-core" "build/wcc-core" "build/ssnp-core" "build/sssp-core" "build/viterbi-core")
+# apps=("build/bfs-core" "build/ssr-core" "build/sswp-core" "build/wcc-core" "build/ssnp-core" "build/sssp-core" "build/viterbi-core")
+apps=("build/index-bfs" "build/index-ssnp" "build/index-ssr" "build/index-sssp" "build/index-sswp" "build/index-viterbi" "build/index-wcc")
 
 # 定义 graph 和 source 文件组合
 graph_sources=(
@@ -15,11 +16,9 @@ graph_sources=(
 
 # 定义 batch_num 和 batch_size 组合
 batch_params=(
-    # "8 0.01"  "16 0.005" "32 0.0025" "64 0.00125"
-    # "8 0.02"  "16 0.01"  "32 0.005"  "64 0.0025"
-    # "8 0.04"  "16 0.02"  "32 0.01"   "64 0.005"
-    "1 0.24"
-    "1 0.48"
+    "8 0.01"  "16 0.005" "32 0.0025" "64 0.00125"
+    "8 0.02"  "16 0.01"  "32 0.005"  "64 0.0025"
+    "8 0.04"  "16 0.02"  "32 0.01"   "64 0.005"
 )
 
 # 遍历所有应用程序、graph/source 组合 和 batch 组合
