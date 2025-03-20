@@ -1,0 +1,793 @@
+nohup: ignoring input
+Running: build/bfs-core /home/cgao037/graph/dl/snap_dl source/dl_src.txt 1 0.24
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 75.836852s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 1, batch_size is 41324156
+read: 0.067552s
+|E|=172183984
+|V|=18268993
+Union Graph Marked: 66.428011s
+Number of Edges in Union Graph is 172183984
+Graph Size: 172183984, Edge Count For Version 999 is 172183984
+Forward Time: 19.178269s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 33987134
+ Percentage of core graph edge: 19.74
+Common Graph Edges: 89535672
+Graph Size: 89535672, Edge Count For Version 666 is 89535672
+Forward Time: 16.386255s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 24184920
+ Percentage of core graph edge: 27.01
+Merged Set Size: 41729457
+--------------------------------
+|V|=18268993
+Core Graph Size is 26.31 % For Snapshot 0
+ 0 Snapshot has 67.39% correct result
+ 0 Snapshot has 0 wrong result For Total Source
+Running: build/bfs-core /home/cgao037/graph/dl/snap_dl source/dl_src.txt 1 0.48
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 73.772240s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 1, batch_size is 82648312
+read: 0.079000s
+|E|=172183984
+|V|=18268993
+Union Graph Marked: 60.717168s
+Number of Edges in Union Graph is 172183984
+Graph Size: 172183984, Edge Count For Version 999 is 172183984
+Forward Time: 19.364621s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 33934932
+ Percentage of core graph edge: 19.71
+Common Graph Edges: 6887360
+Graph Size: 6887360, Edge Count For Version 666 is 6887360
+Forward Time: 13.317114s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 5098843
+ Percentage of core graph edge: 74.03
+Merged Set Size: 36837488
+--------------------------------
+|V|=18268993
+Core Graph Size is 24.25 % For Snapshot 0
+ 0 Snapshot has 70.79% correct result
+ 0 Snapshot has 0 wrong result For Total Source
+Running: build/bfs-core /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 1 0.24
+Error: Invalid line "% asym unweighted"
+read: 640.532696s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 1, batch_size is 352407643
+read: 0.274831s
+|E|=1468365182
+|V|=41652231
+Union Graph Marked: 384.329594s
+Number of Edges in Union Graph is 1468365182
+Graph Size: 1468365182, Edge Count For Version 999 is 1468365182
+Forward Time: 98.419708s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 181281445
+ Percentage of core graph edge: 12.35
+Common Graph Edges: 763549896
+Graph Size: 763549896, Edge Count For Version 666 is 763549896
+Forward Time: 73.776242s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 150157014
+ Percentage of core graph edge: 19.67
+Merged Set Size: 248719511
+--------------------------------
+|V|=41652231
+Core Graph Size is 18.37 % For Snapshot 0
+ 0 Snapshot has 62.99% correct result
+ 0 Snapshot has 0 wrong result For Total Source
+Running: build/bfs-core /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 1 0.48
+Error: Invalid line "% asym unweighted"
+read: 634.794158s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 1, batch_size is 704815287
+read: 0.291863s
+|E|=1468365182
+|V|=41652231
+Union Graph Marked: 368.663760s
+Number of Edges in Union Graph is 1468365182
+Graph Size: 1468365182, Edge Count For Version 999 is 1468365182
+Forward Time: 104.965370s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 180918355
+ Percentage of core graph edge: 12.32
+Common Graph Edges: 58734608
+Graph Size: 58734608, Edge Count For Version 666 is 58734608
+Forward Time: 51.041525s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 25332839
+ Percentage of core graph edge: 43.13
+Merged Set Size: 197308108
+--------------------------------
+|V|=41652231
+Core Graph Size is 14.32 % For Snapshot 0
+ 0 Snapshot has 34.17% correct result
+ 0 Snapshot has 0 wrong result For Total Source
+Running: build/ssr-core /home/cgao037/graph/dl/snap_dl source/dl_src.txt 1 0.24
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 73.232045s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 1, batch_size is 41324156
+read: 0.074846s
+|E|=172183984
+|V|=18268993
+Union Graph Marked: 67.640111s
+Number of Edges in Union Graph is 172183984
+Graph Size: 172183984, Edge Count For Version 999 is 172183984
+Forward Time: 23.369608s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 40144854
+ Percentage of core graph edge: 23.32
+Common Graph Edges: 89535672
+Graph Size: 89535672, Edge Count For Version 666 is 89535672
+Forward Time: 18.113387s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 24258760
+ Percentage of core graph edge: 27.09
+Merged Set Size: 43331920
+--------------------------------
+|V|=18268993
+Core Graph Size is 26.12 % For Snapshot 0
+ 0 Snapshot has 80.47% correct result
+ 0 Snapshot has 356878791 wrong result For Total Source
+Running: build/ssr-core /home/cgao037/graph/dl/snap_dl source/dl_src.txt 1 0.48
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 72.381872s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 1, batch_size is 82648312
+read: 0.078934s
+|E|=172183984
+|V|=18268993
+Union Graph Marked: 60.708648s
+Number of Edges in Union Graph is 172183984
+Graph Size: 172183984, Edge Count For Version 999 is 172183984
+Forward Time: 22.918474s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 40134216
+ Percentage of core graph edge: 23.31
+Common Graph Edges: 6887360
+Graph Size: 6887360, Edge Count For Version 666 is 6887360
+Forward Time: 13.477704s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 4728785
+ Percentage of core graph edge: 68.66
+Merged Set Size: 42653873
+--------------------------------
+|V|=18268993
+Core Graph Size is 26.93 % For Snapshot 0
+ 0 Snapshot has 79.98% correct result
+ 0 Snapshot has 365734181 wrong result For Total Source
+Running: build/ssr-core /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 1 0.24
+Error: Invalid line "% asym unweighted"
+read: 628.016705s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 1, batch_size is 352407643
+read: 0.293068s
+|E|=1468365182
+|V|=41652231
+Union Graph Marked: 367.563710s
+Number of Edges in Union Graph is 1468365182
+Graph Size: 1468365182, Edge Count For Version 999 is 1468365182
+Forward Time: 153.734007s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 118738119
+ Percentage of core graph edge: 8.09
+Common Graph Edges: 763549896
+Graph Size: 763549896, Edge Count For Version 666 is 763549896
+Forward Time: 110.531839s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 94633682
+ Percentage of core graph edge: 12.39
+Merged Set Size: 153070720
+--------------------------------
+|V|=41652231
+Core Graph Size is 11.13 % For Snapshot 0
+ 0 Snapshot has 97.50% correct result
+ 0 Snapshot has 104124240 wrong result For Total Source
+Running: build/ssr-core /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 1 0.48
+Error: Invalid line "% asym unweighted"
+read: 621.365507s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 1, batch_size is 704815287
+read: 0.289156s
+|E|=1468365182
+|V|=41652231
+Union Graph Marked: 368.892179s
+Number of Edges in Union Graph is 1468365182
+Graph Size: 1468365182, Edge Count For Version 999 is 1468365182
+Forward Time: 154.948497s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 118711561
+ Percentage of core graph edge: 8.08
+Common Graph Edges: 58734608
+Graph Size: 58734608, Edge Count For Version 666 is 58734608
+Forward Time: 66.808444s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 27108339
+ Percentage of core graph edge: 46.15
+Merged Set Size: 138164849
+--------------------------------
+|V|=41652231
+Core Graph Size is 10.53 % For Snapshot 0
+ 0 Snapshot has 55.44% correct result
+ 0 Snapshot has 1855833776 wrong result For Total Source
+Running: build/sswp-core /home/cgao037/graph/dl/snap_dl source/dl_src.txt 1 0.24
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 73.430487s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 1, batch_size is 41324156
+read: 0.080747s
+|E|=172183984
+|V|=18268993
+Union Graph Marked: 67.366108s
+Number of Edges in Union Graph is 172183984
+Graph Size: 172183984, Edge Count For Version 999 is 172183984
+Forward Time: 20.561504s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 29451759
+ Percentage of core graph edge: 17.10
+Common Graph Edges: 89535672
+Graph Size: 89535672, Edge Count For Version 666 is 89535672
+Forward Time: 17.563926s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 21008344
+ Percentage of core graph edge: 23.46
+Merged Set Size: 34966158
+--------------------------------
+|V|=18268993
+Core Graph Size is 21.87 % For Snapshot 0
+ 0 Snapshot has 81.72% correct result
+ 0 Snapshot has 0 wrong result For Total Source
+Running: build/sswp-core /home/cgao037/graph/dl/snap_dl source/dl_src.txt 1 0.48
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 73.274105s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 1, batch_size is 82648312
+read: 0.075119s
+|E|=172183984
+|V|=18268993
+Union Graph Marked: 63.216499s
+Number of Edges in Union Graph is 172183984
+Graph Size: 172183984, Edge Count For Version 999 is 172183984
+Forward Time: 20.837482s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 29456556
+ Percentage of core graph edge: 17.11
+Common Graph Edges: 6887360
+Graph Size: 6887360, Edge Count For Version 666 is 6887360
+Forward Time: 13.808027s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 4592696
+ Percentage of core graph edge: 66.68
+Merged Set Size: 32716975
+--------------------------------
+|V|=18268993
+Core Graph Size is 21.94 % For Snapshot 0
+ 0 Snapshot has 76.68% correct result
+ 0 Snapshot has 0 wrong result For Total Source
+Running: build/sswp-core /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 1 0.24
+Error: Invalid line "% asym unweighted"
+read: 631.572835s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 1, batch_size is 352407643
+read: 0.291464s
+|E|=1468365182
+|V|=41652231
+Union Graph Marked: 363.398299s
+Number of Edges in Union Graph is 1468365182
+Graph Size: 1468365182, Edge Count For Version 999 is 1468365182
+Forward Time: 108.248423s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 131584431
+ Percentage of core graph edge: 8.96
+Common Graph Edges: 763549896
+Graph Size: 763549896, Edge Count For Version 666 is 763549896
+Forward Time: 78.246934s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 108651288
+ Percentage of core graph edge: 14.23
+Merged Set Size: 176321207
+--------------------------------
+|V|=41652231
+Core Graph Size is 12.94 % For Snapshot 0
+ 0 Snapshot has 83.32% correct result
+ 0 Snapshot has 1 wrong result For Total Source
+Running: build/sswp-core /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 1 0.48
+Error: Invalid line "% asym unweighted"
+read: 626.681446s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 1, batch_size is 704815287
+read: 0.293841s
+|E|=1468365182
+|V|=41652231
+Union Graph Marked: 373.082617s
+Number of Edges in Union Graph is 1468365182
+Graph Size: 1468365182, Edge Count For Version 999 is 1468365182
+Forward Time: 106.235138s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 131522050
+ Percentage of core graph edge: 8.96
+Common Graph Edges: 58734608
+Graph Size: 58734608, Edge Count For Version 666 is 58734608
+Forward Time: 57.389536s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 21891370
+ Percentage of core graph edge: 37.27
+Merged Set Size: 148772769
+--------------------------------
+|V|=41652231
+Core Graph Size is 11.15 % For Snapshot 0
+ 0 Snapshot has 42.89% correct result
+ 0 Snapshot has 0 wrong result For Total Source
+Running: build/wcc-core /home/cgao037/graph/dl/snap_dl source/dl_src.txt 1 0.24
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 73.628855s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 1, batch_size is 41324156
+read: 0.074289s
+|E|=172183984
+|V|=18268993
+Union Graph Marked: 64.252509s
+Number of Edges in Union Graph is 172183984
+Graph Size: 172183984, Edge Count For Version 999 is 172183984
+Forward Time: 24.021228s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 21217514
+ Percentage of core graph edge: 12.32
+Common Graph Edges: 89535672
+Graph Size: 89535672, Edge Count For Version 666 is 89535672
+Forward Time: 19.307027s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 15094109
+ Percentage of core graph edge: 16.86
+Merged Set Size: 25066089
+--------------------------------
+|V|=18268993
+Core Graph Size is 15.58 % For Snapshot 0
+ 0 Snapshot has 78.97% correct result
+ 0 Snapshot has 0 wrong result For Total Source
+Running: build/wcc-core /home/cgao037/graph/dl/snap_dl source/dl_src.txt 1 0.48
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 73.698618s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 1, batch_size is 82648312
+read: 0.079195s
+|E|=172183984
+|V|=18268993
+Union Graph Marked: 62.775373s
+Number of Edges in Union Graph is 172183984
+Graph Size: 172183984, Edge Count For Version 999 is 172183984
+Forward Time: 24.123973s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 21228620
+ Percentage of core graph edge: 12.33
+Common Graph Edges: 6887360
+Graph Size: 6887360, Edge Count For Version 666 is 6887360
+Forward Time: 13.815165s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 4034319
+ Percentage of core graph edge: 58.58
+Merged Set Size: 24318253
+--------------------------------
+|V|=18268993
+Core Graph Size is 16.48 % For Snapshot 0
+ 0 Snapshot has 75.13% correct result
+ 0 Snapshot has 0 wrong result For Total Source
+Running: build/wcc-core /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 1 0.24
+Error: Invalid line "% asym unweighted"
+read: 628.668363s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 1, batch_size is 352407643
+read: 0.291885s
+|E|=1468365182
+|V|=41652231
+Union Graph Marked: 364.204749s
+Number of Edges in Union Graph is 1468365182
+Graph Size: 1468365182, Edge Count For Version 999 is 1468365182
+Forward Time: 154.053024s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 74391837
+ Percentage of core graph edge: 5.07
+Common Graph Edges: 763549896
+Graph Size: 763549896, Edge Count For Version 666 is 763549896
+Forward Time: 112.719246s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 66558127
+ Percentage of core graph edge: 8.72
+Merged Set Size: 103531765
+--------------------------------
+|V|=41652231
+Core Graph Size is 7.67 % For Snapshot 0
+ 0 Snapshot has 96.48% correct result
+ 0 Snapshot has 0 wrong result For Total Source
+Running: build/wcc-core /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 1 0.48
+Error: Invalid line "% asym unweighted"
+read: 629.140417s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 1, batch_size is 704815287
+read: 0.295221s
+|E|=1468365182
+|V|=41652231
+Union Graph Marked: 383.236028s
+Number of Edges in Union Graph is 1468365182
+Graph Size: 1468365182, Edge Count For Version 999 is 1468365182
+Forward Time: 152.843013s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 74391867
+ Percentage of core graph edge: 5.07
+Common Graph Edges: 58734608
+Graph Size: 58734608, Edge Count For Version 666 is 58734608
+Forward Time: 69.601129s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 18081367
+ Percentage of core graph edge: 30.78
+Merged Set Size: 89410625
+--------------------------------
+|V|=41652231
+Core Graph Size is 7.00 % For Snapshot 0
+ 0 Snapshot has 51.94% correct result
+ 0 Snapshot has 0 wrong result For Total Source
+Running: build/ssnp-core /home/cgao037/graph/dl/snap_dl source/dl_src.txt 1 0.24
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 72.214888s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 1, batch_size is 41324156
+read: 0.067475s
+|E|=172183984
+|V|=18268993
+Union Graph Marked: 68.536319s
+Number of Edges in Union Graph is 172183984
+Graph Size: 172183984, Edge Count For Version 999 is 172183984
+Forward Time: 21.890574s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 28944221
+ Percentage of core graph edge: 16.81
+Common Graph Edges: 89535672
+Graph Size: 89535672, Edge Count For Version 666 is 89535672
+Forward Time: 18.484275s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 21413263
+ Percentage of core graph edge: 23.92
+Merged Set Size: 35179368
+--------------------------------
+|V|=18268993
+Core Graph Size is 22.10 % For Snapshot 0
+ 0 Snapshot has 82.93% correct result
+ 0 Snapshot has 0 wrong result For Total Source
+Running: build/ssnp-core /home/cgao037/graph/dl/snap_dl source/dl_src.txt 1 0.48
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 72.184713s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 1, batch_size is 82648312
+read: 0.077359s
+|E|=172183984
+|V|=18268993
+Union Graph Marked: 62.819481s
+Number of Edges in Union Graph is 172183984
+Graph Size: 172183984, Edge Count For Version 999 is 172183984
+Forward Time: 21.873600s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 28931950
+ Percentage of core graph edge: 16.80
+Common Graph Edges: 6887360
+Graph Size: 6887360, Edge Count For Version 666 is 6887360
+Forward Time: 13.702742s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 4567801
+ Percentage of core graph edge: 66.32
+Merged Set Size: 32196891
+--------------------------------
+|V|=18268993
+Core Graph Size is 21.59 % For Snapshot 0
+ 0 Snapshot has 76.19% correct result
+ 0 Snapshot has 2 wrong result For Total Source
+Running: build/ssnp-core /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 1 0.24
+Error: Invalid line "% asym unweighted"
+read: 616.209214s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 1, batch_size is 352407643
+read: 0.307273s
+|E|=1468365182
+|V|=41652231
+Union Graph Marked: 367.113011s
+Number of Edges in Union Graph is 1468365182
+Graph Size: 1468365182, Edge Count For Version 999 is 1468365182
+Forward Time: 132.384173s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 127565181
+ Percentage of core graph edge: 8.69
+Common Graph Edges: 763549896
+Graph Size: 763549896, Edge Count For Version 666 is 763549896
+Forward Time: 96.010836s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 104841889
+ Percentage of core graph edge: 13.73
+Merged Set Size: 170101943
+--------------------------------
+|V|=41652231
+Core Graph Size is 12.47 % For Snapshot 0
+ 0 Snapshot has 83.03% correct result
+ 0 Snapshot has 0 wrong result For Total Source
+Running: build/ssnp-core /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 1 0.48
+Error: Invalid line "% asym unweighted"
+read: 616.525680s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 1, batch_size is 704815287
+read: 0.299284s
+|E|=1468365182
+|V|=41652231
+Union Graph Marked: 370.500589s
+Number of Edges in Union Graph is 1468365182
+Graph Size: 1468365182, Edge Count For Version 999 is 1468365182
+Forward Time: 130.161005s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 127572485
+ Percentage of core graph edge: 8.69
+Common Graph Edges: 58734608
+Graph Size: 58734608, Edge Count For Version 666 is 58734608
+Forward Time: 62.923691s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 22196032
+ Percentage of core graph edge: 37.79
+Merged Set Size: 145297044
+--------------------------------
+|V|=41652231
+Core Graph Size is 10.93 % For Snapshot 0
+ 0 Snapshot has 42.30% correct result
+ 0 Snapshot has 0 wrong result For Total Source
+Running: build/sssp-core /home/cgao037/graph/dl/snap_dl source/dl_src.txt 1 0.24
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 73.073449s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 1, batch_size is 41324156
+read: 0.070751s
+|E|=172183984
+|V|=18268993
+Union Graph Marked: 67.045234s
+Number of Edges in Union Graph is 172183984
+Graph Size: 172183984, Edge Count For Version 999 is 172183984
+Forward Time: 19.287689s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 40929527
+ Percentage of core graph edge: 23.77
+Common Graph Edges: 89535672
+Graph Size: 89535672, Edge Count For Version 666 is 89535672
+Forward Time: 16.294539s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 25215089
+ Percentage of core graph edge: 28.16
+Merged Set Size: 45833094
+--------------------------------
+|V|=18268993
+Core Graph Size is 28.23 % For Snapshot 0
+ 0 Snapshot has 96.60% correct result
+ 0 Snapshot has 0 wrong result For Total Source
+Running: build/sssp-core /home/cgao037/graph/dl/snap_dl source/dl_src.txt 1 0.48
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 73.048156s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 1, batch_size is 82648312
+read: 0.071817s
+|E|=172183984
+|V|=18268993
+Union Graph Marked: 59.902306s
+Number of Edges in Union Graph is 172183984
+Graph Size: 172183984, Edge Count For Version 999 is 172183984
+Forward Time: 18.820251s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 40929528
+ Percentage of core graph edge: 23.77
+Common Graph Edges: 6887360
+Graph Size: 6887360, Edge Count For Version 666 is 6887360
+Forward Time: 13.682758s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 4953365
+ Percentage of core graph edge: 71.92
+Merged Set Size: 43886046
+--------------------------------
+|V|=18268993
+Core Graph Size is 28.33 % For Snapshot 0
+ 0 Snapshot has 88.23% correct result
+ 0 Snapshot has 0 wrong result For Total Source
+Running: build/sssp-core /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 1 0.24
+Error: Invalid line "% asym unweighted"
+read: 623.990315s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 1, batch_size is 352407643
+read: 0.290645s
+|E|=1468365182
+|V|=41652231
+Union Graph Marked: 366.855704s
+Number of Edges in Union Graph is 1468365182
+Graph Size: 1468365182, Edge Count For Version 999 is 1468365182
+Forward Time: 99.855267s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 425899388
+ Percentage of core graph edge: 29.01
+Common Graph Edges: 763549896
+Graph Size: 763549896, Edge Count For Version 666 is 763549896
+Forward Time: 74.478022s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 237613567
+ Percentage of core graph edge: 31.12
+Merged Set Size: 463339498
+--------------------------------
+|V|=41652231
+march17.sh: line 29: 128445 Killed                  $app "$graphfile" "$root_file" "$batch_num" "$batch_size"
+Running: build/sssp-core /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 1 0.48
+Error: Invalid line "% asym unweighted"
+read: 630.114161s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 1, batch_size is 704815287
+read: 0.290895s
+|E|=1468365182
+|V|=41652231
+Union Graph Marked: 372.628280s
+Number of Edges in Union Graph is 1468365182
+Graph Size: 1468365182, Edge Count For Version 999 is 1468365182
+Forward Time: 99.924305s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 425899388
+ Percentage of core graph edge: 29.01
+Common Graph Edges: 58734608
+Graph Size: 58734608, Edge Count For Version 666 is 58734608
+Forward Time: 49.933316s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 24509637
+ Percentage of core graph edge: 41.73
+Merged Set Size: 438680228
+--------------------------------
+|V|=41652231
+Core Graph Size is 30.40 % For Snapshot 0
+ 0 Snapshot has 78.47% correct result
+ 0 Snapshot has 0 wrong result For Total Source
+Running: build/viterbi-core /home/cgao037/graph/dl/snap_dl source/dl_src.txt 1 0.24
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 74.272401s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 1, batch_size is 41324156
+read: 0.075305s
+|E|=172183984
+|V|=18268993
+Union Graph Marked: 66.014028s
+Number of Edges in Union Graph is 172183984
+Graph Size: 172183984, Edge Count For Version 999 is 172183984
+Forward Time: 20.178053s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 32891756
+ Percentage of core graph edge: 19.10
+Common Graph Edges: 89535672
+Graph Size: 89535672, Edge Count For Version 666 is 89535672
+Forward Time: 17.305937s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 24455106
+ Percentage of core graph edge: 27.31
+Merged Set Size: 40524924
+--------------------------------
+|V|=18268993
+Core Graph Size is 25.56 % For Snapshot 0
+ 0 Snapshot has 59.48% correct result
+Running: build/viterbi-core /home/cgao037/graph/dl/snap_dl source/dl_src.txt 1 0.48
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 73.587348s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 1, batch_size is 82648312
+read: 0.073451s
+|E|=172183984
+|V|=18268993
+Union Graph Marked: 62.291994s
+Number of Edges in Union Graph is 172183984
+Graph Size: 172183984, Edge Count For Version 999 is 172183984
+Forward Time: 20.004102s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 32893093
+ Percentage of core graph edge: 19.10
+Common Graph Edges: 6887360
+Graph Size: 6887360, Edge Count For Version 666 is 6887360
+Forward Time: 13.718122s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 4757038
+ Percentage of core graph edge: 69.07
+Merged Set Size: 36168477
+--------------------------------
+|V|=18268993
+Core Graph Size is 24.11 % For Snapshot 0
+ 0 Snapshot has 65.35% correct result
+Running: build/viterbi-core /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 1 0.24
+Error: Invalid line "% asym unweighted"
+read: 634.474549s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 1, batch_size is 352407643
+read: 0.290437s
+|E|=1468365182
+|V|=41652231
+Union Graph Marked: 365.410892s
+Number of Edges in Union Graph is 1468365182
+Graph Size: 1468365182, Edge Count For Version 999 is 1468365182
+Forward Time: 102.686622s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 208310082
+ Percentage of core graph edge: 14.19
+Common Graph Edges: 763549896
+Graph Size: 763549896, Edge Count For Version 666 is 763549896
+Forward Time: 77.273955s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 158201097
+ Percentage of core graph edge: 20.72
+Merged Set Size: 268646396
+--------------------------------
+|V|=41652231
+Core Graph Size is 19.54 % For Snapshot 0
+ 0 Snapshot has 78.40% correct result
+Running: build/viterbi-core /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 1 0.48
+Error: Invalid line "% asym unweighted"
+read: 629.370843s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 1, batch_size is 704815287
+read: 0.290142s
+|E|=1468365182
+|V|=41652231
+Union Graph Marked: 375.420096s
+Number of Edges in Union Graph is 1468365182
+Graph Size: 1468365182, Edge Count For Version 999 is 1468365182
+Forward Time: 105.903073s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 208356176
+ Percentage of core graph edge: 14.19
+Common Graph Edges: 58734608
+Graph Size: 58734608, Edge Count For Version 666 is 58734608
+Forward Time: 54.566370s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 23570740
+ Percentage of core graph edge: 40.13
+Merged Set Size: 225314516
+--------------------------------
+|V|=41652231
+Core Graph Size is 16.27 % For Snapshot 0
+ 0 Snapshot has 37.72% correct result

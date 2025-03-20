@@ -5,12 +5,12 @@ apps=("build/bfs-core" "build/ssr-core" "build/sswp-core" "build/wcc-core" "buil
 
 # 定义 graph 和 source 文件组合
 graph_sources=(
-    "/home/cgao037/graph/sx/stack_snap source/sx.txt"
-    "/home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt"
-    "/home/cgao037/graph/or/snap_or source/or.txt"
-    "/home/cgao037/graph/wen/snap_wen source/wen.txt"
-    "/home/xyin014/graph/dl/snap_dl source/dl_src.txt"    
-    "/home/xyin014/graph/ttw/ttw_snap source/TW_queries.txt"
+    # "/home/cgao037/graph/sx/stack_snap source/sx.txt"
+    # "/home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt"
+    # "/home/cgao037/graph/or/snap_or source/or.txt"
+    # "/home/cgao037/graph/wen/snap_wen source/wen.txt"
+    "/home/cgao037/graph/dl/snap_dl source/dl_src.txt"    
+    "/home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt"
 )
 
 # 定义 batch_num 和 batch_size 组合
