@@ -1,0 +1,52 @@
+nohup: ignoring input
+Error: Invalid line "% asym unweighted"
+read: 632.243148s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 1, batch_size is 14683651
+read: 0.291359s
+|E|=1468365182
+|V|=41652231
+Intersection Graph Marked: 358.385294s
+Wasted Percentage: 2.582724 %
+Error: Invalid line "% asym unweighted"
+read: 633.129314s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 1, batch_size is 29367303
+read: 0.309605s
+|E|=1468365182
+|V|=41652231
+Intersection Graph Marked: 371.328172s
+Wasted Percentage: 5.233703 %
+Error: Invalid line "% asym unweighted"
+read: 634.778471s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 1, batch_size is 58734607
+read: 0.289830s
+|E|=1468365182
+|V|=41652231
+Intersection Graph Marked: 341.478118s
+Wasted Percentage: 9.775776 %
+Error: Invalid line "% asym unweighted"
+read: 631.670987s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 1, batch_size is 117469214
+read: 0.297691s
+|E|=1468365182
+|V|=41652231
+Intersection Graph Marked: 303.351578s
+Re Computing: 0 0 2869922
+Wasted Percentage: 18.757372 %
+Error: Invalid line "% asym unweighted"
+read: 630.058727s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 1, batch_size is 234938429
+read: 0.289869s
+|E|=1468365182
+|V|=41652231
+Intersection Graph Marked: 228.011187s
+Re Computing: 0 0 6056155
+Wasted Percentage: 35.452567 %
+Error: Invalid line "% asym unweighted"
+read: 630.508506s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 1, batch_size is 469876858
+read: 0.295057s
+|E|=1468365182
+|V|=41652231
+Intersection Graph Marked: 114.709591s
+Re Computing: 0 0 13160562
+Wasted Percentage: 82.705049 %
