@@ -155,7 +155,7 @@ auto rootCompute(Graph<uint64_t>& graph, uint64_t root, uint64_t snapshotNum, ui
     auto start = std::chrono::system_clock::now();
     graph.build_tree<uint64_t>(init_label_func, continue_reduce_func, update_func, active_result_func, result);
     auto end = std::chrono::system_clock::now();
-    // fprintf(stderr, "Version Time: %lf\n", 1e-6*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(end-start).count());
+    fprintf(stderr, "Version Time: %lf\n", 1e-6*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(end-start).count());
     return result;
 }
 
@@ -510,7 +510,6 @@ int main(int argc, const char** argv) {
         }
     }    
     // Intersection Graph Read
-    Graph<uint64_t> graph(num_vertices, raw_edges_len, false, true);
     Graph<uint64_t> graphBase(num_vertices, raw_edges_len, false, true);
 
     {
@@ -520,12 +519,10 @@ int main(int argc, const char** argv) {
         {
             const auto &e = raw_edges[i];
             if(E_tag[i].first == commonTag) {graphBase.add_edge({e.first, e.second, (e.first+e.second)%16 + 1}, true);}
-            if(E_tag[i].first == commonTag) {graph.add_edge({e.first, e.second, commonTag}, true);}
         }
         auto end = std::chrono::system_clock::now();
         fprintf(stderr, "Intersection Graph Marked: %.6lfs\n", 1e-6*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(end-start).count());
     }
-    fprintf(stderr,"%lu number of Edges in the graph\n", graph.get_degree());
     {
         // Init Computation From SnapShot 0 Common Graph Add All deletion Batches
         for(auto size = 0; size < batch_num; size++)
@@ -535,19 +532,7 @@ int main(int argc, const char** argv) {
             {
                 const auto &e = deletion_batches[size][i];
                 uint64_t versionTag = encodeTag(size, true, true);
-                graph.add_edge({e.first, e.second, versionTag}, true);
                 graphBase.add_edge({e.first, e.second, (e.first+e.second)%16 + 1}, true);
-            }
-            );          
-        }
-        for(auto size = 0; size < batch_num; size++)
-        {
-            THRESHOLD_OPENMP_LOCAL("omp parallel for", batch_size, 1024,
-            for (uint64_t i = 0; i < batch_size; i++)
-            {
-                const auto &e = addition_batches[size][i];
-                uint64_t versionTag = encodeTag(size, false, true);
-                graph.add_edge({e.first, e.second, versionTag}, true);
             }
             );          
         }
@@ -564,7 +549,7 @@ int main(int argc, const char** argv) {
     float mutationTotal = 0;
     for (auto i = 0; i < batch_num; i++)
     {
-        auto timeTmp = rootIncrementalCompute(graph, rootsToCompute, sourceToCompute, snapshotResults, addition_batches[i], deletion_batches[i]);
+        auto timeTmp = rootIncrementalCompute(graphBase, rootsToCompute, sourceToCompute, snapshotResults, addition_batches[i], deletion_batches[i]);
         computeTotal += timeTmp.first;
         mutationTotal += timeTmp.second;
     }
