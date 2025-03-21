@@ -3606,3 +3606,4 @@ loading graph /home/xyin014/graph/ttw/ttw_snap, root file is source/TW_queries.t
 read: 0.288251s
 |E|=1468365182
 |V|=41652231
+Re Computing: 3 401564 4248144

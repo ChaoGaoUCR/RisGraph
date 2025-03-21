@@ -1,0 +1,378 @@
+nohup: ignoring input
+read: 6.005765s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 16, batch_size is 292273
+read: 0.007802s
+|E|=14613674
+|V|=1870709
+Intersection Graph Marked: 17.772334s
+Total Time: 23.749765s
+Compute Time: 3.282028s
+Mutation Time: 20.467737s
+read: 5.943282s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 16, batch_size is 292273
+read: 0.007342s
+|E|=14613674
+|V|=1870709
+Intersection Graph Marked: 14.288849s
+Total Time: 30.670277s
+Compute Time: 9.142928s
+Mutation Time: 21.527348s
+read: 5.945130s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 16, batch_size is 292273
+read: 0.007901s
+|E|=14613674
+|V|=1870709
+Intersection Graph Marked: 17.254618s
+Total Time: 33.201534s
+Compute Time: 11.404626s
+Mutation Time: 21.796907s
+read: 5.935409s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 16, batch_size is 292273
+read: 0.007433s
+|E|=14613674
+|V|=1870709
+Intersection Graph Marked: 17.723006s
+Total Time: 35.136192s
+Compute Time: 13.969208s
+Mutation Time: 21.166985s
+read: 5.930560s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 16, batch_size is 292273
+read: 0.007813s
+|E|=14613674
+|V|=1870709
+Intersection Graph Marked: 13.769091s
+Total Time: 39.574020s
+Compute Time: 20.364124s
+Mutation Time: 19.209894s
+read: 5.937311s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 16, batch_size is 292273
+read: 0.007444s
+|E|=14613674
+|V|=1870709
+Intersection Graph Marked: 15.845877s
+Total Time: 49.864563s
+Compute Time: 29.078011s
+Mutation Time: 20.786554s
+read: 5.949110s
+loading graph /home/xyin014/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 16, batch_size is 292273
+read: 0.007426s
+|E|=14613674
+|V|=1870709
+Intersection Graph Marked: 14.603917s
+Total Time: 61.725510s
+Compute Time: 40.912910s
+Mutation Time: 20.812599s
+Error: Invalid line "% asym unweighted"
+read: 646.055177s
+loading graph /home/xyin014/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 16, batch_size is 29367303
+read: 0.295326s
+|E|=1468365182
+|V|=41652231
+Intersection Graph Marked: 103.241507s
+Re Computing: 5 2074830 23058
+Re Computing: 1 1173504 1039432
+Re Computing: 2 1792714 459854
+Re Computing: 4 1939299 144729
+Re Computing: 2 1768948 578140
+Re Computing: 2 1708529 550435
+Re Computing: 3 2042325 515843
+Re Computing: 3 1881484 204542
+Re Computing: 4 2031021 159192
+Re Computing: 3 1925451 617057
+Re Computing: 2 1726110 467486
+Re Computing: 2 1602476 590318
+Re Computing: 3 1956879 512119
+Re Computing: 3 1906782 233697
+Re Computing: 1 1168839 1173955
+Re Computing: 4 2055162 62026
+Re Computing: 3 1842570 272615
+Re Computing: 3 1885351 264871
+Total Time: 478.200836s
+Compute Time: 169.620728s
+Mutation Time: 308.580109s
+Error: Invalid line "% asym unweighted"
+read: 633.332005s
+loading graph /home/xyin014/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 16, batch_size is 29367303
+read: 0.293142s
+|E|=1468365182
+|V|=41652231
+Intersection Graph Marked: 108.398075s
+Re Computing: 5 2074514 22761
+Re Computing: 1 1173580 1040344
+Re Computing: 2 1797925 465965
+Re Computing: 4 1941250 144753
+Re Computing: 2 1783441 570484
+Re Computing: 2 1721719 524293
+Re Computing: 3 2041838 515717
+Re Computing: 3 1881473 204552
+Re Computing: 4 2029149 158750
+Re Computing: 3 1925495 617143
+Re Computing: 2 1732170 491996
+Re Computing: 2 1603092 590105
+Re Computing: 3 1779511 503660
+Re Computing: 3 1956811 512185
+Re Computing: 3 1905912 233736
+Re Computing: 1 1169008 1150600
+Re Computing: 4 2055203 62120
+Re Computing: 3 1859261 271837
+Re Computing: 3 1885515 265534
+Total Time: 487.202026s
+Compute Time: 208.447769s
+Mutation Time: 278.754272s
+Error: Invalid line "% asym unweighted"
+read: 634.103071s
+loading graph /home/xyin014/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 16, batch_size is 29367303
+read: 0.293478s
+|E|=1468365182
+|V|=41652231
+Intersection Graph Marked: 137.397080s
+Re Computing: 5 2074376 22825
+Re Computing: 4 1961900 130971
+Re Computing: 3 1885614 254552
+Re Computing: 1 1173587 1039507
+Re Computing: 2 1799796 458143
+Re Computing: 4 1940972 144557
+Re Computing: 2 1782098 569566
+Re Computing: 2 1701540 527114
+Re Computing: 2 1940739 631757
+Re Computing: 3 2041549 514903
+Re Computing: 3 1881210 204529
+Re Computing: 5 1913468 225054
+Re Computing: 4 2031630 159106
+Re Computing: 3 1925695 616857
+Re Computing: 4 2035952 158400
+Re Computing: 2 1729255 472521
+Re Computing: 3 1770752 385190
+Re Computing: 4 2012792 270330
+Re Computing: 2 1602397 590141
+Re Computing: 2 1916813 967145
+Re Computing: 2 1693389 475630
+Re Computing: 3 1785397 531663
+Re Computing: 3 1956696 512034
+Re Computing: 1 1147324 966225
+Re Computing: 3 1906403 233683
+Re Computing: 1 1168825 1087742
+Re Computing: 4 2055177 62033
+Re Computing: 3 1839647 275651
+Re Computing: 3 1885089 264308
+Re Computing: 4 2014032 166687
+Total Time: 596.401245s
+Compute Time: 322.250580s
+Mutation Time: 274.150635s
+Error: Invalid line "% asym unweighted"
+read: 632.262010s
+loading graph /home/xyin014/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 16, batch_size is 29367303
+read: 0.290271s
+|E|=1468365182
+|V|=41652231
+Intersection Graph Marked: 108.742694s
+Re Computing: 5 2074041 22821
+Re Computing: 4 1956746 130946
+Re Computing: 3 1885825 254786
+Re Computing: 1 1173619 1039816
+Re Computing: 2 1800652 467886
+Re Computing: 4 1941047 144788
+Re Computing: 2 1763469 553089
+Re Computing: 2 1695597 533710
+Re Computing: 2 1931669 626111
+Re Computing: 3 2042153 514732
+Re Computing: 3 1881154 204523
+Re Computing: 5 1912816 225040
+Re Computing: 4 2033949 158859
+Re Computing: 3 1925009 617141
+Re Computing: 4 2042660 160817
+Re Computing: 2 1726013 476732
+Re Computing: 3 1766998 385860
+Re Computing: 4 2012757 270328
+Re Computing: 2 1603159 590268
+Re Computing: 2 1916911 966611
+Re Computing: 2 1693438 475632
+Re Computing: 3 1793021 530427
+Re Computing: 3 1956771 512111
+Re Computing: 1 1147236 968141
+Re Computing: 5 2069270 13799
+Re Computing: 3 1906554 233631
+Re Computing: 1 1169197 1095405
+Re Computing: 4 2055176 61982
+Re Computing: 3 1832488 272372
+Re Computing: 3 1885065 265004
+Re Computing: 4 2015554 167313
+Total Time: 677.408203s
+Compute Time: 371.869080s
+Mutation Time: 305.539124s
+Error: Invalid line "% asym unweighted"
+read: 632.549985s
+loading graph /home/xyin014/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 16, batch_size is 29367303
+read: 0.297004s
+|E|=1468365182
+|V|=41652231
+Intersection Graph Marked: 117.297210s
+Re Computing: 4 1992586 93391
+Re Computing: 5 2045201 42983
+Re Computing: 3 1885620 254537
+Re Computing: 1 1178425 1110941
+Re Computing: 1 1173328 1039437
+Re Computing: 2 1799455 467280
+Re Computing: 4 1940647 144695
+Re Computing: 2 1767543 570086
+Re Computing: 2 1700712 547436
+Re Computing: 2 1942067 635623
+Re Computing: 3 2041533 514778
+Re Computing: 3 1881151 204523
+Re Computing: 5 1912891 225085
+Re Computing: 4 2029934 159136
+Re Computing: 3 1925389 616939
+Re Computing: 4 2011750 159917
+Re Computing: 2 1750772 479181
+Re Computing: 3 1765087 386020
+Re Computing: 4 2012848 270310
+Re Computing: 3 1889582 253982
+Re Computing: 2 1602732 590140
+Re Computing: 2 1916880 966536
+Re Computing: 2 1693371 475487
+Re Computing: 2 1763558 858737
+Re Computing: 3 1792829 527581
+Re Computing: 3 1956540 511989
+Re Computing: 1 1146668 966999
+Re Computing: 5 2072551 13630
+Re Computing: 3 1906522 233748
+Re Computing: 1 1168750 1172931
+Re Computing: 4 2055046 61996
+Re Computing: 3 1864208 272082
+Re Computing: 2 1850941 597871
+Re Computing: 4 2010803 122531
+Re Computing: 3 1885775 265681
+Re Computing: 4 2012127 166963
+Re Computing: 1 1153276 977199
+Total Time: 745.261108s
+Compute Time: 470.617523s
+Mutation Time: 274.643616s
+Error: Invalid line "% asym unweighted"
+read: 632.436453s
+loading graph /home/xyin014/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 16, batch_size is 29367303
+read: 0.294450s
+|E|=1468365182
+|V|=41652231
+Intersection Graph Marked: 100.392126s
+Re Computing: 2 1787422 453899
+Re Computing: 2 1611710 578802
+Re Computing: 4 1992132 92879
+Re Computing: 4 1979212 129446
+Re Computing: 3 1885640 254505
+Re Computing: 1 1181070 1125327
+Re Computing: 1 1173354 1038879
+Re Computing: 2 1800117 463994
+Re Computing: 4 1940401 144685
+Re Computing: 3 1881599 208820
+Re Computing: 4 1996363 666840
+Re Computing: 2 1777689 568292
+Re Computing: 2 1718817 558133
+Re Computing: 2 1941325 633775
+Re Computing: 3 2042052 514836
+Re Computing: 3 1881164 204542
+Re Computing: 5 1914424 225089
+Re Computing: 2 1833489 527463
+Re Computing: 4 2032495 159156
+Re Computing: 3 1925287 617071
+Re Computing: 4 2026984 160360
+Re Computing: 2 1729597 470903
+Re Computing: 3 1769395 385100
+Re Computing: 4 2012717 270312
+Re Computing: 3 1892998 254443
+Re Computing: 4 1990869 270765
+Re Computing: 2 1602494 590092
+Re Computing: 2 1916897 966957
+Re Computing: 2 1693349 475707
+Re Computing: 2 1763729 859077
+Re Computing: 2 1836454 685667
+Re Computing: 3 1810407 534675
+Re Computing: 3 1956814 512092
+Re Computing: 1 1147164 968042
+Re Computing: 5 2073389 13706
+Re Computing: 3 1944694 400563
+Re Computing: 3 1906861 233747
+Re Computing: 1 1169067 1171143
+Re Computing: 2 1692338 495112
+Re Computing: 4 2055042 62022
+Re Computing: 3 1841982 274535
+Re Computing: 2 1851514 598216
+Re Computing: 4 2010745 122518
+Re Computing: 3 1885424 265332
+Re Computing: 4 2013919 167296
+Re Computing: 1 1153228 976775
+Total Time: 831.127319s
+Compute Time: 549.125244s
+Mutation Time: 282.002075s
+Error: Invalid line "% asym unweighted"
+read: 633.521952s
+loading graph /home/xyin014/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 16, batch_size is 29367303
+read: 0.292405s
+|E|=1468365182
+|V|=41652231
+Intersection Graph Marked: 114.462927s
+Re Computing: 2 1808866 459305
+Re Computing: 2 1608200 575757
+Re Computing: 1 1176129 1067956
+Re Computing: 5 2075313 22958
+Re Computing: 5 2060194 45489
+Re Computing: 3 1885772 254785
+Re Computing: 1 1176871 1089060
+Re Computing: 1 1173366 1039252
+Re Computing: 2 1803514 468289
+Re Computing: 4 1940672 144656
+Re Computing: 3 1881451 208308
+Re Computing: 4 1996435 666735
+Re Computing: 2 1771488 568468
+Re Computing: 2 1715217 551510
+Re Computing: 2 1947484 638709
+Re Computing: 2 1779053 442489
+Re Computing: 4 1910180 229730
+Re Computing: 3 2041402 515009
+Re Computing: 3 1881529 204543
+Re Computing: 5 1913095 225072
+Re Computing: 2 1833549 527917
+Re Computing: 2 1718458 387246
+Re Computing: 1 1156267 1015408
+Re Computing: 4 2035480 159072
+Re Computing: 2 1593349 623027
+Re Computing: 3 1925445 616924
+Re Computing: 4 2021272 161121
+Re Computing: 4 2017077 135152
+Re Computing: 2 1731332 475374
+Re Computing: 3 1768910 386511
+Re Computing: 4 2012917 270319
+Re Computing: 3 1890472 254054
+Re Computing: 4 1991358 271233
+Re Computing: 2 1602850 590191
+Re Computing: 2 1916975 967043
+Re Computing: 2 1693115 470414
+Re Computing: 2 1764499 859245
+Re Computing: 2 1836980 681469
+Re Computing: 2 1765785 799377
+Re Computing: 2 1726029 518058
+Re Computing: 3 1773088 512867
+Re Computing: 3 1956788 512021
+Re Computing: 1 1146628 965297
+Re Computing: 6 2079614 3115
+Re Computing: 3 1942451 400603
+Re Computing: 2 1928557 591004
+Re Computing: 3 1906825 233703
+Re Computing: 1 1169249 1093374
+Re Computing: 2 1692432 495353
+Re Computing: 5 2071875 14350
+Re Computing: 3 1772453 335600
+Re Computing: 2 1746773 587076
+Re Computing: 4 2055137 62030
+Re Computing: 3 1837920 268430
+Re Computing: 2 1851323 598735
+Re Computing: 4 2011151 122672
+Re Computing: 3 1990924 428815
+Re Computing: 3 1806449 331714
+Re Computing: 3 1885587 235925
+Re Computing: 2 1731322 637891
+Re Computing: 3 1885477 265493
+Re Computing: 4 2012483 166812
+Re Computing: 1 1153248 976826
+Total Time: 1032.921875s
+Compute Time: 740.975037s
+Mutation Time: 291.946869s
