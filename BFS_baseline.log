@@ -1,0 +1,32 @@
+Running: build/BFSbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 8 0.02 0
+read: 14.986186s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.011507s
+|E|=36233445
+|V|=6024259
+streaming total time 5.663117s
+|V|=6024259
+Intersection Graph Marked: 0.699551s
+Version Time: 0.128907
+direct hop total time 0.798755s
+work sharing total time 0.727285s
+CommonGraph total time 0.727285s
+Running: build/BFSbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 8 0.02 1
+read: 15.359668s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.010662s
+|E|=36233445
+|V|=6024259
+streaming total time 4.537603s
+|V|=6024259
+Intersection Graph Marked: 0.720415s
+Version Time: 0.997248
+direct hop total time 0.844243s
+work sharing total time 0.663339s
+CommonGraph total time 0.663339s
+Running: build/BFSbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 8 0.02 2
+read: 15.021197s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.012760s
+|E|=36233445
+|V|=6024259
