@@ -1,0 +1,83 @@
+nohup: ignoring input
+read: 15.595138s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 1, batch_size is 362334
+read: 0.011983s
+|E|=36233445
+|V|=6024259
+Intersection Graph Marked: 7.305546s
+Wasted Percentage: 0.948947 %
+read: 15.520728s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 1, batch_size is 724668
+read: 0.012065s
+|E|=36233445
+|V|=6024259
+Intersection Graph Marked: 7.401172s
+Wasted Percentage: 1.911189 %
+read: 15.499014s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 1, batch_size is 1449337
+read: 0.012543s
+|E|=36233445
+|V|=6024259
+Intersection Graph Marked: 6.997105s
+Wasted Percentage: 3.769957 %
+read: 15.249846s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 1, batch_size is 2898675
+read: 0.011580s
+|E|=36233445
+|V|=6024259
+Intersection Graph Marked: 5.586746s
+Wasted Percentage: 7.366018 %
+read: 15.229544s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 1, batch_size is 5797351
+read: 0.011798s
+|E|=36233445
+|V|=6024259
+Intersection Graph Marked: 4.699479s
+Wasted Percentage: 17.150375 %
+Error: Invalid line "% bip unweighted"
+read: 138.060223s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 1, batch_size is 3270374
+read: 0.067411s
+|E|=327037487
+|V|=8730858
+Intersection Graph Marked: 183.239328s
+Wasted Percentage: 19.144705 %
+Error: Invalid line "% bip unweighted"
+read: 136.337673s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 1, batch_size is 6540749
+read: 0.063058s
+|E|=327037487
+|V|=8730858
+Intersection Graph Marked: 140.371119s
+Wasted Percentage: 25.406942 %
+Error: Invalid line "% bip unweighted"
+read: 136.209825s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 1, batch_size is 13081499
+read: 0.061950s
+|E|=327037487
+|V|=8730858
+Intersection Graph Marked: 175.796176s
+Wasted Percentage: 35.355059 %
+Error: Invalid line "% bip unweighted"
+read: 136.230907s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 1, batch_size is 26162998
+read: 0.066454s
+|E|=327037487
+|V|=8730858
+Intersection Graph Marked: 164.420788s
+Re Computing: 4 1941971 336684
+Wasted Percentage: 53.394145 %
+Error: Invalid line "% bip unweighted"
+read: 136.162721s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 1, batch_size is 52325997
+read: 0.066926s
+|E|=327037487
+|V|=8730858
+Intersection Graph Marked: 118.709751s
+Re Computing: 1 1327094 1064034
+Wasted Percentage: 71.829138 %
+Error: Cannot open file ./build/wastedquery
+Error: Cannot open file ./build/wastedquery
+Error: Cannot open file ./build/wastedquery
+Error: Cannot open file ./build/wastedquery
+Error: Cannot open file ./build/wastedquery
