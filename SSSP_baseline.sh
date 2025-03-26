@@ -1,7 +1,5 @@
 apps=(
-    "build/BFSbaseline" "build/SSNPbaseline" "build/SSSPbaseline"
-    "build/CCbaseline" "build/SSRbaseline" "build/SSWPbaseline"
-    "build/Viterbibaseline"
+    "build/SSSPbaseline"
 )
 
 graph_sources=(
