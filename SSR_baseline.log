@@ -1,0 +1,5330 @@
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 8 0.02 0
+read: 14.885003s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.006272s
+|E|=36233445
+|V|=6024259
+streaming total time 4.487538s
+|V|=6024259
+Intersection Graph Marked: 0.761264s
+Version Time: 0.137983
+direct hop total time 0.502479s
+work sharing total time 0.397250s
+CommonGraph total time 0.397250s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 8 0.02 1
+read: 15.016952s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.006200s
+|E|=36233445
+|V|=6024259
+streaming total time 4.147266s
+|V|=6024259
+Intersection Graph Marked: 0.802924s
+Version Time: 0.580199
+direct hop total time 0.511133s
+work sharing total time 0.379029s
+CommonGraph total time 0.379029s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 8 0.02 2
+read: 14.883559s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.006225s
+|E|=36233445
+|V|=6024259
+streaming total time 2.026363s
+|V|=6024259
+Intersection Graph Marked: 0.722085s
+Version Time: 0.119521
+direct hop total time 0.539151s
+work sharing total time 0.363901s
+CommonGraph total time 0.363901s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 8 0.02 3
+read: 14.891338s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.006301s
+|E|=36233445
+|V|=6024259
+streaming total time 2.082451s
+|V|=6024259
+Intersection Graph Marked: 0.749419s
+Version Time: 0.567097
+direct hop total time 0.083374s
+work sharing total time 0.042594s
+CommonGraph total time 0.042594s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 8 0.02 4
+read: 14.876622s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.006453s
+|E|=36233445
+|V|=6024259
+streaming total time 2.019231s
+|V|=6024259
+Intersection Graph Marked: 0.929433s
+Version Time: 0.118831
+direct hop total time 0.537484s
+work sharing total time 0.386184s
+CommonGraph total time 0.386184s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 8 0.02 5
+read: 14.870775s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.006268s
+|E|=36233445
+|V|=6024259
+streaming total time 3.290347s
+|V|=6024259
+Intersection Graph Marked: 0.745564s
+Version Time: 0.135806
+direct hop total time 0.556143s
+work sharing total time 0.381179s
+CommonGraph total time 0.381179s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 8 0.02 6
+read: 15.293930s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.006229s
+|E|=36233445
+|V|=6024259
+streaming total time 2.465414s
+|V|=6024259
+Intersection Graph Marked: 0.795380s
+Version Time: 0.288543
+direct hop total time 0.076777s
+work sharing total time 0.051511s
+CommonGraph total time 0.051511s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 8 0.02 7
+read: 14.878008s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.006376s
+|E|=36233445
+|V|=6024259
+streaming total time 2.429596s
+|V|=6024259
+Intersection Graph Marked: 0.851216s
+Version Time: 0.384904
+direct hop total time 0.530510s
+work sharing total time 0.459859s
+CommonGraph total time 0.459859s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 8 0.02 8
+read: 14.867582s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.006457s
+|E|=36233445
+|V|=6024259
+streaming total time 4.117377s
+|V|=6024259
+Intersection Graph Marked: 0.721725s
+Version Time: 0.288216
+direct hop total time 0.500111s
+work sharing total time 0.410310s
+CommonGraph total time 0.410310s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 8 0.02 9
+read: 14.878446s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.006497s
+|E|=36233445
+|V|=6024259
+streaming total time 2.353078s
+|V|=6024259
+Intersection Graph Marked: 0.775309s
+Version Time: 0.165191
+direct hop total time 0.532291s
+work sharing total time 0.394089s
+CommonGraph total time 0.394089s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 8 0.02 10
+read: 15.050293s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.006300s
+|E|=36233445
+|V|=6024259
+streaming total time 3.230387s
+|V|=6024259
+Intersection Graph Marked: 0.798013s
+Version Time: 0.149316
+direct hop total time 0.515662s
+work sharing total time 0.484701s
+CommonGraph total time 0.484701s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 8 0.02 11
+read: 14.920440s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.006398s
+|E|=36233445
+|V|=6024259
+streaming total time 3.251653s
+|V|=6024259
+Intersection Graph Marked: 0.706301s
+Version Time: 0.055662
+direct hop total time 0.062130s
+work sharing total time 0.051882s
+CommonGraph total time 0.051882s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 8 0.02 12
+read: 14.906063s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.006382s
+|E|=36233445
+|V|=6024259
+streaming total time 2.852764s
+|V|=6024259
+Intersection Graph Marked: 0.821972s
+Version Time: 0.049022
+direct hop total time 0.065761s
+work sharing total time 0.045038s
+CommonGraph total time 0.045038s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 8 0.02 13
+read: 14.904459s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.006263s
+|E|=36233445
+|V|=6024259
+streaming total time 3.309453s
+|V|=6024259
+Intersection Graph Marked: 0.767646s
+Version Time: 0.055765
+direct hop total time 0.079857s
+work sharing total time 0.042087s
+CommonGraph total time 0.042087s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 8 0.02 14
+read: 14.896604s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.006240s
+|E|=36233445
+|V|=6024259
+streaming total time 2.031738s
+|V|=6024259
+Intersection Graph Marked: 0.720434s
+Version Time: 0.046496
+direct hop total time 0.072823s
+work sharing total time 0.045713s
+CommonGraph total time 0.045713s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 8 0.02 15
+read: 14.922385s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 8, batch_size is 724668
+read: 0.018305s
+|E|=36233445
+|V|=6024259
+streaming total time 2.464525s
+|V|=6024259
+Intersection Graph Marked: 0.886040s
+Version Time: 0.117513
+direct hop total time 0.507834s
+work sharing total time 0.413580s
+CommonGraph total time 0.413580s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 16 0.01 0
+read: 14.899854s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.006402s
+|E|=36233445
+|V|=6024259
+streaming total time 3.314073s
+|V|=6024259
+Intersection Graph Marked: 0.765605s
+Version Time: 0.129216
+direct hop total time 0.962128s
+work sharing total time 0.866403s
+CommonGraph total time 0.866403s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 16 0.01 1
+read: 14.855611s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.006343s
+|E|=36233445
+|V|=6024259
+streaming total time 3.270683s
+|V|=6024259
+Intersection Graph Marked: 0.799685s
+Version Time: 0.140644
+direct hop total time 0.947883s
+work sharing total time 0.808500s
+CommonGraph total time 0.808500s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 16 0.01 2
+read: 14.881348s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.006375s
+|E|=36233445
+|V|=6024259
+streaming total time 2.365444s
+|V|=6024259
+Intersection Graph Marked: 0.862240s
+Version Time: 0.134693
+direct hop total time 0.968214s
+work sharing total time 0.693260s
+CommonGraph total time 0.693260s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 16 0.01 3
+read: 14.866937s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.006261s
+|E|=36233445
+|V|=6024259
+streaming total time 2.122615s
+|V|=6024259
+Intersection Graph Marked: 0.772914s
+Version Time: 0.046148
+direct hop total time 0.128872s
+work sharing total time 0.086148s
+CommonGraph total time 0.086148s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 16 0.01 4
+read: 14.882005s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.006232s
+|E|=36233445
+|V|=6024259
+streaming total time 2.953894s
+|V|=6024259
+Intersection Graph Marked: 0.804728s
+Version Time: 0.170710
+direct hop total time 0.993068s
+work sharing total time 0.783581s
+CommonGraph total time 0.783581s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 16 0.01 5
+read: 14.894614s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.006217s
+|E|=36233445
+|V|=6024259
+streaming total time 3.551297s
+|V|=6024259
+Intersection Graph Marked: 0.690328s
+Version Time: 0.124703
+direct hop total time 0.977250s
+work sharing total time 0.856824s
+CommonGraph total time 0.856824s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 16 0.01 6
+read: 14.940034s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.006192s
+|E|=36233445
+|V|=6024259
+streaming total time 1.953020s
+|V|=6024259
+Intersection Graph Marked: 0.775406s
+Version Time: 0.046156
+direct hop total time 0.125582s
+work sharing total time 0.073204s
+CommonGraph total time 0.073204s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 16 0.01 7
+read: 14.898332s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.006214s
+|E|=36233445
+|V|=6024259
+streaming total time 1.987000s
+|V|=6024259
+Intersection Graph Marked: 0.874410s
+Version Time: 0.136655
+direct hop total time 1.002421s
+work sharing total time 0.737882s
+CommonGraph total time 0.737882s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 16 0.01 8
+read: 14.886742s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.006239s
+|E|=36233445
+|V|=6024259
+streaming total time 3.539275s
+|V|=6024259
+Intersection Graph Marked: 0.654130s
+Version Time: 0.305743
+direct hop total time 1.030326s
+work sharing total time 0.750042s
+CommonGraph total time 0.750042s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 16 0.01 9
+read: 14.881999s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.006315s
+|E|=36233445
+|V|=6024259
+streaming total time 2.247817s
+|V|=6024259
+Intersection Graph Marked: 0.794282s
+Version Time: 0.122516
+direct hop total time 1.067074s
+work sharing total time 0.913890s
+CommonGraph total time 0.913890s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 16 0.01 10
+read: 14.855463s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.006285s
+|E|=36233445
+|V|=6024259
+streaming total time 3.796822s
+|V|=6024259
+Intersection Graph Marked: 0.737153s
+Version Time: 0.282055
+direct hop total time 0.933094s
+work sharing total time 0.721458s
+CommonGraph total time 0.721458s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 16 0.01 11
+read: 14.901448s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.006292s
+|E|=36233445
+|V|=6024259
+streaming total time 2.599838s
+|V|=6024259
+Intersection Graph Marked: 0.786487s
+Version Time: 0.047899
+direct hop total time 0.134795s
+work sharing total time 0.073133s
+CommonGraph total time 0.073133s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 16 0.01 12
+read: 14.876266s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.006404s
+|E|=36233445
+|V|=6024259
+streaming total time 2.123122s
+|V|=6024259
+Intersection Graph Marked: 0.741543s
+Version Time: 0.068944
+direct hop total time 0.128032s
+work sharing total time 0.092400s
+CommonGraph total time 0.092400s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 16 0.01 13
+read: 14.987881s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.006336s
+|E|=36233445
+|V|=6024259
+streaming total time 3.183763s
+|V|=6024259
+Intersection Graph Marked: 0.758822s
+Version Time: 0.045881
+direct hop total time 0.128855s
+work sharing total time 0.074184s
+CommonGraph total time 0.074184s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 16 0.01 14
+read: 14.920944s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.006239s
+|E|=36233445
+|V|=6024259
+streaming total time 1.752413s
+|V|=6024259
+Intersection Graph Marked: 0.684222s
+Version Time: 0.060054
+direct hop total time 0.137731s
+work sharing total time 0.072823s
+CommonGraph total time 0.072823s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 16 0.01 15
+read: 14.867420s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 16, batch_size is 362334
+read: 0.006386s
+|E|=36233445
+|V|=6024259
+streaming total time 3.255505s
+|V|=6024259
+Intersection Graph Marked: 0.828742s
+Version Time: 0.112357
+direct hop total time 0.934482s
+work sharing total time 0.689229s
+CommonGraph total time 0.689229s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 32 0.005 0
+read: 14.893728s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.006275s
+|E|=36233445
+|V|=6024259
+streaming total time 2.573150s
+|V|=6024259
+Intersection Graph Marked: 0.812741s
+Version Time: 0.133160
+direct hop total time 1.905695s
+work sharing total time 1.467076s
+CommonGraph total time 1.467076s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 32 0.005 1
+read: 14.883946s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.006318s
+|E|=36233445
+|V|=6024259
+streaming total time 3.261856s
+|V|=6024259
+Intersection Graph Marked: 0.864116s
+Version Time: 0.151774
+direct hop total time 1.859044s
+work sharing total time 1.531390s
+CommonGraph total time 1.531390s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 32 0.005 2
+read: 14.936182s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.006189s
+|E|=36233445
+|V|=6024259
+streaming total time 2.192421s
+|V|=6024259
+Intersection Graph Marked: 0.652197s
+Version Time: 0.118753
+direct hop total time 1.712707s
+work sharing total time 1.330352s
+CommonGraph total time 1.330352s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 32 0.005 3
+read: 15.295975s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.006254s
+|E|=36233445
+|V|=6024259
+streaming total time 2.342904s
+|V|=6024259
+Intersection Graph Marked: 0.787933s
+Version Time: 0.046196
+direct hop total time 0.233717s
+work sharing total time 0.136546s
+CommonGraph total time 0.136546s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 32 0.005 4
+read: 15.084331s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.006257s
+|E|=36233445
+|V|=6024259
+streaming total time 1.933164s
+|V|=6024259
+Intersection Graph Marked: 0.647699s
+Version Time: 0.135047
+direct hop total time 1.772294s
+work sharing total time 1.256784s
+CommonGraph total time 1.256784s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 32 0.005 5
+read: 14.864951s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.006218s
+|E|=36233445
+|V|=6024259
+streaming total time 2.702087s
+|V|=6024259
+Intersection Graph Marked: 0.803776s
+Version Time: 0.364884
+direct hop total time 1.744317s
+work sharing total time 1.208440s
+CommonGraph total time 1.208440s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 32 0.005 6
+read: 14.866862s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.006437s
+|E|=36233445
+|V|=6024259
+streaming total time 1.660391s
+|V|=6024259
+Intersection Graph Marked: 0.724612s
+Version Time: 0.060369
+direct hop total time 0.226410s
+work sharing total time 0.141088s
+CommonGraph total time 0.141088s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 32 0.005 7
+read: 14.914038s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.006315s
+|E|=36233445
+|V|=6024259
+streaming total time 3.104218s
+|V|=6024259
+Intersection Graph Marked: 0.749109s
+Version Time: 0.120921
+direct hop total time 1.786860s
+work sharing total time 1.249476s
+CommonGraph total time 1.249476s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 32 0.005 8
+read: 14.895002s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.006412s
+|E|=36233445
+|V|=6024259
+streaming total time 1.874434s
+|V|=6024259
+Intersection Graph Marked: 0.731552s
+Version Time: 1.053279
+direct hop total time 1.859636s
+work sharing total time 1.320952s
+CommonGraph total time 1.320952s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 32 0.005 9
+read: 15.060089s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.006595s
+|E|=36233445
+|V|=6024259
+streaming total time 2.038898s
+|V|=6024259
+Intersection Graph Marked: 0.884333s
+Version Time: 0.853143
+direct hop total time 1.796884s
+work sharing total time 1.283363s
+CommonGraph total time 1.283363s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 32 0.005 10
+read: 14.877960s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.006289s
+|E|=36233445
+|V|=6024259
+streaming total time 1.940141s
+|V|=6024259
+Intersection Graph Marked: 0.834483s
+Version Time: 0.115438
+direct hop total time 1.854075s
+work sharing total time 1.263708s
+CommonGraph total time 1.263708s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 32 0.005 11
+read: 14.869614s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.006343s
+|E|=36233445
+|V|=6024259
+streaming total time 2.157856s
+|V|=6024259
+Intersection Graph Marked: 0.764089s
+Version Time: 0.046386
+direct hop total time 0.240999s
+work sharing total time 0.133781s
+CommonGraph total time 0.133781s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 32 0.005 12
+read: 14.879181s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.006296s
+|E|=36233445
+|V|=6024259
+streaming total time 1.575949s
+|V|=6024259
+Intersection Graph Marked: 0.816526s
+Version Time: 1.071085
+direct hop total time 0.234722s
+work sharing total time 0.156433s
+CommonGraph total time 0.156433s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 32 0.005 13
+read: 14.873422s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.006279s
+|E|=36233445
+|V|=6024259
+streaming total time 2.046511s
+|V|=6024259
+Intersection Graph Marked: 0.820658s
+Version Time: 0.060952
+direct hop total time 0.226257s
+work sharing total time 0.139260s
+CommonGraph total time 0.139260s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 32 0.005 14
+read: 14.917857s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.006293s
+|E|=36233445
+|V|=6024259
+streaming total time 2.298877s
+|V|=6024259
+Intersection Graph Marked: 0.806799s
+Version Time: 0.047292
+direct hop total time 0.235234s
+work sharing total time 0.147664s
+CommonGraph total time 0.147664s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 32 0.005 15
+read: 14.864604s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 32, batch_size is 181167
+read: 0.006216s
+|E|=36233445
+|V|=6024259
+streaming total time 1.913016s
+|V|=6024259
+Intersection Graph Marked: 0.653870s
+Version Time: 0.117818
+direct hop total time 1.782104s
+work sharing total time 1.176122s
+CommonGraph total time 1.176122s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 64 0.0025 0
+read: 14.895063s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.006452s
+|E|=36233445
+|V|=6024259
+streaming total time 2.601325s
+|V|=6024259
+Intersection Graph Marked: 0.760174s
+Version Time: 0.123409
+direct hop total time 3.517601s
+work sharing total time 2.365276s
+CommonGraph total time 2.365276s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 64 0.0025 1
+read: 15.044743s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.006282s
+|E|=36233445
+|V|=6024259
+streaming total time 2.623707s
+|V|=6024259
+Intersection Graph Marked: 0.781658s
+Version Time: 0.146663
+direct hop total time 3.531314s
+work sharing total time 2.163126s
+CommonGraph total time 2.163126s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 64 0.0025 2
+read: 14.842469s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.006214s
+|E|=36233445
+|V|=6024259
+streaming total time 1.755844s
+|V|=6024259
+Intersection Graph Marked: 0.664167s
+Version Time: 0.115075
+direct hop total time 3.296920s
+work sharing total time 2.041186s
+CommonGraph total time 2.041186s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 64 0.0025 3
+read: 14.876566s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.006305s
+|E|=36233445
+|V|=6024259
+streaming total time 1.713681s
+|V|=6024259
+Intersection Graph Marked: 0.747423s
+Version Time: 0.053284
+direct hop total time 0.454698s
+work sharing total time 0.254883s
+CommonGraph total time 0.254883s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 64 0.0025 4
+read: 14.873932s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.006226s
+|E|=36233445
+|V|=6024259
+streaming total time 2.734390s
+|V|=6024259
+Intersection Graph Marked: 0.667594s
+Version Time: 0.121624
+direct hop total time 3.394669s
+work sharing total time 2.299152s
+CommonGraph total time 2.299152s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 64 0.0025 5
+read: 14.879884s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.006346s
+|E|=36233445
+|V|=6024259
+streaming total time 2.120730s
+|V|=6024259
+Intersection Graph Marked: 0.786213s
+Version Time: 0.301644
+direct hop total time 3.573218s
+work sharing total time 2.074527s
+CommonGraph total time 2.074527s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 64 0.0025 6
+read: 14.868345s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.006318s
+|E|=36233445
+|V|=6024259
+streaming total time 1.830333s
+|V|=6024259
+Intersection Graph Marked: 0.749675s
+Version Time: 0.046421
+direct hop total time 0.449414s
+work sharing total time 0.253063s
+CommonGraph total time 0.253063s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 64 0.0025 7
+read: 14.902761s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.006307s
+|E|=36233445
+|V|=6024259
+streaming total time 1.693705s
+|V|=6024259
+Intersection Graph Marked: 0.773319s
+Version Time: 0.126270
+direct hop total time 3.462487s
+work sharing total time 2.299505s
+CommonGraph total time 2.299505s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 64 0.0025 8
+read: 14.926079s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.017825s
+|E|=36233445
+|V|=6024259
+streaming total time 2.821533s
+|V|=6024259
+Intersection Graph Marked: 0.644872s
+Version Time: 0.149029
+direct hop total time 3.651866s
+work sharing total time 2.369426s
+CommonGraph total time 2.369426s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 64 0.0025 9
+read: 14.875836s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.006198s
+|E|=36233445
+|V|=6024259
+streaming total time 2.578702s
+|V|=6024259
+Intersection Graph Marked: 0.765163s
+Version Time: 0.125156
+direct hop total time 3.429315s
+work sharing total time 2.309455s
+CommonGraph total time 2.309455s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 64 0.0025 10
+read: 14.883726s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.006245s
+|E|=36233445
+|V|=6024259
+streaming total time 2.147354s
+|V|=6024259
+Intersection Graph Marked: 0.755671s
+Version Time: 0.133618
+direct hop total time 3.464323s
+work sharing total time 2.340953s
+CommonGraph total time 2.340953s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 64 0.0025 11
+read: 14.866900s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.006370s
+|E|=36233445
+|V|=6024259
+streaming total time 1.864353s
+|V|=6024259
+Intersection Graph Marked: 0.706123s
+Version Time: 0.051607
+direct hop total time 0.437160s
+work sharing total time 0.250827s
+CommonGraph total time 0.250827s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 64 0.0025 12
+read: 14.869170s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.006251s
+|E|=36233445
+|V|=6024259
+streaming total time 1.715994s
+|V|=6024259
+Intersection Graph Marked: 0.710442s
+Version Time: 0.057922
+direct hop total time 0.438037s
+work sharing total time 0.253957s
+CommonGraph total time 0.253957s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 64 0.0025 13
+read: 14.891103s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.006270s
+|E|=36233445
+|V|=6024259
+streaming total time 1.279528s
+|V|=6024259
+Intersection Graph Marked: 0.750680s
+Version Time: 0.055259
+direct hop total time 0.454204s
+work sharing total time 0.260478s
+CommonGraph total time 0.260478s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 64 0.0025 14
+read: 14.863989s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.006328s
+|E|=36233445
+|V|=6024259
+streaming total time 1.820612s
+|V|=6024259
+Intersection Graph Marked: 0.656060s
+Version Time: 0.045577
+direct hop total time 0.455254s
+work sharing total time 0.252615s
+CommonGraph total time 0.252615s
+Running: build/SSRbaseline /home/cgao037/graph/sx/stack_snap source/sx.txt 64 0.0025 15
+read: 14.926869s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 64, batch_size is 90583
+read: 0.006403s
+|E|=36233445
+|V|=6024259
+streaming total time 2.252227s
+|V|=6024259
+Intersection Graph Marked: 0.771915s
+Version Time: 0.125396
+direct hop total time 3.374424s
+work sharing total time 2.172678s
+CommonGraph total time 2.172678s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 8 0.02 0
+read: 5.744427s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 8, batch_size is 292273
+read: 0.002465s
+|E|=14613674
+|V|=1870709
+streaming total time 10.658955s
+|V|=1870709
+Intersection Graph Marked: 31.072445s
+Version Time: 0.096109
+direct hop total time 0.286455s
+work sharing total time 0.283343s
+CommonGraph total time 0.283343s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 8 0.02 1
+read: 5.746299s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 8, batch_size is 292273
+read: 0.002580s
+|E|=14613674
+|V|=1870709
+streaming total time 11.517466s
+|V|=1870709
+Intersection Graph Marked: 25.767653s
+Version Time: 0.372556
+direct hop total time 0.416816s
+work sharing total time 0.454338s
+CommonGraph total time 0.454338s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 8 0.02 2
+read: 5.763140s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 8, batch_size is 292273
+read: 0.002547s
+|E|=14613674
+|V|=1870709
+streaming total time 14.531054s
+|V|=1870709
+Intersection Graph Marked: 28.667377s
+Version Time: 0.365336
+direct hop total time 0.438759s
+work sharing total time 0.393460s
+CommonGraph total time 0.393460s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 8 0.02 3
+read: 5.748568s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 8, batch_size is 292273
+read: 0.002451s
+|E|=14613674
+|V|=1870709
+streaming total time 9.977742s
+|V|=1870709
+Intersection Graph Marked: 24.783137s
+Version Time: 0.368695
+direct hop total time 0.464430s
+work sharing total time 0.483291s
+CommonGraph total time 0.483291s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 8 0.02 4
+read: 5.752063s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 8, batch_size is 292273
+read: 0.002627s
+|E|=14613674
+|V|=1870709
+streaming total time 13.539336s
+|V|=1870709
+Intersection Graph Marked: 24.299219s
+Version Time: 0.391101
+direct hop total time 0.476879s
+work sharing total time 0.426232s
+CommonGraph total time 0.426232s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 8 0.02 5
+read: 5.761278s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 8, batch_size is 292273
+read: 0.002508s
+|E|=14613674
+|V|=1870709
+streaming total time 9.733378s
+|V|=1870709
+Intersection Graph Marked: 38.881267s
+Version Time: 0.360249
+direct hop total time 0.455919s
+work sharing total time 0.392272s
+CommonGraph total time 0.392272s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 8 0.02 6
+read: 5.751471s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 8, batch_size is 292273
+read: 0.002408s
+|E|=14613674
+|V|=1870709
+streaming total time 10.174591s
+|V|=1870709
+Intersection Graph Marked: 25.245714s
+Version Time: 0.392190
+direct hop total time 0.453704s
+work sharing total time 0.359640s
+CommonGraph total time 0.359640s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 8 0.02 7
+read: 5.752841s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 8, batch_size is 292273
+read: 0.002479s
+|E|=14613674
+|V|=1870709
+streaming total time 9.544799s
+|V|=1870709
+Intersection Graph Marked: 24.302331s
+Version Time: 0.384854
+direct hop total time 0.484484s
+work sharing total time 0.452663s
+CommonGraph total time 0.452663s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 8 0.02 8
+read: 5.760311s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 8, batch_size is 292273
+read: 0.002466s
+|E|=14613674
+|V|=1870709
+streaming total time 10.346886s
+|V|=1870709
+Intersection Graph Marked: 28.176903s
+Version Time: 0.390767
+direct hop total time 0.442155s
+work sharing total time 0.466093s
+CommonGraph total time 0.466093s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 8 0.02 9
+read: 5.748272s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 8, batch_size is 292273
+read: 0.003050s
+|E|=14613674
+|V|=1870709
+streaming total time 11.324465s
+|V|=1870709
+Intersection Graph Marked: 27.996401s
+Version Time: 0.395619
+direct hop total time 0.406798s
+work sharing total time 0.453571s
+CommonGraph total time 0.453571s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 8 0.02 10
+read: 5.754209s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 8, batch_size is 292273
+read: 0.002516s
+|E|=14613674
+|V|=1870709
+streaming total time 11.474317s
+|V|=1870709
+Intersection Graph Marked: 24.380664s
+Version Time: 0.366337
+direct hop total time 0.447656s
+work sharing total time 0.432661s
+CommonGraph total time 0.432661s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 8 0.02 11
+read: 5.763237s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 8, batch_size is 292273
+read: 0.002508s
+|E|=14613674
+|V|=1870709
+streaming total time 16.316273s
+|V|=1870709
+Intersection Graph Marked: 24.578806s
+Version Time: 0.375136
+direct hop total time 0.466449s
+work sharing total time 0.403764s
+CommonGraph total time 0.403764s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 8 0.02 12
+read: 5.787658s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 8, batch_size is 292273
+read: 0.002436s
+|E|=14613674
+|V|=1870709
+streaming total time 10.603017s
+|V|=1870709
+Intersection Graph Marked: 24.486182s
+Version Time: 0.377838
+direct hop total time 0.452068s
+work sharing total time 0.448025s
+CommonGraph total time 0.448025s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 8 0.02 13
+read: 5.768281s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 8, batch_size is 292273
+read: 0.002474s
+|E|=14613674
+|V|=1870709
+streaming total time 12.452627s
+|V|=1870709
+Intersection Graph Marked: 26.437176s
+Version Time: 0.377998
+direct hop total time 0.441022s
+work sharing total time 0.436618s
+CommonGraph total time 0.436618s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 8 0.02 14
+read: 5.751673s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 8, batch_size is 292273
+read: 0.002475s
+|E|=14613674
+|V|=1870709
+streaming total time 14.537109s
+|V|=1870709
+Intersection Graph Marked: 24.207731s
+Version Time: 0.360033
+direct hop total time 0.438114s
+work sharing total time 0.436509s
+CommonGraph total time 0.436509s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 8 0.02 15
+read: 5.751728s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 8, batch_size is 292273
+read: 0.002486s
+|E|=14613674
+|V|=1870709
+streaming total time 10.761024s
+|V|=1870709
+Intersection Graph Marked: 38.066035s
+Version Time: 0.370820
+direct hop total time 0.433509s
+work sharing total time 0.353544s
+CommonGraph total time 0.353544s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 16 0.01 0
+read: 5.777872s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 16, batch_size is 146136
+read: 0.002508s
+|E|=14613674
+|V|=1870709
+streaming total time 12.447625s
+|V|=1870709
+Intersection Graph Marked: 49.245566s
+Version Time: 0.103004
+direct hop total time 0.403292s
+work sharing total time 0.403257s
+CommonGraph total time 0.403257s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 16 0.01 1
+read: 5.753389s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 16, batch_size is 146136
+read: 0.002534s
+|E|=14613674
+|V|=1870709
+streaming total time 11.412109s
+|V|=1870709
+Intersection Graph Marked: 24.557912s
+Version Time: 0.370008
+direct hop total time 0.819023s
+work sharing total time 0.705303s
+CommonGraph total time 0.705303s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 16 0.01 2
+read: 5.751243s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 16, batch_size is 146136
+read: 0.002463s
+|E|=14613674
+|V|=1870709
+streaming total time 9.720729s
+|V|=1870709
+Intersection Graph Marked: 24.637811s
+Version Time: 0.373170
+direct hop total time 0.845188s
+work sharing total time 0.923761s
+CommonGraph total time 0.923761s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 16 0.01 3
+read: 5.751186s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 16, batch_size is 146136
+read: 0.002456s
+|E|=14613674
+|V|=1870709
+streaming total time 15.536230s
+|V|=1870709
+Intersection Graph Marked: 49.796912s
+Version Time: 0.343710
+direct hop total time 0.814082s
+work sharing total time 0.784196s
+CommonGraph total time 0.784196s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 16 0.01 4
+read: 5.763756s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 16, batch_size is 146136
+read: 0.002471s
+|E|=14613674
+|V|=1870709
+streaming total time 11.137980s
+|V|=1870709
+Intersection Graph Marked: 41.443241s
+Version Time: 0.363769
+direct hop total time 0.870570s
+work sharing total time 0.785919s
+CommonGraph total time 0.785919s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 16 0.01 5
+read: 5.756824s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 16, batch_size is 146136
+read: 0.002512s
+|E|=14613674
+|V|=1870709
+streaming total time 16.179802s
+|V|=1870709
+Intersection Graph Marked: 28.911938s
+Version Time: 0.373318
+direct hop total time 0.847585s
+work sharing total time 0.766767s
+CommonGraph total time 0.766767s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 16 0.01 6
+read: 5.758271s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 16, batch_size is 146136
+read: 0.002492s
+|E|=14613674
+|V|=1870709
+streaming total time 12.220428s
+|V|=1870709
+Intersection Graph Marked: 25.038352s
+Version Time: 0.375826
+direct hop total time 0.807410s
+work sharing total time 0.787474s
+CommonGraph total time 0.787474s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 16 0.01 7
+read: 5.754087s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 16, batch_size is 146136
+read: 0.002511s
+|E|=14613674
+|V|=1870709
+streaming total time 10.897573s
+|V|=1870709
+Intersection Graph Marked: 44.100077s
+Version Time: 0.372918
+direct hop total time 0.885433s
+work sharing total time 0.874348s
+CommonGraph total time 0.874348s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 16 0.01 8
+read: 5.769066s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 16, batch_size is 146136
+read: 0.002520s
+|E|=14613674
+|V|=1870709
+streaming total time 9.341137s
+|V|=1870709
+Intersection Graph Marked: 26.890136s
+Version Time: 0.358936
+direct hop total time 0.892308s
+work sharing total time 0.762641s
+CommonGraph total time 0.762641s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 16 0.01 9
+read: 5.753561s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 16, batch_size is 146136
+read: 0.002569s
+|E|=14613674
+|V|=1870709
+streaming total time 13.743902s
+|V|=1870709
+Intersection Graph Marked: 24.425633s
+Version Time: 0.381865
+direct hop total time 0.761735s
+work sharing total time 0.662822s
+CommonGraph total time 0.662822s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 16 0.01 10
+read: 5.749440s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 16, batch_size is 146136
+read: 0.002513s
+|E|=14613674
+|V|=1870709
+streaming total time 14.255456s
+|V|=1870709
+Intersection Graph Marked: 26.357980s
+Version Time: 0.375364
+direct hop total time 0.791951s
+work sharing total time 0.664198s
+CommonGraph total time 0.664198s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 16 0.01 11
+read: 5.763604s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 16, batch_size is 146136
+read: 0.002505s
+|E|=14613674
+|V|=1870709
+streaming total time 11.074687s
+|V|=1870709
+Intersection Graph Marked: 23.896089s
+Version Time: 0.554128
+direct hop total time 0.908695s
+work sharing total time 0.770692s
+CommonGraph total time 0.770692s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 16 0.01 12
+read: 5.752985s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 16, batch_size is 146136
+read: 0.002458s
+|E|=14613674
+|V|=1870709
+streaming total time 11.062431s
+|V|=1870709
+Intersection Graph Marked: 23.949795s
+Version Time: 0.371997
+direct hop total time 0.804025s
+work sharing total time 0.813745s
+CommonGraph total time 0.813745s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 16 0.01 13
+read: 5.751433s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 16, batch_size is 146136
+read: 0.002511s
+|E|=14613674
+|V|=1870709
+streaming total time 10.162672s
+|V|=1870709
+Intersection Graph Marked: 46.294970s
+Version Time: 0.366021
+direct hop total time 0.835902s
+work sharing total time 0.759303s
+CommonGraph total time 0.759303s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 16 0.01 14
+read: 5.752701s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 16, batch_size is 146136
+read: 0.002492s
+|E|=14613674
+|V|=1870709
+streaming total time 11.544660s
+|V|=1870709
+Intersection Graph Marked: 38.256213s
+Version Time: 0.367857
+direct hop total time 0.800678s
+work sharing total time 0.729035s
+CommonGraph total time 0.729035s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 16 0.01 15
+read: 5.753364s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 16, batch_size is 146136
+read: 0.002477s
+|E|=14613674
+|V|=1870709
+streaming total time 11.600307s
+|V|=1870709
+Intersection Graph Marked: 28.992810s
+Version Time: 0.367569
+direct hop total time 0.830398s
+work sharing total time 0.856580s
+CommonGraph total time 0.856580s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 32 0.005 0
+read: 5.754078s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 32, batch_size is 73068
+read: 0.002573s
+|E|=14613674
+|V|=1870709
+streaming total time 13.626224s
+|V|=1870709
+Intersection Graph Marked: 23.964213s
+Version Time: 0.098683
+direct hop total time 0.894545s
+work sharing total time 0.723081s
+CommonGraph total time 0.723081s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 32 0.005 1
+read: 5.769737s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 32, batch_size is 73068
+read: 0.002449s
+|E|=14613674
+|V|=1870709
+streaming total time 10.265499s
+|V|=1870709
+Intersection Graph Marked: 27.113610s
+Version Time: 0.367201
+direct hop total time 1.802578s
+work sharing total time 1.539358s
+CommonGraph total time 1.539358s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 32 0.005 2
+read: 5.764838s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 32, batch_size is 73068
+read: 0.002510s
+|E|=14613674
+|V|=1870709
+streaming total time 14.758324s
+|V|=1870709
+Intersection Graph Marked: 28.929955s
+Version Time: 0.436667
+direct hop total time 1.554652s
+work sharing total time 1.473762s
+CommonGraph total time 1.473762s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 32 0.005 3
+read: 5.754484s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 32, batch_size is 73068
+read: 0.002472s
+|E|=14613674
+|V|=1870709
+streaming total time 15.716836s
+|V|=1870709
+Intersection Graph Marked: 54.490688s
+Version Time: 0.359160
+direct hop total time 1.500220s
+work sharing total time 1.306313s
+CommonGraph total time 1.306313s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 32 0.005 4
+read: 5.765715s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 32, batch_size is 73068
+read: 0.002546s
+|E|=14613674
+|V|=1870709
+streaming total time 10.440514s
+|V|=1870709
+Intersection Graph Marked: 28.179934s
+Version Time: 0.830623
+direct hop total time 1.640437s
+work sharing total time 1.559558s
+CommonGraph total time 1.559558s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 32 0.005 5
+read: 5.760316s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 32, batch_size is 73068
+read: 0.002509s
+|E|=14613674
+|V|=1870709
+streaming total time 10.655351s
+|V|=1870709
+Intersection Graph Marked: 25.431706s
+Version Time: 0.348881
+direct hop total time 1.587815s
+work sharing total time 1.396679s
+CommonGraph total time 1.396679s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 32 0.005 6
+read: 5.753014s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 32, batch_size is 73068
+read: 0.002523s
+|E|=14613674
+|V|=1870709
+streaming total time 11.600052s
+|V|=1870709
+Intersection Graph Marked: 26.184109s
+Version Time: 0.387908
+direct hop total time 1.485972s
+work sharing total time 1.253014s
+CommonGraph total time 1.253014s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 32 0.005 7
+read: 5.761192s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 32, batch_size is 73068
+read: 0.002517s
+|E|=14613674
+|V|=1870709
+streaming total time 14.137344s
+|V|=1870709
+Intersection Graph Marked: 28.332255s
+Version Time: 0.366592
+direct hop total time 1.587125s
+work sharing total time 1.398287s
+CommonGraph total time 1.398287s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 32 0.005 8
+read: 5.753454s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 32, batch_size is 73068
+read: 0.002491s
+|E|=14613674
+|V|=1870709
+streaming total time 11.833581s
+|V|=1870709
+Intersection Graph Marked: 23.056688s
+Version Time: 0.720687
+direct hop total time 1.560662s
+work sharing total time 1.181674s
+CommonGraph total time 1.181674s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 32 0.005 9
+read: 5.757967s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 32, batch_size is 73068
+read: 0.002515s
+|E|=14613674
+|V|=1870709
+streaming total time 11.921626s
+|V|=1870709
+Intersection Graph Marked: 47.184570s
+Version Time: 0.387585
+direct hop total time 1.652451s
+work sharing total time 1.280634s
+CommonGraph total time 1.280634s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 32 0.005 10
+read: 5.751930s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 32, batch_size is 73068
+read: 0.002502s
+|E|=14613674
+|V|=1870709
+streaming total time 14.173731s
+|V|=1870709
+Intersection Graph Marked: 27.305900s
+Version Time: 0.373539
+direct hop total time 1.626570s
+work sharing total time 1.427091s
+CommonGraph total time 1.427091s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 32 0.005 11
+read: 5.748281s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 32, batch_size is 73068
+read: 0.002542s
+|E|=14613674
+|V|=1870709
+streaming total time 10.838940s
+|V|=1870709
+Intersection Graph Marked: 27.567090s
+Version Time: 0.375298
+direct hop total time 1.559285s
+work sharing total time 1.469674s
+CommonGraph total time 1.469674s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 32 0.005 12
+read: 5.766795s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 32, batch_size is 73068
+read: 0.002427s
+|E|=14613674
+|V|=1870709
+streaming total time 9.639808s
+|V|=1870709
+Intersection Graph Marked: 25.489729s
+Version Time: 0.699565
+direct hop total time 1.555945s
+work sharing total time 1.526747s
+CommonGraph total time 1.526747s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 32 0.005 13
+read: 5.760722s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 32, batch_size is 73068
+read: 0.002479s
+|E|=14613674
+|V|=1870709
+streaming total time 9.994328s
+|V|=1870709
+Intersection Graph Marked: 24.269458s
+Version Time: 0.369089
+direct hop total time 1.690790s
+work sharing total time 1.356824s
+CommonGraph total time 1.356824s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 32 0.005 14
+read: 5.752548s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 32, batch_size is 73068
+read: 0.002481s
+|E|=14613674
+|V|=1870709
+streaming total time 11.822569s
+|V|=1870709
+Intersection Graph Marked: 29.208485s
+Version Time: 0.373031
+direct hop total time 1.635526s
+work sharing total time 1.272896s
+CommonGraph total time 1.272896s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 32 0.005 15
+read: 5.753836s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 32, batch_size is 73068
+read: 0.002486s
+|E|=14613674
+|V|=1870709
+streaming total time 15.018346s
+|V|=1870709
+Intersection Graph Marked: 24.963690s
+Version Time: 0.415791
+direct hop total time 1.553754s
+work sharing total time 1.496305s
+CommonGraph total time 1.496305s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 64 0.0025 0
+read: 5.752043s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 64, batch_size is 36534
+read: 0.002485s
+|E|=14613674
+|V|=1870709
+streaming total time 16.234280s
+|V|=1870709
+Intersection Graph Marked: 25.168862s
+Version Time: 0.108058
+direct hop total time 1.797736s
+work sharing total time 1.471087s
+CommonGraph total time 1.471087s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 64 0.0025 1
+read: 5.760104s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 64, batch_size is 36534
+read: 0.002552s
+|E|=14613674
+|V|=1870709
+streaming total time 11.776311s
+|V|=1870709
+Intersection Graph Marked: 24.649773s
+Version Time: 0.378070
+direct hop total time 2.961458s
+work sharing total time 2.378833s
+CommonGraph total time 2.378833s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 64 0.0025 2
+read: 5.759841s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 64, batch_size is 36534
+read: 0.002533s
+|E|=14613674
+|V|=1870709
+streaming total time 11.283906s
+|V|=1870709
+Intersection Graph Marked: 24.198799s
+Version Time: 0.396773
+direct hop total time 3.003672s
+work sharing total time 2.338041s
+CommonGraph total time 2.338041s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 64 0.0025 3
+read: 5.751067s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 64, batch_size is 36534
+read: 0.002452s
+|E|=14613674
+|V|=1870709
+streaming total time 10.869746s
+|V|=1870709
+Intersection Graph Marked: 30.088658s
+Version Time: 0.358882
+direct hop total time 3.079857s
+work sharing total time 2.353598s
+CommonGraph total time 2.353598s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 64 0.0025 4
+read: 5.761835s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 64, batch_size is 36534
+read: 0.002496s
+|E|=14613674
+|V|=1870709
+streaming total time 10.548897s
+|V|=1870709
+Intersection Graph Marked: 25.211727s
+Version Time: 0.384792
+direct hop total time 2.954384s
+work sharing total time 2.325665s
+CommonGraph total time 2.325665s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 64 0.0025 5
+read: 5.768472s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 64, batch_size is 36534
+read: 0.002467s
+|E|=14613674
+|V|=1870709
+streaming total time 9.412628s
+|V|=1870709
+Intersection Graph Marked: 27.920825s
+Version Time: 0.611273
+direct hop total time 2.859842s
+work sharing total time 2.353840s
+CommonGraph total time 2.353840s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 64 0.0025 6
+read: 5.753852s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 64, batch_size is 36534
+read: 0.002578s
+|E|=14613674
+|V|=1870709
+streaming total time 11.533993s
+|V|=1870709
+Intersection Graph Marked: 26.176901s
+Version Time: 0.388626
+direct hop total time 2.902957s
+work sharing total time 2.425257s
+CommonGraph total time 2.425257s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 64 0.0025 7
+read: 5.756937s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 64, batch_size is 36534
+read: 0.003443s
+|E|=14613674
+|V|=1870709
+streaming total time 11.301538s
+|V|=1870709
+Intersection Graph Marked: 24.579158s
+Version Time: 0.360980
+direct hop total time 2.816432s
+work sharing total time 2.228781s
+CommonGraph total time 2.228781s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 64 0.0025 8
+read: 5.756947s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 64, batch_size is 36534
+read: 0.002472s
+|E|=14613674
+|V|=1870709
+streaming total time 11.502407s
+|V|=1870709
+Intersection Graph Marked: 27.074695s
+Version Time: 0.365525
+direct hop total time 3.105066s
+work sharing total time 2.289203s
+CommonGraph total time 2.289203s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 64 0.0025 9
+read: 5.759403s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 64, batch_size is 36534
+read: 0.002545s
+|E|=14613674
+|V|=1870709
+streaming total time 11.290372s
+|V|=1870709
+Intersection Graph Marked: 24.341018s
+Version Time: 0.401793
+direct hop total time 3.139687s
+work sharing total time 2.200820s
+CommonGraph total time 2.200820s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 64 0.0025 10
+read: 5.766437s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 64, batch_size is 36534
+read: 0.002485s
+|E|=14613674
+|V|=1870709
+streaming total time 9.832812s
+|V|=1870709
+Intersection Graph Marked: 32.350789s
+Version Time: 0.355079
+direct hop total time 3.029961s
+work sharing total time 2.590904s
+CommonGraph total time 2.590904s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 64 0.0025 11
+read: 5.766501s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 64, batch_size is 36534
+read: 0.002712s
+|E|=14613674
+|V|=1870709
+streaming total time 18.459539s
+|V|=1870709
+Intersection Graph Marked: 26.031415s
+Version Time: 0.408278
+direct hop total time 2.894270s
+work sharing total time 2.290952s
+CommonGraph total time 2.290952s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 64 0.0025 12
+read: 5.765208s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 64, batch_size is 36534
+read: 0.002519s
+|E|=14613674
+|V|=1870709
+streaming total time 10.624474s
+|V|=1870709
+Intersection Graph Marked: 26.472522s
+Version Time: 0.370760
+direct hop total time 3.185440s
+work sharing total time 2.286134s
+CommonGraph total time 2.286134s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 64 0.0025 13
+read: 5.757314s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 64, batch_size is 36534
+read: 0.002573s
+|E|=14613674
+|V|=1870709
+streaming total time 10.460073s
+|V|=1870709
+Intersection Graph Marked: 25.659147s
+Version Time: 0.526611
+direct hop total time 2.934811s
+work sharing total time 2.458424s
+CommonGraph total time 2.458424s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 64 0.0025 14
+read: 5.817732s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 64, batch_size is 36534
+read: 0.002517s
+|E|=14613674
+|V|=1870709
+streaming total time 15.147183s
+|V|=1870709
+Intersection Graph Marked: 23.549138s
+Version Time: 0.361260
+direct hop total time 3.138461s
+work sharing total time 2.403576s
+CommonGraph total time 2.403576s
+Running: build/SSRbaseline /home/cgao037/graph/wiki/snap_wiki source/wiki_src.txt 64 0.0025 15
+read: 5.761552s
+loading graph /home/cgao037/graph/wiki/snap_wiki, root file is source/wiki_src.txt, batch_num is 64, batch_size is 36534
+read: 0.002445s
+|E|=14613674
+|V|=1870709
+streaming total time 10.420135s
+|V|=1870709
+Intersection Graph Marked: 43.622624s
+Version Time: 0.353020
+direct hop total time 3.202393s
+work sharing total time 2.372639s
+CommonGraph total time 2.372639s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 8 0.02 0
+Error: Invalid line "% asym unweighted"
+read: 176.649518s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 8, batch_size is 8744348
+read: 0.091401s
+|E|=437217424
+|V|=13593033
+streaming total time 43.443012s
+|V|=13593033
+Intersection Graph Marked: 11.433483s
+Version Time: 1.379729
+direct hop total time 2.615308s
+work sharing total time 1.851645s
+CommonGraph total time 1.851645s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 8 0.02 1
+Error: Invalid line "% asym unweighted"
+read: 175.105439s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 8, batch_size is 8744348
+read: 0.090590s
+|E|=437217424
+|V|=13593033
+Re Computing: 1 0 109330
+streaming total time 1519.337158s
+|V|=13593033
+Intersection Graph Marked: 9.378424s
+Version Time: 0.389299
+direct hop total time 6.891122s
+work sharing total time 5.457336s
+CommonGraph total time 5.457336s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 8 0.02 2
+Error: Invalid line "% asym unweighted"
+read: 180.029762s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 8, batch_size is 8744348
+read: 0.089784s
+|E|=437217424
+|V|=13593033
+streaming total time 57.411850s
+|V|=13593033
+Intersection Graph Marked: 10.247704s
+Version Time: 0.396095
+direct hop total time 4.196835s
+work sharing total time 1.560566s
+CommonGraph total time 1.560566s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 8 0.02 3
+Error: Invalid line "% asym unweighted"
+read: 174.983218s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 8, batch_size is 8744348
+read: 0.088797s
+|E|=437217424
+|V|=13593033
+streaming total time 48.611992s
+|V|=13593033
+Intersection Graph Marked: 11.310717s
+Version Time: 1.276298
+direct hop total time 2.619326s
+work sharing total time 1.918027s
+CommonGraph total time 1.918027s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 8 0.02 4
+Error: Invalid line "% asym unweighted"
+read: 174.676939s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 8, batch_size is 8744348
+read: 0.091619s
+|E|=437217424
+|V|=13593033
+streaming total time 39.822289s
+|V|=13593033
+Intersection Graph Marked: 10.657940s
+Version Time: 1.307481
+direct hop total time 2.534143s
+work sharing total time 1.860846s
+CommonGraph total time 1.860846s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 8 0.02 5
+Error: Invalid line "% asym unweighted"
+read: 174.831593s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 8, batch_size is 8744348
+read: 0.088587s
+|E|=437217424
+|V|=13593033
+streaming total time 58.866619s
+|V|=13593033
+Intersection Graph Marked: 10.411492s
+Version Time: 1.347757
+direct hop total time 2.557869s
+work sharing total time 1.809611s
+CommonGraph total time 1.809611s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 8 0.02 6
+Error: Invalid line "% asym unweighted"
+read: 174.814269s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 8, batch_size is 8744348
+read: 0.089528s
+|E|=437217424
+|V|=13593033
+streaming total time 58.219585s
+|V|=13593033
+Intersection Graph Marked: 11.041398s
+Version Time: 1.452893
+direct hop total time 2.691061s
+work sharing total time 1.906166s
+CommonGraph total time 1.906166s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 8 0.02 7
+Error: Invalid line "% asym unweighted"
+read: 174.597634s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 8, batch_size is 8744348
+read: 0.089439s
+|E|=437217424
+|V|=13593033
+streaming total time 51.258614s
+|V|=13593033
+Intersection Graph Marked: 10.613848s
+Version Time: 1.289153
+direct hop total time 2.684417s
+work sharing total time 1.913438s
+CommonGraph total time 1.913438s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 8 0.02 8
+Error: Invalid line "% asym unweighted"
+read: 174.740069s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 8, batch_size is 8744348
+read: 0.090844s
+|E|=437217424
+|V|=13593033
+streaming total time 55.406185s
+|V|=13593033
+Intersection Graph Marked: 10.880524s
+Version Time: 1.331725
+direct hop total time 2.644853s
+work sharing total time 1.876154s
+CommonGraph total time 1.876154s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 8 0.02 9
+Error: Invalid line "% asym unweighted"
+read: 176.297358s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 8, batch_size is 8744348
+read: 0.091340s
+|E|=437217424
+|V|=13593033
+streaming total time 46.669678s
+|V|=13593033
+Intersection Graph Marked: 9.368310s
+Version Time: 1.279539
+direct hop total time 2.633403s
+work sharing total time 1.881144s
+CommonGraph total time 1.881144s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 8 0.02 10
+Error: Invalid line "% asym unweighted"
+read: 174.830125s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 8, batch_size is 8744348
+read: 0.090182s
+|E|=437217424
+|V|=13593033
+Re Computing: 5 1060848 1140886
+streaming total time 55.574608s
+|V|=13593033
+Intersection Graph Marked: 10.185215s
+Version Time: 0.403661
+direct hop total time 5.450157s
+work sharing total time 5.733952s
+CommonGraph total time 5.733952s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 8 0.02 11
+Error: Invalid line "% asym unweighted"
+read: 174.827246s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 8, batch_size is 8744348
+read: 0.088918s
+|E|=437217424
+|V|=13593033
+streaming total time 57.166336s
+|V|=13593033
+Intersection Graph Marked: 9.955607s
+Version Time: 1.301106
+direct hop total time 2.443885s
+work sharing total time 1.873378s
+CommonGraph total time 1.873378s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 8 0.02 12
+Error: Invalid line "% asym unweighted"
+read: 174.699398s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 8, batch_size is 8744348
+read: 0.092113s
+|E|=437217424
+|V|=13593033
+streaming total time 54.559750s
+|V|=13593033
+Intersection Graph Marked: 10.419635s
+Version Time: 0.393108
+direct hop total time 5.767710s
+work sharing total time 1.583212s
+CommonGraph total time 1.583212s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 8 0.02 13
+Error: Invalid line "% asym unweighted"
+read: 175.003187s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 8, batch_size is 8744348
+read: 0.089290s
+|E|=437217424
+|V|=13593033
+streaming total time 54.174198s
+|V|=13593033
+Intersection Graph Marked: 10.728419s
+Version Time: 1.315074
+direct hop total time 2.600819s
+work sharing total time 1.886974s
+CommonGraph total time 1.886974s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 8 0.02 14
+Error: Invalid line "% asym unweighted"
+read: 174.819131s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 8, batch_size is 8744348
+read: 0.090916s
+|E|=437217424
+|V|=13593033
+streaming total time 53.927193s
+|V|=13593033
+Intersection Graph Marked: 10.797082s
+Version Time: 1.259234
+direct hop total time 2.503930s
+work sharing total time 1.934707s
+CommonGraph total time 1.934707s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 8 0.02 15
+Error: Invalid line "% asym unweighted"
+read: 174.633262s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 8, batch_size is 8744348
+read: 0.088992s
+|E|=437217424
+|V|=13593033
+streaming total time 47.508621s
+|V|=13593033
+Intersection Graph Marked: 11.067493s
+Version Time: 1.228994
+direct hop total time 2.622705s
+work sharing total time 1.854580s
+CommonGraph total time 1.854580s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 16 0.01 0
+Error: Invalid line "% asym unweighted"
+read: 175.615573s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 16, batch_size is 4372174
+read: 0.090516s
+|E|=437217424
+|V|=13593033
+streaming total time 56.616337s
+|V|=13593033
+Intersection Graph Marked: 10.226845s
+Version Time: 1.364474
+direct hop total time 4.988357s
+work sharing total time 3.039928s
+CommonGraph total time 3.039928s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 16 0.01 1
+Error: Invalid line "% asym unweighted"
+read: 174.643309s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 16, batch_size is 4372174
+read: 0.089375s
+|E|=437217424
+|V|=13593033
+streaming total time 55.275261s
+|V|=13593033
+Intersection Graph Marked: 10.217292s
+Version Time: 0.412947
+direct hop total time 15.033743s
+work sharing total time 9.594898s
+CommonGraph total time 9.594898s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 16 0.01 2
+Error: Invalid line "% asym unweighted"
+read: 175.266083s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 16, batch_size is 4372174
+read: 0.089726s
+|E|=437217424
+|V|=13593033
+streaming total time 41.956238s
+|V|=13593033
+Intersection Graph Marked: 10.198255s
+Version Time: 0.399404
+direct hop total time 7.025892s
+work sharing total time 2.019126s
+CommonGraph total time 2.019126s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 16 0.01 3
+Error: Invalid line "% asym unweighted"
+read: 175.012183s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 16, batch_size is 4372174
+read: 0.089942s
+|E|=437217424
+|V|=13593033
+streaming total time 53.038727s
+|V|=13593033
+Intersection Graph Marked: 10.952278s
+Version Time: 1.328407
+direct hop total time 4.793863s
+work sharing total time 3.209829s
+CommonGraph total time 3.209829s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 16 0.01 4
+Error: Invalid line "% asym unweighted"
+read: 174.729747s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 16, batch_size is 4372174
+read: 0.089368s
+|E|=437217424
+|V|=13593033
+streaming total time 54.602600s
+|V|=13593033
+Intersection Graph Marked: 10.851847s
+Version Time: 1.325794
+direct hop total time 4.913063s
+work sharing total time 3.175737s
+CommonGraph total time 3.175737s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 16 0.01 5
+Error: Invalid line "% asym unweighted"
+read: 174.861233s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 16, batch_size is 4372174
+read: 0.089906s
+|E|=437217424
+|V|=13593033
+streaming total time 48.340500s
+|V|=13593033
+Intersection Graph Marked: 10.093514s
+Version Time: 1.303978
+direct hop total time 4.987039s
+work sharing total time 3.165590s
+CommonGraph total time 3.165590s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 16 0.01 6
+Error: Invalid line "% asym unweighted"
+read: 174.723841s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 16, batch_size is 4372174
+read: 0.090560s
+|E|=437217424
+|V|=13593033
+streaming total time 54.544643s
+|V|=13593033
+Intersection Graph Marked: 11.214132s
+Version Time: 2.065759
+direct hop total time 4.994623s
+work sharing total time 3.264638s
+CommonGraph total time 3.264638s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 16 0.01 7
+Error: Invalid line "% asym unweighted"
+read: 174.909495s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 16, batch_size is 4372174
+read: 0.087703s
+|E|=437217424
+|V|=13593033
+streaming total time 54.379154s
+|V|=13593033
+Intersection Graph Marked: 9.268474s
+Version Time: 1.282135
+direct hop total time 4.776555s
+work sharing total time 3.245681s
+CommonGraph total time 3.245681s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 16 0.01 8
+Error: Invalid line "% asym unweighted"
+read: 175.113727s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 16, batch_size is 4372174
+read: 0.090570s
+|E|=437217424
+|V|=13593033
+streaming total time 58.735226s
+|V|=13593033
+Intersection Graph Marked: 10.088109s
+Version Time: 1.410431
+direct hop total time 4.751297s
+work sharing total time 3.100169s
+CommonGraph total time 3.100169s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 16 0.01 9
+Error: Invalid line "% asym unweighted"
+read: 175.766017s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 16, batch_size is 4372174
+read: 0.091372s
+|E|=437217424
+|V|=13593033
+streaming total time 56.448917s
+|V|=13593033
+Intersection Graph Marked: 10.174527s
+Version Time: 1.311798
+direct hop total time 5.064748s
+work sharing total time 3.297555s
+CommonGraph total time 3.297555s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 16 0.01 10
+Error: Invalid line "% asym unweighted"
+read: 174.730832s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 16, batch_size is 4372174
+read: 0.090720s
+|E|=437217424
+|V|=13593033
+Re Computing: 5 875151 1143493
+streaming total time 49.577225s
+|V|=13593033
+Intersection Graph Marked: 10.574348s
+Version Time: 0.389627
+direct hop total time 11.387718s
+work sharing total time 9.774484s
+CommonGraph total time 9.774484s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 16 0.01 11
+Error: Invalid line "% asym unweighted"
+read: 174.888531s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 16, batch_size is 4372174
+read: 0.088351s
+|E|=437217424
+|V|=13593033
+streaming total time 52.648018s
+|V|=13593033
+Intersection Graph Marked: 10.313499s
+Version Time: 1.295290
+direct hop total time 4.843683s
+work sharing total time 3.128397s
+CommonGraph total time 3.128397s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 16 0.01 12
+Error: Invalid line "% asym unweighted"
+read: 174.590710s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 16, batch_size is 4372174
+read: 0.089024s
+|E|=437217424
+|V|=13593033
+streaming total time 44.289661s
+|V|=13593033
+Intersection Graph Marked: 10.401592s
+Version Time: 0.396871
+direct hop total time 9.438671s
+work sharing total time 2.615812s
+CommonGraph total time 2.615812s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 16 0.01 13
+Error: Invalid line "% asym unweighted"
+read: 176.863399s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 16, batch_size is 4372174
+read: 0.088642s
+|E|=437217424
+|V|=13593033
+streaming total time 49.061161s
+|V|=13593033
+Intersection Graph Marked: 10.976025s
+Version Time: 1.309145
+direct hop total time 4.789139s
+work sharing total time 3.083231s
+CommonGraph total time 3.083231s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 16 0.01 14
+Error: Invalid line "% asym unweighted"
+read: 175.281461s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 16, batch_size is 4372174
+read: 0.089001s
+|E|=437217424
+|V|=13593033
+streaming total time 58.105358s
+|V|=13593033
+Intersection Graph Marked: 10.548697s
+Version Time: 1.255598
+direct hop total time 4.792814s
+work sharing total time 3.217076s
+CommonGraph total time 3.217076s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 16 0.01 15
+Error: Invalid line "% asym unweighted"
+read: 174.860319s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 16, batch_size is 4372174
+read: 0.089319s
+|E|=437217424
+|V|=13593033
+streaming total time 59.753113s
+|V|=13593033
+Intersection Graph Marked: 10.105872s
+Version Time: 1.222613
+direct hop total time 4.815337s
+work sharing total time 3.312735s
+CommonGraph total time 3.312735s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 32 0.005 0
+Error: Invalid line "% asym unweighted"
+read: 174.784129s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 32, batch_size is 2186087
+read: 0.089373s
+|E|=437217424
+|V|=13593033
+streaming total time 47.241711s
+|V|=13593033
+Intersection Graph Marked: 10.865940s
+Version Time: 1.392361
+direct hop total time 9.723363s
+work sharing total time 5.889659s
+CommonGraph total time 5.889659s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 32 0.005 1
+Error: Invalid line "% asym unweighted"
+read: 174.963482s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 32, batch_size is 2186087
+read: 0.091006s
+|E|=437217424
+|V|=13593033
+streaming total time 52.801758s
+|V|=13593033
+Intersection Graph Marked: 10.656186s
+Version Time: 0.393105
+direct hop total time 18.974047s
+work sharing total time 17.855413s
+CommonGraph total time 17.855413s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 32 0.005 2
+Error: Invalid line "% asym unweighted"
+read: 175.015789s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 32, batch_size is 2186087
+read: 0.092344s
+|E|=437217424
+|V|=13593033
+streaming total time 49.761795s
+|V|=13593033
+Intersection Graph Marked: 10.788324s
+Version Time: 0.398333
+direct hop total time 12.757692s
+work sharing total time 3.254118s
+CommonGraph total time 3.254118s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 32 0.005 3
+Error: Invalid line "% asym unweighted"
+read: 175.326769s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 32, batch_size is 2186087
+read: 0.090749s
+|E|=437217424
+|V|=13593033
+streaming total time 49.534195s
+|V|=13593033
+Intersection Graph Marked: 10.369577s
+Version Time: 1.297388
+direct hop total time 8.872173s
+work sharing total time 5.444266s
+CommonGraph total time 5.444266s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 32 0.005 4
+Error: Invalid line "% asym unweighted"
+read: 174.787660s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 32, batch_size is 2186087
+read: 0.091433s
+|E|=437217424
+|V|=13593033
+streaming total time 49.745735s
+|V|=13593033
+Intersection Graph Marked: 10.763744s
+Version Time: 1.354383
+direct hop total time 8.966534s
+work sharing total time 5.640342s
+CommonGraph total time 5.640342s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 32 0.005 5
+Error: Invalid line "% asym unweighted"
+read: 176.628328s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 32, batch_size is 2186087
+read: 0.091327s
+|E|=437217424
+|V|=13593033
+streaming total time 50.354248s
+|V|=13593033
+Intersection Graph Marked: 10.146598s
+Version Time: 1.303609
+direct hop total time 8.974951s
+work sharing total time 5.830660s
+CommonGraph total time 5.830660s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 32 0.005 6
+Error: Invalid line "% asym unweighted"
+read: 175.003041s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 32, batch_size is 2186087
+read: 0.089332s
+|E|=437217424
+|V|=13593033
+streaming total time 35.781982s
+|V|=13593033
+Intersection Graph Marked: 10.233456s
+Version Time: 1.451125
+direct hop total time 9.399583s
+work sharing total time 5.402603s
+CommonGraph total time 5.402603s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 32 0.005 7
+Error: Invalid line "% asym unweighted"
+read: 174.691980s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 32, batch_size is 2186087
+read: 0.101381s
+|E|=437217424
+|V|=13593033
+streaming total time 48.472485s
+|V|=13593033
+Intersection Graph Marked: 10.057415s
+Version Time: 1.302314
+direct hop total time 9.322559s
+work sharing total time 5.780736s
+CommonGraph total time 5.780736s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 32 0.005 8
+Error: Invalid line "% asym unweighted"
+read: 175.129379s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 32, batch_size is 2186087
+read: 0.094379s
+|E|=437217424
+|V|=13593033
+streaming total time 47.450439s
+|V|=13593033
+Intersection Graph Marked: 10.182291s
+Version Time: 1.329382
+direct hop total time 9.748034s
+work sharing total time 6.101480s
+CommonGraph total time 6.101480s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 32 0.005 9
+Error: Invalid line "% asym unweighted"
+read: 174.869363s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 32, batch_size is 2186087
+read: 0.091620s
+|E|=437217424
+|V|=13593033
+streaming total time 49.125240s
+|V|=13593033
+Intersection Graph Marked: 10.243244s
+Version Time: 1.299437
+direct hop total time 8.964493s
+work sharing total time 5.554259s
+CommonGraph total time 5.554259s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 32 0.005 10
+Error: Invalid line "% asym unweighted"
+read: 175.095898s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 32, batch_size is 2186087
+read: 0.088647s
+|E|=437217424
+|V|=13593033
+Re Computing: 6 1887233 1444443
+streaming total time 34.995998s
+|V|=13593033
+Intersection Graph Marked: 10.709544s
+Version Time: 0.392673
+direct hop total time 23.501120s
+work sharing total time 20.125423s
+CommonGraph total time 20.125423s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 32 0.005 11
+Error: Invalid line "% asym unweighted"
+read: 175.087778s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 32, batch_size is 2186087
+read: 0.090882s
+|E|=437217424
+|V|=13593033
+streaming total time 39.702118s
+|V|=13593033
+Intersection Graph Marked: 10.078461s
+Version Time: 1.301683
+direct hop total time 9.533663s
+work sharing total time 5.847362s
+CommonGraph total time 5.847362s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 32 0.005 12
+Error: Invalid line "% asym unweighted"
+read: 174.800535s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 32, batch_size is 2186087
+read: 0.092524s
+|E|=437217424
+|V|=13593033
+streaming total time 51.824718s
+|V|=13593033
+Intersection Graph Marked: 10.522462s
+Version Time: 0.406920
+direct hop total time 22.564543s
+work sharing total time 3.567156s
+CommonGraph total time 3.567156s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 32 0.005 13
+Error: Invalid line "% asym unweighted"
+read: 175.109938s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 32, batch_size is 2186087
+read: 0.089238s
+|E|=437217424
+|V|=13593033
+streaming total time 53.728062s
+|V|=13593033
+Intersection Graph Marked: 10.959314s
+Version Time: 1.338579
+direct hop total time 9.451675s
+work sharing total time 5.790655s
+CommonGraph total time 5.790655s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 32 0.005 14
+Error: Invalid line "% asym unweighted"
+read: 174.655613s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 32, batch_size is 2186087
+read: 0.090189s
+|E|=437217424
+|V|=13593033
+streaming total time 50.250862s
+|V|=13593033
+Intersection Graph Marked: 9.970682s
+Version Time: 1.254977
+direct hop total time 9.407579s
+work sharing total time 5.787674s
+CommonGraph total time 5.787674s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 32 0.005 15
+Error: Invalid line "% asym unweighted"
+read: 174.717684s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 32, batch_size is 2186087
+read: 0.087978s
+|E|=437217424
+|V|=13593033
+streaming total time 48.358299s
+|V|=13593033
+Intersection Graph Marked: 9.702035s
+Version Time: 1.229599
+direct hop total time 9.439981s
+work sharing total time 5.731054s
+CommonGraph total time 5.731054s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 64 0.0025 0
+Error: Invalid line "% asym unweighted"
+read: 175.127988s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 64, batch_size is 1093043
+read: 0.088770s
+|E|=437217424
+|V|=13593033
+streaming total time 32.505226s
+|V|=13593033
+Intersection Graph Marked: 9.411805s
+Version Time: 1.389654
+direct hop total time 17.920187s
+work sharing total time 11.755821s
+CommonGraph total time 11.755821s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 64 0.0025 1
+Error: Invalid line "% asym unweighted"
+read: 175.510495s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 64, batch_size is 1093043
+read: 0.089792s
+|E|=437217424
+|V|=13593033
+streaming total time 38.537956s
+|V|=13593033
+Intersection Graph Marked: 10.663342s
+Version Time: 0.438920
+direct hop total time 62.476265s
+work sharing total time 39.925743s
+CommonGraph total time 39.925743s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 64 0.0025 2
+Error: Invalid line "% asym unweighted"
+read: 174.849789s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 64, batch_size is 1093043
+read: 0.090352s
+|E|=437217424
+|V|=13593033
+streaming total time 32.613461s
+|V|=13593033
+Intersection Graph Marked: 10.033261s
+Version Time: 0.392721
+direct hop total time 36.418709s
+work sharing total time 6.448365s
+CommonGraph total time 6.448365s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 64 0.0025 3
+Error: Invalid line "% asym unweighted"
+read: 174.940406s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 64, batch_size is 1093043
+read: 0.090223s
+|E|=437217424
+|V|=13593033
+streaming total time 40.393505s
+|V|=13593033
+Intersection Graph Marked: 10.471506s
+Version Time: 1.257387
+direct hop total time 18.228401s
+work sharing total time 11.355655s
+CommonGraph total time 11.355655s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 64 0.0025 4
+Error: Invalid line "% asym unweighted"
+read: 174.960715s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 64, batch_size is 1093043
+read: 0.088958s
+|E|=437217424
+|V|=13593033
+streaming total time 33.231445s
+|V|=13593033
+Intersection Graph Marked: 10.957466s
+Version Time: 1.302140
+direct hop total time 17.265646s
+work sharing total time 10.773203s
+CommonGraph total time 10.773203s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 64 0.0025 5
+Error: Invalid line "% asym unweighted"
+read: 174.918100s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 64, batch_size is 1093043
+read: 0.089489s
+|E|=437217424
+|V|=13593033
+streaming total time 48.308792s
+|V|=13593033
+Intersection Graph Marked: 9.804977s
+Version Time: 1.290383
+direct hop total time 17.942360s
+work sharing total time 11.549023s
+CommonGraph total time 11.549023s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 64 0.0025 6
+Error: Invalid line "% asym unweighted"
+read: 174.903316s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 64, batch_size is 1093043
+read: 0.092586s
+|E|=437217424
+|V|=13593033
+streaming total time 46.303825s
+|V|=13593033
+Intersection Graph Marked: 10.094618s
+Version Time: 1.454007
+direct hop total time 17.300102s
+work sharing total time 11.151958s
+CommonGraph total time 11.151958s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 64 0.0025 7
+Error: Invalid line "% asym unweighted"
+read: 177.029289s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 64, batch_size is 1093043
+read: 0.090027s
+|E|=437217424
+|V|=13593033
+streaming total time 44.515835s
+|V|=13593033
+Intersection Graph Marked: 10.013874s
+Version Time: 1.289322
+direct hop total time 17.986761s
+work sharing total time 11.625421s
+CommonGraph total time 11.625421s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 64 0.0025 8
+Error: Invalid line "% asym unweighted"
+read: 175.442947s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 64, batch_size is 1093043
+read: 0.090029s
+|E|=437217424
+|V|=13593033
+streaming total time 32.401981s
+|V|=13593033
+Intersection Graph Marked: 9.598450s
+Version Time: 1.314610
+direct hop total time 17.420723s
+work sharing total time 10.942951s
+CommonGraph total time 10.942951s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 64 0.0025 9
+Error: Invalid line "% asym unweighted"
+read: 174.656037s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 64, batch_size is 1093043
+read: 0.090449s
+|E|=437217424
+|V|=13593033
+streaming total time 47.488510s
+|V|=13593033
+Intersection Graph Marked: 9.664248s
+Version Time: 1.345705
+direct hop total time 17.515354s
+work sharing total time 11.186675s
+CommonGraph total time 11.186675s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 64 0.0025 10
+Error: Invalid line "% asym unweighted"
+read: 174.908985s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 64, batch_size is 1093043
+read: 0.092898s
+|E|=437217424
+|V|=13593033
+Re Computing: 5 993365 1716808
+streaming total time 31.092871s
+|V|=13593033
+Intersection Graph Marked: 10.240615s
+Version Time: 0.393250
+direct hop total time 45.834457s
+work sharing total time 37.284470s
+CommonGraph total time 37.284470s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 64 0.0025 11
+Error: Invalid line "% asym unweighted"
+read: 174.858754s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 64, batch_size is 1093043
+read: 0.090652s
+|E|=437217424
+|V|=13593033
+streaming total time 38.842587s
+|V|=13593033
+Intersection Graph Marked: 10.655467s
+Version Time: 1.292346
+direct hop total time 18.516041s
+work sharing total time 12.093769s
+CommonGraph total time 12.093769s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 64 0.0025 12
+Error: Invalid line "% asym unweighted"
+read: 175.040152s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 64, batch_size is 1093043
+read: 0.089040s
+|E|=437217424
+|V|=13593033
+streaming total time 30.966970s
+|V|=13593033
+Intersection Graph Marked: 9.753493s
+Version Time: 1.303322
+direct hop total time 25.924683s
+work sharing total time 6.146498s
+CommonGraph total time 6.146498s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 64 0.0025 13
+Error: Invalid line "% asym unweighted"
+read: 177.175205s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 64, batch_size is 1093043
+read: 0.108830s
+|E|=437217424
+|V|=13593033
+streaming total time 34.519623s
+|V|=13593033
+Intersection Graph Marked: 9.050860s
+Version Time: 1.314759
+direct hop total time 17.749931s
+work sharing total time 11.007901s
+CommonGraph total time 11.007901s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 64 0.0025 14
+Error: Invalid line "% asym unweighted"
+read: 183.687585s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 64, batch_size is 1093043
+read: 0.092036s
+|E|=437217424
+|V|=13593033
+streaming total time 31.956175s
+|V|=13593033
+Intersection Graph Marked: 9.225729s
+Version Time: 1.252501
+direct hop total time 18.530205s
+work sharing total time 11.491481s
+CommonGraph total time 11.491481s
+Running: build/SSRbaseline /home/cgao037/graph/wen/snap_wen source/wen.txt 64 0.0025 15
+Error: Invalid line "% asym unweighted"
+read: 175.475835s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 64, batch_size is 1093043
+read: 0.089189s
+|E|=437217424
+|V|=13593033
+streaming total time 37.181438s
+|V|=13593033
+Intersection Graph Marked: 9.818889s
+Version Time: 1.236662
+direct hop total time 17.943762s
+work sharing total time 11.138769s
+CommonGraph total time 11.138769s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 8 0.02 0
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.638719s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 8, batch_size is 3443679
+read: 0.072142s
+|E|=172183984
+|V|=18268993
+streaming total time 14.148906s
+|V|=18268993
+Intersection Graph Marked: 6.704165s
+Version Time: 0.491799
+direct hop total time 3.405864s
+work sharing total time 2.196149s
+CommonGraph total time 2.196149s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 8 0.02 1
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 72.647897s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 8, batch_size is 3443679
+read: 0.076036s
+|E|=172183984
+|V|=18268993
+streaming total time 18.862835s
+|V|=18268993
+Intersection Graph Marked: 6.908102s
+Version Time: 0.628151
+direct hop total time 3.170852s
+work sharing total time 2.104136s
+CommonGraph total time 2.104136s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 8 0.02 2
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 72.120941s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 8, batch_size is 3443679
+read: 0.071697s
+|E|=172183984
+|V|=18268993
+streaming total time 12.296774s
+|V|=18268993
+Intersection Graph Marked: 6.889542s
+Version Time: 0.209839
+direct hop total time 0.418079s
+work sharing total time 0.325776s
+CommonGraph total time 0.325776s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 8 0.02 3
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.766503s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 8, batch_size is 3443679
+read: 0.078373s
+|E|=172183984
+|V|=18268993
+streaming total time 14.415401s
+|V|=18268993
+Intersection Graph Marked: 6.504667s
+Version Time: 0.272590
+direct hop total time 0.455951s
+work sharing total time 0.291191s
+CommonGraph total time 0.291191s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 8 0.02 4
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.634372s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 8, batch_size is 3443679
+read: 0.083574s
+|E|=172183984
+|V|=18268993
+streaming total time 9.880034s
+|V|=18268993
+Intersection Graph Marked: 7.291586s
+Version Time: 0.199398
+direct hop total time 0.340845s
+work sharing total time 0.382944s
+CommonGraph total time 0.382944s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 8 0.02 5
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.811919s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 8, batch_size is 3443679
+read: 0.071588s
+|E|=172183984
+|V|=18268993
+streaming total time 18.694155s
+|V|=18268993
+Intersection Graph Marked: 5.234872s
+Version Time: 0.746921
+direct hop total time 3.101175s
+work sharing total time 1.975523s
+CommonGraph total time 1.975523s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 8 0.02 6
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.849269s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 8, batch_size is 3443679
+read: 0.071164s
+|E|=172183984
+|V|=18268993
+streaming total time 19.074970s
+|V|=18268993
+Intersection Graph Marked: 5.066204s
+Version Time: 0.612310
+direct hop total time 3.154635s
+work sharing total time 2.108318s
+CommonGraph total time 2.108318s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 8 0.02 7
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 72.643156s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 8, batch_size is 3443679
+read: 0.073543s
+|E|=172183984
+|V|=18268993
+streaming total time 13.165048s
+|V|=18268993
+Intersection Graph Marked: 5.309065s
+Version Time: 0.525002
+direct hop total time 3.417509s
+work sharing total time 2.210151s
+CommonGraph total time 2.210151s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 8 0.02 8
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.761408s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 8, batch_size is 3443679
+read: 0.073905s
+|E|=172183984
+|V|=18268993
+streaming total time 11.829639s
+|V|=18268993
+Intersection Graph Marked: 4.717199s
+Version Time: 0.459493
+direct hop total time 3.057353s
+work sharing total time 2.044643s
+CommonGraph total time 2.044643s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 8 0.02 9
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.725649s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 8, batch_size is 3443679
+read: 0.082249s
+|E|=172183984
+|V|=18268993
+streaming total time 19.450731s
+|V|=18268993
+Intersection Graph Marked: 4.975147s
+Version Time: 0.465719
+direct hop total time 3.367372s
+work sharing total time 2.194937s
+CommonGraph total time 2.194937s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 8 0.02 10
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.639735s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 8, batch_size is 3443679
+read: 0.076314s
+|E|=172183984
+|V|=18268993
+streaming total time 22.683558s
+|V|=18268993
+Intersection Graph Marked: 5.391714s
+Version Time: 0.238424
+direct hop total time 0.356117s
+work sharing total time 0.237164s
+CommonGraph total time 0.237164s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 8 0.02 11
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 72.182771s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 8, batch_size is 3443679
+read: 0.077368s
+|E|=172183984
+|V|=18268993
+streaming total time 15.943862s
+|V|=18268993
+Intersection Graph Marked: 7.574513s
+Version Time: 0.210399
+direct hop total time 0.371982s
+work sharing total time 0.240659s
+CommonGraph total time 0.240659s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 8 0.02 12
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.701983s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 8, batch_size is 3443679
+read: 0.069406s
+|E|=172183984
+|V|=18268993
+streaming total time 18.907274s
+|V|=18268993
+Intersection Graph Marked: 5.211682s
+Version Time: 0.627995
+direct hop total time 3.372946s
+work sharing total time 2.222153s
+CommonGraph total time 2.222153s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 8 0.02 13
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.658468s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 8, batch_size is 3443679
+read: 0.068330s
+|E|=172183984
+|V|=18268993
+Re Computing: 5 1945484 2907212
+streaming total time 14.386280s
+|V|=18268993
+Intersection Graph Marked: 5.280754s
+Version Time: 0.241597
+direct hop total time 2.230101s
+work sharing total time 2.097408s
+CommonGraph total time 2.097408s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 8 0.02 14
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.751847s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 8, batch_size is 3443679
+read: 0.073090s
+|E|=172183984
+|V|=18268993
+streaming total time 18.087297s
+|V|=18268993
+Intersection Graph Marked: 5.182520s
+Version Time: 0.205489
+direct hop total time 0.354758s
+work sharing total time 0.227971s
+CommonGraph total time 0.227971s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 8 0.02 15
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.665862s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 8, batch_size is 3443679
+read: 0.080757s
+|E|=172183984
+|V|=18268993
+streaming total time 10.298239s
+|V|=18268993
+Intersection Graph Marked: 5.542399s
+Version Time: 0.217000
+direct hop total time 0.340043s
+work sharing total time 0.227794s
+CommonGraph total time 0.227794s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 16 0.01 0
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.706927s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 16, batch_size is 1721839
+read: 0.074412s
+|E|=172183984
+|V|=18268993
+streaming total time 22.340508s
+|V|=18268993
+Intersection Graph Marked: 6.132358s
+Version Time: 0.486785
+direct hop total time 5.814821s
+work sharing total time 3.572412s
+CommonGraph total time 3.572412s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 16 0.01 1
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.854714s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 16, batch_size is 1721839
+read: 0.076390s
+|E|=172183984
+|V|=18268993
+streaming total time 12.221040s
+|V|=18268993
+Intersection Graph Marked: 4.963995s
+Version Time: 0.844600
+direct hop total time 5.676932s
+work sharing total time 3.548321s
+CommonGraph total time 3.548321s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 16 0.01 2
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.719671s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 16, batch_size is 1721839
+read: 0.072497s
+|E|=172183984
+|V|=18268993
+streaming total time 14.905412s
+|V|=18268993
+Intersection Graph Marked: 5.719106s
+Version Time: 0.211131
+direct hop total time 0.657400s
+work sharing total time 0.384289s
+CommonGraph total time 0.384289s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 16 0.01 3
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.671634s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 16, batch_size is 1721839
+read: 0.074372s
+|E|=172183984
+|V|=18268993
+streaming total time 14.136558s
+|V|=18268993
+Intersection Graph Marked: 4.781293s
+Version Time: 0.215759
+direct hop total time 0.640011s
+work sharing total time 0.390851s
+CommonGraph total time 0.390851s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 16 0.01 4
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.796063s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 16, batch_size is 1721839
+read: 0.069565s
+|E|=172183984
+|V|=18268993
+streaming total time 16.553511s
+|V|=18268993
+Intersection Graph Marked: 5.127421s
+Version Time: 0.217319
+direct hop total time 0.702501s
+work sharing total time 0.435451s
+CommonGraph total time 0.435451s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 16 0.01 5
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.734162s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 16, batch_size is 1721839
+read: 0.073944s
+|E|=172183984
+|V|=18268993
+streaming total time 20.726625s
+|V|=18268993
+Intersection Graph Marked: 5.174841s
+Version Time: 0.768504
+direct hop total time 6.511392s
+work sharing total time 3.975504s
+CommonGraph total time 3.975504s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 16 0.01 6
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.614472s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 16, batch_size is 1721839
+read: 0.076467s
+|E|=172183984
+|V|=18268993
+streaming total time 20.386448s
+|V|=18268993
+Intersection Graph Marked: 5.508571s
+Version Time: 0.634755
+direct hop total time 6.310937s
+work sharing total time 3.821781s
+CommonGraph total time 3.821781s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 16 0.01 7
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.643933s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 16, batch_size is 1721839
+read: 0.084137s
+|E|=172183984
+|V|=18268993
+streaming total time 9.731423s
+|V|=18268993
+Intersection Graph Marked: 5.369545s
+Version Time: 0.498586
+direct hop total time 6.040460s
+work sharing total time 3.718328s
+CommonGraph total time 3.718328s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 16 0.01 8
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.785006s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 16, batch_size is 1721839
+read: 0.075803s
+|E|=172183984
+|V|=18268993
+streaming total time 14.891026s
+|V|=18268993
+Intersection Graph Marked: 5.974962s
+Version Time: 0.474163
+direct hop total time 6.125562s
+work sharing total time 3.783680s
+CommonGraph total time 3.783680s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 16 0.01 9
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.862130s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 16, batch_size is 1721839
+read: 0.073554s
+|E|=172183984
+|V|=18268993
+streaming total time 20.045443s
+|V|=18268993
+Intersection Graph Marked: 5.816418s
+Version Time: 0.462492
+direct hop total time 5.719177s
+work sharing total time 3.588510s
+CommonGraph total time 3.588510s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 16 0.01 10
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.775449s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 16, batch_size is 1721839
+read: 0.068723s
+|E|=172183984
+|V|=18268993
+streaming total time 14.779008s
+|V|=18268993
+Intersection Graph Marked: 6.247727s
+Version Time: 0.200163
+direct hop total time 0.638541s
+work sharing total time 0.381358s
+CommonGraph total time 0.381358s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 16 0.01 11
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.678729s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 16, batch_size is 1721839
+read: 0.074802s
+|E|=172183984
+|V|=18268993
+streaming total time 14.704100s
+|V|=18268993
+Intersection Graph Marked: 6.278942s
+Version Time: 0.203062
+direct hop total time 0.664548s
+work sharing total time 0.393837s
+CommonGraph total time 0.393837s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 16 0.01 12
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.826689s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 16, batch_size is 1721839
+read: 0.071649s
+|E|=172183984
+|V|=18268993
+streaming total time 19.616205s
+|V|=18268993
+Intersection Graph Marked: 5.921191s
+Version Time: 0.655166
+direct hop total time 6.681663s
+work sharing total time 3.899886s
+CommonGraph total time 3.899886s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 16 0.01 13
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.750407s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 16, batch_size is 1721839
+read: 0.079905s
+|E|=172183984
+|V|=18268993
+Re Computing: 5 1478459 2866063
+streaming total time 14.528140s
+|V|=18268993
+Intersection Graph Marked: 5.340103s
+Version Time: 0.258690
+direct hop total time 4.330512s
+work sharing total time 4.365577s
+CommonGraph total time 4.365577s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 16 0.01 14
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.725969s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 16, batch_size is 1721839
+read: 0.079249s
+|E|=172183984
+|V|=18268993
+streaming total time 10.582203s
+|V|=18268993
+Intersection Graph Marked: 5.518414s
+Version Time: 2.889535
+direct hop total time 0.734685s
+work sharing total time 0.386170s
+CommonGraph total time 0.386170s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 16 0.01 15
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.644412s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 16, batch_size is 1721839
+read: 0.075856s
+|E|=172183984
+|V|=18268993
+streaming total time 12.729424s
+|V|=18268993
+Intersection Graph Marked: 5.259586s
+Version Time: 0.197948
+direct hop total time 0.647716s
+work sharing total time 0.388947s
+CommonGraph total time 0.388947s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 32 0.005 0
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.777321s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 32, batch_size is 860919
+read: 0.079970s
+|E|=172183984
+|V|=18268993
+streaming total time 16.953127s
+|V|=18268993
+Intersection Graph Marked: 6.070788s
+Version Time: 0.477884
+direct hop total time 11.005387s
+work sharing total time 6.450012s
+CommonGraph total time 6.450012s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 32 0.005 1
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.693287s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 32, batch_size is 860919
+read: 0.075634s
+|E|=172183984
+|V|=18268993
+streaming total time 22.691273s
+|V|=18268993
+Intersection Graph Marked: 5.076284s
+Version Time: 0.640379
+direct hop total time 11.302736s
+work sharing total time 6.699346s
+CommonGraph total time 6.699346s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 32 0.005 2
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.628697s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 32, batch_size is 860919
+read: 0.073464s
+|E|=172183984
+|V|=18268993
+streaming total time 16.811800s
+|V|=18268993
+Intersection Graph Marked: 5.378308s
+Version Time: 0.217883
+direct hop total time 1.676036s
+work sharing total time 0.968028s
+CommonGraph total time 0.968028s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 32 0.005 3
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.742976s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 32, batch_size is 860919
+read: 0.078718s
+|E|=172183984
+|V|=18268993
+streaming total time 13.626887s
+|V|=18268993
+Intersection Graph Marked: 5.202316s
+Version Time: 0.208418
+direct hop total time 1.239059s
+work sharing total time 0.724609s
+CommonGraph total time 0.724609s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 32 0.005 4
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.706013s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 32, batch_size is 860919
+read: 0.070567s
+|E|=172183984
+|V|=18268993
+streaming total time 22.653646s
+|V|=18268993
+Intersection Graph Marked: 5.568600s
+Version Time: 0.199529
+direct hop total time 1.265406s
+work sharing total time 0.710058s
+CommonGraph total time 0.710058s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 32 0.005 5
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.704610s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 32, batch_size is 860919
+read: 0.074135s
+|E|=172183984
+|V|=18268993
+streaming total time 22.402161s
+|V|=18268993
+Intersection Graph Marked: 5.114851s
+Version Time: 0.750918
+direct hop total time 12.792479s
+work sharing total time 7.475496s
+CommonGraph total time 7.475496s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 32 0.005 6
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.632128s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 32, batch_size is 860919
+read: 0.075889s
+|E|=172183984
+|V|=18268993
+streaming total time 18.953764s
+|V|=18268993
+Intersection Graph Marked: 5.274907s
+Version Time: 0.523429
+direct hop total time 11.472324s
+work sharing total time 6.685354s
+CommonGraph total time 6.685354s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 32 0.005 7
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.992927s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 32, batch_size is 860919
+read: 0.074869s
+|E|=172183984
+|V|=18268993
+streaming total time 16.330175s
+|V|=18268993
+Intersection Graph Marked: 5.024542s
+Version Time: 0.768857
+direct hop total time 12.426468s
+work sharing total time 7.181249s
+CommonGraph total time 7.181249s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 32 0.005 8
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.757276s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 32, batch_size is 860919
+read: 0.075544s
+|E|=172183984
+|V|=18268993
+streaming total time 16.048752s
+|V|=18268993
+Intersection Graph Marked: 5.020304s
+Version Time: 0.499055
+direct hop total time 13.327801s
+work sharing total time 7.543392s
+CommonGraph total time 7.543392s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 32 0.005 9
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.751713s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 32, batch_size is 860919
+read: 0.074558s
+|E|=172183984
+|V|=18268993
+streaming total time 16.542164s
+|V|=18268993
+Intersection Graph Marked: 4.910155s
+Version Time: 0.500623
+direct hop total time 13.128990s
+work sharing total time 7.542959s
+CommonGraph total time 7.542959s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 32 0.005 10
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.642737s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 32, batch_size is 860919
+read: 0.070338s
+|E|=172183984
+|V|=18268993
+streaming total time 16.096298s
+|V|=18268993
+Intersection Graph Marked: 4.954881s
+Version Time: 0.213703
+direct hop total time 1.256177s
+work sharing total time 0.708709s
+CommonGraph total time 0.708709s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 32 0.005 11
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.808812s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 32, batch_size is 860919
+read: 0.075801s
+|E|=172183984
+|V|=18268993
+streaming total time 17.661423s
+|V|=18268993
+Intersection Graph Marked: 6.000007s
+Version Time: 0.214601
+direct hop total time 1.406519s
+work sharing total time 0.960688s
+CommonGraph total time 0.960688s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 32 0.005 12
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.690295s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 32, batch_size is 860919
+read: 0.076848s
+|E|=172183984
+|V|=18268993
+streaming total time 21.628859s
+|V|=18268993
+Intersection Graph Marked: 6.602766s
+Version Time: 0.675899
+direct hop total time 11.382802s
+work sharing total time 6.563226s
+CommonGraph total time 6.563226s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 32 0.005 13
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 72.021693s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 32, batch_size is 860919
+read: 0.069616s
+|E|=172183984
+|V|=18268993
+Re Computing: 5 1340976 2890677
+streaming total time 22.136379s
+|V|=18268993
+Intersection Graph Marked: 5.107337s
+Version Time: 0.241319
+direct hop total time 8.825396s
+work sharing total time 8.008832s
+CommonGraph total time 8.008832s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 32 0.005 14
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.871773s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 32, batch_size is 860919
+read: 0.070427s
+|E|=172183984
+|V|=18268993
+streaming total time 12.390182s
+|V|=18268993
+Intersection Graph Marked: 5.168737s
+Version Time: 0.206618
+direct hop total time 1.235533s
+work sharing total time 0.735782s
+CommonGraph total time 0.735782s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 32 0.005 15
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.739188s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 32, batch_size is 860919
+read: 0.074851s
+|E|=172183984
+|V|=18268993
+streaming total time 16.343184s
+|V|=18268993
+Intersection Graph Marked: 5.888743s
+Version Time: 0.207134
+direct hop total time 1.240348s
+work sharing total time 0.732021s
+CommonGraph total time 0.732021s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 64 0.0025 0
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.635776s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 64, batch_size is 430459
+read: 0.073621s
+|E|=172183984
+|V|=18268993
+streaming total time 11.044969s
+|V|=18268993
+Intersection Graph Marked: 4.477692s
+Version Time: 0.478138
+direct hop total time 21.604326s
+work sharing total time 12.120511s
+CommonGraph total time 12.120511s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 64 0.0025 1
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.752652s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 64, batch_size is 430459
+read: 0.077798s
+|E|=172183984
+|V|=18268993
+streaming total time 13.506292s
+|V|=18268993
+Intersection Graph Marked: 5.359854s
+Version Time: 0.648617
+direct hop total time 21.408117s
+work sharing total time 12.369128s
+CommonGraph total time 12.369128s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 64 0.0025 2
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.729904s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 64, batch_size is 430459
+read: 0.072440s
+|E|=172183984
+|V|=18268993
+streaming total time 7.495558s
+|V|=18268993
+Intersection Graph Marked: 4.979476s
+Version Time: 0.199331
+direct hop total time 2.434021s
+work sharing total time 1.411048s
+CommonGraph total time 1.411048s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 64 0.0025 3
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.832832s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 64, batch_size is 430459
+read: 0.073160s
+|E|=172183984
+|V|=18268993
+streaming total time 10.914176s
+|V|=18268993
+Intersection Graph Marked: 5.938234s
+Version Time: 0.223428
+direct hop total time 2.436069s
+work sharing total time 1.324975s
+CommonGraph total time 1.324975s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 64 0.0025 4
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.555983s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 64, batch_size is 430459
+read: 0.077679s
+|E|=172183984
+|V|=18268993
+streaming total time 8.058487s
+|V|=18268993
+Intersection Graph Marked: 4.495261s
+Version Time: 0.199648
+direct hop total time 2.449412s
+work sharing total time 1.333995s
+CommonGraph total time 1.333995s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 64 0.0025 5
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.707819s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 64, batch_size is 430459
+read: 0.078628s
+|E|=172183984
+|V|=18268993
+streaming total time 12.619670s
+|V|=18268993
+Intersection Graph Marked: 4.617457s
+Version Time: 0.716919
+direct hop total time 22.662533s
+work sharing total time 12.708410s
+CommonGraph total time 12.708410s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 64 0.0025 6
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.685729s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 64, batch_size is 430459
+read: 0.070211s
+|E|=172183984
+|V|=18268993
+streaming total time 14.435599s
+|V|=18268993
+Intersection Graph Marked: 4.965332s
+Version Time: 0.483514
+direct hop total time 22.297045s
+work sharing total time 12.410476s
+CommonGraph total time 12.410476s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 64 0.0025 7
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.598624s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 64, batch_size is 430459
+read: 0.080579s
+|E|=172183984
+|V|=18268993
+streaming total time 10.888335s
+|V|=18268993
+Intersection Graph Marked: 4.897467s
+Version Time: 0.458147
+direct hop total time 22.077629s
+work sharing total time 12.646299s
+CommonGraph total time 12.646299s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 64 0.0025 8
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 72.231996s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 64, batch_size is 430459
+read: 0.084297s
+|E|=172183984
+|V|=18268993
+streaming total time 12.582456s
+|V|=18268993
+Intersection Graph Marked: 4.773809s
+Version Time: 0.458521
+direct hop total time 21.053129s
+work sharing total time 12.092593s
+CommonGraph total time 12.092593s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 64 0.0025 9
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.799448s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 64, batch_size is 430459
+read: 0.072369s
+|E|=172183984
+|V|=18268993
+streaming total time 11.627832s
+|V|=18268993
+Intersection Graph Marked: 7.139633s
+Version Time: 0.468756
+direct hop total time 21.656246s
+work sharing total time 12.299016s
+CommonGraph total time 12.299016s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 64 0.0025 10
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.786321s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 64, batch_size is 430459
+read: 0.073139s
+|E|=172183984
+|V|=18268993
+streaming total time 12.029813s
+|V|=18268993
+Intersection Graph Marked: 4.797807s
+Version Time: 0.230463
+direct hop total time 2.479033s
+work sharing total time 1.371167s
+CommonGraph total time 1.371167s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 64 0.0025 11
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.691556s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 64, batch_size is 430459
+read: 0.071380s
+|E|=172183984
+|V|=18268993
+streaming total time 12.472301s
+|V|=18268993
+Intersection Graph Marked: 4.931296s
+Version Time: 0.238449
+direct hop total time 2.473444s
+work sharing total time 1.524540s
+CommonGraph total time 1.524540s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 64 0.0025 12
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.657026s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 64, batch_size is 430459
+read: 0.074032s
+|E|=172183984
+|V|=18268993
+streaming total time 10.237517s
+|V|=18268993
+Intersection Graph Marked: 4.687283s
+Version Time: 0.623731
+direct hop total time 21.537214s
+work sharing total time 12.247277s
+CommonGraph total time 12.247277s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 64 0.0025 13
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 72.000281s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 64, batch_size is 430459
+read: 0.074136s
+|E|=172183984
+|V|=18268993
+Re Computing: 5 1245008 2882043
+streaming total time 11.883210s
+|V|=18268993
+Intersection Graph Marked: 5.594959s
+Version Time: 0.244530
+direct hop total time 15.568798s
+work sharing total time 15.012820s
+CommonGraph total time 15.012820s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 64 0.0025 14
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 72.654232s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 64, batch_size is 430459
+read: 0.081474s
+|E|=172183984
+|V|=18268993
+streaming total time 10.657578s
+|V|=18268993
+Intersection Graph Marked: 5.125814s
+Version Time: 0.240634
+direct hop total time 2.456558s
+work sharing total time 1.421245s
+CommonGraph total time 1.421245s
+Running: build/SSRbaseline /home/cgao037/graph/dl/snap_dl source/dl_src.txt 64 0.0025 15
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 71.847780s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 64, batch_size is 430459
+read: 0.070289s
+|E|=172183984
+|V|=18268993
+streaming total time 15.482929s
+|V|=18268993
+Intersection Graph Marked: 5.651099s
+Version Time: 0.220698
+direct hop total time 2.457757s
+work sharing total time 1.405239s
+CommonGraph total time 1.405239s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 8 0.02 0
+Error: Invalid line "% bip unweighted"
+read: 132.693529s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 8, batch_size is 6540749
+read: 0.076439s
+|E|=327037487
+|V|=8730858
+streaming total time 40.047428s
+|V|=8730858
+Intersection Graph Marked: 17.649196s
+Version Time: 0.864048
+direct hop total time 2.404674s
+work sharing total time 1.586941s
+CommonGraph total time 1.586941s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 8 0.02 1
+Error: Invalid line "% bip unweighted"
+read: 132.459743s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 8, batch_size is 6540749
+read: 0.060113s
+|E|=327037487
+|V|=8730858
+streaming total time 28.762665s
+|V|=8730858
+Intersection Graph Marked: 15.654395s
+Version Time: 0.891602
+direct hop total time 2.396410s
+work sharing total time 1.661997s
+CommonGraph total time 1.661997s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 8 0.02 2
+Error: Invalid line "% bip unweighted"
+read: 132.559346s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 8, batch_size is 6540749
+read: 0.061412s
+|E|=327037487
+|V|=8730858
+streaming total time 31.335672s
+|V|=8730858
+Intersection Graph Marked: 14.727245s
+Version Time: 0.288205
+direct hop total time 0.471129s
+work sharing total time 0.290078s
+CommonGraph total time 0.290078s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 8 0.02 3
+Error: Invalid line "% bip unweighted"
+read: 132.429243s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 8, batch_size is 6540749
+read: 0.060851s
+|E|=327037487
+|V|=8730858
+streaming total time 24.616032s
+|V|=8730858
+Intersection Graph Marked: 14.503931s
+Version Time: 0.886612
+direct hop total time 2.309257s
+work sharing total time 1.601402s
+CommonGraph total time 1.601402s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 8 0.02 4
+Error: Invalid line "% bip unweighted"
+read: 133.254899s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 8, batch_size is 6540749
+read: 0.090274s
+|E|=327037487
+|V|=8730858
+streaming total time 34.317162s
+|V|=8730858
+Intersection Graph Marked: 18.305631s
+Version Time: 0.284965
+direct hop total time 0.538647s
+work sharing total time 0.404991s
+CommonGraph total time 0.404991s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 8 0.02 5
+Error: Invalid line "% bip unweighted"
+read: 132.310725s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 8, batch_size is 6540749
+read: 0.061346s
+|E|=327037487
+|V|=8730858
+streaming total time 29.341057s
+|V|=8730858
+Intersection Graph Marked: 15.042420s
+Version Time: 0.285631
+direct hop total time 0.625971s
+work sharing total time 0.497268s
+CommonGraph total time 0.497268s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 8 0.02 6
+Error: Invalid line "% bip unweighted"
+read: 132.658967s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 8, batch_size is 6540749
+read: 0.059802s
+|E|=327037487
+|V|=8730858
+streaming total time 37.932076s
+|V|=8730858
+Intersection Graph Marked: 20.067116s
+Version Time: 0.966610
+direct hop total time 2.251980s
+work sharing total time 1.520048s
+CommonGraph total time 1.520048s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 8 0.02 7
+Error: Invalid line "% bip unweighted"
+read: 132.310457s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 8, batch_size is 6540749
+read: 0.059937s
+|E|=327037487
+|V|=8730858
+streaming total time 28.903309s
+|V|=8730858
+Intersection Graph Marked: 14.206066s
+Version Time: 0.924095
+direct hop total time 2.334273s
+work sharing total time 1.560622s
+CommonGraph total time 1.560622s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 8 0.02 8
+Error: Invalid line "% bip unweighted"
+read: 132.261594s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 8, batch_size is 6540749
+read: 0.061074s
+|E|=327037487
+|V|=8730858
+streaming total time 39.147430s
+|V|=8730858
+Intersection Graph Marked: 15.803421s
+Version Time: 0.946756
+direct hop total time 2.256276s
+work sharing total time 1.548729s
+CommonGraph total time 1.548729s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 8 0.02 9
+Error: Invalid line "% bip unweighted"
+read: 133.132610s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 8, batch_size is 6540749
+read: 0.074898s
+|E|=327037487
+|V|=8730858
+streaming total time 26.496078s
+|V|=8730858
+Intersection Graph Marked: 18.241409s
+Version Time: 0.286612
+direct hop total time 0.584402s
+work sharing total time 0.362987s
+CommonGraph total time 0.362987s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 8 0.02 10
+Error: Invalid line "% bip unweighted"
+read: 132.197170s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 8, batch_size is 6540749
+read: 0.060206s
+|E|=327037487
+|V|=8730858
+streaming total time 29.756012s
+|V|=8730858
+Intersection Graph Marked: 13.566771s
+Version Time: 0.280145
+direct hop total time 0.572664s
+work sharing total time 0.427653s
+CommonGraph total time 0.427653s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 8 0.02 11
+Error: Invalid line "% bip unweighted"
+read: 132.956375s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 8, batch_size is 6540749
+read: 0.060939s
+|E|=327037487
+|V|=8730858
+streaming total time 28.137068s
+|V|=8730858
+Intersection Graph Marked: 15.950073s
+Version Time: 0.920364
+direct hop total time 2.486994s
+work sharing total time 1.626019s
+CommonGraph total time 1.626019s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 8 0.02 12
+Error: Invalid line "% bip unweighted"
+read: 132.233382s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 8, batch_size is 6540749
+read: 0.061599s
+|E|=327037487
+|V|=8730858
+streaming total time 32.251789s
+|V|=8730858
+Intersection Graph Marked: 19.572273s
+Version Time: 0.282693
+direct hop total time 0.451820s
+work sharing total time 0.307121s
+CommonGraph total time 0.307121s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 8 0.02 13
+Error: Invalid line "% bip unweighted"
+read: 132.362445s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 8, batch_size is 6540749
+read: 0.061580s
+|E|=327037487
+|V|=8730858
+streaming total time 41.638233s
+|V|=8730858
+Intersection Graph Marked: 17.049883s
+Version Time: 0.936462
+direct hop total time 2.244723s
+work sharing total time 1.567894s
+CommonGraph total time 1.567894s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 8 0.02 14
+Error: Invalid line "% bip unweighted"
+read: 132.244011s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 8, batch_size is 6540749
+read: 0.059762s
+|E|=327037487
+|V|=8730858
+streaming total time 40.981003s
+|V|=8730858
+Intersection Graph Marked: 20.127900s
+Version Time: 0.318049
+direct hop total time 0.444991s
+work sharing total time 0.287428s
+CommonGraph total time 0.287428s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 8 0.02 15
+Error: Invalid line "% bip unweighted"
+read: 132.843854s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 8, batch_size is 6540749
+read: 0.068684s
+|E|=327037487
+|V|=8730858
+streaming total time 30.370953s
+|V|=8730858
+Intersection Graph Marked: 20.260161s
+Version Time: 0.291548
+direct hop total time 0.603595s
+work sharing total time 0.519502s
+CommonGraph total time 0.519502s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 16 0.01 0
+Error: Invalid line "% bip unweighted"
+read: 132.404501s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 16, batch_size is 3270374
+read: 0.060183s
+|E|=327037487
+|V|=8730858
+streaming total time 22.674086s
+|V|=8730858
+Intersection Graph Marked: 14.279191s
+Version Time: 0.863917
+direct hop total time 4.313265s
+work sharing total time 2.648356s
+CommonGraph total time 2.648356s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 16 0.01 1
+Error: Invalid line "% bip unweighted"
+read: 132.423103s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 16, batch_size is 3270374
+read: 0.060517s
+|E|=327037487
+|V|=8730858
+streaming total time 36.478123s
+|V|=8730858
+Intersection Graph Marked: 16.142147s
+Version Time: 0.917708
+direct hop total time 4.173743s
+work sharing total time 2.591870s
+CommonGraph total time 2.591870s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 16 0.01 2
+Error: Invalid line "% bip unweighted"
+read: 136.178476s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 16, batch_size is 3270374
+read: 0.060778s
+|E|=327037487
+|V|=8730858
+streaming total time 35.725060s
+|V|=8730858
+Intersection Graph Marked: 22.333340s
+Version Time: 0.313389
+direct hop total time 0.869607s
+work sharing total time 0.535452s
+CommonGraph total time 0.535452s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 16 0.01 3
+Error: Invalid line "% bip unweighted"
+read: 132.387100s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 16, batch_size is 3270374
+read: 0.060829s
+|E|=327037487
+|V|=8730858
+streaming total time 24.092918s
+|V|=8730858
+Intersection Graph Marked: 16.327472s
+Version Time: 0.935188
+direct hop total time 4.348782s
+work sharing total time 2.540542s
+CommonGraph total time 2.540542s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 16 0.01 4
+Error: Invalid line "% bip unweighted"
+read: 133.439443s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 16, batch_size is 3270374
+read: 0.075139s
+|E|=327037487
+|V|=8730858
+streaming total time 28.984644s
+|V|=8730858
+Intersection Graph Marked: 25.603373s
+Version Time: 0.282386
+direct hop total time 0.852590s
+work sharing total time 0.533407s
+CommonGraph total time 0.533407s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 16 0.01 5
+Error: Invalid line "% bip unweighted"
+read: 132.632198s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 16, batch_size is 3270374
+read: 0.061229s
+|E|=327037487
+|V|=8730858
+streaming total time 36.885517s
+|V|=8730858
+Intersection Graph Marked: 22.415868s
+Version Time: 0.286097
+direct hop total time 1.045984s
+work sharing total time 0.693531s
+CommonGraph total time 0.693531s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 16 0.01 6
+Error: Invalid line "% bip unweighted"
+read: 132.391280s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 16, batch_size is 3270374
+read: 0.059739s
+|E|=327037487
+|V|=8730858
+streaming total time 25.295509s
+|V|=8730858
+Intersection Graph Marked: 17.298974s
+Version Time: 0.912515
+direct hop total time 4.341781s
+work sharing total time 2.664593s
+CommonGraph total time 2.664593s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 16 0.01 7
+Error: Invalid line "% bip unweighted"
+read: 134.380993s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 16, batch_size is 3270374
+read: 0.061651s
+|E|=327037487
+|V|=8730858
+streaming total time 39.095535s
+|V|=8730858
+Intersection Graph Marked: 16.881669s
+Version Time: 0.939399
+direct hop total time 4.381884s
+work sharing total time 2.643208s
+CommonGraph total time 2.643208s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 16 0.01 8
+Error: Invalid line "% bip unweighted"
+read: 132.236642s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 16, batch_size is 3270374
+read: 0.060784s
+|E|=327037487
+|V|=8730858
+streaming total time 36.244591s
+|V|=8730858
+Intersection Graph Marked: 17.684030s
+Version Time: 0.936813
+direct hop total time 4.383753s
+work sharing total time 2.690174s
+CommonGraph total time 2.690174s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 16 0.01 9
+Error: Invalid line "% bip unweighted"
+read: 132.188179s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 16, batch_size is 3270374
+read: 0.059616s
+|E|=327037487
+|V|=8730858
+streaming total time 23.019272s
+|V|=8730858
+Intersection Graph Marked: 14.627060s
+Version Time: 0.281316
+direct hop total time 0.859139s
+work sharing total time 0.527916s
+CommonGraph total time 0.527916s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 16 0.01 10
+Error: Invalid line "% bip unweighted"
+read: 134.857567s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 16, batch_size is 3270374
+read: 0.090625s
+|E|=327037487
+|V|=8730858
+streaming total time 34.938713s
+|V|=8730858
+Intersection Graph Marked: 24.156994s
+Version Time: 0.288842
+direct hop total time 0.983983s
+work sharing total time 0.810419s
+CommonGraph total time 0.810419s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 16 0.01 11
+Error: Invalid line "% bip unweighted"
+read: 132.393413s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 16, batch_size is 3270374
+read: 0.059959s
+|E|=327037487
+|V|=8730858
+streaming total time 24.537151s
+|V|=8730858
+Intersection Graph Marked: 14.741404s
+Version Time: 0.930040
+direct hop total time 4.323123s
+work sharing total time 2.669190s
+CommonGraph total time 2.669190s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 16 0.01 12
+Error: Invalid line "% bip unweighted"
+read: 132.711037s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 16, batch_size is 3270374
+read: 0.060833s
+|E|=327037487
+|V|=8730858
+streaming total time 28.366871s
+|V|=8730858
+Intersection Graph Marked: 21.141708s
+Version Time: 0.296056
+direct hop total time 0.850606s
+work sharing total time 0.507113s
+CommonGraph total time 0.507113s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 16 0.01 13
+Error: Invalid line "% bip unweighted"
+read: 132.086548s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 16, batch_size is 3270374
+read: 0.061283s
+|E|=327037487
+|V|=8730858
+streaming total time 28.539450s
+|V|=8730858
+Intersection Graph Marked: 14.480860s
+Version Time: 0.929902
+direct hop total time 4.266552s
+work sharing total time 2.688104s
+CommonGraph total time 2.688104s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 16 0.01 14
+Error: Invalid line "% bip unweighted"
+read: 132.268635s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 16, batch_size is 3270374
+read: 0.061177s
+|E|=327037487
+|V|=8730858
+streaming total time 24.480722s
+|V|=8730858
+Intersection Graph Marked: 18.192161s
+Version Time: 0.324232
+direct hop total time 1.035051s
+work sharing total time 0.508055s
+CommonGraph total time 0.508055s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 16 0.01 15
+Error: Invalid line "% bip unweighted"
+read: 132.370735s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 16, batch_size is 3270374
+read: 0.060415s
+|E|=327037487
+|V|=8730858
+streaming total time 24.182257s
+|V|=8730858
+Intersection Graph Marked: 17.464230s
+Version Time: 0.324037
+direct hop total time 1.055336s
+work sharing total time 0.579016s
+CommonGraph total time 0.579016s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 32 0.005 0
+Error: Invalid line "% bip unweighted"
+read: 132.179691s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 32, batch_size is 1635187
+read: 0.061508s
+|E|=327037487
+|V|=8730858
+streaming total time 22.183161s
+|V|=8730858
+Intersection Graph Marked: 21.957717s
+Version Time: 0.868902
+direct hop total time 8.412148s
+work sharing total time 4.758178s
+CommonGraph total time 4.758178s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 32 0.005 1
+Error: Invalid line "% bip unweighted"
+read: 132.402557s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 32, batch_size is 1635187
+read: 0.060870s
+|E|=327037487
+|V|=8730858
+streaming total time 21.048275s
+|V|=8730858
+Intersection Graph Marked: 17.026923s
+Version Time: 0.890336
+direct hop total time 8.156797s
+work sharing total time 4.771300s
+CommonGraph total time 4.771300s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 32 0.005 2
+Error: Invalid line "% bip unweighted"
+read: 133.555176s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 32, batch_size is 1635187
+read: 0.060418s
+|E|=327037487
+|V|=8730858
+streaming total time 22.096796s
+|V|=8730858
+Intersection Graph Marked: 20.320719s
+Version Time: 0.278119
+direct hop total time 1.677416s
+work sharing total time 0.952330s
+CommonGraph total time 0.952330s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 32 0.005 3
+Error: Invalid line "% bip unweighted"
+read: 132.363680s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 32, batch_size is 1635187
+read: 0.059599s
+|E|=327037487
+|V|=8730858
+streaming total time 21.194891s
+|V|=8730858
+Intersection Graph Marked: 16.522509s
+Version Time: 0.896251
+direct hop total time 8.271193s
+work sharing total time 4.855895s
+CommonGraph total time 4.855895s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 32 0.005 4
+Error: Invalid line "% bip unweighted"
+read: 132.273174s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 32, batch_size is 1635187
+read: 0.060525s
+|E|=327037487
+|V|=8730858
+streaming total time 25.210596s
+|V|=8730858
+Intersection Graph Marked: 17.975625s
+Version Time: 0.278592
+direct hop total time 1.653070s
+work sharing total time 0.978773s
+CommonGraph total time 0.978773s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 32 0.005 5
+Error: Invalid line "% bip unweighted"
+read: 132.540041s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 32, batch_size is 1635187
+read: 0.061185s
+|E|=327037487
+|V|=8730858
+streaming total time 22.622873s
+|V|=8730858
+Intersection Graph Marked: 19.608481s
+Version Time: 0.284065
+direct hop total time 1.646917s
+work sharing total time 0.959368s
+CommonGraph total time 0.959368s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 32 0.005 6
+Error: Invalid line "% bip unweighted"
+read: 132.296584s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 32, batch_size is 1635187
+read: 0.060588s
+|E|=327037487
+|V|=8730858
+streaming total time 27.986681s
+|V|=8730858
+Intersection Graph Marked: 21.268732s
+Version Time: 0.915392
+direct hop total time 8.539960s
+work sharing total time 4.819469s
+CommonGraph total time 4.819469s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 32 0.005 7
+Error: Invalid line "% bip unweighted"
+read: 132.198304s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 32, batch_size is 1635187
+read: 0.060388s
+|E|=327037487
+|V|=8730858
+streaming total time 27.425726s
+|V|=8730858
+Intersection Graph Marked: 17.103499s
+Version Time: 0.947702
+direct hop total time 8.419226s
+work sharing total time 4.886223s
+CommonGraph total time 4.886223s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 32 0.005 8
+Error: Invalid line "% bip unweighted"
+read: 132.196717s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 32, batch_size is 1635187
+read: 0.061018s
+|E|=327037487
+|V|=8730858
+streaming total time 29.263611s
+|V|=8730858
+Intersection Graph Marked: 16.995764s
+Version Time: 0.971064
+direct hop total time 8.998309s
+work sharing total time 5.334767s
+CommonGraph total time 5.334767s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 32 0.005 9
+Error: Invalid line "% bip unweighted"
+read: 132.413061s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 32, batch_size is 1635187
+read: 0.059890s
+|E|=327037487
+|V|=8730858
+streaming total time 21.301420s
+|V|=8730858
+Intersection Graph Marked: 19.667634s
+Version Time: 0.278770
+direct hop total time 1.651849s
+work sharing total time 0.944031s
+CommonGraph total time 0.944031s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 32 0.005 10
+Error: Invalid line "% bip unweighted"
+read: 132.599562s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 32, batch_size is 1635187
+read: 0.059758s
+|E|=327037487
+|V|=8730858
+streaming total time 21.741108s
+|V|=8730858
+Intersection Graph Marked: 16.115507s
+Version Time: 0.282084
+direct hop total time 1.757149s
+work sharing total time 0.996730s
+CommonGraph total time 0.996730s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 32 0.005 11
+Error: Invalid line "% bip unweighted"
+read: 132.499813s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 32, batch_size is 1635187
+read: 0.060184s
+|E|=327037487
+|V|=8730858
+streaming total time 19.856171s
+|V|=8730858
+Intersection Graph Marked: 14.226523s
+Version Time: 0.941362
+direct hop total time 8.415466s
+work sharing total time 4.933125s
+CommonGraph total time 4.933125s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 32 0.005 12
+Error: Invalid line "% bip unweighted"
+read: 132.414072s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 32, batch_size is 1635187
+read: 0.065004s
+|E|=327037487
+|V|=8730858
+streaming total time 18.907677s
+|V|=8730858
+Intersection Graph Marked: 16.636060s
+Version Time: 0.282168
+direct hop total time 1.632915s
+work sharing total time 0.939036s
+CommonGraph total time 0.939036s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 32 0.005 13
+Error: Invalid line "% bip unweighted"
+read: 132.456559s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 32, batch_size is 1635187
+read: 0.060688s
+|E|=327037487
+|V|=8730858
+streaming total time 20.646309s
+|V|=8730858
+Intersection Graph Marked: 14.431999s
+Version Time: 0.949271
+direct hop total time 8.715404s
+work sharing total time 5.099793s
+CommonGraph total time 5.099793s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 32 0.005 14
+Error: Invalid line "% bip unweighted"
+read: 132.374493s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 32, batch_size is 1635187
+read: 0.060665s
+|E|=327037487
+|V|=8730858
+streaming total time 20.933817s
+|V|=8730858
+Intersection Graph Marked: 16.465879s
+Version Time: 0.279818
+direct hop total time 1.736738s
+work sharing total time 0.932101s
+CommonGraph total time 0.932101s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 32 0.005 15
+Error: Invalid line "% bip unweighted"
+read: 132.547583s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 32, batch_size is 1635187
+read: 0.060073s
+|E|=327037487
+|V|=8730858
+streaming total time 24.020309s
+|V|=8730858
+Intersection Graph Marked: 14.461688s
+Version Time: 0.280430
+direct hop total time 1.961487s
+work sharing total time 1.589915s
+CommonGraph total time 1.589915s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 64 0.0025 0
+Error: Invalid line "% bip unweighted"
+read: 135.226202s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 64, batch_size is 817593
+read: 0.081373s
+|E|=327037487
+|V|=8730858
+streaming total time 23.033998s
+|V|=8730858
+Intersection Graph Marked: 14.116449s
+Version Time: 0.872907
+direct hop total time 15.763102s
+work sharing total time 9.488797s
+CommonGraph total time 9.488797s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 64 0.0025 1
+Error: Invalid line "% bip unweighted"
+read: 132.305701s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 64, batch_size is 817593
+read: 0.059598s
+|E|=327037487
+|V|=8730858
+streaming total time 17.975973s
+|V|=8730858
+Intersection Graph Marked: 16.195867s
+Version Time: 0.930808
+direct hop total time 16.393690s
+work sharing total time 10.109293s
+CommonGraph total time 10.109293s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 64 0.0025 2
+Error: Invalid line "% bip unweighted"
+read: 132.504307s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 64, batch_size is 817593
+read: 0.065532s
+|E|=327037487
+|V|=8730858
+streaming total time 16.079388s
+|V|=8730858
+Intersection Graph Marked: 19.305653s
+Version Time: 0.282863
+direct hop total time 3.225172s
+work sharing total time 1.776948s
+CommonGraph total time 1.776948s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 64 0.0025 3
+Error: Invalid line "% bip unweighted"
+read: 132.259402s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 64, batch_size is 817593
+read: 0.060480s
+|E|=327037487
+|V|=8730858
+streaming total time 17.721033s
+|V|=8730858
+Intersection Graph Marked: 17.240448s
+Version Time: 0.920565
+direct hop total time 17.103987s
+work sharing total time 10.144135s
+CommonGraph total time 10.144135s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 64 0.0025 4
+Error: Invalid line "% bip unweighted"
+read: 132.689757s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 64, batch_size is 817593
+read: 0.061291s
+|E|=327037487
+|V|=8730858
+streaming total time 19.308676s
+|V|=8730858
+Intersection Graph Marked: 20.483402s
+Version Time: 0.278235
+direct hop total time 3.243496s
+work sharing total time 1.775865s
+CommonGraph total time 1.775865s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 64 0.0025 5
+Error: Invalid line "% bip unweighted"
+read: 132.504536s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 64, batch_size is 817593
+read: 0.061302s
+|E|=327037487
+|V|=8730858
+streaming total time 14.877474s
+|V|=8730858
+Intersection Graph Marked: 15.524359s
+Version Time: 0.303535
+direct hop total time 4.425181s
+work sharing total time 2.614124s
+CommonGraph total time 2.614124s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 64 0.0025 6
+Error: Invalid line "% bip unweighted"
+read: 132.341020s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 64, batch_size is 817593
+read: 0.060562s
+|E|=327037487
+|V|=8730858
+streaming total time 19.676149s
+|V|=8730858
+Intersection Graph Marked: 14.905529s
+Version Time: 0.907110
+direct hop total time 15.939041s
+work sharing total time 9.279316s
+CommonGraph total time 9.279316s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 64 0.0025 7
+Error: Invalid line "% bip unweighted"
+read: 132.573517s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 64, batch_size is 817593
+read: 0.060675s
+|E|=327037487
+|V|=8730858
+streaming total time 24.665297s
+|V|=8730858
+Intersection Graph Marked: 14.664102s
+Version Time: 0.930546
+direct hop total time 16.145641s
+work sharing total time 9.587788s
+CommonGraph total time 9.587788s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 64 0.0025 8
+Error: Invalid line "% bip unweighted"
+read: 132.397426s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 64, batch_size is 817593
+read: 0.060407s
+|E|=327037487
+|V|=8730858
+streaming total time 21.288828s
+|V|=8730858
+Intersection Graph Marked: 16.586905s
+Version Time: 0.944409
+direct hop total time 16.381886s
+work sharing total time 9.740724s
+CommonGraph total time 9.740724s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 64 0.0025 9
+Error: Invalid line "% bip unweighted"
+read: 133.322563s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 64, batch_size is 817593
+read: 0.060904s
+|E|=327037487
+|V|=8730858
+streaming total time 16.664371s
+|V|=8730858
+Intersection Graph Marked: 14.426497s
+Version Time: 0.279182
+direct hop total time 3.293220s
+work sharing total time 1.944134s
+CommonGraph total time 1.944134s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 64 0.0025 10
+Error: Invalid line "% bip unweighted"
+read: 132.361135s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 64, batch_size is 817593
+read: 0.060107s
+|E|=327037487
+|V|=8730858
+streaming total time 17.698862s
+|V|=8730858
+Intersection Graph Marked: 16.464811s
+Version Time: 0.279908
+direct hop total time 3.273347s
+work sharing total time 1.819475s
+CommonGraph total time 1.819475s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 64 0.0025 11
+Error: Invalid line "% bip unweighted"
+read: 132.449287s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 64, batch_size is 817593
+read: 0.061003s
+|E|=327037487
+|V|=8730858
+streaming total time 17.813200s
+|V|=8730858
+Intersection Graph Marked: 13.807170s
+Version Time: 0.922409
+direct hop total time 16.210951s
+work sharing total time 9.541763s
+CommonGraph total time 9.541763s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 64 0.0025 12
+Error: Invalid line "% bip unweighted"
+read: 132.755817s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 64, batch_size is 817593
+read: 0.061684s
+|E|=327037487
+|V|=8730858
+streaming total time 17.779179s
+|V|=8730858
+Intersection Graph Marked: 13.882109s
+Version Time: 0.289637
+direct hop total time 3.207562s
+work sharing total time 1.773775s
+CommonGraph total time 1.773775s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 64 0.0025 13
+Error: Invalid line "% bip unweighted"
+read: 132.506635s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 64, batch_size is 817593
+read: 0.061828s
+|E|=327037487
+|V|=8730858
+streaming total time 19.449657s
+|V|=8730858
+Intersection Graph Marked: 15.574864s
+Version Time: 0.930463
+direct hop total time 16.392637s
+work sharing total time 9.111776s
+CommonGraph total time 9.111776s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 64 0.0025 14
+Error: Invalid line "% bip unweighted"
+read: 132.413055s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 64, batch_size is 817593
+read: 0.061276s
+|E|=327037487
+|V|=8730858
+streaming total time 17.763861s
+|V|=8730858
+Intersection Graph Marked: 16.168605s
+Version Time: 0.280082
+direct hop total time 4.484334s
+work sharing total time 2.832163s
+CommonGraph total time 2.832163s
+Running: build/SSRbaseline /home/cgao037/graph/or/snap_or source/or.txt 64 0.0025 15
+Error: Invalid line "% bip unweighted"
+read: 132.527593s
+loading graph /home/cgao037/graph/or/snap_or, root file is source/or.txt, batch_num is 64, batch_size is 817593
+read: 0.060092s
+|E|=327037487
+|V|=8730858
+streaming total time 19.039635s
+|V|=8730858
+Intersection Graph Marked: 20.236833s
+Version Time: 0.961909
+direct hop total time 3.754060s
+work sharing total time 2.996203s
+CommonGraph total time 2.996203s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 8 0.02 0
+Error: Invalid line "% asym unweighted"
+read: 615.354494s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 8, batch_size is 29367303
+read: 0.284422s
+|E|=1468365182
+|V|=41652231
+streaming total time 195.432053s
+|V|=41652231
+Intersection Graph Marked: 33.666367s
+Version Time: 5.575903
+direct hop total time 7.655362s
+work sharing total time 4.890888s
+CommonGraph total time 4.890888s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 8 0.02 1
+Error: Invalid line "% asym unweighted"
+read: 614.925779s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 8, batch_size is 29367303
+read: 0.288817s
+|E|=1468365182
+|V|=41652231
+streaming total time 197.018997s
+|V|=41652231
+Intersection Graph Marked: 33.715546s
+Version Time: 5.569247
+direct hop total time 7.582688s
+work sharing total time 4.704348s
+CommonGraph total time 4.704348s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 8 0.02 2
+Error: Invalid line "% asym unweighted"
+read: 614.213704s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 8, batch_size is 29367303
+read: 0.291196s
+|E|=1468365182
+|V|=41652231
+Re Computing: 10 1942501 274729
+streaming total time 201.172882s
+|V|=41652231
+Intersection Graph Marked: 33.770789s
+Version Time: 5.515350
+direct hop total time 7.548418s
+work sharing total time 4.691642s
+CommonGraph total time 4.691642s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 8 0.02 3
+Error: Invalid line "% asym unweighted"
+read: 614.052743s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 8, batch_size is 29367303
+read: 0.281226s
+|E|=1468365182
+|V|=41652231
+Re Computing: 10 1882804 357523
+streaming total time 213.146347s
+|V|=41652231
+Intersection Graph Marked: 34.037393s
+Version Time: 5.448197
+direct hop total time 7.598734s
+work sharing total time 4.824484s
+CommonGraph total time 4.824484s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 8 0.02 4
+Error: Invalid line "% asym unweighted"
+read: 614.513140s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 8, batch_size is 29367303
+read: 0.287104s
+|E|=1468365182
+|V|=41652231
+streaming total time 186.327850s
+|V|=41652231
+Intersection Graph Marked: 33.801910s
+Version Time: 5.469585
+direct hop total time 7.385003s
+work sharing total time 4.612507s
+CommonGraph total time 4.612507s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 8 0.02 5
+Error: Invalid line "% asym unweighted"
+read: 615.637541s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 8, batch_size is 29367303
+read: 0.294742s
+|E|=1468365182
+|V|=41652231
+streaming total time 203.655518s
+|V|=41652231
+Intersection Graph Marked: 33.697732s
+Version Time: 5.412168
+direct hop total time 7.542117s
+work sharing total time 5.109050s
+CommonGraph total time 5.109050s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 8 0.02 6
+Error: Invalid line "% asym unweighted"
+read: 614.230507s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 8, batch_size is 29367303
+read: 0.288744s
+|E|=1468365182
+|V|=41652231
+streaming total time 195.066040s
+|V|=41652231
+Intersection Graph Marked: 33.841215s
+Version Time: 1.816165
+direct hop total time 3.346529s
+work sharing total time 2.251885s
+CommonGraph total time 2.251885s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 8 0.02 7
+Error: Invalid line "% asym unweighted"
+read: 614.634453s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 8, batch_size is 29367303
+read: 0.292895s
+|E|=1468365182
+|V|=41652231
+streaming total time 199.457565s
+|V|=41652231
+Intersection Graph Marked: 33.839825s
+Version Time: 7.243574
+direct hop total time 8.333754s
+work sharing total time 5.218719s
+CommonGraph total time 5.218719s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 8 0.02 8
+Error: Invalid line "% asym unweighted"
+read: 614.379243s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 8, batch_size is 29367303
+read: 0.279118s
+|E|=1468365182
+|V|=41652231
+streaming total time 208.363754s
+|V|=41652231
+Intersection Graph Marked: 33.956948s
+Version Time: 5.496311
+direct hop total time 7.435899s
+work sharing total time 4.712587s
+CommonGraph total time 4.712587s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 8 0.02 9
+Error: Invalid line "% asym unweighted"
+read: 615.834964s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 8, batch_size is 29367303
+read: 0.311533s
+|E|=1468365182
+|V|=41652231
+streaming total time 220.470779s
+|V|=41652231
+Intersection Graph Marked: 33.903965s
+Version Time: 5.484203
+direct hop total time 7.792812s
+work sharing total time 4.777715s
+CommonGraph total time 4.777715s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 8 0.02 10
+Error: Invalid line "% asym unweighted"
+read: 613.889946s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 8, batch_size is 29367303
+read: 0.304970s
+|E|=1468365182
+|V|=41652231
+streaming total time 189.227249s
+|V|=41652231
+Intersection Graph Marked: 33.916094s
+Version Time: 5.794452
+direct hop total time 7.886485s
+work sharing total time 4.919317s
+CommonGraph total time 4.919317s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 8 0.02 11
+Error: Invalid line "% asym unweighted"
+read: 615.424801s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 8, batch_size is 29367303
+read: 0.286134s
+|E|=1468365182
+|V|=41652231
+streaming total time 193.893417s
+|V|=41652231
+Intersection Graph Marked: 33.528377s
+Version Time: 5.504074
+direct hop total time 7.719468s
+work sharing total time 5.012837s
+CommonGraph total time 5.012837s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 8 0.02 12
+Error: Invalid line "% asym unweighted"
+read: 614.457170s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 8, batch_size is 29367303
+read: 0.279795s
+|E|=1468365182
+|V|=41652231
+Re Computing: 3 1779674 2877519
+streaming total time 189.731720s
+|V|=41652231
+Intersection Graph Marked: 33.814671s
+Version Time: 1.848979
+direct hop total time 51.527840s
+work sharing total time 28.825079s
+CommonGraph total time 28.825079s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 8 0.02 13
+Error: Invalid line "% asym unweighted"
+read: 617.825980s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 8, batch_size is 29367303
+read: 0.316138s
+|E|=1468365182
+|V|=41652231
+streaming total time 192.116257s
+|V|=41652231
+Intersection Graph Marked: 33.908113s
+Version Time: 5.750130
+direct hop total time 7.546067s
+work sharing total time 4.905016s
+CommonGraph total time 4.905016s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 8 0.02 14
+Error: Invalid line "% asym unweighted"
+read: 615.939101s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 8, batch_size is 29367303
+read: 0.258307s
+|E|=1468365182
+|V|=41652231
+streaming total time 198.633636s
+|V|=41652231
+Intersection Graph Marked: 34.261786s
+Version Time: 5.735126
+direct hop total time 8.009453s
+work sharing total time 4.692948s
+CommonGraph total time 4.692948s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 8 0.02 15
+Error: Invalid line "% asym unweighted"
+read: 623.360744s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 8, batch_size is 29367303
+read: 0.289102s
+|E|=1468365182
+|V|=41652231
+streaming total time 195.992172s
+|V|=41652231
+Intersection Graph Marked: 34.209359s
+Version Time: 5.481990
+direct hop total time 7.641647s
+work sharing total time 4.701545s
+CommonGraph total time 4.701545s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 16 0.01 0
+Error: Invalid line "% asym unweighted"
+read: 614.789164s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 16, batch_size is 14683651
+read: 0.283668s
+|E|=1468365182
+|V|=41652231
+streaming total time 161.757874s
+|V|=41652231
+Intersection Graph Marked: 33.694219s
+Version Time: 5.578879
+direct hop total time 14.433242s
+work sharing total time 8.175990s
+CommonGraph total time 8.175990s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 16 0.01 1
+Error: Invalid line "% asym unweighted"
+read: 615.029356s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 16, batch_size is 14683651
+read: 0.285800s
+|E|=1468365182
+|V|=41652231
+streaming total time 192.854233s
+|V|=41652231
+Intersection Graph Marked: 33.416308s
+Version Time: 5.500426
+direct hop total time 14.916957s
+work sharing total time 8.371202s
+CommonGraph total time 8.371202s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 16 0.01 2
+Error: Invalid line "% asym unweighted"
+read: 616.414779s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 16, batch_size is 14683651
+read: 0.287722s
+|E|=1468365182
+|V|=41652231
+streaming total time 198.332733s
+|V|=41652231
+Intersection Graph Marked: 33.819516s
+Version Time: 5.456458
+direct hop total time 15.041899s
+work sharing total time 8.216928s
+CommonGraph total time 8.216928s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 16 0.01 3
+Error: Invalid line "% asym unweighted"
+read: 624.030574s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 16, batch_size is 14683651
+read: 0.299276s
+|E|=1468365182
+|V|=41652231
+streaming total time 187.091187s
+|V|=41652231
+Intersection Graph Marked: 33.588902s
+Version Time: 5.444832
+direct hop total time 15.003078s
+work sharing total time 8.123833s
+CommonGraph total time 8.123833s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 16 0.01 4
+Error: Invalid line "% asym unweighted"
+read: 614.437661s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 16, batch_size is 14683651
+read: 0.282792s
+|E|=1468365182
+|V|=41652231
+streaming total time 186.865356s
+|V|=41652231
+Intersection Graph Marked: 33.839349s
+Version Time: 5.595863
+direct hop total time 14.762196s
+work sharing total time 8.453636s
+CommonGraph total time 8.453636s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 16 0.01 5
+Error: Invalid line "% asym unweighted"
+read: 614.290864s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 16, batch_size is 14683651
+read: 0.286739s
+|E|=1468365182
+|V|=41652231
+streaming total time 186.478867s
+|V|=41652231
+Intersection Graph Marked: 33.661821s
+Version Time: 5.413191
+direct hop total time 14.505026s
+work sharing total time 8.385813s
+CommonGraph total time 8.385813s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 16 0.01 6
+Error: Invalid line "% asym unweighted"
+read: 614.976267s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 16, batch_size is 14683651
+read: 0.289306s
+|E|=1468365182
+|V|=41652231
+streaming total time 202.567276s
+|V|=41652231
+Intersection Graph Marked: 33.505607s
+Version Time: 1.870320
+direct hop total time 7.244215s
+work sharing total time 3.598504s
+CommonGraph total time 3.598504s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 16 0.01 7
+Error: Invalid line "% asym unweighted"
+read: 615.016878s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 16, batch_size is 14683651
+read: 0.289367s
+|E|=1468365182
+|V|=41652231
+streaming total time 178.935791s
+|V|=41652231
+Intersection Graph Marked: 33.898849s
+Version Time: 7.283574
+direct hop total time 14.673622s
+work sharing total time 8.550235s
+CommonGraph total time 8.550235s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 16 0.01 8
+Error: Invalid line "% asym unweighted"
+read: 631.607092s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 16, batch_size is 14683651
+read: 0.287975s
+|E|=1468365182
+|V|=41652231
+streaming total time 192.268967s
+|V|=41652231
+Intersection Graph Marked: 34.110811s
+Version Time: 5.500659
+direct hop total time 14.750916s
+work sharing total time 8.375715s
+CommonGraph total time 8.375715s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 16 0.01 9
+Error: Invalid line "% asym unweighted"
+read: 616.314240s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 16, batch_size is 14683651
+read: 0.289046s
+|E|=1468365182
+|V|=41652231
+streaming total time 187.875290s
+|V|=41652231
+Intersection Graph Marked: 33.684339s
+Version Time: 5.442844
+direct hop total time 14.877999s
+work sharing total time 8.459857s
+CommonGraph total time 8.459857s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 16 0.01 10
+Error: Invalid line "% asym unweighted"
+read: 617.113741s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 16, batch_size is 14683651
+read: 0.289160s
+|E|=1468365182
+|V|=41652231
+streaming total time 193.980515s
+|V|=41652231
+Intersection Graph Marked: 33.885105s
+Version Time: 5.829198
+direct hop total time 13.632152s
+work sharing total time 8.652820s
+CommonGraph total time 8.652820s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 16 0.01 11
+Error: Invalid line "% asym unweighted"
+read: 622.959692s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 16, batch_size is 14683651
+read: 0.290322s
+|E|=1468365182
+|V|=41652231
+streaming total time 183.423340s
+|V|=41652231
+Intersection Graph Marked: 33.926036s
+Version Time: 5.539800
+direct hop total time 15.532649s
+work sharing total time 8.280697s
+CommonGraph total time 8.280697s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 16 0.01 12
+Error: Invalid line "% asym unweighted"
+read: 617.805138s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 16, batch_size is 14683651
+read: 0.289458s
+|E|=1468365182
+|V|=41652231
+Re Computing: 3 910457 2492453
+streaming total time 193.025467s
+|V|=41652231
+Intersection Graph Marked: 33.470660s
+Version Time: 1.811854
+direct hop total time 61.213715s
+work sharing total time 48.856155s
+CommonGraph total time 48.856155s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 16 0.01 13
+Error: Invalid line "% asym unweighted"
+read: 631.215118s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 16, batch_size is 14683651
+read: 0.285850s
+|E|=1468365182
+|V|=41652231
+streaming total time 185.490540s
+|V|=41652231
+Intersection Graph Marked: 33.655515s
+Version Time: 5.780543
+direct hop total time 15.578437s
+work sharing total time 8.841902s
+CommonGraph total time 8.841902s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 16 0.01 14
+Error: Invalid line "% asym unweighted"
+read: 616.334376s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 16, batch_size is 14683651
+read: 0.310888s
+|E|=1468365182
+|V|=41652231
+streaming total time 173.535049s
+|V|=41652231
+Intersection Graph Marked: 33.599061s
+Version Time: 5.624580
+direct hop total time 14.414855s
+work sharing total time 8.388969s
+CommonGraph total time 8.388969s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 16 0.01 15
+Error: Invalid line "% asym unweighted"
+read: 621.847452s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 16, batch_size is 14683651
+read: 0.283284s
+|E|=1468365182
+|V|=41652231
+streaming total time 187.791000s
+|V|=41652231
+Intersection Graph Marked: 33.598580s
+Version Time: 5.452218
+direct hop total time 14.519489s
+work sharing total time 8.272261s
+CommonGraph total time 8.272261s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 32 0.005 0
+Error: Invalid line "% asym unweighted"
+read: 624.212977s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 32, batch_size is 7341825
+read: 0.314260s
+|E|=1468365182
+|V|=41652231
+streaming total time 167.299698s
+|V|=41652231
+Intersection Graph Marked: 34.015181s
+Version Time: 5.446379
+direct hop total time 29.078503s
+work sharing total time 15.567470s
+CommonGraph total time 15.567470s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 32 0.005 1
+Error: Invalid line "% asym unweighted"
+read: 614.191032s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 32, batch_size is 7341825
+read: 0.291079s
+|E|=1468365182
+|V|=41652231
+streaming total time 159.627167s
+|V|=41652231
+Intersection Graph Marked: 33.680728s
+Version Time: 5.481932
+direct hop total time 28.470062s
+work sharing total time 15.347737s
+CommonGraph total time 15.347737s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 32 0.005 2
+Error: Invalid line "% asym unweighted"
+read: 614.776813s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 32, batch_size is 7341825
+read: 0.292662s
+|E|=1468365182
+|V|=41652231
+Re Computing: 8 1549484 1361166
+streaming total time 180.764816s
+|V|=41652231
+Intersection Graph Marked: 33.837645s
+Version Time: 5.504574
+direct hop total time 27.751545s
+work sharing total time 14.365569s
+CommonGraph total time 14.365569s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 32 0.005 3
+Error: Invalid line "% asym unweighted"
+read: 615.623173s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 32, batch_size is 7341825
+read: 0.287590s
+|E|=1468365182
+|V|=41652231
+Re Computing: 10 2070931 1116383
+streaming total time 172.671631s
+|V|=41652231
+Intersection Graph Marked: 33.618778s
+Version Time: 5.505080
+direct hop total time 27.839518s
+work sharing total time 14.895103s
+CommonGraph total time 14.895103s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 32 0.005 4
+Error: Invalid line "% asym unweighted"
+read: 618.041780s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 32, batch_size is 7341825
+read: 0.294800s
+|E|=1468365182
+|V|=41652231
+streaming total time 166.522156s
+|V|=41652231
+Intersection Graph Marked: 34.246657s
+Version Time: 5.716888
+direct hop total time 29.107244s
+work sharing total time 15.276541s
+CommonGraph total time 15.276541s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 32 0.005 5
+Error: Invalid line "% asym unweighted"
+read: 615.182335s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 32, batch_size is 7341825
+read: 0.292730s
+|E|=1468365182
+|V|=41652231
+streaming total time 182.985748s
+|V|=41652231
+Intersection Graph Marked: 33.906232s
+Version Time: 5.435065
+direct hop total time 27.672052s
+work sharing total time 14.992998s
+CommonGraph total time 14.992998s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 32 0.005 6
+Error: Invalid line "% asym unweighted"
+read: 621.926746s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 32, batch_size is 7341825
+read: 0.284922s
+|E|=1468365182
+|V|=41652231
+streaming total time 170.164734s
+|V|=41652231
+Intersection Graph Marked: 33.840807s
+Version Time: 1.839916
+direct hop total time 13.207231s
+work sharing total time 7.265877s
+CommonGraph total time 7.265877s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 32 0.005 7
+Error: Invalid line "% asym unweighted"
+read: 614.523069s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 32, batch_size is 7341825
+read: 0.289728s
+|E|=1468365182
+|V|=41652231
+streaming total time 160.172028s
+|V|=41652231
+Intersection Graph Marked: 33.736711s
+Version Time: 7.275022
+direct hop total time 29.386375s
+work sharing total time 15.292167s
+CommonGraph total time 15.292167s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 32 0.005 8
+Error: Invalid line "% asym unweighted"
+read: 620.290231s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 32, batch_size is 7341825
+read: 0.286052s
+|E|=1468365182
+|V|=41652231
+streaming total time 178.768478s
+|V|=41652231
+Intersection Graph Marked: 33.797912s
+Version Time: 5.530314
+direct hop total time 28.043283s
+work sharing total time 15.420191s
+CommonGraph total time 15.420191s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 32 0.005 9
+Error: Invalid line "% asym unweighted"
+read: 613.943953s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 32, batch_size is 7341825
+read: 0.291611s
+|E|=1468365182
+|V|=41652231
+streaming total time 157.163025s
+|V|=41652231
+Intersection Graph Marked: 33.735305s
+Version Time: 5.464370
+direct hop total time 28.702927s
+work sharing total time 15.190159s
+CommonGraph total time 15.190159s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 32 0.005 10
+Error: Invalid line "% asym unweighted"
+read: 613.809303s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 32, batch_size is 7341825
+read: 0.290616s
+|E|=1468365182
+|V|=41652231
+streaming total time 172.418671s
+|V|=41652231
+Intersection Graph Marked: 33.691942s
+Version Time: 5.798645
+direct hop total time 29.074583s
+work sharing total time 15.686496s
+CommonGraph total time 15.686496s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 32 0.005 11
+Error: Invalid line "% asym unweighted"
+read: 616.275062s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 32, batch_size is 7341825
+read: 0.332815s
+|E|=1468365182
+|V|=41652231
+streaming total time 165.683624s
+|V|=41652231
+Intersection Graph Marked: 33.850961s
+Version Time: 5.431616
+direct hop total time 27.272421s
+work sharing total time 15.013083s
+CommonGraph total time 15.013083s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 32 0.005 12
+Error: Invalid line "% asym unweighted"
+read: 614.662880s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 32, batch_size is 7341825
+read: 0.275017s
+|E|=1468365182
+|V|=41652231
+Re Computing: 3 491753 2387788
+streaming total time 183.303452s
+|V|=41652231
+Intersection Graph Marked: 33.879330s
+Version Time: 1.764428
+direct hop total time 157.836136s
+work sharing total time 99.920769s
+CommonGraph total time 99.920769s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 32 0.005 13
+Error: Invalid line "% asym unweighted"
+read: 615.548912s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 32, batch_size is 7341825
+read: 0.292780s
+|E|=1468365182
+|V|=41652231
+streaming total time 175.946945s
+|V|=41652231
+Intersection Graph Marked: 33.805759s
+Version Time: 5.839330
+direct hop total time 28.565390s
+work sharing total time 15.295112s
+CommonGraph total time 15.295112s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 32 0.005 14
+Error: Invalid line "% asym unweighted"
+read: 614.873026s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 32, batch_size is 7341825
+read: 0.289704s
+|E|=1468365182
+|V|=41652231
+streaming total time 146.354919s
+|V|=41652231
+Intersection Graph Marked: 33.783850s
+Version Time: 5.514259
+direct hop total time 28.254097s
+work sharing total time 15.427338s
+CommonGraph total time 15.427338s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 32 0.005 15
+Error: Invalid line "% asym unweighted"
+read: 628.554722s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 32, batch_size is 7341825
+read: 0.277949s
+|E|=1468365182
+|V|=41652231
+streaming total time 162.184311s
+|V|=41652231
+Intersection Graph Marked: 33.626832s
+Version Time: 5.540108
+direct hop total time 29.033648s
+work sharing total time 15.734056s
+CommonGraph total time 15.734056s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 64 0.0025 0
+Error: Invalid line "% asym unweighted"
+read: 615.780989s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 64, batch_size is 3670912
+read: 0.290210s
+|E|=1468365182
+|V|=41652231
+streaming total time 144.252029s
+|V|=41652231
+Intersection Graph Marked: 33.559391s
+Version Time: 5.402204
+direct hop total time 55.093311s
+work sharing total time 28.750732s
+CommonGraph total time 28.750732s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 64 0.0025 1
+Error: Invalid line "% asym unweighted"
+read: 614.777091s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 64, batch_size is 3670912
+read: 0.287669s
+|E|=1468365182
+|V|=41652231
+streaming total time 160.044983s
+|V|=41652231
+Intersection Graph Marked: 33.817179s
+Version Time: 5.534315
+direct hop total time 58.311378s
+work sharing total time 30.147451s
+CommonGraph total time 30.147451s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 64 0.0025 2
+Error: Invalid line "% asym unweighted"
+read: 617.181272s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 64, batch_size is 3670912
+read: 0.287242s
+|E|=1468365182
+|V|=41652231
+Re Computing: 6 1465674 660951
+streaming total time 167.912048s
+|V|=41652231
+Intersection Graph Marked: 33.511862s
+Version Time: 5.489031
+direct hop total time 54.050316s
+work sharing total time 27.271109s
+CommonGraph total time 27.271109s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 64 0.0025 3
+Error: Invalid line "% asym unweighted"
+read: 647.300024s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 64, batch_size is 3670912
+read: 0.291909s
+|E|=1468365182
+|V|=41652231
+streaming total time 168.833405s
+|V|=41652231
+Intersection Graph Marked: 34.114467s
+Version Time: 5.495696
+direct hop total time 55.721638s
+work sharing total time 29.223303s
+CommonGraph total time 29.223303s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 64 0.0025 4
+Error: Invalid line "% asym unweighted"
+read: 613.761019s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 64, batch_size is 3670912
+read: 0.285341s
+|E|=1468365182
+|V|=41652231
+streaming total time 157.290100s
+|V|=41652231
+Intersection Graph Marked: 33.526502s
+Version Time: 5.453718
+direct hop total time 58.652859s
+work sharing total time 30.261705s
+CommonGraph total time 30.261705s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 64 0.0025 5
+Error: Invalid line "% asym unweighted"
+read: 617.152945s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 64, batch_size is 3670912
+read: 0.302819s
+|E|=1468365182
+|V|=41652231
+streaming total time 150.711853s
+|V|=41652231
+Intersection Graph Marked: 33.861208s
+Version Time: 5.435463
+direct hop total time 54.876526s
+work sharing total time 29.150864s
+CommonGraph total time 29.150864s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 64 0.0025 6
+Error: Invalid line "% asym unweighted"
+read: 614.644044s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 64, batch_size is 3670912
+read: 0.286717s
+|E|=1468365182
+|V|=41652231
+streaming total time 157.777283s
+|V|=41652231
+Intersection Graph Marked: 33.849618s
+Version Time: 1.835837
+direct hop total time 25.342936s
+work sharing total time 13.751887s
+CommonGraph total time 13.751887s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 64 0.0025 7
+Error: Invalid line "% asym unweighted"
+read: 614.210442s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 64, batch_size is 3670912
+read: 0.280667s
+|E|=1468365182
+|V|=41652231
+streaming total time 156.452148s
+|V|=41652231
+Intersection Graph Marked: 33.811835s
+Version Time: 7.292306
+direct hop total time 56.751476s
+work sharing total time 29.818420s
+CommonGraph total time 29.818420s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 64 0.0025 8
+Error: Invalid line "% asym unweighted"
+read: 617.438183s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 64, batch_size is 3670912
+read: 0.291078s
+|E|=1468365182
+|V|=41652231
+streaming total time 175.325958s
+|V|=41652231
+Intersection Graph Marked: 33.827061s
+Version Time: 5.561678
+direct hop total time 57.637123s
+work sharing total time 29.498089s
+CommonGraph total time 29.498089s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 64 0.0025 9
+Error: Invalid line "% asym unweighted"
+read: 619.085128s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 64, batch_size is 3670912
+read: 0.288573s
+|E|=1468365182
+|V|=41652231
+streaming total time 150.770721s
+|V|=41652231
+Intersection Graph Marked: 33.521371s
+Version Time: 5.436789
+direct hop total time 57.318150s
+work sharing total time 29.707884s
+CommonGraph total time 29.707884s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 64 0.0025 10
+Error: Invalid line "% asym unweighted"
+read: 615.148945s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 64, batch_size is 3670912
+read: 0.298105s
+|E|=1468365182
+|V|=41652231
+streaming total time 168.929245s
+|V|=41652231
+Intersection Graph Marked: 33.893107s
+Version Time: 5.818197
+direct hop total time 55.286633s
+work sharing total time 28.885817s
+CommonGraph total time 28.885817s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 64 0.0025 11
+Error: Invalid line "% asym unweighted"
+read: 614.725834s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 64, batch_size is 3670912
+read: 0.292884s
+|E|=1468365182
+|V|=41652231
+streaming total time 154.945862s
+|V|=41652231
+Intersection Graph Marked: 33.817347s
+Version Time: 5.441665
+direct hop total time 56.899200s
+work sharing total time 30.308014s
+CommonGraph total time 30.308014s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 64 0.0025 12
+Error: Invalid line "% asym unweighted"
+read: 614.499082s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 64, batch_size is 3670912
+read: 0.287467s
+|E|=1468365182
+|V|=41652231
+Re Computing: 3 301555 2363194
+streaming total time 169.013794s
+|V|=41652231
+Intersection Graph Marked: 33.377755s
+Version Time: 1.832714
+direct hop total time 365.601074s
+work sharing total time 211.580307s
+CommonGraph total time 211.580307s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 64 0.0025 13
+Error: Invalid line "% asym unweighted"
+read: 614.899586s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 64, batch_size is 3670912
+read: 0.288353s
+|E|=1468365182
+|V|=41652231
+streaming total time 161.827667s
+|V|=41652231
+Intersection Graph Marked: 33.335763s
+Version Time: 5.861067
+direct hop total time 58.377293s
+work sharing total time 30.248024s
+CommonGraph total time 30.248024s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 64 0.0025 14
+Error: Invalid line "% asym unweighted"
+read: 614.827273s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 64, batch_size is 3670912
+read: 0.296488s
+|E|=1468365182
+|V|=41652231
+streaming total time 134.380310s
+|V|=41652231
+Intersection Graph Marked: 35.550463s
+Version Time: 5.561967
+direct hop total time 55.452835s
+work sharing total time 29.268503s
+CommonGraph total time 29.268503s
+Running: build/SSRbaseline /home/cgao037/graph/ttw/ttw_snap source/TW_queries.txt 64 0.0025 15
+Error: Invalid line "% asym unweighted"
+read: 614.101075s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is source/TW_queries.txt, batch_num is 64, batch_size is 3670912
+read: 0.290579s
+|E|=1468365182
+|V|=41652231
+streaming total time 152.944275s
+|V|=41652231
+Intersection Graph Marked: 33.714792s
+Version Time: 5.443310
+direct hop total time 53.999638s
+work sharing total time 28.623571s
+CommonGraph total time 28.623571s
