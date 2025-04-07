@@ -484,44 +484,44 @@ int main(int argc, const char** argv) {
             E_tag[random_selection[(batch + batch_num) * batch_size + i]] = {batch, true};
         }
     }    
-    // // Stream Begins First
-    // {
-    //     Graph<uint64_t> graphBase(num_vertices, raw_edges_len, false, true);
-    //     #pragma omp parallel for
-    //     for(uint64_t i=0;i<raw_edges_len;i++)
-    //     {
-    //         const auto &e = raw_edges[i];
-    //         if(E_tag[i].first == commonTag) {graphBase.add_edge({e.first, e.second, (e.first+e.second)%16 + 1}, true);}
-    //     }
-    //     for(auto size = 0; size < batch_num; size++)
-    //     {
-    //         THRESHOLD_OPENMP_LOCAL("omp parallel for", batch_size, 1024,
-    //         for (uint64_t i = 0; i < batch_size; i++)
-    //         {
-    //             const auto &e = deletion_batches[size][i];
-    //             graphBase.add_edge({e.first, e.second, (e.first+e.second)%16 + 1}, true);
-    //         }
-    //         );          
-    //     }
+    // Stream Begins First
+    {
+        Graph<uint64_t> graphBase(num_vertices, raw_edges_len, false, true);
+        #pragma omp parallel for
+        for(uint64_t i=0;i<raw_edges_len;i++)
+        {
+            const auto &e = raw_edges[i];
+            if(E_tag[i].first == commonTag) {graphBase.add_edge({e.first, e.second, (e.first+e.second)%16 + 1}, true);}
+        }
+        for(auto size = 0; size < batch_num; size++)
+        {
+            THRESHOLD_OPENMP_LOCAL("omp parallel for", batch_size, 1024,
+            for (uint64_t i = 0; i < batch_size; i++)
+            {
+                const auto &e = deletion_batches[size][i];
+                graphBase.add_edge({e.first, e.second, (e.first+e.second)%16 + 1}, true);
+            }
+            );          
+        }
 
-    //     float streamTotal = 0;
+        float streamTotal = 0;
 
-    //     auto snapshotResults = graphBase.alloc_vertex_tree_array_vector<uint64_t>(batch_num + 1);
-    //     snapshotResults[0] = rootCompute(graphBase, root);        
-    //     for (auto i = 0; i < batch_num; i++)
-    //     {
-    //         THRESHOLD_OPENMP_LOCAL("omp parallel for", graphBase.getNodesNum(), 1024,
-    //         for (auto node = 0; node < graphBase.getNodesNum(); node++)
-    //         {
-    //             snapshotResults[i+1][node].parent = snapshotResults[i][node].parent;
-    //             snapshotResults[i+1][node].data = snapshotResults[i][node].data;
-    //         }
-    //         );
-    //         auto time = rootIncrementalCompute(graphBase, root, snapshotResults[i+1], addition_batches[i], deletion_batches[i]);
-    //         streamTotal += time;  
-    //     }
-    //     fprintf(stderr, "streaming total time %.6lfs\n", streamTotal);
-    // }
+        auto snapshotResults = graphBase.alloc_vertex_tree_array_vector<uint64_t>(batch_num + 1);
+        snapshotResults[0] = rootCompute(graphBase, root);        
+        for (auto i = 0; i < batch_num; i++)
+        {
+            THRESHOLD_OPENMP_LOCAL("omp parallel for", graphBase.getNodesNum(), 1024,
+            for (auto node = 0; node < graphBase.getNodesNum(); node++)
+            {
+                snapshotResults[i+1][node].parent = snapshotResults[i][node].parent;
+                snapshotResults[i+1][node].data = snapshotResults[i][node].data;
+            }
+            );
+            auto time = rootIncrementalCompute(graphBase, root, snapshotResults[i+1], addition_batches[i], deletion_batches[i]);
+            streamTotal += time;  
+        }
+        fprintf(stderr, "streaming total time %.6lfs\n", streamTotal);
+    }
 
 {
     // Intersection Graph Read
