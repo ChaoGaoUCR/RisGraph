@@ -1,0 +1,167 @@
+read: 15.244656s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is /home/cgao037/RisGraph/source/sx.txt, batch_num is 1, batch_size is 362334
+read: 0.008650s
+|E|=36233445
+|V|=6024259
+Intersection Graph Marked: 6.337228s
+Wasted Percentage: 0.948947 %
+read: 15.419744s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is /home/cgao037/RisGraph/source/sx.txt, batch_num is 1, batch_size is 724668
+read: 0.017842s
+|E|=36233445
+|V|=6024259
+Intersection Graph Marked: 6.152495s
+Wasted Percentage: 1.911189 %
+read: 15.292257s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is /home/cgao037/RisGraph/source/sx.txt, batch_num is 1, batch_size is 1449337
+read: 0.006354s
+|E|=36233445
+|V|=6024259
+Intersection Graph Marked: 6.228692s
+Wasted Percentage: 3.769957 %
+read: 15.295951s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is /home/cgao037/RisGraph/source/sx.txt, batch_num is 1, batch_size is 2898675
+read: 0.006376s
+|E|=36233445
+|V|=6024259
+Intersection Graph Marked: 5.329365s
+Wasted Percentage: 7.366018 %
+read: 15.287843s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is /home/cgao037/RisGraph/source/sx.txt, batch_num is 1, batch_size is 5797351
+read: 0.007838s
+|E|=36233445
+|V|=6024259
+Intersection Graph Marked: 4.130031s
+Wasted Percentage: 17.150375 %
+Error: Invalid line "% asym unweighted"
+read: 645.438203s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is /home/cgao037/RisGraph/source/TW_queries.txt, batch_num is 1, batch_size is 14683651
+read: 0.297368s
+|E|=1468365182
+|V|=41652231
+Intersection Graph Marked: 443.354422s
+Wasted Percentage: 2.582724 %
+Error: Invalid line "% asym unweighted"
+read: 631.744569s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is /home/cgao037/RisGraph/source/TW_queries.txt, batch_num is 1, batch_size is 29367303
+read: 0.288021s
+|E|=1468365182
+|V|=41652231
+Intersection Graph Marked: 373.099161s
+Wasted Percentage: 5.233703 %
+Error: Invalid line "% asym unweighted"
+read: 631.999659s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is /home/cgao037/RisGraph/source/TW_queries.txt, batch_num is 1, batch_size is 58734607
+read: 0.289811s
+|E|=1468365182
+|V|=41652231
+Intersection Graph Marked: 361.038754s
+Wasted Percentage: 9.775776 %
+Error: Invalid line "% asym unweighted"
+read: 630.241724s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is /home/cgao037/RisGraph/source/TW_queries.txt, batch_num is 1, batch_size is 117469214
+read: 0.290271s
+|E|=1468365182
+|V|=41652231
+Intersection Graph Marked: 306.832066s
+Re Computing: 0 0 2870296
+Wasted Percentage: 18.757372 %
+Error: Invalid line "% asym unweighted"
+read: 629.903828s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is /home/cgao037/RisGraph/source/TW_queries.txt, batch_num is 1, batch_size is 234938429
+read: 0.288929s
+|E|=1468365182
+|V|=41652231
+Intersection Graph Marked: 247.521469s
+Re Computing: 0 0 6057365
+Wasted Percentage: 35.452567 %
+Error: Invalid line "% bip unweighted"
+read: 137.870595s
+loading graph /home/cgao037/graph/or/snap_or, root file is /home/cgao037/RisGraph/source/or.txt, batch_num is 1, batch_size is 3270374
+read: 0.061648s
+|E|=327037487
+|V|=8730858
+Intersection Graph Marked: 159.953538s
+Wasted Percentage: 19.144693 %
+Error: Invalid line "% bip unweighted"
+read: 136.665251s
+loading graph /home/cgao037/graph/or/snap_or, root file is /home/cgao037/RisGraph/source/or.txt, batch_num is 1, batch_size is 6540749
+read: 0.061587s
+|E|=327037487
+|V|=8730858
+Intersection Graph Marked: 159.027400s
+Wasted Percentage: 25.406942 %
+Error: Invalid line "% bip unweighted"
+read: 136.801215s
+loading graph /home/cgao037/graph/or/snap_or, root file is /home/cgao037/RisGraph/source/or.txt, batch_num is 1, batch_size is 13081499
+read: 0.062833s
+|E|=327037487
+|V|=8730858
+Intersection Graph Marked: 143.405313s
+Wasted Percentage: 35.355059 %
+Error: Invalid line "% bip unweighted"
+read: 136.375833s
+loading graph /home/cgao037/graph/or/snap_or, root file is /home/cgao037/RisGraph/source/or.txt, batch_num is 1, batch_size is 26162998
+read: 0.062299s
+|E|=327037487
+|V|=8730858
+Intersection Graph Marked: 129.557302s
+Re Computing: 4 1942815 336592
+Wasted Percentage: 53.394145 %
+Error: Invalid line "% bip unweighted"
+read: 136.395981s
+loading graph /home/cgao037/graph/or/snap_or, root file is /home/cgao037/RisGraph/source/or.txt, batch_num is 1, batch_size is 52325997
+read: 0.061838s
+|E|=327037487
+|V|=8730858
+Intersection Graph Marked: 103.436815s
+Re Computing: 1 1327104 1064455
+Wasted Percentage: 71.829138 %
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 74.280956s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is /home/cgao037/RisGraph/source/or.txt, batch_num is 1, batch_size is 1721839
+read: 0.075983s
+|E|=172183984
+|V|=18268993
+Intersection Graph Marked: 62.800385s
+Wasted Percentage: 10.863735 %
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 73.601852s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is /home/cgao037/RisGraph/source/or.txt, batch_num is 1, batch_size is 3443679
+read: 0.074631s
+|E|=172183984
+|V|=18268993
+Intersection Graph Marked: 45.974169s
+Wasted Percentage: 14.102337 %
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 73.578246s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is /home/cgao037/RisGraph/source/or.txt, batch_num is 1, batch_size is 6887359
+read: 0.076467s
+|E|=172183984
+|V|=18268993
+Intersection Graph Marked: 41.327585s
+Re Computing: 9 1967388 50085
+Wasted Percentage: 21.050662 %
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 74.545870s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is /home/cgao037/RisGraph/source/or.txt, batch_num is 1, batch_size is 13774718
+read: 0.077252s
+|E|=172183984
+|V|=18268993
+Intersection Graph Marked: 45.175257s
+Re Computing: 2 1510017 576145
+Wasted Percentage: 59.842253 %
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 73.524232s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is /home/cgao037/RisGraph/source/or.txt, batch_num is 1, batch_size is 27549437
+read: 0.072542s
+|E|=172183984
+|V|=18268993
+Intersection Graph Marked: 35.915902s
+Re Computing: 1 1657758 1115348
+Wasted Percentage: 56.714932 %

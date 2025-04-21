@@ -1,0 +1,9 @@
+nohup: ignoring input
+Starting runs at: 20250328_053256
+----------------------------------------
+Running wastedquery.sh...
+----------------------------------------
+✓ wastedquery.sh completed successfully
+----------------------------------------
+Running run_motivation_figure4.sh...
+----------------------------------------
