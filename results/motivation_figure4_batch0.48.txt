@@ -1,0 +1,32 @@
+Error: Invalid line "% asym unweighted"
+read: 643.423152s
+loading graph /home/cgao037/graph/ttw/ttw_snap, root file is /home/cgao037/RisGraph/source/TW_queries.txt, batch_num is 1, batch_size is 704815287
+read: 0.293007s
+|E|=1468365182
+|V|=41652231
+Union Graph Marked: 381.473998s
+Number of Edges in Union Graph is 1468365182
+Graph Size: 1468365182, Edge Count For Version 999 is 1468365182
+Forward Time: 100.103581s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 425899388
+ Percentage of core graph edge: 29.01
+Common Graph Edges: 58734608
+Graph Size: 58734608, Edge Count For Version 666 is 58734608
+Forward Time: 50.412120s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 24509620
+ Percentage of core graph edge: 41.73
+|V|=41652231
+Union Graph Initialization: 170.966958s
+Number of Edges in Union Graph is 425899388
+|V|=41652231
+Common Graph Initialization: 4.302576s
+Number of Edges in Common Graph is 24509620
+Average Accuracy Results:
+  Number of Roots: 100
+  Average Common Graph Accuracy: 98.26%
+  Average Union Graph Accuracy: 15.46%
+----------------------------------------
