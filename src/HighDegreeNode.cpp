@@ -43,7 +43,6 @@ else  \
 { \
     __VA_ARGS__ \
 } (void)0
-const uint64_t MAXL = 134217728;
 // a random generation function will be used here to generate the random selection of edges
 // Taken n as the number of random numbers to generate
 // Taken N as the range of random numbers
@@ -67,57 +66,41 @@ std::vector<uint64_t> generate_unique_random_numbers(uint64_t n, uint64_t N, uin
     numbers.resize(n); // Keep only the first n numbers
     return numbers;
 }
-std::vector<uint64_t> rank_in(Graph<uint64_t>& G)
+std::vector<uint64_t> rank_in(Graph<uint64_t>& G, uint64_t num = 20)
 {
     std::vector<uint64_t> rank;
-    rank.reserve(20);
+    rank.reserve(num);
     std::vector<std::pair<uint64_t, uint64_t>> vertex_;
     auto numOfNodes = G.getNodesNum();
     vertex_.reserve(numOfNodes);
     #pragma omp parallel for
     for (uint64_t i = 0; i < numOfNodes; i++ ) vertex_[i] = std::make_pair(i, G.getAllInDegree(i));
     std::sort(vertex_.begin(), vertex_.end(), sortByLargerSecondElement);
-    for (size_t i = 0; i < 20; i++)
+    for (size_t i = 0; i < num; i++)
     {
         rank.emplace_back(vertex_[i].first);
     }
     return rank;    
 }
-std::vector<uint64_t> rank_out(Graph<uint64_t>& G)
+std::vector<uint64_t> rank_out(Graph<uint64_t>& G, uint64_t num = 20)
 {
     std::vector<uint64_t> rank;
-    rank.reserve(20);
+    rank.reserve(num);
     std::vector<std::pair<uint64_t, uint64_t>> vertex_;
     auto numOfNodes = G.getNodesNum();
     vertex_.reserve(numOfNodes);
     #pragma omp parallel for
     for (uint64_t i = 0; i < numOfNodes; i++ ) vertex_[i] = std::make_pair(i, G.getAllOutDegree(i));
     std::sort(vertex_.begin(), vertex_.end(), sortByLargerSecondElement);
-    for (size_t i = 0; i < 20; i++)
+    for (size_t i = 0; i < num; i++)
     {
         rank.emplace_back(vertex_[i].first);
     }
     return rank; 
 }
-std::vector<uint64_t> rankHotVertics(Graph<uint64_t>& G, uint64_t numNodes = 5)
-{
-    std::vector<uint64_t> rank;
-    rank.reserve(numNodes);
-    std::vector<std::pair<uint64_t, uint64_t>> vertex_;
-    auto numOfNodes = G.getNodesNum();
-    vertex_.reserve(numOfNodes);
-    #pragma omp parallel for
-    for (uint64_t i = 0; i < numOfNodes; i++ ) vertex_[i] = std::make_pair(i, G.getAllOutDegree(i));
-    std::sort(vertex_.begin(), vertex_.end(), sortByLargerSecondElement);
-    for (size_t i = 0; i < 20; i++)
-    {
-        rank.emplace_back(vertex_[i].first);
-    }
-    return rank; 
-}
-
 auto rootCompute(Graph<uint64_t>& graph, uint64_t root) {
     auto result = graph.alloc_vertex_tree_array<uint64_t>();
+    const uint64_t MAXL = 134217728;
     auto continue_reduce_func = [](uint64_t depth, uint64_t total_result, uint64_t local_result) -> std::pair<bool, uint64_t> {
         return std::make_pair(local_result > 0, total_result + local_result);
     };
@@ -399,7 +382,8 @@ std::vector<std::pair<uint64_t, uint64_t>> coreGenerateVector(Graph<uint64_t>& g
                                                                 std::pair<uint64_t, uint64_t> *raw_edges, 
                                                                 std::vector<std::pair<uint64_t, bool>> &E_tag, 
                                                                 uint64_t raw_edges_len,
-                                                                uint64_t snapShotNum = 666)
+                                                                uint64_t snapShotNum = 666,
+                                                                uint64_t num = 20)
 {
     // First Check Whether the graph Match the version
     if(!checkGraphAndEdgeList(graph, E_tag, snapShotNum))
@@ -408,8 +392,8 @@ std::vector<std::pair<uint64_t, uint64_t>> coreGenerateVector(Graph<uint64_t>& g
         exit(1);
     }
     // choose 20 High Degree Nodes for core graph generation
-    auto rankIn = rank_in(graph);
-    auto rankOut = rank_out(graph);
+    auto rankIn = rank_in(graph, num);  
+    auto rankOut = rank_out(graph, num);
     auto outRankResult = graph.alloc_vertex_tree_array_vector<uint64_t>(rankOut.size());
     auto inRankResult = graph.alloc_vertex_tree_array_vector<uint64_t>(rankIn.size());
 
@@ -435,6 +419,23 @@ std::vector<std::pair<uint64_t, uint64_t>> coreGenerateVector(Graph<uint64_t>& g
 
     //start to find the core graph edges
     auto start = std::chrono::system_clock::now();
+    std::vector<std::vector<bool>> outRankResultAtomic(rankOut.size());
+    std::vector<std::vector<bool>> inRankResultAtomic(rankIn.size());
+
+    for (uint64_t i = 0; i < rankOut.size(); i++)
+    {
+        outRankResultAtomic[i].resize(graph.getNodesNum());
+        for (uint64_t j = 0; j < graph.getNodesNum(); j++)
+        {
+            outRankResultAtomic[i][j] = false;
+        }
+        inRankResultAtomic[i].resize(graph.getNodesNum());
+        for (uint64_t j = 0; j < graph.getNodesNum(); j++)
+        {
+            inRankResultAtomic[i][j] = false;
+        }
+    }
+
     THRESHOLD_OPENMP_LOCAL("omp parallel for", raw_edges_len, 1024,
         for (auto edge = 0; edge < raw_edges_len; edge++)
         {
@@ -447,13 +448,19 @@ std::vector<std::pair<uint64_t, uint64_t>> coreGenerateVector(Graph<uint64_t>& g
                 uint64_t edgeLen = (src + dst) % 16 + 1;
                 for (uint64_t idx = 0; idx < rankOut.size(); idx++) 
                 {
-                    if (outRankResult[idx][src].data + edgeLen == outRankResult[idx][dst].data || inRankResult[idx][dst].data + edgeLen == inRankResult[idx][src].data) 
+                    auto outRankSource = outRankResult[idx][src].data + edgeLen;
+                    auto inRankSource = inRankResult[idx][dst].data + edgeLen;
+                    auto outFlag = (outRankSource == outRankResult[idx][dst].data);
+                    auto inFlag = (inRankSource == inRankResult[idx][src].data);
+                    if (outFlag || inFlag)
                     {
                         #pragma omp critical
                         {
                             out_flag[src] = true;
                             in_flag[dst] = true;
                             edgeOutFlag[edge] = true;
+                            outRankResultAtomic[idx][dst] = true;
+                            inRankResultAtomic[idx][src] = true;
                         }
                     }
                 }
@@ -555,15 +562,16 @@ std::vector<std::pair<uint64_t, uint64_t>> MergeTwoVectorEdge(std::vector<std::p
 
 int main(int argc, char** argv)
 {
-    if (argc != 5)
+    if (argc != 7)
     {
-        fprintf(stderr, "usage: %s graph root_file batch_num batch size\n", argv[0]);
+        fprintf(stderr, "usage: %s graph root_file batch_num batch size high_degree_num projection\n", argv[0]);
         exit(1);
     }
     std::pair<uint64_t, uint64_t> *raw_edges = nullptr;
     std::vector<uint64_t> roots = readNumbersFromFile(argv[2]);
-
+    uint64_t high_degree_num = std::stoull(argv[5]);
     uint64_t raw_edges_len;
+    uint64_t projection = std::stoull(argv[6]);
     std::vector<std::pair<uint64_t, uint64_t>> temp_edges;
 
     auto read_start = std::chrono::system_clock::now();
@@ -658,7 +666,7 @@ int main(int argc, char** argv)
     }
 
     fprintf(stderr, "Number of Edges in Union Graph is %lu\n", graph.get_degree());
-    auto unionCoreGraphEdges = coreGenerateVector(graph, raw_edges, E_tag, raw_edges_len, 999);
+    auto unionCoreGraphEdges = coreGenerateVector(graph, raw_edges, E_tag, raw_edges_len, 999, high_degree_num);
 
     {
         for (auto batch = 0; batch < batch_num; batch++)
@@ -682,7 +690,7 @@ int main(int argc, char** argv)
     auto commonGraphEdges = graph.get_degree();
     fprintf(stderr, "Common Graph Edges: %lu\n", graph.get_degree());
     
-    auto coreCommonGraphEdges = coreGenerateVector(graph, raw_edges, E_tag, raw_edges_len, 666);
+    auto coreCommonGraphEdges = coreGenerateVector(graph, raw_edges, E_tag, raw_edges_len, 666, high_degree_num);
     auto coreForAllEdges = MergeTwoVectorEdge(unionCoreGraphEdges, coreCommonGraphEdges);
         
     {
@@ -698,258 +706,95 @@ int main(int argc, char** argv)
             );          
         }
     }
-    uint64_t srcToCalculate = 64;
-    auto preCorrectResult = graph.alloc_vertex_tree_array_vector<uint64_t>(srcToCalculate);
-    auto currentCorrectResult = graph.alloc_vertex_tree_array_vector<uint64_t>(srcToCalculate);
-
-    // Initial Boundary Allocation and Initial Results
-    std::vector<std::vector<std::pair<uint64_t, uint64_t>>> previousBoundaryAllocation(srcToCalculate);
-    std::vector<std::vector<std::pair<uint64_t, uint64_t>>> currentBoundaryAllocation(srcToCalculate);
-    for (auto srcToTest = 0; srcToTest < srcToCalculate; srcToTest++)
+    uint64_t srcToCalculate = 100;
+    for (auto snapshotGraph = 0; snapshotGraph < 1; snapshotGraph++)
     {
-        // Initial Results
-        preCorrectResult[srcToTest].reserve(graph.getNodesNum());
-        currentCorrectResult[srcToTest].reserve(graph.getNodesNum());
-        // Initial Boundary Allocation
-        previousBoundaryAllocation[srcToTest].reserve(graph.getNodesNum());
-        currentBoundaryAllocation[srcToTest].reserve(graph.getNodesNum());
-        THRESHOLD_OPENMP_LOCAL("omp parallel for", graph.getNodesNum(), 1024,
-        for (uint64_t i = 0; i < graph.getNodesNum(); i++)
-        {
-            previousBoundaryAllocation[srcToTest][i] = std::make_pair(0, MAXL);
-            currentBoundaryAllocation[srcToTest][i] = std::make_pair(0, MAXL);
-        }
-        );   
-    }
-    std::atomic<uint64_t> correctPrediction(0);
-    std::atomic<uint64_t> changingNumber(0);
-    std::atomic<uint64_t> unchangeNumber(0);
-    std::atomic<uint64_t> changeCapture(0);
-    std::atomic<uint64_t> unChangedCapture(0);
-    uint64_t testSnapshot = 3;
-    float baseNodeTime = 0;
-    float predictionTime = 0;
+        fprintf(stderr, "--------------------------------\n");
 
-    for (auto snapshotGraph = 0; snapshotGraph < testSnapshot; snapshotGraph++)
-    {
-        fprintf(stderr, "------------SnapShot %d Begins--------------\n", snapshotGraph);
+
         
-        Graph<uint64_t> coreForAllGraph(num_vertices, coreForAllEdges.size(), false, true);
-        correctPrediction.store(0);
-        changeCapture.store(0);
-        changingNumber.store(0);
         // Process Core Graph Result
-
+        Graph<uint64_t> coreForAllGraph(num_vertices, coreForAllEdges.size(), false, true);
+        THRESHOLD_OPENMP_LOCAL("omp parallel for", coreForAllEdges.size(), 1024,
+        for (uint64_t i = 0; i < coreForAllEdges.size(); i++)
         {
-            THRESHOLD_OPENMP_LOCAL("omp parallel for", coreForAllEdges.size(), 1024,
-            for (uint64_t i = 0; i < coreForAllEdges.size(); i++)
+            const auto &e = coreForAllEdges[i];
+            if (projection == 1)
             {
-                const auto &e = coreForAllEdges[i];
-                if (graph.get_edge_num({e.first, e.second, (e.first + e.second) % 16 + 1}))
-                {
-                    coreForAllGraph.add_edge({e.first, e.second, (e.first+e.second)%16 + 1}, true);
-                }
+            if (graph.get_edge_num({e.first, e.second, (e.first + e.second) % 16 + 1}))
+            {
+                coreForAllGraph.add_edge({e.first, e.second, (e.first+e.second)%16 + 1}, true);
             }
-            );
-
-            if (graph.get_degree() - batch_num * batch_size != commonGraphEdges)
-            {
-                fprintf(stderr, "Common Graph Edges is Wrong\n");
-                exit(1);
             }
-        }
-        
-        // Tringle inEquality Hot->AnySrc | Target->AnySrc | Hot->Target
-        // Target->AnySrc <= Hot->AnySrc + Hot->Target
-        // Target->AnySrc >= Hot->AnySrc - Hot->Target
-        // Target is root[srcToTest]
-        for (auto srcToTest = 0; srcToTest < srcToCalculate; srcToTest++)
-        {
-            auto target = roots[srcToTest];
-            if (snapshotGraph != 0)
+            else if (projection == 0)
             {
-                currentCorrectResult[srcToTest] = rootCompute(coreForAllGraph, roots[srcToTest]);
-                std::vector<bool> isChanging(graph.getNodesNum(), false);
-                THRESHOLD_OPENMP_LOCAL("omp parallel for", graph.getNodesNum(), 1024,
-                for (uint64_t i = 0; i < graph.getNodesNum(); i++)
-                {
-                    if (preCorrectResult[srcToTest][i].data != currentCorrectResult[srcToTest][i].data)
-                    {
-                        isChanging[i] = true;
-                    }
-                }
-                );
-
-                // Hot vertices will be used for bounadry allocation
-                auto rankTriple = rankHotVertics(graph);
-                for (auto & hotNode : rankTriple)
-                {
-                    auto baseTimeStart = std::chrono::system_clock::now();
-                    auto tmpResult = rootCompute(coreForAllGraph, hotNode);
-                    auto baseTimeEnd = std::chrono::system_clock::now();
-                    baseNodeTime += 1e-6*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(baseTimeEnd-baseTimeStart).count();
-                    auto predictionStart = std::chrono::system_clock::now();
-                    THRESHOLD_OPENMP_LOCAL("omp parallel for", graph.getNodesNum(), 1024,
-                    for (uint64_t anySrc = 0; anySrc < graph.getNodesNum(); anySrc++)
-                    {
-                        auto hotToAnySrc = tmpResult[anySrc].data;
-                        auto hotToTarget = tmpResult[target].data;
-                        auto lowerBound = 0;
-                        if (hotToAnySrc > hotToTarget)
-                        {
-                            auto lowerBound = hotToAnySrc - hotToTarget;
-                        }
-                        else
-                        {
-                            auto lowerBound = hotToTarget - hotToAnySrc;
-                        }
-                        auto upperBound = hotToAnySrc + hotToTarget;
-                        currentBoundaryAllocation[srcToTest][anySrc].first = std::max(currentBoundaryAllocation[srcToTest][anySrc].first, static_cast<uint64_t>(lowerBound));
-                        currentBoundaryAllocation[srcToTest][anySrc].second = std::min(currentBoundaryAllocation[srcToTest][anySrc].second, static_cast<uint64_t>(upperBound));
-                    }
-                    );
-                    auto predictionEnd = std::chrono::system_clock::now();
-                    predictionTime += 1e-6*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(predictionEnd-predictionStart).count();  
-                }
-                std::vector<bool> isBoundaryChanging(graph.getNodesNum(), false);
-
-                // Only Boundary Not Include Each Other will be considered as changing
-                {
-                    THRESHOLD_OPENMP_LOCAL("omp parallel for", graph.getNodesNum(), 1024,
-                    for (uint64_t i = 0; i < graph.getNodesNum(); i++)
-                    {
-                        auto preLower = previousBoundaryAllocation[srcToTest][i].first;
-                        auto preUpper = previousBoundaryAllocation[srcToTest][i].second;
-                        auto curLower = currentBoundaryAllocation[srcToTest][i].first;
-                        auto curUpper = currentBoundaryAllocation[srcToTest][i].second;
-                        // if (preLower > curUpper || preUpper < curLower)
-                        // {
-                        //     isBoundaryChanging[i] = true;
-                        // }
-                        if (preLower != curLower || preUpper != curUpper || curLower == curUpper || preLower == preUpper || preLower > curUpper || preUpper < curLower)
-                        {
-                            isBoundaryChanging[i] = true;
-                        }
-                    }
-                    );
-                }
-                // Check the correctness of the prediction
-                {
-                    THRESHOLD_OPENMP_LOCAL("omp parallel for", graph.getNodesNum(), 1024,
-                    for (uint64_t i = 0; i < graph.getNodesNum(); i++)
-                    {
-                        if (isChanging[i] == true)
-                        {
-                            changingNumber.fetch_add(1);
-                        }
-                        if (isChanging[i] == isBoundaryChanging[i])
-                        {
-                            correctPrediction.fetch_add(1);
-                        }
-                        if (isBoundaryChanging[i] == true)
-                        {
-                            changeCapture.fetch_add(1);
-                        }
-                        if (isChanging[i] == false && isBoundaryChanging[i] == false)
-                        {
-                            unChangedCapture.fetch_add(1);
-                        }
-                        if (isChanging[i] == false)
-                        {
-                            unchangeNumber.fetch_add(1);
-                        }   
-                    }
-                    );
-                }
+                coreForAllGraph.add_edge({e.first, e.second, (e.first+e.second)%16 + 1}, true);
             }
             else
             {
-                // Snapshot = 0 wll only compute the correct Results and Boundary Allocation But Not Predicting the correctness
-                currentCorrectResult[srcToTest] = rootCompute(coreForAllGraph, roots[srcToTest]);
-                
-                // Boundary Updates
+                throw std::runtime_error("Projection FLAG is not supported");
+            }
+        }
+        );
+        // Process Correct Result
+        auto correctResult = graph.alloc_vertex_tree_array_vector<uint64_t>(srcToCalculate);
+        auto coreResult = coreForAllGraph.alloc_vertex_tree_array_vector<uint64_t>(srcToCalculate);
+        for (auto i = 0; i < srcToCalculate; i++)
+        {
+            correctResult[i] = rootCompute(graph, i);
+            coreResult[i] = rootCompute(coreForAllGraph, i);
+        }
+
+        fprintf(stderr,"Core Graph Size is %.2f %% For Snapshot %d\n", 100.0* coreForAllGraph.get_degree()/graph.get_degree(), snapshotGraph);
+        if (graph.get_degree() - batch_num * batch_size != commonGraphEdges)
+        {
+            fprintf(stderr, "Common Graph Edges is Wrong\n");
+            exit(1);
+        }
+
+        // Compare the Result
+        std::atomic<uint64_t> correctCount(0);
+        std::atomic<uint64_t> wrongCount(0);
+        for (uint64_t i = 0; i < srcToCalculate; i++)
+        {
+            THRESHOLD_OPENMP_LOCAL("omp parallel for", graph.getNodesNum(), 1024,
+            for (uint64_t j = 0; j < graph.getNodesNum(); j++)
+            {
+                if (correctResult[i][j].data == coreResult[i][j].data)
                 {
-                    auto rankTriple = rankHotVertics(graph);
-                    for (auto & hotNode : rankTriple)
+                    correctCount.fetch_add(1);
+                }
+                else
+                {
+                    if (correctResult[i][j].data > coreResult[i][j].data)
                     {
-                        auto baseTimeStart = std::chrono::system_clock::now();
-                        auto tmpResult = rootCompute(coreForAllGraph, hotNode);
-                        auto baseTimeEnd = std::chrono::system_clock::now();
-                        baseNodeTime += 1e-6*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(baseTimeEnd-baseTimeStart).count();
-                        auto predictionStart = std::chrono::system_clock::now();
-                        THRESHOLD_OPENMP_LOCAL("omp parallel for", graph.getNodesNum(), 1024,
-                        for (uint64_t anySrc = 0; anySrc < graph.getNodesNum(); anySrc++)
-                        {
-                            auto hotToAnySrc = tmpResult[anySrc].data;
-                            auto hotToTarget = tmpResult[target].data;
-                            auto lowerBound = 0;
-                            if (hotToAnySrc > hotToTarget)
-                            {
-                                auto lowerBound = hotToAnySrc - hotToTarget;
-                            }
-                            else
-                            {
-                                auto lowerBound = hotToTarget - hotToAnySrc;
-                            }
-                            auto upperBound = hotToAnySrc + hotToTarget;
-                            currentBoundaryAllocation[srcToTest][anySrc].first = std::max(currentBoundaryAllocation[srcToTest][anySrc].first, static_cast<uint64_t>(lowerBound));
-                            currentBoundaryAllocation[srcToTest][anySrc].second = std::min(currentBoundaryAllocation[srcToTest][anySrc].second, static_cast<uint64_t>(upperBound));
-                        }
-                        );
-                        auto predictionEnd = std::chrono::system_clock::now();
-                        predictionTime += 1e-6*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(predictionEnd-predictionStart).count();
+                        wrongCount.fetch_add(1);
                     }
                 }
             }
-
-            // ALways Update the Previous Result and Boundary Allocation
-            THRESHOLD_OPENMP_LOCAL("omp parallel for", graph.getNodesNum(), 1024,
-            for (uint64_t i = 0; i < graph.getNodesNum(); i++)
-            {
-                preCorrectResult[srcToTest][i] = currentCorrectResult[srcToTest][i];
-                previousBoundaryAllocation[srcToTest][i] = currentBoundaryAllocation[srcToTest][i];
-            }
             );
-
         }
-        if (snapshotGraph != 0)
-        {
-            fprintf(stderr, "Correct Prediction: %.2f%%\n", (100.0 * correctPrediction.load())/ (graph.getNodesNum() * srcToCalculate));
-            fprintf(stderr, "Changing Rate: %.2f%%\n", (100.0 * changingNumber.load())/ (graph.getNodesNum() * srcToCalculate));
-            fprintf(stderr, "Changing Capturing Rate: %.2f%%\n", (100.0 * changeCapture.load())/ (changingNumber.load()));
-            fprintf(stderr, "Unchanged Rate: %.2f%%\n", (100.0 * unchangeNumber.load())/ (graph.getNodesNum() * srcToCalculate));
-            fprintf(stderr, "Unchanged Capture Rate: %.2f%%\n", (100.0 * unChangedCapture.load())/ (unchangeNumber.load()));
-            fprintf(stderr, "Changing Number: %lu\n", changingNumber.load());
-            fprintf(stderr, "Changing Capture: %lu\n", changeCapture.load());
-            fprintf(stderr, "Unchanged Number: %lu\n", unchangeNumber.load());
-            fprintf(stderr, "Unchanged Capture: %lu\n", unChangedCapture.load());            
-        }
-
-    // Process For Next Batch    
-    {
+        fprintf(stderr," %d Snapshot has %.2f%% correct result\n", snapshotGraph, (100.0 * correctCount.load()) / (num_vertices * srcToCalculate));
+        fprintf(stderr," %d Snapshot has %lu wrong result For Total Source\n", snapshotGraph, wrongCount.load());
         if (snapshotGraph == batch_num)
-            {
-                break;
-            }
-            THRESHOLD_OPENMP_LOCAL("omp parallel for", batch_size, 1024,
-            for (uint64_t i = 0; i < batch_size; i++)
-            {
-                const auto &e = addition_batches[snapshotGraph][i];
-                graph.add_edge({e.first, e.second, (e.first+e.second)%16 + 1}, true);
-            }
-            );
-            THRESHOLD_OPENMP_LOCAL("omp parallel for", batch_size, 1024,
-            for (uint64_t i = 0; i < batch_size; i++)
-            {
-                const auto &e = deletion_batches[snapshotGraph][i];
-                graph.del_edge({e.first, e.second, (e.first+e.second)%16 + 1}, true);
-            }
-            );
+        {
+            break;
+        }
+        THRESHOLD_OPENMP_LOCAL("omp parallel for", batch_size, 1024,
+        for (uint64_t i = 0; i < batch_size; i++)
+        {
+            const auto &e = addition_batches[snapshotGraph][i];
+            graph.add_edge({e.first, e.second, (e.first+e.second)%16 + 1}, true);
+        }
+        );
+        THRESHOLD_OPENMP_LOCAL("omp parallel for", batch_size, 1024,
+        for (uint64_t i = 0; i < batch_size; i++)
+        {
+            const auto &e = deletion_batches[snapshotGraph][i];
+            graph.del_edge({e.first, e.second, (e.first+e.second)%16 + 1}, true);
+        }
+        );
+
     }
-    
-    }
-    
-    fprintf(stderr, "Base Root Time per SnapShot: %.6lfs\n", baseNodeTime / (testSnapshot * srcToCalculate));
-    fprintf(stderr, "Prediction Time per SnapShot: %.6lfs\n", predictionTime / testSnapshot);
     return 0;
 }
