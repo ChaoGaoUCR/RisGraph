@@ -1,0 +1,66 @@
+nohup: ignoring input
+Running: build/index-sssp /home/cgao037/graph/dl/snap_dl source/dl_src.txt 1 0.04
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 72.581253s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 1, batch_size is 6887359
+read: 0.084151s
+|E|=172183984
+|V|=18268993
+Union Graph Marked: 78.575140s
+Number of Edges in Union Graph is 172183984
+Graph Size: 172183984, Edge Count For Version 999 is 172183984
+Forward Time: 5.205802s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 40929530
+ Percentage of core graph edge: 23.77
+Common Graph Edges: 158409266
+Graph Size: 158409266, Edge Count For Version 666 is 158409266
+Forward Time: 4.773223s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 38449002
+ Percentage of core graph edge: 24.27
+Merged Set Size: 42533109
+------------SnapShot 0 Begins--------------
+|V|=18268993
+------------SnapShot 1 Begins--------------
+|V|=18268993
+Correct Prediction: 89.76%
+Changing Rate: 5.96%
+Changing Capturing Rate: 10.85%
+Unchanged Rate: 94.04%
+Unchanged Capture Rate: 94.77%
+Changing Number: 69691576
+Changing Capture: 7560903
+Unchanged Number: 1099523976
+Unchanged Capture: 1041974046
+Base Root Time per SnapShot: 4.590647s
+Prediction Time per SnapShot: 6.789188s
+Running: build/index-sssp /home/cgao037/graph/dl/snap_dl source/dl_src.txt 1 0.08
+Error: Invalid line "% asym positive"
+Error: Invalid line "% 172308906 18268992 18268992"
+read: 72.792181s
+loading graph /home/cgao037/graph/dl/snap_dl, root file is source/dl_src.txt, batch_num is 1, batch_size is 13774718
+read: 0.072273s
+|E|=172183984
+|V|=18268993
+Union Graph Marked: 50.672720s
+Number of Edges in Union Graph is 172183984
+Graph Size: 172183984, Edge Count For Version 999 is 172183984
+Forward Time: 5.409711s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 40929528
+ Percentage of core graph edge: 23.77
+Common Graph Edges: 144634548
+Graph Size: 144634548, Edge Count For Version 666 is 144634548
+Forward Time: 4.321372s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 35993718
+ Percentage of core graph edge: 24.89
+Merged Set Size: 43631423
+------------SnapShot 0 Begins--------------
+|V|=18268993

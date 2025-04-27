@@ -1,0 +1,1032 @@
+[  3%] Built target absl_spinlock_wait
+[  3%] Built target absl_civil_time
+[  4%] Built target absl_int128
+[  5%] Built target absl_city
+[  6%] Built target absl_leak_check_disable
+[  7%] Built target absl_random_internal_randen_hwaes_impl
+[ 11%] Built target absl_time_zone
+[ 11%] Built target absl_leak_check
+[ 12%] Built target absl_random_internal_randen_slow
+[ 13%] Built target absl_random_seed_gen_exception
+[ 14%] Built target absl_periodic_sampler
+[ 15%] Built target absl_raw_logging_internal
+[ 16%] Built target absl_random_internal_randen_hwaes
+[ 17%] Built target absl_bad_optional_access
+[ 18%] Built target absl_throw_delegate
+[ 19%] Built target absl_strings_internal
+[ 20%] Built target absl_bad_variant_access
+[ 21%] Built target absl_debugging_internal
+[ 23%] Built target absl_scoped_set_env
+[ 24%] Built target absl_base
+[ 25%] Built target absl_bad_any_cast_impl
+[ 25%] Built target absl_random_internal_randen
+[ 26%] Built target absl_stacktrace
+[ 27%] Built target absl_malloc_internal
+[ 28%] Built target absl_demangle_internal
+[ 34%] Built target absl_strings
+[ 34%] Built target absl_graphcycles_internal
+[ 35%] Built target absl_symbolize
+[ 37%] Built target absl_time
+[ 38%] Built target absl_hash
+[ 39%] Built target absl_random_internal_seed_material
+[ 41%] Built target absl_str_format_internal
+[ 42%] Built target absl_cord
+[ 43%] Built target absl_random_distributions
+[ 44%] Built target absl_examine_stack
+[ 45%] Built target absl_random_internal_pool_urbg
+[ 45%] Built target absl_flags_marshalling
+[ 46%] Built target absl_random_internal_distribution_test_util
+[ 49%] Built target absl_synchronization
+[ 50%] Built target absl_status
+[ 51%] Built target absl_failure_signal_handler
+[ 52%] Built target absl_random_seed_sequences
+[ 53%] Built target absl_flags_program_name
+[ 54%] Built target absl_hashtablez_sampler
+[ 55%] Built target absl_flags_config
+[ 55%] Built target absl_raw_hash_set
+[ 56%] Built target mmapalloc
+[ 57%] Built target absl_flags_registry
+Scanning dependencies of target index-sswp
+[ 58%] Built target Ovearhead
+[ 59%] Built target Viterbibaseline
+[ 60%] Built target motivation
+[ 61%] Built target SSRbaseline
+[ 61%] Built target SSWPbaseline
+[ 61%] Built target HighDegreeNode
+[ 62%] Built target fusion_viterbi
+[ 63%] Built target SSSPbaseline
+[ 63%] Built target Indexing-baseline-sssp
+[ 64%] Built target fusion_ssr
+[ 64%] Built target fusion_wcc
+[ 65%] Built target fusion_sswp
+[ 65%] Built target BFSbaseline
+[ 66%] Built target ssnp-core
+[ 66%] Built target fusion_ssnp
+[ 68%] Built target correctness-bfs
+[ 68%] Built target sssp-core
+[ 69%] Built target sswp_inc_batch
+[ 70%] Built target sswp_inc_clf
+[ 73%] Built target wcc-core
+[ 73%] Built target sswp-core
+[ 73%] Built target index-bfs
+[ 75%] Built target wastedquery
+[ 75%] Built target fusion_sssp
+[ 75%] Built target sswp_inc_rt
+[ 76%] Built target correctness-sswp
+[ 76%] Built target sswp_inc
+[ 78%] Built target CommonGraph_baseline_WH
+[ 78%] Built target SSNPbaseline
+[ 78%] Built target sswp
+[ 80%] Built target bfs-core
+[ 80%] Built target CommonGraph_baseline_direct_SSSP
+[ 84%] Built target viterbi-core
+[ 84%] Built target ssr-core
+[ 84%] Built target index-ssnp
+[ 85%] Built target correctness-sssp
+[ 85%] Built target index-wcc
+[ 86%] Built target correctness-viterbi
+[ 87%] Built target index-sssp
+[ 87%] Built target CCbaseline
+[ 89%] Built target correctness-ssnp
+[ 89%] Built target UnionInterSection
+[ 90%] Built target fusion_bfs
+[ 92%] Built target index-ssr
+[ 92%] Built target index-viterbi
+[ 93%] Built target correctness-wcc
+[ 94%] Built target test_sssp
+[ 95%] Built target absl_flags_internal
+[ 96%] Building CXX object CMakeFiles/index-sswp.dir/src/index-sswp.cpp.o
+[ 97%] Built target absl_flags
+[ 98%] Built target absl_flags_usage_internal
+[ 99%] Built target absl_flags_usage
+[100%] Built target absl_flags_parse
+In file included from /home/cgao037/RisGraph/core/graph.hpp:30,
+                 from /home/cgao037/RisGraph/src/index-sswp.cpp:34:
+/usr/include/tbb/tbb.h:21:154: note: #pragma message: TBB Warning: tbb.h contains deprecated functionality. For details, please see Deprecated Features appendix in the TBB reference manual.
+   21 | #pragma message("TBB Warning: tbb.h contains deprecated functionality. For details, please see Deprecated Features appendix in the TBB reference manual.")
+      |                                                                                                                                                          ^
+[100%] Linking CXX executable index-sswp
+[100%] Built target index-sswp
+read: 15.087536s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is ../source/sx.txt, batch_num is 4, batch_size is 1449337
+read: 0.006969s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 6.782942s
+Number of Edges in Union Graph is 36233445
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 6.641149s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 6600836
+ Percentage of core graph edge: 18.22
+Common Graph Edges: 24638749
+Graph Size: 24638749, Edge Count For Version 666 is 24638749
+Forward Time: 5.819614s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 5636398
+ Percentage of core graph edge: 22.88
+Merged Set Size: 7888023
+------------SnapShot 0 Begins--------------
+|V|=6024259
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 96.89%
+Changing Rate: 1.94%
+Changing Capturing Rate: 37.77%
+Unchanged Rate: 98.06%
+Unchanged Capture Rate: 98.06%
+Changing Number: 7483226
+Changing Capture: 2826584
+Unchanged Number: 378069350
+Unchanged Capture: 370718433
+------------SnapShot 2 Begins--------------
+|V|=6024259
+Correct Prediction: 95.71%
+Changing Rate: 4.69%
+Changing Capturing Rate: 15.92%
+Unchanged Rate: 95.31%
+Unchanged Capture Rate: 99.63%
+Changing Number: 18065079
+Changing Capture: 2875372
+Unchanged Number: 367487497
+Unchanged Capture: 366143775
+Base Root Time per SnapShot: 1.922186s
+Prediction Time per SnapShot: 2.642200s
+cgao037@index-graph-20250308-034037:~/RisGraph/build$ make -j && ./index-sswp ~/graph/or/snap_or ../source/or.txt 4 0.04
+[  0%] Built target absl_log_severity
+[  1%] Built target absl_spinlock_wait
+[  1%] Built target absl_exponential_biased
+[  2%] Built target absl_dynamic_annotations
+[  3%] Built target absl_civil_time
+[  6%] Built target absl_leak_check_disable
+[  6%] Built target absl_int128
+[  6%] Built target absl_city
+[ 10%] Built target absl_time_zone
+[ 11%] Built target absl_leak_check
+[ 11%] Built target absl_random_internal_randen_hwaes_impl
+[ 12%] Built target absl_random_internal_randen_slow
+[ 13%] Built target absl_random_seed_gen_exception
+[ 14%] Built target absl_raw_logging_internal
+[ 15%] Built target absl_periodic_sampler
+[ 16%] Built target absl_random_internal_randen_hwaes
+[ 17%] Built target absl_throw_delegate
+[ 18%] Built target absl_bad_optional_access
+[ 19%] Built target absl_strings_internal
+[ 20%] Built target absl_debugging_internal
+[ 22%] Built target absl_base
+[ 23%] Built target absl_bad_variant_access
+[ 24%] Built target absl_scoped_set_env
+[ 24%] Built target absl_bad_any_cast_impl
+[ 25%] Built target absl_random_internal_randen
+[ 26%] Built target absl_stacktrace
+[ 27%] Built target absl_malloc_internal
+[ 28%] Built target absl_demangle_internal
+[ 34%] Built target absl_strings
+[ 34%] Built target absl_graphcycles_internal
+[ 35%] Built target absl_symbolize
+[ 36%] Built target absl_hash
+[ 38%] Built target absl_time
+[ 40%] Built target absl_str_format_internal
+[ 41%] Built target absl_random_internal_seed_material
+[ 42%] Built target absl_random_distributions
+[ 43%] Built target absl_cord
+[ 44%] Built target absl_examine_stack
+[ 44%] Built target absl_flags_marshalling
+[ 45%] Built target absl_random_internal_distribution_test_util
+[ 46%] Built target absl_random_internal_pool_urbg
+[ 49%] Built target absl_synchronization
+[ 50%] Built target absl_status
+[ 51%] Built target absl_failure_signal_handler
+[ 52%] Built target absl_random_seed_sequences
+[ 53%] Built target absl_hashtablez_sampler
+[ 54%] Built target absl_flags_program_name
+[ 54%] Built target absl_raw_hash_set
+[ 55%] Built target absl_flags_config
+[ 56%] Built target mmapalloc
+[ 57%] Built target absl_flags_registry
+[ 58%] Built target Ovearhead
+[ 59%] Built target Viterbibaseline
+[ 60%] Built target SSRbaseline
+[ 60%] Built target HighDegreeNode
+[ 61%] Built target SSWPbaseline
+[ 61%] Built target motivation
+[ 61%] Built target SSSPbaseline
+[ 62%] Built target fusion_ssr
+[ 63%] Built target fusion_wcc
+[ 63%] Built target fusion_sswp
+[ 63%] Built target BFSbaseline
+[ 64%] Built target fusion_viterbi
+[ 65%] Built target Indexing-baseline-sssp
+[ 65%] Built target fusion_ssnp
+[ 66%] Built target ssnp-core
+[ 67%] Built target sswp_inc_batch
+[ 68%] Built target sssp-core
+[ 70%] Built target correctness-bfs
+[ 70%] Built target index-bfs
+[ 72%] Built target wastedquery
+[ 72%] Built target sswp_inc_clf
+[ 74%] Built target wcc-core
+[ 74%] Built target sswp-core
+[ 74%] Built target sswp_inc_rt
+[ 74%] Built target correctness-sswp
+[ 76%] Built target sswp_inc
+[ 76%] Built target fusion_sssp
+[ 76%] Built target sswp
+[ 78%] Built target CommonGraph_baseline_WH
+[ 78%] Built target index-ssnp
+[ 79%] Built target SSNPbaseline
+[ 80%] Built target CommonGraph_baseline_direct_SSSP
+[ 82%] Built target correctness-sssp
+[ 82%] Built target viterbi-core
+[ 83%] Built target bfs-core
+[ 84%] Built target index-wcc
+[ 85%] Built target ssr-core
+[ 86%] Built target correctness-viterbi
+[ 86%] Built target index-sssp
+[ 87%] Built target CCbaseline
+[ 88%] Built target UnionInterSection
+[ 90%] Built target correctness-wcc
+[ 90%] Built target index-sswp
+[ 91%] Built target fusion_bfs
+[ 93%] Built target correctness-ssnp
+[ 93%] Built target absl_flags_internal
+[ 94%] Built target index-viterbi
+[ 96%] Built target index-ssr
+[ 96%] Built target test_sssp
+[ 97%] Built target absl_flags
+[ 98%] Built target absl_flags_usage_internal
+[ 99%] Built target absl_flags_usage
+[100%] Built target absl_flags_parse
+Error: Invalid line "% bip unweighted"
+read: 135.344316s
+loading graph /home/cgao037/graph/or/snap_or, root file is ../source/or.txt, batch_num is 4, batch_size is 13081499
+read: 0.061588s
+|E|=327037487
+|V|=8730858
+Union Graph Marked: 173.876411s
+Number of Edges in Union Graph is 327037487
+Graph Size: 327037487, Edge Count For Version 999 is 327037487
+Forward Time: 17.308791s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 22444159
+ Percentage of core graph edge: 6.86
+Common Graph Edges: 222385495
+Graph Size: 222385495, Edge Count For Version 666 is 222385495
+Forward Time: 13.945318s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 20441816
+ Percentage of core graph edge: 9.19
+Merged Set Size: 28737327
+------------SnapShot 0 Begins--------------
+|V|=8730858
+------------SnapShot 1 Begins--------------
+|V|=8730858
+Correct Prediction: 49.62%
+Changing Rate: 6.50%
+Changing Capturing Rate: 84.83%
+Unchanged Rate: 93.50%
+Unchanged Capture Rate: 47.18%
+Changing Number: 36313315
+Changing Capture: 30803515
+Unchanged Number: 522461597
+Unchanged Capture: 246480573
+------------SnapShot 2 Begins--------------
+|V|=8730858
+Correct Prediction: 92.28%
+Changing Rate: 4.16%
+Changing Capturing Rate: 43.98%
+Unchanged Rate: 95.84%
+Unchanged Capture Rate: 94.38%
+Changing Number: 23220858
+Changing Capture: 10211537
+Unchanged Number: 535554054
+Unchanged Capture: 505430106
+Base Root Time per SnapShot: 10.086525s
+Prediction Time per SnapShot: 3.931172s
+cgao037@index-graph-20250308-034037:~/RisGraph/build$ make -j && ./index-sswp ~/graph/or/snap_or ../source/or.txt 2 0.08
+[  0%] Built target absl_log_severity
+[  0%] Built target absl_exponential_biased
+[  1%] Built target absl_spinlock_wait
+[  2%] Built target absl_dynamic_annotations
+[  4%] Built target absl_int128
+[  5%] Built target absl_city
+[  5%] Built target absl_civil_time
+[  6%] Built target absl_leak_check_disable
+[  7%] Built target absl_leak_check
+[  9%] Built target absl_random_internal_randen_hwaes_impl
+[ 11%] Built target absl_time_zone
+[ 12%] Built target absl_random_seed_gen_exception
+[ 13%] Built target absl_random_internal_randen_slow
+[ 14%] Built target absl_raw_logging_internal
+[ 15%] Built target absl_periodic_sampler
+[ 16%] Built target absl_random_internal_randen_hwaes
+[ 18%] Built target absl_bad_optional_access
+[ 18%] Built target absl_throw_delegate
+[ 20%] Built target absl_strings_internal
+[ 21%] Built target absl_base
+[ 22%] Built target absl_debugging_internal
+[ 24%] Built target absl_bad_variant_access
+[ 24%] Built target absl_scoped_set_env
+[ 24%] Built target absl_bad_any_cast_impl
+[ 25%] Built target absl_random_internal_randen
+[ 27%] Built target absl_malloc_internal
+[ 27%] Built target absl_demangle_internal
+[ 28%] Built target absl_stacktrace
+[ 34%] Built target absl_strings
+[ 34%] Built target absl_graphcycles_internal
+[ 35%] Built target absl_symbolize
+[ 36%] Built target absl_hash
+[ 38%] Built target absl_time
+[ 39%] Built target absl_random_internal_seed_material
+[ 40%] Built target absl_random_distributions
+[ 42%] Built target absl_str_format_internal
+[ 43%] Built target absl_cord
+[ 44%] Built target absl_examine_stack
+[ 45%] Built target absl_random_internal_pool_urbg
+[ 45%] Built target absl_flags_marshalling
+[ 46%] Built target absl_random_internal_distribution_test_util
+[ 47%] Built target absl_status
+[ 50%] Built target absl_synchronization
+[ 51%] Built target absl_failure_signal_handler
+[ 52%] Built target absl_random_seed_sequences
+[ 53%] Built target absl_flags_program_name
+[ 54%] Built target absl_hashtablez_sampler
+[ 55%] Built target absl_flags_config
+[ 55%] Built target absl_raw_hash_set
+[ 56%] Built target mmapalloc
+[ 57%] Built target absl_flags_registry
+[ 58%] Built target Ovearhead
+[ 60%] Built target Viterbibaseline
+[ 60%] Built target SSRbaseline
+[ 61%] Built target SSSPbaseline
+[ 61%] Built target motivation
+[ 61%] Built target SSWPbaseline
+[ 62%] Built target fusion_wcc
+[ 62%] Built target fusion_viterbi
+[ 62%] Built target HighDegreeNode
+[ 63%] Built target fusion_sswp
+[ 65%] Built target Indexing-baseline-sssp
+[ 65%] Built target ssnp-core
+[ 65%] Built target BFSbaseline
+[ 66%] Built target fusion_ssr
+[ 66%] Built target fusion_ssnp
+[ 67%] Built target sswp_inc_batch
+[ 68%] Built target correctness-bfs
+[ 70%] Built target index-bfs
+[ 70%] Built target sssp-core
+[ 71%] Built target sswp_inc_clf
+[ 73%] Built target sswp-core
+[ 73%] Built target wastedquery
+[ 73%] Built target sswp_inc_rt
+[ 74%] Built target wcc-core
+[ 75%] Built target correctness-sswp
+[ 75%] Built target fusion_sssp
+[ 75%] Built target sswp
+[ 77%] Built target CommonGraph_baseline_WH
+[ 77%] Built target sswp_inc
+[ 79%] Built target index-ssnp
+[ 79%] Built target CommonGraph_baseline_direct_SSSP
+[ 80%] Built target SSNPbaseline
+[ 82%] Built target bfs-core
+[ 82%] Built target correctness-sssp
+[ 83%] Built target correctness-viterbi
+[ 84%] Built target index-wcc
+[ 86%] Built target viterbi-core
+[ 86%] Built target ssr-core
+[ 86%] Built target index-sssp
+[ 87%] Built target CCbaseline
+[ 88%] Built target fusion_bfs
+[ 90%] Built target index-sswp
+[ 90%] Built target correctness-ssnp
+[ 91%] Built target UnionInterSection
+[ 92%] Built target correctness-wcc
+[ 93%] Built target index-viterbi
+[ 96%] Built target absl_flags_internal
+[ 96%] Built target test_sssp
+[ 96%] Built target index-ssr
+[ 97%] Built target absl_flags
+[ 98%] Built target absl_flags_usage_internal
+[ 99%] Built target absl_flags_usage
+[100%] Built target absl_flags_parse
+Error: Invalid line "% bip unweighted"
+read: 134.256418s
+loading graph /home/cgao037/graph/or/snap_or, root file is ../source/or.txt, batch_num is 2, batch_size is 26162998
+read: 0.060100s
+|E|=327037487
+|V|=8730858
+Union Graph Marked: 186.583115s
+Number of Edges in Union Graph is 327037487
+Graph Size: 327037487, Edge Count For Version 999 is 327037487
+Forward Time: 17.428536s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 22445883
+ Percentage of core graph edge: 6.86
+Common Graph Edges: 222385495
+Graph Size: 222385495, Edge Count For Version 666 is 222385495
+Forward Time: 14.188229s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 20441965
+ Percentage of core graph edge: 9.19
+Merged Set Size: 28726336
+------------SnapShot 0 Begins--------------
+|V|=8730858
+------------SnapShot 1 Begins--------------
+|V|=8730858
+Correct Prediction: 47.40%
+Changing Rate: 10.21%
+Changing Capturing Rate: 81.61%
+Unchanged Rate: 89.79%
+Unchanged Capture Rate: 43.50%
+Changing Number: 57056569
+Changing Capture: 46562375
+Unchanged Number: 501718343
+Unchanged Capture: 218269969
+------------SnapShot 2 Begins--------------
+|V|=8730858
+^Z
+[1]+  Stopped                 ./index-sswp ~/graph/or/snap_or ../source/or.txt 2 0.08
+cgao037@index-graph-20250308-034037:~/RisGraph/build$ make -j && ./index-sswp ~/graph/or/snap_or ../source/or.txt 1 0.12
+[  0%] Built target absl_log_severity
+[  0%] Built target absl_exponential_biased
+[  1%] Built target absl_spinlock_wait
+[  2%] Built target absl_civil_time
+[  4%] Built target absl_dynamic_annotations
+[  4%] Built target absl_int128
+[  6%] Built target absl_city
+[  6%] Built target absl_leak_check_disable
+[  8%] Built target absl_leak_check
+[ 11%] Built target absl_time_zone
+[ 11%] Built target absl_random_internal_randen_hwaes_impl
+[ 12%] Built target absl_random_internal_randen_slow
+[ 13%] Built target absl_random_seed_gen_exception
+[ 14%] Built target absl_raw_logging_internal
+[ 15%] Built target absl_periodic_sampler
+[ 16%] Built target absl_random_internal_randen_hwaes
+[ 17%] Built target absl_bad_optional_access
+[ 18%] Built target absl_throw_delegate
+[ 19%] Built target absl_strings_internal
+[ 20%] Built target absl_bad_variant_access
+[ 22%] Built target absl_debugging_internal
+[ 24%] Built target absl_base
+[ 24%] Built target absl_scoped_set_env
+[ 24%] Built target absl_bad_any_cast_impl
+[ 25%] Built target absl_random_internal_randen
+[ 26%] Built target absl_stacktrace
+[ 27%] Built target absl_malloc_internal
+[ 28%] Built target absl_demangle_internal
+[ 34%] Built target absl_strings
+[ 34%] Built target absl_graphcycles_internal
+[ 35%] Built target absl_symbolize
+[ 36%] Built target absl_hash
+[ 38%] Built target absl_time
+[ 39%] Built target absl_random_internal_seed_material
+[ 41%] Built target absl_random_distributions
+[ 42%] Built target absl_str_format_internal
+[ 43%] Built target absl_cord
+[ 44%] Built target absl_examine_stack
+[ 44%] Built target absl_flags_marshalling
+[ 45%] Built target absl_random_internal_pool_urbg
+[ 46%] Built target absl_random_internal_distribution_test_util
+[ 47%] Built target absl_status
+[ 50%] Built target absl_synchronization
+[ 51%] Built target absl_failure_signal_handler
+[ 52%] Built target absl_random_seed_sequences
+[ 53%] Built target absl_flags_program_name
+[ 54%] Built target absl_hashtablez_sampler
+[ 55%] Built target absl_flags_config
+[ 55%] Built target absl_raw_hash_set
+[ 56%] Built target mmapalloc
+[ 57%] Built target absl_flags_registry
+[ 58%] Built target Ovearhead
+[ 59%] Built target SSRbaseline
+[ 60%] Built target Viterbibaseline
+[ 61%] Built target SSWPbaseline
+[ 61%] Built target motivation
+[ 62%] Built target SSSPbaseline
+[ 62%] Built target fusion_ssr
+[ 62%] Built target fusion_wcc
+[ 62%] Built target HighDegreeNode
+[ 62%] Built target BFSbaseline
+[ 64%] Built target fusion_viterbi
+[ 66%] Built target Indexing-baseline-sssp
+[ 66%] Built target fusion_ssnp
+[ 66%] Built target ssnp-core
+[ 64%] Built target fusion_sswp
+[ 67%] Built target sssp-core
+[ 68%] Built target sswp-core
+[ 69%] Built target sswp_inc_batch
+[ 70%] Built target correctness-bfs
+[ 71%] Built target index-bfs
+[ 71%] Built target sswp_inc_rt
+[ 73%] Built target wcc-core
+[ 73%] Built target fusion_sssp
+[ 75%] Built target wastedquery
+[ 75%] Built target sswp_inc_clf
+[ 76%] Built target SSNPbaseline
+[ 76%] Built target sswp
+[ 76%] Built target correctness-sswp
+[ 78%] Built target CommonGraph_baseline_WH
+[ 78%] Built target sswp_inc
+[ 81%] Built target bfs-core
+[ 81%] Built target CommonGraph_baseline_direct_SSSP
+[ 81%] Built target index-ssnp
+[ 82%] Built target correctness-sssp
+[ 84%] Built target viterbi-core
+[ 84%] Built target ssr-core
+[ 85%] Built target index-sssp
+[ 85%] Built target CCbaseline
+[ 89%] Built target correctness-viterbi
+[ 89%] Built target correctness-ssnp
+[ 89%] Built target UnionInterSection
+[ 92%] Built target index-wcc
+[ 92%] Built target fusion_bfs
+[ 92%] Built target correctness-wcc
+[ 92%] Built target index-sswp
+[ 93%] Built target index-ssr
+[ 94%] Built target index-viterbi
+[ 95%] Built target test_sssp
+[ 96%] Built target absl_flags_internal
+[ 97%] Built target absl_flags
+[ 98%] Built target absl_flags_usage_internal
+[ 99%] Built target absl_flags_usage
+[100%] Built target absl_flags_parse
+Error: Invalid line "% bip unweighted"
+read: 133.911970s
+loading graph /home/cgao037/graph/or/snap_or, root file is ../source/or.txt, batch_num is 1, batch_size is 39244498
+read: 0.061416s
+|E|=327037487
+|V|=8730858
+Union Graph Marked: 181.593534s
+Number of Edges in Union Graph is 327037487
+Graph Size: 327037487, Edge Count For Version 999 is 327037487
+Forward Time: 17.193896s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 22441572
+ Percentage of core graph edge: 6.86
+Common Graph Edges: 248548491
+Graph Size: 248548491, Edge Count For Version 666 is 248548491
+Forward Time: 14.818132s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 21112190
+ Percentage of core graph edge: 8.49
+Merged Set Size: 27546022
+------------SnapShot 0 Begins--------------
+|V|=8730858
+------------SnapShot 1 Begins--------------
+|V|=8730858
+Correct Prediction: 75.87%
+Changing Rate: 13.29%
+Changing Capturing Rate: 44.48%
+Unchanged Rate: 86.71%
+Unchanged Capture Rate: 80.68%
+Changing Number: 74236873
+Changing Capture: 33023445
+Unchanged Number: 484538039
+Unchanged Capture: 390905773
+Base Root Time per SnapShot: 6.907199s
+Prediction Time per SnapShot: 2.697309s
+cgao037@index-graph-20250308-034037:~/RisGraph/build$ make -j && ./index-sswp ~/graph/or/snap_or ../source/or.txt 2 0.12
+[  0%] Built target absl_log_severity
+[  0%] Built target absl_exponential_biased
+[  1%] Built target absl_spinlock_wait
+[  2%] Built target absl_dynamic_annotations
+[  3%] Built target absl_civil_time
+[  5%] Built target absl_int128
+[  5%] Built target absl_city
+[  6%] Built target absl_leak_check_disable
+[  8%] Built target absl_leak_check
+[ 12%] Built target absl_random_internal_randen_slow
+[ 12%] Built target absl_time_zone
+[ 13%] Built target absl_random_seed_gen_exception
+[ 13%] Built target absl_random_internal_randen_hwaes_impl
+[ 14%] Built target absl_periodic_sampler
+[ 15%] Built target absl_raw_logging_internal
+[ 16%] Built target absl_random_internal_randen_hwaes
+[ 17%] Built target absl_bad_optional_access
+[ 18%] Built target absl_throw_delegate
+[ 19%] Built target absl_strings_internal
+[ 20%] Built target absl_debugging_internal
+[ 22%] Built target absl_base
+[ 23%] Built target absl_bad_variant_access
+[ 24%] Built target absl_scoped_set_env
+[ 24%] Built target absl_bad_any_cast_impl
+[ 25%] Built target absl_random_internal_randen
+[ 26%] Built target absl_stacktrace
+[ 27%] Built target absl_malloc_internal
+[ 28%] Built target absl_demangle_internal
+[ 34%] Built target absl_strings
+[ 34%] Built target absl_graphcycles_internal
+[ 35%] Built target absl_symbolize
+[ 36%] Built target absl_hash
+[ 38%] Built target absl_time
+[ 39%] Built target absl_random_internal_seed_material
+[ 41%] Built target absl_str_format_internal
+[ 42%] Built target absl_random_distributions
+[ 43%] Built target absl_cord
+[ 44%] Built target absl_examine_stack
+[ 45%] Built target absl_random_internal_pool_urbg
+[ 45%] Built target absl_flags_marshalling
+[ 46%] Built target absl_random_internal_distribution_test_util
+[ 47%] Built target absl_status
+[ 50%] Built target absl_synchronization
+[ 51%] Built target absl_failure_signal_handler
+[ 52%] Built target absl_random_seed_sequences
+[ 53%] Built target absl_hashtablez_sampler
+[ 54%] Built target absl_flags_program_name
+[ 54%] Built target absl_raw_hash_set
+[ 55%] Built target absl_flags_config
+[ 56%] Built target mmapalloc
+[ 57%] Built target absl_flags_registry
+[ 59%] Built target SSRbaseline
+[ 59%] Built target Ovearhead
+[ 61%] Built target Viterbibaseline
+[ 61%] Built target SSWPbaseline
+[ 61%] Built target HighDegreeNode
+[ 61%] Built target motivation
+[ 61%] Built target fusion_wcc
+[ 63%] Built target fusion_viterbi
+[ 63%] Built target fusion_ssr
+[ 63%] Built target SSSPbaseline
+[ 64%] Built target fusion_sswp
+[ 64%] Built target BFSbaseline
+[ 65%] Built target Indexing-baseline-sssp
+[ 66%] Built target ssnp-core
+[ 66%] Built target fusion_ssnp
+[ 67%] Built target sswp_inc_batch
+[ 68%] Built target correctness-bfs
+[ 69%] Built target index-bfs
+[ 70%] Built target sswp_inc_clf
+[ 71%] Built target sssp-core
+[ 73%] Built target sswp-core
+[ 74%] Built target wastedquery
+[ 74%] Built target wcc-core
+[ 74%] Built target sswp_inc_rt
+[ 75%] Built target sswp_inc
+[ 76%] Built target fusion_sssp
+[ 76%] Built target correctness-sswp
+[ 76%] Built target sswp
+[ 78%] Built target SSNPbaseline
+[ 78%] Built target index-ssnp
+[ 79%] Built target CommonGraph_baseline_WH
+[ 80%] Built target bfs-core
+[ 81%] Built target CommonGraph_baseline_direct_SSSP
+[ 82%] Built target correctness-sssp
+[ 83%] Built target viterbi-core
+[ 85%] Built target ssr-core
+[ 85%] Built target index-wcc
+[ 86%] Built target correctness-viterbi
+[ 87%] Built target CCbaseline
+[ 88%] Built target UnionInterSection
+[ 91%] Built target correctness-ssnp
+[ 91%] Built target index-sssp
+[ 91%] Built target correctness-wcc
+[ 92%] Built target fusion_bfs
+[ 92%] Built target index-sswp
+[ 93%] Built target index-viterbi
+[ 94%] Built target index-ssr
+[ 95%] Built target absl_flags_internal
+[ 96%] Built target test_sssp
+[ 97%] Built target absl_flags
+[ 98%] Built target absl_flags_usage_internal
+[ 99%] Built target absl_flags_usage
+[100%] Built target absl_flags_parse
+Error: Invalid line "% bip unweighted"
+read: 133.481273s
+loading graph /home/cgao037/graph/or/snap_or, root file is ../source/or.txt, batch_num is 2, batch_size is 39244498
+read: 0.060423s
+|E|=327037487
+|V|=8730858
+Union Graph Marked: 174.492459s
+Number of Edges in Union Graph is 327037487
+Graph Size: 327037487, Edge Count For Version 999 is 327037487
+Forward Time: 17.309950s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 22442430
+ Percentage of core graph edge: 6.86
+Common Graph Edges: 170059495
+Graph Size: 170059495, Edge Count For Version 666 is 170059495
+Forward Time: 12.116501s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 18431876
+ Percentage of core graph edge: 10.84
+Merged Set Size: 30434758
+------------SnapShot 0 Begins--------------
+|V|=8730858
+------------SnapShot 1 Begins--------------
+|V|=8730858
+Correct Prediction: 66.77%
+Changing Rate: 14.02%
+Changing Capturing Rate: 50.45%
+Unchanged Rate: 85.98%
+Unchanged Capture Rate: 69.43%
+Changing Number: 78332179
+Changing Capture: 39522057
+Unchanged Number: 480442733
+Unchanged Capture: 333561926
+------------SnapShot 2 Begins--------------
+|V|=8730858
+Correct Prediction: 71.19%
+Changing Rate: 16.05%
+Changing Capturing Rate: 44.50%
+Unchanged Rate: 83.95%
+Unchanged Capture Rate: 76.29%
+Changing Number: 89710562
+Changing Capture: 39923648
+Unchanged Number: 469064350
+Unchanged Capture: 357857946
+Base Root Time per SnapShot: 10.089828s
+Prediction Time per SnapShot: 4.074880s
+cgao037@index-graph-20250308-034037:~/RisGraph/build$ make -j && ./index-sswp ~/graph/or/snap_or ../source/or.txt 2 0.16
+[  0%] Built target absl_log_severity
+[  0%] Built target absl_exponential_biased
+[  1%] Built target absl_spinlock_wait
+[  2%] Built target absl_dynamic_annotations
+[  3%] Built target absl_civil_time
+[  5%] Built target absl_city
+[  5%] Built target absl_int128
+[  6%] Built target absl_leak_check_disable
+[  7%] Built target absl_leak_check
+[ 11%] Built target absl_time_zone
+[ 12%] Built target absl_random_internal_randen_slow
+[ 13%] Built target absl_random_seed_gen_exception
+[ 13%] Built target absl_random_internal_randen_hwaes_impl
+[ 14%] Built target absl_raw_logging_internal
+[ 15%] Built target absl_periodic_sampler
+[ 16%] Built target absl_random_internal_randen_hwaes
+[ 17%] Built target absl_throw_delegate
+[ 18%] Built target absl_bad_optional_access
+[ 19%] Built target absl_strings_internal
+[ 21%] Built target absl_base
+[ 22%] Built target absl_bad_variant_access
+[ 23%] Built target absl_debugging_internal
+[ 24%] Built target absl_scoped_set_env
+[ 24%] Built target absl_bad_any_cast_impl
+[ 25%] Built target absl_random_internal_randen
+[ 26%] Built target absl_malloc_internal
+[ 27%] Built target absl_demangle_internal
+[ 28%] Built target absl_stacktrace
+[ 34%] Built target absl_strings
+[ 34%] Built target absl_graphcycles_internal
+[ 35%] Built target absl_symbolize
+[ 36%] Built target absl_hash
+[ 38%] Built target absl_time
+[ 39%] Built target absl_random_distributions
+[ 41%] Built target absl_str_format_internal
+[ 42%] Built target absl_random_internal_seed_material
+[ 43%] Built target absl_cord
+[ 44%] Built target absl_examine_stack
+[ 44%] Built target absl_flags_marshalling
+[ 45%] Built target absl_random_internal_distribution_test_util
+[ 46%] Built target absl_random_internal_pool_urbg
+[ 47%] Built target absl_status
+[ 50%] Built target absl_synchronization
+[ 51%] Built target absl_failure_signal_handler
+[ 52%] Built target absl_random_seed_sequences
+[ 53%] Built target absl_flags_program_name
+[ 54%] Built target absl_hashtablez_sampler
+[ 55%] Built target absl_flags_config
+[ 55%] Built target absl_raw_hash_set
+[ 56%] Built target mmapalloc
+[ 57%] Built target absl_flags_registry
+[ 58%] Built target Ovearhead
+[ 60%] Built target Viterbibaseline
+[ 60%] Built target SSRbaseline
+[ 60%] Built target HighDegreeNode
+[ 61%] Built target SSWPbaseline
+[ 61%] Built target motivation
+[ 62%] Built target fusion_sswp
+[ 62%] Built target fusion_wcc
+[ 63%] Built target fusion_viterbi
+[ 64%] Built target Indexing-baseline-sssp
+[ 64%] Built target SSSPbaseline
+[ 65%] Built target fusion_ssr
+[ 67%] Built target ssnp-core
+[ 67%] Built target sswp_inc_batch
+[ 67%] Built target fusion_ssnp
+[ 69%] Built target correctness-bfs
+[ 69%] Built target index-bfs
+[ 69%] Built target BFSbaseline
+[ 70%] Built target sssp-core
+[ 71%] Built target sswp_inc_clf
+[ 72%] Built target wastedquery
+[ 73%] Built target wcc-core
+[ 75%] Built target fusion_sssp
+[ 75%] Built target sswp-core
+[ 75%] Built target sswp_inc_rt
+[ 76%] Built target sswp
+[ 76%] Built target sswp_inc
+[ 79%] Built target CommonGraph_baseline_direct_SSSP
+[ 79%] Built target correctness-sswp
+[ 79%] Built target SSNPbaseline
+[ 79%] Built target CommonGraph_baseline_WH
+[ 81%] Built target index-ssnp
+[ 81%] Built target bfs-core
+[ 83%] Built target viterbi-core
+[ 83%] Built target correctness-sssp
+[ 84%] Built target ssr-core
+[ 85%] Built target correctness-viterbi
+[ 86%] Built target CCbaseline
+[ 87%] Built target index-sssp
+[ 87%] Built target index-wcc
+[ 90%] Built target correctness-ssnp
+[ 90%] Built target UnionInterSection
+[ 90%] Built target index-sswp
+[ 95%] Built target absl_flags_internal
+[ 95%] Built target correctness-wcc
+[ 95%] Built target index-ssr
+[ 95%] Built target fusion_bfs
+[ 95%] Built target index-viterbi
+[ 96%] Built target test_sssp
+[ 97%] Built target absl_flags
+[ 98%] Built target absl_flags_usage_internal
+[ 99%] Built target absl_flags_usage
+[100%] Built target absl_flags_parse
+Error: Invalid line "% bip unweighted"
+read: 133.671874s
+loading graph /home/cgao037/graph/or/snap_or, root file is ../source/or.txt, batch_num is 2, batch_size is 52325997
+read: 0.059942s
+|E|=327037487
+|V|=8730858
+Union Graph Marked: 173.568188s
+Number of Edges in Union Graph is 327037487
+Graph Size: 327037487, Edge Count For Version 999 is 327037487
+Forward Time: 17.425943s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 22444064
+ Percentage of core graph edge: 6.86
+Common Graph Edges: 117733499
+Graph Size: 117733499, Edge Count For Version 666 is 117733499
+Forward Time: 11.119906s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 15731829
+ Percentage of core graph edge: 13.36
+Merged Set Size: 31022336
+------------SnapShot 0 Begins--------------
+|V|=8730858
+------------SnapShot 1 Begins--------------
+|V|=8730858
+Correct Prediction: 59.77%
+Changing Rate: 20.30%
+Changing Capturing Rate: 50.12%
+Unchanged Rate: 79.70%
+Unchanged Capture Rate: 62.23%
+Changing Number: 113427864
+Changing Capture: 56845428
+Unchanged Number: 445347048
+Unchanged Capture: 277153867
+------------SnapShot 2 Begins--------------
+|V|=8730858
+Correct Prediction: 66.74%
+Changing Rate: 22.31%
+Changing Capturing Rate: 55.46%
+Unchanged Rate: 77.69%
+Unchanged Capture Rate: 69.98%
+Changing Number: 124677846
+Changing Capture: 69145213
+Unchanged Number: 434097066
+Unchanged Capture: 303762075
+Base Root Time per SnapShot: 10.403945s
+Prediction Time per SnapShot: 4.025679s
+cgao037@index-graph-20250308-034037:~/RisGraph/build$ make -j && ./index-sswp ~/graph/or/snap_or ../source/or.txt 2 0.20
+[  0%] Built target absl_log_severity
+[  0%] Built target absl_exponential_biased
+[  1%] Built target absl_spinlock_wait
+[  2%] Built target absl_dynamic_annotations
+[  4%] Built target absl_civil_time
+[  4%] Built target absl_int128
+[  5%] Built target absl_leak_check_disable
+[  6%] Built target absl_city
+[  6%] Built target absl_random_internal_randen_hwaes_impl
+[  8%] Built target absl_leak_check
+[ 11%] Built target absl_time_zone
+[ 12%] Built target absl_random_internal_randen_slow
+[ 13%] Built target absl_random_seed_gen_exception
+[ 14%] Built target absl_raw_logging_internal
+[ 15%] Built target absl_periodic_sampler
+[ 16%] Built target absl_random_internal_randen_hwaes
+[ 17%] Built target absl_throw_delegate
+[ 18%] Built target absl_bad_optional_access
+[ 20%] Built target absl_base
+[ 21%] Built target absl_debugging_internal
+[ 23%] Built target absl_strings_internal
+[ 23%] Built target absl_bad_variant_access
+[ 24%] Built target absl_scoped_set_env
+[ 24%] Built target absl_bad_any_cast_impl
+[ 25%] Built target absl_random_internal_randen
+[ 26%] Built target absl_malloc_internal
+[ 27%] Built target absl_demangle_internal
+[ 28%] Built target absl_stacktrace
+[ 34%] Built target absl_strings
+[ 34%] Built target absl_graphcycles_internal
+[ 35%] Built target absl_symbolize
+[ 36%] Built target absl_hash
+[ 38%] Built target absl_time
+[ 40%] Built target absl_str_format_internal
+[ 41%] Built target absl_random_distributions
+[ 42%] Built target absl_random_internal_seed_material
+[ 43%] Built target absl_cord
+[ 44%] Built target absl_examine_stack
+[ 44%] Built target absl_flags_marshalling
+[ 45%] Built target absl_random_internal_distribution_test_util
+[ 46%] Built target absl_status
+[ 49%] Built target absl_synchronization
+[ 50%] Built target absl_failure_signal_handler
+[ 51%] Built target absl_random_internal_pool_urbg
+[ 52%] Built target absl_flags_program_name
+[ 53%] Built target absl_hashtablez_sampler
+[ 54%] Built target absl_random_seed_sequences
+[ 55%] Built target absl_flags_config
+[ 55%] Built target absl_raw_hash_set
+[ 56%] Built target mmapalloc
+[ 57%] Built target absl_flags_registry
+[ 58%] Built target Ovearhead
+[ 59%] Built target SSRbaseline
+[ 61%] Built target SSWPbaseline
+[ 61%] Built target Viterbibaseline
+[ 61%] Built target SSSPbaseline
+[ 61%] Built target HighDegreeNode
+[ 61%] Built target motivation
+[ 62%] Built target fusion_viterbi
+[ 64%] Built target ssnp-core
+[ 65%] Built target Indexing-baseline-sssp
+[ 65%] Built target fusion_sswp
+[ 66%] Built target fusion_ssr
+[ 67%] Built target sswp_inc_batch
+[ 67%] Built target BFSbaseline
+[ 68%] Built target fusion_ssnp
+[ 68%] Built target correctness-bfs
+[ 68%] Built target fusion_wcc
+[ 69%] Built target index-bfs
+[ 70%] Built target sssp-core
+[ 71%] Built target sswp_inc_clf
+[ 72%] Built target wastedquery
+[ 73%] Built target wcc-core
+[ 75%] Built target sswp_inc_rt
+[ 75%] Built target sswp-core
+[ 75%] Built target fusion_sssp
+[ 75%] Built target correctness-sswp
+[ 78%] Built target sswp_inc
+[ 78%] Built target CommonGraph_baseline_WH
+[ 78%] Built target index-ssnp
+[ 82%] Built target bfs-core
+[ 82%] Built target correctness-sssp
+[ 82%] Built target CommonGraph_baseline_direct_SSSP
+[ 82%] Built target SSNPbaseline
+[ 82%] Built target sswp
+[ 83%] Built target ssr-core
+[ 86%] Built target index-wcc
+[ 86%] Built target correctness-viterbi
+[ 86%] Built target viterbi-core
+[ 86%] Built target index-sssp
+[ 87%] Built target CCbaseline
+[ 90%] Built target index-sswp
+[ 90%] Built target UnionInterSection
+[ 90%] Built target correctness-ssnp
+[ 91%] Built target fusion_bfs
+[ 93%] Built target index-ssr
+[ 93%] Built target correctness-wcc
+[ 95%] Built target index-viterbi
+[ 95%] Built target test_sssp
+[ 96%] Built target absl_flags_internal
+[ 97%] Built target absl_flags
+[ 98%] Built target absl_flags_usage_internal
+[ 99%] Built target absl_flags_usage
+[100%] Built target absl_flags_parse
+Error: Invalid line "% bip unweighted"
+read: 134.351094s
+loading graph /home/cgao037/graph/or/snap_or, root file is ../source/or.txt, batch_num is 2, batch_size is 65407497
+read: 0.061388s
+|E|=327037487
+|V|=8730858
+Union Graph Marked: 187.583290s
+Number of Edges in Union Graph is 327037487
+Graph Size: 327037487, Edge Count For Version 999 is 327037487
+Forward Time: 17.386252s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 22443209
+ Percentage of core graph edge: 6.86
+Common Graph Edges: 65407499
+Graph Size: 65407499, Edge Count For Version 666 is 65407499
+Forward Time: 9.299670s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 12603855
+ Percentage of core graph edge: 19.27
+Merged Set Size: 31063161
+------------SnapShot 0 Begins--------------
+|V|=8730858
+------------SnapShot 1 Begins--------------
+|V|=8730858

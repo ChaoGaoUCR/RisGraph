@@ -44,6 +44,7 @@ else  \
     __VA_ARGS__ \
 } (void)0
 const uint64_t MAXL = 134217728;
+const uint64_t HOT_TARGET_DISTANCE_LIMIT = 10000; // 可以根据需要调整
 // a random generation function will be used here to generate the random selection of edges
 // Taken n as the number of random numbers to generate
 // Taken N as the range of random numbers
@@ -53,6 +54,22 @@ struct PairHash {
         return std::hash<uint64_t>{}(p.first) ^ (std::hash<uint64_t>{}(p.second) << 1);
     }
 };
+inline void updateBoundaryIfReachable(
+    uint64_t hotToAnySrc,
+    uint64_t targetToHot,
+    uint64_t& currentLower,
+    uint64_t& currentUpper)
+{
+    if (hotToAnySrc != MAXL && targetToHot != MAXL)
+    {
+            uint64_t lowerBound = (hotToAnySrc > targetToHot) ? (hotToAnySrc - targetToHot) : (targetToHot - hotToAnySrc);
+            uint64_t upperBound = hotToAnySrc + targetToHot;
+
+            currentLower = std::max(currentLower, lowerBound);
+            currentUpper = std::min(currentUpper, upperBound);
+    }
+}
+
 bool sortByLargerSecondElement(const std::pair<long, long> &a, const std::pair<long, long> &b) {
   return (a.second > b.second);
 }
@@ -99,7 +116,7 @@ std::vector<uint64_t> rank_out(Graph<uint64_t>& G)
     }
     return rank; 
 }
-std::vector<uint64_t> rankHotVertics(Graph<uint64_t>& G, uint64_t numNodes = 10)
+std::vector<uint64_t> rankHotVertics(Graph<uint64_t>& G, uint64_t numNodes = 1)
 {
     std::vector<uint64_t> rank;
     rank.reserve(numNodes);
@@ -657,8 +674,6 @@ int main(int argc, char** argv)
         fprintf(stderr, "Union Graph Marked: %.6lfs\n", 1e-6*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(end-start).count());
     }
 
-    fprintf(stderr, "Number of Edges in Union Graph is %lu\n", graph.get_degree());
-    auto unionCoreGraphEdges = coreGenerateVector(graph, raw_edges, E_tag, raw_edges_len, 999);
 
     {
         for (auto batch = 0; batch < batch_num; batch++)
@@ -682,8 +697,6 @@ int main(int argc, char** argv)
     auto commonGraphEdges = graph.get_degree();
     fprintf(stderr, "Common Graph Edges: %lu\n", graph.get_degree());
     
-    auto coreCommonGraphEdges = coreGenerateVector(graph, raw_edges, E_tag, raw_edges_len, 666);
-    auto coreForAllEdges = MergeTwoVectorEdge(unionCoreGraphEdges, coreCommonGraphEdges);
         
     {
         // Init Computation From SnapShot 0 Common Graph Add All deletion Batches
@@ -698,7 +711,7 @@ int main(int argc, char** argv)
             );          
         }
     }
-    uint64_t srcToCalculate = 64;
+    uint64_t srcToCalculate = 1;
     auto preCorrectResult = graph.alloc_vertex_tree_array_vector<uint64_t>(srcToCalculate);
     auto currentCorrectResult = graph.alloc_vertex_tree_array_vector<uint64_t>(srcToCalculate);
 
@@ -726,7 +739,9 @@ int main(int argc, char** argv)
     std::atomic<uint64_t> unchangeNumber(0);
     std::atomic<uint64_t> changeCapture(0);
     std::atomic<uint64_t> unChangedCapture(0);
-    uint64_t testSnapshot = 3;
+    std::atomic<uint64_t> lowerBoundError(0);
+    std::atomic<uint64_t> upperBoundError(0);
+    uint64_t testSnapshot = 2;
     float baseNodeTime = 0;
     float predictionTime = 0;
 
@@ -734,30 +749,14 @@ int main(int argc, char** argv)
     {
         fprintf(stderr, "------------SnapShot %d Begins--------------\n", snapshotGraph);
         
-        Graph<uint64_t> coreForAllGraph(num_vertices, coreForAllEdges.size(), false, true);
         correctPrediction.store(0);
         changeCapture.store(0);
         changingNumber.store(0);
+        unchangeNumber.store(0);
+        unChangedCapture.store(0);
+        lowerBoundError.store(0);
+        upperBoundError.store(0);
         // Process Core Graph Result
-
-        {
-            THRESHOLD_OPENMP_LOCAL("omp parallel for", coreForAllEdges.size(), 1024,
-            for (uint64_t i = 0; i < coreForAllEdges.size(); i++)
-            {
-                const auto &e = coreForAllEdges[i];
-                if (graph.get_edge_num({e.first, e.second, (e.first + e.second) % 16 + 1}))
-                {
-                    coreForAllGraph.add_edge({e.first, e.second, (e.first+e.second)%16 + 1}, true);
-                }
-            }
-            );
-
-            if (graph.get_degree() - batch_num * batch_size != commonGraphEdges)
-            {
-                fprintf(stderr, "Common Graph Edges is Wrong\n");
-                exit(1);
-            }
-        }
         
         // Tringle inEquality Hot->AnySrc | Target->AnySrc | Hot->Target
         // Target->AnySrc <= Hot->AnySrc + Hot->Target
@@ -768,7 +767,7 @@ int main(int argc, char** argv)
             auto target = roots[srcToTest];
             if (snapshotGraph != 0)
             {
-                currentCorrectResult[srcToTest] = rootCompute(coreForAllGraph, roots[srcToTest]);
+                currentCorrectResult[srcToTest] = rootCompute(graph, roots[srcToTest]);
                 std::vector<bool> isChanging(graph.getNodesNum(), false);
                 THRESHOLD_OPENMP_LOCAL("omp parallel for", graph.getNodesNum(), 1024,
                 for (uint64_t i = 0; i < graph.getNodesNum(); i++)
@@ -785,7 +784,12 @@ int main(int argc, char** argv)
                 for (auto & hotNode : rankTriple)
                 {
                     auto baseTimeStart = std::chrono::system_clock::now();
-                    auto tmpResult = rootCompute(coreForAllGraph, hotNode);
+                    auto tmpResult = rootCompute(graph, hotNode);
+                    // reverse Graph For TargetToHot
+                    graph.transpose();
+                    auto reverseTmpResult = rootCompute(graph, hotNode);
+                    graph.transpose();
+                    auto targetToHot = reverseTmpResult[target].data;
                     auto baseTimeEnd = std::chrono::system_clock::now();
                     baseNodeTime += 1e-6*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(baseTimeEnd-baseTimeStart).count();
                     auto predictionStart = std::chrono::system_clock::now();
@@ -793,19 +797,13 @@ int main(int argc, char** argv)
                     for (uint64_t anySrc = 0; anySrc < graph.getNodesNum(); anySrc++)
                     {
                         auto hotToAnySrc = tmpResult[anySrc].data;
-                        auto hotToTarget = tmpResult[target].data;
-                        auto lowerBound = 0;
-                        if (hotToAnySrc > hotToTarget)
-                        {
-                            auto lowerBound = hotToAnySrc - hotToTarget;
-                        }
-                        else
-                        {
-                            auto lowerBound = hotToTarget - hotToAnySrc;
-                        }
-                        auto upperBound = hotToAnySrc + hotToTarget;
-                        currentBoundaryAllocation[srcToTest][anySrc].first = std::max(currentBoundaryAllocation[srcToTest][anySrc].first, static_cast<uint64_t>(lowerBound));
-                        currentBoundaryAllocation[srcToTest][anySrc].second = std::min(currentBoundaryAllocation[srcToTest][anySrc].second, static_cast<uint64_t>(upperBound));
+
+                            updateBoundaryIfReachable(
+                                hotToAnySrc,
+                                targetToHot,
+                                currentBoundaryAllocation[srcToTest][anySrc].first,
+                                currentBoundaryAllocation[srcToTest][anySrc].second
+                            );                        
                     }
                     );
                     auto predictionEnd = std::chrono::system_clock::now();
@@ -822,18 +820,19 @@ int main(int argc, char** argv)
                         auto preUpper = previousBoundaryAllocation[srcToTest][i].second;
                         auto curLower = currentBoundaryAllocation[srcToTest][i].first;
                         auto curUpper = currentBoundaryAllocation[srcToTest][i].second;
-                        // if (preLower > curUpper || preUpper < curLower)
-                        // {
-                        //     isBoundaryChanging[i] = true;
-                        // }
-                        // if (preLower != curLower)
-                        // {
-                        //     isBoundaryChanging[i] = true;
-                        // }
-                        if (preUpper != curUpper)
+                        if (preLower > curUpper || preUpper < curLower)
                         {
                             isBoundaryChanging[i] = true;
                         }
+                        if (currentCorrectResult[srcToTest][i].data < curLower)
+                        {
+                            lowerBoundError.fetch_add(1);
+                        }
+                        if (currentCorrectResult[srcToTest][i].data > curUpper)
+                        {
+                            upperBoundError.fetch_add(1);
+                        }                   
+                        
                     }
                     );
                 }
@@ -869,7 +868,7 @@ int main(int argc, char** argv)
             else
             {
                 // Snapshot = 0 wll only compute the correct Results and Boundary Allocation But Not Predicting the correctness
-                currentCorrectResult[srcToTest] = rootCompute(coreForAllGraph, roots[srcToTest]);
+                currentCorrectResult[srcToTest] = rootCompute(graph, roots[srcToTest]);
                 
                 // Boundary Updates
                 {
@@ -877,7 +876,12 @@ int main(int argc, char** argv)
                     for (auto & hotNode : rankTriple)
                     {
                         auto baseTimeStart = std::chrono::system_clock::now();
-                        auto tmpResult = rootCompute(coreForAllGraph, hotNode);
+                        auto tmpResult = rootCompute(graph, hotNode);
+                        // reverse Graph For TargetToHot
+                        graph.transpose();
+                        auto reverseTmpResult = rootCompute(graph, hotNode);
+                        graph.transpose();
+                        auto targetToHot = reverseTmpResult[target].data;
                         auto baseTimeEnd = std::chrono::system_clock::now();
                         baseNodeTime += 1e-6*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(baseTimeEnd-baseTimeStart).count();
                         auto predictionStart = std::chrono::system_clock::now();
@@ -885,19 +889,23 @@ int main(int argc, char** argv)
                         for (uint64_t anySrc = 0; anySrc < graph.getNodesNum(); anySrc++)
                         {
                             auto hotToAnySrc = tmpResult[anySrc].data;
-                            auto hotToTarget = tmpResult[target].data;
-                            auto lowerBound = 0;
-                            if (hotToAnySrc > hotToTarget)
+
+                            updateBoundaryIfReachable(
+                                hotToAnySrc,
+                                targetToHot,
+                                currentBoundaryAllocation[srcToTest][anySrc].first,
+                                currentBoundaryAllocation[srcToTest][anySrc].second
+                            );
+                            auto curLower = currentBoundaryAllocation[srcToTest][anySrc].first;
+                            auto curUpper = currentBoundaryAllocation[srcToTest][anySrc].second;
+                            if (currentCorrectResult[srcToTest][anySrc].data < curLower)
                             {
-                                auto lowerBound = hotToAnySrc - hotToTarget;
-                            }
-                            else
+                                lowerBoundError.fetch_add(1);
+                            }     
+                            if (currentCorrectResult[srcToTest][anySrc].data > curUpper)
                             {
-                                auto lowerBound = hotToTarget - hotToAnySrc;
-                            }
-                            auto upperBound = hotToAnySrc + hotToTarget;
-                            currentBoundaryAllocation[srcToTest][anySrc].first = std::max(currentBoundaryAllocation[srcToTest][anySrc].first, static_cast<uint64_t>(lowerBound));
-                            currentBoundaryAllocation[srcToTest][anySrc].second = std::min(currentBoundaryAllocation[srcToTest][anySrc].second, static_cast<uint64_t>(upperBound));
+                                upperBoundError.fetch_add(1);
+                            }                                                      
                         }
                         );
                         auto predictionEnd = std::chrono::system_clock::now();
@@ -912,6 +920,7 @@ int main(int argc, char** argv)
             {
                 preCorrectResult[srcToTest][i] = currentCorrectResult[srcToTest][i];
                 previousBoundaryAllocation[srcToTest][i] = currentBoundaryAllocation[srcToTest][i];
+                currentBoundaryAllocation[srcToTest][i] = std::make_pair(0, MAXL);
             }
             );
 
@@ -928,6 +937,8 @@ int main(int argc, char** argv)
             fprintf(stderr, "Unchanged Number: %lu\n", unchangeNumber.load());
             fprintf(stderr, "Unchanged Capture: %lu\n", unChangedCapture.load());            
         }
+        fprintf(stderr, "Lower Bound Error percentage: %.2f%%\n", (100.0 * lowerBoundError.load())/ (graph.getNodesNum() * srcToCalculate));
+        fprintf(stderr, "Upper Bound Error percentage: %.2f%%\n", (100.0 * upperBoundError.load())/ (graph.getNodesNum() * srcToCalculate));
 
     // Process For Next Batch    
     {

@@ -99,7 +99,7 @@ std::vector<uint64_t> rank_out(Graph<uint64_t>& G)
     }
     return rank; 
 }
-std::vector<uint64_t> rankHotVertics(Graph<uint64_t>& G, uint64_t numNodes = 5)
+std::vector<uint64_t> rankHotVertics(Graph<uint64_t>& G, uint64_t numNodes = 20)
 {
     std::vector<uint64_t> rank;
     rank.reserve(numNodes);
@@ -549,7 +549,7 @@ int main(int argc, char** argv)
             );          
         }
     }
-    uint64_t srcToCalculate = 20;
+    uint64_t srcToCalculate = 64;
     auto preCorrectResult = graph.alloc_vertex_tree_array_vector<uint64_t>(srcToCalculate);
     auto currentCorrectResult = graph.alloc_vertex_tree_array_vector<uint64_t>(srcToCalculate);
 
@@ -573,13 +573,24 @@ int main(int argc, char** argv)
         );   
     }
     std::atomic<uint64_t> correctPrediction(0);
+    std::atomic<uint64_t> changingNumber(0);
+    std::atomic<uint64_t> unchangeNumber(0);
+    std::atomic<uint64_t> changeCapture(0);
+    std::atomic<uint64_t> unChangedCapture(0);
+    uint64_t testSnapshot = 3;
+    float baseNodeTime = 0;
+    float predictionTime = 0;
 
-    for (auto snapshotGraph = 0; snapshotGraph < 5; snapshotGraph++)
+    for (auto snapshotGraph = 0; snapshotGraph < testSnapshot; snapshotGraph++)
     {
         fprintf(stderr, "------------SnapShot %d Begins--------------\n", snapshotGraph);
         
         Graph<uint64_t> coreForAllGraph(num_vertices, coreForAllEdges.size(), false, true);
         correctPrediction.store(0);
+        changeCapture.store(0);
+        changingNumber.store(0);
+        unchangeNumber.store(0);
+        unChangedCapture.store(0);
         // Process Core Graph Result
 
         {
@@ -626,7 +637,11 @@ int main(int argc, char** argv)
                 auto rankTriple = rankHotVertics(graph);
                 for (auto & hotNode : rankTriple)
                 {
+                    auto baseTimeStart = std::chrono::system_clock::now();
                     auto tmpResult = rootCompute(coreForAllGraph, hotNode);
+                    auto baseTimeEnd = std::chrono::system_clock::now();
+                    baseNodeTime += 1e-6*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(baseTimeEnd-baseTimeStart).count();
+                    auto predictionStart = std::chrono::system_clock::now();
                     THRESHOLD_OPENMP_LOCAL("omp parallel for", graph.getNodesNum(), 1024,
                     for (uint64_t anySrc = 0; anySrc < graph.getNodesNum(); anySrc++)
                     {
@@ -639,6 +654,8 @@ int main(int argc, char** argv)
                         
                     }
                     );
+                    auto predictionEnd = std::chrono::system_clock::now();
+                    predictionTime += 1e-6*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(predictionEnd-predictionStart).count();  
                 }
                 std::vector<bool> isBoundaryChanging(graph.getNodesNum(), false);
 
@@ -651,7 +668,12 @@ int main(int argc, char** argv)
                         auto preUpper = previousBoundaryAllocation[srcToTest][i].second;
                         auto curLower = currentBoundaryAllocation[srcToTest][i].first;
                         auto curUpper = currentBoundaryAllocation[srcToTest][i].second;
-                        if (preLower > curUpper || preUpper < curLower)
+                        // if (preLower > curUpper || preUpper < curLower || 
+                        //     preLower > curLower || preUpper > curUpper)
+                        // {
+                        //     isBoundaryChanging[i] = true;
+                        // }
+                        if (preLower != curLower)
                         {
                             isBoundaryChanging[i] = true;
                         }
@@ -663,10 +685,26 @@ int main(int argc, char** argv)
                     THRESHOLD_OPENMP_LOCAL("omp parallel for", graph.getNodesNum(), 1024,
                     for (uint64_t i = 0; i < graph.getNodesNum(); i++)
                     {
+                        if (isChanging[i] == true)
+                        {
+                            changingNumber.fetch_add(1);
+                        }
                         if (isChanging[i] == isBoundaryChanging[i])
                         {
                             correctPrediction.fetch_add(1);
                         }
+                        if (isBoundaryChanging[i] == true && isChanging[i] == true)
+                        {
+                            changeCapture.fetch_add(1);
+                        }
+                        if (isChanging[i] == false && isBoundaryChanging[i] == false)
+                        {
+                            unChangedCapture.fetch_add(1);
+                        }
+                        if (isChanging[i] == false)
+                        {
+                            unchangeNumber.fetch_add(1);
+                        }   
                     }
                     );
                 }
@@ -681,7 +719,11 @@ int main(int argc, char** argv)
                     auto rankTriple = rankHotVertics(graph);
                     for (auto & hotNode : rankTriple)
                     {
+                        auto baseTimeStart = std::chrono::system_clock::now();
                         auto tmpResult = rootCompute(coreForAllGraph, hotNode);
+                        auto baseTimeEnd = std::chrono::system_clock::now();
+                        baseNodeTime += 1e-6*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(baseTimeEnd-baseTimeStart).count();
+                        auto predictionStart = std::chrono::system_clock::now();
                         THRESHOLD_OPENMP_LOCAL("omp parallel for", graph.getNodesNum(), 1024,
                         for (uint64_t anySrc = 0; anySrc < graph.getNodesNum(); anySrc++)
                         {
@@ -694,6 +736,8 @@ int main(int argc, char** argv)
                             
                         }
                         );
+                        auto predictionEnd = std::chrono::system_clock::now();
+                        predictionTime += 1e-6*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(predictionEnd-predictionStart).count();                        
                     }
                 }
             }
@@ -711,6 +755,14 @@ int main(int argc, char** argv)
         if (snapshotGraph != 0)
         {
             fprintf(stderr, "Correct Prediction: %.2f%%\n", (100.0 * correctPrediction.load())/ (graph.getNodesNum() * srcToCalculate));
+            fprintf(stderr, "Changing Rate: %.2f%%\n", (100.0 * changingNumber.load())/ (graph.getNodesNum() * srcToCalculate));
+            fprintf(stderr, "Changing Capturing Rate: %.2f%%\n", (100.0 * changeCapture.load())/ (changingNumber.load()));
+            fprintf(stderr, "Unchanged Rate: %.2f%%\n", (100.0 * unchangeNumber.load())/ (graph.getNodesNum() * srcToCalculate));
+            fprintf(stderr, "Unchanged Capture Rate: %.2f%%\n", (100.0 * unChangedCapture.load())/ (unchangeNumber.load()));
+            fprintf(stderr, "Changing Number: %lu\n", changingNumber.load());
+            fprintf(stderr, "Changing Capture: %lu\n", changeCapture.load());
+            fprintf(stderr, "Unchanged Number: %lu\n", unchangeNumber.load());
+            fprintf(stderr, "Unchanged Capture: %lu\n", unChangedCapture.load());            
         }
 
     // Process For Next Batch    
@@ -736,5 +788,8 @@ int main(int argc, char** argv)
     }
     
     }
+    
+    fprintf(stderr, "Base Root Time per SnapShot: %.6lfs\n", baseNodeTime / (testSnapshot * srcToCalculate));
+    fprintf(stderr, "Prediction Time per SnapShot: %.6lfs\n", predictionTime / testSnapshot);
     return 0;
 }
