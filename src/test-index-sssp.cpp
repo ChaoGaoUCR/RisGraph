@@ -895,23 +895,26 @@ int main(int argc, char** argv)
                                 targetToHot,
                                 currentBoundaryAllocation[srcToTest][anySrc].first,
                                 currentBoundaryAllocation[srcToTest][anySrc].second
-                            );
-                            auto curLower = currentBoundaryAllocation[srcToTest][anySrc].first;
-                            auto curUpper = currentBoundaryAllocation[srcToTest][anySrc].second;
-                            if (currentCorrectResult[srcToTest][anySrc].data < curLower)
-                            {
-                                lowerBoundError.fetch_add(1);
-                            }     
-                            if (currentCorrectResult[srcToTest][anySrc].data > curUpper)
-                            {
-                                upperBoundError.fetch_add(1);
-                            }                                                      
+                            );                                                
                         }
                         );
                         auto predictionEnd = std::chrono::system_clock::now();
                         predictionTime += 1e-6*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(predictionEnd-predictionStart).count();
                     }
                 }
+                THRESHOLD_OPENMP_LOCAL("omp parallel for", graph.getNodesNum(), 1024,
+                for (uint64_t i = 0; i < graph.getNodesNum(); i++)
+                {
+                    if (currentCorrectResult[srcToTest][i].data < currentBoundaryAllocation[srcToTest][i].first)
+                    {
+                        lowerBoundError.fetch_add(1);
+                    }
+                    if (currentCorrectResult[srcToTest][i].data > currentBoundaryAllocation[srcToTest][i].second)
+                    {
+                        upperBoundError.fetch_add(1);
+                    }                   
+                }
+                );
             }
 
             // ALways Update the Previous Result and Boundary Allocation
