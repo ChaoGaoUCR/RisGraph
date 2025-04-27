@@ -78,6 +78,7 @@
         "concepts": "cpp",
         "ranges": "cpp",
         "stop_token": "cpp",
-        "sparsetable": "cpp"
+        "sparsetable": "cpp",
+        "*.inc": "cpp"
     }
 }

@@ -54,6 +54,37 @@ struct PairHash {
         return std::hash<uint64_t>{}(p.first) ^ (std::hash<uint64_t>{}(p.second) << 1);
     }
 };
+enum OverlapType {
+    COMPLETE_MATCH = 0,          // pre 和 cur 完全重合
+    PRE_CONTAINS_CUR = 1,        // pre 包含 cur
+    CUR_CONTAINS_PRE = 2,        // cur 包含 pre
+    PARTIAL_OVERLAP_PRE_LEFT = 3,// pre 左边接 cur（pre在左）
+    PARTIAL_OVERLAP_CUR_LEFT = 4,// cur 左边接 pre（cur在左）
+    DISJOINT = 5                 // 完全错位（不相交）
+};
+
+int getOverlapType(uint64_t preLower, uint64_t preUpper, uint64_t curLower, uint64_t curUpper) {
+    if (preLower == curLower && preUpper == curUpper) {
+        return COMPLETE_MATCH; // 完全重合
+    }
+    else if (preLower <= curLower && curUpper <= preUpper) {
+        return PRE_CONTAINS_CUR; // pre 包含 cur
+    }
+    else if (curLower <= preLower && preUpper <= curUpper) {
+        return CUR_CONTAINS_PRE; // cur 包含 pre
+    }
+    else if (preLower <= curLower && preUpper < curUpper && curLower <= preUpper) {
+        return PARTIAL_OVERLAP_PRE_LEFT; // pre左接cur
+    }
+    else if (curLower <= preLower && curUpper < preUpper && preLower <= curUpper) {
+        return PARTIAL_OVERLAP_CUR_LEFT; // cur左接pre
+    }
+    else {
+        return DISJOINT; // 完全错位
+    }
+}
+
+
 inline void updateBoundaryIfReachable(
     uint64_t hotToAnySrc,
     uint64_t targetToHot,
@@ -116,7 +147,7 @@ std::vector<uint64_t> rank_out(Graph<uint64_t>& G)
     }
     return rank; 
 }
-std::vector<uint64_t> rankHotVertics(Graph<uint64_t>& G, uint64_t numNodes = 1)
+std::vector<uint64_t> rankHotVertics(Graph<uint64_t>& G, uint64_t numNodes = 10)
 {
     std::vector<uint64_t> rank;
     rank.reserve(numNodes);
@@ -711,7 +742,7 @@ int main(int argc, char** argv)
             );          
         }
     }
-    uint64_t srcToCalculate = 1;
+    uint64_t srcToCalculate = 16;
     auto preCorrectResult = graph.alloc_vertex_tree_array_vector<uint64_t>(srcToCalculate);
     auto currentCorrectResult = graph.alloc_vertex_tree_array_vector<uint64_t>(srcToCalculate);
 
@@ -741,6 +772,22 @@ int main(int argc, char** argv)
     std::atomic<uint64_t> unChangedCapture(0);
     std::atomic<uint64_t> lowerBoundError(0);
     std::atomic<uint64_t> upperBoundError(0);
+
+    // Chainging Scenario
+    std::atomic<uint64_t> isChangingScenarioCompleteMatch(0);
+    std::atomic<uint64_t> isChangingScenarioPreContainsCur(0);
+    std::atomic<uint64_t> isChangingScenarioCurContainsPre(0);
+    std::atomic<uint64_t> isChangingScenarioPartialOverlapPreLeft(0);
+    std::atomic<uint64_t> isChangingScenarioPartialOverlapCurLeft(0);
+    std::atomic<uint64_t> isChangingScenarioDisjoint(0);
+    // Unchanging Scenario
+    std::atomic<uint64_t> isUnchangingScenarioCompleteMatch(0);
+    std::atomic<uint64_t> isUnchangingScenarioPreContainsCur(0);
+    std::atomic<uint64_t> isUnchangingScenarioCurContainsPre(0);
+    std::atomic<uint64_t> isUnchangingScenarioPartialOverlapPreLeft(0);
+    std::atomic<uint64_t> isUnchangingScenarioPartialOverlapCurLeft(0);
+    std::atomic<uint64_t> isUnchangingScenarioDisjoint(0);
+
     uint64_t testSnapshot = 2;
     float baseNodeTime = 0;
     float predictionTime = 0;
@@ -780,6 +827,7 @@ int main(int argc, char** argv)
                 );
 
                 // Hot vertices will be used for bounadry allocation
+            {
                 auto rankTriple = rankHotVertics(graph);
                 for (auto & hotNode : rankTriple)
                 {
@@ -809,6 +857,7 @@ int main(int argc, char** argv)
                     auto predictionEnd = std::chrono::system_clock::now();
                     predictionTime += 1e-6*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(predictionEnd-predictionStart).count();  
                 }
+            }
                 std::vector<bool> isBoundaryChanging(graph.getNodesNum(), false);
 
                 // Only Boundary Not Include Each Other will be considered as changing
@@ -820,6 +869,76 @@ int main(int argc, char** argv)
                         auto preUpper = previousBoundaryAllocation[srcToTest][i].second;
                         auto curLower = currentBoundaryAllocation[srcToTest][i].first;
                         auto curUpper = currentBoundaryAllocation[srcToTest][i].second;
+                        int overlapType = getOverlapType(preLower, preUpper, curLower, curUpper);
+
+                        if (overlapType == COMPLETE_MATCH)
+                        {
+                            if (isChanging[i])
+                            {
+                                isChangingScenarioCompleteMatch.fetch_add(1);
+                            }
+                            else
+                            {
+                                isUnchangingScenarioCompleteMatch.fetch_add(1);
+                            }
+                        }
+                        else if (overlapType == PRE_CONTAINS_CUR)
+                        {
+                            if (isChanging[i])
+                            {
+                                isChangingScenarioPreContainsCur.fetch_add(1);
+                            }
+                            else
+                            {
+                                isUnchangingScenarioPreContainsCur.fetch_add(1);
+                            }
+                        }
+                        else if (overlapType == CUR_CONTAINS_PRE)
+                        {
+                            if (isChanging[i])
+                            {
+                                isChangingScenarioCurContainsPre.fetch_add(1);
+                            }
+                            else
+                            {
+                                isUnchangingScenarioCurContainsPre.fetch_add(1);
+                            }
+                        }
+                        else if (overlapType == PARTIAL_OVERLAP_PRE_LEFT)
+                        {
+                            if (isChanging[i])
+                            {
+                                isChangingScenarioPartialOverlapPreLeft.fetch_add(1);   
+                            }
+                            else
+                            {
+                                isUnchangingScenarioPartialOverlapPreLeft.fetch_add(1);
+                            }
+                        }
+                        else if (overlapType == PARTIAL_OVERLAP_CUR_LEFT)
+                        {
+                            if (isChanging[i])
+                            {
+                                isChangingScenarioPartialOverlapCurLeft.fetch_add(1);
+                            }
+                            else
+                            {
+                                isUnchangingScenarioPartialOverlapCurLeft.fetch_add(1);
+                            }
+                        }
+                        else if (overlapType == DISJOINT)
+                        {
+                            if (isChanging[i])
+                            {
+                                isChangingScenarioDisjoint.fetch_add(1);
+                            }
+                            else
+                            {
+                                isUnchangingScenarioDisjoint.fetch_add(1);
+                            }
+                        }
+                        // Check the boundary changing
+
                         if (preLower > curUpper || preUpper < curLower)
                         {
                             isBoundaryChanging[i] = true;
@@ -835,6 +954,9 @@ int main(int argc, char** argv)
                         
                     }
                     );
+                    // auto nodeToTest = 36;
+                    // fprintf(stderr, "Path: %ld -> %d previous Result: %lu, Current Result: %lu\n", target, nodeToTest, preCorrectResult[srcToTest][nodeToTest].data, currentCorrectResult[srcToTest][nodeToTest].data);
+                    // fprintf(stderr, "Node %d previous Boundaries: %lu %lu, Current Boundaries: %lu %lu\n", nodeToTest, previousBoundaryAllocation[srcToTest][nodeToTest].first, previousBoundaryAllocation[srcToTest][nodeToTest].second, currentBoundaryAllocation[srcToTest][nodeToTest].first, currentBoundaryAllocation[srcToTest][nodeToTest].second);
                 }
                 // Check the correctness of the prediction
                 {
@@ -873,6 +995,9 @@ int main(int argc, char** argv)
                 // Boundary Updates
                 {
                     auto rankTriple = rankHotVertics(graph);
+                    auto nodeToTest = 36;
+                    auto pinHotToAnySrc = 0;
+                    auto pinTargetToHot = 0;
                     for (auto & hotNode : rankTriple)
                     {
                         auto baseTimeStart = std::chrono::system_clock::now();
@@ -881,6 +1006,8 @@ int main(int argc, char** argv)
                         graph.transpose();
                         auto reverseTmpResult = rootCompute(graph, hotNode);
                         graph.transpose();
+                        pinHotToAnySrc = tmpResult[nodeToTest].data;
+                        pinTargetToHot = reverseTmpResult[nodeToTest].data;
                         auto targetToHot = reverseTmpResult[target].data;
                         auto baseTimeEnd = std::chrono::system_clock::now();
                         baseNodeTime += 1e-6*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(baseTimeEnd-baseTimeStart).count();
@@ -900,6 +1027,9 @@ int main(int argc, char** argv)
                         );
                         auto predictionEnd = std::chrono::system_clock::now();
                         predictionTime += 1e-6*(uint64_t)std::chrono::duration_cast<std::chrono::microseconds>(predictionEnd-predictionStart).count();
+                        // fprintf(stderr, "Node %d HotToAnySrc: %u, TargetToHot: %u\n", nodeToTest, pinHotToAnySrc, pinTargetToHot);
+                        // fprintf(stderr, "Node %d previous Result: %lu, Current Result: %lu\n", nodeToTest, preCorrectResult[srcToTest][nodeToTest].data, currentCorrectResult[srcToTest][nodeToTest].data);
+                        // fprintf(stderr, "Node %d previous Boundaries: %lu %lu, Current Boundaries: %lu %lu\n", nodeToTest, previousBoundaryAllocation[srcToTest][nodeToTest].first, previousBoundaryAllocation[srcToTest][nodeToTest].second, currentBoundaryAllocation[srcToTest][nodeToTest].first, currentBoundaryAllocation[srcToTest][nodeToTest].second);                        
                     }
                 }
                 THRESHOLD_OPENMP_LOCAL("omp parallel for", graph.getNodesNum(), 1024,
@@ -922,6 +1052,7 @@ int main(int argc, char** argv)
             for (uint64_t i = 0; i < graph.getNodesNum(); i++)
             {
                 preCorrectResult[srcToTest][i] = currentCorrectResult[srcToTest][i];
+                currentCorrectResult[srcToTest][i].data = 0;
                 previousBoundaryAllocation[srcToTest][i] = currentBoundaryAllocation[srcToTest][i];
                 currentBoundaryAllocation[srcToTest][i] = std::make_pair(0, MAXL);
             }
@@ -935,10 +1066,22 @@ int main(int argc, char** argv)
             fprintf(stderr, "Changing Capturing Rate: %.2f%%\n", (100.0 * changeCapture.load())/ (changingNumber.load()));
             fprintf(stderr, "Unchanged Rate: %.2f%%\n", (100.0 * unchangeNumber.load())/ (graph.getNodesNum() * srcToCalculate));
             fprintf(stderr, "Unchanged Capture Rate: %.2f%%\n", (100.0 * unChangedCapture.load())/ (unchangeNumber.load()));
-            fprintf(stderr, "Changing Number: %lu\n", changingNumber.load());
-            fprintf(stderr, "Changing Capture: %lu\n", changeCapture.load());
-            fprintf(stderr, "Unchanged Number: %lu\n", unchangeNumber.load());
-            fprintf(stderr, "Unchanged Capture: %lu\n", unChangedCapture.load());            
+
+            // Based on the changing scenario we see how many changes include
+            fprintf(stderr, "Changing Number when Boundary Complete Match: %.2f%%\n", (100.0 * isChangingScenarioCompleteMatch.load())/ (graph.getNodesNum() * srcToCalculate));
+            fprintf(stderr, "Changing Number when Boundary Pre Contains Cur: %.2f%%\n", (100.0 * isChangingScenarioPreContainsCur.load())/ (graph.getNodesNum() * srcToCalculate));
+            fprintf(stderr, "Changing Number when Boundary Cur Contains Pre: %.2f%%\n", (100.0 * isChangingScenarioCurContainsPre.load())/ (graph.getNodesNum() * srcToCalculate));
+            fprintf(stderr, "Changing Number when Boundary Partial Overlap Pre Left: %.2f%%\n", (100.0 * isChangingScenarioPartialOverlapPreLeft.load())/ (graph.getNodesNum() * srcToCalculate));
+            fprintf(stderr, "Changing Number when Boundary Partial Overlap Cur Left: %.2f%%\n", (100.0 * isChangingScenarioPartialOverlapCurLeft.load())/ (graph.getNodesNum() * srcToCalculate));
+            fprintf(stderr, "Changing Number when Boundary Disjoint: %.2f%%\n", (100.0 * isChangingScenarioDisjoint.load())/ (graph.getNodesNum() * srcToCalculate));
+            // Based on the unchanging scenario we see how many changes include
+            fprintf(stderr, "Unchanging Number when Boundary Complete Match: %.2f%%\n", (100.0 * isUnchangingScenarioCompleteMatch.load())/ (graph.getNodesNum() * srcToCalculate));
+            fprintf(stderr, "Unchanging Number when Boundary Pre Contains Cur: %.2f%%\n", (100.0 * isUnchangingScenarioPreContainsCur.load())/ (graph.getNodesNum() * srcToCalculate)); 
+            fprintf(stderr, "Unchanging Number when Boundary Cur Contains Pre: %.2f%%\n", (100.0 * isUnchangingScenarioCurContainsPre.load())/ (graph.getNodesNum() * srcToCalculate));
+            fprintf(stderr, "Unchanging Number when Boundary Partial Overlap Pre Left: %.2f%%\n", (100.0 * isUnchangingScenarioPartialOverlapPreLeft.load())/ (graph.getNodesNum() * srcToCalculate));
+            fprintf(stderr, "Unchanging Number when Boundary Partial Overlap Cur Left: %.2f%%\n", (100.0 * isUnchangingScenarioPartialOverlapCurLeft.load())/ (graph.getNodesNum() * srcToCalculate));
+            fprintf(stderr, "Unchanging Number when Boundary Disjoint: %.2f%%\n", (100.0 * isUnchangingScenarioDisjoint.load())/ (graph.getNodesNum() * srcToCalculate));
+            
         }
         fprintf(stderr, "Lower Bound Error percentage: %.2f%%\n", (100.0 * lowerBoundError.load())/ (graph.getNodesNum() * srcToCalculate));
         fprintf(stderr, "Upper Bound Error percentage: %.2f%%\n", (100.0 * upperBoundError.load())/ (graph.getNodesNum() * srcToCalculate));
