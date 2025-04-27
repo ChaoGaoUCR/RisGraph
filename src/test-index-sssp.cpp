@@ -126,7 +126,7 @@ std::vector<uint64_t> rankHotVertics(Graph<uint64_t>& G, uint64_t numNodes = 1)
     #pragma omp parallel for
     for (uint64_t i = 0; i < numOfNodes; i++ ) vertex_[i] = std::make_pair(i, G.getAllOutDegree(i));
     std::sort(vertex_.begin(), vertex_.end(), sortByLargerSecondElement);
-    for (size_t i = 0; i < 20; i++)
+    for (size_t i = 0; i < numNodes; i++)
     {
         rank.emplace_back(vertex_[i].first);
     }
