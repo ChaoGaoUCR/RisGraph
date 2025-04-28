@@ -79,6 +79,7 @@
         "ranges": "cpp",
         "stop_token": "cpp",
         "sparsetable": "cpp",
-        "*.inc": "cpp"
+        "*.inc": "cpp",
+        "test-index-ssnp": "cpp"
     }
 }
