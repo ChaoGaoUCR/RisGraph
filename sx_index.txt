@@ -1,0 +1,2114 @@
+Running build/test-index-bfs with batch_ratio=0.08
+read: 15.415913s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 1, batch_size is 2898675
+read: 0.011736s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 6.962564s
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 5.857926s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 7875282
+ Percentage of core graph edge: 21.73
+Common Graph Edges: 30436095
+Graph Size: 30436095, Edge Count For Version 666 is 30436095
+Forward Time: 5.631192s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 7302332
+ Percentage of core graph edge: 23.99
+Merged Set Size: 9142988
+------------SnapShot 0 Begins--------------
+|V|=6024259
+Lower Bound Error percentage: 7.32%
+Upper Bound Error percentage: 0.00%
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 87.81%
+Dump Prediction Correcr Rate: 93.70%
+Changing Rate: 6.30%
+Changing Capturing Rate: 63.86%
+Unchanged Rate: 93.70%
+Unchanged Capture Rate: 89.42%
+Changing Number when Boundary Complete Match: 2.28%
+Changing Number when Boundary Pre Contains Cur: 1.49%
+Changing Number when Boundary Cur Contains Pre: 1.50%
+Changing Number when Boundary Partial Overlap Pre Left: 0.38%
+Changing Number when Boundary Partial Overlap Cur Left: 0.44%
+Changing Number when Boundary Disjoint: 0.21%
+Unchanging Number when Boundary Complete Match: 83.79%
+Unchanging Number when Boundary Pre Contains Cur: 4.59%
+Unchanging Number when Boundary Cur Contains Pre: 3.37%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.80%
+Unchanging Number when Boundary Partial Overlap Cur Left: 1.03%
+Unchanging Number when Boundary Disjoint: 0.12%
+Lower Bound Error percentage: 7.23%
+Upper Bound Error percentage: 0.00%
+Base Root Time per SnapShot: 0.063789s
+Prediction Time per SnapShot: 1.331153s
+
+Running build/test-index-bfs with batch_ratio=0.16
+read: 15.244863s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 1, batch_size is 5797351
+read: 0.011094s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 6.207398s
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 5.860254s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 7877238
+ Percentage of core graph edge: 21.74
+Common Graph Edges: 24638743
+Graph Size: 24638743, Edge Count For Version 666 is 24638743
+Forward Time: 5.414193s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 6575785
+ Percentage of core graph edge: 26.69
+Merged Set Size: 9830533
+------------SnapShot 0 Begins--------------
+|V|=6024259
+Lower Bound Error percentage: 6.90%
+Upper Bound Error percentage: 0.00%
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 86.18%
+Dump Prediction Correcr Rate: 88.74%
+Changing Rate: 11.26%
+Changing Capturing Rate: 81.20%
+Unchanged Rate: 88.74%
+Unchanged Capture Rate: 86.82%
+Changing Number when Boundary Complete Match: 2.12%
+Changing Number when Boundary Pre Contains Cur: 3.27%
+Changing Number when Boundary Cur Contains Pre: 3.35%
+Changing Number when Boundary Partial Overlap Pre Left: 1.07%
+Changing Number when Boundary Partial Overlap Cur Left: 0.98%
+Changing Number when Boundary Disjoint: 0.46%
+Unchanging Number when Boundary Complete Match: 77.05%
+Unchanging Number when Boundary Pre Contains Cur: 5.05%
+Unchanging Number when Boundary Cur Contains Pre: 3.58%
+Unchanging Number when Boundary Partial Overlap Pre Left: 1.49%
+Unchanging Number when Boundary Partial Overlap Cur Left: 1.39%
+Unchanging Number when Boundary Disjoint: 0.19%
+Lower Bound Error percentage: 6.76%
+Upper Bound Error percentage: 0.00%
+Base Root Time per SnapShot: 0.059027s
+Prediction Time per SnapShot: 1.158353s
+
+Running build/test-index-bfs with batch_ratio=0.24
+read: 15.217124s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 1, batch_size is 8696026
+read: 0.011247s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 6.742101s
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 5.922872s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 7875648
+ Percentage of core graph edge: 21.74
+Common Graph Edges: 18841393
+Graph Size: 18841393, Edge Count For Version 666 is 18841393
+Forward Time: 5.088187s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 5756271
+ Percentage of core graph edge: 30.55
+Merged Set Size: 10007855
+------------SnapShot 0 Begins--------------
+|V|=6024259
+Lower Bound Error percentage: 6.64%
+Upper Bound Error percentage: 0.00%
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 88.77%
+Dump Prediction Correcr Rate: 84.45%
+Changing Rate: 15.55%
+Changing Capturing Rate: 84.97%
+Unchanged Rate: 84.45%
+Unchanged Capture Rate: 89.47%
+Changing Number when Boundary Complete Match: 2.34%
+Changing Number when Boundary Pre Contains Cur: 4.88%
+Changing Number when Boundary Cur Contains Pre: 4.58%
+Changing Number when Boundary Partial Overlap Pre Left: 1.44%
+Changing Number when Boundary Partial Overlap Cur Left: 1.50%
+Changing Number when Boundary Disjoint: 0.81%
+Unchanging Number when Boundary Complete Match: 75.56%
+Unchanging Number when Boundary Pre Contains Cur: 3.51%
+Unchanging Number when Boundary Cur Contains Pre: 2.83%
+Unchanging Number when Boundary Partial Overlap Pre Left: 1.05%
+Unchanging Number when Boundary Partial Overlap Cur Left: 1.25%
+Unchanging Number when Boundary Disjoint: 0.25%
+Lower Bound Error percentage: 6.41%
+Upper Bound Error percentage: 0.00%
+Base Root Time per SnapShot: 0.052132s
+Prediction Time per SnapShot: 1.180157s
+
+Running build/test-index-bfs with batch_ratio=0.32
+read: 15.225212s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 1, batch_size is 11594702
+read: 0.012442s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 7.120672s
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 5.899232s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 7879272
+ Percentage of core graph edge: 21.75
+Common Graph Edges: 13044041
+Graph Size: 13044041, Edge Count For Version 666 is 13044041
+Forward Time: 5.010496s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 4720445
+ Percentage of core graph edge: 36.19
+Merged Set Size: 9975225
+------------SnapShot 0 Begins--------------
+|V|=6024259
+Lower Bound Error percentage: 4.92%
+Upper Bound Error percentage: 0.00%
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 90.90%
+Dump Prediction Correcr Rate: 81.29%
+Changing Rate: 18.71%
+Changing Capturing Rate: 87.01%
+Unchanged Rate: 81.29%
+Unchanged Capture Rate: 91.80%
+Changing Number when Boundary Complete Match: 2.43%
+Changing Number when Boundary Pre Contains Cur: 6.10%
+Changing Number when Boundary Cur Contains Pre: 5.47%
+Changing Number when Boundary Partial Overlap Pre Left: 1.89%
+Changing Number when Boundary Partial Overlap Cur Left: 1.92%
+Changing Number when Boundary Disjoint: 0.90%
+Unchanging Number when Boundary Complete Match: 74.62%
+Unchanging Number when Boundary Pre Contains Cur: 2.53%
+Unchanging Number when Boundary Cur Contains Pre: 1.99%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.93%
+Unchanging Number when Boundary Partial Overlap Cur Left: 1.01%
+Unchanging Number when Boundary Disjoint: 0.20%
+Lower Bound Error percentage: 5.03%
+Upper Bound Error percentage: 0.00%
+Base Root Time per SnapShot: 0.051890s
+Prediction Time per SnapShot: 1.736305s
+
+Running build/test-index-bfs with batch_ratio=0.40
+read: 15.239732s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 1, batch_size is 14493378
+read: 0.016523s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 6.446187s
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 5.944372s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 7877132
+ Percentage of core graph edge: 21.74
+Common Graph Edges: 7246689
+Graph Size: 7246689, Edge Count For Version 666 is 7246689
+Forward Time: 4.605123s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 3299069
+ Percentage of core graph edge: 45.53
+Merged Set Size: 9550746
+------------SnapShot 0 Begins--------------
+|V|=6024259
+Lower Bound Error percentage: 5.15%
+Upper Bound Error percentage: 0.00%
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 92.54%
+Dump Prediction Correcr Rate: 78.71%
+Changing Rate: 21.29%
+Changing Capturing Rate: 87.16%
+Unchanged Rate: 78.71%
+Unchanged Capture Rate: 93.99%
+Changing Number when Boundary Complete Match: 2.73%
+Changing Number when Boundary Pre Contains Cur: 7.06%
+Changing Number when Boundary Cur Contains Pre: 6.64%
+Changing Number when Boundary Partial Overlap Pre Left: 1.82%
+Changing Number when Boundary Partial Overlap Cur Left: 2.28%
+Changing Number when Boundary Disjoint: 0.75%
+Unchanging Number when Boundary Complete Match: 73.99%
+Unchanging Number when Boundary Pre Contains Cur: 1.36%
+Unchanging Number when Boundary Cur Contains Pre: 1.60%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.65%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.93%
+Unchanging Number when Boundary Disjoint: 0.18%
+Lower Bound Error percentage: 3.86%
+Upper Bound Error percentage: 0.00%
+Base Root Time per SnapShot: 0.055605s
+Prediction Time per SnapShot: 1.287981s
+
+Running build/test-index-bfs with batch_ratio=0.48
+read: 15.205127s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 1, batch_size is 17392053
+read: 0.016131s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 6.273424s
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 5.849804s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 7877196
+ Percentage of core graph edge: 21.74
+Common Graph Edges: 1449339
+Graph Size: 1449339, Edge Count For Version 666 is 1449339
+Forward Time: 4.376792s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 1077049
+ Percentage of core graph edge: 74.31
+Merged Set Size: 8432953
+------------SnapShot 0 Begins--------------
+|V|=6024259
+Lower Bound Error percentage: 5.09%
+Upper Bound Error percentage: 0.00%
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 93.58%
+Dump Prediction Correcr Rate: 76.71%
+Changing Rate: 23.29%
+Changing Capturing Rate: 84.28%
+Unchanged Rate: 76.71%
+Unchanged Capture Rate: 96.40%
+Changing Number when Boundary Complete Match: 3.66%
+Changing Number when Boundary Pre Contains Cur: 8.58%
+Changing Number when Boundary Cur Contains Pre: 7.16%
+Changing Number when Boundary Partial Overlap Pre Left: 1.62%
+Changing Number when Boundary Partial Overlap Cur Left: 1.56%
+Changing Number when Boundary Disjoint: 0.71%
+Unchanging Number when Boundary Complete Match: 73.95%
+Unchanging Number when Boundary Pre Contains Cur: 0.90%
+Unchanging Number when Boundary Cur Contains Pre: 0.76%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.45%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.48%
+Unchanging Number when Boundary Disjoint: 0.17%
+Lower Bound Error percentage: 4.99%
+Upper Bound Error percentage: 0.00%
+Base Root Time per SnapShot: 0.050311s
+Prediction Time per SnapShot: 1.121091s
+
+-----------------------------------
+
+Running build/test-index-ssnp with batch_ratio=0.08
+read: 15.055645s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 1, batch_size is 2898675
+read: 0.016834s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 5.957624s
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 6.689254s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 6601453
+ Percentage of core graph edge: 18.22
+Common Graph Edges: 30436095
+Graph Size: 30436095, Edge Count For Version 666 is 30436095
+Forward Time: 6.250586s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 6122977
+ Percentage of core graph edge: 20.12
+Merged Set Size: 7282085
+------------SnapShot 0 Begins--------------
+|V|=6024259
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 25.89%
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 97.84%
+Dump Prediction Correcr Rate: 94.71%
+Changing Rate: 5.29%
+Changing Capturing Rate: 86.25%
+Unchanged Rate: 94.71%
+Unchanged Capture Rate: 98.48%
+Changing Number when Boundary Complete Match: 0.73%
+Changing Number when Boundary Pre Contains Cur: 3.03%
+Changing Number when Boundary Cur Contains Pre: 1.53%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 93.27%
+Unchanging Number when Boundary Pre Contains Cur: 0.71%
+Unchanging Number when Boundary Cur Contains Pre: 0.73%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 25.89%
+Base Root Time per SnapShot: 0.055167s
+Prediction Time per SnapShot: 1.339544s
+
+Running build/test-index-ssnp with batch_ratio=0.16
+read: 15.066285s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 1, batch_size is 5797351
+read: 0.014466s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 6.243207s
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 6.724881s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 6601240
+ Percentage of core graph edge: 18.22
+Common Graph Edges: 24638743
+Graph Size: 24638743, Edge Count For Version 666 is 24638743
+Forward Time: 5.914820s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 5636394
+ Percentage of core graph edge: 22.88
+Merged Set Size: 7917282
+------------SnapShot 0 Begins--------------
+|V|=6024259
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 25.34%
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 96.73%
+Dump Prediction Correcr Rate: 91.08%
+Changing Rate: 8.92%
+Changing Capturing Rate: 87.09%
+Unchanged Rate: 91.08%
+Unchanged Capture Rate: 97.67%
+Changing Number when Boundary Complete Match: 1.15%
+Changing Number when Boundary Pre Contains Cur: 4.52%
+Changing Number when Boundary Cur Contains Pre: 3.25%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 88.96%
+Unchanging Number when Boundary Pre Contains Cur: 1.02%
+Unchanging Number when Boundary Cur Contains Pre: 1.10%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 25.34%
+Base Root Time per SnapShot: 0.055895s
+Prediction Time per SnapShot: 1.419164s
+
+Running build/test-index-ssnp with batch_ratio=0.24
+read: 15.095472s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 1, batch_size is 8696026
+read: 0.011005s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 6.420737s
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 6.570160s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 6605880
+ Percentage of core graph edge: 18.23
+Common Graph Edges: 18841393
+Graph Size: 18841393, Edge Count For Version 666 is 18841393
+Forward Time: 5.514172s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 5092210
+ Percentage of core graph edge: 27.03
+Merged Set Size: 8391949
+------------SnapShot 0 Begins--------------
+|V|=6024259
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 24.71%
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 96.26%
+Dump Prediction Correcr Rate: 87.96%
+Changing Rate: 12.04%
+Changing Capturing Rate: 87.91%
+Unchanged Rate: 87.96%
+Unchanged Capture Rate: 97.40%
+Changing Number when Boundary Complete Match: 1.46%
+Changing Number when Boundary Pre Contains Cur: 6.30%
+Changing Number when Boundary Cur Contains Pre: 4.28%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 85.67%
+Unchanging Number when Boundary Pre Contains Cur: 1.53%
+Unchanging Number when Boundary Cur Contains Pre: 0.76%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 24.71%
+Base Root Time per SnapShot: 0.058611s
+Prediction Time per SnapShot: 1.397991s
+
+Running build/test-index-ssnp with batch_ratio=0.32
+read: 15.063475s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 1, batch_size is 11594702
+read: 0.011876s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 7.204905s
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 6.678132s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 6601222
+ Percentage of core graph edge: 18.22
+Common Graph Edges: 13044041
+Graph Size: 13044041, Edge Count For Version 666 is 13044041
+Forward Time: 5.213282s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 4179422
+ Percentage of core graph edge: 32.04
+Merged Set Size: 8501139
+------------SnapShot 0 Begins--------------
+|V|=6024259
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 23.99%
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 95.15%
+Dump Prediction Correcr Rate: 84.90%
+Changing Rate: 15.10%
+Changing Capturing Rate: 88.67%
+Unchanged Rate: 84.90%
+Unchanged Capture Rate: 96.30%
+Changing Number when Boundary Complete Match: 1.71%
+Changing Number when Boundary Pre Contains Cur: 7.42%
+Changing Number when Boundary Cur Contains Pre: 5.96%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 81.76%
+Unchanging Number when Boundary Pre Contains Cur: 1.40%
+Unchanging Number when Boundary Cur Contains Pre: 1.74%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 23.99%
+Base Root Time per SnapShot: 0.053993s
+Prediction Time per SnapShot: 1.454795s
+
+Running build/test-index-ssnp with batch_ratio=0.40
+read: 15.098404s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 1, batch_size is 14493378
+read: 0.016992s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 6.464529s
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 6.622793s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 6603467
+ Percentage of core graph edge: 18.22
+Common Graph Edges: 7246689
+Graph Size: 7246689, Edge Count For Version 666 is 7246689
+Forward Time: 4.976361s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 3084896
+ Percentage of core graph edge: 42.57
+Merged Set Size: 8410995
+------------SnapShot 0 Begins--------------
+|V|=6024259
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 23.14%
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 94.31%
+Dump Prediction Correcr Rate: 81.18%
+Changing Rate: 18.82%
+Changing Capturing Rate: 87.99%
+Unchanged Rate: 81.18%
+Unchanged Capture Rate: 95.77%
+Changing Number when Boundary Complete Match: 2.26%
+Changing Number when Boundary Pre Contains Cur: 9.06%
+Changing Number when Boundary Cur Contains Pre: 7.51%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 77.75%
+Unchanging Number when Boundary Pre Contains Cur: 1.84%
+Unchanging Number when Boundary Cur Contains Pre: 1.59%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 23.14%
+Base Root Time per SnapShot: 0.055441s
+Prediction Time per SnapShot: 2.234810s
+
+Running build/test-index-ssnp with batch_ratio=0.48
+read: 15.058035s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 1, batch_size is 17392053
+read: 0.016930s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 6.244441s
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 6.600524s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 6600592
+ Percentage of core graph edge: 18.22
+Common Graph Edges: 1449339
+Graph Size: 1449339, Edge Count For Version 666 is 1449339
+Forward Time: 4.463672s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 1013974
+ Percentage of core graph edge: 69.96
+Merged Set Size: 7354596
+------------SnapShot 0 Begins--------------
+|V|=6024259
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 22.15%
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 93.23%
+Dump Prediction Correcr Rate: 78.16%
+Changing Rate: 21.84%
+Changing Capturing Rate: 85.43%
+Unchanged Rate: 78.16%
+Unchanged Capture Rate: 95.42%
+Changing Number when Boundary Complete Match: 3.18%
+Changing Number when Boundary Pre Contains Cur: 10.21%
+Changing Number when Boundary Cur Contains Pre: 8.45%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 74.57%
+Unchanging Number when Boundary Pre Contains Cur: 1.96%
+Unchanging Number when Boundary Cur Contains Pre: 1.62%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 21.65%
+Base Root Time per SnapShot: 0.053611s
+Prediction Time per SnapShot: 1.336258s
+
+-----------------------------------
+
+Running build/test-index-ssr with batch_ratio=0.08
+read: 15.081297s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 1, batch_size is 2898675
+read: 0.016812s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 6.435208s
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 6.708140s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 5529980
+ Percentage of core graph edge: 15.26
+Common Graph Edges: 30436095
+Graph Size: 30436095, Edge Count For Version 666 is 30436095
+Forward Time: 6.411797s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 5252280
+ Percentage of core graph edge: 17.26
+Merged Set Size: 6248695
+------------SnapShot 0 Begins--------------
+|V|=6024259
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 25.89%
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 98.75%
+Dump Prediction Correcr Rate: 99.03%
+Changing Rate: 0.97%
+Changing Capturing Rate: 84.97%
+Unchanged Rate: 99.03%
+Unchanged Capture Rate: 98.88%
+Changing Number when Boundary Complete Match: 0.15%
+Changing Number when Boundary Pre Contains Cur: 0.42%
+Changing Number when Boundary Cur Contains Pre: 0.40%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 97.92%
+Unchanging Number when Boundary Pre Contains Cur: 0.81%
+Unchanging Number when Boundary Cur Contains Pre: 0.30%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 25.89%
+Base Root Time per SnapShot: 0.056030s
+Prediction Time per SnapShot: 1.305530s
+
+Running build/test-index-ssr with batch_ratio=0.16
+read: 15.162167s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 1, batch_size is 5797351
+read: 0.013610s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 6.161345s
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 6.629567s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 5529570
+ Percentage of core graph edge: 15.26
+Common Graph Edges: 24638743
+Graph Size: 24638743, Edge Count For Version 666 is 24638743
+Forward Time: 5.943095s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 4902349
+ Percentage of core graph edge: 19.90
+Merged Set Size: 6623485
+------------SnapShot 0 Begins--------------
+|V|=6024259
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 25.34%
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 98.27%
+Dump Prediction Correcr Rate: 97.94%
+Changing Rate: 2.06%
+Changing Capturing Rate: 85.42%
+Unchanged Rate: 97.94%
+Unchanged Capture Rate: 98.54%
+Changing Number when Boundary Complete Match: 0.30%
+Changing Number when Boundary Pre Contains Cur: 0.89%
+Changing Number when Boundary Cur Contains Pre: 0.87%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 96.50%
+Unchanging Number when Boundary Pre Contains Cur: 0.97%
+Unchanging Number when Boundary Cur Contains Pre: 0.47%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 25.34%
+Base Root Time per SnapShot: 0.054609s
+Prediction Time per SnapShot: 1.364526s
+
+Running build/test-index-ssr with batch_ratio=0.24
+read: 15.091733s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 1, batch_size is 8696026
+read: 0.011963s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 6.634239s
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 6.719793s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 5530513
+ Percentage of core graph edge: 15.26
+Common Graph Edges: 18841393
+Graph Size: 18841393, Edge Count For Version 666 is 18841393
+Forward Time: 5.653503s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 4444015
+ Percentage of core graph edge: 23.59
+Merged Set Size: 7011488
+------------SnapShot 0 Begins--------------
+|V|=6024259
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 24.71%
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 97.41%
+Dump Prediction Correcr Rate: 96.70%
+Changing Rate: 3.30%
+Changing Capturing Rate: 85.13%
+Unchanged Rate: 96.70%
+Unchanged Capture Rate: 97.83%
+Changing Number when Boundary Complete Match: 0.49%
+Changing Number when Boundary Pre Contains Cur: 1.41%
+Changing Number when Boundary Cur Contains Pre: 1.40%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 94.60%
+Unchanging Number when Boundary Pre Contains Cur: 1.05%
+Unchanging Number when Boundary Cur Contains Pre: 1.05%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 24.71%
+Base Root Time per SnapShot: 0.054923s
+Prediction Time per SnapShot: 1.496736s
+
+Running build/test-index-ssr with batch_ratio=0.32
+read: 15.260637s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 1, batch_size is 11594702
+read: 0.011475s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 7.263817s
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 6.698989s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 5530025
+ Percentage of core graph edge: 15.26
+Common Graph Edges: 13044041
+Graph Size: 13044041, Edge Count For Version 666 is 13044041
+Forward Time: 5.321026s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 3812098
+ Percentage of core graph edge: 29.22
+Merged Set Size: 7237654
+------------SnapShot 0 Begins--------------
+|V|=6024259
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 23.99%
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 96.78%
+Dump Prediction Correcr Rate: 95.27%
+Changing Rate: 4.73%
+Changing Capturing Rate: 85.31%
+Unchanged Rate: 95.27%
+Unchanged Capture Rate: 97.35%
+Changing Number when Boundary Complete Match: 0.69%
+Changing Number when Boundary Pre Contains Cur: 2.02%
+Changing Number when Boundary Cur Contains Pre: 2.02%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 92.75%
+Unchanging Number when Boundary Pre Contains Cur: 1.26%
+Unchanging Number when Boundary Cur Contains Pre: 1.26%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 23.99%
+Base Root Time per SnapShot: 0.052885s
+Prediction Time per SnapShot: 1.391760s
+
+Running build/test-index-ssr with batch_ratio=0.40
+read: 15.096994s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 1, batch_size is 14493378
+read: 0.016882s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 6.673384s
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 6.665135s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 5530625
+ Percentage of core graph edge: 15.26
+Common Graph Edges: 7246689
+Graph Size: 7246689, Edge Count For Version 666 is 7246689
+Forward Time: 5.022012s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 2867619
+ Percentage of core graph edge: 39.57
+Merged Set Size: 7163021
+------------SnapShot 0 Begins--------------
+|V|=6024259
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 23.14%
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 95.12%
+Dump Prediction Correcr Rate: 93.61%
+Changing Rate: 6.39%
+Changing Capturing Rate: 85.89%
+Unchanged Rate: 93.61%
+Unchanged Capture Rate: 95.75%
+Changing Number when Boundary Complete Match: 0.90%
+Changing Number when Boundary Pre Contains Cur: 2.77%
+Changing Number when Boundary Cur Contains Pre: 2.71%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 89.64%
+Unchanging Number when Boundary Pre Contains Cur: 2.19%
+Unchanging Number when Boundary Cur Contains Pre: 1.78%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 23.14%
+Base Root Time per SnapShot: 0.052151s
+Prediction Time per SnapShot: 1.424818s
+
+Running build/test-index-ssr with batch_ratio=0.48
+read: 15.106698s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 1, batch_size is 17392053
+read: 0.012312s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 6.127564s
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 6.737389s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 5529658
+ Percentage of core graph edge: 15.26
+Common Graph Edges: 1449339
+Graph Size: 1449339, Edge Count For Version 666 is 1449339
+Forward Time: 4.418588s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 1061480
+ Percentage of core graph edge: 73.24
+Merged Set Size: 6252118
+------------SnapShot 0 Begins--------------
+|V|=6024259
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 22.15%
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 88.91%
+Dump Prediction Correcr Rate: 91.38%
+Changing Rate: 8.62%
+Changing Capturing Rate: 64.34%
+Unchanged Rate: 91.38%
+Unchanged Capture Rate: 91.23%
+Changing Number when Boundary Complete Match: 3.07%
+Changing Number when Boundary Pre Contains Cur: 2.89%
+Changing Number when Boundary Cur Contains Pre: 2.66%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 83.37%
+Unchanging Number when Boundary Pre Contains Cur: 4.43%
+Unchanging Number when Boundary Cur Contains Pre: 3.58%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 21.65%
+Base Root Time per SnapShot: 0.050615s
+Prediction Time per SnapShot: 1.311736s
+
+-----------------------------------
+
+Running build/test-index-sssp with batch_ratio=0.08
+read: 15.286049s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 1, batch_size is 2898675
+read: 0.011795s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 6.090974s
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 1.503641s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 12334288
+ Percentage of core graph edge: 34.04
+Common Graph Edges: 30436095
+Graph Size: 30436095, Edge Count For Version 666 is 30436095
+Forward Time: 1.226898s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 10758018
+ Percentage of core graph edge: 35.35
+Merged Set Size: 13039279
+------------SnapShot 0 Begins--------------
+|V|=6024259
+Lower Bound Error percentage: 0.88%
+Upper Bound Error percentage: 0.00%
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 92.26%
+Dump Prediction Correcr Rate: 93.70%
+Changing Rate: 6.30%
+Changing Capturing Rate: 79.31%
+Unchanged Rate: 93.70%
+Unchanged Capture Rate: 93.13%
+Changing Number when Boundary Complete Match: 1.30%
+Changing Number when Boundary Pre Contains Cur: 1.10%
+Changing Number when Boundary Cur Contains Pre: 1.61%
+Changing Number when Boundary Partial Overlap Pre Left: 1.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.65%
+Changing Number when Boundary Disjoint: 0.64%
+Unchanging Number when Boundary Complete Match: 87.27%
+Unchanging Number when Boundary Pre Contains Cur: 2.78%
+Unchanging Number when Boundary Cur Contains Pre: 3.14%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.25%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.26%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 0.72%
+Upper Bound Error percentage: 0.00%
+Base Root Time per SnapShot: 0.052489s
+Prediction Time per SnapShot: 1.351699s
+
+Running build/test-index-sssp with batch_ratio=0.16
+read: 15.340597s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 1, batch_size is 5797351
+read: 0.017000s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 6.758668s
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 1.460553s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 12334287
+ Percentage of core graph edge: 34.04
+Common Graph Edges: 24638743
+Graph Size: 24638743, Edge Count For Version 666 is 24638743
+Forward Time: 0.990436s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 9029848
+ Percentage of core graph edge: 36.65
+Merged Set Size: 13431158
+------------SnapShot 0 Begins--------------
+|V|=6024259
+Lower Bound Error percentage: 0.60%
+Upper Bound Error percentage: 0.00%
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 90.84%
+Dump Prediction Correcr Rate: 88.74%
+Changing Rate: 11.26%
+Changing Capturing Rate: 86.65%
+Unchanged Rate: 88.74%
+Unchanged Capture Rate: 91.37%
+Changing Number when Boundary Complete Match: 1.50%
+Changing Number when Boundary Pre Contains Cur: 2.52%
+Changing Number when Boundary Cur Contains Pre: 2.73%
+Changing Number when Boundary Partial Overlap Pre Left: 1.46%
+Changing Number when Boundary Partial Overlap Cur Left: 1.91%
+Changing Number when Boundary Disjoint: 1.12%
+Unchanging Number when Boundary Complete Match: 81.08%
+Unchanging Number when Boundary Pre Contains Cur: 3.54%
+Unchanging Number when Boundary Cur Contains Pre: 2.90%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.47%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.74%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 0.64%
+Upper Bound Error percentage: 0.00%
+Base Root Time per SnapShot: 0.051071s
+Prediction Time per SnapShot: 1.277596s
+
+Running build/test-index-sssp with batch_ratio=0.24
+read: 15.239379s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 1, batch_size is 8696026
+read: 0.017096s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 6.684783s
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 1.505780s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 12334286
+ Percentage of core graph edge: 34.04
+Common Graph Edges: 18841393
+Graph Size: 18841393, Edge Count For Version 666 is 18841393
+Forward Time: 0.748734s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 7320304
+ Percentage of core graph edge: 38.85
+Merged Set Size: 13647698
+------------SnapShot 0 Begins--------------
+|V|=6024259
+Lower Bound Error percentage: 0.65%
+Upper Bound Error percentage: 0.00%
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 91.44%
+Dump Prediction Correcr Rate: 84.45%
+Changing Rate: 15.55%
+Changing Capturing Rate: 93.05%
+Unchanged Rate: 84.45%
+Unchanged Capture Rate: 91.14%
+Changing Number when Boundary Complete Match: 1.08%
+Changing Number when Boundary Pre Contains Cur: 4.41%
+Changing Number when Boundary Cur Contains Pre: 4.18%
+Changing Number when Boundary Partial Overlap Pre Left: 2.09%
+Changing Number when Boundary Partial Overlap Cur Left: 2.22%
+Changing Number when Boundary Disjoint: 1.57%
+Unchanging Number when Boundary Complete Match: 76.96%
+Unchanging Number when Boundary Pre Contains Cur: 3.70%
+Unchanging Number when Boundary Cur Contains Pre: 2.62%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.45%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.72%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 0.77%
+Upper Bound Error percentage: 0.00%
+Base Root Time per SnapShot: 0.050669s
+Prediction Time per SnapShot: 1.171022s
+
+Running build/test-index-sssp with batch_ratio=0.32
+read: 15.227980s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 1, batch_size is 11594702
+read: 0.011509s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 6.255901s
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 1.486759s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 12334289
+ Percentage of core graph edge: 34.04
+Common Graph Edges: 13044041
+Graph Size: 13044041, Edge Count For Version 666 is 13044041
+Forward Time: 0.577081s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 5491374
+ Percentage of core graph edge: 42.10
+Merged Set Size: 13697590
+------------SnapShot 0 Begins--------------
+|V|=6024259
+Lower Bound Error percentage: 0.64%
+Upper Bound Error percentage: 0.00%
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 93.14%
+Dump Prediction Correcr Rate: 81.29%
+Changing Rate: 18.71%
+Changing Capturing Rate: 96.10%
+Unchanged Rate: 81.29%
+Unchanged Capture Rate: 92.46%
+Changing Number when Boundary Complete Match: 0.73%
+Changing Number when Boundary Pre Contains Cur: 5.21%
+Changing Number when Boundary Cur Contains Pre: 5.50%
+Changing Number when Boundary Partial Overlap Pre Left: 2.84%
+Changing Number when Boundary Partial Overlap Cur Left: 2.72%
+Changing Number when Boundary Disjoint: 1.71%
+Unchanging Number when Boundary Complete Match: 75.16%
+Unchanging Number when Boundary Pre Contains Cur: 2.14%
+Unchanging Number when Boundary Cur Contains Pre: 2.62%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.71%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.66%
+Unchanging Number when Boundary Disjoint: 0.01%
+Lower Bound Error percentage: 0.32%
+Upper Bound Error percentage: 0.00%
+Base Root Time per SnapShot: 0.072672s
+Prediction Time per SnapShot: 1.408541s
+
+Running build/test-index-sssp with batch_ratio=0.40
+read: 15.232606s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 1, batch_size is 14493378
+read: 0.021196s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 6.383023s
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 1.512256s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 12334284
+ Percentage of core graph edge: 34.04
+Common Graph Edges: 7246689
+Graph Size: 7246689, Edge Count For Version 666 is 7246689
+Forward Time: 0.343075s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 3528783
+ Percentage of core graph edge: 48.70
+Merged Set Size: 13551578
+------------SnapShot 0 Begins--------------
+|V|=6024259
+Lower Bound Error percentage: 0.87%
+Upper Bound Error percentage: 0.00%
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 95.04%
+Dump Prediction Correcr Rate: 78.71%
+Changing Rate: 21.29%
+Changing Capturing Rate: 98.38%
+Unchanged Rate: 78.71%
+Unchanged Capture Rate: 94.14%
+Changing Number when Boundary Complete Match: 0.35%
+Changing Number when Boundary Pre Contains Cur: 5.75%
+Changing Number when Boundary Cur Contains Pre: 7.77%
+Changing Number when Boundary Partial Overlap Pre Left: 2.82%
+Changing Number when Boundary Partial Overlap Cur Left: 3.02%
+Changing Number when Boundary Disjoint: 1.58%
+Unchanging Number when Boundary Complete Match: 74.10%
+Unchanging Number when Boundary Pre Contains Cur: 1.05%
+Unchanging Number when Boundary Cur Contains Pre: 2.63%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.27%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.66%
+Unchanging Number when Boundary Disjoint: 0.01%
+Lower Bound Error percentage: 0.18%
+Upper Bound Error percentage: 0.00%
+Base Root Time per SnapShot: 0.048341s
+Prediction Time per SnapShot: 1.277692s
+
+Running build/test-index-sssp with batch_ratio=0.48
+read: 15.256240s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 1, batch_size is 17392053
+read: 0.010758s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 6.391028s
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 1.480888s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 12334286
+ Percentage of core graph edge: 34.04
+Common Graph Edges: 1449339
+Graph Size: 1449339, Edge Count For Version 666 is 1449339
+Forward Time: 0.113971s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 1129322
+ Percentage of core graph edge: 77.92
+Merged Set Size: 12954398
+------------SnapShot 0 Begins--------------
+|V|=6024259
+Lower Bound Error percentage: 0.70%
+Upper Bound Error percentage: 0.00%
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 96.52%
+Dump Prediction Correcr Rate: 76.71%
+Changing Rate: 23.29%
+Changing Capturing Rate: 96.09%
+Unchanged Rate: 76.71%
+Unchanged Capture Rate: 96.65%
+Changing Number when Boundary Complete Match: 0.91%
+Changing Number when Boundary Pre Contains Cur: 8.69%
+Changing Number when Boundary Cur Contains Pre: 8.62%
+Changing Number when Boundary Partial Overlap Pre Left: 2.22%
+Changing Number when Boundary Partial Overlap Cur Left: 1.93%
+Changing Number when Boundary Disjoint: 0.91%
+Unchanging Number when Boundary Complete Match: 74.14%
+Unchanging Number when Boundary Pre Contains Cur: 1.07%
+Unchanging Number when Boundary Cur Contains Pre: 0.95%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.25%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.29%
+Unchanging Number when Boundary Disjoint: 0.01%
+Lower Bound Error percentage: 0.60%
+Upper Bound Error percentage: 0.00%
+Base Root Time per SnapShot: 0.053117s
+Prediction Time per SnapShot: 1.311814s
+
+-----------------------------------
+
+Running build/test-index-sswp with batch_ratio=0.08
+read: 15.115406s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 1, batch_size is 2898675
+read: 0.016744s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 6.280562s
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 6.649001s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 6601682
+ Percentage of core graph edge: 18.22
+Common Graph Edges: 30436095
+Graph Size: 30436095, Edge Count For Version 666 is 30436095
+Forward Time: 6.323304s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 6127860
+ Percentage of core graph edge: 20.13
+Merged Set Size: 7284437
+------------SnapShot 0 Begins--------------
+|V|=6024259
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 25.89%
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 97.84%
+Dump Prediction Correcr Rate: 94.71%
+Changing Rate: 5.29%
+Changing Capturing Rate: 86.27%
+Unchanged Rate: 94.71%
+Unchanged Capture Rate: 98.49%
+Changing Number when Boundary Complete Match: 0.73%
+Changing Number when Boundary Pre Contains Cur: 3.03%
+Changing Number when Boundary Cur Contains Pre: 1.53%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 93.28%
+Unchanging Number when Boundary Pre Contains Cur: 0.70%
+Unchanging Number when Boundary Cur Contains Pre: 0.73%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 25.89%
+Base Root Time per SnapShot: 0.055128s
+Prediction Time per SnapShot: 1.371412s
+
+Running build/test-index-sswp with batch_ratio=0.16
+read: 15.073023s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 1, batch_size is 5797351
+read: 0.016247s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 5.972389s
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 6.593722s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 6600376
+ Percentage of core graph edge: 18.22
+Common Graph Edges: 24638743
+Graph Size: 24638743, Edge Count For Version 666 is 24638743
+Forward Time: 5.872058s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 5637842
+ Percentage of core graph edge: 22.88
+Merged Set Size: 7915522
+------------SnapShot 0 Begins--------------
+|V|=6024259
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 25.34%
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 96.72%
+Dump Prediction Correcr Rate: 91.08%
+Changing Rate: 8.92%
+Changing Capturing Rate: 87.03%
+Unchanged Rate: 91.08%
+Unchanged Capture Rate: 97.67%
+Changing Number when Boundary Complete Match: 1.16%
+Changing Number when Boundary Pre Contains Cur: 4.51%
+Changing Number when Boundary Cur Contains Pre: 3.25%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 88.96%
+Unchanging Number when Boundary Pre Contains Cur: 1.02%
+Unchanging Number when Boundary Cur Contains Pre: 1.10%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 25.34%
+Base Root Time per SnapShot: 0.055794s
+Prediction Time per SnapShot: 1.334407s
+
+Running build/test-index-sswp with batch_ratio=0.24
+read: 15.067650s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 1, batch_size is 8696026
+read: 0.016993s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 6.714409s
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 6.700661s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 6605572
+ Percentage of core graph edge: 18.23
+Common Graph Edges: 18841393
+Graph Size: 18841393, Edge Count For Version 666 is 18841393
+Forward Time: 5.543941s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 5096665
+ Percentage of core graph edge: 27.05
+Merged Set Size: 8389561
+------------SnapShot 0 Begins--------------
+|V|=6024259
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 24.71%
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 96.21%
+Dump Prediction Correcr Rate: 87.96%
+Changing Rate: 12.04%
+Changing Capturing Rate: 87.96%
+Unchanged Rate: 87.96%
+Unchanged Capture Rate: 97.33%
+Changing Number when Boundary Complete Match: 1.45%
+Changing Number when Boundary Pre Contains Cur: 6.33%
+Changing Number when Boundary Cur Contains Pre: 4.26%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 85.62%
+Unchanging Number when Boundary Pre Contains Cur: 1.58%
+Unchanging Number when Boundary Cur Contains Pre: 0.76%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 24.71%
+Base Root Time per SnapShot: 0.056420s
+Prediction Time per SnapShot: 1.435553s
+
+Running build/test-index-sswp with batch_ratio=0.32
+read: 15.068581s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 1, batch_size is 11594702
+read: 0.011201s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 7.030869s
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 6.567844s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 6598229
+ Percentage of core graph edge: 18.21
+Common Graph Edges: 13044041
+Graph Size: 13044041, Edge Count For Version 666 is 13044041
+Forward Time: 5.218309s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 4185420
+ Percentage of core graph edge: 32.09
+Merged Set Size: 8481453
+------------SnapShot 0 Begins--------------
+|V|=6024259
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 23.99%
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 95.11%
+Dump Prediction Correcr Rate: 84.90%
+Changing Rate: 15.10%
+Changing Capturing Rate: 88.68%
+Unchanged Rate: 84.90%
+Unchanged Capture Rate: 96.25%
+Changing Number when Boundary Complete Match: 1.71%
+Changing Number when Boundary Pre Contains Cur: 7.44%
+Changing Number when Boundary Cur Contains Pre: 5.95%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 81.72%
+Unchanging Number when Boundary Pre Contains Cur: 1.45%
+Unchanging Number when Boundary Cur Contains Pre: 1.73%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 23.99%
+Base Root Time per SnapShot: 0.055782s
+Prediction Time per SnapShot: 1.443058s
+
+Running build/test-index-sswp with batch_ratio=0.40
+read: 15.053901s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 1, batch_size is 14493378
+read: 0.010886s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 6.567108s
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 7.129821s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 6606543
+ Percentage of core graph edge: 18.23
+Common Graph Edges: 7246689
+Graph Size: 7246689, Edge Count For Version 666 is 7246689
+Forward Time: 5.058805s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 3086320
+ Percentage of core graph edge: 42.59
+Merged Set Size: 8418337
+------------SnapShot 0 Begins--------------
+|V|=6024259
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 23.14%
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 94.31%
+Dump Prediction Correcr Rate: 81.18%
+Changing Rate: 18.82%
+Changing Capturing Rate: 88.12%
+Unchanged Rate: 81.18%
+Unchanged Capture Rate: 95.75%
+Changing Number when Boundary Complete Match: 2.24%
+Changing Number when Boundary Pre Contains Cur: 9.08%
+Changing Number when Boundary Cur Contains Pre: 7.50%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 77.72%
+Unchanging Number when Boundary Pre Contains Cur: 1.87%
+Unchanging Number when Boundary Cur Contains Pre: 1.58%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 23.14%
+Base Root Time per SnapShot: 0.060693s
+Prediction Time per SnapShot: 1.475114s
+
+Running build/test-index-sswp with batch_ratio=0.48
+read: 15.007503s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 1, batch_size is 17392053
+read: 0.010915s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 6.371093s
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 6.657274s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 6605007
+ Percentage of core graph edge: 18.23
+Common Graph Edges: 1449339
+Graph Size: 1449339, Edge Count For Version 666 is 1449339
+Forward Time: 4.497809s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 1014379
+ Percentage of core graph edge: 69.99
+Merged Set Size: 7359383
+------------SnapShot 0 Begins--------------
+|V|=6024259
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 22.15%
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 93.09%
+Dump Prediction Correcr Rate: 78.16%
+Changing Rate: 21.84%
+Changing Capturing Rate: 84.93%
+Unchanged Rate: 78.16%
+Unchanged Capture Rate: 95.37%
+Changing Number when Boundary Complete Match: 3.29%
+Changing Number when Boundary Pre Contains Cur: 10.30%
+Changing Number when Boundary Cur Contains Pre: 8.25%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 74.53%
+Unchanging Number when Boundary Pre Contains Cur: 2.02%
+Unchanging Number when Boundary Cur Contains Pre: 1.60%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 21.65%
+Base Root Time per SnapShot: 0.054061s
+Prediction Time per SnapShot: 1.439743s
+
+-----------------------------------
+
+Running build/test-index-viterbi with batch_ratio=0.08
+read: 15.086145s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 1, batch_size is 2898675
+read: 0.012230s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 6.275080s
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 1.410359s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 4344970
+ Percentage of core graph edge: 11.99
+Common Graph Edges: 30436095
+Graph Size: 30436095, Edge Count For Version 666 is 30436095
+Forward Time: 1.133800s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 4148310
+ Percentage of core graph edge: 13.63
+Merged Set Size: 4344970
+------------SnapShot 0 Begins--------------
+|V|=6024259
+Lower Bound Error percentage: 20.24%
+Upper Bound Error percentage: 25.89%
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 97.70%
+Dump Prediction Correcr Rate: 95.26%
+Changing Rate: 4.74%
+Changing Capturing Rate: 71.20%
+Unchanged Rate: 95.26%
+Unchanged Capture Rate: 99.02%
+Changing Number when Boundary Complete Match: 1.37%
+Changing Number when Boundary Pre Contains Cur: 1.37%
+Changing Number when Boundary Cur Contains Pre: 2.00%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 94.33%
+Unchanging Number when Boundary Pre Contains Cur: 0.43%
+Unchanging Number when Boundary Cur Contains Pre: 0.50%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 20.35%
+Upper Bound Error percentage: 25.89%
+Base Root Time per SnapShot: 0.070090s
+Prediction Time per SnapShot: 1.462123s
+
+Running build/test-index-viterbi with batch_ratio=0.16
+read: 15.108480s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 1, batch_size is 5797351
+read: 0.016707s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 6.174876s
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 1.410608s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 4345201
+ Percentage of core graph edge: 11.99
+Common Graph Edges: 24638743
+Graph Size: 24638743, Edge Count For Version 666 is 24638743
+Forward Time: 0.984910s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 3901409
+ Percentage of core graph edge: 15.83
+Merged Set Size: 4345201
+------------SnapShot 0 Begins--------------
+|V|=6024259
+Lower Bound Error percentage: 20.01%
+Upper Bound Error percentage: 25.34%
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 96.54%
+Dump Prediction Correcr Rate: 91.07%
+Changing Rate: 8.93%
+Changing Capturing Rate: 76.71%
+Unchanged Rate: 91.07%
+Unchanged Capture Rate: 98.48%
+Changing Number when Boundary Complete Match: 2.08%
+Changing Number when Boundary Pre Contains Cur: 3.50%
+Changing Number when Boundary Cur Contains Pre: 3.35%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 89.68%
+Unchanging Number when Boundary Pre Contains Cur: 0.74%
+Unchanging Number when Boundary Cur Contains Pre: 0.64%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 20.12%
+Upper Bound Error percentage: 25.34%
+Base Root Time per SnapShot: 0.068292s
+Prediction Time per SnapShot: 1.433442s
+
+Running build/test-index-viterbi with batch_ratio=0.24
+read: 15.166056s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 1, batch_size is 8696026
+read: 0.011266s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 7.342779s
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 1.449702s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 4350953
+ Percentage of core graph edge: 12.01
+Common Graph Edges: 18841393
+Graph Size: 18841393, Edge Count For Version 666 is 18841393
+Forward Time: 0.712631s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 3582169
+ Percentage of core graph edge: 19.01
+Merged Set Size: 4350953
+------------SnapShot 0 Begins--------------
+|V|=6024259
+Lower Bound Error percentage: 19.69%
+Upper Bound Error percentage: 24.71%
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 95.67%
+Dump Prediction Correcr Rate: 86.42%
+Changing Rate: 13.58%
+Changing Capturing Rate: 80.96%
+Unchanged Rate: 86.42%
+Unchanged Capture Rate: 97.98%
+Changing Number when Boundary Complete Match: 2.59%
+Changing Number when Boundary Pre Contains Cur: 5.05%
+Changing Number when Boundary Cur Contains Pre: 5.95%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 84.67%
+Unchanging Number when Boundary Pre Contains Cur: 0.80%
+Unchanging Number when Boundary Cur Contains Pre: 0.94%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 19.71%
+Upper Bound Error percentage: 24.71%
+Base Root Time per SnapShot: 0.070448s
+Prediction Time per SnapShot: 1.736986s
+
+Running build/test-index-viterbi with batch_ratio=0.32
+read: 16.668095s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 1, batch_size is 11594702
+read: 0.011205s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 6.529432s
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 1.423525s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 4343088
+ Percentage of core graph edge: 11.99
+Common Graph Edges: 13044041
+Graph Size: 13044041, Edge Count For Version 666 is 13044041
+Forward Time: 0.571030s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 3129557
+ Percentage of core graph edge: 23.99
+Merged Set Size: 4343088
+------------SnapShot 0 Begins--------------
+|V|=6024259
+Lower Bound Error percentage: 19.63%
+Upper Bound Error percentage: 23.99%
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 95.59%
+Dump Prediction Correcr Rate: 82.54%
+Changing Rate: 17.46%
+Changing Capturing Rate: 84.19%
+Unchanged Rate: 82.54%
+Unchanged Capture Rate: 98.00%
+Changing Number when Boundary Complete Match: 2.76%
+Changing Number when Boundary Pre Contains Cur: 6.96%
+Changing Number when Boundary Cur Contains Pre: 7.74%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 80.89%
+Unchanging Number when Boundary Pre Contains Cur: 0.76%
+Unchanging Number when Boundary Cur Contains Pre: 0.89%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 19.03%
+Upper Bound Error percentage: 23.99%
+Base Root Time per SnapShot: 0.063809s
+Prediction Time per SnapShot: 1.492405s
+
+Running build/test-index-viterbi with batch_ratio=0.40
+read: 15.091272s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 1, batch_size is 14493378
+read: 0.010987s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 6.240750s
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 1.425978s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 4345415
+ Percentage of core graph edge: 11.99
+Common Graph Edges: 7246689
+Graph Size: 7246689, Edge Count For Version 666 is 7246689
+Forward Time: 0.336493s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 2441609
+ Percentage of core graph edge: 33.69
+Merged Set Size: 4345415
+------------SnapShot 0 Begins--------------
+|V|=6024259
+Lower Bound Error percentage: 19.21%
+Upper Bound Error percentage: 23.14%
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 96.14%
+Dump Prediction Correcr Rate: 79.47%
+Changing Rate: 20.53%
+Changing Capturing Rate: 87.33%
+Unchanged Rate: 79.47%
+Unchanged Capture Rate: 98.41%
+Changing Number when Boundary Complete Match: 2.60%
+Changing Number when Boundary Pre Contains Cur: 8.98%
+Changing Number when Boundary Cur Contains Pre: 8.95%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 78.21%
+Unchanging Number when Boundary Pre Contains Cur: 0.60%
+Unchanging Number when Boundary Cur Contains Pre: 0.66%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 18.93%
+Upper Bound Error percentage: 23.14%
+Base Root Time per SnapShot: 0.065719s
+Prediction Time per SnapShot: 1.448504s
+
+Running build/test-index-viterbi with batch_ratio=0.48
+read: 15.103939s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 1, batch_size is 17392053
+read: 0.015491s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 6.300209s
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 1.453246s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 4344672
+ Percentage of core graph edge: 11.99
+Common Graph Edges: 1449339
+Graph Size: 1449339, Edge Count For Version 666 is 1449339
+Forward Time: 0.184954s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 1024410
+ Percentage of core graph edge: 70.68
+Merged Set Size: 4345155
+------------SnapShot 0 Begins--------------
+|V|=6024259
+Lower Bound Error percentage: 18.68%
+Upper Bound Error percentage: 22.15%
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 97.44%
+Dump Prediction Correcr Rate: 76.64%
+Changing Rate: 23.36%
+Changing Capturing Rate: 92.49%
+Unchanged Rate: 76.64%
+Unchanged Capture Rate: 98.95%
+Changing Number when Boundary Complete Match: 1.75%
+Changing Number when Boundary Pre Contains Cur: 10.50%
+Changing Number when Boundary Cur Contains Pre: 11.11%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 75.84%
+Unchanging Number when Boundary Pre Contains Cur: 0.37%
+Unchanging Number when Boundary Cur Contains Pre: 0.44%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 17.97%
+Upper Bound Error percentage: 21.65%
+Base Root Time per SnapShot: 0.092466s
+Prediction Time per SnapShot: 1.478643s
+
+-----------------------------------
+
+Running build/test-index-wcc with batch_ratio=0.08
+read: 15.375080s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 1, batch_size is 2898675
+read: 0.011842s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 6.289510s
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 7.334756s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 4374850
+ Percentage of core graph edge: 12.07
+Common Graph Edges: 30436095
+Graph Size: 30436095, Edge Count For Version 666 is 30436095
+Forward Time: 6.863841s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 4137867
+ Percentage of core graph edge: 13.60
+Merged Set Size: 4888856
+------------SnapShot 0 Begins--------------
+|V|=6024259
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 0.00%
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 98.59%
+Dump Prediction Correcr Rate: 98.61%
+Changing Rate: 1.39%
+Changing Capturing Rate: 86.10%
+Unchanged Rate: 98.61%
+Unchanged Capture Rate: 98.76%
+Changing Number when Boundary Complete Match: 0.19%
+Changing Number when Boundary Pre Contains Cur: 0.60%
+Changing Number when Boundary Cur Contains Pre: 0.60%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 97.39%
+Unchanging Number when Boundary Pre Contains Cur: 0.60%
+Unchanging Number when Boundary Cur Contains Pre: 0.62%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 0.00%
+Base Root Time per SnapShot: 3.953810s
+Prediction Time per SnapShot: 0.021216s
+
+Running build/test-index-wcc with batch_ratio=0.16
+read: 15.438535s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 1, batch_size is 5797351
+read: 0.014871s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 6.324504s
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 7.320720s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 4375343
+ Percentage of core graph edge: 12.08
+Common Graph Edges: 24638743
+Graph Size: 24638743, Edge Count For Version 666 is 24638743
+Forward Time: 6.440727s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 3856067
+ Percentage of core graph edge: 15.65
+Merged Set Size: 5285611
+------------SnapShot 0 Begins--------------
+|V|=6024259
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 0.00%
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 97.65%
+Dump Prediction Correcr Rate: 97.04%
+Changing Rate: 2.96%
+Changing Capturing Rate: 86.42%
+Unchanged Rate: 97.04%
+Unchanged Capture Rate: 97.99%
+Changing Number when Boundary Complete Match: 0.40%
+Changing Number when Boundary Pre Contains Cur: 1.28%
+Changing Number when Boundary Cur Contains Pre: 1.28%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 95.09%
+Unchanging Number when Boundary Pre Contains Cur: 0.98%
+Unchanging Number when Boundary Cur Contains Pre: 0.98%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 0.00%
+Base Root Time per SnapShot: 3.919508s
+Prediction Time per SnapShot: 0.023058s
+
+Running build/test-index-wcc with batch_ratio=0.24
+read: 15.443095s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 1, batch_size is 8696026
+read: 0.011178s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 6.134619s
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 7.209868s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 4375562
+ Percentage of core graph edge: 12.08
+Common Graph Edges: 18841393
+Graph Size: 18841393, Edge Count For Version 666 is 18841393
+Forward Time: 5.733704s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 3492546
+ Percentage of core graph edge: 18.54
+Merged Set Size: 5619908
+------------SnapShot 0 Begins--------------
+|V|=6024259
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 0.00%
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 96.59%
+Dump Prediction Correcr Rate: 95.26%
+Changing Rate: 4.74%
+Changing Capturing Rate: 86.62%
+Unchanged Rate: 95.26%
+Unchanged Capture Rate: 97.09%
+Changing Number when Boundary Complete Match: 0.63%
+Changing Number when Boundary Pre Contains Cur: 2.06%
+Changing Number when Boundary Cur Contains Pre: 2.05%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 92.48%
+Unchanging Number when Boundary Pre Contains Cur: 1.39%
+Unchanging Number when Boundary Cur Contains Pre: 1.39%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 0.00%
+Base Root Time per SnapShot: 3.738069s
+Prediction Time per SnapShot: 0.021009s
+
+Running build/test-index-wcc with batch_ratio=0.32
+read: 15.377152s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 1, batch_size is 11594702
+read: 0.011478s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 7.575647s
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 7.265519s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 4375747
+ Percentage of core graph edge: 12.08
+Common Graph Edges: 13044041
+Graph Size: 13044041, Edge Count For Version 666 is 13044041
+Forward Time: 5.429564s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 3007925
+ Percentage of core graph edge: 23.06
+Merged Set Size: 5823349
+------------SnapShot 0 Begins--------------
+|V|=6024259
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 0.00%
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 95.02%
+Dump Prediction Correcr Rate: 93.21%
+Changing Rate: 6.79%
+Changing Capturing Rate: 86.86%
+Unchanged Rate: 93.21%
+Unchanged Capture Rate: 95.62%
+Changing Number when Boundary Complete Match: 0.89%
+Changing Number when Boundary Pre Contains Cur: 2.95%
+Changing Number when Boundary Cur Contains Pre: 2.95%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 89.12%
+Unchanging Number when Boundary Pre Contains Cur: 2.05%
+Unchanging Number when Boundary Cur Contains Pre: 2.03%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 0.00%
+Base Root Time per SnapShot: 3.967908s
+Prediction Time per SnapShot: 0.022348s
+
+Running build/test-index-wcc with batch_ratio=0.40
+read: 15.373770s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 1, batch_size is 14493378
+read: 0.017142s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 7.163758s
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 7.286451s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 4376935
+ Percentage of core graph edge: 12.08
+Common Graph Edges: 7246689
+Graph Size: 7246689, Edge Count For Version 666 is 7246689
+Forward Time: 4.956864s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 2290601
+ Percentage of core graph edge: 31.61
+Merged Set Size: 5796936
+------------SnapShot 0 Begins--------------
+|V|=6024259
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 0.00%
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 92.03%
+Dump Prediction Correcr Rate: 90.82%
+Changing Rate: 9.18%
+Changing Capturing Rate: 87.00%
+Unchanged Rate: 90.82%
+Unchanged Capture Rate: 92.54%
+Changing Number when Boundary Complete Match: 1.19%
+Changing Number when Boundary Pre Contains Cur: 3.99%
+Changing Number when Boundary Cur Contains Pre: 3.99%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 84.05%
+Unchanging Number when Boundary Pre Contains Cur: 3.40%
+Unchanging Number when Boundary Cur Contains Pre: 3.38%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 0.00%
+Base Root Time per SnapShot: 3.584109s
+Prediction Time per SnapShot: 0.036309s
+
+Running build/test-index-wcc with batch_ratio=0.48
+read: 15.388992s
+loading graph /home/cgao037/graph/sx/stack_snap, root file is source/sx.txt, batch_num is 1, batch_size is 17392053
+read: 0.017147s
+|E|=36233445
+|V|=6024259
+Union Graph Marked: 6.491209s
+Graph Size: 36233445, Edge Count For Version 999 is 36233445
+Forward Time: 7.387032s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 4375264
+ Percentage of core graph edge: 12.08
+Common Graph Edges: 1449339
+Graph Size: 1449339, Edge Count For Version 666 is 1449339
+Forward Time: 4.550876s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 881709
+ Percentage of core graph edge: 60.84
+Merged Set Size: 5082276
+------------SnapShot 0 Begins--------------
+|V|=6024259
+Lower Bound Error percentage: 11.37%
+Upper Bound Error percentage: 0.00%
+------------SnapShot 1 Begins--------------
+|V|=6024259
+Correct Prediction: 11.95%
+Dump Prediction Correcr Rate: 88.05%
+Changing Rate: 11.95%
+Changing Capturing Rate: 100.00%
+Unchanged Rate: 88.05%
+Unchanged Capture Rate: 0.00%
+Changing Number when Boundary Complete Match: 0.00%
+Changing Number when Boundary Pre Contains Cur: 0.00%
+Changing Number when Boundary Cur Contains Pre: 6.83%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.56%
+Changing Number when Boundary Disjoint: 4.56%
+Unchanging Number when Boundary Complete Match: 0.00%
+Unchanging Number when Boundary Pre Contains Cur: 8.76%
+Unchanging Number when Boundary Cur Contains Pre: 71.87%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.59%
+Unchanging Number when Boundary Disjoint: 6.83%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 0.00%
+Base Root Time per SnapShot: 3.536590s
+Prediction Time per SnapShot: 0.021832s
+
+-----------------------------------
+

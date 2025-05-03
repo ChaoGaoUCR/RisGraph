@@ -1,0 +1,2156 @@
+Running build/test-index-bfs with batch_ratio=0.08
+Error: Invalid line "% asym unweighted"
+read: 181.456466s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 1, batch_size is 34977393
+read: 0.089141s
+|E|=437217424
+|V|=13593033
+Union Graph Marked: 46.417381s
+Graph Size: 437217424, Edge Count For Version 999 is 437217424
+Forward Time: 24.652037s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 57218842
+ Percentage of core graph edge: 13.09
+Common Graph Edges: 367262638
+Graph Size: 367262638, Edge Count For Version 666 is 367262638
+Forward Time: 22.574252s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 53732799
+ Percentage of core graph edge: 14.63
+Merged Set Size: 70360555
+------------SnapShot 0 Begins--------------
+|V|=13593033
+Lower Bound Error percentage: 22.96%
+Upper Bound Error percentage: 0.00%
+------------SnapShot 1 Begins--------------
+|V|=13593033
+Correct Prediction: 71.56%
+Dump Prediction Correcr Rate: 79.96%
+Changing Rate: 20.04%
+Changing Capturing Rate: 82.93%
+Unchanged Rate: 79.96%
+Unchanged Capture Rate: 68.71%
+Changing Number when Boundary Complete Match: 3.42%
+Changing Number when Boundary Pre Contains Cur: 7.56%
+Changing Number when Boundary Cur Contains Pre: 6.24%
+Changing Number when Boundary Partial Overlap Pre Left: 0.96%
+Changing Number when Boundary Partial Overlap Cur Left: 1.17%
+Changing Number when Boundary Disjoint: 0.69%
+Unchanging Number when Boundary Complete Match: 54.94%
+Unchanging Number when Boundary Pre Contains Cur: 9.61%
+Unchanging Number when Boundary Cur Contains Pre: 10.36%
+Unchanging Number when Boundary Partial Overlap Pre Left: 1.89%
+Unchanging Number when Boundary Partial Overlap Cur Left: 2.56%
+Unchanging Number when Boundary Disjoint: 0.60%
+Lower Bound Error percentage: 22.17%
+Upper Bound Error percentage: 0.00%
+Base Root Time per SnapShot: 0.209205s
+Prediction Time per SnapShot: 2.902544s
+
+Running build/test-index-bfs with batch_ratio=0.16
+Error: Invalid line "% asym unweighted"
+read: 179.356454s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 1, batch_size is 69954787
+read: 0.089223s
+|E|=437217424
+|V|=13593033
+Union Graph Marked: 45.502585s
+Graph Size: 437217424, Edge Count For Version 999 is 437217424
+Forward Time: 24.648900s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 57223768
+ Percentage of core graph edge: 13.09
+Common Graph Edges: 297307850
+Graph Size: 297307850, Edge Count For Version 666 is 297307850
+Forward Time: 20.214618s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 49763216
+ Percentage of core graph edge: 16.74
+Merged Set Size: 75975969
+------------SnapShot 0 Begins--------------
+|V|=13593033
+Lower Bound Error percentage: 20.85%
+Upper Bound Error percentage: 0.00%
+------------SnapShot 1 Begins--------------
+|V|=13593033
+Correct Prediction: 74.95%
+Dump Prediction Correcr Rate: 66.53%
+Changing Rate: 33.47%
+Changing Capturing Rate: 92.83%
+Unchanged Rate: 66.53%
+Unchanged Capture Rate: 65.96%
+Changing Number when Boundary Complete Match: 2.40%
+Changing Number when Boundary Pre Contains Cur: 14.95%
+Changing Number when Boundary Cur Contains Pre: 9.55%
+Changing Number when Boundary Partial Overlap Pre Left: 3.22%
+Changing Number when Boundary Partial Overlap Cur Left: 1.45%
+Changing Number when Boundary Disjoint: 1.90%
+Unchanging Number when Boundary Complete Match: 43.89%
+Unchanging Number when Boundary Pre Contains Cur: 11.18%
+Unchanging Number when Boundary Cur Contains Pre: 5.18%
+Unchanging Number when Boundary Partial Overlap Pre Left: 3.01%
+Unchanging Number when Boundary Partial Overlap Cur Left: 1.71%
+Unchanging Number when Boundary Disjoint: 1.57%
+Lower Bound Error percentage: 23.50%
+Upper Bound Error percentage: 0.00%
+Base Root Time per SnapShot: 0.201245s
+Prediction Time per SnapShot: 2.693964s
+
+Running build/test-index-bfs with batch_ratio=0.24
+Error: Invalid line "% asym unweighted"
+read: 179.323871s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 1, batch_size is 104932181
+read: 0.089935s
+|E|=437217424
+|V|=13593033
+Union Graph Marked: 45.535701s
+Graph Size: 437217424, Edge Count For Version 999 is 437217424
+Forward Time: 24.553642s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 57219458
+ Percentage of core graph edge: 13.09
+Common Graph Edges: 227353062
+Graph Size: 227353062, Edge Count For Version 666 is 227353062
+Forward Time: 18.389966s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 44987129
+ Percentage of core graph edge: 19.79
+Merged Set Size: 78781302
+------------SnapShot 0 Begins--------------
+|V|=13593033
+Lower Bound Error percentage: 3.51%
+Upper Bound Error percentage: 0.00%
+------------SnapShot 1 Begins--------------
+|V|=13593033
+Correct Prediction: 82.01%
+Dump Prediction Correcr Rate: 58.46%
+Changing Rate: 41.54%
+Changing Capturing Rate: 93.90%
+Unchanged Rate: 58.46%
+Unchanged Capture Rate: 73.56%
+Changing Number when Boundary Complete Match: 2.54%
+Changing Number when Boundary Pre Contains Cur: 18.72%
+Changing Number when Boundary Cur Contains Pre: 12.64%
+Changing Number when Boundary Partial Overlap Pre Left: 5.18%
+Changing Number when Boundary Partial Overlap Cur Left: 1.41%
+Changing Number when Boundary Disjoint: 1.06%
+Unchanging Number when Boundary Complete Match: 43.00%
+Unchanging Number when Boundary Pre Contains Cur: 8.66%
+Unchanging Number when Boundary Cur Contains Pre: 2.27%
+Unchanging Number when Boundary Partial Overlap Pre Left: 3.60%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.51%
+Unchanging Number when Boundary Disjoint: 0.41%
+Lower Bound Error percentage: 17.28%
+Upper Bound Error percentage: 0.00%
+Base Root Time per SnapShot: 0.193725s
+Prediction Time per SnapShot: 2.634180s
+
+Running build/test-index-bfs with batch_ratio=0.32
+Error: Invalid line "% asym unweighted"
+read: 179.668657s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 1, batch_size is 139909575
+read: 0.090390s
+|E|=437217424
+|V|=13593033
+Union Graph Marked: 46.549771s
+Graph Size: 437217424, Edge Count For Version 999 is 437217424
+Forward Time: 24.927677s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 57220386
+ Percentage of core graph edge: 13.09
+Common Graph Edges: 157398274
+Graph Size: 157398274, Edge Count For Version 666 is 157398274
+Forward Time: 16.109040s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 39086187
+ Percentage of core graph edge: 24.83
+Merged Set Size: 79913215
+------------SnapShot 0 Begins--------------
+|V|=13593033
+Lower Bound Error percentage: 2.89%
+Upper Bound Error percentage: 0.00%
+------------SnapShot 1 Begins--------------
+|V|=13593033
+Correct Prediction: 87.12%
+Dump Prediction Correcr Rate: 52.98%
+Changing Rate: 47.02%
+Changing Capturing Rate: 93.80%
+Unchanged Rate: 52.98%
+Unchanged Capture Rate: 81.19%
+Changing Number when Boundary Complete Match: 2.91%
+Changing Number when Boundary Pre Contains Cur: 22.75%
+Changing Number when Boundary Cur Contains Pre: 12.82%
+Changing Number when Boundary Partial Overlap Pre Left: 5.68%
+Changing Number when Boundary Partial Overlap Cur Left: 0.73%
+Changing Number when Boundary Disjoint: 2.13%
+Unchanging Number when Boundary Complete Match: 43.02%
+Unchanging Number when Boundary Pre Contains Cur: 5.42%
+Unchanging Number when Boundary Cur Contains Pre: 0.74%
+Unchanging Number when Boundary Partial Overlap Pre Left: 2.68%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.30%
+Unchanging Number when Boundary Disjoint: 0.82%
+Lower Bound Error percentage: 21.35%
+Upper Bound Error percentage: 0.00%
+Base Root Time per SnapShot: 0.187377s
+Prediction Time per SnapShot: 2.729361s
+
+Running build/test-index-bfs with batch_ratio=0.40
+Error: Invalid line "% asym unweighted"
+read: 179.272562s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 1, batch_size is 174886969
+read: 0.089287s
+|E|=437217424
+|V|=13593033
+Union Graph Marked: 46.949601s
+Graph Size: 437217424, Edge Count For Version 999 is 437217424
+Forward Time: 24.837429s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 57226309
+ Percentage of core graph edge: 13.09
+Common Graph Edges: 87443486
+Graph Size: 87443486, Edge Count For Version 666 is 87443486
+Forward Time: 13.286448s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 28241236
+ Percentage of core graph edge: 32.30
+Merged Set Size: 76212744
+------------SnapShot 0 Begins--------------
+|V|=13593033
+Lower Bound Error percentage: 2.85%
+Upper Bound Error percentage: 0.00%
+------------SnapShot 1 Begins--------------
+|V|=13593033
+Correct Prediction: 90.49%
+Dump Prediction Correcr Rate: 49.87%
+Changing Rate: 50.13%
+Changing Capturing Rate: 90.91%
+Unchanged Rate: 49.87%
+Unchanged Capture Rate: 90.07%
+Changing Number when Boundary Complete Match: 4.55%
+Changing Number when Boundary Pre Contains Cur: 21.18%
+Changing Number when Boundary Cur Contains Pre: 19.00%
+Changing Number when Boundary Partial Overlap Pre Left: 3.37%
+Changing Number when Boundary Partial Overlap Cur Left: 0.57%
+Changing Number when Boundary Disjoint: 1.46%
+Unchanging Number when Boundary Complete Match: 44.92%
+Unchanging Number when Boundary Pre Contains Cur: 2.86%
+Unchanging Number when Boundary Cur Contains Pre: 0.27%
+Unchanging Number when Boundary Partial Overlap Pre Left: 1.35%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.11%
+Unchanging Number when Boundary Disjoint: 0.36%
+Lower Bound Error percentage: 18.57%
+Upper Bound Error percentage: 0.00%
+Base Root Time per SnapShot: 0.185043s
+Prediction Time per SnapShot: 2.657680s
+
+Running build/test-index-bfs with batch_ratio=0.48
+Error: Invalid line "% asym unweighted"
+read: 179.461035s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 1, batch_size is 209864363
+read: 0.089749s
+|E|=437217424
+|V|=13593033
+Union Graph Marked: 46.472532s
+Graph Size: 437217424, Edge Count For Version 999 is 437217424
+Forward Time: 24.562394s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 57220325
+ Percentage of core graph edge: 13.09
+Common Graph Edges: 17488698
+Graph Size: 17488698, Edge Count For Version 666 is 17488698
+Forward Time: 10.708232s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 9366692
+ Percentage of core graph edge: 53.56
+Merged Set Size: 63436410
+------------SnapShot 0 Begins--------------
+|V|=13593033
+Lower Bound Error percentage: 3.73%
+Upper Bound Error percentage: 0.00%
+------------SnapShot 1 Begins--------------
+|V|=13593033
+Correct Prediction: 89.43%
+Dump Prediction Correcr Rate: 49.68%
+Changing Rate: 50.32%
+Changing Capturing Rate: 84.40%
+Unchanged Rate: 49.68%
+Unchanged Capture Rate: 94.52%
+Changing Number when Boundary Complete Match: 7.85%
+Changing Number when Boundary Pre Contains Cur: 15.26%
+Changing Number when Boundary Cur Contains Pre: 22.37%
+Changing Number when Boundary Partial Overlap Pre Left: 2.30%
+Changing Number when Boundary Partial Overlap Cur Left: 2.36%
+Changing Number when Boundary Disjoint: 0.18%
+Unchanging Number when Boundary Complete Match: 46.96%
+Unchanging Number when Boundary Pre Contains Cur: 0.72%
+Unchanging Number when Boundary Cur Contains Pre: 0.80%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.52%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.67%
+Unchanging Number when Boundary Disjoint: 0.02%
+Lower Bound Error percentage: 2.87%
+Upper Bound Error percentage: 0.00%
+Base Root Time per SnapShot: 0.164624s
+Prediction Time per SnapShot: 2.740377s
+
+-----------------------------------
+
+Running build/test-index-ssnp with batch_ratio=0.08
+Error: Invalid line "% asym unweighted"
+read: 177.467771s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 1, batch_size is 34977393
+read: 0.087823s
+|E|=437217424
+|V|=13593033
+Union Graph Marked: 46.781907s
+Graph Size: 437217424, Edge Count For Version 999 is 437217424
+Forward Time: 27.420083s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 36115036
+ Percentage of core graph edge: 8.26
+Common Graph Edges: 367262638
+Graph Size: 367262638, Edge Count For Version 666 is 367262638
+Forward Time: 25.113608s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 35085953
+ Percentage of core graph edge: 9.55
+Merged Set Size: 41335176
+------------SnapShot 0 Begins--------------
+|V|=13593033
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 54.44%
+------------SnapShot 1 Begins--------------
+|V|=13593033
+Correct Prediction: 96.94%
+Dump Prediction Correcr Rate: 87.08%
+Changing Rate: 12.92%
+Changing Capturing Rate: 92.70%
+Unchanged Rate: 87.08%
+Unchanged Capture Rate: 97.57%
+Changing Number when Boundary Complete Match: 0.94%
+Changing Number when Boundary Pre Contains Cur: 5.87%
+Changing Number when Boundary Cur Contains Pre: 6.11%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 84.97%
+Unchanging Number when Boundary Pre Contains Cur: 0.89%
+Unchanging Number when Boundary Cur Contains Pre: 1.23%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 56.27%
+Base Root Time per SnapShot: 0.238389s
+Prediction Time per SnapShot: 2.946405s
+
+Running build/test-index-ssnp with batch_ratio=0.16
+Error: Invalid line "% asym unweighted"
+read: 177.847569s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 1, batch_size is 69954787
+read: 0.091192s
+|E|=437217424
+|V|=13593033
+Union Graph Marked: 46.288276s
+Graph Size: 437217424, Edge Count For Version 999 is 437217424
+Forward Time: 27.183183s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 36129785
+ Percentage of core graph edge: 8.26
+Common Graph Edges: 297307850
+Graph Size: 297307850, Edge Count For Version 666 is 297307850
+Forward Time: 21.847057s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 32268232
+ Percentage of core graph edge: 10.85
+Merged Set Size: 44797323
+------------SnapShot 0 Begins--------------
+|V|=13593033
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 51.40%
+------------SnapShot 1 Begins--------------
+|V|=13593033
+Correct Prediction: 97.14%
+Dump Prediction Correcr Rate: 77.08%
+Changing Rate: 22.92%
+Changing Capturing Rate: 96.21%
+Unchanged Rate: 77.08%
+Unchanged Capture Rate: 97.41%
+Changing Number when Boundary Complete Match: 0.87%
+Changing Number when Boundary Pre Contains Cur: 11.80%
+Changing Number when Boundary Cur Contains Pre: 10.25%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 75.08%
+Unchanging Number when Boundary Pre Contains Cur: 1.29%
+Unchanging Number when Boundary Cur Contains Pre: 0.71%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 53.18%
+Base Root Time per SnapShot: 0.205267s
+Prediction Time per SnapShot: 3.238174s
+
+Running build/test-index-ssnp with batch_ratio=0.24
+Error: Invalid line "% asym unweighted"
+read: 177.329891s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 1, batch_size is 104932181
+read: 0.089720s
+|E|=437217424
+|V|=13593033
+Union Graph Marked: 47.091457s
+Graph Size: 437217424, Edge Count For Version 999 is 437217424
+Forward Time: 26.681184s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 36123697
+ Percentage of core graph edge: 8.26
+Common Graph Edges: 227353062
+Graph Size: 227353062, Edge Count For Version 666 is 227353062
+Forward Time: 20.312245s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 28003800
+ Percentage of core graph edge: 12.32
+Merged Set Size: 46420339
+------------SnapShot 0 Begins--------------
+|V|=13593033
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 49.18%
+------------SnapShot 1 Begins--------------
+|V|=13593033
+Correct Prediction: 96.39%
+Dump Prediction Correcr Rate: 69.67%
+Changing Rate: 30.33%
+Changing Capturing Rate: 95.15%
+Unchanged Rate: 69.67%
+Unchanged Capture Rate: 96.93%
+Changing Number when Boundary Complete Match: 1.47%
+Changing Number when Boundary Pre Contains Cur: 14.80%
+Changing Number when Boundary Cur Contains Pre: 14.07%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 67.53%
+Unchanging Number when Boundary Pre Contains Cur: 1.20%
+Unchanging Number when Boundary Cur Contains Pre: 0.93%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 49.18%
+Base Root Time per SnapShot: 0.217479s
+Prediction Time per SnapShot: 3.424262s
+
+Running build/test-index-ssnp with batch_ratio=0.32
+Error: Invalid line "% asym unweighted"
+read: 177.496352s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 1, batch_size is 139909575
+read: 0.090674s
+|E|=437217424
+|V|=13593033
+Union Graph Marked: 46.512327s
+Graph Size: 437217424, Edge Count For Version 999 is 437217424
+Forward Time: 27.451235s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 36127070
+ Percentage of core graph edge: 8.26
+Common Graph Edges: 157398274
+Graph Size: 157398274, Edge Count For Version 666 is 157398274
+Forward Time: 17.787728s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 24356399
+ Percentage of core graph edge: 15.47
+Merged Set Size: 48111543
+------------SnapShot 0 Begins--------------
+|V|=13593033
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 45.18%
+------------SnapShot 1 Begins--------------
+|V|=13593033
+Correct Prediction: 96.27%
+Dump Prediction Correcr Rate: 62.90%
+Changing Rate: 37.10%
+Changing Capturing Rate: 96.11%
+Unchanged Rate: 62.90%
+Unchanged Capture Rate: 96.36%
+Changing Number when Boundary Complete Match: 1.44%
+Changing Number when Boundary Pre Contains Cur: 19.48%
+Changing Number when Boundary Cur Contains Pre: 16.17%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 60.61%
+Unchanging Number when Boundary Pre Contains Cur: 1.07%
+Unchanging Number when Boundary Cur Contains Pre: 1.21%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 46.86%
+Base Root Time per SnapShot: 0.190327s
+Prediction Time per SnapShot: 3.295433s
+
+Running build/test-index-ssnp with batch_ratio=0.40
+Error: Invalid line "% asym unweighted"
+read: 182.713399s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 1, batch_size is 174886969
+read: 0.100064s
+|E|=437217424
+|V|=13593033
+Union Graph Marked: 46.992351s
+Graph Size: 437217424, Edge Count For Version 999 is 437217424
+Forward Time: 26.206718s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 36101021
+ Percentage of core graph edge: 8.26
+Common Graph Edges: 87443486
+Graph Size: 87443486, Edge Count For Version 666 is 87443486
+Forward Time: 14.616460s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 19349553
+ Percentage of core graph edge: 22.13
+Merged Set Size: 48548011
+------------SnapShot 0 Begins--------------
+|V|=13593033
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 40.37%
+------------SnapShot 1 Begins--------------
+|V|=13593033
+Correct Prediction: 93.99%
+Dump Prediction Correcr Rate: 54.80%
+Changing Rate: 45.20%
+Changing Capturing Rate: 93.29%
+Unchanged Rate: 54.80%
+Unchanged Capture Rate: 94.56%
+Changing Number when Boundary Complete Match: 3.03%
+Changing Number when Boundary Pre Contains Cur: 21.16%
+Changing Number when Boundary Cur Contains Pre: 21.01%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 51.81%
+Unchanging Number when Boundary Pre Contains Cur: 1.55%
+Unchanging Number when Boundary Cur Contains Pre: 1.43%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 37.97%
+Base Root Time per SnapShot: 0.193177s
+Prediction Time per SnapShot: 2.982977s
+
+Running build/test-index-ssnp with batch_ratio=0.48
+Error: Invalid line "% asym unweighted"
+read: 178.231768s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 1, batch_size is 209864363
+read: 0.089324s
+|E|=437217424
+|V|=13593033
+Union Graph Marked: 45.894867s
+Graph Size: 437217424, Edge Count For Version 999 is 437217424
+Forward Time: 27.009729s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 36127466
+ Percentage of core graph edge: 8.26
+Common Graph Edges: 17488698
+Graph Size: 17488698, Edge Count For Version 666 is 17488698
+Forward Time: 11.206297s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 8892114
+ Percentage of core graph edge: 50.84
+Merged Set Size: 43609371
+------------SnapShot 0 Begins--------------
+|V|=13593033
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 37.94%
+------------SnapShot 1 Begins--------------
+|V|=13593033
+Correct Prediction: 88.86%
+Dump Prediction Correcr Rate: 51.64%
+Changing Rate: 48.36%
+Changing Capturing Rate: 85.12%
+Unchanged Rate: 51.64%
+Unchanged Capture Rate: 92.37%
+Changing Number when Boundary Complete Match: 7.20%
+Changing Number when Boundary Pre Contains Cur: 18.00%
+Changing Number when Boundary Cur Contains Pre: 23.16%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 47.70%
+Unchanging Number when Boundary Pre Contains Cur: 1.89%
+Unchanging Number when Boundary Cur Contains Pre: 2.05%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 32.54%
+Base Root Time per SnapShot: 0.173044s
+Prediction Time per SnapShot: 3.075676s
+
+-----------------------------------
+
+Running build/test-index-ssr with batch_ratio=0.08
+Error: Invalid line "% asym unweighted"
+read: 178.791331s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 1, batch_size is 34977393
+read: 0.087992s
+|E|=437217424
+|V|=13593033
+Union Graph Marked: 47.204634s
+Graph Size: 437217424, Edge Count For Version 999 is 437217424
+Forward Time: 34.107213s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 21739481
+ Percentage of core graph edge: 4.97
+Common Graph Edges: 367262638
+Graph Size: 367262638, Edge Count For Version 666 is 367262638
+Forward Time: 31.961039s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 24825600
+ Percentage of core graph edge: 6.76
+Merged Set Size: 28324881
+------------SnapShot 0 Begins--------------
+|V|=13593033
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 54.44%
+------------SnapShot 1 Begins--------------
+|V|=13593033
+Correct Prediction: 95.34%
+Dump Prediction Correcr Rate: 92.36%
+Changing Rate: 7.64%
+Changing Capturing Rate: 94.49%
+Unchanged Rate: 92.36%
+Unchanged Capture Rate: 95.41%
+Changing Number when Boundary Complete Match: 0.42%
+Changing Number when Boundary Pre Contains Cur: 4.52%
+Changing Number when Boundary Cur Contains Pre: 2.69%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 88.12%
+Unchanging Number when Boundary Pre Contains Cur: 3.85%
+Unchanging Number when Boundary Cur Contains Pre: 0.40%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 56.27%
+Base Root Time per SnapShot: 0.159463s
+Prediction Time per SnapShot: 2.763974s
+
+Running build/test-index-ssr with batch_ratio=0.16
+Error: Invalid line "% asym unweighted"
+read: 178.890779s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 1, batch_size is 69954787
+read: 0.090110s
+|E|=437217424
+|V|=13593033
+Union Graph Marked: 45.936107s
+Graph Size: 437217424, Edge Count For Version 999 is 437217424
+Forward Time: 35.792139s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 21740003
+ Percentage of core graph edge: 4.97
+Common Graph Edges: 297307850
+Graph Size: 297307850, Edge Count For Version 666 is 297307850
+Forward Time: 28.107367s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 26040755
+ Percentage of core graph edge: 8.76
+Merged Set Size: 33059046
+------------SnapShot 0 Begins--------------
+|V|=13593033
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 51.40%
+------------SnapShot 1 Begins--------------
+|V|=13593033
+Correct Prediction: 96.10%
+Dump Prediction Correcr Rate: 86.97%
+Changing Rate: 13.03%
+Changing Capturing Rate: 94.45%
+Unchanged Rate: 86.97%
+Unchanged Capture Rate: 96.35%
+Changing Number when Boundary Complete Match: 0.72%
+Changing Number when Boundary Pre Contains Cur: 7.00%
+Changing Number when Boundary Cur Contains Pre: 5.30%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 83.80%
+Unchanging Number when Boundary Pre Contains Cur: 1.56%
+Unchanging Number when Boundary Cur Contains Pre: 1.61%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 53.18%
+Base Root Time per SnapShot: 0.161022s
+Prediction Time per SnapShot: 3.097933s
+
+Running build/test-index-ssr with batch_ratio=0.24
+Error: Invalid line "% asym unweighted"
+read: 178.281035s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 1, batch_size is 104932181
+read: 0.091971s
+|E|=437217424
+|V|=13593033
+Union Graph Marked: 47.415784s
+Graph Size: 437217424, Edge Count For Version 999 is 437217424
+Forward Time: 33.796397s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 21738254
+ Percentage of core graph edge: 4.97
+Common Graph Edges: 227353062
+Graph Size: 227353062, Edge Count For Version 666 is 227353062
+Forward Time: 23.708979s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 25074158
+ Percentage of core graph edge: 11.03
+Merged Set Size: 35518084
+------------SnapShot 0 Begins--------------
+|V|=13593033
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 49.18%
+------------SnapShot 1 Begins--------------
+|V|=13593033
+Correct Prediction: 95.01%
+Dump Prediction Correcr Rate: 81.99%
+Changing Rate: 18.01%
+Changing Capturing Rate: 93.51%
+Unchanged Rate: 81.99%
+Unchanged Capture Rate: 95.34%
+Changing Number when Boundary Complete Match: 1.17%
+Changing Number when Boundary Pre Contains Cur: 8.43%
+Changing Number when Boundary Cur Contains Pre: 8.41%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 78.17%
+Unchanging Number when Boundary Pre Contains Cur: 1.92%
+Unchanging Number when Boundary Cur Contains Pre: 1.89%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 49.18%
+Base Root Time per SnapShot: 0.162665s
+Prediction Time per SnapShot: 3.295542s
+
+Running build/test-index-ssr with batch_ratio=0.32
+Error: Invalid line "% asym unweighted"
+read: 178.206582s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 1, batch_size is 139909575
+read: 0.091525s
+|E|=437217424
+|V|=13593033
+Union Graph Marked: 45.797906s
+Graph Size: 437217424, Edge Count For Version 999 is 437217424
+Forward Time: 33.761429s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 21740865
+ Percentage of core graph edge: 4.97
+Common Graph Edges: 157398274
+Graph Size: 157398274, Edge Count For Version 666 is 157398274
+Forward Time: 19.738435s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 22131185
+ Percentage of core graph edge: 14.06
+Merged Set Size: 35965741
+------------SnapShot 0 Begins--------------
+|V|=13593033
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 45.18%
+------------SnapShot 1 Begins--------------
+|V|=13593033
+Correct Prediction: 93.38%
+Dump Prediction Correcr Rate: 77.45%
+Changing Rate: 22.55%
+Changing Capturing Rate: 91.69%
+Unchanged Rate: 77.45%
+Unchanged Capture Rate: 93.87%
+Changing Number when Boundary Complete Match: 1.87%
+Changing Number when Boundary Pre Contains Cur: 11.19%
+Changing Number when Boundary Cur Contains Pre: 9.49%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 72.70%
+Unchanging Number when Boundary Pre Contains Cur: 3.07%
+Unchanging Number when Boundary Cur Contains Pre: 1.68%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 46.86%
+Base Root Time per SnapShot: 0.156333s
+Prediction Time per SnapShot: 2.966601s
+
+Running build/test-index-ssr with batch_ratio=0.40
+Error: Invalid line "% asym unweighted"
+read: 177.651262s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 1, batch_size is 174886969
+read: 0.101504s
+|E|=437217424
+|V|=13593033
+Union Graph Marked: 46.782724s
+Graph Size: 437217424, Edge Count For Version 999 is 437217424
+Forward Time: 35.399542s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 21739575
+ Percentage of core graph edge: 4.97
+Common Graph Edges: 87443486
+Graph Size: 87443486, Edge Count For Version 666 is 87443486
+Forward Time: 16.232970s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 16880602
+ Percentage of core graph edge: 19.30
+Merged Set Size: 34072129
+------------SnapShot 0 Begins--------------
+|V|=13593033
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 40.37%
+------------SnapShot 1 Begins--------------
+|V|=13593033
+Correct Prediction: 89.02%
+Dump Prediction Correcr Rate: 68.02%
+Changing Rate: 31.98%
+Changing Capturing Rate: 85.17%
+Unchanged Rate: 68.02%
+Unchanged Capture Rate: 90.83%
+Changing Number when Boundary Complete Match: 4.74%
+Changing Number when Boundary Pre Contains Cur: 12.10%
+Changing Number when Boundary Cur Contains Pre: 15.14%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 61.79%
+Unchanging Number when Boundary Pre Contains Cur: 2.50%
+Unchanging Number when Boundary Cur Contains Pre: 3.74%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 37.97%
+Base Root Time per SnapShot: 0.152968s
+Prediction Time per SnapShot: 3.018488s
+
+Running build/test-index-ssr with batch_ratio=0.48
+Error: Invalid line "% asym unweighted"
+read: 178.461017s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 1, batch_size is 209864363
+read: 0.092715s
+|E|=437217424
+|V|=13593033
+Union Graph Marked: 46.634280s
+Graph Size: 437217424, Edge Count For Version 999 is 437217424
+Forward Time: 34.487743s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 21738643
+ Percentage of core graph edge: 4.97
+Common Graph Edges: 17488698
+Graph Size: 17488698, Edge Count For Version 666 is 17488698
+Forward Time: 11.255287s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 7656154
+ Percentage of core graph edge: 43.78
+Merged Set Size: 27990318
+------------SnapShot 0 Begins--------------
+|V|=13593033
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 37.94%
+------------SnapShot 1 Begins--------------
+|V|=13593033
+Correct Prediction: 76.84%
+Dump Prediction Correcr Rate: 64.26%
+Changing Rate: 35.74%
+Changing Capturing Rate: 60.73%
+Unchanged Rate: 64.26%
+Unchanged Capture Rate: 85.79%
+Changing Number when Boundary Complete Match: 14.04%
+Changing Number when Boundary Pre Contains Cur: 8.69%
+Changing Number when Boundary Cur Contains Pre: 13.02%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 55.13%
+Unchanging Number when Boundary Pre Contains Cur: 3.64%
+Unchanging Number when Boundary Cur Contains Pre: 5.48%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 32.54%
+Base Root Time per SnapShot: 0.146945s
+Prediction Time per SnapShot: 3.103772s
+
+-----------------------------------
+
+Running build/test-index-sssp with batch_ratio=0.08
+Error: Invalid line "% asym unweighted"
+read: 180.917109s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 1, batch_size is 34977393
+read: 0.093886s
+|E|=437217424
+|V|=13593033
+Union Graph Marked: 46.145430s
+Graph Size: 437217424, Edge Count For Version 999 is 437217424
+Forward Time: 13.715131s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 110822643
+ Percentage of core graph edge: 25.35
+Common Graph Edges: 367262638
+Graph Size: 367262638, Edge Count For Version 666 is 367262638
+Forward Time: 12.169460s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 93142033
+ Percentage of core graph edge: 25.36
+Merged Set Size: 117561238
+------------SnapShot 0 Begins--------------
+|V|=13593033
+Lower Bound Error percentage: 14.26%
+Upper Bound Error percentage: 0.00%
+------------SnapShot 1 Begins--------------
+|V|=13593033
+Correct Prediction: 80.68%
+Dump Prediction Correcr Rate: 79.96%
+Changing Rate: 20.04%
+Changing Capturing Rate: 82.39%
+Unchanged Rate: 79.96%
+Unchanged Capture Rate: 80.25%
+Changing Number when Boundary Complete Match: 3.53%
+Changing Number when Boundary Pre Contains Cur: 7.14%
+Changing Number when Boundary Cur Contains Pre: 5.31%
+Changing Number when Boundary Partial Overlap Pre Left: 1.38%
+Changing Number when Boundary Partial Overlap Cur Left: 1.52%
+Changing Number when Boundary Disjoint: 1.16%
+Unchanging Number when Boundary Complete Match: 64.16%
+Unchanging Number when Boundary Pre Contains Cur: 6.37%
+Unchanging Number when Boundary Cur Contains Pre: 7.64%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.77%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.82%
+Unchanging Number when Boundary Disjoint: 0.20%
+Lower Bound Error percentage: 13.67%
+Upper Bound Error percentage: 0.00%
+Base Root Time per SnapShot: 0.203095s
+Prediction Time per SnapShot: 3.025340s
+
+Running build/test-index-sssp with batch_ratio=0.16
+Error: Invalid line "% asym unweighted"
+read: 180.139152s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 1, batch_size is 69954787
+read: 0.092151s
+|E|=437217424
+|V|=13593033
+Union Graph Marked: 46.214205s
+Graph Size: 437217424, Edge Count For Version 999 is 437217424
+Forward Time: 13.773718s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 110822643
+ Percentage of core graph edge: 25.35
+Common Graph Edges: 297307850
+Graph Size: 297307850, Edge Count For Version 666 is 297307850
+Forward Time: 9.362835s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 75677732
+ Percentage of core graph edge: 25.45
+Merged Set Size: 119754416
+------------SnapShot 0 Begins--------------
+|V|=13593033
+Lower Bound Error percentage: 13.38%
+Upper Bound Error percentage: 0.00%
+------------SnapShot 1 Begins--------------
+|V|=13593033
+Correct Prediction: 81.41%
+Dump Prediction Correcr Rate: 66.53%
+Changing Rate: 33.47%
+Changing Capturing Rate: 90.42%
+Unchanged Rate: 66.53%
+Unchanged Capture Rate: 76.88%
+Changing Number when Boundary Complete Match: 3.21%
+Changing Number when Boundary Pre Contains Cur: 10.88%
+Changing Number when Boundary Cur Contains Pre: 12.01%
+Changing Number when Boundary Partial Overlap Pre Left: 3.13%
+Changing Number when Boundary Partial Overlap Cur Left: 2.39%
+Changing Number when Boundary Disjoint: 1.84%
+Unchanging Number when Boundary Complete Match: 51.15%
+Unchanging Number when Boundary Pre Contains Cur: 5.43%
+Unchanging Number when Boundary Cur Contains Pre: 7.71%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.98%
+Unchanging Number when Boundary Partial Overlap Cur Left: 1.03%
+Unchanging Number when Boundary Disjoint: 0.23%
+Lower Bound Error percentage: 11.75%
+Upper Bound Error percentage: 0.00%
+Base Root Time per SnapShot: 0.205070s
+Prediction Time per SnapShot: 3.186346s
+
+Running build/test-index-sssp with batch_ratio=0.24
+Error: Invalid line "% asym unweighted"
+read: 179.782769s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 1, batch_size is 104932181
+read: 0.094430s
+|E|=437217424
+|V|=13593033
+Union Graph Marked: 46.902526s
+Graph Size: 437217424, Edge Count For Version 999 is 437217424
+Forward Time: 13.956446s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 110822643
+ Percentage of core graph edge: 25.35
+Common Graph Edges: 227353062
+Graph Size: 227353062, Edge Count For Version 666 is 227353062
+Forward Time: 7.568811s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 59086081
+ Percentage of core graph edge: 25.99
+Merged Set Size: 120333727
+------------SnapShot 0 Begins--------------
+|V|=13593033
+Lower Bound Error percentage: 12.65%
+Upper Bound Error percentage: 0.00%
+------------SnapShot 1 Begins--------------
+|V|=13593033
+Correct Prediction: 85.44%
+Dump Prediction Correcr Rate: 58.46%
+Changing Rate: 41.54%
+Changing Capturing Rate: 94.73%
+Unchanged Rate: 58.46%
+Unchanged Capture Rate: 78.84%
+Changing Number when Boundary Complete Match: 2.19%
+Changing Number when Boundary Pre Contains Cur: 13.89%
+Changing Number when Boundary Cur Contains Pre: 15.88%
+Changing Number when Boundary Partial Overlap Pre Left: 3.61%
+Changing Number when Boundary Partial Overlap Cur Left: 3.51%
+Changing Number when Boundary Disjoint: 2.47%
+Unchanging Number when Boundary Complete Match: 46.08%
+Unchanging Number when Boundary Pre Contains Cur: 3.90%
+Unchanging Number when Boundary Cur Contains Pre: 5.93%
+Unchanging Number when Boundary Partial Overlap Pre Left: 1.12%
+Unchanging Number when Boundary Partial Overlap Cur Left: 1.12%
+Unchanging Number when Boundary Disjoint: 0.29%
+Lower Bound Error percentage: 11.16%
+Upper Bound Error percentage: 0.00%
+Base Root Time per SnapShot: 0.204316s
+Prediction Time per SnapShot: 3.090823s
+
+Running build/test-index-sssp with batch_ratio=0.32
+Error: Invalid line "% asym unweighted"
+read: 180.746919s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 1, batch_size is 139909575
+read: 0.092088s
+|E|=437217424
+|V|=13593033
+Union Graph Marked: 46.504021s
+Graph Size: 437217424, Edge Count For Version 999 is 437217424
+Forward Time: 13.740859s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 110822643
+ Percentage of core graph edge: 25.35
+Common Graph Edges: 157398274
+Graph Size: 157398274, Edge Count For Version 666 is 157398274
+Forward Time: 5.679310s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 42162378
+ Percentage of core graph edge: 26.79
+Merged Set Size: 119676731
+------------SnapShot 0 Begins--------------
+|V|=13593033
+Lower Bound Error percentage: 10.56%
+Upper Bound Error percentage: 0.00%
+------------SnapShot 1 Begins--------------
+|V|=13593033
+Correct Prediction: 89.35%
+Dump Prediction Correcr Rate: 52.98%
+Changing Rate: 47.02%
+Changing Capturing Rate: 97.00%
+Unchanged Rate: 52.98%
+Unchanged Capture Rate: 82.56%
+Changing Number when Boundary Complete Match: 1.41%
+Changing Number when Boundary Pre Contains Cur: 20.52%
+Changing Number when Boundary Cur Contains Pre: 14.48%
+Changing Number when Boundary Partial Overlap Pre Left: 4.98%
+Changing Number when Boundary Partial Overlap Cur Left: 2.43%
+Changing Number when Boundary Disjoint: 3.20%
+Unchanging Number when Boundary Complete Match: 43.74%
+Unchanging Number when Boundary Pre Contains Cur: 5.15%
+Unchanging Number when Boundary Cur Contains Pre: 1.86%
+Unchanging Number when Boundary Partial Overlap Pre Left: 1.46%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.41%
+Unchanging Number when Boundary Disjoint: 0.36%
+Lower Bound Error percentage: 15.64%
+Upper Bound Error percentage: 0.00%
+Base Root Time per SnapShot: 0.200038s
+Prediction Time per SnapShot: 3.015078s
+
+Running build/test-index-sssp with batch_ratio=0.40
+Error: Invalid line "% asym unweighted"
+read: 181.305991s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 1, batch_size is 174886969
+read: 0.090851s
+|E|=437217424
+|V|=13593033
+Union Graph Marked: 46.190294s
+Graph Size: 437217424, Edge Count For Version 999 is 437217424
+Forward Time: 13.462931s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 110822643
+ Percentage of core graph edge: 25.35
+Common Graph Edges: 87443486
+Graph Size: 87443486, Edge Count For Version 666 is 87443486
+Forward Time: 3.434450s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 26345673
+ Percentage of core graph edge: 30.13
+Merged Set Size: 118805590
+------------SnapShot 0 Begins--------------
+|V|=13593033
+Lower Bound Error percentage: 9.87%
+Upper Bound Error percentage: 0.00%
+------------SnapShot 1 Begins--------------
+|V|=13593033
+Correct Prediction: 93.17%
+Dump Prediction Correcr Rate: 49.87%
+Changing Rate: 50.13%
+Changing Capturing Rate: 95.74%
+Unchanged Rate: 49.87%
+Unchanged Capture Rate: 90.57%
+Changing Number when Boundary Complete Match: 2.13%
+Changing Number when Boundary Pre Contains Cur: 19.58%
+Changing Number when Boundary Cur Contains Pre: 21.20%
+Changing Number when Boundary Partial Overlap Pre Left: 2.69%
+Changing Number when Boundary Partial Overlap Cur Left: 1.63%
+Changing Number when Boundary Disjoint: 2.90%
+Unchanging Number when Boundary Complete Match: 45.17%
+Unchanging Number when Boundary Pre Contains Cur: 2.43%
+Unchanging Number when Boundary Cur Contains Pre: 1.05%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.74%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.23%
+Unchanging Number when Boundary Disjoint: 0.25%
+Lower Bound Error percentage: 13.69%
+Upper Bound Error percentage: 0.00%
+Base Root Time per SnapShot: 0.186602s
+Prediction Time per SnapShot: 2.990900s
+
+Running build/test-index-sssp with batch_ratio=0.48
+Error: Invalid line "% asym unweighted"
+read: 180.826754s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 1, batch_size is 209864363
+read: 0.090517s
+|E|=437217424
+|V|=13593033
+Union Graph Marked: 46.725404s
+Graph Size: 437217424, Edge Count For Version 999 is 437217424
+Forward Time: 12.938558s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 110822643
+ Percentage of core graph edge: 25.35
+Common Graph Edges: 17488698
+Graph Size: 17488698, Edge Count For Version 666 is 17488698
+Forward Time: 0.900157s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 9179729
+ Percentage of core graph edge: 52.49
+Merged Set Size: 116124929
+------------SnapShot 0 Begins--------------
+|V|=13593033
+Lower Bound Error percentage: 7.31%
+Upper Bound Error percentage: 0.00%
+------------SnapShot 1 Begins--------------
+|V|=13593033
+Correct Prediction: 91.38%
+Dump Prediction Correcr Rate: 49.68%
+Changing Rate: 50.32%
+Changing Capturing Rate: 88.17%
+Unchanged Rate: 49.68%
+Unchanged Capture Rate: 94.62%
+Changing Number when Boundary Complete Match: 5.95%
+Changing Number when Boundary Pre Contains Cur: 18.50%
+Changing Number when Boundary Cur Contains Pre: 20.98%
+Changing Number when Boundary Partial Overlap Pre Left: 2.48%
+Changing Number when Boundary Partial Overlap Cur Left: 0.57%
+Changing Number when Boundary Disjoint: 1.84%
+Unchanging Number when Boundary Complete Match: 47.01%
+Unchanging Number when Boundary Pre Contains Cur: 1.39%
+Unchanging Number when Boundary Cur Contains Pre: 0.36%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.62%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.07%
+Unchanging Number when Boundary Disjoint: 0.21%
+Lower Bound Error percentage: 10.87%
+Upper Bound Error percentage: 0.00%
+Base Root Time per SnapShot: 0.175615s
+Prediction Time per SnapShot: 2.738912s
+
+-----------------------------------
+
+Running build/test-index-sswp with batch_ratio=0.08
+Error: Invalid line "% asym unweighted"
+read: 177.911553s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 1, batch_size is 34977393
+read: 0.092806s
+|E|=437217424
+|V|=13593033
+Union Graph Marked: 47.035027s
+Graph Size: 437217424, Edge Count For Version 999 is 437217424
+Forward Time: 27.256634s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 36123367
+ Percentage of core graph edge: 8.26
+Common Graph Edges: 367262638
+Graph Size: 367262638, Edge Count For Version 666 is 367262638
+Forward Time: 24.977297s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 35095420
+ Percentage of core graph edge: 9.56
+Merged Set Size: 41291659
+------------SnapShot 0 Begins--------------
+|V|=13593033
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 54.44%
+------------SnapShot 1 Begins--------------
+|V|=13593033
+Correct Prediction: 97.01%
+Dump Prediction Correcr Rate: 87.08%
+Changing Rate: 12.92%
+Changing Capturing Rate: 92.65%
+Unchanged Rate: 87.08%
+Unchanged Capture Rate: 97.66%
+Changing Number when Boundary Complete Match: 0.95%
+Changing Number when Boundary Pre Contains Cur: 5.88%
+Changing Number when Boundary Cur Contains Pre: 6.09%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 85.04%
+Unchanging Number when Boundary Pre Contains Cur: 0.89%
+Unchanging Number when Boundary Cur Contains Pre: 1.15%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 56.27%
+Base Root Time per SnapShot: 0.209191s
+Prediction Time per SnapShot: 3.456835s
+
+Running build/test-index-sswp with batch_ratio=0.16
+Error: Invalid line "% asym unweighted"
+read: 177.709941s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 1, batch_size is 69954787
+read: 0.091167s
+|E|=437217424
+|V|=13593033
+Union Graph Marked: 46.196016s
+Graph Size: 437217424, Edge Count For Version 999 is 437217424
+Forward Time: 27.267347s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 36124671
+ Percentage of core graph edge: 8.26
+Common Graph Edges: 297307850
+Graph Size: 297307850, Edge Count For Version 666 is 297307850
+Forward Time: 22.027435s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 32274080
+ Percentage of core graph edge: 10.86
+Merged Set Size: 44740334
+------------SnapShot 0 Begins--------------
+|V|=13593033
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 51.40%
+------------SnapShot 1 Begins--------------
+|V|=13593033
+Correct Prediction: 97.06%
+Dump Prediction Correcr Rate: 77.08%
+Changing Rate: 22.92%
+Changing Capturing Rate: 96.21%
+Unchanged Rate: 77.08%
+Unchanged Capture Rate: 97.31%
+Changing Number when Boundary Complete Match: 0.87%
+Changing Number when Boundary Pre Contains Cur: 11.81%
+Changing Number when Boundary Cur Contains Pre: 10.24%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 75.00%
+Unchanging Number when Boundary Pre Contains Cur: 1.35%
+Unchanging Number when Boundary Cur Contains Pre: 0.73%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 53.18%
+Base Root Time per SnapShot: 0.212905s
+Prediction Time per SnapShot: 3.490103s
+
+Running build/test-index-sswp with batch_ratio=0.24
+Error: Invalid line "% asym unweighted"
+read: 178.532600s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 1, batch_size is 104932181
+read: 0.091301s
+|E|=437217424
+|V|=13593033
+Union Graph Marked: 46.043785s
+Graph Size: 437217424, Edge Count For Version 999 is 437217424
+Forward Time: 27.669966s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 36119677
+ Percentage of core graph edge: 8.26
+Common Graph Edges: 227353062
+Graph Size: 227353062, Edge Count For Version 666 is 227353062
+Forward Time: 19.502400s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 28006938
+ Percentage of core graph edge: 12.32
+Merged Set Size: 46561614
+------------SnapShot 0 Begins--------------
+|V|=13593033
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 49.18%
+------------SnapShot 1 Begins--------------
+|V|=13593033
+Correct Prediction: 96.72%
+Dump Prediction Correcr Rate: 69.67%
+Changing Rate: 30.33%
+Changing Capturing Rate: 95.17%
+Unchanged Rate: 69.67%
+Unchanged Capture Rate: 97.40%
+Changing Number when Boundary Complete Match: 1.47%
+Changing Number when Boundary Pre Contains Cur: 14.79%
+Changing Number when Boundary Cur Contains Pre: 14.08%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 67.85%
+Unchanging Number when Boundary Pre Contains Cur: 0.87%
+Unchanging Number when Boundary Cur Contains Pre: 0.94%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 49.18%
+Base Root Time per SnapShot: 0.199477s
+Prediction Time per SnapShot: 3.368937s
+
+Running build/test-index-sswp with batch_ratio=0.32
+Error: Invalid line "% asym unweighted"
+read: 178.152415s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 1, batch_size is 139909575
+read: 0.091739s
+|E|=437217424
+|V|=13593033
+Union Graph Marked: 46.500005s
+Graph Size: 437217424, Edge Count For Version 999 is 437217424
+Forward Time: 27.287025s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 36128221
+ Percentage of core graph edge: 8.26
+Common Graph Edges: 157398274
+Graph Size: 157398274, Edge Count For Version 666 is 157398274
+Forward Time: 17.749448s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 24355475
+ Percentage of core graph edge: 15.47
+Merged Set Size: 48058910
+------------SnapShot 0 Begins--------------
+|V|=13593033
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 45.18%
+------------SnapShot 1 Begins--------------
+|V|=13593033
+Correct Prediction: 95.99%
+Dump Prediction Correcr Rate: 62.90%
+Changing Rate: 37.10%
+Changing Capturing Rate: 96.10%
+Unchanged Rate: 62.90%
+Unchanged Capture Rate: 95.92%
+Changing Number when Boundary Complete Match: 1.45%
+Changing Number when Boundary Pre Contains Cur: 19.49%
+Changing Number when Boundary Cur Contains Pre: 16.16%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 60.34%
+Unchanging Number when Boundary Pre Contains Cur: 1.36%
+Unchanging Number when Boundary Cur Contains Pre: 1.20%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 46.86%
+Base Root Time per SnapShot: 0.189419s
+Prediction Time per SnapShot: 3.499885s
+
+Running build/test-index-sswp with batch_ratio=0.40
+Error: Invalid line "% asym unweighted"
+read: 177.512972s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 1, batch_size is 174886969
+read: 0.092728s
+|E|=437217424
+|V|=13593033
+Union Graph Marked: 46.394489s
+Graph Size: 437217424, Edge Count For Version 999 is 437217424
+Forward Time: 26.674120s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 36127946
+ Percentage of core graph edge: 8.26
+Common Graph Edges: 87443486
+Graph Size: 87443486, Edge Count For Version 666 is 87443486
+Forward Time: 14.788340s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 19354144
+ Percentage of core graph edge: 22.13
+Merged Set Size: 48581557
+------------SnapShot 0 Begins--------------
+|V|=13593033
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 40.37%
+------------SnapShot 1 Begins--------------
+|V|=13593033
+Correct Prediction: 93.76%
+Dump Prediction Correcr Rate: 54.80%
+Changing Rate: 45.20%
+Changing Capturing Rate: 93.28%
+Unchanged Rate: 54.80%
+Unchanged Capture Rate: 94.16%
+Changing Number when Boundary Complete Match: 3.04%
+Changing Number when Boundary Pre Contains Cur: 21.16%
+Changing Number when Boundary Cur Contains Pre: 21.01%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 51.60%
+Unchanging Number when Boundary Pre Contains Cur: 1.78%
+Unchanging Number when Boundary Cur Contains Pre: 1.42%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 37.97%
+Base Root Time per SnapShot: 0.187551s
+Prediction Time per SnapShot: 3.160489s
+
+Running build/test-index-sswp with batch_ratio=0.48
+Error: Invalid line "% asym unweighted"
+read: 178.665150s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 1, batch_size is 209864363
+read: 0.099128s
+|E|=437217424
+|V|=13593033
+Union Graph Marked: 46.391565s
+Graph Size: 437217424, Edge Count For Version 999 is 437217424
+Forward Time: 27.287517s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 36118722
+ Percentage of core graph edge: 8.26
+Common Graph Edges: 17488698
+Graph Size: 17488698, Edge Count For Version 666 is 17488698
+Forward Time: 11.298492s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 8891384
+ Percentage of core graph edge: 50.84
+Merged Set Size: 43599481
+------------SnapShot 0 Begins--------------
+|V|=13593033
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 37.94%
+------------SnapShot 1 Begins--------------
+|V|=13593033
+Correct Prediction: 88.38%
+Dump Prediction Correcr Rate: 51.64%
+Changing Rate: 48.36%
+Changing Capturing Rate: 84.09%
+Unchanged Rate: 51.64%
+Unchanged Capture Rate: 92.40%
+Changing Number when Boundary Complete Match: 7.69%
+Changing Number when Boundary Pre Contains Cur: 18.14%
+Changing Number when Boundary Cur Contains Pre: 22.52%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 47.72%
+Unchanging Number when Boundary Pre Contains Cur: 1.66%
+Unchanging Number when Boundary Cur Contains Pre: 2.26%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 32.54%
+Base Root Time per SnapShot: 0.175489s
+Prediction Time per SnapShot: 3.361509s
+
+-----------------------------------
+
+Running build/test-index-viterbi with batch_ratio=0.08
+Error: Invalid line "% asym unweighted"
+read: 177.072931s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 1, batch_size is 34977393
+read: 0.096211s
+|E|=437217424
+|V|=13593033
+Union Graph Marked: 46.002860s
+Graph Size: 437217424, Edge Count For Version 999 is 437217424
+Forward Time: 12.211428s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 21454656
+ Percentage of core graph edge: 4.91
+Common Graph Edges: 367262638
+Graph Size: 367262638, Edge Count For Version 666 is 367262638
+Forward Time: 10.427676s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 20057486
+ Percentage of core graph edge: 5.46
+Merged Set Size: 21454798
+------------SnapShot 0 Begins--------------
+|V|=13593033
+Lower Bound Error percentage: 48.29%
+Upper Bound Error percentage: 54.44%
+------------SnapShot 1 Begins--------------
+|V|=13593033
+Correct Prediction: 95.35%
+Dump Prediction Correcr Rate: 84.25%
+Changing Rate: 15.75%
+Changing Capturing Rate: 80.77%
+Unchanged Rate: 84.25%
+Unchanged Capture Rate: 98.07%
+Changing Number when Boundary Complete Match: 3.03%
+Changing Number when Boundary Pre Contains Cur: 6.94%
+Changing Number when Boundary Cur Contains Pre: 5.78%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 82.63%
+Unchanging Number when Boundary Pre Contains Cur: 0.67%
+Unchanging Number when Boundary Cur Contains Pre: 0.95%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 50.33%
+Upper Bound Error percentage: 56.26%
+Base Root Time per SnapShot: 0.407449s
+Prediction Time per SnapShot: 3.391134s
+
+Running build/test-index-viterbi with batch_ratio=0.16
+Error: Invalid line "% asym unweighted"
+read: 178.321334s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 1, batch_size is 69954787
+read: 0.095728s
+|E|=437217424
+|V|=13593033
+Union Graph Marked: 45.788355s
+Graph Size: 437217424, Edge Count For Version 999 is 437217424
+Forward Time: 13.100207s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 21455420
+ Percentage of core graph edge: 4.91
+Common Graph Edges: 297307850
+Graph Size: 297307850, Edge Count For Version 666 is 297307850
+Forward Time: 9.447881s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 18545950
+ Percentage of core graph edge: 6.24
+Merged Set Size: 21455597
+------------SnapShot 0 Begins--------------
+|V|=13593033
+Lower Bound Error percentage: 45.81%
+Upper Bound Error percentage: 51.39%
+------------SnapShot 1 Begins--------------
+|V|=13593033
+Correct Prediction: 93.79%
+Dump Prediction Correcr Rate: 72.16%
+Changing Rate: 27.84%
+Changing Capturing Rate: 85.05%
+Unchanged Rate: 72.16%
+Unchanged Capture Rate: 97.16%
+Changing Number when Boundary Complete Match: 4.16%
+Changing Number when Boundary Pre Contains Cur: 11.81%
+Changing Number when Boundary Cur Contains Pre: 11.87%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 70.11%
+Unchanging Number when Boundary Pre Contains Cur: 1.04%
+Unchanging Number when Boundary Cur Contains Pre: 1.01%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 47.60%
+Upper Bound Error percentage: 53.17%
+Base Root Time per SnapShot: 0.409765s
+Prediction Time per SnapShot: 3.388680s
+
+Running build/test-index-viterbi with batch_ratio=0.24
+Error: Invalid line "% asym unweighted"
+read: 177.957159s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 1, batch_size is 104932181
+read: 0.091611s
+|E|=437217424
+|V|=13593033
+Union Graph Marked: 45.404089s
+Graph Size: 437217424, Edge Count For Version 999 is 437217424
+Forward Time: 12.768679s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 21455539
+ Percentage of core graph edge: 4.91
+Common Graph Edges: 227353062
+Graph Size: 227353062, Edge Count For Version 666 is 227353062
+Forward Time: 6.736262s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 16872479
+ Percentage of core graph edge: 7.42
+Merged Set Size: 21455691
+------------SnapShot 0 Begins--------------
+|V|=13593033
+Lower Bound Error percentage: 43.94%
+Upper Bound Error percentage: 49.17%
+------------SnapShot 1 Begins--------------
+|V|=13593033
+Correct Prediction: 93.89%
+Dump Prediction Correcr Rate: 64.05%
+Changing Rate: 35.95%
+Changing Capturing Rate: 88.33%
+Unchanged Rate: 64.05%
+Unchanged Capture Rate: 97.00%
+Changing Number when Boundary Complete Match: 4.19%
+Changing Number when Boundary Pre Contains Cur: 15.27%
+Changing Number when Boundary Cur Contains Pre: 16.49%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 62.13%
+Unchanging Number when Boundary Pre Contains Cur: 0.93%
+Unchanging Number when Boundary Cur Contains Pre: 0.99%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 44.10%
+Upper Bound Error percentage: 49.18%
+Base Root Time per SnapShot: 0.412431s
+Prediction Time per SnapShot: 3.147007s
+
+Running build/test-index-viterbi with batch_ratio=0.32
+Error: Invalid line "% asym unweighted"
+read: 177.817894s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 1, batch_size is 139909575
+read: 0.090013s
+|E|=437217424
+|V|=13593033
+Union Graph Marked: 46.304498s
+Graph Size: 437217424, Edge Count For Version 999 is 437217424
+Forward Time: 12.692857s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 21455460
+ Percentage of core graph edge: 4.91
+Common Graph Edges: 157398274
+Graph Size: 157398274, Edge Count For Version 666 is 157398274
+Forward Time: 5.283929s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 14931895
+ Percentage of core graph edge: 9.49
+Merged Set Size: 21455609
+------------SnapShot 0 Begins--------------
+|V|=13593033
+Lower Bound Error percentage: 40.58%
+Upper Bound Error percentage: 45.17%
+------------SnapShot 1 Begins--------------
+|V|=13593033
+Correct Prediction: 92.35%
+Dump Prediction Correcr Rate: 56.88%
+Changing Rate: 43.12%
+Changing Capturing Rate: 92.07%
+Unchanged Rate: 56.88%
+Unchanged Capture Rate: 92.56%
+Changing Number when Boundary Complete Match: 3.42%
+Changing Number when Boundary Pre Contains Cur: 19.86%
+Changing Number when Boundary Cur Contains Pre: 19.84%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 52.65%
+Unchanging Number when Boundary Pre Contains Cur: 0.85%
+Unchanging Number when Boundary Cur Contains Pre: 3.38%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 40.59%
+Upper Bound Error percentage: 46.86%
+Base Root Time per SnapShot: 0.405318s
+Prediction Time per SnapShot: 3.112885s
+
+Running build/test-index-viterbi with batch_ratio=0.40
+Error: Invalid line "% asym unweighted"
+read: 177.882843s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 1, batch_size is 174886969
+read: 0.099156s
+|E|=437217424
+|V|=13593033
+Union Graph Marked: 46.608277s
+Graph Size: 437217424, Edge Count For Version 999 is 437217424
+Forward Time: 12.890282s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 21455491
+ Percentage of core graph edge: 4.91
+Common Graph Edges: 87443486
+Graph Size: 87443486, Edge Count For Version 666 is 87443486
+Forward Time: 3.173469s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 12425882
+ Percentage of core graph edge: 14.21
+Merged Set Size: 21455821
+------------SnapShot 0 Begins--------------
+|V|=13593033
+Lower Bound Error percentage: 36.26%
+Upper Bound Error percentage: 40.37%
+------------SnapShot 1 Begins--------------
+|V|=13593033
+Correct Prediction: 95.96%
+Dump Prediction Correcr Rate: 52.04%
+Changing Rate: 47.96%
+Changing Capturing Rate: 95.56%
+Unchanged Rate: 52.04%
+Unchanged Capture Rate: 96.32%
+Changing Number when Boundary Complete Match: 2.13%
+Changing Number when Boundary Pre Contains Cur: 21.35%
+Changing Number when Boundary Cur Contains Pre: 24.48%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 50.13%
+Unchanging Number when Boundary Pre Contains Cur: 0.55%
+Unchanging Number when Boundary Cur Contains Pre: 1.36%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 33.47%
+Upper Bound Error percentage: 37.96%
+Base Root Time per SnapShot: 0.395765s
+Prediction Time per SnapShot: 3.216627s
+
+Running build/test-index-viterbi with batch_ratio=0.48
+Error: Invalid line "% asym unweighted"
+read: 177.650471s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 1, batch_size is 209864363
+read: 0.092397s
+|E|=437217424
+|V|=13593033
+Union Graph Marked: 45.986292s
+Graph Size: 437217424, Edge Count For Version 999 is 437217424
+Forward Time: 12.603312s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 21455458
+ Percentage of core graph edge: 4.91
+Common Graph Edges: 17488698
+Graph Size: 17488698, Edge Count For Version 666 is 17488698
+Forward Time: 1.095692s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 7291688
+ Percentage of core graph edge: 41.69
+Merged Set Size: 21505244
+------------SnapShot 0 Begins--------------
+|V|=13593033
+Lower Bound Error percentage: 34.22%
+Upper Bound Error percentage: 37.94%
+------------SnapShot 1 Begins--------------
+|V|=13593033
+Correct Prediction: 97.54%
+Dump Prediction Correcr Rate: 50.69%
+Changing Rate: 49.31%
+Changing Capturing Rate: 96.95%
+Unchanged Rate: 50.69%
+Unchanged Capture Rate: 98.11%
+Changing Number when Boundary Complete Match: 1.50%
+Changing Number when Boundary Pre Contains Cur: 20.31%
+Changing Number when Boundary Cur Contains Pre: 27.49%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 49.73%
+Unchanging Number when Boundary Pre Contains Cur: 0.29%
+Unchanging Number when Boundary Cur Contains Pre: 0.67%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 28.61%
+Upper Bound Error percentage: 32.54%
+Base Root Time per SnapShot: 0.402948s
+Prediction Time per SnapShot: 3.202052s
+
+-----------------------------------
+
+Running build/test-index-wcc with batch_ratio=0.08
+Error: Invalid line "% asym unweighted"
+read: 182.053094s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 1, batch_size is 34977393
+read: 0.089464s
+|E|=437217424
+|V|=13593033
+Union Graph Marked: 46.455649s
+Graph Size: 437217424, Edge Count For Version 999 is 437217424
+Forward Time: 35.633804s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 21461669
+ Percentage of core graph edge: 4.91
+Common Graph Edges: 367262638
+Graph Size: 367262638, Edge Count For Version 666 is 367262638
+Forward Time: 32.376994s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 19978080
+ Percentage of core graph edge: 5.44
+Merged Set Size: 23542478
+------------SnapShot 0 Begins--------------
+|V|=13593033
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 0.00%
+------------SnapShot 1 Begins--------------
+|V|=13593033
+Correct Prediction: 98.88%
+Dump Prediction Correcr Rate: 97.33%
+Changing Rate: 2.67%
+Changing Capturing Rate: 95.85%
+Unchanged Rate: 97.33%
+Unchanged Capture Rate: 98.96%
+Changing Number when Boundary Complete Match: 0.11%
+Changing Number when Boundary Pre Contains Cur: 1.28%
+Changing Number when Boundary Cur Contains Pre: 1.27%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 96.32%
+Unchanging Number when Boundary Pre Contains Cur: 0.52%
+Unchanging Number when Boundary Cur Contains Pre: 0.49%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 0.00%
+Base Root Time per SnapShot: 14.253159s
+Prediction Time per SnapShot: 0.052477s
+
+Running build/test-index-wcc with batch_ratio=0.16
+Error: Invalid line "% asym unweighted"
+read: 181.110508s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 1, batch_size is 69954787
+read: 0.090214s
+|E|=437217424
+|V|=13593033
+Union Graph Marked: 46.067158s
+Graph Size: 437217424, Edge Count For Version 999 is 437217424
+Forward Time: 36.237472s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 21461795
+ Percentage of core graph edge: 4.91
+Common Graph Edges: 297307850
+Graph Size: 297307850, Edge Count For Version 666 is 297307850
+Forward Time: 27.069039s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 18373341
+ Percentage of core graph edge: 6.18
+Merged Set Size: 25587689
+------------SnapShot 0 Begins--------------
+|V|=13593033
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 0.00%
+------------SnapShot 1 Begins--------------
+|V|=13593033
+Correct Prediction: 97.79%
+Dump Prediction Correcr Rate: 94.54%
+Changing Rate: 5.46%
+Changing Capturing Rate: 96.42%
+Unchanged Rate: 94.54%
+Unchanged Capture Rate: 97.87%
+Changing Number when Boundary Complete Match: 0.20%
+Changing Number when Boundary Pre Contains Cur: 2.64%
+Changing Number when Boundary Cur Contains Pre: 2.63%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 92.52%
+Unchanging Number when Boundary Pre Contains Cur: 0.98%
+Unchanging Number when Boundary Cur Contains Pre: 1.03%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 0.00%
+Base Root Time per SnapShot: 14.175954s
+Prediction Time per SnapShot: 0.067558s
+
+Running build/test-index-wcc with batch_ratio=0.24
+Error: Invalid line "% asym unweighted"
+read: 181.158517s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 1, batch_size is 104932181
+read: 0.088785s
+|E|=437217424
+|V|=13593033
+Union Graph Marked: 46.046739s
+Graph Size: 437217424, Edge Count For Version 999 is 437217424
+Forward Time: 35.058286s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 21462076
+ Percentage of core graph edge: 4.91
+Common Graph Edges: 227353062
+Graph Size: 227353062, Edge Count For Version 666 is 227353062
+Forward Time: 24.329247s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 16602048
+ Percentage of core graph edge: 7.30
+Merged Set Size: 27002470
+------------SnapShot 0 Begins--------------
+|V|=13593033
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 0.00%
+------------SnapShot 1 Begins--------------
+|V|=13593033
+Correct Prediction: 96.48%
+Dump Prediction Correcr Rate: 91.57%
+Changing Rate: 8.43%
+Changing Capturing Rate: 96.72%
+Unchanged Rate: 91.57%
+Unchanged Capture Rate: 96.45%
+Changing Number when Boundary Complete Match: 0.28%
+Changing Number when Boundary Pre Contains Cur: 4.08%
+Changing Number when Boundary Cur Contains Pre: 4.07%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 88.32%
+Unchanging Number when Boundary Pre Contains Cur: 1.64%
+Unchanging Number when Boundary Cur Contains Pre: 1.61%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 0.00%
+Base Root Time per SnapShot: 14.342196s
+Prediction Time per SnapShot: 0.052895s
+
+Running build/test-index-wcc with batch_ratio=0.32
+Error: Invalid line "% asym unweighted"
+read: 182.214967s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 1, batch_size is 139909575
+read: 0.087668s
+|E|=437217424
+|V|=13593033
+Union Graph Marked: 45.912728s
+Graph Size: 437217424, Edge Count For Version 999 is 437217424
+Forward Time: 35.473576s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 21459951
+ Percentage of core graph edge: 4.91
+Common Graph Edges: 157398274
+Graph Size: 157398274, Edge Count For Version 666 is 157398274
+Forward Time: 19.919742s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 14553233
+ Percentage of core graph edge: 9.25
+Merged Set Size: 28398207
+------------SnapShot 0 Begins--------------
+|V|=13593033
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 0.00%
+------------SnapShot 1 Begins--------------
+|V|=13593033
+Correct Prediction: 94.51%
+Dump Prediction Correcr Rate: 88.36%
+Changing Rate: 11.64%
+Changing Capturing Rate: 96.90%
+Unchanged Rate: 88.36%
+Unchanged Capture Rate: 94.19%
+Changing Number when Boundary Complete Match: 0.36%
+Changing Number when Boundary Pre Contains Cur: 5.65%
+Changing Number when Boundary Cur Contains Pre: 5.64%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.00%
+Unchanging Number when Boundary Complete Match: 83.22%
+Unchanging Number when Boundary Pre Contains Cur: 2.55%
+Unchanging Number when Boundary Cur Contains Pre: 2.58%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 0.00%
+Base Root Time per SnapShot: 12.965149s
+Prediction Time per SnapShot: 0.054169s
+
+Running build/test-index-wcc with batch_ratio=0.40
+Error: Invalid line "% asym unweighted"
+read: 182.311976s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 1, batch_size is 174886969
+read: 0.088838s
+|E|=437217424
+|V|=13593033
+Union Graph Marked: 46.197395s
+Graph Size: 437217424, Edge Count For Version 999 is 437217424
+Forward Time: 35.611862s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 21462539
+ Percentage of core graph edge: 4.91
+Common Graph Edges: 87443486
+Graph Size: 87443486, Edge Count For Version 666 is 87443486
+Forward Time: 16.600111s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 11908411
+ Percentage of core graph edge: 13.62
+Merged Set Size: 29096462
+------------SnapShot 0 Begins--------------
+|V|=13593033
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 0.00%
+------------SnapShot 1 Begins--------------
+|V|=13593033
+Correct Prediction: 15.12%
+Dump Prediction Correcr Rate: 84.88%
+Changing Rate: 15.12%
+Changing Capturing Rate: 100.00%
+Unchanged Rate: 84.88%
+Unchanged Capture Rate: 0.00%
+Changing Number when Boundary Complete Match: 0.00%
+Changing Number when Boundary Pre Contains Cur: 0.35%
+Changing Number when Boundary Cur Contains Pre: 5.66%
+Changing Number when Boundary Partial Overlap Pre Left: 1.81%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 7.29%
+Unchanging Number when Boundary Complete Match: 0.00%
+Unchanging Number when Boundary Pre Contains Cur: 3.59%
+Unchanging Number when Boundary Cur Contains Pre: 39.94%
+Unchanging Number when Boundary Partial Overlap Pre Left: 37.05%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 4.31%
+Lower Bound Error percentage: 6.05%
+Upper Bound Error percentage: 0.00%
+Base Root Time per SnapShot: 12.069686s
+Prediction Time per SnapShot: 0.063825s
+
+Running build/test-index-wcc with batch_ratio=0.48
+Error: Invalid line "% asym unweighted"
+read: 181.060352s
+loading graph /home/cgao037/graph/wen/snap_wen, root file is source/wen.txt, batch_num is 1, batch_size is 209864363
+read: 0.088981s
+|E|=437217424
+|V|=13593033
+Union Graph Marked: 46.563223s
+Graph Size: 437217424, Edge Count For Version 999 is 437217424
+Forward Time: 36.227434s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 21461411
+ Percentage of core graph edge: 4.91
+Common Graph Edges: 17488698
+Graph Size: 17488698, Edge Count For Version 666 is 17488698
+Forward Time: 11.434505s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 6507815
+ Percentage of core graph edge: 37.21
+Merged Set Size: 27112273
+------------SnapShot 0 Begins--------------
+|V|=13593033
+Lower Bound Error percentage: 13.44%
+Upper Bound Error percentage: 0.00%
+------------SnapShot 1 Begins--------------
+|V|=13593033
+Correct Prediction: 18.98%
+Dump Prediction Correcr Rate: 81.02%
+Changing Rate: 18.98%
+Changing Capturing Rate: 100.00%
+Unchanged Rate: 81.02%
+Unchanged Capture Rate: 0.00%
+Changing Number when Boundary Complete Match: 0.00%
+Changing Number when Boundary Pre Contains Cur: 0.03%
+Changing Number when Boundary Cur Contains Pre: 9.15%
+Changing Number when Boundary Partial Overlap Pre Left: 5.48%
+Changing Number when Boundary Partial Overlap Cur Left: 0.42%
+Changing Number when Boundary Disjoint: 3.90%
+Unchanging Number when Boundary Complete Match: 0.00%
+Unchanging Number when Boundary Pre Contains Cur: 3.48%
+Unchanging Number when Boundary Cur Contains Pre: 47.10%
+Unchanging Number when Boundary Partial Overlap Pre Left: 28.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.26%
+Unchanging Number when Boundary Disjoint: 2.19%
+Lower Bound Error percentage: 13.47%
+Upper Bound Error percentage: 0.00%
+Base Root Time per SnapShot: 11.444643s
+Prediction Time per SnapShot: 0.066946s
+
+-----------------------------------
+

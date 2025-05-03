@@ -1,0 +1,1444 @@
+nohup: ignoring input
+Running build/test-index-bfs with batch_ratio=0.08
+Error: Invalid line "# Directed graph (each unordered pair of nodes is saved once): soc-LiveJournal1.txt "
+Error: Invalid line "# Directed LiveJournal friednship social network"
+Error: Invalid line "# Nodes: 4847571 Edges: 68993773"
+Error: Invalid line "# FromNodeId	ToNodeId"
+read: 42.919266s
+loading graph /home/cgao037/graph/lj/lj_snap, root file is source/lj.txt, batch_num is 1, batch_size is 5519501
+read: 0.039194s
+|E|=68993773
+|V|=4847571
+Union Graph Marked: 16.893067s
+Graph Size: 68993773, Edge Count For Version 999 is 68993773
+Forward Time: 7.915905s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 23058490
+ Percentage of core graph edge: 33.42
+Common Graph Edges: 57954771
+Graph Size: 57954771, Edge Count For Version 666 is 57954771
+Forward Time: 7.532016s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 21373803
+ Percentage of core graph edge: 36.88
+Merged Set Size: 28888107
+------------SnapShot 0 Begins--------------
+|V|=4847571
+Lower Bound Error percentage: 10.38%
+Upper Bound Error percentage: 0.00%
+------------SnapShot 1 Begins--------------
+|V|=4847571
+Correct Prediction: 58.53%
+Dump Prediction Correcr Rate: 47.95%
+Changing Rate: 52.05%
+Changing Capturing Rate: 71.65%
+Unchanged Rate: 47.95%
+Unchanged Capture Rate: 44.29%
+Changing Number when Boundary Complete Match: 14.75%
+Changing Number when Boundary Pre Contains Cur: 17.60%
+Changing Number when Boundary Cur Contains Pre: 8.70%
+Changing Number when Boundary Partial Overlap Pre Left: 4.33%
+Changing Number when Boundary Partial Overlap Cur Left: 5.70%
+Changing Number when Boundary Disjoint: 0.96%
+Unchanging Number when Boundary Complete Match: 21.24%
+Unchanging Number when Boundary Pre Contains Cur: 10.01%
+Unchanging Number when Boundary Cur Contains Pre: 8.71%
+Unchanging Number when Boundary Partial Overlap Pre Left: 2.90%
+Unchanging Number when Boundary Partial Overlap Cur Left: 5.01%
+Unchanging Number when Boundary Disjoint: 0.08%
+Lower Bound Error percentage: 8.83%
+Upper Bound Error percentage: 0.00%
+Base Root Time per SnapShot: 0.464165s
+Prediction Time per SnapShot: 11.882146s
+Running build/test-index-bfs with batch_ratio=0.16
+Error: Invalid line "# Directed graph (each unordered pair of nodes is saved once): soc-LiveJournal1.txt "
+Error: Invalid line "# Directed LiveJournal friednship social network"
+Error: Invalid line "# Nodes: 4847571 Edges: 68993773"
+Error: Invalid line "# FromNodeId	ToNodeId"
+read: 47.124159s
+loading graph /home/cgao037/graph/lj/lj_snap, root file is source/lj.txt, batch_num is 1, batch_size is 11039003
+read: 0.034043s
+|E|=68993773
+|V|=4847571
+Union Graph Marked: 36.910001s
+Graph Size: 68993773, Edge Count For Version 999 is 68993773
+Forward Time: 7.544351s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 23054794
+ Percentage of core graph edge: 33.42
+Common Graph Edges: 46915767
+Graph Size: 46915767, Edge Count For Version 666 is 46915767
+Forward Time: 6.600112s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 19052456
+ Percentage of core graph edge: 40.61
+Merged Set Size: 29899265
+------------SnapShot 0 Begins--------------
+|V|=4847571
+Lower Bound Error percentage: 6.52%
+Upper Bound Error percentage: 0.00%
+------------SnapShot 1 Begins--------------
+|V|=4847571
+Correct Prediction: 65.54%
+Dump Prediction Correcr Rate: 31.44%
+Changing Rate: 68.56%
+Changing Capturing Rate: 74.27%
+Unchanged Rate: 31.44%
+Unchanged Capture Rate: 46.51%
+Changing Number when Boundary Complete Match: 17.64%
+Changing Number when Boundary Pre Contains Cur: 21.45%
+Changing Number when Boundary Cur Contains Pre: 16.04%
+Changing Number when Boundary Partial Overlap Pre Left: 4.62%
+Changing Number when Boundary Partial Overlap Cur Left: 7.62%
+Changing Number when Boundary Disjoint: 1.19%
+Unchanging Number when Boundary Complete Match: 14.62%
+Unchanging Number when Boundary Pre Contains Cur: 6.02%
+Unchanging Number when Boundary Cur Contains Pre: 4.62%
+Unchanging Number when Boundary Partial Overlap Pre Left: 2.11%
+Unchanging Number when Boundary Partial Overlap Cur Left: 4.02%
+Unchanging Number when Boundary Disjoint: 0.05%
+Lower Bound Error percentage: 7.31%
+Upper Bound Error percentage: 0.00%
+Base Root Time per SnapShot: 0.572576s
+Prediction Time per SnapShot: 11.692970s
+Running build/test-index-bfs with batch_ratio=0.24
+Error: Invalid line "# Directed graph (each unordered pair of nodes is saved once): soc-LiveJournal1.txt "
+Error: Invalid line "# Directed LiveJournal friednship social network"
+Error: Invalid line "# Nodes: 4847571 Edges: 68993773"
+Error: Invalid line "# FromNodeId	ToNodeId"
+read: 42.520756s
+loading graph /home/cgao037/graph/lj/lj_snap, root file is source/lj.txt, batch_num is 1, batch_size is 16558505
+read: 0.021539s
+|E|=68993773
+|V|=4847571
+Union Graph Marked: 42.465021s
+Graph Size: 68993773, Edge Count For Version 999 is 68993773
+Forward Time: 7.878015s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 23012460
+ Percentage of core graph edge: 33.35
+Common Graph Edges: 35876763
+Graph Size: 35876763, Edge Count For Version 666 is 35876763
+Forward Time: 6.339210s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 16343785
+ Percentage of core graph edge: 45.56
+Merged Set Size: 30063832
+------------SnapShot 0 Begins--------------
+|V|=4847571
+Lower Bound Error percentage: 6.23%
+Upper Bound Error percentage: 0.00%
+------------SnapShot 1 Begins--------------
+|V|=4847571
+Correct Prediction: 72.90%
+Dump Prediction Correcr Rate: 23.70%
+Changing Rate: 76.30%
+Changing Capturing Rate: 78.61%
+Unchanged Rate: 23.70%
+Unchanged Capture Rate: 54.51%
+Changing Number when Boundary Complete Match: 16.32%
+Changing Number when Boundary Pre Contains Cur: 27.68%
+Changing Number when Boundary Cur Contains Pre: 17.54%
+Changing Number when Boundary Partial Overlap Pre Left: 6.29%
+Changing Number when Boundary Partial Overlap Cur Left: 8.02%
+Changing Number when Boundary Disjoint: 0.45%
+Unchanging Number when Boundary Complete Match: 12.92%
+Unchanging Number when Boundary Pre Contains Cur: 3.77%
+Unchanging Number when Boundary Cur Contains Pre: 2.80%
+Unchanging Number when Boundary Partial Overlap Pre Left: 2.04%
+Unchanging Number when Boundary Partial Overlap Cur Left: 2.12%
+Unchanging Number when Boundary Disjoint: 0.04%
+Lower Bound Error percentage: 6.12%
+Upper Bound Error percentage: 0.00%
+Base Root Time per SnapShot: 0.442795s
+Prediction Time per SnapShot: 9.949875s
+Running build/test-index-bfs with batch_ratio=0.32
+Error: Invalid line "# Directed graph (each unordered pair of nodes is saved once): soc-LiveJournal1.txt "
+Error: Invalid line "# Directed LiveJournal friednship social network"
+Error: Invalid line "# Nodes: 4847571 Edges: 68993773"
+Error: Invalid line "# FromNodeId	ToNodeId"
+read: 41.718914s
+loading graph /home/cgao037/graph/lj/lj_snap, root file is source/lj.txt, batch_num is 1, batch_size is 22078007
+read: 0.024485s
+|E|=68993773
+|V|=4847571
+Union Graph Marked: 7.646995s
+Graph Size: 68993773, Edge Count For Version 999 is 68993773
+Forward Time: 7.790735s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 23075960
+ Percentage of core graph edge: 33.45
+Common Graph Edges: 24837759
+Graph Size: 24837759, Edge Count For Version 666 is 24837759
+Forward Time: 4.720139s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 12955978
+ Percentage of core graph edge: 52.16
+Merged Set Size: 29503777
+------------SnapShot 0 Begins--------------
+|V|=4847571
+Lower Bound Error percentage: 6.68%
+Upper Bound Error percentage: 0.00%
+------------SnapShot 1 Begins--------------
+|V|=4847571
+Correct Prediction: 78.29%
+Dump Prediction Correcr Rate: 26.97%
+Changing Rate: 73.03%
+Changing Capturing Rate: 79.86%
+Unchanged Rate: 26.97%
+Unchanged Capture Rate: 74.03%
+Changing Number when Boundary Complete Match: 14.71%
+Changing Number when Boundary Pre Contains Cur: 21.66%
+Changing Number when Boundary Cur Contains Pre: 24.08%
+Changing Number when Boundary Partial Overlap Pre Left: 5.33%
+Changing Number when Boundary Partial Overlap Cur Left: 6.84%
+Changing Number when Boundary Disjoint: 0.40%
+Unchanging Number when Boundary Complete Match: 19.97%
+Unchanging Number when Boundary Pre Contains Cur: 1.90%
+Unchanging Number when Boundary Cur Contains Pre: 2.30%
+Unchanging Number when Boundary Partial Overlap Pre Left: 1.25%
+Unchanging Number when Boundary Partial Overlap Cur Left: 1.52%
+Unchanging Number when Boundary Disjoint: 0.04%
+Lower Bound Error percentage: 4.58%
+Upper Bound Error percentage: 0.00%
+Base Root Time per SnapShot: 0.505763s
+Prediction Time per SnapShot: 9.859312s
+Running build/test-index-bfs with batch_ratio=0.48
+Error: Invalid line "# Directed graph (each unordered pair of nodes is saved once): soc-LiveJournal1.txt "
+Error: Invalid line "# Directed LiveJournal friednship social network"
+Error: Invalid line "# Nodes: 4847571 Edges: 68993773"
+Error: Invalid line "# FromNodeId	ToNodeId"
+read: 29.466252s
+loading graph /home/cgao037/graph/lj/lj_snap, root file is source/lj.txt, batch_num is 1, batch_size is 33117011
+read: 0.014017s
+|E|=68993773
+|V|=4847571
+Union Graph Marked: 7.471934s
+Graph Size: 68993773, Edge Count For Version 999 is 68993773
+Forward Time: 5.923276s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 23047837
+ Percentage of core graph edge: 33.41
+Common Graph Edges: 2759751
+Graph Size: 2759751, Edge Count For Version 666 is 2759751
+Forward Time: 3.715152s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 2609019
+ Percentage of core graph edge: 94.54
+Merged Set Size: 24088500
+------------SnapShot 0 Begins--------------
+|V|=4847571
+Lower Bound Error percentage: 7.64%
+Upper Bound Error percentage: 0.00%
+------------SnapShot 1 Begins--------------
+|V|=4847571
+Correct Prediction: 75.79%
+Dump Prediction Correcr Rate: 33.49%
+Changing Rate: 66.51%
+Changing Capturing Rate: 67.12%
+Unchanged Rate: 33.49%
+Unchanged Capture Rate: 93.00%
+Changing Number when Boundary Complete Match: 21.87%
+Changing Number when Boundary Pre Contains Cur: 17.68%
+Changing Number when Boundary Cur Contains Pre: 19.01%
+Changing Number when Boundary Partial Overlap Pre Left: 3.78%
+Changing Number when Boundary Partial Overlap Cur Left: 3.72%
+Changing Number when Boundary Disjoint: 0.44%
+Unchanging Number when Boundary Complete Match: 31.15%
+Unchanging Number when Boundary Pre Contains Cur: 0.69%
+Unchanging Number when Boundary Cur Contains Pre: 0.54%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.57%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.51%
+Unchanging Number when Boundary Disjoint: 0.03%
+Lower Bound Error percentage: 7.23%
+Upper Bound Error percentage: 0.00%
+Base Root Time per SnapShot: 0.087984s
+Prediction Time per SnapShot: 0.985048s
+Running build/test-index-ssnp with batch_ratio=0.08
+Error: Invalid line "# Directed graph (each unordered pair of nodes is saved once): soc-LiveJournal1.txt "
+Error: Invalid line "# Directed LiveJournal friednship social network"
+Error: Invalid line "# Nodes: 4847571 Edges: 68993773"
+Error: Invalid line "# FromNodeId	ToNodeId"
+read: 29.307074s
+loading graph /home/cgao037/graph/lj/lj_snap, root file is source/lj.txt, batch_num is 1, batch_size is 5519501
+read: 0.014039s
+|E|=68993773
+|V|=4847571
+Union Graph Marked: 7.643038s
+Graph Size: 68993773, Edge Count For Version 999 is 68993773
+Forward Time: 5.986248s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 8433511
+ Percentage of core graph edge: 12.22
+Common Graph Edges: 57954771
+Graph Size: 57954771, Edge Count For Version 666 is 57954771
+Forward Time: 5.790165s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 7931220
+ Percentage of core graph edge: 13.69
+Merged Set Size: 9452230
+------------SnapShot 0 Begins--------------
+|V|=4847571
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 3.28%
+------------SnapShot 1 Begins--------------
+|V|=4847571
+Correct Prediction: 83.89%
+Dump Prediction Correcr Rate: 79.85%
+Changing Rate: 20.15%
+Changing Capturing Rate: 86.72%
+Unchanged Rate: 79.85%
+Unchanged Capture Rate: 83.18%
+Changing Number when Boundary Complete Match: 2.68%
+Changing Number when Boundary Pre Contains Cur: 8.29%
+Changing Number when Boundary Cur Contains Pre: 5.11%
+Changing Number when Boundary Partial Overlap Pre Left: 2.55%
+Changing Number when Boundary Partial Overlap Cur Left: 0.69%
+Changing Number when Boundary Disjoint: 0.84%
+Unchanging Number when Boundary Complete Match: 66.41%
+Unchanging Number when Boundary Pre Contains Cur: 4.90%
+Unchanging Number when Boundary Cur Contains Pre: 6.56%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.82%
+Unchanging Number when Boundary Partial Overlap Cur Left: 1.09%
+Unchanging Number when Boundary Disjoint: 0.06%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 3.99%
+Base Root Time per SnapShot: 0.077606s
+Prediction Time per SnapShot: 1.109196s
+Running build/test-index-ssnp with batch_ratio=0.16
+Error: Invalid line "# Directed graph (each unordered pair of nodes is saved once): soc-LiveJournal1.txt "
+Error: Invalid line "# Directed LiveJournal friednship social network"
+Error: Invalid line "# Nodes: 4847571 Edges: 68993773"
+Error: Invalid line "# FromNodeId	ToNodeId"
+read: 29.232532s
+loading graph /home/cgao037/graph/lj/lj_snap, root file is source/lj.txt, batch_num is 1, batch_size is 11039003
+read: 0.024547s
+|E|=68993773
+|V|=4847571
+Union Graph Marked: 8.352756s
+Graph Size: 68993773, Edge Count For Version 999 is 68993773
+Forward Time: 5.961902s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 8438250
+ Percentage of core graph edge: 12.23
+Common Graph Edges: 46915767
+Graph Size: 46915767, Edge Count For Version 666 is 46915767
+Forward Time: 5.378911s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 7341205
+ Percentage of core graph edge: 15.65
+Merged Set Size: 10319057
+------------SnapShot 0 Begins--------------
+|V|=4847571
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 2.89%
+------------SnapShot 1 Begins--------------
+|V|=4847571
+Correct Prediction: 75.81%
+Dump Prediction Correcr Rate: 59.84%
+Changing Rate: 40.16%
+Changing Capturing Rate: 84.69%
+Unchanged Rate: 59.84%
+Unchanged Capture Rate: 69.85%
+Changing Number when Boundary Complete Match: 6.15%
+Changing Number when Boundary Pre Contains Cur: 13.08%
+Changing Number when Boundary Cur Contains Pre: 12.01%
+Changing Number when Boundary Partial Overlap Pre Left: 3.49%
+Changing Number when Boundary Partial Overlap Cur Left: 2.82%
+Changing Number when Boundary Disjoint: 2.61%
+Unchanging Number when Boundary Complete Match: 41.80%
+Unchanging Number when Boundary Pre Contains Cur: 7.81%
+Unchanging Number when Boundary Cur Contains Pre: 8.04%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.89%
+Unchanging Number when Boundary Partial Overlap Cur Left: 1.17%
+Unchanging Number when Boundary Disjoint: 0.13%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 3.35%
+Base Root Time per SnapShot: 0.077811s
+Prediction Time per SnapShot: 1.084322s
+Running build/test-index-ssnp with batch_ratio=0.24
+Error: Invalid line "# Directed graph (each unordered pair of nodes is saved once): soc-LiveJournal1.txt "
+Error: Invalid line "# Directed LiveJournal friednship social network"
+Error: Invalid line "# Nodes: 4847571 Edges: 68993773"
+Error: Invalid line "# FromNodeId	ToNodeId"
+read: 29.133304s
+loading graph /home/cgao037/graph/lj/lj_snap, root file is source/lj.txt, batch_num is 1, batch_size is 16558505
+read: 0.023755s
+|E|=68993773
+|V|=4847571
+Union Graph Marked: 7.517596s
+Graph Size: 68993773, Edge Count For Version 999 is 68993773
+Forward Time: 6.034944s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 8431228
+ Percentage of core graph edge: 12.22
+Common Graph Edges: 35876763
+Graph Size: 35876763, Edge Count For Version 666 is 35876763
+Forward Time: 5.071914s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 7054388
+ Percentage of core graph edge: 19.66
+Merged Set Size: 11377497
+------------SnapShot 0 Begins--------------
+|V|=4847571
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 2.03%
+------------SnapShot 1 Begins--------------
+|V|=4847571
+Correct Prediction: 76.62%
+Dump Prediction Correcr Rate: 48.52%
+Changing Rate: 51.48%
+Changing Capturing Rate: 89.83%
+Unchanged Rate: 48.52%
+Unchanged Capture Rate: 62.61%
+Changing Number when Boundary Complete Match: 5.24%
+Changing Number when Boundary Pre Contains Cur: 17.23%
+Changing Number when Boundary Cur Contains Pre: 15.18%
+Changing Number when Boundary Partial Overlap Pre Left: 5.45%
+Changing Number when Boundary Partial Overlap Cur Left: 3.51%
+Changing Number when Boundary Disjoint: 4.86%
+Unchanging Number when Boundary Complete Match: 30.38%
+Unchanging Number when Boundary Pre Contains Cur: 7.46%
+Unchanging Number when Boundary Cur Contains Pre: 8.39%
+Unchanging Number when Boundary Partial Overlap Pre Left: 1.08%
+Unchanging Number when Boundary Partial Overlap Cur Left: 1.06%
+Unchanging Number when Boundary Disjoint: 0.16%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 1.77%
+Base Root Time per SnapShot: 0.078734s
+Prediction Time per SnapShot: 1.149883s
+Running build/test-index-ssnp with batch_ratio=0.32
+Error: Invalid line "# Directed graph (each unordered pair of nodes is saved once): soc-LiveJournal1.txt "
+Error: Invalid line "# Directed LiveJournal friednship social network"
+Error: Invalid line "# Nodes: 4847571 Edges: 68993773"
+Error: Invalid line "# FromNodeId	ToNodeId"
+read: 29.133457s
+loading graph /home/cgao037/graph/lj/lj_snap, root file is source/lj.txt, batch_num is 1, batch_size is 22078007
+read: 0.013907s
+|E|=68993773
+|V|=4847571
+Union Graph Marked: 7.683519s
+Graph Size: 68993773, Edge Count For Version 999 is 68993773
+Forward Time: 6.087474s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 8424202
+ Percentage of core graph edge: 12.21
+Common Graph Edges: 24837759
+Graph Size: 24837759, Edge Count For Version 666 is 24837759
+Forward Time: 4.704361s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 6336814
+ Percentage of core graph edge: 25.51
+Merged Set Size: 11960503
+------------SnapShot 0 Begins--------------
+|V|=4847571
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 2.68%
+------------SnapShot 1 Begins--------------
+|V|=4847571
+Correct Prediction: 74.02%
+Dump Prediction Correcr Rate: 39.32%
+Changing Rate: 60.68%
+Changing Capturing Rate: 88.47%
+Unchanged Rate: 39.32%
+Unchanged Capture Rate: 51.73%
+Changing Number when Boundary Complete Match: 7.00%
+Changing Number when Boundary Pre Contains Cur: 17.98%
+Changing Number when Boundary Cur Contains Pre: 19.31%
+Changing Number when Boundary Partial Overlap Pre Left: 5.20%
+Changing Number when Boundary Partial Overlap Cur Left: 4.20%
+Changing Number when Boundary Disjoint: 6.99%
+Unchanging Number when Boundary Complete Match: 20.34%
+Unchanging Number when Boundary Pre Contains Cur: 8.82%
+Unchanging Number when Boundary Cur Contains Pre: 9.10%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.60%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.39%
+Unchanging Number when Boundary Disjoint: 0.07%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 1.92%
+Base Root Time per SnapShot: 0.076304s
+Prediction Time per SnapShot: 1.131983s
+Running build/test-index-ssnp with batch_ratio=0.48
+Error: Invalid line "# Directed graph (each unordered pair of nodes is saved once): soc-LiveJournal1.txt "
+Error: Invalid line "# Directed LiveJournal friednship social network"
+Error: Invalid line "# Nodes: 4847571 Edges: 68993773"
+Error: Invalid line "# FromNodeId	ToNodeId"
+read: 29.446468s
+loading graph /home/cgao037/graph/lj/lj_snap, root file is source/lj.txt, batch_num is 1, batch_size is 33117011
+read: 0.014576s
+|E|=68993773
+|V|=4847571
+Union Graph Marked: 7.622994s
+Graph Size: 68993773, Edge Count For Version 999 is 68993773
+Forward Time: 6.036925s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 8432315
+ Percentage of core graph edge: 12.22
+Common Graph Edges: 2759751
+Graph Size: 2759751, Edge Count For Version 666 is 2759751
+Forward Time: 3.837832s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 2220982
+ Percentage of core graph edge: 80.48
+Merged Set Size: 10327392
+------------SnapShot 0 Begins--------------
+|V|=4847571
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 22.00%
+------------SnapShot 1 Begins--------------
+|V|=4847571
+Correct Prediction: 67.45%
+Dump Prediction Correcr Rate: 35.81%
+Changing Rate: 64.19%
+Changing Capturing Rate: 87.13%
+Unchanged Rate: 35.81%
+Unchanged Capture Rate: 32.17%
+Changing Number when Boundary Complete Match: 8.26%
+Changing Number when Boundary Pre Contains Cur: 17.49%
+Changing Number when Boundary Cur Contains Pre: 21.51%
+Changing Number when Boundary Partial Overlap Pre Left: 2.62%
+Changing Number when Boundary Partial Overlap Cur Left: 1.72%
+Changing Number when Boundary Disjoint: 12.59%
+Unchanging Number when Boundary Complete Match: 11.52%
+Unchanging Number when Boundary Pre Contains Cur: 10.63%
+Unchanging Number when Boundary Cur Contains Pre: 12.06%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.15%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.35%
+Unchanging Number when Boundary Disjoint: 1.11%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 21.51%
+Base Root Time per SnapShot: 0.085045s
+Prediction Time per SnapShot: 1.066471s
+Running build/test-index-ssr with batch_ratio=0.08
+Error: Invalid line "# Directed graph (each unordered pair of nodes is saved once): soc-LiveJournal1.txt "
+Error: Invalid line "# Directed LiveJournal friednship social network"
+Error: Invalid line "# Nodes: 4847571 Edges: 68993773"
+Error: Invalid line "# FromNodeId	ToNodeId"
+read: 29.207779s
+loading graph /home/cgao037/graph/lj/lj_snap, root file is source/lj.txt, batch_num is 1, batch_size is 5519501
+read: 0.014443s
+|E|=68993773
+|V|=4847571
+Union Graph Marked: 8.088339s
+Graph Size: 68993773, Edge Count For Version 999 is 68993773
+Forward Time: 7.785866s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 10162704
+ Percentage of core graph edge: 14.73
+Common Graph Edges: 57954771
+Graph Size: 57954771, Edge Count For Version 666 is 57954771
+Forward Time: 7.299173s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 9574958
+ Percentage of core graph edge: 16.52
+Merged Set Size: 11420905
+------------SnapShot 0 Begins--------------
+|V|=4847571
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 3.94%
+------------SnapShot 1 Begins--------------
+|V|=4847571
+Correct Prediction: 85.08%
+Dump Prediction Correcr Rate: 88.12%
+Changing Rate: 11.88%
+Changing Capturing Rate: 77.63%
+Unchanged Rate: 88.12%
+Unchanged Capture Rate: 86.08%
+Changing Number when Boundary Complete Match: 2.66%
+Changing Number when Boundary Pre Contains Cur: 5.82%
+Changing Number when Boundary Cur Contains Pre: 2.95%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 0.45%
+Unchanging Number when Boundary Complete Match: 75.86%
+Unchanging Number when Boundary Pre Contains Cur: 5.67%
+Unchanging Number when Boundary Cur Contains Pre: 6.38%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.21%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 4.33%
+Base Root Time per SnapShot: 0.073216s
+Prediction Time per SnapShot: 1.109965s
+Running build/test-index-ssr with batch_ratio=0.16
+Error: Invalid line "# Directed graph (each unordered pair of nodes is saved once): soc-LiveJournal1.txt "
+Error: Invalid line "# Directed LiveJournal friednship social network"
+Error: Invalid line "# Nodes: 4847571 Edges: 68993773"
+Error: Invalid line "# FromNodeId	ToNodeId"
+read: 29.290102s
+loading graph /home/cgao037/graph/lj/lj_snap, root file is source/lj.txt, batch_num is 1, batch_size is 11039003
+read: 0.016583s
+|E|=68993773
+|V|=4847571
+Union Graph Marked: 7.217962s
+Graph Size: 68993773, Edge Count For Version 999 is 68993773
+Forward Time: 7.805902s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 10160323
+ Percentage of core graph edge: 14.73
+Common Graph Edges: 46915767
+Graph Size: 46915767, Edge Count For Version 666 is 46915767
+Forward Time: 6.458404s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 8907809
+ Percentage of core graph edge: 18.99
+Merged Set Size: 12250355
+------------SnapShot 0 Begins--------------
+|V|=4847571
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 3.20%
+------------SnapShot 1 Begins--------------
+|V|=4847571
+Correct Prediction: 80.39%
+Dump Prediction Correcr Rate: 73.49%
+Changing Rate: 26.51%
+Changing Capturing Rate: 77.47%
+Unchanged Rate: 73.49%
+Unchanged Capture Rate: 81.44%
+Changing Number when Boundary Complete Match: 5.97%
+Changing Number when Boundary Pre Contains Cur: 10.21%
+Changing Number when Boundary Cur Contains Pre: 8.77%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 1.57%
+Unchanging Number when Boundary Complete Match: 59.85%
+Unchanging Number when Boundary Pre Contains Cur: 7.09%
+Unchanging Number when Boundary Cur Contains Pre: 6.28%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.27%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 2.33%
+Base Root Time per SnapShot: 0.070300s
+Prediction Time per SnapShot: 1.153935s
+Running build/test-index-ssr with batch_ratio=0.24
+Error: Invalid line "# Directed graph (each unordered pair of nodes is saved once): soc-LiveJournal1.txt "
+Error: Invalid line "# Directed LiveJournal friednship social network"
+Error: Invalid line "# Nodes: 4847571 Edges: 68993773"
+Error: Invalid line "# FromNodeId	ToNodeId"
+read: 29.437193s
+loading graph /home/cgao037/graph/lj/lj_snap, root file is source/lj.txt, batch_num is 1, batch_size is 16558505
+read: 0.013149s
+|E|=68993773
+|V|=4847571
+Union Graph Marked: 7.840384s
+Graph Size: 68993773, Edge Count For Version 999 is 68993773
+Forward Time: 7.895624s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 10159585
+ Percentage of core graph edge: 14.73
+Common Graph Edges: 35876763
+Graph Size: 35876763, Edge Count For Version 666 is 35876763
+Forward Time: 6.013649s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 8109728
+ Percentage of core graph edge: 22.60
+Merged Set Size: 12947277
+------------SnapShot 0 Begins--------------
+|V|=4847571
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 1.79%
+------------SnapShot 1 Begins--------------
+|V|=4847571
+Correct Prediction: 78.13%
+Dump Prediction Correcr Rate: 69.51%
+Changing Rate: 30.49%
+Changing Capturing Rate: 82.12%
+Unchanged Rate: 69.51%
+Unchanged Capture Rate: 76.39%
+Changing Number when Boundary Complete Match: 5.45%
+Changing Number when Boundary Pre Contains Cur: 12.03%
+Changing Number when Boundary Cur Contains Pre: 10.44%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 2.56%
+Unchanging Number when Boundary Complete Match: 53.10%
+Unchanging Number when Boundary Pre Contains Cur: 7.83%
+Unchanging Number when Boundary Cur Contains Pre: 8.14%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.44%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 1.78%
+Base Root Time per SnapShot: 0.070242s
+Prediction Time per SnapShot: 1.050783s
+Running build/test-index-ssr with batch_ratio=0.32
+Error: Invalid line "# Directed graph (each unordered pair of nodes is saved once): soc-LiveJournal1.txt "
+Error: Invalid line "# Directed LiveJournal friednship social network"
+Error: Invalid line "# Nodes: 4847571 Edges: 68993773"
+Error: Invalid line "# FromNodeId	ToNodeId"
+read: 29.224576s
+loading graph /home/cgao037/graph/lj/lj_snap, root file is source/lj.txt, batch_num is 1, batch_size is 22078007
+read: 0.013341s
+|E|=68993773
+|V|=4847571
+Union Graph Marked: 7.588391s
+Graph Size: 68993773, Edge Count For Version 999 is 68993773
+Forward Time: 7.901799s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 10159083
+ Percentage of core graph edge: 14.72
+Common Graph Edges: 24837759
+Graph Size: 24837759, Edge Count For Version 666 is 24837759
+Forward Time: 5.284694s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 7084714
+ Percentage of core graph edge: 28.52
+Merged Set Size: 13521450
+------------SnapShot 0 Begins--------------
+|V|=4847571
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 1.28%
+------------SnapShot 1 Begins--------------
+|V|=4847571
+Correct Prediction: 77.64%
+Dump Prediction Correcr Rate: 65.89%
+Changing Rate: 34.11%
+Changing Capturing Rate: 83.36%
+Unchanged Rate: 65.89%
+Unchanged Capture Rate: 74.68%
+Changing Number when Boundary Complete Match: 5.67%
+Changing Number when Boundary Pre Contains Cur: 12.34%
+Changing Number when Boundary Cur Contains Pre: 12.51%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 3.58%
+Unchanging Number when Boundary Complete Match: 49.21%
+Unchanging Number when Boundary Pre Contains Cur: 7.90%
+Unchanging Number when Boundary Cur Contains Pre: 8.39%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 0.39%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 1.85%
+Base Root Time per SnapShot: 0.070307s
+Prediction Time per SnapShot: 1.067194s
+Running build/test-index-ssr with batch_ratio=0.48
+Error: Invalid line "# Directed graph (each unordered pair of nodes is saved once): soc-LiveJournal1.txt "
+Error: Invalid line "# Directed LiveJournal friednship social network"
+Error: Invalid line "# Nodes: 4847571 Edges: 68993773"
+Error: Invalid line "# FromNodeId	ToNodeId"
+read: 29.212103s
+loading graph /home/cgao037/graph/lj/lj_snap, root file is source/lj.txt, batch_num is 1, batch_size is 33117011
+read: 0.015688s
+|E|=68993773
+|V|=4847571
+Union Graph Marked: 7.739714s
+Graph Size: 68993773, Edge Count For Version 999 is 68993773
+Forward Time: 7.928514s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 10158973
+ Percentage of core graph edge: 14.72
+Common Graph Edges: 2759751
+Graph Size: 2759751, Edge Count For Version 666 is 2759751
+Forward Time: 3.779256s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 2410734
+ Percentage of core graph edge: 87.35
+Merged Set Size: 11469676
+------------SnapShot 0 Begins--------------
+|V|=4847571
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 6.07%
+------------SnapShot 1 Begins--------------
+|V|=4847571
+Correct Prediction: 57.75%
+Dump Prediction Correcr Rate: 60.36%
+Changing Rate: 39.64%
+Changing Capturing Rate: 65.21%
+Unchanged Rate: 60.36%
+Unchanged Capture Rate: 52.85%
+Changing Number when Boundary Complete Match: 13.79%
+Changing Number when Boundary Pre Contains Cur: 10.66%
+Changing Number when Boundary Cur Contains Pre: 9.84%
+Changing Number when Boundary Partial Overlap Pre Left: 0.00%
+Changing Number when Boundary Partial Overlap Cur Left: 0.00%
+Changing Number when Boundary Disjoint: 5.35%
+Unchanging Number when Boundary Complete Match: 31.90%
+Unchanging Number when Boundary Pre Contains Cur: 14.18%
+Unchanging Number when Boundary Cur Contains Pre: 12.42%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.00%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.00%
+Unchanging Number when Boundary Disjoint: 1.85%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 8.49%
+Base Root Time per SnapShot: 0.092634s
+Prediction Time per SnapShot: 1.293576s
+Running build/test-index-sssp with batch_ratio=0.08
+Error: Invalid line "# Directed graph (each unordered pair of nodes is saved once): soc-LiveJournal1.txt "
+Error: Invalid line "# Directed LiveJournal friednship social network"
+Error: Invalid line "# Nodes: 4847571 Edges: 68993773"
+Error: Invalid line "# FromNodeId	ToNodeId"
+read: 29.446228s
+loading graph /home/cgao037/graph/lj/lj_snap, root file is source/lj.txt, batch_num is 1, batch_size is 5519501
+read: 0.021262s
+|E|=68993773
+|V|=4847571
+Union Graph Marked: 7.717690s
+Graph Size: 68993773, Edge Count For Version 999 is 68993773
+Forward Time: 2.128566s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 22153446
+ Percentage of core graph edge: 32.11
+Common Graph Edges: 57954771
+Graph Size: 57954771, Edge Count For Version 666 is 57954771
+Forward Time: 1.838876s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 19294814
+ Percentage of core graph edge: 33.29
+Merged Set Size: 24093365
+------------SnapShot 0 Begins--------------
+|V|=4847571
+Lower Bound Error percentage: 0.01%
+Upper Bound Error percentage: 0.00%
+------------SnapShot 1 Begins--------------
+|V|=4847571
+Correct Prediction: 69.94%
+Dump Prediction Correcr Rate: 47.95%
+Changing Rate: 52.05%
+Changing Capturing Rate: 91.60%
+Unchanged Rate: 47.95%
+Unchanged Capture Rate: 46.42%
+Changing Number when Boundary Complete Match: 4.37%
+Changing Number when Boundary Pre Contains Cur: 20.33%
+Changing Number when Boundary Cur Contains Pre: 10.33%
+Changing Number when Boundary Partial Overlap Pre Left: 7.09%
+Changing Number when Boundary Partial Overlap Cur Left: 8.84%
+Changing Number when Boundary Disjoint: 1.09%
+Unchanging Number when Boundary Complete Match: 22.26%
+Unchanging Number when Boundary Pre Contains Cur: 11.49%
+Unchanging Number when Boundary Cur Contains Pre: 9.12%
+Unchanging Number when Boundary Partial Overlap Pre Left: 1.85%
+Unchanging Number when Boundary Partial Overlap Cur Left: 3.12%
+Unchanging Number when Boundary Disjoint: 0.12%
+Lower Bound Error percentage: 0.99%
+Upper Bound Error percentage: 0.00%
+Base Root Time per SnapShot: 0.077564s
+Prediction Time per SnapShot: 1.136665s
+Running build/test-index-sssp with batch_ratio=0.16
+Error: Invalid line "# Directed graph (each unordered pair of nodes is saved once): soc-LiveJournal1.txt "
+Error: Invalid line "# Directed LiveJournal friednship social network"
+Error: Invalid line "# Nodes: 4847571 Edges: 68993773"
+Error: Invalid line "# FromNodeId	ToNodeId"
+read: 29.442717s
+loading graph /home/cgao037/graph/lj/lj_snap, root file is source/lj.txt, batch_num is 1, batch_size is 11039003
+read: 0.014270s
+|E|=68993773
+|V|=4847571
+Union Graph Marked: 7.610362s
+Graph Size: 68993773, Edge Count For Version 999 is 68993773
+Forward Time: 2.107469s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 22153490
+ Percentage of core graph edge: 32.11
+Common Graph Edges: 46915767
+Graph Size: 46915767, Edge Count For Version 666 is 46915767
+Forward Time: 1.533008s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 16481629
+ Percentage of core graph edge: 35.13
+Merged Set Size: 24966973
+------------SnapShot 0 Begins--------------
+|V|=4847571
+Lower Bound Error percentage: 0.02%
+Upper Bound Error percentage: 0.00%
+------------SnapShot 1 Begins--------------
+|V|=4847571
+Correct Prediction: 79.93%
+Dump Prediction Correcr Rate: 31.44%
+Changing Rate: 68.56%
+Changing Capturing Rate: 96.03%
+Unchanged Rate: 31.44%
+Unchanged Capture Rate: 44.83%
+Changing Number when Boundary Complete Match: 2.72%
+Changing Number when Boundary Pre Contains Cur: 24.51%
+Changing Number when Boundary Cur Contains Pre: 19.96%
+Changing Number when Boundary Partial Overlap Pre Left: 10.06%
+Changing Number when Boundary Partial Overlap Cur Left: 10.11%
+Changing Number when Boundary Disjoint: 1.20%
+Unchanging Number when Boundary Complete Match: 14.09%
+Unchanging Number when Boundary Pre Contains Cur: 8.54%
+Unchanging Number when Boundary Cur Contains Pre: 4.80%
+Unchanging Number when Boundary Partial Overlap Pre Left: 1.42%
+Unchanging Number when Boundary Partial Overlap Cur Left: 2.59%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 0.03%
+Upper Bound Error percentage: 0.00%
+Base Root Time per SnapShot: 0.077630s
+Prediction Time per SnapShot: 1.058348s
+Running build/test-index-sssp with batch_ratio=0.24
+Error: Invalid line "# Directed graph (each unordered pair of nodes is saved once): soc-LiveJournal1.txt "
+Error: Invalid line "# Directed LiveJournal friednship social network"
+Error: Invalid line "# Nodes: 4847571 Edges: 68993773"
+Error: Invalid line "# FromNodeId	ToNodeId"
+read: 29.490124s
+loading graph /home/cgao037/graph/lj/lj_snap, root file is source/lj.txt, batch_num is 1, batch_size is 16558505
+read: 0.014243s
+|E|=68993773
+|V|=4847571
+Union Graph Marked: 7.745864s
+Graph Size: 68993773, Edge Count For Version 999 is 68993773
+Forward Time: 2.075224s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 22153486
+ Percentage of core graph edge: 32.11
+Common Graph Edges: 35876763
+Graph Size: 35876763, Edge Count For Version 666 is 35876763
+Forward Time: 1.104000s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 13707715
+ Percentage of core graph edge: 38.21
+Merged Set Size: 25513677
+------------SnapShot 0 Begins--------------
+|V|=4847571
+Lower Bound Error percentage: 0.21%
+Upper Bound Error percentage: 0.00%
+------------SnapShot 1 Begins--------------
+|V|=4847571
+Correct Prediction: 86.84%
+Dump Prediction Correcr Rate: 23.70%
+Changing Rate: 76.30%
+Changing Capturing Rate: 97.68%
+Unchanged Rate: 23.70%
+Unchanged Capture Rate: 51.96%
+Changing Number when Boundary Complete Match: 1.77%
+Changing Number when Boundary Pre Contains Cur: 26.34%
+Changing Number when Boundary Cur Contains Pre: 22.82%
+Changing Number when Boundary Partial Overlap Pre Left: 10.63%
+Changing Number when Boundary Partial Overlap Cur Left: 13.58%
+Changing Number when Boundary Disjoint: 1.16%
+Unchanging Number when Boundary Complete Match: 12.31%
+Unchanging Number when Boundary Pre Contains Cur: 4.68%
+Unchanging Number when Boundary Cur Contains Pre: 3.15%
+Unchanging Number when Boundary Partial Overlap Pre Left: 2.20%
+Unchanging Number when Boundary Partial Overlap Cur Left: 1.35%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 0.09%
+Upper Bound Error percentage: 0.00%
+Base Root Time per SnapShot: 0.078934s
+Prediction Time per SnapShot: 1.038288s
+Running build/test-index-sssp with batch_ratio=0.32
+Error: Invalid line "# Directed graph (each unordered pair of nodes is saved once): soc-LiveJournal1.txt "
+Error: Invalid line "# Directed LiveJournal friednship social network"
+Error: Invalid line "# Nodes: 4847571 Edges: 68993773"
+Error: Invalid line "# FromNodeId	ToNodeId"
+read: 29.539662s
+loading graph /home/cgao037/graph/lj/lj_snap, root file is source/lj.txt, batch_num is 1, batch_size is 22078007
+read: 0.019775s
+|E|=68993773
+|V|=4847571
+Union Graph Marked: 7.822424s
+Graph Size: 68993773, Edge Count For Version 999 is 68993773
+Forward Time: 2.126195s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 22153472
+ Percentage of core graph edge: 32.11
+Common Graph Edges: 24837759
+Graph Size: 24837759, Edge Count For Version 666 is 24837759
+Forward Time: 0.896823s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 10927244
+ Percentage of core graph edge: 43.99
+Merged Set Size: 25859360
+------------SnapShot 0 Begins--------------
+|V|=4847571
+Lower Bound Error percentage: 1.31%
+Upper Bound Error percentage: 0.00%
+------------SnapShot 1 Begins--------------
+|V|=4847571
+Correct Prediction: 86.77%
+Dump Prediction Correcr Rate: 26.97%
+Changing Rate: 73.03%
+Changing Capturing Rate: 91.59%
+Unchanged Rate: 26.97%
+Unchanged Capture Rate: 73.72%
+Changing Number when Boundary Complete Match: 6.14%
+Changing Number when Boundary Pre Contains Cur: 21.93%
+Changing Number when Boundary Cur Contains Pre: 26.38%
+Changing Number when Boundary Partial Overlap Pre Left: 8.59%
+Changing Number when Boundary Partial Overlap Cur Left: 8.67%
+Changing Number when Boundary Disjoint: 1.31%
+Unchanging Number when Boundary Complete Match: 19.88%
+Unchanging Number when Boundary Pre Contains Cur: 2.17%
+Unchanging Number when Boundary Cur Contains Pre: 2.79%
+Unchanging Number when Boundary Partial Overlap Pre Left: 1.20%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.93%
+Unchanging Number when Boundary Disjoint: 0.00%
+Lower Bound Error percentage: 0.13%
+Upper Bound Error percentage: 0.00%
+Base Root Time per SnapShot: 0.080839s
+Prediction Time per SnapShot: 1.114696s
+Running build/test-index-sssp with batch_ratio=0.48
+Error: Invalid line "# Directed graph (each unordered pair of nodes is saved once): soc-LiveJournal1.txt "
+Error: Invalid line "# Directed LiveJournal friednship social network"
+Error: Invalid line "# Nodes: 4847571 Edges: 68993773"
+Error: Invalid line "# FromNodeId	ToNodeId"
+read: 29.594062s
+loading graph /home/cgao037/graph/lj/lj_snap, root file is source/lj.txt, batch_num is 1, batch_size is 33117011
+read: 0.021360s
+|E|=68993773
+|V|=4847571
+Union Graph Marked: 7.435729s
+Graph Size: 68993773, Edge Count For Version 999 is 68993773
+Forward Time: 2.143984s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 22153467
+ Percentage of core graph edge: 32.11
+Common Graph Edges: 2759751
+Graph Size: 2759751, Edge Count For Version 666 is 2759751
+Forward Time: 0.197614s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 2622339
+ Percentage of core graph edge: 95.02
+Merged Set Size: 23788295
+------------SnapShot 0 Begins--------------
+|V|=4847571
+Lower Bound Error percentage: 0.80%
+Upper Bound Error percentage: 0.00%
+------------SnapShot 1 Begins--------------
+|V|=4847571
+Correct Prediction: 81.68%
+Dump Prediction Correcr Rate: 33.49%
+Changing Rate: 66.51%
+Changing Capturing Rate: 75.99%
+Unchanged Rate: 33.49%
+Unchanged Capture Rate: 92.99%
+Changing Number when Boundary Complete Match: 15.97%
+Changing Number when Boundary Pre Contains Cur: 19.37%
+Changing Number when Boundary Cur Contains Pre: 22.93%
+Changing Number when Boundary Partial Overlap Pre Left: 3.79%
+Changing Number when Boundary Partial Overlap Cur Left: 3.89%
+Changing Number when Boundary Disjoint: 0.57%
+Unchanging Number when Boundary Complete Match: 31.14%
+Unchanging Number when Boundary Pre Contains Cur: 0.91%
+Unchanging Number when Boundary Cur Contains Pre: 0.61%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.42%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.40%
+Unchanging Number when Boundary Disjoint: 0.01%
+Lower Bound Error percentage: 0.28%
+Upper Bound Error percentage: 0.00%
+Base Root Time per SnapShot: 0.074536s
+Prediction Time per SnapShot: 4.034387s
+Running build/test-index-sswp with batch_ratio=0.08
+Error: Invalid line "# Directed graph (each unordered pair of nodes is saved once): soc-LiveJournal1.txt "
+Error: Invalid line "# Directed LiveJournal friednship social network"
+Error: Invalid line "# Nodes: 4847571 Edges: 68993773"
+Error: Invalid line "# FromNodeId	ToNodeId"
+read: 29.132601s
+loading graph /home/cgao037/graph/lj/lj_snap, root file is source/lj.txt, batch_num is 1, batch_size is 5519501
+read: 0.021784s
+|E|=68993773
+|V|=4847571
+Union Graph Marked: 7.420523s
+Graph Size: 68993773, Edge Count For Version 999 is 68993773
+Forward Time: 6.062952s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 8416664
+ Percentage of core graph edge: 12.20
+Common Graph Edges: 57954771
+Graph Size: 57954771, Edge Count For Version 666 is 57954771
+Forward Time: 5.701648s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 7910976
+ Percentage of core graph edge: 13.65
+Merged Set Size: 9439939
+------------SnapShot 0 Begins--------------
+|V|=4847571
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 3.35%
+------------SnapShot 1 Begins--------------
+|V|=4847571
+Correct Prediction: 83.82%
+Dump Prediction Correcr Rate: 79.85%
+Changing Rate: 20.15%
+Changing Capturing Rate: 86.37%
+Unchanged Rate: 79.85%
+Unchanged Capture Rate: 83.18%
+Changing Number when Boundary Complete Match: 2.75%
+Changing Number when Boundary Pre Contains Cur: 8.23%
+Changing Number when Boundary Cur Contains Pre: 5.14%
+Changing Number when Boundary Partial Overlap Pre Left: 2.52%
+Changing Number when Boundary Partial Overlap Cur Left: 0.68%
+Changing Number when Boundary Disjoint: 0.84%
+Unchanging Number when Boundary Complete Match: 66.41%
+Unchanging Number when Boundary Pre Contains Cur: 4.90%
+Unchanging Number when Boundary Cur Contains Pre: 6.55%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.83%
+Unchanging Number when Boundary Partial Overlap Cur Left: 1.09%
+Unchanging Number when Boundary Disjoint: 0.06%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 4.07%
+Base Root Time per SnapShot: 1.304237s
+Prediction Time per SnapShot: 16.596594s
+Running build/test-index-sswp with batch_ratio=0.16
+Error: Invalid line "# Directed graph (each unordered pair of nodes is saved once): soc-LiveJournal1.txt "
+Error: Invalid line "# Directed LiveJournal friednship social network"
+Error: Invalid line "# Nodes: 4847571 Edges: 68993773"
+Error: Invalid line "# FromNodeId	ToNodeId"
+read: 32.520138s
+loading graph /home/cgao037/graph/lj/lj_snap, root file is source/lj.txt, batch_num is 1, batch_size is 11039003
+read: 0.030054s
+|E|=68993773
+|V|=4847571
+Union Graph Marked: 28.606700s
+Graph Size: 68993773, Edge Count For Version 999 is 68993773
+Forward Time: 6.061725s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 8404491
+ Percentage of core graph edge: 12.18
+Common Graph Edges: 46915767
+Graph Size: 46915767, Edge Count For Version 666 is 46915767
+Forward Time: 7.611958s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 7347051
+ Percentage of core graph edge: 15.66
+Merged Set Size: 10341228
+------------SnapShot 0 Begins--------------
+|V|=4847571
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 3.10%
+------------SnapShot 1 Begins--------------
+|V|=4847571
+Correct Prediction: 75.20%
+Dump Prediction Correcr Rate: 59.84%
+Changing Rate: 40.16%
+Changing Capturing Rate: 82.25%
+Unchanged Rate: 59.84%
+Unchanged Capture Rate: 70.46%
+Changing Number when Boundary Complete Match: 7.13%
+Changing Number when Boundary Pre Contains Cur: 13.17%
+Changing Number when Boundary Cur Contains Pre: 11.31%
+Changing Number when Boundary Partial Overlap Pre Left: 3.49%
+Changing Number when Boundary Partial Overlap Cur Left: 2.61%
+Changing Number when Boundary Disjoint: 2.45%
+Unchanging Number when Boundary Complete Match: 42.16%
+Unchanging Number when Boundary Pre Contains Cur: 7.55%
+Unchanging Number when Boundary Cur Contains Pre: 7.99%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.87%
+Unchanging Number when Boundary Partial Overlap Cur Left: 1.15%
+Unchanging Number when Boundary Disjoint: 0.12%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 3.31%
+Base Root Time per SnapShot: 0.661459s
+Prediction Time per SnapShot: 11.558216s
+Running build/test-index-sswp with batch_ratio=0.24
+Error: Invalid line "# Directed graph (each unordered pair of nodes is saved once): soc-LiveJournal1.txt "
+Error: Invalid line "# Directed LiveJournal friednship social network"
+Error: Invalid line "# Nodes: 4847571 Edges: 68993773"
+Error: Invalid line "# FromNodeId	ToNodeId"
+read: 44.965698s
+loading graph /home/cgao037/graph/lj/lj_snap, root file is source/lj.txt, batch_num is 1, batch_size is 16558505
+read: 0.039805s
+|E|=68993773
+|V|=4847571
+Union Graph Marked: 15.772952s
+Graph Size: 68993773, Edge Count For Version 999 is 68993773
+Forward Time: 8.836745s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 8403336
+ Percentage of core graph edge: 12.18
+Common Graph Edges: 35876763
+Graph Size: 35876763, Edge Count For Version 666 is 35876763
+Forward Time: 5.020157s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 7053565
+ Percentage of core graph edge: 19.66
+Merged Set Size: 11376488
+------------SnapShot 0 Begins--------------
+|V|=4847571
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 2.49%
+------------SnapShot 1 Begins--------------
+|V|=4847571
+Correct Prediction: 77.21%
+Dump Prediction Correcr Rate: 48.52%
+Changing Rate: 51.48%
+Changing Capturing Rate: 89.36%
+Unchanged Rate: 48.52%
+Unchanged Capture Rate: 64.32%
+Changing Number when Boundary Complete Match: 5.48%
+Changing Number when Boundary Pre Contains Cur: 17.27%
+Changing Number when Boundary Cur Contains Pre: 15.34%
+Changing Number when Boundary Partial Overlap Pre Left: 5.44%
+Changing Number when Boundary Partial Overlap Cur Left: 3.34%
+Changing Number when Boundary Disjoint: 4.61%
+Unchanging Number when Boundary Complete Match: 31.21%
+Unchanging Number when Boundary Pre Contains Cur: 7.31%
+Unchanging Number when Boundary Cur Contains Pre: 8.19%
+Unchanging Number when Boundary Partial Overlap Pre Left: 1.07%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.67%
+Unchanging Number when Boundary Disjoint: 0.07%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 1.78%
+Base Root Time per SnapShot: 0.623634s
+Prediction Time per SnapShot: 7.580896s
+Running build/test-index-sswp with batch_ratio=0.32
+Error: Invalid line "# Directed graph (each unordered pair of nodes is saved once): soc-LiveJournal1.txt "
+Error: Invalid line "# Directed LiveJournal friednship social network"
+Error: Invalid line "# Nodes: 4847571 Edges: 68993773"
+Error: Invalid line "# FromNodeId	ToNodeId"
+read: 29.132472s
+loading graph /home/cgao037/graph/lj/lj_snap, root file is source/lj.txt, batch_num is 1, batch_size is 22078007
+read: 0.020860s
+|E|=68993773
+|V|=4847571
+Union Graph Marked: 83.195758s
+Graph Size: 68993773, Edge Count For Version 999 is 68993773
+Forward Time: 8.978216s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 8406433
+ Percentage of core graph edge: 12.18
+Common Graph Edges: 24837759
+Graph Size: 24837759, Edge Count For Version 666 is 24837759
+Forward Time: 5.273626s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 6331488
+ Percentage of core graph edge: 25.49
+Merged Set Size: 11960280
+------------SnapShot 0 Begins--------------
+|V|=4847571
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 2.67%
+------------SnapShot 1 Begins--------------
+|V|=4847571
+Correct Prediction: 74.06%
+Dump Prediction Correcr Rate: 39.32%
+Changing Rate: 60.68%
+Changing Capturing Rate: 88.44%
+Unchanged Rate: 39.32%
+Unchanged Capture Rate: 51.87%
+Changing Number when Boundary Complete Match: 7.01%
+Changing Number when Boundary Pre Contains Cur: 17.97%
+Changing Number when Boundary Cur Contains Pre: 19.31%
+Changing Number when Boundary Partial Overlap Pre Left: 5.20%
+Changing Number when Boundary Partial Overlap Cur Left: 4.19%
+Changing Number when Boundary Disjoint: 6.99%
+Unchanging Number when Boundary Complete Match: 20.39%
+Unchanging Number when Boundary Pre Contains Cur: 8.79%
+Unchanging Number when Boundary Cur Contains Pre: 9.08%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.60%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.39%
+Unchanging Number when Boundary Disjoint: 0.07%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 1.90%
+Base Root Time per SnapShot: 0.835105s
+Prediction Time per SnapShot: 11.407196s
+Running build/test-index-sswp with batch_ratio=0.48
+Error: Invalid line "# Directed graph (each unordered pair of nodes is saved once): soc-LiveJournal1.txt "
+Error: Invalid line "# Directed LiveJournal friednship social network"
+Error: Invalid line "# Nodes: 4847571 Edges: 68993773"
+Error: Invalid line "# FromNodeId	ToNodeId"
+read: 30.191758s
+loading graph /home/cgao037/graph/lj/lj_snap, root file is source/lj.txt, batch_num is 1, batch_size is 33117011
+read: 0.021274s
+|E|=68993773
+|V|=4847571
+Union Graph Marked: 12.497244s
+Graph Size: 68993773, Edge Count For Version 999 is 68993773
+Forward Time: 8.177657s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 8428390
+ Percentage of core graph edge: 12.22
+Common Graph Edges: 2759751
+Graph Size: 2759751, Edge Count For Version 666 is 2759751
+Forward Time: 4.837640s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 2217617
+ Percentage of core graph edge: 80.36
+Merged Set Size: 10320333
+------------SnapShot 0 Begins--------------
+|V|=4847571
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 22.02%
+------------SnapShot 1 Begins--------------
+|V|=4847571
+Correct Prediction: 68.09%
+Dump Prediction Correcr Rate: 35.81%
+Changing Rate: 64.19%
+Changing Capturing Rate: 82.67%
+Unchanged Rate: 35.81%
+Unchanged Capture Rate: 41.94%
+Changing Number when Boundary Complete Match: 11.12%
+Changing Number when Boundary Pre Contains Cur: 23.43%
+Changing Number when Boundary Cur Contains Pre: 11.22%
+Changing Number when Boundary Partial Overlap Pre Left: 1.43%
+Changing Number when Boundary Partial Overlap Cur Left: 0.52%
+Changing Number when Boundary Disjoint: 16.46%
+Unchanging Number when Boundary Complete Match: 15.02%
+Unchanging Number when Boundary Pre Contains Cur: 14.33%
+Unchanging Number when Boundary Cur Contains Pre: 4.77%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.13%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.07%
+Unchanging Number when Boundary Disjoint: 1.49%
+Lower Bound Error percentage: 0.00%
+Upper Bound Error percentage: 29.78%
+Base Root Time per SnapShot: 0.992201s
+Prediction Time per SnapShot: 11.110927s
+Running build/test-index-viterbi with batch_ratio=0.08
+Error: Invalid line "# Directed graph (each unordered pair of nodes is saved once): soc-LiveJournal1.txt "
+Error: Invalid line "# Directed LiveJournal friednship social network"
+Error: Invalid line "# Nodes: 4847571 Edges: 68993773"
+Error: Invalid line "# FromNodeId	ToNodeId"
+read: 29.248132s
+loading graph /home/cgao037/graph/lj/lj_snap, root file is source/lj.txt, batch_num is 1, batch_size is 5519501
+read: 0.021290s
+|E|=68993773
+|V|=4847571
+Union Graph Marked: 7.861361s
+Graph Size: 68993773, Edge Count For Version 999 is 68993773
+Forward Time: 2.047063s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 8610405
+ Percentage of core graph edge: 12.48
+Common Graph Edges: 57954771
+Graph Size: 57954771, Edge Count For Version 666 is 57954771
+Forward Time: 1.789169s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 8288134
+ Percentage of core graph edge: 14.30
+Merged Set Size: 8610444
+------------SnapShot 0 Begins--------------
+|V|=4847571
+Lower Bound Error percentage: 74.77%
+Upper Bound Error percentage: 8.83%
+------------SnapShot 1 Begins--------------
+|V|=4847571
+Correct Prediction: 80.37%
+Dump Prediction Correcr Rate: 57.02%
+Changing Rate: 42.98%
+Changing Capturing Rate: 89.32%
+Unchanged Rate: 57.02%
+Unchanged Capture Rate: 73.61%
+Changing Number when Boundary Complete Match: 4.59%
+Changing Number when Boundary Pre Contains Cur: 17.75%
+Changing Number when Boundary Cur Contains Pre: 11.46%
+Changing Number when Boundary Partial Overlap Pre Left: 1.43%
+Changing Number when Boundary Partial Overlap Cur Left: 1.35%
+Changing Number when Boundary Disjoint: 6.39%
+Unchanging Number when Boundary Complete Match: 41.98%
+Unchanging Number when Boundary Pre Contains Cur: 6.21%
+Unchanging Number when Boundary Cur Contains Pre: 8.46%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.05%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.04%
+Unchanging Number when Boundary Disjoint: 0.29%
+Lower Bound Error percentage: 81.93%
+Upper Bound Error percentage: 9.42%
+Base Root Time per SnapShot: 0.911854s
+Prediction Time per SnapShot: 17.553696s
+Running build/test-index-viterbi with batch_ratio=0.16
+Error: Invalid line "# Directed graph (each unordered pair of nodes is saved once): soc-LiveJournal1.txt "
+Error: Invalid line "# Directed LiveJournal friednship social network"
+Error: Invalid line "# Nodes: 4847571 Edges: 68993773"
+Error: Invalid line "# FromNodeId	ToNodeId"
+read: 44.750447s
+loading graph /home/cgao037/graph/lj/lj_snap, root file is source/lj.txt, batch_num is 1, batch_size is 11039003
+read: 0.050384s
+|E|=68993773
+|V|=4847571
+Union Graph Marked: 21.856215s
+Graph Size: 68993773, Edge Count For Version 999 is 68993773
+Forward Time: 1.993561s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 8599602
+ Percentage of core graph edge: 12.46
+Common Graph Edges: 46915767
+Graph Size: 46915767, Edge Count For Version 666 is 46915767
+Forward Time: 1.934040s
+Forward progress: 100% completed.
+Finish to find core graph edge with in/out flag
+core graph edge size: 7880988
+ Percentage of core graph edge: 16.80
+Merged Set Size: 8599686
+------------SnapShot 0 Begins--------------
+|V|=4847571
+Lower Bound Error percentage: 70.19%
+Upper Bound Error percentage: 8.44%
+------------SnapShot 1 Begins--------------
+|V|=4847571
+Correct Prediction: 78.67%
+Dump Prediction Correcr Rate: 39.99%
+Changing Rate: 60.01%
+Changing Capturing Rate: 93.93%
+Unchanged Rate: 39.99%
+Unchanged Capture Rate: 55.78%
+Changing Number when Boundary Complete Match: 3.64%
+Changing Number when Boundary Pre Contains Cur: 18.34%
+Changing Number when Boundary Cur Contains Pre: 19.67%
+Changing Number when Boundary Partial Overlap Pre Left: 3.47%
+Changing Number when Boundary Partial Overlap Cur Left: 2.94%
+Changing Number when Boundary Disjoint: 11.94%
+Unchanging Number when Boundary Complete Match: 22.31%
+Unchanging Number when Boundary Pre Contains Cur: 7.42%
+Unchanging Number when Boundary Cur Contains Pre: 9.36%
+Unchanging Number when Boundary Partial Overlap Pre Left: 0.13%
+Unchanging Number when Boundary Partial Overlap Cur Left: 0.07%
+Unchanging Number when Boundary Disjoint: 0.70%
+Lower Bound Error percentage: 71.73%
+Upper Bound Error percentage: 8.33%
+Base Root Time per SnapShot: 0.459607s
+Prediction Time per SnapShot: 11.281576s
+Running build/test-index-viterbi with batch_ratio=0.24
+Error: Invalid line "# Directed graph (each unordered pair of nodes is saved once): soc-LiveJournal1.txt "
+Error: Invalid line "# Directed LiveJournal friednship social network"
+Error: Invalid line "# Nodes: 4847571 Edges: 68993773"
+Error: Invalid line "# FromNodeId	ToNodeId"
+read: 46.216477s
+loading graph /home/cgao037/graph/lj/lj_snap, root file is source/lj.txt, batch_num is 1, batch_size is 16558505
+read: 0.049528s
+|E|=68993773
+|V|=4847571
+Union Graph Marked: 26.721850s
+Graph Size: 68993773, Edge Count For Version 999 is 68993773
